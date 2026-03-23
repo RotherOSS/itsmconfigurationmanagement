@@ -834,7 +834,6 @@ sub SelectableObjectList {
             Message  =>
                 "No valid selection for link object: '$Param{Selected}'! The configured default class (LinkObject::DefaultSubObject###ITSMConfigItem) may not exist.",
         );
-        return;
     }
 
     # only add headline if there are configitem classes
