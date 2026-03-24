@@ -571,6 +571,11 @@ sub Run {
 
         next CONFIGITEMID unless IsHashRefWithData($DFValues);
 
+        # get config item data for version id
+        my $ConfigItem = $ConfigItemObject->ConfigItemGet(
+            ConfigItemID => $ConfigItemID,
+        );
+
         # first, set dynamic field reference values
         DFREF:
         for my $DFRefName ( keys %DFRefLookup ) {
@@ -579,7 +584,7 @@ sub Run {
 
             my $Success = $DynamicFieldBackendObject->ValueSet(
                 DynamicFieldConfig => $DFRefLookup{$DFRefName},
-                ObjectID           => $ConfigItemID,
+                ObjectID           => $ConfigItem->{VersionID},
                 Value              => $DFValues->{$DFRefName},
                 UserID             => $UserID,
                 ExternalSource     => 1,
@@ -594,7 +599,7 @@ sub Run {
 
             my $Success = $DynamicFieldBackendObject->ValueSet(
                 DynamicFieldConfig => $DFLensLookup{$DFLensName},
-                ObjectID           => $ConfigItemID,
+                ObjectID           => $ConfigItem->{VersionID},
                 Value              => $DFValues->{$DFLensName},
                 UserID             => $UserID,
                 ExternalSource     => 1,
