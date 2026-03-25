@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -147,7 +147,8 @@ sub ValueSet {
         return $Result unless $FieldType  =~ /^ConfigItem/;
 
         my $ValueType = ref( $Param{Value} );
-        my @Values    = $ValueType && $ValueType eq 'ARRAY' ? $Param{Value}->@*
+        my @Values    = $ValueType && $ValueType eq 'ARRAY'
+            ? $Param{Value}->@*
             : $Param{Value} ? ( $Param{Value} ) : ();
 
         if ( $Param{Set} ) {
@@ -622,7 +623,7 @@ sub SearchObjects {
                             }
                         }
 
-                        return unless $ParamName;
+                        return () unless $ParamName;
 
                         $EqualsObjectAttribute = $Param{ParamObject}->GetParam( Param => $ParamName );
 
@@ -642,8 +643,8 @@ sub SearchObjects {
                     $EqualsObjectAttribute = $Param{UserID};
                 }
 
-                return unless $EqualsObjectAttribute;
-                return if ( ref $EqualsObjectAttribute eq 'ARRAY' && !$EqualsObjectAttribute->@* );
+                return () unless $EqualsObjectAttribute;
+                return () if ( ref $EqualsObjectAttribute eq 'ARRAY' && !$EqualsObjectAttribute->@* );
 
                 # config item attribute
                 if ( $FilterItem->{ReferenceObjectAttribute} =~ m{^Con}i ) {
@@ -695,7 +696,7 @@ sub SearchObjects {
                 }
             }
 
-            return unless @ClassIDs;
+            return () unless @ClassIDs;
 
             $SearchParams{ClassIDs} = \@ClassIDs;
         }
@@ -714,7 +715,7 @@ sub SearchObjects {
                 }
             }
 
-            return unless @DeploymentStateIDs;
+            return () unless @DeploymentStateIDs;
 
             $SearchParams{DeplStateIDs} = \@DeploymentStateIDs;
         }
