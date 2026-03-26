@@ -23,6 +23,7 @@ use namespace::autoclean;
 use utf8;
 
 # core modules
+use List::Util qw(pairs);
 
 # CPAN modules
 
@@ -249,6 +250,62 @@ sub HandleResponse {
                 $GeneralCatalogItemLookup{ $CIClassMapping{$CurrentCI} }->{ $RequiredAttributes{$CurrentCI} } = $GeneralCatalogItem;
             }
             $RequiredAttributes{ $CurrentCI . 'ID' } = $GeneralCatalogItem->{ItemID};
+        }
+
+        # get latest definition for the class
+        my $ClassID = $RemoteCIData->{ClassID};
+        if ( !$ClassID ) {
+            my $ClassList = $GeneralCatalogObject->ItemList(
+                Class => 'ITSM::ConfigItem::Class',
+            );
+            my %ReverseClassList = reverse $ClassList->%*;
+            $ClassID = $ReverseClassList{ $RemoteCIData->{Class} };
+        }
+        my $Definition = $ConfigItemObject->DefinitionGet(
+            ClassID => $ClassID,
+        );
+
+        # validate dynamic fields
+        DATA:
+        for my $Data ( pairs $RemoteCIData->%* ) {
+            my ( $Key, $Value ) = $Data->@*;
+
+            next DATA unless ( $Key =~ /^DynamicField_/ );
+
+            if ( $Key =~ /^DynamicField_(?<PlainFieldName>[A-Za-z0-9-]+)/ ) {
+                my $PlainFieldName = $+{PlainFieldName};
+
+                # check if field is in class definition
+                if ( !$Definition->{DynamicFieldRef}{$PlainFieldName} ) {
+                    return $Self->Error(
+                        ErrorMessage => "DynamicField->Name parameter is invalid.",
+                    );
+                }
+
+                # get dynamic field config
+                my $DynamicFieldConfig = $Definition->{DynamicFieldRef}{$PlainFieldName};
+
+                # validate value
+                {
+                    # possible structures are string and array, no data inside is needed
+                    if ( !IsString($Value) && ref $Value ne 'ARRAY' ) {
+                        return;
+                    }
+
+                    my $ValidateValue = $Kernel::OM->Get('Kernel::System::DynamicField::Backend')->FieldValueValidate(
+                        DynamicFieldConfig => $DynamicFieldConfig,
+                        Value              => $Value,
+                        ExternalSource     => 1,
+                        UserID             => 1,
+                    );
+
+                    if ( !$ValidateValue ) {
+                        return $Self->Error(
+                            ErrorMessage => "DynamicField->Value parameter is invalid.",
+                        );
+                    }
+                }
+            }
         }
 
         my $Identifier = $InvokerConfig->{ 'Identifier' . $RequiredAttributes{ClassID} };
