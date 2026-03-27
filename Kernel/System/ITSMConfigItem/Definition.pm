@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -1308,12 +1308,19 @@ sub DefinitionSync {
             next CLASS unless $NeedsSync;
         }
 
-        $Self->DefinitionAdd(
+        my $Result = $Self->DefinitionAdd(
             ClassID    => $ClassID,
             Definition => $Definition->{Definition},
             UserID     => 1,
             Force      => 1,
         );
+        if ( !$Result->{Success} ) {
+            my $ErrorMessage = sprintf $Result->{Error}, $Result->{ErrorArgs}->@*;
+            $Kernel::OM->Get('Kernel::System::Log')->Log(
+                Priority => 'error',
+                Message  => $ErrorMessage,
+            );
+        }
     }
 
     return 1;
@@ -2282,7 +2289,7 @@ sub _DefinitionDynamicFieldGet {
             my $DynamicField = $DynamicFieldObject->DynamicFieldGet( Name => $Name );
 
             # only return valid dynamic fields
-            next DYNAMICFIELD unless $DynamicField;
+            next DYNAMICFIELD unless $DynamicField->%*;
             next DYNAMICFIELD unless $DynamicField->{ValidID} eq '1';
 
             # for set fields also the contained dynamic fields have to be versioned
