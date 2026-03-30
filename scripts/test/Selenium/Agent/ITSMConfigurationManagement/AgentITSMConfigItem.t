@@ -97,43 +97,6 @@ $Selenium->RunTest(
                 "ConfigItem is created - ID $ConfigItemID"
             );
 
-            #            my %XMLData;
-            #            if ( $ComputerClassID->{ItemID} == $ITSMConfigItem ) {
-            #                %XMLData = (
-            #                    XMLData => [
-            #                        undef,
-            #                        {
-            #                            Version => [
-            #                                undef,
-            #                                {
-            #                                    Owner => [
-            #                                        undef,
-            #                                        {
-            #                                            Content => $Owner,
-            #                                        },
-            #                                    ],
-            #                                },
-            #                            ],
-            #                        },
-            #                    ],
-            #                );
-            #            }
-
-            #            # Add a new version.
-            #            my $VersionID = $ConfigItemObject->VersionAdd(
-            #                Name         => 'SeleniumTest2',
-            #                DefinitionID => 1,
-            #                DeplStateID  => $DeplStateID,
-            #                InciStateID  => 1,
-            #                UserID       => 1,
-            #                ConfigItemID => $ConfigItemID,
-            #
-            #                #%XMLData,
-            #            );
-            #            $Self->True(
-            #                $VersionID,
-            #                "Version is created - ID $VersionID"
-            #            );
             push @ConfigItemIDs, $ConfigItemID;
         }
 
@@ -186,28 +149,6 @@ $Selenium->RunTest(
             );
 
             $Count++;
-
-            #            # Check if there is column Create Time for Computer class
-            #            # See bug#14049
-            #            my $ConfigItemData = $ConfigItemObject->ConfigItemGet(
-            #                ConfigItemID => $CheckConfigItem,
-            #            );
-            #            if ( $ConfigItemData->{Class} eq 'Computer' ) {
-            #
-            #                # Check if AgentITSMConfigItem Owner is displayed correctly. See bug#14633.
-            #                $Self->Is(
-            #                    $Selenium->execute_script(
-            #                        "return \$('#ConfigItemID_$CheckConfigItem td:contains($Owner)').text().trim();"
-            #                    ),
-            #                    $Owner,
-            #                    'Owner name and address is displayed correctly',
-            #                );
-            #
-            #                $Self->True(
-            #                    $Selenium->find_element("//a[contains(.,'Create Time')]"),
-            #                    "There is column 'CreateTime', enabled by sysconfig item  AgentITSMConfigItem###ShowColumnsByClass",
-            #                );
-            #            }
         }
 
         # check if the number column has a link to the config item zoom

@@ -187,7 +187,7 @@ $Selenium->RunTest(
 
             $Selenium->find_element("//a[contains(text(), \'$ConfigItemNumber\' )]")->VerifiedClick();
 
-            # check ConfigItem values on screen
+            # check ConfigItem values on the zoom screen
             my $Value = $TestClasses[$Index - 2] . "#$ConfigItemNumber";
             $Self->True(
                 $Selenium->execute_script(
@@ -198,7 +198,8 @@ $Selenium->RunTest(
             $Selenium->go_back();
             $Selenium->WaitFor(
                 JavaScript => 'return document.readyState === "complete";',
-            );        }
+            );        
+        }
 
         # Delete created test ConfigItems.
         for my $ConfigItemDelete (@ConfigItemIDs) {

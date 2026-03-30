@@ -24,6 +24,7 @@ use utf8;
 # CPAN modules
 use Test2::V0;
 
+use Data::Dumper;
 # OTOBO modules
 use Kernel::System::UnitTest::RegisterOM;    # Set up $Kernel::OM
 use Kernel::System::UnitTest::Selenium;
@@ -90,7 +91,7 @@ my $TestClassID = $GeneralCatalogObject->ItemAdd(
 );
 ok( $TestClassID, "Class added to GeneralCatalog" );
 
-# give permission
+# set permission and version string module
 {
     my $GroupID = $Kernel::OM->Get('Kernel::System::Group')->GroupLookup(
         Group  => 'itsm-configitem',
@@ -98,13 +99,22 @@ ok( $TestClassID, "Class added to GeneralCatalog" );
     );
     ok( $GroupID, 'got ID for group itsm-configitem' );
 
-    # Set permission.
+    # set permission.
     my $Success = $GeneralCatalogObject->GeneralCatalogPreferencesSet(
         ItemID => $TestClassID,
         Key    => 'Permission',
         Value  => [$GroupID],
     );
     ok( $Success, 'setting permission was successful' );
+
+    # set version string module
+    $Success = $GeneralCatalogObject->GeneralCatalogPreferencesSet(
+        ItemID => $TestClassID,
+        Key    => 'VersionStringModule',
+        Value  => ['Incremental']
+    );
+    ok( $Success, 'setting incremental version string module was successful' );
+
 }
 
 # The config item class needs a valid definition
@@ -141,7 +151,6 @@ $Selenium->RunTest(
         my $ConfigItemID   = $ConfigItemObject->ConfigItemAdd(
             Name          => $ConfigItemName,
             Number        => $ConfigItemNumber,
-            VersionString => 'Some version',
             DeplStateID   => $ProductionDeplStateID,
             InciStateID   => 1,
             ClassID       => $TestClassID,
@@ -254,11 +263,7 @@ $Selenium->RunTest(
         $Selenium->find_element( "#MappingAddButton", 'css' )->VerifiedClick();
         $Selenium->find_element(".//*[\@id='Object::3::Key']/option[5]")->click();
 
-        # Add and select 'Version String' mapping element.
-        $Selenium->find_element( "#MappingAddButton", 'css' )->VerifiedClick();
-        $Selenium->find_element(".//*[\@id='Object::4::Key']/option[6]")->click();
-
-        # for every line check if action elements are visible and if their enabled state us correct
+        # for every line check if action elements are visible and if their enabled state is correct
         # the first ArrowUp and the last Arrowdown must be disabled, all the others must be enabled
         for my $StepFourClass (
             qw(ArrowUp ArrowDown DeleteColumn)
@@ -279,7 +284,7 @@ $Selenium->RunTest(
             elsif ( $StepFourClass eq 'ArrowDown' ) {
                 my $Index = 0;
                 for my $Element ( $Elements->@* ) {
-                    my $StateOk = $Index == 4 ? !$Element->is_enabled : $Element->is_enabled;
+                    my $StateOk = $Index == 3 ? !$Element->is_enabled : $Element->is_enabled;
                     ok( $StateOk, "$StepFourClass element $Index enabled state is correct" );
                     $Element->is_displayed_ok;
                     $Index++;
@@ -347,7 +352,7 @@ $Selenium->RunTest(
             $ExportResultRef,
             {
                 DestinationContent => [
-                    qq{"$ConfigItemNumber","$ConfigItemName","Production","Operational","Some version"},
+                    qq{"$ConfigItemNumber","$ConfigItemName","Production","Operational"},
                 ],
                 Failed  => 0,
                 Success => 1,

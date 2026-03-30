@@ -31,6 +31,7 @@ our $Self;
 
 my $Selenium = Kernel::System::UnitTest::Selenium->new;
 
+# NOTE: The test runs successfully, but with the side effect of error messages from the ES when tickets are deleted
 $Selenium->RunTest(
     sub {
 

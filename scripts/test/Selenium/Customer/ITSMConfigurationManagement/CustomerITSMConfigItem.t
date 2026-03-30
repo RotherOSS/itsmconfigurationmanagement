@@ -102,42 +102,6 @@ $Selenium->RunTest(
                 "ConfigItem is created - ID $ConfigItemID"
             );
 
-            #            my %XMLData;
-            #            if ( $ComputerClassID->{ItemID} == $ITSMConfigItem ) {
-            #                %XMLData = (
-            #                    XMLData => [
-            #                        undef,
-            #                        {
-            #                            Version => [
-            #                                undef,
-            #                                {
-            #                                    Owner => [
-            #                                        undef,
-            #                                        {
-            #                                            Content => $Owner,
-            #                                        },
-            #                                    ],
-            #                                },
-            #                            ],
-            #                        },
-            #                    ],
-            #                );
-            #            }
-
-            #            # Add a new version.
-            #            my $VersionID = $ConfigItemObject->VersionAdd(
-            #                Name         => 'SeleniumTest',
-            #                DefinitionID => 1,
-            #                DeplStateID  => $DeplStateID,
-            #                InciStateID  => 1,
-            #                UserID       => 1,
-            #                ConfigItemID => $ConfigItemID,
-            #                %XMLData,
-            #            );
-            #            $Self->True(
-            #                $VersionID,
-            #                "Version is created - ID $VersionID"
-            #            );
             push @ConfigItemIDs, $ConfigItemID;
         }
 
@@ -185,21 +149,7 @@ $Selenium->RunTest(
             "//a[contains(\@href, \'Action=CustomerITSMConfigItem' )]"
         )->VerifiedClick();
 
-        # Navigate to CustomerITSMConfigItem, sorted by created time.
-        #$Selenium->VerifiedGet(
-        #    "${ScriptAlias}index.pl?Action=CustomerITSMConfigItem;View=Small;Filter=1;;SortBy=Created;OrderBy=Down"
-        #);
-
-        # Check for created test ConfigItems with 'All' filter active
-        #for my $AllConfigItem (@ConfigItemNumbers) {
-        #    $Self->True(
-        #        $Selenium->find_element("//div[contains(\@title, \'$AllConfigItem\' )]"),
-        #        "Test ConfigItem number $AllConfigItem - found",
-        #    );
-        #}
-
         # Check each of ConfigItem class filters for their respective test ConfigItem
-        my $Index = 0;
         CONFIGITEM:
         for my $Index ( 1 .. 5 ) {
 
@@ -225,27 +175,6 @@ $Selenium->RunTest(
                 "Test ConfigItem number $ConfigItemNumber - found",
             );
 
-            #            # Check if there is column Create Time for Computer class
-            #            # See bug#14049
-            #            my $ConfigItemData = $ConfigItemObject->ConfigItemGet(
-            #                ConfigItemID => $CheckConfigItem,
-            #            );
-            #            if ( $ConfigItemData->{Class} eq 'Computer' ) {
-            #
-            #                # Check if CustomerITSMConfigItem Owner is displayed correctly. See bug#14633.
-            #                $Self->Is(
-            #                    $Selenium->execute_script(
-            #                        "return \$('#ConfigItemID_$CheckConfigItem td:contains($Owner)').text().trim();"
-            #                    ),
-            #                    $Owner,
-            #                    'Owner name and address is displayed correctly',
-            #                );
-            #
-            #                $Self->True(
-            #                    $Selenium->find_element("//a[contains(.,'Create Time')]"),
-            #                    "There is column 'CreateTime', enabled by sysconfig item  CustomerITSMConfigItem###ShowColumnsByClass",
-            #                );
-            #            }
         }
 
         # Verify there is a link to CustomerITSMConfigItemZoom on ConfigItem Number column.
