@@ -176,8 +176,8 @@ $Selenium->RunTest(
             );
 
             # Verify there is a link to CustomerITSMConfigItemZoom on ConfigItem Number column.
-            my $ConfigItemID = $ConfigItemIDs[$Index - 2];
-            $ConfigItemNumber = $ConfigItemNumbers[$Index - 2];
+            my $ConfigItemID = $ConfigItemIDs[ $Index - 2 ];
+            $ConfigItemNumber = $ConfigItemNumbers[ $Index - 2 ];
             $Self->True(
                 $Selenium->execute_script(
                     "return \$('tr:eq(\"1\") a:contains($ConfigItemNumber)[href*=\"ItemID=$ConfigItemID\"]').length;"
@@ -188,7 +188,7 @@ $Selenium->RunTest(
             $Selenium->find_element("//a[contains(text(), \'$ConfigItemNumber\' )]")->VerifiedClick();
 
             # check ConfigItem values on the zoom screen
-            my $Value = $TestClasses[$Index - 2] . "#$ConfigItemNumber";
+            my $Value = $TestClasses[ $Index - 2 ] . "#$ConfigItemNumber";
             $Self->True(
                 $Selenium->execute_script(
                     "return \$('p:contains($Value)').length"
@@ -198,7 +198,7 @@ $Selenium->RunTest(
             $Selenium->go_back();
             $Selenium->WaitFor(
                 JavaScript => 'return document.readyState === "complete";',
-            );        
+            );
         }
 
         # Delete created test ConfigItems.

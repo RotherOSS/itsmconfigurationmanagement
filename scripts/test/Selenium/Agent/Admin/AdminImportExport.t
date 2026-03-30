@@ -24,7 +24,6 @@ use utf8;
 # CPAN modules
 use Test2::V0;
 
-use Data::Dumper;
 # OTOBO modules
 use Kernel::System::UnitTest::RegisterOM;    # Set up $Kernel::OM
 use Kernel::System::UnitTest::Selenium;
@@ -149,12 +148,12 @@ $Selenium->RunTest(
         # Add 'Location' test ConfigItem.
         my $ConfigItemName = "Selenium" . $Helper->GetRandomID;
         my $ConfigItemID   = $ConfigItemObject->ConfigItemAdd(
-            Name          => $ConfigItemName,
-            Number        => $ConfigItemNumber,
-            DeplStateID   => $ProductionDeplStateID,
-            InciStateID   => 1,
-            ClassID       => $TestClassID,
-            UserID        => $TestUserID,
+            Name        => $ConfigItemName,
+            Number      => $ConfigItemNumber,
+            DeplStateID => $ProductionDeplStateID,
+            InciStateID => 1,
+            ClassID     => $TestClassID,
+            UserID      => $TestUserID,
         );
         ok( $ConfigItemID, "ConfigItem 'Location' is created - ID $ConfigItemID" );
 
