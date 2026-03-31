@@ -46,8 +46,35 @@ $Selenium->RunTest(
 
         my $ConfigItemObject     = $Kernel::OM->Get('Kernel::System::ITSMConfigItem');
         my $GeneralCatalogObject = $Kernel::OM->Get('Kernel::System::GeneralCatalog');
+        my $WebserviceObject     = $Kernel::OM->Get('Kernel::System::GenericInterface::Webservice');
         my $TicketObject         = $Kernel::OM->Get('Kernel::System::Ticket');
         my $ConfigObject         = $Kernel::OM->Get('Kernel::Config');
+
+        # disable ES
+        my %ElasticSearchActive = $Kernel::OM->Get('Kernel::System::SysConfig')->SettingGet(
+            Name => 'Elasticsearch::Active',
+        );
+        $Helper->ConfigSettingChange(
+            Valid => 0,
+            Key   => 'Elasticsearch::Active',
+            Value => $ElasticSearchActive{EffectiveValue}
+        );
+
+        # disable ES webservice
+        my $Webservice = $WebserviceObject->WebserviceGet(
+            ID => 1,
+        );
+        my $WebServiceDisabled = $WebserviceObject->WebserviceUpdate(
+            ID      => $Webservice->{ID},
+            Name    => $Webservice->{Name},
+            Config  => $Webservice->{Config},
+            ValidID => 2,
+            UserID  => 1,
+        );
+        $Self->True(
+            $WebServiceDisabled,
+            "Webservice '$Webservice->{Name}' is disabled"
+        );
 
         # get catalog legacy classes IDs
         $ITSMConfigItemHelper->TestConfigItemCreateLegacyClasses(
