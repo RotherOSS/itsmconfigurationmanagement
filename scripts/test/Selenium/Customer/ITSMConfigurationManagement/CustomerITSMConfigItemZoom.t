@@ -18,6 +18,11 @@ use strict;
 use warnings;
 use utf8;
 
+# core modules
+
+# CPAN modules
+
+# OTOBO modules
 use Kernel::System::UnitTest::RegisterDriver;    # Set up $Kernel::OM and the test driver $Self
 use Kernel::System::UnitTest::Selenium;
 
@@ -44,7 +49,8 @@ $Selenium->RunTest(
             HelperObject => $Helper
         );
         my @ConfigItemClassIDs;
-        for my $ConfigItemClass (qw(Computer Hardware Location Network Software)) {
+        my @TestClasses = qw(Computer Hardware Location Network);
+        for my $ConfigItemClass (@TestClasses) {
             my $ConfigItemDataRef = $GeneralCatalogObject->ItemGet(
                 Class => 'ITSM::ConfigItem::Class',
                 Name  => $ConfigItemClass,
@@ -57,15 +63,8 @@ $Selenium->RunTest(
             Class => 'ITSM::ConfigItem::DeploymentState',
             Name  => 'Production',
         );
-        my $DeplStateID = $DeplStateDataRef->{ItemID};
-
+        my $DeplStateID      = $DeplStateDataRef->{ItemID};
         my $ConfigItemObject = $Kernel::OM->Get('Kernel::System::ITSMConfigItem');
-
-        my $Owner           = '"Test Test" <test@test.com>';
-        my $ComputerClassID = $GeneralCatalogObject->ItemGet(
-            Class => 'ITSM::ConfigItem::Class',
-            Name  => 'Computer',
-        );
 
         # Create ConfigItem for each ConfigItem class.
         my @ConfigItemNumbers;
@@ -88,9 +87,9 @@ $Selenium->RunTest(
                 Name        => 'SeleniumTest',
                 Number      => $ConfigItemNumber,
                 ClassID     => $ITSMConfigItem,
+                UserID      => 1,
                 DeplStateID => $DeplStateID,
                 InciStateID => 1,
-                UserID      => 1,
             );
             $Self->True(
                 $ConfigItemID,
@@ -100,64 +99,107 @@ $Selenium->RunTest(
             push @ConfigItemIDs, $ConfigItemID;
         }
 
+        my %CustomerITSMConfigItemSysConfig = $Kernel::OM->Get('Kernel::System::SysConfig')->SettingGet(
+            Name => 'CustomerFrontend::Module###CustomerITSMConfigItem',
+        );
+        $Helper->ConfigSettingChange(
+            Valid => 1,
+            Key   => 'CustomerFrontend::Module###CustomerITSMConfigItem',
+            Value => $CustomerITSMConfigItemSysConfig{EffectiveValue}
+        );
+        %CustomerITSMConfigItemSysConfig = $Kernel::OM->Get('Kernel::System::SysConfig')->SettingGet(
+            Name => 'CustomerFrontend::Module###CustomerITSMConfigItemZoom',
+        );
+        $Helper->ConfigSettingChange(
+            Valid => 1,
+            Key   => 'CustomerFrontend::Module###CustomerITSMConfigItemZoom',
+            Value => $CustomerITSMConfigItemSysConfig{EffectiveValue}
+        );
+
+        for my $Index ( 1 .. 5 ) {
+            my %PermissionConditionsSysConfig = $Kernel::OM->Get('Kernel::System::SysConfig')->SettingGet(
+                Name => "Customer::ConfigItem::PermissionConditions###0$Index",
+            );
+
+            if ( $Index > 1 ) {
+                $PermissionConditionsSysConfig{EffectiveValue}{Name}    = $TestClasses[ $Index - 2 ];
+                $PermissionConditionsSysConfig{EffectiveValue}{Classes} = [ $TestClasses[ $Index - 2 ] ];
+            }
+
+            $Helper->ConfigSettingChange(
+                Valid => 1,
+                Key   => "Customer::ConfigItem::PermissionConditions###0$Index",
+                Value => $PermissionConditionsSysConfig{EffectiveValue}
+            );
+        }
+
         # Create test user and login.
         my $TestUserLogin = $Helper->TestUserCreate(
             Groups => [ 'admin', 'itsm-configitem' ],
         ) || die "Did not get test user";
 
         $Selenium->Login(
-            Type     => 'Agent',
-            User     => $TestUserLogin,
-            Password => $TestUserLogin,
+            Type     => 'Customer',
+            User     => 'tina',
+            Password => 'tina',
         );
 
         my $ScriptAlias = $ConfigObject->Get('ScriptAlias');
 
-        # Navigate to AgentITSMConfigItem, sorted by created time.
-        $Selenium->VerifiedGet(
-            "${ScriptAlias}index.pl?Action=AgentITSMConfigItem;Filter=All;View=;SortBy=LastChanged;OrderBy=Down"
-        );
-
-        # Check for created test ConfigItems with 'All' filter active
-        for my $ConfigItemNumber (@ConfigItemNumbers) {
-            $Self->True(
-                $Selenium->execute_script(
-                    "return \$('a:contains($ConfigItemNumber)').length === 1"
-                ),
-                "Test ConfigItem value $ConfigItemNumber - found",
-            );
-        }
+        # Navigate to CustomerITSMConfigItem, sorted by created time by clicking ConfigItems icon on the side menu bar
+        $Selenium->find_element(
+            "//a[contains(\@href, \'Action=CustomerITSMConfigItem' )]"
+        )->VerifiedClick();
 
         # Check each of ConfigItem class filters for their respective test ConfigItem
-        my $Count = 0;
-        for my $ConfigItemNumber (@ConfigItemNumbers) {
+        CONFIGITEM:
+        for my $Index ( 2 .. 5 ) {
 
             # Click on ConfigItem class
             $Selenium->find_element(
-                "//a[contains(\@href, \'Action=AgentITSMConfigItem;SortBy=Changed;OrderBy=Down;View=Small;Filter=$ConfigItemClassIDs[$Count]' )]"
+                "//a[contains(\@href, \'Action=CustomerITSMConfigItem;Subaction=;Filter=$Index;SortBy=;OrderBy=;Fulltext=' )]"
             )->VerifiedClick();
 
-            # Check for table structure
-            $Selenium->find_element( "#OverviewBody .TableSmall", 'css' );
+            # order by descending creation time
+            $Selenium->find_element(
+                "//th[contains(\@class, \'OverviewHeader\' ) and contains(\@class, \'Created\' )]"
+            )->VerifiedClick();
+            $Selenium->find_element(
+                "//th[contains(\@class, \'OverviewHeader\' ) and contains(\@class, \'Created\' )]"
+            )->VerifiedClick();
 
             # Check for ConfigItem number
+            my $ConfigItemNumber = $ConfigItemNumbers[ $Index - 2 ];
             $Self->True(
-                $Selenium->execute_script(
-                    "return \$('a:contains($ConfigItemNumber)').length"
-                ),
-                "Test ConfigItem value $ConfigItemNumber - found",
+                $Selenium->find_element("//a[contains(text(), \'$ConfigItemNumber\' )]"),
+                "Test ConfigItem number $ConfigItemNumber - found",
             );
 
-            $Count++;
-        }
+            # Verify there is a link to CustomerITSMConfigItemZoom on ConfigItem Number column.
+            my $ConfigItemID = $ConfigItemIDs[ $Index - 2 ];
+            $ConfigItemNumber = $ConfigItemNumbers[ $Index - 2 ];
+            $Self->True(
+                $Selenium->execute_script(
+                    "return \$('tr:eq(\"1\") a:contains($ConfigItemNumber)[href*=\"ItemID=$ConfigItemID\"]').length;"
+                ),
+                "Link on ConfigItem 'Number' column correct."
+            );
 
-        # check if the number column has a link to the config item zoom
-        $Self->True(
-            $Selenium->execute_script(
-                "return \$('tr:eq(\"1\") a:contains($ConfigItemNumbers[4])[href*=\"ItemID=$ConfigItemIDs[4]\"]').length;"
-            ),
-            "Link on ConfigItem 'Number' column correct."
-        );
+            $Selenium->find_element("//a[contains(text(), \'$ConfigItemNumber\' )]")->VerifiedClick();
+
+            # check ConfigItem values on the zoom screen
+            my $Value = $TestClasses[ $Index - 2 ] . "#$ConfigItemNumber";
+            $Self->True(
+                $Selenium->execute_script(
+                    "return \$('p:contains($Value)').length"
+                ),
+                "ConfigItem field value '$Value' found in config item zoom",
+            );
+            $Selenium->go_back();
+            $Selenium->WaitFor(
+                JavaScript => 'return document.readyState === "complete";',
+            );
+        }
 
         # Delete created test ConfigItems.
         for my $ConfigItemDelete (@ConfigItemIDs) {
