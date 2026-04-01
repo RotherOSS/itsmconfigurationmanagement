@@ -245,6 +245,7 @@
         <File Permission="660" Location="scripts/test/Selenium/Agent/ITSMConfigurationManagement/AgentLinkObject.t" />
         <File Permission="660" Location="scripts/test/Selenium/Agent/ITSMConfigurationManagement/DashboardITSMConfigItemGeneric.t" />
         <File Permission="660" Location="scripts/test/Selenium/Customer/ITSMConfigurationManagement/CustomerITSMConfigItem.t" />
+        <File Permission="660" Location="scripts/test/Selenium/Customer/ITSMConfigurationManagement/CustomerITSMConfigItemZoom.t" />
         <File Permission="660" Location="scripts/test/sample/ImportExport/TemplateExport.csv" />
         <File Permission="660" Location="scripts/test/sample/ITSMConfigurationManagement/LegacyClasses.yml" />
         <File Permission="660" Location="scripts/test/sample/ITSMConfigurationManagement/Links/unittest.yml" />
