@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-03-09 13:29+0000\n"
-"PO-Revision-Date: 2026-03-09 16:00+0000\n"
+"PO-Revision-Date: 2026-04-06 18:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/opm-packages/"
 "itsm-configurationmanagement/hu/>\n"
@@ -223,7 +223,7 @@ msgstr "Objektum típusa"
 
 #. Template: AdminDynamicFieldScreen
 msgid "Filter by object type"
-msgstr ""
+msgstr "Mező szűrése objektumtípus szerint"
 
 #. JS Template: ClassImportConfirm
 msgid "The following classes will be imported"
@@ -371,7 +371,7 @@ msgstr "nyomtatta: %s – %s"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
 msgid "Referenced by"
-msgstr ""
+msgstr "Hivatkozás"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
 msgid "Invalid ClassID!"
@@ -463,11 +463,13 @@ msgstr "Egy vagy több osztály kiválasztása a választható konfigurációs e
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
 msgid "Deployment state restrictions for the config item"
-msgstr ""
+msgstr "Osztálykorlátozások a konfigurációs elemhez"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
 msgid "Select one or more deployment states to restrict selectable config items"
 msgstr ""
+"Egy vagy több osztály kiválasztása a választható konfigurációs elemek "
+"korlátozásához"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
 msgid "Dynamic (ConfigItem)"
@@ -860,6 +862,10 @@ msgstr "Meghatározza az „ITSMConfigItem” osztály alapértelmezett alobjekt
 #. SysConfig
 msgid "Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName."
 msgstr ""
+"Meghatározza a CI-k elérhető oszlopait a konfigurációs elem áttekintésében a "
+"CI-osztálytól függően. Minden egyes bejegyzésnek egy osztálynévből és a "
+"megfelelő osztályhoz rendelkezésre álló mezők tömbjéből kell állnia. A "
+"dinamikus mezőbejegyzéseknek a DynamicField_FieldName sémát kell követniük."
 
 #. SysConfig
 msgid "Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
@@ -991,7 +997,7 @@ msgstr "Minden egyes webszolgáltatáshoz (kulcs) megadható egy sor osztály (�
 
 #. SysConfig
 msgid "GenericInterface module registration for the ConfigItemCreate invoker layer."
-msgstr ""
+msgstr "GenericInterface modul regisztráció a ConfigItemFetch invoker réteghez."
 
 #. SysConfig
 msgid "GenericInterface module registration for the ConfigItemFetch invoker layer."
@@ -999,7 +1005,7 @@ msgstr "GenericInterface modul regisztráció a ConfigItemFetch invoker réteghe
 
 #. SysConfig
 msgid "GenericInterface module registration for the ConfigItemUpdate invoker layer."
-msgstr ""
+msgstr "GenericInterface modul regisztráció a ConfigItemFetch invoker réteghez."
 
 #. SysConfig
 msgid "ITSM ConfigItem"
@@ -1080,10 +1086,24 @@ msgstr "A kis konfigurációs elemek áttekintésének oszlopszűrőinek paramé
 #. SysConfig
 msgid "Parameters for the dashboard backend of the customer company config item overview of the agent interface . \"Limit\" is the number of entries per config item class shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin. \"ConfigItemKey\" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName)."
 msgstr ""
+"Paraméterek az ügyintézői felület ügyfél-felhasználó lista áttekintésének "
+"vezérlőpult háttérprogramjához. A „Limit” az alapértelmezetten megjelenített "
+"bejegyzések száma. A „Group” használható a hozzáférés korlátozásához a "
+"bővítményre (például Group: admin;csoport1;csoport2;). A „Default” azt "
+"határozza meg, hogy a bővítmény alapértelmezetten engedélyezve van, vagy "
+"hogy a felhasználónak kézzel kell engedélyeznie azt. A „CacheTTLLocal” a "
+"bővítmény gyorsítótár ideje percben."
 
 #. SysConfig
 msgid "Parameters for the dashboard backend of the customer company config item overview of the agent interface . \"Limit\" is the number of entries shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin. \"ConfigItemKey\" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName)."
 msgstr ""
+"Paraméterek az ügyintézői felület ügyfél-felhasználó lista áttekintésének "
+"vezérlőpult háttérprogramjához. A „Limit” az alapértelmezetten megjelenített "
+"bejegyzések száma. A „Group” használható a hozzáférés korlátozásához a "
+"bővítményre (például Group: admin;csoport1;csoport2;). A „Default” azt "
+"határozza meg, hogy a bővítmény alapértelmezetten engedélyezve van, vagy "
+"hogy a felhasználónak kézzel kell engedélyeznie azt. A „CacheTTLLocal” a "
+"bővítmény gyorsítótár ideje percben."
 
 #. SysConfig
 msgid "Parameters for the deployment states color in the preferences view of the agent interface."
@@ -2141,7 +2161,7 @@ msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Standard SIM"
-msgstr ""
+msgstr "Szabványos"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Nano SIM"
