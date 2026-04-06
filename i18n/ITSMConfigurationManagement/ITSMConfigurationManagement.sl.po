@@ -2,13 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-03-09 13:29+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2026-04-06 18:00+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Slovenian <http://translate.otobo.org/projects/opm-packages/"
+"itsm-configurationmanagement/sl/>\n"
+"Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 5.16\n"
 
 #. Template: AdminGenericInterfaceOperationConfigItem
 msgid "General operation data"
@@ -368,7 +372,7 @@ msgstr "natisnil %s na %s"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
 msgid "Referenced by"
-msgstr ""
+msgstr "Reference"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
 msgid "Invalid ClassID!"
@@ -460,11 +464,12 @@ msgstr "Izberite enega ali več razredov za omejitev izbirnih elementov konfigur
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
 msgid "Deployment state restrictions for the config item"
-msgstr ""
+msgstr "Omejitve razreda za element konfiguracije"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
 msgid "Select one or more deployment states to restrict selectable config items"
 msgstr ""
+"Izberite enega ali več razredov za omejitev izbirnih elementov konfiguracije"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
 msgid "Dynamic (ConfigItem)"
@@ -857,6 +862,10 @@ msgstr "Opredeljuje privzeti podobjekt razreda 'ITSMConfigItem'."
 #. SysConfig
 msgid "Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName."
 msgstr ""
+"Opredeljuje razpoložljive stolpce CI v pregledu elementa konfiguracije glede "
+"na razred CI. Vsak vnos mora biti sestavljen iz imena razreda in polja "
+"razpoložljivih polj za ustrezni razred. Vnosi dinamičnih polj morajo "
+"upoštevati shemo DynamicField_FieldName."
 
 #. SysConfig
 msgid "Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
@@ -989,6 +998,7 @@ msgstr "Za vsako spletno storitev (ključ) lahko določite niz razredov (vrednos
 #. SysConfig
 msgid "GenericInterface module registration for the ConfigItemCreate invoker layer."
 msgstr ""
+"Registracija modula GenericInterface za sloj invokatorja ConfigItemFetch."
 
 #. SysConfig
 msgid "GenericInterface module registration for the ConfigItemFetch invoker layer."
@@ -997,6 +1007,7 @@ msgstr "Registracija modula GenericInterface za sloj invokatorja ConfigItemFetch
 #. SysConfig
 msgid "GenericInterface module registration for the ConfigItemUpdate invoker layer."
 msgstr ""
+"Registracija modula GenericInterface za sloj invokatorja ConfigItemFetch."
 
 #. SysConfig
 msgid "ITSM ConfigItem"
@@ -2136,7 +2147,7 @@ msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Standard SIM"
-msgstr ""
+msgstr "Standardni"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Nano SIM"
@@ -2209,4 +2220,3 @@ msgstr "Zmogljivost baterije (Ah)"
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Maximum Load Capacity (W)"
 msgstr "Največja zmogljivost obremenitve (W)"
-
