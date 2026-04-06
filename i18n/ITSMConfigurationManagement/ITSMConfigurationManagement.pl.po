@@ -2,13 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-03-09 13:29+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2026-04-06 18:00+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Polish <http://translate.otobo.org/projects/opm-packages/itsm-"
+"configurationmanagement/pl/>\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.16\n"
 
 #. Template: AdminGenericInterfaceOperationConfigItem
 msgid "General operation data"
@@ -220,7 +224,7 @@ msgstr "Typ obiektu"
 
 #. Template: AdminDynamicFieldScreen
 msgid "Filter by object type"
-msgstr ""
+msgstr "Filtruj po typie"
 
 #. JS Template: ClassImportConfirm
 msgid "The following classes will be imported"
@@ -368,7 +372,7 @@ msgstr "wydrukowany przez %s w %s"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
 msgid "Referenced by"
-msgstr ""
+msgstr "Podpowiedzi"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
 msgid "Invalid ClassID!"
@@ -460,11 +464,12 @@ msgstr "Wybierz jedną lub więcej klas, aby ograniczyć wybierane elementy konf
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
 msgid "Deployment state restrictions for the config item"
-msgstr ""
+msgstr "Ograniczenia klasy dla elementu konfiguracji"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
 msgid "Select one or more deployment states to restrict selectable config items"
 msgstr ""
+"Wybierz jedną lub więcej klas, aby ograniczyć wybierane elementy konfiguracji"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
 msgid "Dynamic (ConfigItem)"
@@ -857,6 +862,10 @@ msgstr "Definiuje domyślny podobiekt klasy \"ITSMConfigItem\"."
 #. SysConfig
 msgid "Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName."
 msgstr ""
+"Definiuje dostępne kolumny CI w przeglądzie elementów konfiguracji w "
+"zależności od klasy CI. Każdy wpis musi składać się z nazwy klasy i tablicy "
+"dostępnych pól dla odpowiedniej klasy. Wpisy pól dynamicznych muszą być "
+"zgodne ze schematem DynamicField_FieldName."
 
 #. SysConfig
 msgid "Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
@@ -989,6 +998,7 @@ msgstr "Dla każdej usługi webservice (klucz) można zdefiniować tablicę klas
 #. SysConfig
 msgid "GenericInterface module registration for the ConfigItemCreate invoker layer."
 msgstr ""
+"Rejestracja modułu GenericInterface dla warstwy wywołującej ConfigItemFetch."
 
 #. SysConfig
 msgid "GenericInterface module registration for the ConfigItemFetch invoker layer."
@@ -997,6 +1007,7 @@ msgstr "Rejestracja modułu GenericInterface dla warstwy wywołującej ConfigIte
 #. SysConfig
 msgid "GenericInterface module registration for the ConfigItemUpdate invoker layer."
 msgstr ""
+"Rejestracja modułu GenericInterface dla warstwy wywołującej ConfigItemFetch."
 
 #. SysConfig
 msgid "ITSM ConfigItem"
@@ -1077,10 +1088,22 @@ msgstr "Parametry dla filtrów kolumn w małym przeglądzie elementów konfigura
 #. SysConfig
 msgid "Parameters for the dashboard backend of the customer company config item overview of the agent interface . \"Limit\" is the number of entries per config item class shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin. \"ConfigItemKey\" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName)."
 msgstr ""
+"Parametr okna pulpitu zgłoszeń podrzędnych interfejsu agenta. \"Limit\" jest "
+"liczbą wierszy pokazywaną domyślnie. \"Group\" jest używana do ograniczenia "
+"dostępu do wtyczki (np.: Group: admin;group1;group2;). \"Default\" określa "
+"czy wtyczka jest domyślnie włączona lub czy użytkownik może włączyć ją "
+"ręcznie. \"CacheTTLLocal\" jest czasem podanym w minutach określającym czas "
+"cache'owania wtyczki."
 
 #. SysConfig
 msgid "Parameters for the dashboard backend of the customer company config item overview of the agent interface . \"Limit\" is the number of entries shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin. \"ConfigItemKey\" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName)."
 msgstr ""
+"Parametr okna pulpitu zgłoszeń podrzędnych interfejsu agenta. \"Limit\" jest "
+"liczbą wierszy pokazywaną domyślnie. \"Group\" jest używana do ograniczenia "
+"dostępu do wtyczki (np.: Group: admin;group1;group2;). \"Default\" określa "
+"czy wtyczka jest domyślnie włączona lub czy użytkownik może włączyć ją "
+"ręcznie. \"CacheTTLLocal\" jest czasem podanym w minutach określającym czas "
+"cache'owania wtyczki."
 
 #. SysConfig
 msgid "Parameters for the deployment states color in the preferences view of the agent interface."
@@ -2136,7 +2159,7 @@ msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Standard SIM"
-msgstr ""
+msgstr "Standard"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Nano SIM"
@@ -2209,4 +2232,3 @@ msgstr "Pojemność akumulatora (Ah)"
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Maximum Load Capacity (W)"
 msgstr "Maksymalne obciążenie (W)"
-
