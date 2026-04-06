@@ -2,13 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-03-09 13:29+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2026-04-06 18:00+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Swedish <http://translate.otobo.org/projects/opm-packages/"
+"itsm-configurationmanagement/sv/>\n"
+"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16\n"
 
 #. Template: AdminGenericInterfaceOperationConfigItem
 msgid "General operation data"
@@ -220,7 +223,7 @@ msgstr "Objekttyp"
 
 #. Template: AdminDynamicFieldScreen
 msgid "Filter by object type"
-msgstr ""
+msgstr "Filtrera på typ"
 
 #. JS Template: ClassImportConfirm
 msgid "The following classes will be imported"
@@ -368,7 +371,7 @@ msgstr "utskriven av %s vid %s"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
 msgid "Referenced by"
-msgstr ""
+msgstr "Referens"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
 msgid "Invalid ClassID!"
@@ -460,11 +463,12 @@ msgstr "Välj en eller flera klasser för att begränsa valbara konfigurationsob
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
 msgid "Deployment state restrictions for the config item"
-msgstr ""
+msgstr "Klassbegränsningar för konfigurationsobjektet"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
 msgid "Select one or more deployment states to restrict selectable config items"
 msgstr ""
+"Välj en eller flera klasser för att begränsa valbara konfigurationsobjekt"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
 msgid "Dynamic (ConfigItem)"
@@ -857,6 +861,10 @@ msgstr "Definierar standardunderobjektet för klassen 'ITSMConfigItem'."
 #. SysConfig
 msgid "Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName."
 msgstr ""
+"Definierar de tillgängliga kolumnerna för CI:er i konfigurationsobjektets "
+"översikt beroende på CI-klassen. Varje post måste bestå av ett klassnamn och "
+"en matris med tillgängliga fält för motsvarande klass. Dynamiska fältposter "
+"måste följa schemat DynamicField_FieldName."
 
 #. SysConfig
 msgid "Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
@@ -989,6 +997,7 @@ msgstr "För varje webbtjänst (nyckel) kan en array av klasser (värde) definie
 #. SysConfig
 msgid "GenericInterface module registration for the ConfigItemCreate invoker layer."
 msgstr ""
+"Registrering av GenericInterface-modul för ConfigItemFetch-inkallningslagret."
 
 #. SysConfig
 msgid "GenericInterface module registration for the ConfigItemFetch invoker layer."
@@ -997,6 +1006,7 @@ msgstr "Registrering av GenericInterface-modul för ConfigItemFetch-inkallningsl
 #. SysConfig
 msgid "GenericInterface module registration for the ConfigItemUpdate invoker layer."
 msgstr ""
+"Registrering av GenericInterface-modul för ConfigItemFetch-inkallningslagret."
 
 #. SysConfig
 msgid "ITSM ConfigItem"
@@ -2136,7 +2146,7 @@ msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Standard SIM"
-msgstr ""
+msgstr "Standard"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Nano SIM"
@@ -2209,4 +2219,3 @@ msgstr "Batterikapacitet (Ah)"
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Maximum Load Capacity (W)"
 msgstr "Maximal lastkapacitet (W)"
-
