@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-03-09 13:29+0000\n"
-"PO-Revision-Date: 2026-03-09 16:00+0000\n"
+"PO-Revision-Date: 2026-04-06 20:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Norwegian Bokmål <http://translate.otobo.org/projects/opm-"
 "packages/itsm-configurationmanagement/nb_NO/>\n"
@@ -223,7 +223,7 @@ msgstr "Objekttype"
 
 #. Template: AdminDynamicFieldScreen
 msgid "Filter by object type"
-msgstr ""
+msgstr "Filtrer ut fra type"
 
 #. JS Template: ClassImportConfirm
 msgid "The following classes will be imported"
@@ -371,7 +371,7 @@ msgstr "skrevet ut av %s på %s"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
 msgid "Referenced by"
-msgstr ""
+msgstr "Referanse"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
 msgid "Invalid ClassID!"
@@ -463,11 +463,12 @@ msgstr "Velg én eller flere klasser for å begrense valgbare konfigurasjonselem
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
 msgid "Deployment state restrictions for the config item"
-msgstr ""
+msgstr "Klassebegrensninger for konfigurasjonselementet"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
 msgid "Select one or more deployment states to restrict selectable config items"
 msgstr ""
+"Velg én eller flere klasser for å begrense valgbare konfigurasjonselementer"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
 msgid "Dynamic (ConfigItem)"
@@ -860,6 +861,10 @@ msgstr "Definerer standardunderobjektet for klassen 'ITSMConfigItem'."
 #. SysConfig
 msgid "Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName."
 msgstr ""
+"Definerer tilgjengelige kolonner med CI-er i oversikten over "
+"konfigurasjonselementer avhengig av CI-klassen. Hver oppføring må bestå av "
+"et klassenavn og en matrise med tilgjengelige felt for den tilsvarende "
+"klassen. Dynamiske feltoppføringer må følge skjemaet DynamicField_FieldName."
 
 #. SysConfig
 msgid "Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
@@ -992,6 +997,8 @@ msgstr "For hver webtjeneste (nøkkel) kan det defineres en rekke klasser (verdi
 #. SysConfig
 msgid "GenericInterface module registration for the ConfigItemCreate invoker layer."
 msgstr ""
+"Registrering av GenericInterface-modulen for ConfigItemFetch-"
+"invokeringslaget."
 
 #. SysConfig
 msgid "GenericInterface module registration for the ConfigItemFetch invoker layer."
@@ -1000,6 +1007,8 @@ msgstr "Registrering av GenericInterface-modulen for ConfigItemFetch-invokerings
 #. SysConfig
 msgid "GenericInterface module registration for the ConfigItemUpdate invoker layer."
 msgstr ""
+"Registrering av GenericInterface-modulen for ConfigItemFetch-"
+"invokeringslaget."
 
 #. SysConfig
 msgid "ITSM ConfigItem"
@@ -1080,10 +1089,22 @@ msgstr "Parametere for kolonnefiltrene i oversikten over små konfigurasjonselem
 #. SysConfig
 msgid "Parameters for the dashboard backend of the customer company config item overview of the agent interface . \"Limit\" is the number of entries per config item class shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin. \"ConfigItemKey\" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName)."
 msgstr ""
+"Parametere for dashbord-backend av kundebrukerlisteoversikten over "
+"agentgrensesnittet. \"Limit\" er antallet oppføringer som vises som "
+"standard. \"Gruppe\" brukes til å begrense tilgangen til plugin-modulen "
+"(f.eks. Group: admin;group1;group2;). \"Standard\" avgjør om plugin-en er "
+"aktivert som standard eller om brukeren må aktivere den manuelt. "
+"\"CacheTTLLocal\" er hurtigbuffertiden i minutter for plugin."
 
 #. SysConfig
 msgid "Parameters for the dashboard backend of the customer company config item overview of the agent interface . \"Limit\" is the number of entries shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin. \"ConfigItemKey\" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName)."
 msgstr ""
+"Parametere for dashbord-backend av kundebrukerlisteoversikten over "
+"agentgrensesnittet. \"Limit\" er antallet oppføringer som vises som "
+"standard. \"Gruppe\" brukes til å begrense tilgangen til plugin-modulen "
+"(f.eks. Group: admin;group1;group2;). \"Standard\" avgjør om plugin-en er "
+"aktivert som standard eller om brukeren må aktivere den manuelt. "
+"\"CacheTTLLocal\" er hurtigbuffertiden i minutter for plugin."
 
 #. SysConfig
 msgid "Parameters for the deployment states color in the preferences view of the agent interface."
@@ -2141,7 +2162,7 @@ msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Standard SIM"
-msgstr ""
+msgstr "Standard"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Nano SIM"
