@@ -2,13 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-03-09 13:29+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2026-04-06 18:00+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Hindi <http://translate.otobo.org/projects/opm-packages/itsm-"
+"configurationmanagement/hi/>\n"
+"Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.16\n"
 
 #. Template: AdminGenericInterfaceOperationConfigItem
 msgid "General operation data"
@@ -140,7 +143,7 @@ msgstr ""
 
 #. Template: AgentITSMConfigItemHistory
 msgid "Createtime"
-msgstr ""
+msgstr "समय बनाएँ"
 
 #. Template: AgentITSMConfigItemHistory
 msgid "Zoom view"
@@ -368,7 +371,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
 msgid "Referenced by"
-msgstr ""
+msgstr "संदर्भ में"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
 msgid "Invalid ClassID!"
@@ -540,7 +543,7 @@ msgstr ""
 
 #. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
 msgid "Expired"
-msgstr ""
+msgstr "समय सीमा समाप्त"
 
 #. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
 msgid "Maintenance"
@@ -813,6 +816,8 @@ msgstr ""
 #. SysConfig
 msgid "Defines the default config item attribute for config item sorting of the config item search result of the agent interface."
 msgstr ""
+"प्रतिनिधि अंतरफलक के टिकट के खोज परिणाम में तयशुदा टिकट की छँटाई के लिए टिकट की "
+"विशेषता को परिभाषित करता है।"
 
 #. SysConfig
 msgid "Defines the default config item attribute for config item sorting of the config item search result of the customer interface."
@@ -825,14 +830,20 @@ msgstr ""
 #. SysConfig
 msgid "Defines the default config item order in the config item search result of the agent interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"प्रतिनिधि अंतरफलक की खोज परिणाम में तयशुदा टिकट के क्रम को परिभाषित करता है। "
+"ऊपर:शीर्ष पर सबसे पुरानी। नीचे:शीर्ष पर नवीनतम।"
 
 #. SysConfig
 msgid "Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"ग्राहक अंतरफलक में एक खोज परिणाम के टिकट के तयशुदा क्रम को परिभाषित करता है। ऊपर:शीर्ष "
+"पर सबसे पुरानी। नीचे:शीर्ष पर नवीनतम।"
 
 #. SysConfig
 msgid "Defines the default config item order in the config item search result of the this operation. Up: oldest on top. Down: latest on top."
 msgstr ""
+"प्रतिनिधि अंतरफलक की खोज परिणाम में तयशुदा टिकट के क्रम को परिभाषित करता है। "
+"ऊपर:शीर्ष पर सबसे पुरानी। नीचे:शीर्ष पर नवीनतम।"
 
 #. SysConfig
 msgid "Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName."
@@ -845,6 +856,7 @@ msgstr ""
 #. SysConfig
 msgid "Defines the default shown config item search attribute for config item search screen."
 msgstr ""
+"टिकट की खोज स्क्रीन के लिए दिखाई टिकट की तयशुदा खोज विशेषता को परिभाषित करता है।"
 
 #. SysConfig
 msgid "Defines the default shown config item search attribute for config item search screen. Example: \"Key\" must have the name of the Dynamic Field in this case 'X', \"Content\" must have the value of the Dynamic Field depending on the Dynamic Field type,  Text: 'a text', Dropdown: '1', Date/Time: 'Search_DynamicField_XTimeSlotStartYear=1974; Search_DynamicField_XTimeSlotStartMonth=01; Search_DynamicField_XTimeSlotStartDay=26; Search_DynamicField_XTimeSlotStartHour=00; Search_DynamicField_XTimeSlotStartMinute=00; Search_DynamicField_XTimeSlotStartSecond=00; Search_DynamicField_XTimeSlotStopYear=2013; Search_DynamicField_XTimeSlotStopMonth=01; Search_DynamicField_XTimeSlotStopDay=26; Search_DynamicField_XTimeSlotStopHour=23; Search_DynamicField_XTimeSlotStopMinute=59; Search_DynamicField_XTimeSlotStopSecond=59;' and or 'Search_DynamicField_XTimePointFormat=week; Search_DynamicField_XTimePointStart=Before; Search_DynamicField_XTimePointValue=7';."
@@ -861,6 +873,8 @@ msgstr ""
 #. SysConfig
 msgid "Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
 msgstr ""
+"समृद्ध पाठ संपादक घटक के लिए चौड़ाई को परिभाषित करता है।(पिक्सेल) संख्या या प्रतिशत मान "
+"(सापेक्ष) को लिखें।"
 
 #. SysConfig
 msgid "Defines the number of rows for the CI definition editor in the admin interface."
@@ -961,10 +975,12 @@ msgstr ""
 #. SysConfig
 msgid "Enables configuration item bulk action feature for the agent frontend to work on more than one configuration item at a time."
 msgstr ""
+"एक समय में एक से अधिक टिकटों पर काम करने के लिए प्रतिनिधि दृश्यपटल की टिकट थोक "
+"कार्रवाई सुविधा को सक्षम बनाता है।"
 
 #. SysConfig
 msgid "Enables configuration item bulk action feature only for the listed groups."
-msgstr ""
+msgstr "केवल सूचीबद्ध समूहों के लिए टिकट थोक कार्रवाई सुविधा को सक्षम बनाता है।"
 
 #. SysConfig
 msgid "Enables/disables the functionality to check ITSM onfiguration items for unique names. Before enabling this option you should check your system for already existing config items with duplicate names. You can do this with the console command Admin::ITSM::ConfigItem::ListDuplicates."
@@ -1053,10 +1069,13 @@ msgstr ""
 #. SysConfig
 msgid "Number of config items to be displayed in each page of a search result in the agent interface."
 msgstr ""
+"प्रतिनिधि अंतरफलक में एक खोज परिणाम के प्रत्येक पृष्ठ में प्रदर्शित होने के लिए टिकटों की संख्या"
+"।"
 
 #. SysConfig
 msgid "Number of config items to be displayed in each page of a search result in the customer interface."
 msgstr ""
+"ग्राहक अंतरफलक में एक खोज परिणाम के प्रत्येक पृष्ठ में प्रदर्शित होने के लिए टिकटों की संख्या।"
 
 #. SysConfig
 msgid "Objects to search for, how many entries and which attributs to show. ConfigItem attributes have to explicitly be stored via Elasticsearch."
@@ -1133,10 +1152,14 @@ msgstr ""
 #. SysConfig
 msgid "Required permissions to use the ITSM configuration item screen in the agent interface."
 msgstr ""
+"प्रतिनिधि अंतरफलक में जूम टिकट के टिकट टिप्पणी स्क्रीन का उपयोग करने के लिए आवश्यक "
+"अनुमतियां।"
 
 #. SysConfig
 msgid "Required permissions to use the ITSM configuration item search screen in the agent interface."
 msgstr ""
+"प्रतिनिधि अंतरफलक में जूम टिकट के टिकट टिप्पणी स्क्रीन का उपयोग करने के लिए आवश्यक "
+"अनुमतियां।"
 
 #. SysConfig
 msgid "Required permissions to use the ITSM configuration item search screen in the customer interface."
@@ -1145,30 +1168,43 @@ msgstr ""
 #. SysConfig
 msgid "Required permissions to use the ITSM configuration item tree view screen in the agent interface."
 msgstr ""
+"प्रतिनिधि अंतरफलक में टिकट मुक्त पाठ स्क्रीन का उपयोग करने के लिए आवश्यक अनुमतियां।"
 
 #. SysConfig
 msgid "Required permissions to use the ITSM configuration item zoom screen in the agent interface."
 msgstr ""
+"प्रतिनिधि अंतरफलक में जूम टिकट के टिकट टिप्पणी स्क्रीन का उपयोग करने के लिए आवश्यक "
+"अनुमतियां।"
 
 #. SysConfig
 msgid "Required permissions to use the add ITSM configuration item screen in the agent interface."
 msgstr ""
+"प्रतिनिधि अंतरफलक में जूम टिकट के टिकट टिप्पणी स्क्रीन का उपयोग करने के लिए आवश्यक "
+"अनुमतियां।"
 
 #. SysConfig
 msgid "Required permissions to use the bulk ITSM configuration item screen in the agent interface."
 msgstr ""
+"प्रतिनिधि अंतरफलक में जूम टिकट के टिकट टिप्पणी स्क्रीन का उपयोग करने के लिए आवश्यक "
+"अनुमतियां।"
 
 #. SysConfig
 msgid "Required permissions to use the edit ITSM configuration item screen in the agent interface."
 msgstr ""
+"प्रतिनिधि अंतरफलक में जूम टिकट के टिकट टिप्पणी स्क्रीन का उपयोग करने के लिए आवश्यक "
+"अनुमतियां।"
 
 #. SysConfig
 msgid "Required permissions to use the history ITSM configuration item screen in the agent interface."
 msgstr ""
+"प्रतिनिधि अंतरफलक में जूम टिकट के टिकट टिप्पणी स्क्रीन का उपयोग करने के लिए आवश्यक "
+"अनुमतियां।"
 
 #. SysConfig
 msgid "Required permissions to use the print ITSM configuration item screen in the agent interface."
 msgstr ""
+"प्रतिनिधि अंतरफलक में जूम टिकट के टिकट टिप्पणी स्क्रीन का उपयोग करने के लिए आवश्यक "
+"अनुमतियां।"
 
 #. SysConfig
 msgid "Required privileges to delete config items."
@@ -1201,6 +1237,8 @@ msgstr ""
 #. SysConfig
 msgid "Shows a link in the menu to access the history of a configuration item in the its zoom view of the agent interface."
 msgstr ""
+"प्रतिनिधि अंतरफलक में हर टिकट के अवलोकन में टिकट इतिहास देखने के लिए विकल्प सूची में एक "
+"कड़ी दिखाता है।"
 
 #. SysConfig
 msgid "Shows a link in the menu to delete a configuration item in its zoom view of the agent interface."
@@ -1225,6 +1263,8 @@ msgstr ""
 #. SysConfig
 msgid "Shows a link in the menu to go back in the configuration item zoom view of the agent interface."
 msgstr ""
+"प्रतिनिधि अंतरफलक के टिकट अवलोकन में एक टिकट ज़ूम करने के लिए विकल्प सूची में एक कड़ी "
+"दिखाता है।"
 
 #. SysConfig
 msgid "Shows a link in the menu to print a configuration item in the its zoom view of the agent interface."
@@ -1236,7 +1276,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Shows the config item history (reverse ordered) in the agent interface."
-msgstr ""
+msgstr "प्रतिनिधि अंतरफलक में टिकट इतिहास(विपरीत आदेश) दिखाता है।"
 
 #. SysConfig
 msgid "The default category which is shown, if none is selected."
@@ -1500,7 +1540,7 @@ msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Outputs"
-msgstr ""
+msgstr "आउटपुट"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Thunderbolt"
@@ -1536,7 +1576,7 @@ msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Bus Interface"
-msgstr ""
+msgstr "अंतरफलक"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Graphics card"
@@ -1620,7 +1660,7 @@ msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Service Agreement"
-msgstr ""
+msgstr "सेवा लेवल समझौता"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Non-Disclosure Agreement (NDA)"
@@ -2136,7 +2176,7 @@ msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Standard SIM"
-msgstr ""
+msgstr "मानक"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Nano SIM"
@@ -2209,4 +2249,3 @@ msgstr ""
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Maximum Load Capacity (W)"
 msgstr ""
-
