@@ -2,13 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-03-09 13:29+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2026-04-06 18:00+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Spanish <http://translate.otobo.org/projects/opm-packages/"
+"itsm-configurationmanagement/es/>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16\n"
 
 #. Template: AdminGenericInterfaceOperationConfigItem
 msgid "General operation data"
@@ -220,7 +223,7 @@ msgstr "Tipo de objeto"
 
 #. Template: AdminDynamicFieldScreen
 msgid "Filter by object type"
-msgstr ""
+msgstr "Filtrar por tipo"
 
 #. JS Template: ClassImportConfirm
 msgid "The following classes will be imported"
@@ -368,7 +371,7 @@ msgstr "impreso por %s en %s"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
 msgid "Referenced by"
-msgstr ""
+msgstr "Referencia"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
 msgid "Invalid ClassID!"
@@ -460,11 +463,13 @@ msgstr "Seleccione una o más clases para restringir los elementos de configurac
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
 msgid "Deployment state restrictions for the config item"
-msgstr ""
+msgstr "Restricciones de clase para el elemento de configuración"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
 msgid "Select one or more deployment states to restrict selectable config items"
 msgstr ""
+"Seleccione una o más clases para restringir los elementos de configuración "
+"seleccionables"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
 msgid "Dynamic (ConfigItem)"
@@ -857,6 +862,11 @@ msgstr "Define el subobjeto por default de la clase 'ITSMConfigItem'."
 #. SysConfig
 msgid "Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName."
 msgstr ""
+"Define las columnas disponibles de CIs en la vista general de elementos de "
+"configuración en función de la clase de CI. Cada entrada debe constar de un "
+"nombre de clase y una matriz de campos disponibles para la clase "
+"correspondiente. Las entradas de campos dinámicos deben respetar el esquema "
+"DynamicField_FieldName."
 
 #. SysConfig
 msgid "Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
@@ -989,6 +999,7 @@ msgstr "Para cada webservice (clave) se puede definir un array de clases (valor)
 #. SysConfig
 msgid "GenericInterface module registration for the ConfigItemCreate invoker layer."
 msgstr ""
+"Registro del módulo GenericInterface para la capa invocadora ConfigItemFetch."
 
 #. SysConfig
 msgid "GenericInterface module registration for the ConfigItemFetch invoker layer."
@@ -997,6 +1008,7 @@ msgstr "Registro del módulo GenericInterface para la capa invocadora ConfigItem
 #. SysConfig
 msgid "GenericInterface module registration for the ConfigItemUpdate invoker layer."
 msgstr ""
+"Registro del módulo GenericInterface para la capa invocadora ConfigItemFetch."
 
 #. SysConfig
 msgid "ITSM ConfigItem"
@@ -1077,10 +1089,22 @@ msgstr "Parámetros para los filtros de columna de la vista general de elementos
 #. SysConfig
 msgid "Parameters for the dashboard backend of the customer company config item overview of the agent interface . \"Limit\" is the number of entries per config item class shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin. \"ConfigItemKey\" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName)."
 msgstr ""
+"Parametros del backend del panel principal de la vista del ticket esclavo "
+"del interface del agente. \"Limite\" es el número de entrada mostradas por "
+"defecto. \"Grupo\"es usado para restringir el acceso al plugin (Ejm. Grupo: "
+"admin;group1;group2;). \"Defecto\" determina si el plugin es habilitado por "
+"defecto o si el usuario necesita habilitarlo manualmente. \"CacheTTLLocal\" "
+"es el tiempo de cache en minutos para el plugin"
 
 #. SysConfig
 msgid "Parameters for the dashboard backend of the customer company config item overview of the agent interface . \"Limit\" is the number of entries shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin. \"ConfigItemKey\" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName)."
 msgstr ""
+"Parametros del backend del panel principal de la vista del ticket esclavo "
+"del interface del agente. \"Limite\" es el número de entrada mostradas por "
+"defecto. \"Grupo\"es usado para restringir el acceso al plugin (Ejm. Grupo: "
+"admin;group1;group2;). \"Defecto\" determina si el plugin es habilitado por "
+"defecto o si el usuario necesita habilitarlo manualmente. \"CacheTTLLocal\" "
+"es el tiempo de cache en minutos para el plugin"
 
 #. SysConfig
 msgid "Parameters for the deployment states color in the preferences view of the agent interface."
@@ -2136,7 +2160,7 @@ msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Standard SIM"
-msgstr ""
+msgstr "Estándar"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Nano SIM"
@@ -2209,4 +2233,3 @@ msgstr "Capacidad de la batería (Ah)"
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Maximum Load Capacity (W)"
 msgstr "Capacidad de carga máxima (W)"
-
