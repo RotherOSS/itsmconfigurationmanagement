@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-03-09 13:29+0000\n"
-"PO-Revision-Date: 2026-03-09 16:00+0000\n"
+"PO-Revision-Date: 2026-04-06 20:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: German <http://translate.otobo.org/projects/opm-packages/itsm-"
 "configurationmanagement/de/>\n"
@@ -223,7 +223,7 @@ msgstr "Objekt-Typ"
 
 #. Template: AdminDynamicFieldScreen
 msgid "Filter by object type"
-msgstr ""
+msgstr "Feld nach Objekttyp filtern"
 
 #. JS Template: ClassImportConfirm
 msgid "The following classes will be imported"
@@ -371,7 +371,7 @@ msgstr "gedruckt von %s am %s"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
 msgid "Referenced by"
-msgstr ""
+msgstr "Referenz"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
 msgid "Invalid ClassID!"
@@ -860,6 +860,11 @@ msgstr "Definiert das Standard-Unterobjekt der Klasse 'ITSMConfigItem'."
 #. SysConfig
 msgid "Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName."
 msgstr ""
+"Definiert die verfügbaren Spalten der CIs in der Konfigurationsübersicht in "
+"Abhängigkeit von der CI-Klasse. Jeder Eintrag muss aus einem Klassennamen "
+"und einem Array von verfügbaren Feldern für die entsprechende Klasse "
+"bestehen. Dynamische Feldeinträge müssen das Schema DynamicField_FieldName "
+"einhalten."
 
 #. SysConfig
 msgid "Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
@@ -992,6 +997,7 @@ msgstr "Für jeden Webservice (Schlüssel) kann ein Array von Klassen (Wert) def
 #. SysConfig
 msgid "GenericInterface module registration for the ConfigItemCreate invoker layer."
 msgstr ""
+"GenericInterface-Modulregistrierung für die ConfigItemFetch-Aufruferschicht."
 
 #. SysConfig
 msgid "GenericInterface module registration for the ConfigItemFetch invoker layer."
@@ -1000,6 +1006,7 @@ msgstr "GenericInterface-Modulregistrierung für die ConfigItemFetch-Aufrufersch
 #. SysConfig
 msgid "GenericInterface module registration for the ConfigItemUpdate invoker layer."
 msgstr ""
+"GenericInterface-Modulregistrierung für die ConfigItemFetch-Aufruferschicht."
 
 #. SysConfig
 msgid "ITSM ConfigItem"
@@ -1080,10 +1087,22 @@ msgstr "Parameter für die Spaltenfilter der kleinen Konfigurationsübersicht. B
 #. SysConfig
 msgid "Parameters for the dashboard backend of the customer company config item overview of the agent interface . \"Limit\" is the number of entries per config item class shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin. \"ConfigItemKey\" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName)."
 msgstr ""
+"Parameter für das Dashboard-Backend des Kundenlisten-Widgets im "
+"Agentenbereich. \"Limit\" bestimmt die Anzahl der standardmäßig angezeigten "
+"Einträge. Über \"Group\" kann der Zugriff auf das Plugin beschränkt werden "
+"(z. B. Group: admin;group1;group2;). \"Default\" gibt an, ob das Plugin "
+"standardmäßig aktiviert sein soll oder ob der Nutzer es manuell aktivieren "
+"muss. \"CacheTTLLocal\" bestimmt die Laufzeit des Plugin-Caches in Minuten."
 
 #. SysConfig
 msgid "Parameters for the dashboard backend of the customer company config item overview of the agent interface . \"Limit\" is the number of entries shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin. \"ConfigItemKey\" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName)."
 msgstr ""
+"Parameter für das Dashboard-Backend des Kundenlisten-Widgets im "
+"Agentenbereich. \"Limit\" bestimmt die Anzahl der standardmäßig angezeigten "
+"Einträge. Über \"Group\" kann der Zugriff auf das Plugin beschränkt werden "
+"(z. B. Group: admin;group1;group2;). \"Default\" gibt an, ob das Plugin "
+"standardmäßig aktiviert sein soll oder ob der Nutzer es manuell aktivieren "
+"muss. \"CacheTTLLocal\" bestimmt die Laufzeit des Plugin-Caches in Minuten."
 
 #. SysConfig
 msgid "Parameters for the deployment states color in the preferences view of the agent interface."
@@ -2141,7 +2160,7 @@ msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Standard SIM"
-msgstr ""
+msgstr "Standard"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Nano SIM"
