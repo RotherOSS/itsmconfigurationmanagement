@@ -2,13 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-03-09 13:29+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2026-04-06 18:00+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Malay <http://translate.otobo.org/projects/opm-packages/itsm-"
+"configurationmanagement/ms/>\n"
+"Language: ms\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.16\n"
 
 #. Template: AdminGenericInterfaceOperationConfigItem
 msgid "General operation data"
@@ -16,11 +19,11 @@ msgstr ""
 
 #. Template: AdminGenericInterfaceOperationConfigItem
 msgid "Settings for incoming request data"
-msgstr ""
+msgstr "Pemetaan untuk permintaan masuk data."
 
 #. Template: AdminGenericInterfaceOperationConfigItem
 msgid "Settings for outgoing response data"
-msgstr ""
+msgstr "Pemetaan untuk tindak balas data yang keluar."
 
 #. Template: AdminITSMConfigItem
 msgid "Config Item Management"
@@ -32,7 +35,7 @@ msgstr "Ubah definisi kelas"
 
 #. Template: AdminITSMConfigItem
 msgid "Change role definition"
-msgstr ""
+msgstr "Ubah definisi kelas"
 
 #. Template: AdminITSMConfigItem
 msgid "Ready2Import Class Bundles"
@@ -52,11 +55,11 @@ msgstr ""
 
 #. Template: AdminITSMConfigItem
 msgid "Config Item Class"
-msgstr ""
+msgstr "Barangan Konfigurasi"
 
 #. Template: AdminITSMConfigItem
 msgid "Config Item Role"
-msgstr ""
+msgstr "Config Item"
 
 #. Template: AgentITSMConfigItemAdd
 msgid "Config Item"
@@ -116,11 +119,13 @@ msgstr "Bilangan versi"
 
 #. Template: AgentITSMConfigItemEdit
 msgid "Version number of this config item"
-msgstr ""
+msgstr "Nama config item ini"
 
 #. Template: AgentITSMConfigItemEdit
 msgid "Version Number is already in use by the ConfigItems with the following Number(s): %s"
 msgstr ""
+"Nama sudah digunakan oleh ConfigItems dengan Nombor(nombor-nombor) berikut: "
+"%s"
 
 #. Template: AgentITSMConfigItemEdit
 msgid "Deployment State"
@@ -220,7 +225,7 @@ msgstr "Jenis objek"
 
 #. Template: AdminDynamicFieldScreen
 msgid "Filter by object type"
-msgstr ""
+msgstr "Tapis mengikut jenis"
 
 #. JS Template: ClassImportConfirm
 msgid "The following classes will be imported"
@@ -252,7 +257,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemBulk.pm
 msgid "No ConfigItemID is given!"
-msgstr ""
+msgstr "Tiada ItemID diberikan!"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemBulk.pm
 msgid "You need at least one selected Configuration Item!"
@@ -272,7 +277,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemDelete.pm
 msgid "Was not able to delete the configitem ID %s!"
-msgstr ""
+msgstr "Tidak mampu untuk membuang bahasa %s itu!"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemDelete.pm
 msgid "No version found for ConfigItemID %s!"
@@ -284,15 +289,15 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemEdit.pm
 msgid "No access is given!"
-msgstr ""
+msgstr "Tiada %s diberikan!"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
 msgid "Can't show history, no ConfigItemID is given!"
-msgstr ""
+msgstr "Tidak boleh menunjukkan sejarah, sebagai tiada ItemID yang diberikan!"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
 msgid "Can't show history, no access rights given!"
-msgstr ""
+msgstr "Tidak boleh menunjukkan sejarah, sebagai tiada ItemID yang diberikan!"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
 msgid "New ConfigItem (ID=%s)"
@@ -368,7 +373,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
 msgid "Referenced by"
-msgstr ""
+msgstr "Rujukan(en)"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
 msgid "Invalid ClassID!"
@@ -376,7 +381,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
 msgid "No ClassID is given!"
-msgstr ""
+msgstr "Tiada %s diberikan!"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
 msgid "No access rights for this class given!"
@@ -761,10 +766,14 @@ msgstr ""
 #. SysConfig
 msgid "Default data to use on attribute for config item search screen. Example: \"ITSMConfigItemCreateTimePointFormat=year;ITSMConfigItemCreateTimePointStart=Last;ITSMConfigItemCreateTimePoint=2;\"."
 msgstr ""
+"Data asal digunakan untuk sifat bagi skrin carian tiket. Contoh: "
+"TicketCreateTimePointFormat=tahun;TicketCreateTimePointStart=Terakhir;TicketCreateTimePoint=2;\"."
 
 #. SysConfig
 msgid "Default data to use on attribute for config item search screen. Example: \"ITSMConfigItemCreateTimeStartYear=2010;ITSMConfigItemCreateTimeStartMonth=10;ITSMConfigItemCreateTimeStartDay=4;ITSMConfigItemCreateTimeStopYear=2010;ITSMConfigItemCreateTimeStopMonth=11;ITSMConfigItemCreateTimeStopDay=3;\"."
 msgstr ""
+"Data asal digunakan untuk sifat bagi skrin carian tiket. Contoh: "
+"TicketCrateTimeStartYear=2010;TicketCreateTimeStartMonth=10;TicketCreateTimeStartDay=4;TicketCreateTimeStopYear=2010;TicketCreateTimeStopMonth=11;TicketCreateTimeStopDay=3;\"."
 
 #. SysConfig
 msgid "Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
@@ -793,6 +802,8 @@ msgstr "Mentakrifkan kebenaran yang diperlukan untuk mencari barangan konfiguras
 #. SysConfig
 msgid "Defines Required permissions to set ITSM configuration items using the Generic Interface."
 msgstr ""
+"Mentakrifkan kebenaran yang diperlukan untuk mendapatkan barangan "
+"konfigurasi ITSM menggunakan Antara Muka Generik."
 
 #. SysConfig
 msgid "Defines an overview module to show the small view of a configuration item list."
@@ -813,6 +824,8 @@ msgstr ""
 #. SysConfig
 msgid "Defines the default config item attribute for config item sorting of the config item search result of the agent interface."
 msgstr ""
+"Mentakrifkan sifat tiket asal untuk aturan tiket dalam hasil pencarian tiket "
+"dari paparan ejen."
 
 #. SysConfig
 msgid "Defines the default config item attribute for config item sorting of the config item search result of the customer interface."
@@ -821,18 +834,26 @@ msgstr ""
 #. SysConfig
 msgid "Defines the default config item attribute for config item sorting of the config item search result of this operation."
 msgstr ""
+"Mentakrifkan sifat tiket default untuk pengkelasan tiket dalam hasil carian "
+"tiket operasi ini."
 
 #. SysConfig
 msgid "Defines the default config item order in the config item search result of the agent interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"Mentakrifkan turutan tiket asal dalam hasil carian tiket dari paparan ejen. "
+"Atas: yang lama di atas. Bawah: yang terbaru di atas."
 
 #. SysConfig
 msgid "Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"Mentakrifkan turutan tiket asal dalam hasil carian dari paparan pelanggan. "
+"Atas: yang lama di atas. Bawah: yang terbaru di atas."
 
 #. SysConfig
 msgid "Defines the default config item order in the config item search result of the this operation. Up: oldest on top. Down: latest on top."
 msgstr ""
+"Mentakrifkan arahan tiket default untuk pengkelasan tiket dalam hasil carian "
+"tiket operasi ini. Atas: Tertua di atas. Bawah: Terbaru di atas."
 
 #. SysConfig
 msgid "Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName."
@@ -845,10 +866,31 @@ msgstr ""
 #. SysConfig
 msgid "Defines the default shown config item search attribute for config item search screen."
 msgstr ""
+"Mentakrifkan sifat pencarian tiket yang ditunjuk yang asal untuk skrin "
+"carian tiket."
 
 #. SysConfig
 msgid "Defines the default shown config item search attribute for config item search screen. Example: \"Key\" must have the name of the Dynamic Field in this case 'X', \"Content\" must have the value of the Dynamic Field depending on the Dynamic Field type,  Text: 'a text', Dropdown: '1', Date/Time: 'Search_DynamicField_XTimeSlotStartYear=1974; Search_DynamicField_XTimeSlotStartMonth=01; Search_DynamicField_XTimeSlotStartDay=26; Search_DynamicField_XTimeSlotStartHour=00; Search_DynamicField_XTimeSlotStartMinute=00; Search_DynamicField_XTimeSlotStartSecond=00; Search_DynamicField_XTimeSlotStopYear=2013; Search_DynamicField_XTimeSlotStopMonth=01; Search_DynamicField_XTimeSlotStopDay=26; Search_DynamicField_XTimeSlotStopHour=23; Search_DynamicField_XTimeSlotStopMinute=59; Search_DynamicField_XTimeSlotStopSecond=59;' and or 'Search_DynamicField_XTimePointFormat=week; Search_DynamicField_XTimePointStart=Before; Search_DynamicField_XTimePointValue=7';."
 msgstr ""
+"Mentakrifkan default yang ditunjukkan tiket sifat pencarian skrin carian "
+"tiket. Contoh: \"Utama\" mesti mempunyai nama medan dinamik dalam kes ini "
+"'X', \"Kandungan\" mesti mempunyai nilai medan dinamik bergantung kepada "
+"jenis Medan Dinamik, Teks: 'teks', jatuh turun: '1', Tarikh/Masa: "
+"'Search_DynamicField_XTimeSlotStartYear = 1974;\n"
+"Search_DynamicField_XTimeSlotStartMonth=01; "
+"Search_DynamicField_XTimeSlotStartDay=26; "
+"Search_DynamicField_XTimeSlotStartHour=00; "
+"Search_DynamicField_XTimeSlotStartMinute=00; "
+"Search_DynamicField_XTimeSlotStartSecond=00; "
+"Search_DynamicField_XTimeSlotStopYear=2013; "
+"Search_DynamicField_XTimeSlotStopMonth=01; "
+"Search_DynamicField_XTimeSlotStopDay=26; "
+"Search_DynamicField_XTimeSlotStopHour=23; "
+"Search_DynamicField_XTimeSlotStopMinute=59; "
+"Search_DynamicField_XTimeSlotStopSecond=59;' and or "
+"'Search_DynamicField_XTimePointFormat=week; "
+"Search_DynamicField_XTimePointStart=Before; "
+"Search_DynamicField_XTimePointValue=7';."
 
 #. SysConfig
 msgid "Defines the default subobject of the class 'ITSMConfigItem'."
@@ -884,11 +926,11 @@ msgstr "Mentakrifkan had carian untuk skrin CarianItemKonfigITSMAgen."
 
 #. SysConfig
 msgid "Defines the search limit for the CustomerITSMConfigItem screen."
-msgstr ""
+msgstr "Mentakrifkan had carian untuk skrin ItemKonfigITSMAgen."
 
 #. SysConfig
 msgid "Defines the search limit for the CustomerITSMConfigItemSearch screen."
-msgstr ""
+msgstr "Mentakrifkan had carian untuk skrin CarianItemKonfigITSMAgen."
 
 #. SysConfig
 msgid "Defines the shown columns of CIs in the link table complex view for all CI classes. If there is no entry, then the default columns are shown."
@@ -901,14 +943,17 @@ msgstr "Mentakrifkan ruangan ditunjukkan CIs dalam pandangan pautan jadual kompl
 #. SysConfig
 msgid "Defines which items are available for 'Action' in third level of the ITSM Config Item ACL structure."
 msgstr ""
+"Mentakrif barangan mana boleh didapati untuk 'Tindakan' di peringkat ketiga "
+"struktur ACL."
 
 #. SysConfig
 msgid "Defines which items are available in first level of the ITSM Config Item ACL structure."
 msgstr ""
+"Mentakrifkan barangan mana yang terdapat pada tahap pertama struktur ACL."
 
 #. SysConfig
 msgid "Defines which items are available in second level of the ITSM Config Item ACL structure."
-msgstr ""
+msgstr "Mentakrifkan barangan mana yang terdapat pada tahap kedua struktur ACL."
 
 #. SysConfig
 msgid "Defines which type of link (named from the ticket perspective) can affect the status of a linked CI."
@@ -924,7 +969,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Delete Configuration Item"
-msgstr ""
+msgstr "Perkara konfigurasi"
 
 #. SysConfig
 msgid "DeplState"
@@ -936,7 +981,7 @@ msgstr "Penempatan Keadaan Warna."
 
 #. SysConfig
 msgid "DeploymentState"
-msgstr ""
+msgstr "Keadaan Pertukaran"
 
 #. SysConfig
 msgid "Duplicate"
@@ -949,6 +994,8 @@ msgstr ""
 #. SysConfig
 msgid "Dynamic fields shown in the additional ITSM field screen of the agent interface."
 msgstr ""
+"Menunjukkan bidang tajuk dalam skrin bidang ITSM tambahan bagi antara muka "
+"ejen."
 
 #. SysConfig
 msgid "Dynamic fields shown in the config item overview screen of the customer interface."
@@ -988,19 +1035,19 @@ msgstr ""
 
 #. SysConfig
 msgid "GenericInterface module registration for the ConfigItemCreate invoker layer."
-msgstr ""
+msgstr "Pendaftaran modul GenericInterface untuk lapisan pencetus."
 
 #. SysConfig
 msgid "GenericInterface module registration for the ConfigItemFetch invoker layer."
-msgstr ""
+msgstr "Pendaftaran modul GenericInterface untuk lapisan pencetus."
 
 #. SysConfig
 msgid "GenericInterface module registration for the ConfigItemUpdate invoker layer."
-msgstr ""
+msgstr "Pendaftaran modul GenericInterface untuk lapisan pencetus."
 
 #. SysConfig
 msgid "ITSM ConfigItem"
-msgstr ""
+msgstr "ConfigItem"
 
 #. SysConfig
 msgid "ITSM config item overview."
@@ -1012,7 +1059,7 @@ msgstr ""
 
 #. SysConfig
 msgid "IncidentState"
-msgstr ""
+msgstr "insiden keadaan"
 
 #. SysConfig
 msgid "Includes deployment states in the config item search of the customer interface."
@@ -1028,7 +1075,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Maximum number of config items to be displayed in the result of this operation."
-msgstr ""
+msgstr "Jumlah tiket maksimum untuk dipamerkan di keputusan operasi ini."
 
 #. SysConfig
 msgid "Module to check the group responsible for a class."
@@ -1053,10 +1100,14 @@ msgstr ""
 #. SysConfig
 msgid "Number of config items to be displayed in each page of a search result in the agent interface."
 msgstr ""
+"Jumlah tiket yang akan dipamerkan dalam setiap halaman dari hasil carian "
+"dalam paparan ejen."
 
 #. SysConfig
 msgid "Number of config items to be displayed in each page of a search result in the customer interface."
 msgstr ""
+"Jumlah tiket yang akan dipamerkan dalam setiap halaman dari hasil carian "
+"dalam paparan pelanggan."
 
 #. SysConfig
 msgid "Objects to search for, how many entries and which attributs to show. ConfigItem attributes have to explicitly be stored via Elasticsearch."
@@ -1069,6 +1120,8 @@ msgstr "Pandangan keseluruhan."
 #. SysConfig
 msgid "Parameters for the categories for config item classes in the preferences view of the agent interface."
 msgstr ""
+"Parameter untuk keadaan mengatur kedudukan dalam paparan pilihan dari "
+"paparan ejen."
 
 #. SysConfig
 msgid "Parameters for the column filters of the small config item overview. Please note: setting 'Active' to 0 will only prevent agents from editing settings of this group in their personal preferences, but will still allow administrators to edit the settings of another user's behalf. Use 'PreferenceGroup' to control in which area these settings should be shown in the user interface."
@@ -1077,10 +1130,24 @@ msgstr ""
 #. SysConfig
 msgid "Parameters for the dashboard backend of the customer company config item overview of the agent interface . \"Limit\" is the number of entries per config item class shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin. \"ConfigItemKey\" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName)."
 msgstr ""
+"Parameter untuk backend papan pemuka daripada pengguna pelanggan senarai "
+"gambaran bagi antara muka ejen. \"Had\" adalah bilangan penyertaan "
+"ditunjukkan secara default. \"Kumpulan\" digunakan untuk menyekat akses "
+"kepada plugin (contoh: Kumpulan: admin; kumpulan1; kumpulan2;). \"Default\" "
+"menentukan jika plugin ini diaktifkan secara lalai atau jika pengguna perlu "
+"untuk membolehkan secara manual. \"CacheTTLLocal\" adalah masa cache dalam "
+"minit untuk plugin."
 
 #. SysConfig
 msgid "Parameters for the dashboard backend of the customer company config item overview of the agent interface . \"Limit\" is the number of entries shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin. \"ConfigItemKey\" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName)."
 msgstr ""
+"Parameter untuk backend papan pemuka daripada pengguna pelanggan senarai "
+"gambaran bagi antara muka ejen. \"Had\" adalah bilangan penyertaan "
+"ditunjukkan secara default. \"Kumpulan\" digunakan untuk menyekat akses "
+"kepada plugin (contoh: Kumpulan: admin; kumpulan1; kumpulan2;). \"Default\" "
+"menentukan jika plugin ini diaktifkan secara lalai atau jika pengguna perlu "
+"untuk membolehkan secara manual. \"CacheTTLLocal\" adalah masa cache dalam "
+"minit untuk plugin."
 
 #. SysConfig
 msgid "Parameters for the deployment states color in the preferences view of the agent interface."
@@ -1097,10 +1164,14 @@ msgstr "Parameter untuk contoh kumpulan yang dibenarkan pada ciri-ciri katalog."
 #. SysConfig
 msgid "Parameters for the name module for config item classes in the preferences view of the agent interface."
 msgstr ""
+"Parameter untuk keadaan mengatur kedudukan dalam paparan pilihan dari "
+"paparan ejen."
 
 #. SysConfig
 msgid "Parameters for the number module for config item classes in the preferences view of the agent interface."
 msgstr ""
+"Parameter untuk keadaan mengatur kedudukan dalam paparan pilihan dari "
+"paparan ejen."
 
 #. SysConfig
 msgid "Parameters for the pages (in which the configuration items are shown)."
@@ -1117,6 +1188,8 @@ msgstr ""
 #. SysConfig
 msgid "Parameters for the version trigger for config item classes in the preferences view of the agent interface."
 msgstr ""
+"Parameter untuk keadaan mengatur kedudukan dalam paparan pilihan dari "
+"paparan ejen."
 
 #. SysConfig
 msgid "Performs the configured action for each event (as an Invoker) for each configured Webservice."
@@ -1129,6 +1202,8 @@ msgstr ""
 #. SysConfig
 msgid "Required permissions to use the ITSM configuration item attachment action in the agent interface."
 msgstr ""
+"Memerlukan kebenaran untuk menggunakan skrin carian item konfigurasi ITSM "
+"dalam paparan ejen."
 
 #. SysConfig
 msgid "Required permissions to use the ITSM configuration item screen in the agent interface."
@@ -1141,10 +1216,14 @@ msgstr "Memerlukan kebenaran untuk menggunakan skrin carian item konfigurasi ITS
 #. SysConfig
 msgid "Required permissions to use the ITSM configuration item search screen in the customer interface."
 msgstr ""
+"Memerlukan kebenaran untuk menggunakan skrin carian item konfigurasi ITSM "
+"dalam paparan ejen."
 
 #. SysConfig
 msgid "Required permissions to use the ITSM configuration item tree view screen in the agent interface."
 msgstr ""
+"Memerlukan kebenaran untuk menggunakan skrin item konfigurasi ITSM dalam "
+"paparan ejen."
 
 #. SysConfig
 msgid "Required permissions to use the ITSM configuration item zoom screen in the agent interface."
@@ -1157,6 +1236,8 @@ msgstr "Memerlukan kebenaran untuk menggunakan skrin tambah item konfigurasi ITS
 #. SysConfig
 msgid "Required permissions to use the bulk ITSM configuration item screen in the agent interface."
 msgstr ""
+"Memerlukan kebenaran untuk menggunakan skrin item konfigurasi ITSM dalam "
+"paparan ejen."
 
 #. SysConfig
 msgid "Required permissions to use the edit ITSM configuration item screen in the agent interface."
@@ -1304,7 +1385,7 @@ msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Accounting"
-msgstr ""
+msgstr "Masa Perakaunan"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Located in"
@@ -1400,7 +1481,7 @@ msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Administrator"
-msgstr ""
+msgstr "Pentadbiran"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Inverstment costs"
@@ -1500,7 +1581,7 @@ msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Outputs"
-msgstr ""
+msgstr "Output"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Thunderbolt"
@@ -1536,7 +1617,7 @@ msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Bus Interface"
-msgstr ""
+msgstr "Paparan"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Graphics card"
@@ -1620,7 +1701,7 @@ msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Service Agreement"
-msgstr ""
+msgstr "Tahap Persetujuan Perkhidmatan"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Non-Disclosure Agreement (NDA)"
@@ -2136,7 +2217,7 @@ msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Standard SIM"
-msgstr ""
+msgstr "Piawaian"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Nano SIM"
@@ -2209,4 +2290,3 @@ msgstr ""
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Maximum Load Capacity (W)"
 msgstr ""
-
