@@ -2,13 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-03-09 13:29+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2026-04-06 18:00+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Hebrew <http://translate.otobo.org/projects/opm-packages/itsm-"
+"configurationmanagement/he/>\n"
+"Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
+"n % 10 == 0) ? 2 : 3));\n"
+"X-Generator: Weblate 5.16\n"
 
 #. Template: AdminGenericInterfaceOperationConfigItem
 msgid "General operation data"
@@ -100,7 +104,7 @@ msgstr ""
 
 #. Template: AgentITSMConfigItemDelete
 msgid "Do you really want to delete this config item?"
-msgstr ""
+msgstr "האם אתם באמת רוצים למחוק טריגר אירוע זה?"
 
 #. Template: AgentITSMConfigItemEdit
 msgid "The name of this config item"
@@ -140,7 +144,7 @@ msgstr ""
 
 #. Template: AgentITSMConfigItemHistory
 msgid "Createtime"
-msgstr ""
+msgstr "זמן היצירה"
 
 #. Template: AgentITSMConfigItemHistory
 msgid "Zoom view"
@@ -184,7 +188,7 @@ msgstr ""
 
 #. Template: AgentITSMConfigItemZoom
 msgid "Configuration Item"
-msgstr ""
+msgstr "הגדרות ייבוא"
 
 #. Template: AgentITSMConfigItemZoom
 msgid "Configuration Item Information"
@@ -220,7 +224,7 @@ msgstr "סוג האובייקט"
 
 #. Template: AdminDynamicFieldScreen
 msgid "Filter by object type"
-msgstr ""
+msgstr "סנן לפי סוג"
 
 #. JS Template: ClassImportConfirm
 msgid "The following classes will be imported"
@@ -368,7 +372,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
 msgid "Referenced by"
-msgstr ""
+msgstr "הפנייה"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
 msgid "Invalid ClassID!"
@@ -540,7 +544,7 @@ msgstr ""
 
 #. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
 msgid "Expired"
-msgstr ""
+msgstr "פג"
 
 #. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
 msgid "Maintenance"
@@ -1500,7 +1504,7 @@ msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Outputs"
-msgstr ""
+msgstr "פלט"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Thunderbolt"
@@ -1536,7 +1540,7 @@ msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Bus Interface"
-msgstr ""
+msgstr "ממשק"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Graphics card"
@@ -1620,7 +1624,7 @@ msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Service Agreement"
-msgstr ""
+msgstr "הסכם רמת שירות"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Non-Disclosure Agreement (NDA)"
@@ -2136,7 +2140,7 @@ msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Standard SIM"
-msgstr ""
+msgstr "סטנדרטי"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Nano SIM"
@@ -2209,4 +2213,3 @@ msgstr ""
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Maximum Load Capacity (W)"
 msgstr ""
-
