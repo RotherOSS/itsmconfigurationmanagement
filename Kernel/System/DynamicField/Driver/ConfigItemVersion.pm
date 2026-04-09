@@ -197,7 +197,7 @@ sub EditFieldRender {
                     ID         => $FieldID,
                     SelectedID => $Value->[$ValueIndex],
                     Class      => $FieldClass . ( $Param{AJAXUpdate} ? ' FormUpdate' : '' ),
-                    TreeView   => ( $DFDetails->{DisplayType} eq 'TreeView' ? 1 : 0 ),
+                    TreeView   => $DFDetails->{TreeView},
                     HTMLQuote  => 1,
                 );
             }
@@ -216,7 +216,7 @@ sub EditFieldRender {
                 Name       => $FieldName,
                 SelectedID => \@SelectedIDs,
                 Class      => $FieldClass . ( $Param{AJAXUpdate} ? ' FormUpdate' : '' ),
-                TreeView   => ( $DFDetails->{DisplayType} eq 'TreeView' ? 1 : 0 ),
+                TreeView   => $DFDetails->{TreeView},
                 HTMLQuote  => 1,
                 Multiple   => $DFDetails->{Multiselect},
             );
@@ -284,7 +284,7 @@ sub EditFieldRender {
             Name      => $FieldName,
             ID        => $FieldTemplateData{FieldID},
             Class     => $FieldClass . ( $Param{AJAXUpdate} ? ' FormUpdate' : '' ),
-            TreeView  => ( $DFDetails->{DisplayType} eq 'TreeView' ? 1 : 0 ),
+            TreeView  => $DFDetails->{TreeView},
             HTMLQuote => 1,
             Multiple  => $DFDetails->{Multiselect},
         );
@@ -441,19 +441,34 @@ sub GetFieldTypeSettings {
             Multiple     => 0,
         };
 
+    # TreeView support (grouped by ConfigItems)
+    push @FieldTypeSettings,
+        {
+            ConfigParamName => 'TreeView',
+            Label           => Translatable('Tree View'),
+            Explanation     => Translatable('Activate this option to display values as a tree, grouped by config items.'),
+            InputType       => 'Selection',
+            SelectionData   => {
+                0 => Translatable('No'),
+                1 => Translatable('Yes'),
+            },
+            PossibleNone => 0,
+            Multiple     => 0,
+        };
+
     # Support various display options
     push @FieldTypeSettings,
         {
             ConfigParamName => 'DisplayType',
             Label           => Translatable('Attribute which is displayed for values'),
-            Explanation     => Translatable('Select the type of display'),
+            Explanation     => Translatable('Select the type of display.'),
             InputType       => 'Selection',
             SelectionData   => {
-                'TreeView'                      => 'TreeView: <Config Item Name -> Version Name>',
-                'ConfigItemNumberVersionString' => '<Config Item Number> - <Version Name>',
-                'ConfigItemNameVersionString'   => '<Config Item Name> - <Version Name>',
-                'VersionStringConfigItemNumber' => '<Version Name> - <Config Item Number>',
-                'VersionStringConfigItemName'   => '<Version Name> - <Config Item Name>',
+                'VersionString'                 => '<Version String>',
+                'ConfigItemNumberVersionString' => '<Config Item Number>: <Version Name>',
+                'ConfigItemNameVersionString'   => '<Config Item Name>: <Version Name>',
+                'VersionStringConfigItemNumber' => '<Version Name>: <Config Item Number>',
+                'VersionStringConfigItemName'   => '<Version Name>: <Config Item Name>',
             },
             PossibleNone => 1,
             Multiple     => 0,
@@ -514,10 +529,10 @@ sub ObjectDescriptionGet {
         );
     }
 
-    # prepare translation of class name if possible
-    my $ClassNameStrg = $ConfigItem->{Class};
-    if ( $Param{LayoutObject} ) {
-        $ClassNameStrg = $Param{LayoutObject}{LanguageObject}->Translate($ClassNameStrg);
+    # prepare TreeView prefix if needed
+    my $TreeViewPrefix = '';
+    if ( $Param{DynamicFieldConfig}{Config}{TreeView} ) {
+        $TreeViewPrefix = "$ConfigItem->{Name}::";
     }
 
     my %Descriptions;
@@ -525,30 +540,30 @@ sub ObjectDescriptionGet {
 
         # prepare string as configured
         my $DisplayType = $Param{DynamicFieldConfig}{Config}{DisplayType};
-        if ( $DisplayType eq 'TreeView' ) {
-            $Descriptions{Normal} = "$ConfigItem->{Name}::$ConfigItem->{VersionString}";
-            $Descriptions{Long}   = "$ConfigItem->{Name}::$ConfigItem->{VersionString}";
+        if ( $DisplayType eq 'VersionString' ) {
+            $Descriptions{Normal} = $TreeViewPrefix . $ConfigItem->{VersionString};
+            $Descriptions{Long}   = $ConfigItem->{VersionString};
         }
         if ( $DisplayType eq 'ConfigItemNumberVersionString' ) {
-            $Descriptions{Normal} = "$ConfigItem->{ConfigItemNumber} - $ConfigItem->{VersionString}";
-            $Descriptions{Long}   = "$ConfigItem->{ConfigItemNumber} - $ConfigItem->{VersionString}";
+            $Descriptions{Normal} = $TreeViewPrefix . "$ConfigItem->{Number}: $ConfigItem->{VersionString}";
+            $Descriptions{Long}   = "$ConfigItem->{Number}: $ConfigItem->{VersionString}";
         }
         elsif ( $DisplayType eq 'ConfigItemNameVersionString' ) {
-            $Descriptions{Normal} = "$ConfigItem->{Name} - $ConfigItem->{VersionString}";
-            $Descriptions{Long}   = "$ConfigItem->{Name} - $ConfigItem->{VersionString}";
+            $Descriptions{Normal} = $TreeViewPrefix . "$ConfigItem->{Name}: $ConfigItem->{VersionString}";
+            $Descriptions{Long}   = "$ConfigItem->{Name}: $ConfigItem->{VersionString}";
         }
         elsif ( $DisplayType eq 'VersionStringConfigItemNumber' ) {
-            $Descriptions{Normal} = "$ConfigItem->{VersionString} - $ConfigItem->{Number}";
-            $Descriptions{Long}   = "$ConfigItem->{VersionString} - $ConfigItem->{Number}";
+            $Descriptions{Normal} = $TreeViewPrefix . "$ConfigItem->{VersionString}: $ConfigItem->{Number}";
+            $Descriptions{Long}   = "$ConfigItem->{VersionString}: $ConfigItem->{Number}";
         }
         elsif ( $DisplayType eq 'VersionStringConfigItemName' ) {
-            $Descriptions{Normal} = "$ConfigItem->{VersionString} - $ConfigItem->{Name}";
-            $Descriptions{Long}   = "$ConfigItem->{VersionString} - $ConfigItem->{Name}";
+            $Descriptions{Normal} = $TreeViewPrefix . "$ConfigItem->{VersionString}: $ConfigItem->{Name}";
+            $Descriptions{Long}   = "$ConfigItem->{VersionString}: $ConfigItem->{Name}";
         }
     }
     else {
-        $Descriptions{Normal} = "$ConfigItem->{VersionString}";
-        $Descriptions{Long}   = "$ConfigItem->{Name} - $ConfigItem->{VersionString}";
+        $Descriptions{Normal} = $TreeViewPrefix . "$ConfigItem->{VersionString}";
+        $Descriptions{Long}   = "$ConfigItem->{Name}: $ConfigItem->{VersionString}";
     }
 
     my $Link;
