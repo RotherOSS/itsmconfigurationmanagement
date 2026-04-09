@@ -16,6 +16,7 @@
         <!-- TODO: move to Kernel? -->
         <File Permission="660" Location="Custom/Kernel/Modules/AdminACL.pm" />
         <File Permission="660" Location="Custom/Kernel/Modules/AdminDynamicField.pm" />
+        <File Permission="660" Location="Custom/Kernel/Modules/AdminDynamicFieldReference.pm" />
         <File Permission="660" Location="Custom/Kernel/Modules/AdminDynamicFieldScreen.pm" />
         <File Permission="660" Location="Custom/Kernel/Modules/AgentDashboardCommon.pm" />
         <File Permission="660" Location="Custom/Kernel/Output/HTML/Templates/Standard/AdminACL.tt" />
