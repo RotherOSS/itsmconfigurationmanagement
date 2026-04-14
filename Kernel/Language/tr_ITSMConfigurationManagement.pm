@@ -109,7 +109,7 @@ sub Data {
     $Self->{Translation}->{'Object Type'} = 'Nesne Türü';
 
     # Template: AdminDynamicFieldScreen
-    $Self->{Translation}->{'Filter by object type'} = '';
+    $Self->{Translation}->{'Filter by object type'} = 'Tipe göre filtrele';
 
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = 'Aşağıdaki sınıflar içe aktarılacaktır';
@@ -164,7 +164,7 @@ sub Data {
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = 'ConfigItemID %s veritabanında bulunamadı!';
     $Self->{Translation}->{'ConfigItem'} = 'ConfigItem';
     $Self->{Translation}->{'printed by %s at %s'} = 's\'de %s tarafından yazdırıldı';
-    $Self->{Translation}->{'Referenced by'} = '';
+    $Self->{Translation}->{'Referenced by'} = 'Referans';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
     $Self->{Translation}->{'Invalid ClassID!'} = 'Geçersiz ClassID!';
@@ -201,9 +201,9 @@ sub Data {
     $Self->{Translation}->{'Class restrictions for the config item'} = 'Yapılandırma öğesi için sınıf kısıtlamaları';
     $Self->{Translation}->{'Select one or more classes to restrict selectable config items'} =
         'Seçilebilir yapılandırma öğelerini kısıtlamak için bir veya daha fazla sınıf seçin';
-    $Self->{Translation}->{'Deployment state restrictions for the config item'} = '';
+    $Self->{Translation}->{'Deployment state restrictions for the config item'} = 'Yapılandırma öğesi için sınıf kısıtlamaları';
     $Self->{Translation}->{'Select one or more deployment states to restrict selectable config items'} =
-        '';
+        'Seçilebilir yapılandırma öğelerini kısıtlamak için bir veya daha fazla sınıf seçin';
     $Self->{Translation}->{'Dynamic (ConfigItem)'} = 'Dinamik (ConfigItem)';
     $Self->{Translation}->{'Static (Version)'} = 'Static (Versiyon)';
     $Self->{Translation}->{'Link Referencing Type'} = 'Bağlantı Referanslama Türü';
@@ -359,7 +359,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         '\'ITSMConfigItem\' sınıfının varsayılan alt nesnesini tanımlar.';
     $Self->{Translation}->{'Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
-        '';
+        'CI sınıfına bağlı olarak yapılandırma öğesi genel görünümündeki kullanılabilir CI sütunlarını tanımlar. Her giriş bir sınıf adı ve ilgili sınıf için kullanılabilir alanlardan oluşan bir diziden oluşmalıdır. Dinamik alan girişleri DynamicField_FieldName şemasına uymak zorundadır.';
     $Self->{Translation}->{'Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).'} =
         'Bu ekran için zengin metin düzenleyici bileşeninin yüksekliğini tanımlar. Sayı (piksel) veya yüzde değeri (göreli) girin.';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =
@@ -419,11 +419,11 @@ sub Data {
     $Self->{Translation}->{'For every webservice (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker config.'} =
         'Her web hizmeti (anahtar) için, içe aktarmanın kısıtlandığı bir dizi sınıf (değer) tanımlanabilir. Seçilen tüm sınıflar veya mevcut tüm sınıflar için tanımlayıcı niteliklerin invoker yapılandırmasında seçilmesi gerekecektir.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
-        '';
+        'ConfigItemFetch çağırıcı katmanı için GenericInterface modül kaydı.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
         'ConfigItemFetch çağırıcı katmanı için GenericInterface modül kaydı.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemUpdate invoker layer.'} =
-        '';
+        'ConfigItemFetch çağırıcı katmanı için GenericInterface modül kaydı.';
     $Self->{Translation}->{'ITSM ConfigItem'} = 'ITSM ConfigItem';
     $Self->{Translation}->{'ITSM config item overview.'} = 'ITSM yapılandırma öğesine genel bakış.';
     $Self->{Translation}->{'InciState'} = 'InciState';

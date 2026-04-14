@@ -55,7 +55,7 @@ sub Data {
     $Self->{Translation}->{'The number of another Configuration Item to link with.'} = '';
 
     # Template: AgentITSMConfigItemDelete
-    $Self->{Translation}->{'Do you really want to delete this config item?'} = '';
+    $Self->{Translation}->{'Do you really want to delete this config item?'} = 'Sigurno želite obrisati ovaj predložak?';
 
     # Template: AgentITSMConfigItemEdit
     $Self->{Translation}->{'The name of this config item'} = '';
@@ -71,7 +71,7 @@ sub Data {
     # Template: AgentITSMConfigItemHistory
     $Self->{Translation}->{'History of Config Item: %s'} = '';
     $Self->{Translation}->{'History Content'} = '';
-    $Self->{Translation}->{'Createtime'} = '';
+    $Self->{Translation}->{'Createtime'} = 'Vremena otvaranja';
     $Self->{Translation}->{'Zoom view'} = 'Detaljni pregled';
 
     # Template: AgentITSMConfigItemOverviewNavBar
@@ -92,7 +92,7 @@ sub Data {
     $Self->{Translation}->{'Max links level reached for ConfigItem!'} = '';
 
     # Template: AgentITSMConfigItemZoom
-    $Self->{Translation}->{'Configuration Item'} = '';
+    $Self->{Translation}->{'Configuration Item'} = 'Uvoz konfiguracije';
     $Self->{Translation}->{'Configuration Item Information'} = '';
     $Self->{Translation}->{'Current Deployment State'} = '';
     $Self->{Translation}->{'Current Incident State'} = '';
@@ -164,7 +164,7 @@ sub Data {
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = '';
     $Self->{Translation}->{'ConfigItem'} = '';
     $Self->{Translation}->{'printed by %s at %s'} = '';
-    $Self->{Translation}->{'Referenced by'} = '';
+    $Self->{Translation}->{'Referenced by'} = 'Reference';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
     $Self->{Translation}->{'Invalid ClassID!'} = '';
@@ -236,7 +236,7 @@ sub Data {
         '';
 
     # Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
-    $Self->{Translation}->{'Expired'} = '';
+    $Self->{Translation}->{'Expired'} = 'Ističe';
     $Self->{Translation}->{'Maintenance'} = '';
     $Self->{Translation}->{'Pilot'} = '';
     $Self->{Translation}->{'Planned'} = '';
@@ -480,25 +480,25 @@ sub Data {
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item attachment action in the agent interface.'} =
         '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
-        '';
+        'Potrebne dozvole za upotrebu prozora za napomene kartice u sučelju operatera.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the agent interface.'} =
-        '';
+        'Potrebne dozvole za upotrebu prozora za napomene kartice u sučelju operatera.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the customer interface.'} =
         '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item tree view screen in the agent interface.'} =
-        '';
+        'Potrebne dozvole za upotrebu prozora slobodnog teksta kartice u sučelju operatera.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item zoom screen in the agent interface.'} =
-        '';
+        'Potrebne dozvole za upotrebu prozora za napomene kartice u sučelju operatera.';
     $Self->{Translation}->{'Required permissions to use the add ITSM configuration item screen in the agent interface.'} =
-        '';
+        'Potrebne dozvole za upotrebu prozora za napomene kartice u sučelju operatera.';
     $Self->{Translation}->{'Required permissions to use the bulk ITSM configuration item screen in the agent interface.'} =
-        '';
+        'Potrebne dozvole za upotrebu prozora za napomene kartice u sučelju operatera.';
     $Self->{Translation}->{'Required permissions to use the edit ITSM configuration item screen in the agent interface.'} =
-        '';
+        'Potrebne dozvole za upotrebu prozora za napomene kartice u sučelju operatera.';
     $Self->{Translation}->{'Required permissions to use the history ITSM configuration item screen in the agent interface.'} =
-        '';
+        'Potrebne dozvole za upotrebu prozora za napomene kartice u sučelju operatera.';
     $Self->{Translation}->{'Required permissions to use the print ITSM configuration item screen in the agent interface.'} =
-        '';
+        'Potrebne dozvole za upotrebu prozora za napomene kartice u sučelju operatera.';
     $Self->{Translation}->{'Required privileges to delete config items.'} = '';
     $Self->{Translation}->{'Search config items.'} = '';
     $Self->{Translation}->{'Set the incident state of a CI automatically when a Ticket is Linked to a CI.'} =
@@ -595,7 +595,7 @@ sub Data {
     $Self->{Translation}->{'Battery Capacity (Ah)'} = '';
     $Self->{Translation}->{'Battery Type'} = '';
     $Self->{Translation}->{'Building'} = '';
-    $Self->{Translation}->{'Bus Interface'} = '';
+    $Self->{Translation}->{'Bus Interface'} = 'Sučelje';
     $Self->{Translation}->{'CC0 (Creative Commons Zero)'} = '';
     $Self->{Translation}->{'CIDR'} = '';
     $Self->{Translation}->{'CPU'} = '';
@@ -724,7 +724,7 @@ sub Data {
     $Self->{Translation}->{'Operating costs'} = '';
     $Self->{Translation}->{'Order Number'} = '';
     $Self->{Translation}->{'Other'} = '';
-    $Self->{Translation}->{'Outputs'} = '';
+    $Self->{Translation}->{'Outputs'} = 'Pregled rezultata';
     $Self->{Translation}->{'PIN'} = '';
     $Self->{Translation}->{'PIN 2'} = '';
     $Self->{Translation}->{'PUK'} = '';
@@ -749,13 +749,13 @@ sub Data {
     $Self->{Translation}->{'Seat licenses'} = '';
     $Self->{Translation}->{'Serialnumber'} = '';
     $Self->{Translation}->{'Server Software'} = '';
-    $Self->{Translation}->{'Service Agreement'} = '';
+    $Self->{Translation}->{'Service Agreement'} = 'Sporazum o razini usluge';
     $Self->{Translation}->{'Service Tag'} = '';
     $Self->{Translation}->{'Shareware'} = '';
     $Self->{Translation}->{'Socket Type'} = '';
     $Self->{Translation}->{'Software'} = '';
     $Self->{Translation}->{'Speakers'} = '';
-    $Self->{Translation}->{'Standard SIM'} = '';
+    $Self->{Translation}->{'Standard SIM'} = 'Uobičajen';
     $Self->{Translation}->{'Start IP Address'} = '';
     $Self->{Translation}->{'Storage'} = '';
     $Self->{Translation}->{'Storage Partition'} = '';

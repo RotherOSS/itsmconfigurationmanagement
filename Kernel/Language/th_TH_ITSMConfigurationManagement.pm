@@ -25,20 +25,20 @@ sub Data {
 
     # Template: AdminGenericInterfaceOperationConfigItem
     $Self->{Translation}->{'General operation data'} = '';
-    $Self->{Translation}->{'Settings for incoming request data'} = '';
-    $Self->{Translation}->{'Settings for outgoing response data'} = '';
+    $Self->{Translation}->{'Settings for incoming request data'} = 'แผนที่สำหรับข้อมูลการร้องขอขาเข้า';
+    $Self->{Translation}->{'Settings for outgoing response data'} = 'แผนที่สำหรับข้อมูลการตอบสนองที่ส่งออก';
 
     # Template: AdminITSMConfigItem
     $Self->{Translation}->{'Config Item Management'} = 'การจัดการ Config Item';
     $Self->{Translation}->{'Change class definition'} = 'นิยามของคลาสการเปลี่ยนแปลง';
-    $Self->{Translation}->{'Change role definition'} = '';
+    $Self->{Translation}->{'Change role definition'} = 'นิยามของคลาสการเปลี่ยนแปลง';
     $Self->{Translation}->{'Ready2Import Class Bundles'} = '';
     $Self->{Translation}->{'Here you can import Ready2Import class bundles showcasing our most usual config items. Please note that some additional configuration may be required.'} =
         '';
     $Self->{Translation}->{'Update existing entities'} = '';
     $Self->{Translation}->{'Import Ready2Adopt class bundles'} = '';
-    $Self->{Translation}->{'Config Item Class'} = '';
-    $Self->{Translation}->{'Config Item Role'} = '';
+    $Self->{Translation}->{'Config Item Class'} = 'Config Items';
+    $Self->{Translation}->{'Config Item Role'} = 'Config Item';
 
     # Template: AgentITSMConfigItemAdd
     $Self->{Translation}->{'Config Item'} = 'Config Item';
@@ -55,16 +55,16 @@ sub Data {
     $Self->{Translation}->{'The number of another Configuration Item to link with.'} = 'จำนวนของรายการการกำหนดค่าอื่นๆที่ต้องการเชื่อมโยง';
 
     # Template: AgentITSMConfigItemDelete
-    $Self->{Translation}->{'Do you really want to delete this config item?'} = '';
+    $Self->{Translation}->{'Do you really want to delete this config item?'} = 'คุณต้องการลบChange นี้หรือไม่?';
 
     # Template: AgentITSMConfigItemEdit
     $Self->{Translation}->{'The name of this config item'} = ' ชื่อของรายการการตั้งค่านี้\'';
     $Self->{Translation}->{'Name is already in use by the ConfigItems with the following Number(s): %s'} =
         'ชื่อที่ถูกการใช้งานโดย ConfigItems มีจำนวนดังต่อไปนี้ (s): %s';
     $Self->{Translation}->{'Version Number'} = 'หมายเลขเวอร์ชั้น';
-    $Self->{Translation}->{'Version number of this config item'} = '';
+    $Self->{Translation}->{'Version number of this config item'} = 'ชื่อของรายการการตั้งค่านี้\'';
     $Self->{Translation}->{'Version Number is already in use by the ConfigItems with the following Number(s): %s'} =
-        '';
+        'ชื่อที่ถูกการใช้งานโดย ConfigItems มีจำนวนดังต่อไปนี้ (s): %s';
     $Self->{Translation}->{'Deployment State'} = 'สถานภาพการใช้งาน';
     $Self->{Translation}->{'Incident State'} = 'สถานภาพของเหต์การณ์';
 
@@ -109,7 +109,7 @@ sub Data {
     $Self->{Translation}->{'Object Type'} = 'ประเภทของออบเจค';
 
     # Template: AdminDynamicFieldScreen
-    $Self->{Translation}->{'Filter by object type'} = '';
+    $Self->{Translation}->{'Filter by object type'} = 'กรองตามประเภท';
 
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = '';
@@ -119,7 +119,7 @@ sub Data {
     $Self->{Translation}->{'Do you want to proceed?'} = 'คุณต้องการดำเนินการต่อไปหรือไม่?';
 
     # Perl Module: Kernel/Modules/AdminITSMConfigItem.pm
-    $Self->{Translation}->{'Need ExampleClasses!'} = '';
+    $Self->{Translation}->{'Need ExampleClasses!'} = 'ต้องการ ExampleProcesses!';
     $Self->{Translation}->{'Definition is no valid YAML hash.'} = '';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItem.pm
@@ -142,8 +142,8 @@ sub Data {
     $Self->{Translation}->{'No access is given!'} = '';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
-    $Self->{Translation}->{'Can\'t show history, no ConfigItemID is given!'} = '';
-    $Self->{Translation}->{'Can\'t show history, no access rights given!'} = '';
+    $Self->{Translation}->{'Can\'t show history, no ConfigItemID is given!'} = 'ไม่สามารถแสดงประวัติ ไม่ได้รับ TicketID!';
+    $Self->{Translation}->{'Can\'t show history, no access rights given!'} = 'ไม่สามารถแสดงประวัติ ไม่ได้รับ TicketID!';
     $Self->{Translation}->{'New ConfigItem (ID=%s)'} = '';
     $Self->{Translation}->{'New version (ID=%s)'} = '';
     $Self->{Translation}->{'Deployment state updated (new=%s, old=%s)'} = '';
@@ -164,7 +164,7 @@ sub Data {
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = '';
     $Self->{Translation}->{'ConfigItem'} = 'ConfigItem';
     $Self->{Translation}->{'printed by %s at %s'} = '';
-    $Self->{Translation}->{'Referenced by'} = '';
+    $Self->{Translation}->{'Referenced by'} = 'อ้างอิง';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
     $Self->{Translation}->{'Invalid ClassID!'} = '';
@@ -312,9 +312,9 @@ sub Data {
     $Self->{Translation}->{'Customers have the possibility to manually switch between historic CI versions.'} =
         '';
     $Self->{Translation}->{'Default data to use on attribute for config item search screen. Example: "ITSMConfigItemCreateTimePointFormat=year;ITSMConfigItemCreateTimePointStart=Last;ITSMConfigItemCreateTimePoint=2;".'} =
-        '';
+        'ข้อมูลเริ่มต้นที่จะใช้ในแอตทริบิวต์สำหรับหน้าจอการค้นหาตั๋ว ตัวอย่าง: "TicketCreateTimePointFormat=year;TicketCreateTimePointStart=Last;TicketCreateTimePoint=2;"';
     $Self->{Translation}->{'Default data to use on attribute for config item search screen. Example: "ITSMConfigItemCreateTimeStartYear=2010;ITSMConfigItemCreateTimeStartMonth=10;ITSMConfigItemCreateTimeStartDay=4;ITSMConfigItemCreateTimeStopYear=2010;ITSMConfigItemCreateTimeStopMonth=11;ITSMConfigItemCreateTimeStopDay=3;".'} =
-        '';
+        'ข้อมูลเริ่มต้นที่จะใช้ในแอตทริบิวต์สำหรับหน้าจอการค้นหาตั๋ว ตัวอย่าง: "TicketCreateTimeStartYear=2010;TicketCreateTimeStartMonth=10;TicketCreateTimeStartDay=4;TicketCreateTimeStopYear=2010;TicketCreateTimeStopMonth=11;TicketCreateTimeStopDay=3;"';
     $Self->{Translation}->{'Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = "complex"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.'} =
         '';
     $Self->{Translation}->{'Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit.'} =
@@ -322,13 +322,13 @@ sub Data {
     $Self->{Translation}->{'Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
         '';
     $Self->{Translation}->{'Defines Required permissions to delete ITSM configuration items using the Generic Interface.'} =
-        '';
+        'กำหนดสิทธิ์ที่จำเป็นในการเอารายการการตั้งค่า ITSMโดยใช้อินเตอร์เฟซทั่วไป';
     $Self->{Translation}->{'Defines Required permissions to get ITSM configuration items using the Generic Interface.'} =
         'กำหนดสิทธิ์ที่จำเป็นในการเอารายการการตั้งค่า ITSMโดยใช้อินเตอร์เฟซทั่วไป';
     $Self->{Translation}->{'Defines Required permissions to search ITSM configuration items using the Generic Interface.'} =
         'กำหนดสิทธิ์ที่จำเป็นในการค้นหารายการการตั้งค่า ITSMโดยใช้อินเตอร์เฟซทั่วไป';
     $Self->{Translation}->{'Defines Required permissions to set ITSM configuration items using the Generic Interface.'} =
-        '';
+        'กำหนดสิทธิ์ที่จำเป็นในการเอารายการการตั้งค่า ITSMโดยใช้อินเตอร์เฟซทั่วไป';
     $Self->{Translation}->{'Defines an overview module to show the small view of a configuration item list.'} =
         'กำหนดโมดูลภาพรวมในการแสดงมุมมองขนาดเล็กของรายการ  Configuration Items';
     $Self->{Translation}->{'Defines if the link type labels must be shown in the node connections.'} =
@@ -338,24 +338,24 @@ sub Data {
     $Self->{Translation}->{'Defines the available columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         '';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the agent interface.'} =
-        '';
+        'กำหนดคแอตทริบิวต์เริ่มต้นของตั๋วสำหรับการเรียงลำดับตั๋วของผลลัพธ์ของการค้นหาตั๋วในอินเตอร์เฟซเอเย่นต์';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the customer interface.'} =
         '';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of this operation.'} =
-        '';
+        'กำหนดคแอตทริบิวต์เริ่มต้นของตั๋วสำหรับการเรียงลำดับตั๋วของผลลัพธ์ของการค้นหาตั๋วของการดำเนินการนี้';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the agent interface. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'กำหนดการจัดเรียงเริ่มต้นของตั๋วในผลลัพธ์ของการค้นหาตั๋วของอินเตอร์เฟซเอเย่นต์ ขึ้น: เก่าที่สุดด้านบน ลง: ล่าสุดด้านบน';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'กำหนดการจัดเรียงเริ่มต้นของตั๋วของผลลัพธ์ของการค้นหาในอินเตอร์เฟซลูกค้า ขึ้น: เก่าที่สุดด้านบน ลง: ล่าสุดด้านบน';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the this operation. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'กำหนดการจัดเรียงเริ่มต้นของตั๋วในผลลัพธ์ของการค้นหาตั๋วของการดำเนินการนี้ ขึ้น: เก่าที่สุดด้านบน ลง: ล่าสุดด้านบน';
     $Self->{Translation}->{'Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         '';
     $Self->{Translation}->{'Defines the default relations depth to be shown.'} = '';
     $Self->{Translation}->{'Defines the default shown config item search attribute for config item search screen.'} =
-        '';
+        'กำหนดค่าเริ่มต้นแอตทริบิวต์การค้นหาตั๋วที่แสดงสำหรับหน้าจอการค้นหาตั๋ว';
     $Self->{Translation}->{'Defines the default shown config item search attribute for config item search screen. Example: "Key" must have the name of the Dynamic Field in this case \'X\', "Content" must have the value of the Dynamic Field depending on the Dynamic Field type,  Text: \'a text\', Dropdown: \'1\', Date/Time: \'Search_DynamicField_XTimeSlotStartYear=1974; Search_DynamicField_XTimeSlotStartMonth=01; Search_DynamicField_XTimeSlotStartDay=26; Search_DynamicField_XTimeSlotStartHour=00; Search_DynamicField_XTimeSlotStartMinute=00; Search_DynamicField_XTimeSlotStartSecond=00; Search_DynamicField_XTimeSlotStopYear=2013; Search_DynamicField_XTimeSlotStopMonth=01; Search_DynamicField_XTimeSlotStopDay=26; Search_DynamicField_XTimeSlotStopHour=23; Search_DynamicField_XTimeSlotStopMinute=59; Search_DynamicField_XTimeSlotStopSecond=59;\' and or \'Search_DynamicField_XTimePointFormat=week; Search_DynamicField_XTimePointStart=Before; Search_DynamicField_XTimePointValue=7\';.'} =
-        '';
+        'กำหนดค่าเริ่มต้นของแอตทริบิวต์การค้นหาตั๋วที่ถูกแสดงสำหรับหน้าจอการค้นหาตั๋ว ตัวอย่าง: "คีย์" ต้องมีชื่อของฟิลด์แบบไดนามิกในกรณีนี้คือ \'X\'  "เนื้อหา" ต้องมีค่าของฟิลด์ไดนามิกซึ่งขึ้นอยู่กับประเภทของฟิลด์ไดนามิก ข้อความ: คือ \'ข้อความ\'  เมนูแบบเลื่อนลง: \'1\',  วันที่ / เวลา: Search_DynamicField_XTimeSlotStartYear = 1974; Search_DynamicField_XTimeSlotStartMonth=01; Search_DynamicField_XTimeSlotStartDay=26; Search_DynamicField_XTimeSlotStartHour=00; Search_DynamicField_XTimeSlotStartMinute=00; Search_DynamicField_XTimeSlotStartSecond=00; Search_DynamicField_XTimeSlotStopYear=2013; Search_DynamicField_XTimeSlotStopMonth=01; Search_DynamicField_XTimeSlotStopDay=26; Search_DynamicField_XTimeSlotStopHour=23; Search_DynamicField_XTimeSlotStopMinute=59; Search_DynamicField_XTimeSlotStopSecond=59;\' and or \'Search_DynamicField_XTimePointFormat=week; Search_DynamicField_XTimePointStart=Before; Search_DynamicField_XTimePointValue=7\';.';
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         'กำหนดอบเจกต์ย่อยเริ่มต้นของคลาส \'ITSMConfigItem\'';
     $Self->{Translation}->{'Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
@@ -373,33 +373,33 @@ sub Data {
     $Self->{Translation}->{'Defines the search limit for the AgentITSMConfigItemSearch screen.'} =
         'กำหนดขีดจำกัดของการค้นหาสำหรับหน้าจอ AgentITSMConfigItemSearch';
     $Self->{Translation}->{'Defines the search limit for the CustomerITSMConfigItem screen.'} =
-        '';
+        'กำหนดขีดจำกัดของการค้นหาสำหรับหน้าจอ AgentITSMConfigItem';
     $Self->{Translation}->{'Defines the search limit for the CustomerITSMConfigItemSearch screen.'} =
-        '';
+        'กำหนดขีดจำกัดของการค้นหาสำหรับหน้าจอ AgentITSMConfigItemSearch';
     $Self->{Translation}->{'Defines the shown columns of CIs in the link table complex view for all CI classes. If there is no entry, then the default columns are shown.'} =
         '';
     $Self->{Translation}->{'Defines the shown columns of CIs in the link table complex view, depending on the CI class. Each entry must be prefixed with the class name and double colons (i.e. Computer::). There are a few CI-Attributes that common to all CIs (example for the class Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). To show individual CI-Attributes as defined in the CI-Definition, the following scheme must be used (example for the class Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If there is no entry for a CI class, then the default columns are shown.'} =
         'กำหนดคอลัมน์ที่แสดง CIs ในตารางการเชื่อมโยงมุมมองที่ซับซ้อนซึ่งขึ้นอยู่กับคลาส CI รายการการป้อนแต่ละรายการจะต้องนำหน้าด้วยชื่อคลาสและเครื่องหมายทวิภาคคู่ (เช่นคอมพิวเตอร์: :) มีแอตทริบิวต์ CI เพียงไม่กี่แอตทริบิวต์ ที่ใช้กันทั่วไปใน CIs ทั้งหมด (ตัวอย่างสำหรับคลาสคอมพิวเตอร์: คอมพิวเตอร์::ชื่อ, คอมพิวเตอร์::CurDeplState, คอมพิวเตอร์::CreateTime) ในการแสดงแอตทริบิวต์ CI ตามที่กำหนดไว้ในคำนิยาม CI จะต้องใช้รูปแบบต่อไปนี้(ตัวอย่างสำหรับคลาสคอมพิวเตอร์): คอมพิวเตอร์::ฮาร์ดดิสก์::1, คอมพิวเตอร์::ฮาร์ดดิสก์::1::ความจุ::1, คอมพิวเตอร์::ฮาร์ดดิสก์::2, คอมพิวเตอร์::ฮาร์ดดิสก์::2::ความจุ::1 หากไม่มีการป้อนคลาสที่ CI แล้วคอลัมน์เริ่มต้นจะแสดงตามที่กำหนดไว้ในการตั้งค่า ITSMConfigItem ::Frontend :: AgentITSMConfigItem ### ShowColumns';
     $Self->{Translation}->{'Defines which items are available for \'Action\' in third level of the ITSM Config Item ACL structure.'} =
-        '';
+        'กำหนดรายการที่ที่ใช้ได้สำหรับ \'การกระทำ\' ในระดับที่สามของโครงสร้าง ACL';
     $Self->{Translation}->{'Defines which items are available in first level of the ITSM Config Item ACL structure.'} =
-        '';
+        'กำหนดรายการที่ที่ใช้ได้ในระดับแรกของโครงสร้าง ACL';
     $Self->{Translation}->{'Defines which items are available in second level of the ITSM Config Item ACL structure.'} =
-        '';
+        'กำหนดรายการที่ที่ใช้ได้ในระดับที่สองของโครงสร้าง ACL';
     $Self->{Translation}->{'Defines which type of link (named from the ticket perspective) can affect the status of a linked CI.'} =
         '';
     $Self->{Translation}->{'Defines which type of ticket can affect the status of a linked CI.'} =
         '';
     $Self->{Translation}->{'Definition Update'} = '';
-    $Self->{Translation}->{'Delete Configuration Item'} = '';
+    $Self->{Translation}->{'Delete Configuration Item'} = 'รายการการกำหนดค่า';
     $Self->{Translation}->{'DeplState'} = '';
-    $Self->{Translation}->{'Deployment State Color'} = '';
-    $Self->{Translation}->{'DeploymentState'} = '';
+    $Self->{Translation}->{'Deployment State Color'} = 'สถานภาพการใช้งาน';
+    $Self->{Translation}->{'DeploymentState'} = 'สถานภาพการใช้งาน';
     $Self->{Translation}->{'Duplicate'} = 'ซ้ำ';
     $Self->{Translation}->{'Dynamic field event module that marks config item definitions as out of sync, if containing dynamic fields change.'} =
         '';
     $Self->{Translation}->{'Dynamic fields shown in the additional ITSM field screen of the agent interface.'} =
-        '';
+        'แสดงหัวข้อฟิลด์ในหน้าจอฟิลด์เพิ่มเติมของ ITSMในอินเตอร์เฟซของเอเย่นต์';
     $Self->{Translation}->{'Dynamic fields shown in the config item overview screen of the customer interface.'} =
         '';
     $Self->{Translation}->{'Dynamic fields shown in the config item search screen of the agent interface.'} =
@@ -419,15 +419,15 @@ sub Data {
     $Self->{Translation}->{'For every webservice (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker config.'} =
         '';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
-        '';
+        'การลงทะเบียนโมดูล GenericInterface สำหรับชั้นของผู้ร้องขอ';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
-        '';
+        'การลงทะเบียนโมดูล GenericInterface สำหรับชั้นของผู้ร้องขอ';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemUpdate invoker layer.'} =
-        '';
-    $Self->{Translation}->{'ITSM ConfigItem'} = '';
+        'การลงทะเบียนโมดูล GenericInterface สำหรับชั้นของผู้ร้องขอ';
+    $Self->{Translation}->{'ITSM ConfigItem'} = 'ConfigItem';
     $Self->{Translation}->{'ITSM config item overview.'} = '';
     $Self->{Translation}->{'InciState'} = '';
-    $Self->{Translation}->{'IncidentState'} = '';
+    $Self->{Translation}->{'IncidentState'} = 'สถานภาพของเหต์การณ์';
     $Self->{Translation}->{'Includes deployment states in the config item search of the customer interface.'} =
         '';
     $Self->{Translation}->{'Includes incident states in the config item search of the customer interface.'} =
@@ -442,20 +442,20 @@ sub Data {
     $Self->{Translation}->{'Name Module'} = '';
     $Self->{Translation}->{'Number Module'} = '';
     $Self->{Translation}->{'Number of config items to be displayed in each page of a search result in the agent interface.'} =
-        '';
+        'จำนวนบทความ FAQ ที่จะแสดงบนแต่ละหน้าของผลการค้นหาในอินเตอร์เฟซสาธารณะ';
     $Self->{Translation}->{'Number of config items to be displayed in each page of a search result in the customer interface.'} =
-        '';
+        'จำนวนบทความ FAQ ที่จะแสดงบนแต่ละหน้าของผลการค้นหาในอินเตอร์เฟซของลูกค้า';
     $Self->{Translation}->{'Objects to search for, how many entries and which attributs to show. ConfigItem attributes have to explicitly be stored via Elasticsearch.'} =
         '';
     $Self->{Translation}->{'Overview.'} = 'ภาพรวม';
     $Self->{Translation}->{'Parameters for the categories for config item classes in the preferences view of the agent interface.'} =
-        '';
+        'พารามิเตอร์สำหรับการพัฒนาสถานภาพในมุมมองการตั้งค่าของอินเตอร์เฟซเอเย่นต์';
     $Self->{Translation}->{'Parameters for the column filters of the small config item overview. Please note: setting \'Active\' to 0 will only prevent agents from editing settings of this group in their personal preferences, but will still allow administrators to edit the settings of another user\'s behalf. Use \'PreferenceGroup\' to control in which area these settings should be shown in the user interface.'} =
         '';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries per config item class shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        '';
+        'พารามิเตอร์สำหรับแดชบอร์ดเบื้องหลังของภาพรวมตั๋วslave tของอินเตอร์เฟสเอเย่นต์ "จำกัด" คือกำหนดจำนวนของรายการที่แสดงโดยค่าเริ่มต้น "กลุ่ม" จะถูกนำมาใช้เพื่อจำกัดการเข้าถึงปลั๊กอิน (เช่นกลุ่ม: ผู้ดูแลระบบ; กลุ่ม 1; กลุ่ม2;) "เริ่มต้น" ระบุว่าถ้าปลั๊กอินถูกเปิดใช้งานโดยค่าเริ่มต้นหรือหากผู้ใช้ต้องการเพื่อเปิดใช้งานได้ด้วยตนเอง';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        '';
+        'พารามิเตอร์สำหรับแดชบอร์ดเบื้องหลังของภาพรวมตั๋วslave tของอินเตอร์เฟสเอเย่นต์ "จำกัด" คือกำหนดจำนวนของรายการที่แสดงโดยค่าเริ่มต้น "กลุ่ม" จะถูกนำมาใช้เพื่อจำกัดการเข้าถึงปลั๊กอิน (เช่นกลุ่ม: ผู้ดูแลระบบ; กลุ่ม 1; กลุ่ม2;) "เริ่มต้น" ระบุว่าถ้าปลั๊กอินถูกเปิดใช้งานโดยค่าเริ่มต้นหรือหากผู้ใช้ต้องการเพื่อเปิดใช้งานได้ด้วยตนเอง';
     $Self->{Translation}->{'Parameters for the deployment states color in the preferences view of the agent interface.'} =
         'พารามิเตอร์สำหรับการพัฒนาสถานภาพของสีในมุมมองการตั้งค่าของอินเตอร์เฟซเอเย่นต์';
     $Self->{Translation}->{'Parameters for the deployment states in the preferences view of the agent interface.'} =
@@ -463,9 +463,9 @@ sub Data {
     $Self->{Translation}->{'Parameters for the example permission groups of the general catalog attributes.'} =
         'พารามิเตอร์สำหรับตัวอย่างกลุ่มที่ได้รับอนุญาตของแอตทริบิวต์แค็ตตาล็อกทั่วไป';
     $Self->{Translation}->{'Parameters for the name module for config item classes in the preferences view of the agent interface.'} =
-        '';
+        'พารามิเตอร์สำหรับการพัฒนาสถานภาพในมุมมองการตั้งค่าของอินเตอร์เฟซเอเย่นต์';
     $Self->{Translation}->{'Parameters for the number module for config item classes in the preferences view of the agent interface.'} =
-        '';
+        'พารามิเตอร์สำหรับการพัฒนาสถานภาพในมุมมองการตั้งค่าของอินเตอร์เฟซเอเย่นต์';
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         'พารามิเตอร์สำหรับแต่ละหน้า(ซึ่ง configuration items แสดง)';
     $Self->{Translation}->{'Parameters for the version string module for config item classes in the preferences view of the agent interface.'} =
@@ -473,33 +473,33 @@ sub Data {
     $Self->{Translation}->{'Parameters for the version string template toolkit module for config item classes in the preferences view of the agent interface.'} =
         '';
     $Self->{Translation}->{'Parameters for the version trigger for config item classes in the preferences view of the agent interface.'} =
-        '';
+        'พารามิเตอร์สำหรับการพัฒนาสถานภาพในมุมมองการตั้งค่าของอินเตอร์เฟซเอเย่นต์';
     $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =
         '';
     $Self->{Translation}->{'Permission Group'} = '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item attachment action in the agent interface.'} =
-        '';
+        'จำเป็นต้องมีการอนุญาติในการใช้งานในหน้าจอการค้นหารายการการตั้งค่า ITSM ในอินเตอร์เฟซของเอเย่นต์';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
         'จำเป็นต้องมีการอนุญาติในการใช้งานในหน้าจอรายการการตั้งค่า ITSM ในอินเตอร์เฟซของเอเย่นต์';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the agent interface.'} =
         'จำเป็นต้องมีการอนุญาติในการใช้งานในหน้าจอการค้นหารายการการตั้งค่า ITSM ในอินเตอร์เฟซของเอเย่นต์';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the customer interface.'} =
-        '';
+        'จำเป็นต้องมีการอนุญาติในการใช้งานในหน้าจอการค้นหารายการการตั้งค่า ITSM ในอินเตอร์เฟซของเอเย่นต์';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item tree view screen in the agent interface.'} =
-        '';
+        'จำเป็นต้องมีการอนุญาติในการใช้งานในหน้าจอรายการการตั้งค่า ITSM ในอินเตอร์เฟซของเอเย่นต์';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item zoom screen in the agent interface.'} =
         'จำเป็นต้องมีการอนุญาติในการใช้งานในหน้าจอการซูมรายการการตั้งค่า ITSM ในอินเตอร์เฟซของเอเย่นต์';
     $Self->{Translation}->{'Required permissions to use the add ITSM configuration item screen in the agent interface.'} =
         'จำเป็นต้องมีการอนุญาติในการใช้งานการเพิ่มในหน้าจอรายการการตั้งค่า ITSM ในอินเตอร์เฟซของเอเย่นต์';
     $Self->{Translation}->{'Required permissions to use the bulk ITSM configuration item screen in the agent interface.'} =
-        '';
+        'จำเป็นต้องมีการอนุญาติในการใช้งานในหน้าจอรายการการตั้งค่า ITSM ในอินเตอร์เฟซของเอเย่นต์';
     $Self->{Translation}->{'Required permissions to use the edit ITSM configuration item screen in the agent interface.'} =
         'จำเป็นต้องมีการอนุญาติในการใช้งานการแก้ไขในหน้าจอรายการการตั้งค่า ITSM ในอินเตอร์เฟซของเอเย่นต์';
     $Self->{Translation}->{'Required permissions to use the history ITSM configuration item screen in the agent interface.'} =
         'จำเป็นต้องมีการอนุญาติในการใช้งานประวัติในหน้าจอรายการการตั้งค่า ITSM ในอินเตอร์เฟซของเอเย่นต์';
     $Self->{Translation}->{'Required permissions to use the print ITSM configuration item screen in the agent interface.'} =
         'จำเป็นต้องมีการอนุญาติในการใช้งานการพิมพ์ในหน้าจอรายการการตั้งค่า ITSM ในอินเตอร์เฟซของเอเย่นต์';
-    $Self->{Translation}->{'Required privileges to delete config items.'} = '';
+    $Self->{Translation}->{'Required privileges to delete config items.'} = 'สิทธิพิเศษที่จำเป็นในการลบการเปลี่ยนแปลง';
     $Self->{Translation}->{'Search config items.'} = '';
     $Self->{Translation}->{'Set the incident state of a CI automatically when a Ticket is Linked to a CI.'} =
         '';
@@ -514,7 +514,7 @@ sub Data {
     $Self->{Translation}->{'Shows a link in the menu to access the history of a configuration item in the its zoom view of the agent interface.'} =
         'แสดงลิงค์ในเมนูในการที่จะเข้าชมประวัติของ configuration item ในมุมมองการซูมของอินเตอร์เฟซเอเย่นต์';
     $Self->{Translation}->{'Shows a link in the menu to delete a configuration item in its zoom view of the agent interface.'} =
-        '';
+        'แสดงลิงค์ในเมนูในการที่จะแก้ไข configuration item ในมุมมองการซูมของอินเตอร์เฟซเอเย่นต์';
     $Self->{Translation}->{'Shows a link in the menu to display the configuration item links as a Tree View.'} =
         '';
     $Self->{Translation}->{'Shows a link in the menu to duplicate a configuration item in the configuration item overview of the agent interface.'} =
@@ -524,7 +524,7 @@ sub Data {
     $Self->{Translation}->{'Shows a link in the menu to edit a configuration item in the its zoom view of the agent interface.'} =
         'แสดงลิงค์ในเมนูในการที่จะแก้ไข configuration item ในมุมมองการซูมของอินเตอร์เฟซเอเย่นต์';
     $Self->{Translation}->{'Shows a link in the menu to go back in the configuration item zoom view of the agent interface.'} =
-        '';
+        'แสดงลิงค์ในเมนูเพื่อกลับไปยังมุมมองการซูมของการเปลี่ยนแปลงของอินเตอร์เฟซเอเย่นต์';
     $Self->{Translation}->{'Shows a link in the menu to print a configuration item in the its zoom view of the agent interface.'} =
         'แสดงลิงค์ในเมนูในการที่จะพิมพ์ configuration item ในมุมมองการซูมของอินเตอร์เฟซเอเย่นต์';
     $Self->{Translation}->{'Shows a link in the menu to zoom into a configuration item in the configuration item overview of the agent interface.'} =
@@ -595,7 +595,7 @@ sub Data {
     $Self->{Translation}->{'Battery Capacity (Ah)'} = '';
     $Self->{Translation}->{'Battery Type'} = '';
     $Self->{Translation}->{'Building'} = 'การสร้าง';
-    $Self->{Translation}->{'Bus Interface'} = '';
+    $Self->{Translation}->{'Bus Interface'} = 'อินเตอร์เฟซ';
     $Self->{Translation}->{'CC0 (Creative Commons Zero)'} = '';
     $Self->{Translation}->{'CIDR'} = '';
     $Self->{Translation}->{'CPU'} = 'ซีพียู';
@@ -724,7 +724,7 @@ sub Data {
     $Self->{Translation}->{'Operating costs'} = '';
     $Self->{Translation}->{'Order Number'} = '';
     $Self->{Translation}->{'Other'} = 'อื่นๆ';
-    $Self->{Translation}->{'Outputs'} = '';
+    $Self->{Translation}->{'Outputs'} = 'ข้อมูลที่ส่งออกมา';
     $Self->{Translation}->{'PIN'} = '';
     $Self->{Translation}->{'PIN 2'} = '';
     $Self->{Translation}->{'PUK'} = '';
@@ -749,13 +749,13 @@ sub Data {
     $Self->{Translation}->{'Seat licenses'} = '';
     $Self->{Translation}->{'Serialnumber'} = '';
     $Self->{Translation}->{'Server Software'} = '';
-    $Self->{Translation}->{'Service Agreement'} = '';
+    $Self->{Translation}->{'Service Agreement'} = 'ข้อตกลงระดับการให้บริการ';
     $Self->{Translation}->{'Service Tag'} = '';
     $Self->{Translation}->{'Shareware'} = '';
     $Self->{Translation}->{'Socket Type'} = '';
     $Self->{Translation}->{'Software'} = '';
     $Self->{Translation}->{'Speakers'} = '';
-    $Self->{Translation}->{'Standard SIM'} = '';
+    $Self->{Translation}->{'Standard SIM'} = 'มาตรฐาน';
     $Self->{Translation}->{'Start IP Address'} = '';
     $Self->{Translation}->{'Storage'} = '';
     $Self->{Translation}->{'Storage Partition'} = '';

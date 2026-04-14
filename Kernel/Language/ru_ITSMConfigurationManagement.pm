@@ -109,7 +109,7 @@ sub Data {
     $Self->{Translation}->{'Object Type'} = 'Тип объекта';
 
     # Template: AdminDynamicFieldScreen
-    $Self->{Translation}->{'Filter by object type'} = '';
+    $Self->{Translation}->{'Filter by object type'} = 'Фильт по типу';
 
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = 'Будут импортированы следующие классы';
@@ -164,7 +164,7 @@ sub Data {
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = 'Конфигурационная единица %s не найдена в базе!';
     $Self->{Translation}->{'ConfigItem'} = 'Конфигурационная единица';
     $Self->{Translation}->{'printed by %s at %s'} = 'напечатано %s в %s';
-    $Self->{Translation}->{'Referenced by'} = '';
+    $Self->{Translation}->{'Referenced by'} = 'Ссылка';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
     $Self->{Translation}->{'Invalid ClassID!'} = 'Неверный ClassID!';
@@ -201,9 +201,9 @@ sub Data {
     $Self->{Translation}->{'Class restrictions for the config item'} = 'Ограничения класса для элемента конфигурации';
     $Self->{Translation}->{'Select one or more classes to restrict selectable config items'} =
         'Выберите один или несколько классов, чтобы ограничить выбор элементов конфигурации';
-    $Self->{Translation}->{'Deployment state restrictions for the config item'} = '';
+    $Self->{Translation}->{'Deployment state restrictions for the config item'} = 'Ограничения класса для элемента конфигурации';
     $Self->{Translation}->{'Select one or more deployment states to restrict selectable config items'} =
-        '';
+        'Выберите один или несколько классов, чтобы ограничить выбор элементов конфигурации';
     $Self->{Translation}->{'Dynamic (ConfigItem)'} = 'Динамический (ConfigItem)';
     $Self->{Translation}->{'Static (Version)'} = 'Статика (версия)';
     $Self->{Translation}->{'Link Referencing Type'} = 'Тип ссылки';
@@ -359,7 +359,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         'Задает умалчивамый подобъект для класса \'ITSMConfigItem\'.';
     $Self->{Translation}->{'Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
-        '';
+        'Определяет доступные столбцы CI в обзоре элементов конфигурации в зависимости от класса CI. Каждая запись должна состоять из имени класса и массива доступных полей для соответствующего класса. Записи динамических полей должны соответствовать схеме DynamicField_FieldName.';
     $Self->{Translation}->{'Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).'} =
         'Задает высоту окна текстового редактора на этом экране. Введите число пикселей и значение в процентах.';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =
@@ -419,11 +419,11 @@ sub Data {
     $Self->{Translation}->{'For every webservice (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker config.'} =
         'Для каждого веб-сервиса (ключ) может быть определен массив классов (значение), для которых импорт ограничен. Для всех выбранных классов или для всех существующих классов в конфигурации инвокера необходимо будет выбрать идентифицирующие атрибуты.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
-        '';
+        'Регистрация модуля GenericInterface для уровня инвокера ConfigItemFetch.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
         'Регистрация модуля GenericInterface для уровня инвокера ConfigItemFetch.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemUpdate invoker layer.'} =
-        '';
+        'Регистрация модуля GenericInterface для уровня инвокера ConfigItemFetch.';
     $Self->{Translation}->{'ITSM ConfigItem'} = 'ITSM ConfigItem';
     $Self->{Translation}->{'ITSM config item overview.'} = 'Обзор конфигурационных единиц ITSM.';
     $Self->{Translation}->{'InciState'} = 'InciState';
@@ -453,9 +453,9 @@ sub Data {
     $Self->{Translation}->{'Parameters for the column filters of the small config item overview. Please note: setting \'Active\' to 0 will only prevent agents from editing settings of this group in their personal preferences, but will still allow administrators to edit the settings of another user\'s behalf. Use \'PreferenceGroup\' to control in which area these settings should be shown in the user interface.'} =
         'Параметры для фильтров столбцов обзора элементов малой конфигурации. Обратите внимание: при установке значения \'Active\' в 0 агенты не смогут редактировать настройки этой группы в своих личных предпочтениях, но администраторы смогут редактировать настройки от имени другого пользователя. Используйте \'PreferenceGroup\' для управления тем, в какой области пользовательского интерфейса должны отображаться эти настройки.';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries per config item class shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        '';
+        'Параметры для раздела Дайджеста в интерфейсе агента с информацией о списке клиентов компании. "Group" используется для ограничения доступа к разделу (например, Group: admin;group1;group2;). "Default" - задает, будет ли раздел доступен по умолчанию или агент должен активировать его вручную. "CacheTTLLocal" - время обновления кэша в минутах для этого раздела.';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        '';
+        'Параметры для раздела Дайджеста в интерфейсе агента с информацией о списке клиентов компании. "Group" используется для ограничения доступа к разделу (например, Group: admin;group1;group2;). "Default" - задает, будет ли раздел доступен по умолчанию или агент должен активировать его вручную. "CacheTTLLocal" - время обновления кэша в минутах для этого раздела.';
     $Self->{Translation}->{'Parameters for the deployment states color in the preferences view of the agent interface.'} =
         'Параметры для цветов обозначающих состояния использования КЕ в настройках обзоров в интерфейсе агента.';
     $Self->{Translation}->{'Parameters for the deployment states in the preferences view of the agent interface.'} =
@@ -755,7 +755,7 @@ sub Data {
     $Self->{Translation}->{'Socket Type'} = 'Тип розетки';
     $Self->{Translation}->{'Software'} = 'Программное обеспечение';
     $Self->{Translation}->{'Speakers'} = 'Динамики';
-    $Self->{Translation}->{'Standard SIM'} = '';
+    $Self->{Translation}->{'Standard SIM'} = 'Стандартный';
     $Self->{Translation}->{'Start IP Address'} = 'Стартовый IP-адрес';
     $Self->{Translation}->{'Storage'} = 'Хранение';
     $Self->{Translation}->{'Storage Partition'} = 'Раздел для хранения';

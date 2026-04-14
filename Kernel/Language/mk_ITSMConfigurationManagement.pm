@@ -25,20 +25,20 @@ sub Data {
 
     # Template: AdminGenericInterfaceOperationConfigItem
     $Self->{Translation}->{'General operation data'} = '';
-    $Self->{Translation}->{'Settings for incoming request data'} = '';
-    $Self->{Translation}->{'Settings for outgoing response data'} = '';
+    $Self->{Translation}->{'Settings for incoming request data'} = 'Мапирање за добивање на бараните податоци';
+    $Self->{Translation}->{'Settings for outgoing response data'} = 'Мапирање за појдовни одговор на податоци';
 
     # Template: AdminITSMConfigItem
     $Self->{Translation}->{'Config Item Management'} = 'Конфиг Член Менаџмент';
     $Self->{Translation}->{'Change class definition'} = 'Промени дефиниција на класа';
-    $Self->{Translation}->{'Change role definition'} = '';
+    $Self->{Translation}->{'Change role definition'} = 'Промени дефиниција на класа';
     $Self->{Translation}->{'Ready2Import Class Bundles'} = '';
     $Self->{Translation}->{'Here you can import Ready2Import class bundles showcasing our most usual config items. Please note that some additional configuration may be required.'} =
         '';
     $Self->{Translation}->{'Update existing entities'} = '';
     $Self->{Translation}->{'Import Ready2Adopt class bundles'} = '';
-    $Self->{Translation}->{'Config Item Class'} = '';
-    $Self->{Translation}->{'Config Item Role'} = '';
+    $Self->{Translation}->{'Config Item Class'} = 'Конфиг Членови';
+    $Self->{Translation}->{'Config Item Role'} = 'Конфиг Член';
 
     # Template: AgentITSMConfigItemAdd
     $Self->{Translation}->{'Config Item'} = 'Конфиг Член';
@@ -55,16 +55,16 @@ sub Data {
     $Self->{Translation}->{'The number of another Configuration Item to link with.'} = 'Бројот на друг Конфигурациски Член со линк ширина.';
 
     # Template: AgentITSMConfigItemDelete
-    $Self->{Translation}->{'Do you really want to delete this config item?'} = '';
+    $Self->{Translation}->{'Do you really want to delete this config item?'} = 'Дали сте сигурни дека сакате да ја избришете оваа Активност?';
 
     # Template: AgentITSMConfigItemEdit
     $Self->{Translation}->{'The name of this config item'} = 'Името на овој конфиг член';
     $Self->{Translation}->{'Name is already in use by the ConfigItems with the following Number(s): %s'} =
         'Името е веќе во употреба од страна на КонфигЧленовите со следнов/те Број(еви): %s';
     $Self->{Translation}->{'Version Number'} = 'Број на Верзија';
-    $Self->{Translation}->{'Version number of this config item'} = '';
+    $Self->{Translation}->{'Version number of this config item'} = 'Името на овој конфиг член';
     $Self->{Translation}->{'Version Number is already in use by the ConfigItems with the following Number(s): %s'} =
-        '';
+        'Името е веќе во употреба од страна на КонфигЧленовите со следнов/те Број(еви): %s';
     $Self->{Translation}->{'Deployment State'} = 'Состојба на Распоред';
     $Self->{Translation}->{'Incident State'} = 'Состојба на Инцидент';
 
@@ -97,7 +97,7 @@ sub Data {
     $Self->{Translation}->{'Current Deployment State'} = 'Сегашна Состојба на Распоред';
     $Self->{Translation}->{'Current Incident State'} = 'Сегашна Состојба на Инцидент';
     $Self->{Translation}->{'Last changed'} = 'Последно променето';
-    $Self->{Translation}->{'Last changed by'} = '';
+    $Self->{Translation}->{'Last changed by'} = 'Последно променето';
 
     # Template: CustomerITSMConfigItem
     $Self->{Translation}->{'Your ConfigItems'} = '';
@@ -109,7 +109,7 @@ sub Data {
     $Self->{Translation}->{'Object Type'} = 'Тип на објект';
 
     # Template: AdminDynamicFieldScreen
-    $Self->{Translation}->{'Filter by object type'} = '';
+    $Self->{Translation}->{'Filter by object type'} = 'Филтер по тип';
 
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = '';
@@ -164,7 +164,7 @@ sub Data {
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = '';
     $Self->{Translation}->{'ConfigItem'} = 'КонфигЧлен';
     $Self->{Translation}->{'printed by %s at %s'} = '';
-    $Self->{Translation}->{'Referenced by'} = '';
+    $Self->{Translation}->{'Referenced by'} = 'Референца';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
     $Self->{Translation}->{'Invalid ClassID!'} = '';
@@ -322,13 +322,13 @@ sub Data {
     $Self->{Translation}->{'Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
         '';
     $Self->{Translation}->{'Defines Required permissions to delete ITSM configuration items using the Generic Interface.'} =
-        '';
+        'Дефинира Барани пермисии за  да земе ITSM конфигурациски членови користејќи Генерички Интерфејс.';
     $Self->{Translation}->{'Defines Required permissions to get ITSM configuration items using the Generic Interface.'} =
         'Дефинира Барани пермисии за  да земе ITSM конфигурациски членови користејќи Генерички Интерфејс.';
     $Self->{Translation}->{'Defines Required permissions to search ITSM configuration items using the Generic Interface.'} =
         'Дефинира Барани пермисии за ITSM конфигурациски членови користејќи Генерички Интерфејси.';
     $Self->{Translation}->{'Defines Required permissions to set ITSM configuration items using the Generic Interface.'} =
-        '';
+        'Дефинира Барани пермисии за  да земе ITSM конфигурациски членови користејќи Генерички Интерфејс.';
     $Self->{Translation}->{'Defines an overview module to show the small view of a configuration item list.'} =
         'Дефинира преглед модул за приказ на мал преглед на кофигурациска лчен листа.';
     $Self->{Translation}->{'Defines if the link type labels must be shown in the node connections.'} =
@@ -373,9 +373,9 @@ sub Data {
     $Self->{Translation}->{'Defines the search limit for the AgentITSMConfigItemSearch screen.'} =
         'Дефинира лимит за барања за AgentITSMConfigItemSearch екранот.';
     $Self->{Translation}->{'Defines the search limit for the CustomerITSMConfigItem screen.'} =
-        '';
+        'Дефинира лимит за барања за AgentITSMConfigItem екранот.';
     $Self->{Translation}->{'Defines the search limit for the CustomerITSMConfigItemSearch screen.'} =
-        '';
+        'Дефинира лимит за барања за AgentITSMConfigItemSearch екранот.';
     $Self->{Translation}->{'Defines the shown columns of CIs in the link table complex view for all CI classes. If there is no entry, then the default columns are shown.'} =
         '';
     $Self->{Translation}->{'Defines the shown columns of CIs in the link table complex view, depending on the CI class. Each entry must be prefixed with the class name and double colons (i.e. Computer::). There are a few CI-Attributes that common to all CIs (example for the class Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). To show individual CI-Attributes as defined in the CI-Definition, the following scheme must be used (example for the class Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If there is no entry for a CI class, then the default columns are shown.'} =
@@ -391,10 +391,10 @@ sub Data {
     $Self->{Translation}->{'Defines which type of ticket can affect the status of a linked CI.'} =
         '';
     $Self->{Translation}->{'Definition Update'} = '';
-    $Self->{Translation}->{'Delete Configuration Item'} = '';
+    $Self->{Translation}->{'Delete Configuration Item'} = 'Конфигурациски Член';
     $Self->{Translation}->{'DeplState'} = '';
-    $Self->{Translation}->{'Deployment State Color'} = '';
-    $Self->{Translation}->{'DeploymentState'} = '';
+    $Self->{Translation}->{'Deployment State Color'} = 'Состојба на Распоред';
+    $Self->{Translation}->{'DeploymentState'} = 'Состојба на Распоред';
     $Self->{Translation}->{'Duplicate'} = 'Дупликат';
     $Self->{Translation}->{'Dynamic field event module that marks config item definitions as out of sync, if containing dynamic fields change.'} =
         '';
@@ -424,10 +424,10 @@ sub Data {
         '';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemUpdate invoker layer.'} =
         '';
-    $Self->{Translation}->{'ITSM ConfigItem'} = '';
+    $Self->{Translation}->{'ITSM ConfigItem'} = 'КонфигЧлен';
     $Self->{Translation}->{'ITSM config item overview.'} = '';
     $Self->{Translation}->{'InciState'} = '';
-    $Self->{Translation}->{'IncidentState'} = '';
+    $Self->{Translation}->{'IncidentState'} = 'Состојба на Инцидент';
     $Self->{Translation}->{'Includes deployment states in the config item search of the customer interface.'} =
         '';
     $Self->{Translation}->{'Includes incident states in the config item search of the customer interface.'} =
@@ -449,7 +449,7 @@ sub Data {
         '';
     $Self->{Translation}->{'Overview.'} = 'Преглед';
     $Self->{Translation}->{'Parameters for the categories for config item classes in the preferences view of the agent interface.'} =
-        '';
+        'Параметри за распоред состојбите во прегледот со опциите  на агент интерфејсот.';
     $Self->{Translation}->{'Parameters for the column filters of the small config item overview. Please note: setting \'Active\' to 0 will only prevent agents from editing settings of this group in their personal preferences, but will still allow administrators to edit the settings of another user\'s behalf. Use \'PreferenceGroup\' to control in which area these settings should be shown in the user interface.'} =
         '';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries per config item class shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
@@ -463,9 +463,9 @@ sub Data {
     $Self->{Translation}->{'Parameters for the example permission groups of the general catalog attributes.'} =
         'Параметри за пример дозволите за групи од генерални каталог атрибути.';
     $Self->{Translation}->{'Parameters for the name module for config item classes in the preferences view of the agent interface.'} =
-        '';
+        'Параметри за распоред состојбите во прегледот со опциите  на агент интерфејсот.';
     $Self->{Translation}->{'Parameters for the number module for config item classes in the preferences view of the agent interface.'} =
-        '';
+        'Параметри за распоред состојбите во прегледот со опциите  на агент интерфејсот.';
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         'Параметри за страниви(во кои конфигурациските членови се прикажани).';
     $Self->{Translation}->{'Parameters for the version string module for config item classes in the preferences view of the agent interface.'} =
@@ -473,26 +473,26 @@ sub Data {
     $Self->{Translation}->{'Parameters for the version string template toolkit module for config item classes in the preferences view of the agent interface.'} =
         '';
     $Self->{Translation}->{'Parameters for the version trigger for config item classes in the preferences view of the agent interface.'} =
-        '';
+        'Параметри за распоред состојбите во прегледот со опциите  на агент интерфејсот.';
     $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =
         '';
     $Self->{Translation}->{'Permission Group'} = '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item attachment action in the agent interface.'} =
-        '';
+        'Барани премисии за употреба на ITSM  конфигурациски член екран пребарување во агент интерфејсот.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
         'Барани премисии за употреба на ITSM  конфигурациски член екран во агент интерфејсот.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the agent interface.'} =
         'Барани премисии за употреба на ITSM  конфигурациски член екран пребарување во агент интерфејсот.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the customer interface.'} =
-        '';
+        'Барани премисии за употреба на ITSM  конфигурациски член екран пребарување во агент интерфејсот.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item tree view screen in the agent interface.'} =
-        '';
+        'Барани премисии за употреба на ITSM  конфигурациски член екран во агент интерфејсот.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item zoom screen in the agent interface.'} =
         'Барани премисии за употреба на ITSM  конфигурациски член зголемувачки екран во агент интерфејсот.';
     $Self->{Translation}->{'Required permissions to use the add ITSM configuration item screen in the agent interface.'} =
         'Барани премисии за употреба на додавање на ITSM  конфигурациски член екран во агент интерфејсот.';
     $Self->{Translation}->{'Required permissions to use the bulk ITSM configuration item screen in the agent interface.'} =
-        '';
+        'Барани премисии за употреба на ITSM  конфигурациски член екран во агент интерфејсот.';
     $Self->{Translation}->{'Required permissions to use the edit ITSM configuration item screen in the agent interface.'} =
         'Барани премисии за употреба на уреди ITSM  конфигурациски член екран во агент интерфејсот.';
     $Self->{Translation}->{'Required permissions to use the history ITSM configuration item screen in the agent interface.'} =
@@ -514,7 +514,7 @@ sub Data {
     $Self->{Translation}->{'Shows a link in the menu to access the history of a configuration item in the its zoom view of the agent interface.'} =
         'Прикажува линк во менито кое овозможува пристап до историјата на конфигурациски член во конфиг член  зголемен преглед во агент интерфејсот.';
     $Self->{Translation}->{'Shows a link in the menu to delete a configuration item in its zoom view of the agent interface.'} =
-        '';
+        'Прикажува линк во менито за уредување на конфигурациски член во зголемен преглед во агент интерфејсот.';
     $Self->{Translation}->{'Shows a link in the menu to display the configuration item links as a Tree View.'} =
         '';
     $Self->{Translation}->{'Shows a link in the menu to duplicate a configuration item in the configuration item overview of the agent interface.'} =
@@ -524,7 +524,7 @@ sub Data {
     $Self->{Translation}->{'Shows a link in the menu to edit a configuration item in the its zoom view of the agent interface.'} =
         'Прикажува линк во менито за уредување на конфигурациски член во зголемен преглед во агент интерфејсот.';
     $Self->{Translation}->{'Shows a link in the menu to go back in the configuration item zoom view of the agent interface.'} =
-        '';
+        'Прикажува во менито линкот за враќање во детален поглед во интерфејсот на агент.';
     $Self->{Translation}->{'Shows a link in the menu to print a configuration item in the its zoom view of the agent interface.'} =
         'Прикажува линк во менито за печатење во конфигурациски член зголемен преглед во агент интерфејсот.';
     $Self->{Translation}->{'Shows a link in the menu to zoom into a configuration item in the configuration item overview of the agent interface.'} =
@@ -584,7 +584,7 @@ sub Data {
     $Self->{Translation}->{'8U: 14 inches (35.56 cm)'} = '';
     $Self->{Translation}->{'9U: 15.75 inches (40.01 cm)'} = '';
     $Self->{Translation}->{'AGPL (Affero General Public License)'} = '';
-    $Self->{Translation}->{'Accounting'} = '';
+    $Self->{Translation}->{'Accounting'} = 'Менаџмент на Време';
     $Self->{Translation}->{'Accounting Information'} = '';
     $Self->{Translation}->{'Address Allocation'} = '';
     $Self->{Translation}->{'Administrator'} = '';
@@ -595,7 +595,7 @@ sub Data {
     $Self->{Translation}->{'Battery Capacity (Ah)'} = '';
     $Self->{Translation}->{'Battery Type'} = '';
     $Self->{Translation}->{'Building'} = 'Градејќи';
-    $Self->{Translation}->{'Bus Interface'} = '';
+    $Self->{Translation}->{'Bus Interface'} = 'Интерфејс';
     $Self->{Translation}->{'CC0 (Creative Commons Zero)'} = '';
     $Self->{Translation}->{'CIDR'} = '';
     $Self->{Translation}->{'CPU'} = 'Процесор';
@@ -724,7 +724,7 @@ sub Data {
     $Self->{Translation}->{'Operating costs'} = '';
     $Self->{Translation}->{'Order Number'} = '';
     $Self->{Translation}->{'Other'} = 'Друго';
-    $Self->{Translation}->{'Outputs'} = '';
+    $Self->{Translation}->{'Outputs'} = 'Излез';
     $Self->{Translation}->{'PIN'} = '';
     $Self->{Translation}->{'PIN 2'} = '';
     $Self->{Translation}->{'PUK'} = '';
@@ -749,13 +749,13 @@ sub Data {
     $Self->{Translation}->{'Seat licenses'} = '';
     $Self->{Translation}->{'Serialnumber'} = '';
     $Self->{Translation}->{'Server Software'} = '';
-    $Self->{Translation}->{'Service Agreement'} = '';
+    $Self->{Translation}->{'Service Agreement'} = 'Договор за Ниво на Услуга';
     $Self->{Translation}->{'Service Tag'} = '';
     $Self->{Translation}->{'Shareware'} = '';
     $Self->{Translation}->{'Socket Type'} = '';
     $Self->{Translation}->{'Software'} = '';
     $Self->{Translation}->{'Speakers'} = '';
-    $Self->{Translation}->{'Standard SIM'} = '';
+    $Self->{Translation}->{'Standard SIM'} = 'Стандардно';
     $Self->{Translation}->{'Start IP Address'} = '';
     $Self->{Translation}->{'Storage'} = '';
     $Self->{Translation}->{'Storage Partition'} = '';

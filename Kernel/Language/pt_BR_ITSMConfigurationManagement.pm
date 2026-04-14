@@ -109,7 +109,7 @@ sub Data {
     $Self->{Translation}->{'Object Type'} = 'Tipo de objeto';
 
     # Template: AdminDynamicFieldScreen
-    $Self->{Translation}->{'Filter by object type'} = '';
+    $Self->{Translation}->{'Filter by object type'} = 'Filtrar por tipo';
 
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = 'As seguintes classes serão importadas';
@@ -164,7 +164,7 @@ sub Data {
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = 'ConfigItemID %s não encontrado na base de dados!';
     $Self->{Translation}->{'ConfigItem'} = 'Item de configuração';
     $Self->{Translation}->{'printed by %s at %s'} = 'Impresso por %s em %s';
-    $Self->{Translation}->{'Referenced by'} = '';
+    $Self->{Translation}->{'Referenced by'} = 'Referência';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
     $Self->{Translation}->{'Invalid ClassID!'} = 'ClassID inválido!';
@@ -201,9 +201,9 @@ sub Data {
     $Self->{Translation}->{'Class restrictions for the config item'} = 'Restrições de classe para o item de configuração';
     $Self->{Translation}->{'Select one or more classes to restrict selectable config items'} =
         'Selecione uma ou mais classes para restringir os itens de configuração selecionáveis';
-    $Self->{Translation}->{'Deployment state restrictions for the config item'} = '';
+    $Self->{Translation}->{'Deployment state restrictions for the config item'} = 'Restrições de classe para o item de configuração';
     $Self->{Translation}->{'Select one or more deployment states to restrict selectable config items'} =
-        '';
+        'Selecione uma ou mais classes para restringir os itens de configuração selecionáveis';
     $Self->{Translation}->{'Dynamic (ConfigItem)'} = 'Dinâmico (ConfigItem)';
     $Self->{Translation}->{'Static (Version)'} = 'Static (versão)';
     $Self->{Translation}->{'Link Referencing Type'} = 'Tipo de referência de link';
@@ -359,7 +359,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         'Define o subobjeto padrão da classe \'ITSMConfigItem\'.';
     $Self->{Translation}->{'Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
-        '';
+        'Define as colunas disponíveis de ICs na visão geral do item de configuração, dependendo da classe do IC. Cada entrada deve consistir em um nome de classe e uma matriz de campos disponíveis para a classe correspondente. As entradas de campo dinâmico devem respeitar o esquema DynamicField_FieldName.';
     $Self->{Translation}->{'Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).'} =
         'Define a altura do componente de edição rich text desta tela. Registre um número (pixels) ou uma porcentagem (relativo).';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =
@@ -419,11 +419,11 @@ sub Data {
     $Self->{Translation}->{'For every webservice (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker config.'} =
         'Para cada serviço da Web (chave), é possível definir uma matriz de classes (valor) na qual a importação é restrita. Para todas as classes escolhidas ou todas as classes existentes, os atributos de identificação deverão ser escolhidos na configuração do invocador.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
-        '';
+        'Registro do módulo GenericInterface para a camada do invocador ConfigItemFetch.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
         'Registro do módulo GenericInterface para a camada do invocador ConfigItemFetch.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemUpdate invoker layer.'} =
-        '';
+        'Registro do módulo GenericInterface para a camada do invocador ConfigItemFetch.';
     $Self->{Translation}->{'ITSM ConfigItem'} = 'ITSM ConfigItem';
     $Self->{Translation}->{'ITSM config item overview.'} = 'Visão Geral  do Item de Configuração.';
     $Self->{Translation}->{'InciState'} = 'InciState';
@@ -453,9 +453,9 @@ sub Data {
     $Self->{Translation}->{'Parameters for the column filters of the small config item overview. Please note: setting \'Active\' to 0 will only prevent agents from editing settings of this group in their personal preferences, but will still allow administrators to edit the settings of another user\'s behalf. Use \'PreferenceGroup\' to control in which area these settings should be shown in the user interface.'} =
         'Parâmetros para os filtros de coluna da visão geral do item de configuração pequena. Observação: a definição de "Active" como 0 impedirá apenas que os agentes editem as configurações desse grupo em suas preferências pessoais, mas ainda permitirá que os administradores editem as configurações em nome de outro usuário. Use "PreferenceGroup" para controlar em que área essas configurações devem ser mostradas na interface do usuário.';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries per config item class shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        '';
+        'Parâmetros para o backend de painel da visão geral da lista de usuários clientes na interface de agente. "Limit" é o número de entradas exibidas como padrão. "Group" é utilizado para restringir o acesso ao plugin (exemplo Group: admin;group1;group2;). "Default" determina se o plugin é ativado como padrão ou se o usuário precisa ativar manualmente. "CacheTTLLocal" é o tempo de cache, em minutos, para o plugin.';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        '';
+        'Parâmetros para o backend de painel da visão geral da lista de usuários clientes na interface de agente. "Limit" é o número de entradas exibidas como padrão. "Group" é utilizado para restringir o acesso ao plugin (exemplo Group: admin;group1;group2;). "Default" determina se o plugin é ativado como padrão ou se o usuário precisa ativar manualmente. "CacheTTLLocal" é o tempo de cache, em minutos, para o plugin.';
     $Self->{Translation}->{'Parameters for the deployment states color in the preferences view of the agent interface.'} =
         'Parâmetros para a cor dos estados de implantação na tela de preferências da interface de atendente.';
     $Self->{Translation}->{'Parameters for the deployment states in the preferences view of the agent interface.'} =
@@ -755,7 +755,7 @@ sub Data {
     $Self->{Translation}->{'Socket Type'} = 'Tipo de soquete';
     $Self->{Translation}->{'Software'} = 'Software';
     $Self->{Translation}->{'Speakers'} = 'Alto-falantes';
-    $Self->{Translation}->{'Standard SIM'} = '';
+    $Self->{Translation}->{'Standard SIM'} = 'Padrão';
     $Self->{Translation}->{'Start IP Address'} = 'Endereço IP inicial';
     $Self->{Translation}->{'Storage'} = 'Armazenamento';
     $Self->{Translation}->{'Storage Partition'} = 'Partição de armazenamento';

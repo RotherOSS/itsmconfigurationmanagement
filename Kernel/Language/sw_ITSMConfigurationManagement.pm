@@ -25,20 +25,20 @@ sub Data {
 
     # Template: AdminGenericInterfaceOperationConfigItem
     $Self->{Translation}->{'General operation data'} = '';
-    $Self->{Translation}->{'Settings for incoming request data'} = '';
-    $Self->{Translation}->{'Settings for outgoing response data'} = '';
+    $Self->{Translation}->{'Settings for incoming request data'} = 'Tengeneza ramani kwa ajili ya data za maombi zinazoingia.';
+    $Self->{Translation}->{'Settings for outgoing response data'} = 'Kuunganisha data za majibu zinazotoka nje.';
 
     # Template: AdminITSMConfigItem
     $Self->{Translation}->{'Config Item Management'} = 'Usanidi wa usimamizi wa kipengele ';
     $Self->{Translation}->{'Change class definition'} = 'Badili ufafanuzi wa tabaka';
-    $Self->{Translation}->{'Change role definition'} = '';
+    $Self->{Translation}->{'Change role definition'} = 'Badili ufafanuzi wa tabaka';
     $Self->{Translation}->{'Ready2Import Class Bundles'} = '';
     $Self->{Translation}->{'Here you can import Ready2Import class bundles showcasing our most usual config items. Please note that some additional configuration may be required.'} =
         '';
     $Self->{Translation}->{'Update existing entities'} = '';
     $Self->{Translation}->{'Import Ready2Adopt class bundles'} = '';
-    $Self->{Translation}->{'Config Item Class'} = '';
-    $Self->{Translation}->{'Config Item Role'} = '';
+    $Self->{Translation}->{'Config Item Class'} = 'Vipengele vya usanidi';
+    $Self->{Translation}->{'Config Item Role'} = 'Usanidi wa Kipengele';
 
     # Template: AgentITSMConfigItemAdd
     $Self->{Translation}->{'Config Item'} = 'Usanidi wa Kipengele ';
@@ -55,16 +55,16 @@ sub Data {
     $Self->{Translation}->{'The number of another Configuration Item to link with.'} = 'Namba ya kipengele kingine cha usanidi cha kuunganisha nacho.';
 
     # Template: AgentITSMConfigItemDelete
-    $Self->{Translation}->{'Do you really want to delete this config item?'} = '';
+    $Self->{Translation}->{'Do you really want to delete this config item?'} = 'Kweli unataka kufuta mabadiliko haya?';
 
     # Template: AgentITSMConfigItemEdit
     $Self->{Translation}->{'The name of this config item'} = 'Jina la hiki kipengele cha usanidi';
     $Self->{Translation}->{'Name is already in use by the ConfigItems with the following Number(s): %s'} =
         'Jina hili tayari limekwisha tumikana kipengele cha usanidi chenye namba i(z)fuatazo: %s';
     $Self->{Translation}->{'Version Number'} = 'Namba ya toleo';
-    $Self->{Translation}->{'Version number of this config item'} = '';
+    $Self->{Translation}->{'Version number of this config item'} = 'Jina la hiki kipengele cha usanidi';
     $Self->{Translation}->{'Version Number is already in use by the ConfigItems with the following Number(s): %s'} =
-        '';
+        'Jina hili tayari limekwisha tumikana kipengele cha usanidi chenye namba i(z)fuatazo: %s';
     $Self->{Translation}->{'Deployment State'} = 'Hali ya kutumia';
     $Self->{Translation}->{'Incident State'} = 'Hali ya tukio';
 
@@ -109,7 +109,7 @@ sub Data {
     $Self->{Translation}->{'Object Type'} = 'Aina ya kipengele';
 
     # Template: AdminDynamicFieldScreen
-    $Self->{Translation}->{'Filter by object type'} = '';
+    $Self->{Translation}->{'Filter by object type'} = 'Chuja kwa aina';
 
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = '';
@@ -164,7 +164,7 @@ sub Data {
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = '';
     $Self->{Translation}->{'ConfigItem'} = 'Kipengele cha usanidi';
     $Self->{Translation}->{'printed by %s at %s'} = '';
-    $Self->{Translation}->{'Referenced by'} = '';
+    $Self->{Translation}->{'Referenced by'} = 'Marejeo';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
     $Self->{Translation}->{'Invalid ClassID!'} = '';
@@ -312,9 +312,12 @@ sub Data {
     $Self->{Translation}->{'Customers have the possibility to manually switch between historic CI versions.'} =
         '';
     $Self->{Translation}->{'Default data to use on attribute for config item search screen. Example: "ITSMConfigItemCreateTimePointFormat=year;ITSMConfigItemCreateTimePointStart=Last;ITSMConfigItemCreateTimePoint=2;".'} =
-        '';
+        'Data chaguo misngi kutumika katika sifa kwa ajili ya skrini ya kutafuta ya tiketi.
+Mfano:
+"Umbizo la Muda la Kutengeneza Tiketi= mwaka; Mwanzo wa Muda wa kutengeneza tiketi= Mwisho; Pointi ya muda wa kutengeneza tiketi=2;".';
     $Self->{Translation}->{'Default data to use on attribute for config item search screen. Example: "ITSMConfigItemCreateTimeStartYear=2010;ITSMConfigItemCreateTimeStartMonth=10;ITSMConfigItemCreateTimeStartDay=4;ITSMConfigItemCreateTimeStopYear=2010;ITSMConfigItemCreateTimeStopMonth=11;ITSMConfigItemCreateTimeStopDay=3;".'} =
-        '';
+        'Data chaguo-msingi kutumia katika sifa kwa ajili ya skrini ya kutafuta ya tiketi:
+"Mwaka wa kuanza wa muda wa kutengeneza tiketi=2010; Mwezi wa kuanza wa muda wa kutengeneza tiketi=10; Siku ya kuanza ya muda wa kutengeneza tiketi=4; Mwaka wa kuacha wa muda wa kutengeneza tiketi =2010; Mwezi wa kuacha wa muda wa kutengeneza tiketi = 11; Siku ya kuacha ya muda wa kutengeneza tiketi=3; ".';
     $Self->{Translation}->{'Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = "complex"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.'} =
         '';
     $Self->{Translation}->{'Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit.'} =
@@ -322,13 +325,13 @@ sub Data {
     $Self->{Translation}->{'Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
         '';
     $Self->{Translation}->{'Defines Required permissions to delete ITSM configuration items using the Generic Interface.'} =
-        '';
+        'Inafafanua ruhusa zinazohitajika kupatavipengele vya usanidi vya ITSM kwa kutumia kiolesura cha jeneriki.';
     $Self->{Translation}->{'Defines Required permissions to get ITSM configuration items using the Generic Interface.'} =
         'Inafafanua ruhusa zinazohitajika kupatavipengele vya usanidi vya ITSM kwa kutumia kiolesura cha jeneriki.';
     $Self->{Translation}->{'Defines Required permissions to search ITSM configuration items using the Generic Interface.'} =
         'Inafafanua ruhusa zinazohitajika kutafuta vipengele vya usanidi vya ITSM kwa kutumia kiolesura cha jeneriki.';
     $Self->{Translation}->{'Defines Required permissions to set ITSM configuration items using the Generic Interface.'} =
-        '';
+        'Inafafanua ruhusa zinazohitajika kupatavipengele vya usanidi vya ITSM kwa kutumia kiolesura cha jeneriki.';
     $Self->{Translation}->{'Defines an overview module to show the small view of a configuration item list.'} =
         'Inafafanua moduli ya mapitio kuonyesha mandhari ndogo ya orodha ya vipengele vya usanidi.';
     $Self->{Translation}->{'Defines if the link type labels must be shown in the node connections.'} =
@@ -338,24 +341,24 @@ sub Data {
     $Self->{Translation}->{'Defines the available columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         '';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the agent interface.'} =
-        '';
+        'Inafafanua sifa ya tiketi chaguo-msingi kwa ajili ya kupanga matokeo ya utafutaji wa tiketi ya kiolesura cha mteja.';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the customer interface.'} =
         '';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of this operation.'} =
-        '';
+        'Inafafanua sifa ya tiketi chaguo-msingi kwa ajili ya kupanga matokeo ya utafutaji wa tiketi ya uendeshaji huu.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the agent interface. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'Inafafanua mpangilio wa tiketi chaguo-msingi katika matokeo ya utafutaji ya tiketi ya kiolesura cha wakala. Juu: Kongwe juu. Chini: Za sasa juu.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'Inafafanua mpangilio wa tiketi chaguo-msingi katika matokeo ya utafutaji ya tiketi ya kiolesura cha mteja. Juu: Kongwe juu. Chini: Za sasa juu.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the this operation. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'Inafafanua mpangilio wa tiketi chaguo-msingi katika matokeo ya utafutaji ya tiketi ya mchakato huu. Juu: Kongwe juu. Chini: Za sasa juu.';
     $Self->{Translation}->{'Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         '';
     $Self->{Translation}->{'Defines the default relations depth to be shown.'} = '';
     $Self->{Translation}->{'Defines the default shown config item search attribute for config item search screen.'} =
-        '';
+        'Inafafanua sifa ya tiketi iliyotafutwa iliyoonyeshwa chaguo msingi kwa skrini ya kutafuta tiketi.';
     $Self->{Translation}->{'Defines the default shown config item search attribute for config item search screen. Example: "Key" must have the name of the Dynamic Field in this case \'X\', "Content" must have the value of the Dynamic Field depending on the Dynamic Field type,  Text: \'a text\', Dropdown: \'1\', Date/Time: \'Search_DynamicField_XTimeSlotStartYear=1974; Search_DynamicField_XTimeSlotStartMonth=01; Search_DynamicField_XTimeSlotStartDay=26; Search_DynamicField_XTimeSlotStartHour=00; Search_DynamicField_XTimeSlotStartMinute=00; Search_DynamicField_XTimeSlotStartSecond=00; Search_DynamicField_XTimeSlotStopYear=2013; Search_DynamicField_XTimeSlotStopMonth=01; Search_DynamicField_XTimeSlotStopDay=26; Search_DynamicField_XTimeSlotStopHour=23; Search_DynamicField_XTimeSlotStopMinute=59; Search_DynamicField_XTimeSlotStopSecond=59;\' and or \'Search_DynamicField_XTimePointFormat=week; Search_DynamicField_XTimePointStart=Before; Search_DynamicField_XTimePointValue=7\';.'} =
-        '';
+        'Inafafanua sifa ya tiketi iliyotafutwa iliyoonyeshwa chaguo msingi kwa skrini ya kutafuta tiketi. Mfano: "Kibonye" lazima iwe na jina la uga wenye nguvu kwa hapa ni \'X\', "Maudhui" lazima iwe na thamani ua uga wenye nguvu kutegemeana na aina ya uga wenye nguvu, Matini:\'Matini\', Kunjuzi: \'1\', Tarehe/Muda:  Mwaka wa kuanza wa majira ya muda uliopangwa X ya uga wenye nguvu uliotafutafutwa=1974; Mwezi wa kuanza wa majira ya muda uliopangwa X ya uga wenye nguvu uliotafutafutwa=01; Siku ya kuanza ya majira ya muda uliopangwa X ya uga wenye nguvu uliotafutafutwa=26; Saa ya kuanza ya majira ya muda uliopangwa X ya uga wenye nguvu uliotafutafutwa =00; Dakika ya kuanza ya majira ya muda uliopangwa X ya uga wenye nguvu uliotafutafutwa = 00; Sekunde ya kuanza ya majira ya muda uliopangwa X ya uga wenye nguvu uliotafutafutwa = 00; Mwaka wa kuisha wa majira ya muda uliopangwa X ya uga wenye nguvu uliotafutafutwa =2013; Mwezi wa kuisha wa majira ya muda uliopangwa X ya uga wenye nguvu uliotafutafutwa =01; Siku ya kuisha ya majira ya muda uliopangwa X ya uga wenye nguvu uliotafutafutwa =26; Saa ya kuisha ya majira ya muda uliopangwa X ya uga wenye nguvu uliotafutafutwa =23; Dakika ya kuisha ya majira ya muda uliopangwa X ya uga wenye nguvu uliotafutafutwa =59; Sekunde ya kuisha ya majira ya muda uliopangwa X ya uga wenye nguvu uliotafutafutwa =59; na au Umbizo la pointi ya muda X ya uga wenye nguvu uliotafutafutwa = Week; Mwanzo wa pointi ya muda X ya uga wenye nguvu uliotafutafutwa = Kabla; Thamani ya pointi ya muda X ya uga wenye nguvu uliotafutafutwa = 7;';
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         'Inafafanua kipengele cha chaguo msingi cha tabaka la \'Kipengelecha Usanidi cha ITSM\'.';
     $Self->{Translation}->{'Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
@@ -373,33 +376,33 @@ sub Data {
     $Self->{Translation}->{'Defines the search limit for the AgentITSMConfigItemSearch screen.'} =
         'Inafafanua kikomo cha kutafuta kwa skrini ya Kutafuta Kipengele cha usanidi cha ITSM  cha Wakala.';
     $Self->{Translation}->{'Defines the search limit for the CustomerITSMConfigItem screen.'} =
-        '';
+        'Inawezesha upeo wa kutafuta kwa skerini ya Kipengele cha usanidi cha ITSM cha wakala.';
     $Self->{Translation}->{'Defines the search limit for the CustomerITSMConfigItemSearch screen.'} =
-        '';
+        'Inafafanua kikomo cha kutafuta kwa skrini ya Kutafuta Kipengele cha usanidi cha ITSM  cha Wakala.';
     $Self->{Translation}->{'Defines the shown columns of CIs in the link table complex view for all CI classes. If there is no entry, then the default columns are shown.'} =
         '';
     $Self->{Translation}->{'Defines the shown columns of CIs in the link table complex view, depending on the CI class. Each entry must be prefixed with the class name and double colons (i.e. Computer::). There are a few CI-Attributes that common to all CIs (example for the class Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). To show individual CI-Attributes as defined in the CI-Definition, the following scheme must be used (example for the class Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If there is no entry for a CI class, then the default columns are shown.'} =
         'Inafafanua safu wima za CI zilizoonyeshwa katika mandhari ya jedwali tata la kiungo,kutegemeana na tabaka la CI. Kila ingizo lazima liwe na kiambishi awali jina la tabaka na :: ( mfano Tarakilishi::).Kuna viumbi vichache vya CI ambavyo vipo kwa CI zote (mfano kwenye tabaka la tarakilishi: tarakilishi::jina, Tarakilishi::Hali yaCurDep, Tarakilishi::Muda wa kutengeneza). Kuonyesha kiumbi cha CI kimoja kimoja kama vilivyo fafanuliwa kwenye ufafanuzi wa CI, mpangilio ufuatao lazima utumike (mfano kwenye tabaka tarakilishi): Tarakilishi::diski kuu::1, Tarakilishi::Diski kuu ngumu::1Uwezo::1, Tarakilishi::Diski kuu ngumu::2, Tarakilishi::Diski kuu ngumu::2::Uwezo::1. Kama hakuna ingizo kwa tabaka la CI, safuwima chaguo msingi zinaonyeshwa.';
     $Self->{Translation}->{'Defines which items are available for \'Action\' in third level of the ITSM Config Item ACL structure.'} =
-        '';
+        'Inafafa vipengelee ambavyo vinapatikana kwa ajili ya \'Kitendo\' katika ngazi ya tatu ya muundo wa ACL.';
     $Self->{Translation}->{'Defines which items are available in first level of the ITSM Config Item ACL structure.'} =
-        '';
+        'Inafafanua vipengele ambavyo vinapatikana katika ngazi ya kwanza ya muundo wa ACL.';
     $Self->{Translation}->{'Defines which items are available in second level of the ITSM Config Item ACL structure.'} =
-        '';
+        'Inafafanua vipengele ambavyo vinapatikana katika ngazi ya pili ya muundo wa ACL.';
     $Self->{Translation}->{'Defines which type of link (named from the ticket perspective) can affect the status of a linked CI.'} =
         '';
     $Self->{Translation}->{'Defines which type of ticket can affect the status of a linked CI.'} =
         '';
     $Self->{Translation}->{'Definition Update'} = '';
-    $Self->{Translation}->{'Delete Configuration Item'} = '';
+    $Self->{Translation}->{'Delete Configuration Item'} = 'Kipengele cha Usanidi';
     $Self->{Translation}->{'DeplState'} = '';
-    $Self->{Translation}->{'Deployment State Color'} = '';
-    $Self->{Translation}->{'DeploymentState'} = '';
+    $Self->{Translation}->{'Deployment State Color'} = 'Hali ya kutumia';
+    $Self->{Translation}->{'DeploymentState'} = 'Hali ya kutumia';
     $Self->{Translation}->{'Duplicate'} = 'Nakala pacha';
     $Self->{Translation}->{'Dynamic field event module that marks config item definitions as out of sync, if containing dynamic fields change.'} =
         '';
     $Self->{Translation}->{'Dynamic fields shown in the additional ITSM field screen of the agent interface.'} =
-        '';
+        'Inyesha uga za kichwa cha habari katika skrini ya uga wa ITSM ulioongezwa wa kiolesura cha wakala.';
     $Self->{Translation}->{'Dynamic fields shown in the config item overview screen of the customer interface.'} =
         '';
     $Self->{Translation}->{'Dynamic fields shown in the config item search screen of the agent interface.'} =
@@ -419,22 +422,22 @@ sub Data {
     $Self->{Translation}->{'For every webservice (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker config.'} =
         '';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
-        '';
+        'Usajili wa moduli ya kiolesura cha jumla kwaajili la tabaka la kihamshaji.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
-        '';
+        'Usajili wa moduli ya kiolesura cha jumla kwaajili la tabaka la kihamshaji.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemUpdate invoker layer.'} =
-        '';
-    $Self->{Translation}->{'ITSM ConfigItem'} = '';
+        'Usajili wa moduli ya kiolesura cha jumla kwaajili la tabaka la kihamshaji.';
+    $Self->{Translation}->{'ITSM ConfigItem'} = 'Kipengele cha usanidi';
     $Self->{Translation}->{'ITSM config item overview.'} = '';
     $Self->{Translation}->{'InciState'} = '';
-    $Self->{Translation}->{'IncidentState'} = '';
+    $Self->{Translation}->{'IncidentState'} = 'Hali ya tukio';
     $Self->{Translation}->{'Includes deployment states in the config item search of the customer interface.'} =
         '';
     $Self->{Translation}->{'Includes incident states in the config item search of the customer interface.'} =
         '';
     $Self->{Translation}->{'License accounting configuration item event module.'} = '';
     $Self->{Translation}->{'Maximum number of config items to be displayed in the result of this operation.'} =
-        '';
+        'Namba ya upeo wa juu wa tiketi zitakazo onyeshwa katika matokeo ya mchakato huu.';
     $Self->{Translation}->{'Module to check the group responsible for a class.'} = 'Moduli ya kuangalia makundi yanayohusika na tabaka.';
     $Self->{Translation}->{'Module to check the group responsible for a configuration item.'} =
         'Module ya kuangalia makundi yanayohusika na kipengele cha usanidi.';
@@ -442,20 +445,20 @@ sub Data {
     $Self->{Translation}->{'Name Module'} = '';
     $Self->{Translation}->{'Number Module'} = '';
     $Self->{Translation}->{'Number of config items to be displayed in each page of a search result in the agent interface.'} =
-        '';
+        'Namba ta tiketi zitakazoonyeshwa katika kila ukurasa wa matokeo ya utafutaji katika kiolesura cha wakala.';
     $Self->{Translation}->{'Number of config items to be displayed in each page of a search result in the customer interface.'} =
-        '';
+        'Namba ta tiketi zitakazoonyeshwa katika kila ukurasa wa matokeo ya utafutaji katika kiolesura cha mteja.';
     $Self->{Translation}->{'Objects to search for, how many entries and which attributs to show. ConfigItem attributes have to explicitly be stored via Elasticsearch.'} =
         '';
     $Self->{Translation}->{'Overview.'} = 'Mapitio';
     $Self->{Translation}->{'Parameters for the categories for config item classes in the preferences view of the agent interface.'} =
-        '';
+        'Vigezo kwa ajili ya hali za matumizi kama mandhari ya mapendeleo ya kiolesura cha wakala.';
     $Self->{Translation}->{'Parameters for the column filters of the small config item overview. Please note: setting \'Active\' to 0 will only prevent agents from editing settings of this group in their personal preferences, but will still allow administrators to edit the settings of another user\'s behalf. Use \'PreferenceGroup\' to control in which area these settings should be shown in the user interface.'} =
         '';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries per config item class shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        '';
+        'Parameta kwa mazingira ya nyuma ya dashibodi mapitio ya orodha ya mteja mtumiaji ya kiolesura cha wakala. \'\'Kikundi\'\' kinatumika kuzuia kufikia kuchomeka (mfano Kikundi:Utawala;kikundi cha 1;kikundi cha 2;). \'\'Chaguo-msingi\'\' inahakiki kama mchomeko umewezeshwa kwa mchaguo-msingi au kama mtumizi anahitaji kuwezesha kwa mkono. \'\'HifadhimudaTTLKiambo\'\' ni muda wa hifadhi muda katika dakika kwa mchomeko.';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        '';
+        'Parameta kwa mazingira ya nyuma ya dashibodi mapitio ya orodha ya mteja mtumiaji ya kiolesura cha wakala. \'\'Kikundi\'\' kinatumika kuzuia kufikia kuchomeka (mfano Kikundi:Utawala;kikundi cha 1;kikundi cha 2;). \'\'Chaguo-msingi\'\' inahakiki kama mchomeko umewezeshwa kwa mchaguo-msingi au kama mtumizi anahitaji kuwezesha kwa mkono. \'\'HifadhimudaTTLKiambo\'\' ni muda wa hifadhi muda katika dakika kwa mchomeko.';
     $Self->{Translation}->{'Parameters for the deployment states color in the preferences view of the agent interface.'} =
         'Vigezo kwa ajili ya rangi ya hali za matumizi kama mandhari ya mapendeleo ya kiolesura cha wakala.';
     $Self->{Translation}->{'Parameters for the deployment states in the preferences view of the agent interface.'} =
@@ -463,9 +466,9 @@ sub Data {
     $Self->{Translation}->{'Parameters for the example permission groups of the general catalog attributes.'} =
         'Vigezo kwa mfano ruhusa za vikundi kwa sifa za katalogi za ujumla.';
     $Self->{Translation}->{'Parameters for the name module for config item classes in the preferences view of the agent interface.'} =
-        '';
+        'Vigezo kwa ajili ya hali za matumizi kama mandhari ya mapendeleo ya kiolesura cha wakala.';
     $Self->{Translation}->{'Parameters for the number module for config item classes in the preferences view of the agent interface.'} =
-        '';
+        'Vigezo kwa ajili ya hali za matumizi kama mandhari ya mapendeleo ya kiolesura cha wakala.';
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         'Vigezo kwa ajili ya ukurasa (ambavyo vipengele vya usanidi vimeonyeshwa).';
     $Self->{Translation}->{'Parameters for the version string module for config item classes in the preferences view of the agent interface.'} =
@@ -473,33 +476,33 @@ sub Data {
     $Self->{Translation}->{'Parameters for the version string template toolkit module for config item classes in the preferences view of the agent interface.'} =
         '';
     $Self->{Translation}->{'Parameters for the version trigger for config item classes in the preferences view of the agent interface.'} =
-        '';
+        'Vigezo kwa ajili ya hali za matumizi kama mandhari ya mapendeleo ya kiolesura cha wakala.';
     $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =
         'Fanya kitecndo cha usanidishwaji kwa kila tukio (kama Kichochezi) kwa kila huduma ya wavuti iliyosanidiwa.';
     $Self->{Translation}->{'Permission Group'} = '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item attachment action in the agent interface.'} =
-        '';
+        'Inahitaji ruhusa kutumia skrini ya kutafuta kipengele cha usanidi cha ITSM katika kiolesura cha wakala.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
         'Inahitaji ruhusa kutumia skrini ya kipengele cha usanidi cha ITSM katika kiolesura cha wakala.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the agent interface.'} =
         'Inahitaji ruhusa kutumia skrini ya kutafuta kipengele cha usanidi cha ITSM katika kiolesura cha wakala.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the customer interface.'} =
-        '';
+        'Inahitaji ruhusa kutumia skrini ya kutafuta kipengele cha usanidi cha ITSM katika kiolesura cha wakala.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item tree view screen in the agent interface.'} =
-        '';
+        'Inahitaji ruhusa kutumia skrini ya kipengele cha usanidi cha ITSM katika kiolesura cha wakala.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item zoom screen in the agent interface.'} =
         'Inahitaji ruhusa kutumia skrini iliyokuzwa ya kipengele cha usanidi cha ITSM katika kiolesura cha wakala.';
     $Self->{Translation}->{'Required permissions to use the add ITSM configuration item screen in the agent interface.'} =
         'Inahitaji ruhusa kutumia skrini ya kipengele cha usanidi cha ITSM kilichoongeza katika kiolesura cha wakala.';
     $Self->{Translation}->{'Required permissions to use the bulk ITSM configuration item screen in the agent interface.'} =
-        '';
+        'Inahitaji ruhusa kutumia skrini ya kipengele cha usanidi cha ITSM katika kiolesura cha wakala.';
     $Self->{Translation}->{'Required permissions to use the edit ITSM configuration item screen in the agent interface.'} =
         'Inahitaji ruhusa kutumia skrini ya kipengele cha usanidi cha ITSM kilichohaririwa katika kiolesura cha wakala.';
     $Self->{Translation}->{'Required permissions to use the history ITSM configuration item screen in the agent interface.'} =
         'Inahitaji ruhusa kutumia skrini ya kipengele cha usanidi cha ITSM cha historia katika kiolesura cha wakala.';
     $Self->{Translation}->{'Required permissions to use the print ITSM configuration item screen in the agent interface.'} =
         'Inahitaji ruhusa kutumia skrini ya kipengele cha usanidi cha ITSM cha kuchapisha katika kiolesura cha wakala.';
-    $Self->{Translation}->{'Required privileges to delete config items.'} = '';
+    $Self->{Translation}->{'Required privileges to delete config items.'} = 'Upendeleo unaotakiwa ili kufuta mabadiliko.';
     $Self->{Translation}->{'Search config items.'} = '';
     $Self->{Translation}->{'Set the incident state of a CI automatically when a Ticket is Linked to a CI.'} =
         '';
@@ -514,7 +517,7 @@ sub Data {
     $Self->{Translation}->{'Shows a link in the menu to access the history of a configuration item in the its zoom view of the agent interface.'} =
         'Inaonyesha kiungo kwenye  menyu kuweza kufikia historia ya kipengele cha usanidi katika mandhari yake iliyokuzwa ya kiolesura cha wakala.';
     $Self->{Translation}->{'Shows a link in the menu to delete a configuration item in its zoom view of the agent interface.'} =
-        '';
+        'Onyesha kiungo katika menyu kuhariri  kipengele cha usanidi katika mandhari yake iliyokuzwa ya kiolesura cha wakala.';
     $Self->{Translation}->{'Shows a link in the menu to display the configuration item links as a Tree View.'} =
         '';
     $Self->{Translation}->{'Shows a link in the menu to duplicate a configuration item in the configuration item overview of the agent interface.'} =
@@ -524,7 +527,7 @@ sub Data {
     $Self->{Translation}->{'Shows a link in the menu to edit a configuration item in the its zoom view of the agent interface.'} =
         'Onyesha kiungo katika menyu kuhariri  kipengele cha usanidi katika mandhari yake iliyokuzwa ya kiolesura cha wakala.';
     $Self->{Translation}->{'Shows a link in the menu to go back in the configuration item zoom view of the agent interface.'} =
-        '';
+        'Inaonyesha kiungo kwenye menyu ili kurudi nyuma kwenye muonekano wa mabadiliko uliokuzwa wa kiolesura cha wakala.';
     $Self->{Translation}->{'Shows a link in the menu to print a configuration item in the its zoom view of the agent interface.'} =
         'Onyesha kiungo katika menyu kuchapisha kipengele cha usanidi katika mandhari yake iliyokuzwa ya kiolesura cha wakala.';
     $Self->{Translation}->{'Shows a link in the menu to zoom into a configuration item in the configuration item overview of the agent interface.'} =
@@ -584,10 +587,10 @@ sub Data {
     $Self->{Translation}->{'8U: 14 inches (35.56 cm)'} = '';
     $Self->{Translation}->{'9U: 15.75 inches (40.01 cm)'} = '';
     $Self->{Translation}->{'AGPL (Affero General Public License)'} = '';
-    $Self->{Translation}->{'Accounting'} = '';
+    $Self->{Translation}->{'Accounting'} = 'Uhasibu wa muda';
     $Self->{Translation}->{'Accounting Information'} = '';
     $Self->{Translation}->{'Address Allocation'} = '';
-    $Self->{Translation}->{'Administrator'} = '';
+    $Self->{Translation}->{'Administrator'} = 'Utawala';
     $Self->{Translation}->{'Analog Phone'} = '';
     $Self->{Translation}->{'Apache Lizenz'} = '';
     $Self->{Translation}->{'Appliance Type'} = '';
@@ -595,7 +598,7 @@ sub Data {
     $Self->{Translation}->{'Battery Capacity (Ah)'} = '';
     $Self->{Translation}->{'Battery Type'} = '';
     $Self->{Translation}->{'Building'} = 'Jengo';
-    $Self->{Translation}->{'Bus Interface'} = '';
+    $Self->{Translation}->{'Bus Interface'} = 'Kiolesura';
     $Self->{Translation}->{'CC0 (Creative Commons Zero)'} = '';
     $Self->{Translation}->{'CIDR'} = '';
     $Self->{Translation}->{'CPU'} = 'CPU';
@@ -724,7 +727,7 @@ sub Data {
     $Self->{Translation}->{'Operating costs'} = '';
     $Self->{Translation}->{'Order Number'} = '';
     $Self->{Translation}->{'Other'} = 'Engine';
-    $Self->{Translation}->{'Outputs'} = '';
+    $Self->{Translation}->{'Outputs'} = 'Matokeo';
     $Self->{Translation}->{'PIN'} = '';
     $Self->{Translation}->{'PIN 2'} = '';
     $Self->{Translation}->{'PUK'} = '';
@@ -749,13 +752,13 @@ sub Data {
     $Self->{Translation}->{'Seat licenses'} = '';
     $Self->{Translation}->{'Serialnumber'} = '';
     $Self->{Translation}->{'Server Software'} = '';
-    $Self->{Translation}->{'Service Agreement'} = '';
+    $Self->{Translation}->{'Service Agreement'} = 'Kubaliano ya kivango cha huduma';
     $Self->{Translation}->{'Service Tag'} = '';
     $Self->{Translation}->{'Shareware'} = '';
     $Self->{Translation}->{'Socket Type'} = '';
     $Self->{Translation}->{'Software'} = '';
     $Self->{Translation}->{'Speakers'} = '';
-    $Self->{Translation}->{'Standard SIM'} = '';
+    $Self->{Translation}->{'Standard SIM'} = 'Kiwango';
     $Self->{Translation}->{'Start IP Address'} = '';
     $Self->{Translation}->{'Storage'} = '';
     $Self->{Translation}->{'Storage Partition'} = '';

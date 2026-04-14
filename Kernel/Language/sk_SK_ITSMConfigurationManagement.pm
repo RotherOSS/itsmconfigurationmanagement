@@ -164,7 +164,7 @@ sub Data {
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = 'ConfigItemID %s sa nenašlo v databáze!';
     $Self->{Translation}->{'ConfigItem'} = 'ConfigItem';
     $Self->{Translation}->{'printed by %s at %s'} = 'vytlačené %s na %s';
-    $Self->{Translation}->{'Referenced by'} = '';
+    $Self->{Translation}->{'Referenced by'} = 'Referencia';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
     $Self->{Translation}->{'Invalid ClassID!'} = 'Neplatné ClassID!';
@@ -201,9 +201,9 @@ sub Data {
     $Self->{Translation}->{'Class restrictions for the config item'} = 'Obmedzenia triedy pre položku konfigurácie';
     $Self->{Translation}->{'Select one or more classes to restrict selectable config items'} =
         'Výber jednej alebo viacerých tried na obmedzenie vyberateľných položiek konfigurácie';
-    $Self->{Translation}->{'Deployment state restrictions for the config item'} = '';
+    $Self->{Translation}->{'Deployment state restrictions for the config item'} = 'Obmedzenia triedy pre položku konfigurácie';
     $Self->{Translation}->{'Select one or more deployment states to restrict selectable config items'} =
-        '';
+        'Výber jednej alebo viacerých tried na obmedzenie vyberateľných položiek konfigurácie';
     $Self->{Translation}->{'Dynamic (ConfigItem)'} = 'Dynamické (ConfigItem)';
     $Self->{Translation}->{'Static (Version)'} = 'Statický (verzia)';
     $Self->{Translation}->{'Link Referencing Type'} = 'Typ odkazu';
@@ -359,7 +359,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         'Definuje predvolený podobjekt triedy "ITSMConfigItem".';
     $Self->{Translation}->{'Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
-        '';
+        'Definuje dostupné stĺpce CI v prehľade konfiguračných položiek v závislosti od triedy CI. Každá položka musí pozostávať z názvu triedy a poľa dostupných polí pre príslušnú triedu. Položky dynamických polí musia rešpektovať schému DynamicField_FieldName.';
     $Self->{Translation}->{'Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).'} =
         'Definuje výšku komponentu textového editora pre túto obrazovku. Zadajte číslo (pixely) alebo percentuálnu hodnotu (relatívnu).';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =
@@ -419,11 +419,11 @@ sub Data {
     $Self->{Translation}->{'For every webservice (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker config.'} =
         'Pre každú webovú službu (kľúč) možno definovať pole tried (hodnota), na ktoré je import obmedzený. Pre všetky vybrané triedy alebo všetky existujúce triedy sa budú musieť v konfigurácii invokera zvoliť identifikačné atribúty.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
-        '';
+        'Registrácia modulu GenericInterface pre vrstvu vyvolávača ConfigItemFetch.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
         'Registrácia modulu GenericInterface pre vrstvu vyvolávača ConfigItemFetch.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemUpdate invoker layer.'} =
-        '';
+        'Registrácia modulu GenericInterface pre vrstvu vyvolávača ConfigItemFetch.';
     $Self->{Translation}->{'ITSM ConfigItem'} = 'ITSM ConfigItem';
     $Self->{Translation}->{'ITSM config item overview.'} = 'Prehľad konfiguračných položiek ITSM.';
     $Self->{Translation}->{'InciState'} = 'InciState';
@@ -755,7 +755,7 @@ sub Data {
     $Self->{Translation}->{'Socket Type'} = 'Typ zásuvky';
     $Self->{Translation}->{'Software'} = 'Softvér';
     $Self->{Translation}->{'Speakers'} = 'Reproduktory';
-    $Self->{Translation}->{'Standard SIM'} = '';
+    $Self->{Translation}->{'Standard SIM'} = 'Štandard';
     $Self->{Translation}->{'Start IP Address'} = 'Počiatočná IP adresa';
     $Self->{Translation}->{'Storage'} = 'Úložisko';
     $Self->{Translation}->{'Storage Partition'} = 'Úložný oddiel';

@@ -109,7 +109,7 @@ sub Data {
     $Self->{Translation}->{'Object Type'} = 'オブジェクトの種類';
 
     # Template: AdminDynamicFieldScreen
-    $Self->{Translation}->{'Filter by object type'} = '';
+    $Self->{Translation}->{'Filter by object type'} = 'タイプでフィルタ';
 
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = '以下のクラスがインポートされる。';
@@ -164,7 +164,7 @@ sub Data {
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = 'ConfigItemID%sはデータベースに見つかりません！';
     $Self->{Translation}->{'ConfigItem'} = '構成アイテム';
     $Self->{Translation}->{'printed by %s at %s'} = '%sで%sで印刷されました';
-    $Self->{Translation}->{'Referenced by'} = '';
+    $Self->{Translation}->{'Referenced by'} = '用例';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
     $Self->{Translation}->{'Invalid ClassID!'} = 'ClassIDが無効です！';
@@ -201,9 +201,9 @@ sub Data {
     $Self->{Translation}->{'Class restrictions for the config item'} = '設定項目のクラス制限';
     $Self->{Translation}->{'Select one or more classes to restrict selectable config items'} =
         '選択可能な設定項目を制限するために、1つ以上のクラスを選択します。';
-    $Self->{Translation}->{'Deployment state restrictions for the config item'} = '';
+    $Self->{Translation}->{'Deployment state restrictions for the config item'} = '設定項目のクラス制限';
     $Self->{Translation}->{'Select one or more deployment states to restrict selectable config items'} =
-        '';
+        '選択可能な設定項目を制限するために、1つ以上のクラスを選択します。';
     $Self->{Translation}->{'Dynamic (ConfigItem)'} = '動的 (コンフィグ項目)';
     $Self->{Translation}->{'Static (Version)'} = 'スタティック（ヴァージョン）';
     $Self->{Translation}->{'Link Referencing Type'} = 'リンク参照タイプ';
@@ -359,7 +359,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         '構成アイテムのクラスのデフォルトのサブオブジェクトを定義する。';
     $Self->{Translation}->{'Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
-        '';
+        'CIクラスに応じて、設定項目の概要で利用可能なCIの列を定義します。各項目は、クラス名と、対応するクラスで利用可能なフィールドの配列から構成されなければなりません。動的フィールドのエントリは、DynamicField_FieldName スキームに従わなければなりません。';
     $Self->{Translation}->{'Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).'} =
         'この画面のリッチ テキスト エディター コンポーネントの高さを定義します。数値 (ピクセル) またはパーセント値 (相対) を入力します。';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =
@@ -419,11 +419,11 @@ sub Data {
     $Self->{Translation}->{'For every webservice (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker config.'} =
         '各Webサービス(キー)に対して、インポートを制限するクラスの配列(値)を定義することができます。選択されたすべてのクラス、あるいは既存のすべてのクラスについて、インボーカの設定で識別属性を選択する必要があります。';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
-        '';
+        'ConfigItemFetch invokerレイヤーのGenericInterfaceモジュール登録。';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
         'ConfigItemFetch invokerレイヤーのGenericInterfaceモジュール登録。';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemUpdate invoker layer.'} =
-        '';
+        'ConfigItemFetch invokerレイヤーのGenericInterfaceモジュール登録。';
     $Self->{Translation}->{'ITSM ConfigItem'} = 'ITSM 設定項目';
     $Self->{Translation}->{'ITSM config item overview.'} = '構成アイテムの一覧';
     $Self->{Translation}->{'InciState'} = 'インシステート';
@@ -453,9 +453,9 @@ sub Data {
     $Self->{Translation}->{'Parameters for the column filters of the small config item overview. Please note: setting \'Active\' to 0 will only prevent agents from editing settings of this group in their personal preferences, but will still allow administrators to edit the settings of another user\'s behalf. Use \'PreferenceGroup\' to control in which area these settings should be shown in the user interface.'} =
         '小設定項目概要の列フィルタ用のパラメータです。注意: \'Active\' を 0 に設定すると、エージェントは個人設定でこのグループの設定を編集できなくなりますが、管理者は他のユーザの設定を編集することができます。PreferenceGroup\' を使用して、これらの設定をユーザインターフェイスのどのエリアに表示するかを制御します。';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries per config item class shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        '';
+        '担当者インターフェイスのスレーブ チケット概要のダッシュボード バックエンドのパラメーター。 「制限」は、デフォルトで表示されるエントリの数です。 「グループ」はプラグインへのアクセスを制限するために使用されます (例: グループ: admin;group1;group2;)。 「デフォルト」は、プラグインがデフォルトで有効になっているか、ユーザーが手動で有効にする必要があるかを決定します。 「CacheTTLLocal」は、プラグインのキャッシュ時間 (分単位) です。';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        '';
+        '担当者インターフェイスのスレーブ チケット概要のダッシュボード バックエンドのパラメーター。 「制限」は、デフォルトで表示されるエントリの数です。 「グループ」はプラグインへのアクセスを制限するために使用されます (例: グループ: admin;group1;group2;)。 「デフォルト」は、プラグインがデフォルトで有効になっているか、ユーザーが手動で有効にする必要があるかを決定します。 「CacheTTLLocal」は、プラグインのキャッシュ時間 (分単位) です。';
     $Self->{Translation}->{'Parameters for the deployment states color in the preferences view of the agent interface.'} =
         'デプロイメントのパラメータは、担当者Webインタフェースの環境設定ビューで色を示します。';
     $Self->{Translation}->{'Parameters for the deployment states in the preferences view of the agent interface.'} =
@@ -755,7 +755,7 @@ sub Data {
     $Self->{Translation}->{'Socket Type'} = 'ソケットタイプ';
     $Self->{Translation}->{'Software'} = 'ソフトウェア';
     $Self->{Translation}->{'Speakers'} = 'スピーカー';
-    $Self->{Translation}->{'Standard SIM'} = '';
+    $Self->{Translation}->{'Standard SIM'} = 'スタンダード';
     $Self->{Translation}->{'Start IP Address'} = '開始IPアドレス';
     $Self->{Translation}->{'Storage'} = 'ストレージ';
     $Self->{Translation}->{'Storage Partition'} = 'ストレージ・パーティション';

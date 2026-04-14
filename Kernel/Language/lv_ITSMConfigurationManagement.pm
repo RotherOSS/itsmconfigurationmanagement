@@ -164,7 +164,7 @@ sub Data {
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = 'ConfigItemEMID %s nav atrasts datu bāzē!';
     $Self->{Translation}->{'ConfigItem'} = 'ConfigItem';
     $Self->{Translation}->{'printed by %s at %s'} = 'izdrukāts %s pie %s';
-    $Self->{Translation}->{'Referenced by'} = '';
+    $Self->{Translation}->{'Referenced by'} = 'Atsauce (en)';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
     $Self->{Translation}->{'Invalid ClassID!'} = 'Nederīgs klasesID!';
@@ -201,9 +201,9 @@ sub Data {
     $Self->{Translation}->{'Class restrictions for the config item'} = 'Konfigurācijas elementa klases ierobežojumi';
     $Self->{Translation}->{'Select one or more classes to restrict selectable config items'} =
         'Izvēlieties vienu vai vairākas klases, lai ierobežotu atlasāmos konfigurācijas elementus.';
-    $Self->{Translation}->{'Deployment state restrictions for the config item'} = '';
+    $Self->{Translation}->{'Deployment state restrictions for the config item'} = 'Konfigurācijas elementa klases ierobežojumi';
     $Self->{Translation}->{'Select one or more deployment states to restrict selectable config items'} =
-        '';
+        'Izvēlieties vienu vai vairākas klases, lai ierobežotu atlasāmos konfigurācijas elementus.';
     $Self->{Translation}->{'Dynamic (ConfigItem)'} = 'Dinamisks (ConfigItem)';
     $Self->{Translation}->{'Static (Version)'} = 'Statisks (versija)';
     $Self->{Translation}->{'Link Referencing Type'} = 'Saite Atsauces veids';
@@ -359,7 +359,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         'Definē klases "ITSMConfigItem" noklusējuma apakšobjektu.';
     $Self->{Translation}->{'Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
-        '';
+        'Nosaka pieejamās CI kolonnas konfigurācijas elementu pārskatā atkarībā no CI klases. Katram ierakstam jāsastāv no klases nosaukuma un attiecīgās klases pieejamo lauku masīva. Dinamisko lauku ierakstos jāievēro shēma DynamicField_FieldName.';
     $Self->{Translation}->{'Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).'} =
         'Nosaka teksta redaktora komponenta augstumu šajā ekrānā. Ievadiet skaitli (pikseļi) vai procentuālo vērtību (relatīvi).';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =
@@ -419,11 +419,11 @@ sub Data {
     $Self->{Translation}->{'For every webservice (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker config.'} =
         'Katrai tīmekļa pakalpojumam (atslēga) var definēt klašu masīvu (vērtība), uz kuru imports ir ierobežots. Visām izvēlētajām klasēm vai visām esošajām klasēm invokera konfigurācijā būs jāizvēlas identificējošie atribūti.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
-        '';
+        'GenericInterface moduļa reģistrācija ConfigItemFetch invokatora slānim.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
         'GenericInterface moduļa reģistrācija ConfigItemFetch invokatora slānim.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemUpdate invoker layer.'} =
-        '';
+        'GenericInterface moduļa reģistrācija ConfigItemFetch invokatora slānim.';
     $Self->{Translation}->{'ITSM ConfigItem'} = 'ITSM ConfigItem';
     $Self->{Translation}->{'ITSM config item overview.'} = 'ITSM konfigurācijas elementu pārskats.';
     $Self->{Translation}->{'InciState'} = 'InciState';
@@ -755,7 +755,7 @@ sub Data {
     $Self->{Translation}->{'Socket Type'} = 'Kontaktligzdas tips';
     $Self->{Translation}->{'Software'} = 'Programmatūra';
     $Self->{Translation}->{'Speakers'} = 'Skaļruņi';
-    $Self->{Translation}->{'Standard SIM'} = '';
+    $Self->{Translation}->{'Standard SIM'} = 'Standarta';
     $Self->{Translation}->{'Start IP Address'} = 'Sākuma IP adrese';
     $Self->{Translation}->{'Storage'} = 'Uzglabāšana';
     $Self->{Translation}->{'Storage Partition'} = 'Uzglabāšanas nodalījums';

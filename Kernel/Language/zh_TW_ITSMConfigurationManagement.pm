@@ -109,7 +109,7 @@ sub Data {
     $Self->{Translation}->{'Object Type'} = '对象类型';
 
     # Template: AdminDynamicFieldScreen
-    $Self->{Translation}->{'Filter by object type'} = '';
+    $Self->{Translation}->{'Filter by object type'} = '按類型過濾';
 
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = '将导入以下类别';
@@ -164,7 +164,7 @@ sub Data {
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = '数据库中找不到配置项目编号 %s！';
     $Self->{Translation}->{'ConfigItem'} = '配置項';
     $Self->{Translation}->{'printed by %s at %s'} = '由 %s 在 %s 打印';
-    $Self->{Translation}->{'Referenced by'} = '';
+    $Self->{Translation}->{'Referenced by'} = '相關参考';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
     $Self->{Translation}->{'Invalid ClassID!'} = '无效 ClassID！';
@@ -201,9 +201,9 @@ sub Data {
     $Self->{Translation}->{'Class restrictions for the config item'} = '配置项的类别限制';
     $Self->{Translation}->{'Select one or more classes to restrict selectable config items'} =
         '选择一个或多个类别来限制可选择的配置项';
-    $Self->{Translation}->{'Deployment state restrictions for the config item'} = '';
+    $Self->{Translation}->{'Deployment state restrictions for the config item'} = '配置项的类别限制';
     $Self->{Translation}->{'Select one or more deployment states to restrict selectable config items'} =
-        '';
+        '选择一个或多个类别来限制可选择的配置项';
     $Self->{Translation}->{'Dynamic (ConfigItem)'} = '动态（ConfigItem）';
     $Self->{Translation}->{'Static (Version)'} = '静态（版本）';
     $Self->{Translation}->{'Link Referencing Type'} = '链接引用类型';
@@ -359,7 +359,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         '定义 "ITSMConfigItem "类的默认子对象。';
     $Self->{Translation}->{'Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
-        '';
+        '根据 CI 类别定义配置项概览中 CI 的可用列。每个条目必须包含一个类名和相应类的可用字段数组。动态字段条目必须遵守 DynamicField_FieldName 方案。';
     $Self->{Translation}->{'Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).'} =
         '定义该屏幕富文本编辑器组件的高度。输入数字（像素）或百分比值（相对值）。';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =
@@ -419,11 +419,11 @@ sub Data {
     $Self->{Translation}->{'For every webservice (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker config.'} =
         '可以为每个 webservice（键）定义一个类（值）数组，在此基础上限制导入。对于所有选定的类或所有现有的类，必须在调用者配置中选择识别属性。';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
-        '';
+        '用于 ConfigItemFetch 调用层的 GenericInterface 模块注册。';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
         '用于 ConfigItemFetch 调用层的 GenericInterface 模块注册。';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemUpdate invoker layer.'} =
-        '';
+        '用于 ConfigItemFetch 调用层的 GenericInterface 模块注册。';
     $Self->{Translation}->{'ITSM ConfigItem'} = 'ITSM 配置项目';
     $Self->{Translation}->{'ITSM config item overview.'} = 'ITSM 配置项目概览。';
     $Self->{Translation}->{'InciState'} = '状态';
@@ -755,7 +755,7 @@ sub Data {
     $Self->{Translation}->{'Socket Type'} = '插座类型';
     $Self->{Translation}->{'Software'} = '软件';
     $Self->{Translation}->{'Speakers'} = '发言人';
-    $Self->{Translation}->{'Standard SIM'} = '';
+    $Self->{Translation}->{'Standard SIM'} = '標準';
     $Self->{Translation}->{'Start IP Address'} = '启动 IP 地址';
     $Self->{Translation}->{'Storage'} = '存储';
     $Self->{Translation}->{'Storage Partition'} = '存储分区';

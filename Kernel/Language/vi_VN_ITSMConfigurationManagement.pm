@@ -55,7 +55,7 @@ sub Data {
     $Self->{Translation}->{'The number of another Configuration Item to link with.'} = '';
 
     # Template: AgentITSMConfigItemDelete
-    $Self->{Translation}->{'Do you really want to delete this config item?'} = '';
+    $Self->{Translation}->{'Do you really want to delete this config item?'} = 'Bạn có thật sự muốn xoá đáp án?';
 
     # Template: AgentITSMConfigItemEdit
     $Self->{Translation}->{'The name of this config item'} = '';
@@ -71,7 +71,7 @@ sub Data {
     # Template: AgentITSMConfigItemHistory
     $Self->{Translation}->{'History of Config Item: %s'} = '';
     $Self->{Translation}->{'History Content'} = '';
-    $Self->{Translation}->{'Createtime'} = '';
+    $Self->{Translation}->{'Createtime'} = 'Tạo lần cập nhật';
     $Self->{Translation}->{'Zoom view'} = '';
 
     # Template: AgentITSMConfigItemOverviewNavBar
@@ -92,12 +92,12 @@ sub Data {
     $Self->{Translation}->{'Max links level reached for ConfigItem!'} = '';
 
     # Template: AgentITSMConfigItemZoom
-    $Self->{Translation}->{'Configuration Item'} = '';
+    $Self->{Translation}->{'Configuration Item'} = 'Cấu h';
     $Self->{Translation}->{'Configuration Item Information'} = '';
     $Self->{Translation}->{'Current Deployment State'} = '';
     $Self->{Translation}->{'Current Incident State'} = 'Trạng thái sự cố hiện thời';
     $Self->{Translation}->{'Last changed'} = 'Thay đổi lần cuối';
-    $Self->{Translation}->{'Last changed by'} = '';
+    $Self->{Translation}->{'Last changed by'} = 'Thay đổi lần cuối';
 
     # Template: CustomerITSMConfigItem
     $Self->{Translation}->{'Your ConfigItems'} = '';
@@ -164,7 +164,7 @@ sub Data {
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = '';
     $Self->{Translation}->{'ConfigItem'} = '';
     $Self->{Translation}->{'printed by %s at %s'} = '';
-    $Self->{Translation}->{'Referenced by'} = '';
+    $Self->{Translation}->{'Referenced by'} = 'Tham chiếu';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
     $Self->{Translation}->{'Invalid ClassID!'} = '';
@@ -182,7 +182,7 @@ sub Data {
     $Self->{Translation}->{'warning'} = 'Cảnh báo';
     $Self->{Translation}->{'incident'} = '';
     $Self->{Translation}->{'The deployment state of this config item'} = 'Trạng thái triển khai của đối tượng này';
-    $Self->{Translation}->{'The incident state of this config item'} = '';
+    $Self->{Translation}->{'The incident state of this config item'} = 'Trạng thái triển khai của đối tượng này';
 
     # Perl Module: Kernel/Modules/CustomerITSMConfigItemSearch.pm
     $Self->{Translation}->{'No permission'} = 'Không có quyền!';
@@ -192,7 +192,7 @@ sub Data {
     # Perl Module: Kernel/Output/HTML/Dashboard/ITSMConfigItemGeneric.pm
     $Self->{Translation}->{'Shown config items'} = '';
     $Self->{Translation}->{'Deployment State Type'} = '';
-    $Self->{Translation}->{'Current Incident State Type'} = '';
+    $Self->{Translation}->{'Current Incident State Type'} = 'Trạng thái sự cố hiện thời';
 
     # Perl Module: Kernel/Output/HTML/ITSMConfigItem/LayoutDate.pm
     $Self->{Translation}->{'Between'} = 'Giữa';
@@ -330,7 +330,7 @@ sub Data {
     $Self->{Translation}->{'Defines Required permissions to set ITSM configuration items using the Generic Interface.'} =
         '';
     $Self->{Translation}->{'Defines an overview module to show the small view of a configuration item list.'} =
-        '';
+        'Định nghĩa một mô-đun tổng quát để hiển thị một danh sách khảo sát.';
     $Self->{Translation}->{'Defines if the link type labels must be shown in the node connections.'} =
         '';
     $Self->{Translation}->{'Defines regular expressions individually for each ConfigItem class to check the ConfigItem name and to show corresponding error messages.'} =
@@ -427,7 +427,7 @@ sub Data {
     $Self->{Translation}->{'ITSM ConfigItem'} = '';
     $Self->{Translation}->{'ITSM config item overview.'} = '';
     $Self->{Translation}->{'InciState'} = '';
-    $Self->{Translation}->{'IncidentState'} = '';
+    $Self->{Translation}->{'IncidentState'} = 'Trạng thái sự cố';
     $Self->{Translation}->{'Includes deployment states in the config item search of the customer interface.'} =
         '';
     $Self->{Translation}->{'Includes incident states in the config item search of the customer interface.'} =
@@ -514,19 +514,19 @@ sub Data {
     $Self->{Translation}->{'Shows a link in the menu to access the history of a configuration item in the its zoom view of the agent interface.'} =
         '';
     $Self->{Translation}->{'Shows a link in the menu to delete a configuration item in its zoom view of the agent interface.'} =
-        '';
+        'Hiển thị liên kết trong trình đơn để sửa khảo sát trong khi xem chi tiết khảo sát ở giao diện điều hành viên.';
     $Self->{Translation}->{'Shows a link in the menu to display the configuration item links as a Tree View.'} =
         '';
     $Self->{Translation}->{'Shows a link in the menu to duplicate a configuration item in the configuration item overview of the agent interface.'} =
         '';
     $Self->{Translation}->{'Shows a link in the menu to duplicate a configuration item in the its zoom view of the agent interface.'} =
-        '';
+        'Hiển thị liên kết trong trình đơn để sửa khảo sát trong khi xem chi tiết khảo sát ở giao diện điều hành viên.';
     $Self->{Translation}->{'Shows a link in the menu to edit a configuration item in the its zoom view of the agent interface.'} =
-        '';
+        'Hiển thị liên kết trong trình đơn để sửa khảo sát trong khi xem chi tiết khảo sát ở giao diện điều hành viên.';
     $Self->{Translation}->{'Shows a link in the menu to go back in the configuration item zoom view of the agent interface.'} =
-        '';
+        'Hiển thị liên kết trong trình đơn để quay lại trong khi xem chi tiết khảo sát ở giao diện điều hành viên.';
     $Self->{Translation}->{'Shows a link in the menu to print a configuration item in the its zoom view of the agent interface.'} =
-        '';
+        'Hiển thị liên kết trong trình đơn để sửa khảo sát trong khi xem chi tiết khảo sát ở giao diện điều hành viên.';
     $Self->{Translation}->{'Shows a link in the menu to zoom into a configuration item in the configuration item overview of the agent interface.'} =
         '';
     $Self->{Translation}->{'Shows the config item history (reverse ordered) in the agent interface.'} =
@@ -584,7 +584,7 @@ sub Data {
     $Self->{Translation}->{'8U: 14 inches (35.56 cm)'} = '';
     $Self->{Translation}->{'9U: 15.75 inches (40.01 cm)'} = '';
     $Self->{Translation}->{'AGPL (Affero General Public License)'} = '';
-    $Self->{Translation}->{'Accounting'} = '';
+    $Self->{Translation}->{'Accounting'} = 'Quản lý thời gian';
     $Self->{Translation}->{'Accounting Information'} = '';
     $Self->{Translation}->{'Address Allocation'} = '';
     $Self->{Translation}->{'Administrator'} = '';
@@ -595,7 +595,7 @@ sub Data {
     $Self->{Translation}->{'Battery Capacity (Ah)'} = '';
     $Self->{Translation}->{'Battery Type'} = '';
     $Self->{Translation}->{'Building'} = 'Toà nhà';
-    $Self->{Translation}->{'Bus Interface'} = '';
+    $Self->{Translation}->{'Bus Interface'} = 'Giao diện';
     $Self->{Translation}->{'CC0 (Creative Commons Zero)'} = '';
     $Self->{Translation}->{'CIDR'} = '';
     $Self->{Translation}->{'CPU'} = 'CPU';
@@ -724,7 +724,7 @@ sub Data {
     $Self->{Translation}->{'Operating costs'} = '';
     $Self->{Translation}->{'Order Number'} = '';
     $Self->{Translation}->{'Other'} = 'Khác';
-    $Self->{Translation}->{'Outputs'} = '';
+    $Self->{Translation}->{'Outputs'} = 'Kết quả từ';
     $Self->{Translation}->{'PIN'} = '';
     $Self->{Translation}->{'PIN 2'} = '';
     $Self->{Translation}->{'PUK'} = '';
@@ -749,13 +749,13 @@ sub Data {
     $Self->{Translation}->{'Seat licenses'} = '';
     $Self->{Translation}->{'Serialnumber'} = '';
     $Self->{Translation}->{'Server Software'} = '';
-    $Self->{Translation}->{'Service Agreement'} = '';
+    $Self->{Translation}->{'Service Agreement'} = 'Thoả thuận Mức độ Dịch vụ';
     $Self->{Translation}->{'Service Tag'} = '';
     $Self->{Translation}->{'Shareware'} = '';
     $Self->{Translation}->{'Socket Type'} = '';
     $Self->{Translation}->{'Software'} = '';
     $Self->{Translation}->{'Speakers'} = '';
-    $Self->{Translation}->{'Standard SIM'} = '';
+    $Self->{Translation}->{'Standard SIM'} = 'Tiêu chuẩn';
     $Self->{Translation}->{'Start IP Address'} = '';
     $Self->{Translation}->{'Storage'} = '';
     $Self->{Translation}->{'Storage Partition'} = '';

@@ -25,8 +25,8 @@ sub Data {
 
     # Template: AdminGenericInterfaceOperationConfigItem
     $Self->{Translation}->{'General operation data'} = '';
-    $Self->{Translation}->{'Settings for incoming request data'} = '';
-    $Self->{Translation}->{'Settings for outgoing response data'} = '';
+    $Self->{Translation}->{'Settings for incoming request data'} = 'Mapeado para as peticións de datos de entrada.';
+    $Self->{Translation}->{'Settings for outgoing response data'} = 'Mapeado para os datos de resposta de saída';
 
     # Template: AdminITSMConfigItem
     $Self->{Translation}->{'Config Item Management'} = '';
@@ -55,7 +55,7 @@ sub Data {
     $Self->{Translation}->{'The number of another Configuration Item to link with.'} = '';
 
     # Template: AgentITSMConfigItemDelete
-    $Self->{Translation}->{'Do you really want to delete this config item?'} = '';
+    $Self->{Translation}->{'Do you really want to delete this config item?'} = 'Quere realmente borrar esta Actividade?';
 
     # Template: AgentITSMConfigItemEdit
     $Self->{Translation}->{'The name of this config item'} = '';
@@ -71,7 +71,7 @@ sub Data {
     # Template: AgentITSMConfigItemHistory
     $Self->{Translation}->{'History of Config Item: %s'} = '';
     $Self->{Translation}->{'History Content'} = '';
-    $Self->{Translation}->{'Createtime'} = '';
+    $Self->{Translation}->{'Createtime'} = 'Crear tempo';
     $Self->{Translation}->{'Zoom view'} = 'Vista zoom';
 
     # Template: AgentITSMConfigItemOverviewNavBar
@@ -92,7 +92,7 @@ sub Data {
     $Self->{Translation}->{'Max links level reached for ConfigItem!'} = '';
 
     # Template: AgentITSMConfigItemZoom
-    $Self->{Translation}->{'Configuration Item'} = '';
+    $Self->{Translation}->{'Configuration Item'} = 'Importar Configuración';
     $Self->{Translation}->{'Configuration Item Information'} = '';
     $Self->{Translation}->{'Current Deployment State'} = '';
     $Self->{Translation}->{'Current Incident State'} = 'Estado do Incidente actual';
@@ -109,7 +109,7 @@ sub Data {
     $Self->{Translation}->{'Object Type'} = 'Tipo de obxecto';
 
     # Template: AdminDynamicFieldScreen
-    $Self->{Translation}->{'Filter by object type'} = '';
+    $Self->{Translation}->{'Filter by object type'} = 'Filtro por tipo';
 
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = '';
@@ -164,7 +164,7 @@ sub Data {
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = '';
     $Self->{Translation}->{'ConfigItem'} = '';
     $Self->{Translation}->{'printed by %s at %s'} = '';
-    $Self->{Translation}->{'Referenced by'} = '';
+    $Self->{Translation}->{'Referenced by'} = 'Referencia';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
     $Self->{Translation}->{'Invalid ClassID!'} = '';
@@ -192,7 +192,7 @@ sub Data {
     # Perl Module: Kernel/Output/HTML/Dashboard/ITSMConfigItemGeneric.pm
     $Self->{Translation}->{'Shown config items'} = '';
     $Self->{Translation}->{'Deployment State Type'} = '';
-    $Self->{Translation}->{'Current Incident State Type'} = '';
+    $Self->{Translation}->{'Current Incident State Type'} = 'Estado do Incidente actual';
 
     # Perl Module: Kernel/Output/HTML/ITSMConfigItem/LayoutDate.pm
     $Self->{Translation}->{'Between'} = 'Entre';
@@ -312,9 +312,9 @@ sub Data {
     $Self->{Translation}->{'Customers have the possibility to manually switch between historic CI versions.'} =
         '';
     $Self->{Translation}->{'Default data to use on attribute for config item search screen. Example: "ITSMConfigItemCreateTimePointFormat=year;ITSMConfigItemCreateTimePointStart=Last;ITSMConfigItemCreateTimePoint=2;".'} =
-        '';
+        'Datos por defecto para usar no atributo para a pantalla busca de ticket. Exemplo: "TicketCreateTimePointFormat=year;TicketCreateTimePointStart=Last;TicketCreateTimePoint=2;".';
     $Self->{Translation}->{'Default data to use on attribute for config item search screen. Example: "ITSMConfigItemCreateTimeStartYear=2010;ITSMConfigItemCreateTimeStartMonth=10;ITSMConfigItemCreateTimeStartDay=4;ITSMConfigItemCreateTimeStopYear=2010;ITSMConfigItemCreateTimeStopMonth=11;ITSMConfigItemCreateTimeStopDay=3;".'} =
-        '';
+        'Datos por defecto para usar no atributo para a pantalla busca de ticket. Exemplo: "TicketCreateTimeStartYear=2010;TicketCreateTimeStartMonth=10;TicketCreateTimeStartDay=4;TicketCreateTimeStopYear=2010;TicketCreateTimeStopMonth=11;TicketCreateTimeStopDay=3;".';
     $Self->{Translation}->{'Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = "complex"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.'} =
         '';
     $Self->{Translation}->{'Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit.'} =
@@ -330,7 +330,7 @@ sub Data {
     $Self->{Translation}->{'Defines Required permissions to set ITSM configuration items using the Generic Interface.'} =
         '';
     $Self->{Translation}->{'Defines an overview module to show the small view of a configuration item list.'} =
-        '';
+        'Define un módulo de vista xeral para mostrar a vista pequena dunha lista de enquisas.';
     $Self->{Translation}->{'Defines if the link type labels must be shown in the node connections.'} =
         '';
     $Self->{Translation}->{'Defines regular expressions individually for each ConfigItem class to check the ConfigItem name and to show corresponding error messages.'} =
@@ -338,24 +338,24 @@ sub Data {
     $Self->{Translation}->{'Defines the available columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         '';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the agent interface.'} =
-        '';
+        'Define os atributos de ticket por defecto para a ordenación de ticket do resultado da busca de ticket da interface axente.';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the customer interface.'} =
         '';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of this operation.'} =
-        '';
+        'Define os atributos de ticket por defecto para a ordenación de ticket do resultado da busca de ticket desta operación.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the agent interface. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'Define a orde por defecto de ticket nos resultados de busca de ticket da interface de axente. Arriba: os mais antigos no alto. Abaixo: os últimos no alto.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'Define a orde por defecto de ticket nos resultados de busca na interface de axente. Arriba: os mais antigos no alto. Abaixo: os últimos no alto.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the this operation. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'Define a orde por defecto de ticket nos resultados de busca de ticket desta operación. Arriba: os mais antigos no alto. Abaixo: os últimos no alto.';
     $Self->{Translation}->{'Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         '';
     $Self->{Translation}->{'Defines the default relations depth to be shown.'} = '';
     $Self->{Translation}->{'Defines the default shown config item search attribute for config item search screen.'} =
-        '';
+        'Define os atributos de busca mostrados no ticket por defecto para a pantalla busca de ticket.';
     $Self->{Translation}->{'Defines the default shown config item search attribute for config item search screen. Example: "Key" must have the name of the Dynamic Field in this case \'X\', "Content" must have the value of the Dynamic Field depending on the Dynamic Field type,  Text: \'a text\', Dropdown: \'1\', Date/Time: \'Search_DynamicField_XTimeSlotStartYear=1974; Search_DynamicField_XTimeSlotStartMonth=01; Search_DynamicField_XTimeSlotStartDay=26; Search_DynamicField_XTimeSlotStartHour=00; Search_DynamicField_XTimeSlotStartMinute=00; Search_DynamicField_XTimeSlotStartSecond=00; Search_DynamicField_XTimeSlotStopYear=2013; Search_DynamicField_XTimeSlotStopMonth=01; Search_DynamicField_XTimeSlotStopDay=26; Search_DynamicField_XTimeSlotStopHour=23; Search_DynamicField_XTimeSlotStopMinute=59; Search_DynamicField_XTimeSlotStopSecond=59;\' and or \'Search_DynamicField_XTimePointFormat=week; Search_DynamicField_XTimePointStart=Before; Search_DynamicField_XTimePointValue=7\';.'} =
-        '';
+        'Define os atributos de busca mostrados no ticket por defecto para a pantalla busca de ticket. Exemplo: "Chave" debe ter o nome do Campo Dinámico neste caso \'X\', "Contido" debe ter o valor do Campo Dinámico dependendo do tipo de Campo Dinámico, Texto: \'un texto\', Dropdown:\'1\', Data/Tempo:  \'Search_DynamicField_XTimeSlotStartYear=1974; Search_DynamicField_XTimeSlotStartMonth=01; Search_DynamicField_XTimeSlotStartDay=26; Search_DynamicField_XTimeSlotStartHour=00; Search_DynamicField_XTimeSlotStartMinute=00; Search_DynamicField_XTimeSlotStartSecond=00; Search_DynamicField_XTimeSlotStopYear=2013; Search_DynamicField_XTimeSlotStopMonth=01; Search_DynamicField_XTimeSlotStopDay=26; Search_DynamicField_XTimeSlotStopHour=23; Search_DynamicField_XTimeSlotStopMinute=59; Search_DynamicField_XTimeSlotStopSecond=59;\' and or \'Search_DynamicField_XTimePointFormat=week; Search_DynamicField_XTimePointStart=Before; Search_DynamicField_XTimePointValue=7\';.';
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         '';
     $Self->{Translation}->{'Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
@@ -381,11 +381,11 @@ sub Data {
     $Self->{Translation}->{'Defines the shown columns of CIs in the link table complex view, depending on the CI class. Each entry must be prefixed with the class name and double colons (i.e. Computer::). There are a few CI-Attributes that common to all CIs (example for the class Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). To show individual CI-Attributes as defined in the CI-Definition, the following scheme must be used (example for the class Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If there is no entry for a CI class, then the default columns are shown.'} =
         '';
     $Self->{Translation}->{'Defines which items are available for \'Action\' in third level of the ITSM Config Item ACL structure.'} =
-        '';
+        'Define cales elementos están dispoñibles para \'Acción\' no terceiro nivel da estructura ACL.';
     $Self->{Translation}->{'Defines which items are available in first level of the ITSM Config Item ACL structure.'} =
-        '';
+        'Define cales elementos están dispoñibles no primeiro nivel da estructura ACL.';
     $Self->{Translation}->{'Defines which items are available in second level of the ITSM Config Item ACL structure.'} =
-        '';
+        'Define cales elementos están dispoñibles no segundo nivel da estructura ACL.';
     $Self->{Translation}->{'Defines which type of link (named from the ticket perspective) can affect the status of a linked CI.'} =
         '';
     $Self->{Translation}->{'Defines which type of ticket can affect the status of a linked CI.'} =
@@ -399,15 +399,15 @@ sub Data {
     $Self->{Translation}->{'Dynamic field event module that marks config item definitions as out of sync, if containing dynamic fields change.'} =
         '';
     $Self->{Translation}->{'Dynamic fields shown in the additional ITSM field screen of the agent interface.'} =
-        '';
+        'Mostra campos de título na pantalla campo ITSM adicional da interface de axente.';
     $Self->{Translation}->{'Dynamic fields shown in the config item overview screen of the customer interface.'} =
         '';
     $Self->{Translation}->{'Dynamic fields shown in the config item search screen of the agent interface.'} =
         '';
     $Self->{Translation}->{'Enables configuration item bulk action feature for the agent frontend to work on more than one configuration item at a time.'} =
-        '';
+        'Permite función de acción en masa do ticket para o frontend de axente para traballar en máis dun ticket á vez.';
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
-        '';
+        'Permite función de acción en masa de ticket soamente para os grupos enumerados.';
     $Self->{Translation}->{'Enables/disables the functionality to check ITSM onfiguration items for unique names. Before enabling this option you should check your system for already existing config items with duplicate names. You can do this with the console command Admin::ITSM::ConfigItem::ListDuplicates.'} =
         '';
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
@@ -419,22 +419,22 @@ sub Data {
     $Self->{Translation}->{'For every webservice (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker config.'} =
         '';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
-        '';
+        'InterfaceXenérica módulo rexistro para a capa do invocador.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
-        '';
+        'InterfaceXenérica módulo rexistro para a capa do invocador.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemUpdate invoker layer.'} =
-        '';
+        'InterfaceXenérica módulo rexistro para a capa do invocador.';
     $Self->{Translation}->{'ITSM ConfigItem'} = '';
     $Self->{Translation}->{'ITSM config item overview.'} = '';
     $Self->{Translation}->{'InciState'} = '';
-    $Self->{Translation}->{'IncidentState'} = '';
+    $Self->{Translation}->{'IncidentState'} = 'Estado do Incidente';
     $Self->{Translation}->{'Includes deployment states in the config item search of the customer interface.'} =
         '';
     $Self->{Translation}->{'Includes incident states in the config item search of the customer interface.'} =
         '';
     $Self->{Translation}->{'License accounting configuration item event module.'} = '';
     $Self->{Translation}->{'Maximum number of config items to be displayed in the result of this operation.'} =
-        '';
+        'Número máximo de tickets para ser mostrados no resultado desta operación.';
     $Self->{Translation}->{'Module to check the group responsible for a class.'} = '';
     $Self->{Translation}->{'Module to check the group responsible for a configuration item.'} =
         '';
@@ -442,9 +442,9 @@ sub Data {
     $Self->{Translation}->{'Name Module'} = '';
     $Self->{Translation}->{'Number Module'} = '';
     $Self->{Translation}->{'Number of config items to be displayed in each page of a search result in the agent interface.'} =
-        '';
+        'Número de tickets para ser mostrados en cada páxina dun resultado de busca na interface de axente.';
     $Self->{Translation}->{'Number of config items to be displayed in each page of a search result in the customer interface.'} =
-        '';
+        'Número de tickets para ser mostrados en cada páxina dun resultado de busca na interface de cliente.';
     $Self->{Translation}->{'Objects to search for, how many entries and which attributs to show. ConfigItem attributes have to explicitly be stored via Elasticsearch.'} =
         '';
     $Self->{Translation}->{'Overview.'} = 'Vista xeral';
@@ -453,9 +453,9 @@ sub Data {
     $Self->{Translation}->{'Parameters for the column filters of the small config item overview. Please note: setting \'Active\' to 0 will only prevent agents from editing settings of this group in their personal preferences, but will still allow administrators to edit the settings of another user\'s behalf. Use \'PreferenceGroup\' to control in which area these settings should be shown in the user interface.'} =
         '';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries per config item class shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        '';
+        'Os parámetros para o cadro de mando do backend da vista xeral da lista do cliente usuario da interface de axente. "Limite" e o número de entradas mostradas por defecto. "Grupo" é utilizado para restrinxir o acceso ao plugin (e. g. Grupo: admin;group1;group2;). "Defecto" determina se o plugin se permite por defecto ou se o usuario necesita activalo manualmente. "CacheTTLLocal" é o tempo de cache en minutos para o plugin.';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        '';
+        'Os parámetros para o cadro de mando do backend da vista xeral da lista do cliente usuario da interface de axente. "Limite" e o número de entradas mostradas por defecto. "Grupo" é utilizado para restrinxir o acceso ao plugin (e. g. Grupo: admin;group1;group2;). "Defecto" determina se o plugin se permite por defecto ou se o usuario necesita activalo manualmente. "CacheTTLLocal" é o tempo de cache en minutos para o plugin.';
     $Self->{Translation}->{'Parameters for the deployment states color in the preferences view of the agent interface.'} =
         '';
     $Self->{Translation}->{'Parameters for the deployment states in the preferences view of the agent interface.'} =
@@ -480,25 +480,25 @@ sub Data {
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item attachment action in the agent interface.'} =
         '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
-        '';
+        'Permisos requiridos para usar a pantalla de decisión na interface de axente.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the agent interface.'} =
-        '';
+        'Permisos requiridos para usar a pantalla de decisión na interface de axente.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the customer interface.'} =
         '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item tree view screen in the agent interface.'} =
-        '';
+        'Permisos requiridos para empregar a pantalla de texto libre de tíckets da interface do axente.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item zoom screen in the agent interface.'} =
-        '';
+        'Permisos requiridos para usar a pantalla de decisión na interface de axente.';
     $Self->{Translation}->{'Required permissions to use the add ITSM configuration item screen in the agent interface.'} =
-        '';
+        'Permisos requiridos para usar a pantalla campo ITSM adicional na interface de axente.';
     $Self->{Translation}->{'Required permissions to use the bulk ITSM configuration item screen in the agent interface.'} =
-        '';
+        'Permisos requiridos para usar a pantalla de decisión na interface de axente.';
     $Self->{Translation}->{'Required permissions to use the edit ITSM configuration item screen in the agent interface.'} =
-        '';
+        'Permisos requiridos para usar a pantalla de decisión na interface de axente.';
     $Self->{Translation}->{'Required permissions to use the history ITSM configuration item screen in the agent interface.'} =
-        '';
+        'Permisos requiridos para usar a pantalla campo ITSM adicional na interface de axente.';
     $Self->{Translation}->{'Required permissions to use the print ITSM configuration item screen in the agent interface.'} =
-        '';
+        'Permisos requiridos para usar a pantalla campo ITSM adicional na interface de axente.';
     $Self->{Translation}->{'Required privileges to delete config items.'} = '';
     $Self->{Translation}->{'Search config items.'} = '';
     $Self->{Translation}->{'Set the incident state of a CI automatically when a Ticket is Linked to a CI.'} =
@@ -506,31 +506,31 @@ sub Data {
     $Self->{Translation}->{'Sets the deployment state in the configuration item bulk screen of the agent interface.'} =
         '';
     $Self->{Translation}->{'Sets the incident state in the configuration item bulk screen of the agent interface.'} =
-        '';
+        'Establece o tipo de ticket na pantalla de ticket masivo da interface de axente.';
     $Self->{Translation}->{'Shows a link in the menu that allows linking a configuration item with another object in the config item zoom view of the agent interface.'} =
         '';
     $Self->{Translation}->{'Shows a link in the menu to access the history of a configuration item in the configuration item overview of the agent interface.'} =
         '';
     $Self->{Translation}->{'Shows a link in the menu to access the history of a configuration item in the its zoom view of the agent interface.'} =
-        '';
+        'Mostra un enlace no menu para cambiar a decisión dun ticket na súa vista zoom da interface de axente.';
     $Self->{Translation}->{'Shows a link in the menu to delete a configuration item in its zoom view of the agent interface.'} =
-        '';
+        'Mostra un enlace no menu para editar unha enquisa na súa vista zoom da interface de axente.';
     $Self->{Translation}->{'Shows a link in the menu to display the configuration item links as a Tree View.'} =
         '';
     $Self->{Translation}->{'Shows a link in the menu to duplicate a configuration item in the configuration item overview of the agent interface.'} =
         '';
     $Self->{Translation}->{'Shows a link in the menu to duplicate a configuration item in the its zoom view of the agent interface.'} =
-        '';
+        'Mostra un enlace no menu para editar unha enquisa na súa vista zoom da interface de axente.';
     $Self->{Translation}->{'Shows a link in the menu to edit a configuration item in the its zoom view of the agent interface.'} =
-        '';
+        'Mostra un enlace no menu para editar unha enquisa na súa vista zoom da interface de axente.';
     $Self->{Translation}->{'Shows a link in the menu to go back in the configuration item zoom view of the agent interface.'} =
-        '';
+        'Mostra un enlace no menu para voltar atrás na vista zoom de enquisa da interface de axente.';
     $Self->{Translation}->{'Shows a link in the menu to print a configuration item in the its zoom view of the agent interface.'} =
-        '';
+        'Mostra un enlace no menu para editar unha enquisa na súa vista zoom da interface de axente.';
     $Self->{Translation}->{'Shows a link in the menu to zoom into a configuration item in the configuration item overview of the agent interface.'} =
         '';
     $Self->{Translation}->{'Shows the config item history (reverse ordered) in the agent interface.'} =
-        '';
+        'Mostra o historico do ticket (ordeado o revé) na interface de axente.';
     $Self->{Translation}->{'The default category which is shown, if none is selected.'} = '';
     $Self->{Translation}->{'The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. The default is ConfigItem#.'} =
         '';
@@ -584,10 +584,10 @@ sub Data {
     $Self->{Translation}->{'8U: 14 inches (35.56 cm)'} = '';
     $Self->{Translation}->{'9U: 15.75 inches (40.01 cm)'} = '';
     $Self->{Translation}->{'AGPL (Affero General Public License)'} = '';
-    $Self->{Translation}->{'Accounting'} = '';
+    $Self->{Translation}->{'Accounting'} = 'Contabilizar Tempo';
     $Self->{Translation}->{'Accounting Information'} = '';
     $Self->{Translation}->{'Address Allocation'} = '';
-    $Self->{Translation}->{'Administrator'} = '';
+    $Self->{Translation}->{'Administrator'} = 'Administración';
     $Self->{Translation}->{'Analog Phone'} = '';
     $Self->{Translation}->{'Apache Lizenz'} = '';
     $Self->{Translation}->{'Appliance Type'} = '';
@@ -595,7 +595,7 @@ sub Data {
     $Self->{Translation}->{'Battery Capacity (Ah)'} = '';
     $Self->{Translation}->{'Battery Type'} = '';
     $Self->{Translation}->{'Building'} = 'Edificio';
-    $Self->{Translation}->{'Bus Interface'} = '';
+    $Self->{Translation}->{'Bus Interface'} = 'Interface';
     $Self->{Translation}->{'CC0 (Creative Commons Zero)'} = '';
     $Self->{Translation}->{'CIDR'} = '';
     $Self->{Translation}->{'CPU'} = 'CPU';
@@ -724,7 +724,7 @@ sub Data {
     $Self->{Translation}->{'Operating costs'} = '';
     $Self->{Translation}->{'Order Number'} = '';
     $Self->{Translation}->{'Other'} = 'Outros';
-    $Self->{Translation}->{'Outputs'} = '';
+    $Self->{Translation}->{'Outputs'} = 'Saída';
     $Self->{Translation}->{'PIN'} = '';
     $Self->{Translation}->{'PIN 2'} = '';
     $Self->{Translation}->{'PUK'} = '';
@@ -749,13 +749,13 @@ sub Data {
     $Self->{Translation}->{'Seat licenses'} = '';
     $Self->{Translation}->{'Serialnumber'} = '';
     $Self->{Translation}->{'Server Software'} = '';
-    $Self->{Translation}->{'Service Agreement'} = '';
+    $Self->{Translation}->{'Service Agreement'} = 'Acordo de nivel de servizo';
     $Self->{Translation}->{'Service Tag'} = '';
     $Self->{Translation}->{'Shareware'} = '';
     $Self->{Translation}->{'Socket Type'} = '';
     $Self->{Translation}->{'Software'} = '';
     $Self->{Translation}->{'Speakers'} = '';
-    $Self->{Translation}->{'Standard SIM'} = '';
+    $Self->{Translation}->{'Standard SIM'} = 'Estándar';
     $Self->{Translation}->{'Start IP Address'} = '';
     $Self->{Translation}->{'Storage'} = '';
     $Self->{Translation}->{'Storage Partition'} = '';

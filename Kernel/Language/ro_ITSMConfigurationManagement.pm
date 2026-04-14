@@ -109,7 +109,7 @@ sub Data {
     $Self->{Translation}->{'Object Type'} = 'Tip de obiect';
 
     # Template: AdminDynamicFieldScreen
-    $Self->{Translation}->{'Filter by object type'} = '';
+    $Self->{Translation}->{'Filter by object type'} = 'Filtru după tip';
 
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = 'Se vor importa următoarele clase';
@@ -164,7 +164,7 @@ sub Data {
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = 'ConfigItemID %s nu a fost găsit în baza de date!';
     $Self->{Translation}->{'ConfigItem'} = 'ConfigItem';
     $Self->{Translation}->{'printed by %s at %s'} = 'tipărit de %s la %s';
-    $Self->{Translation}->{'Referenced by'} = '';
+    $Self->{Translation}->{'Referenced by'} = 'Referință';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
     $Self->{Translation}->{'Invalid ClassID!'} = 'ClassID invalid!';
@@ -201,9 +201,9 @@ sub Data {
     $Self->{Translation}->{'Class restrictions for the config item'} = 'Restricții de clasă pentru elementul de configurare';
     $Self->{Translation}->{'Select one or more classes to restrict selectable config items'} =
         'Selectați una sau mai multe clase pentru a restricționa elementele de configurare selectabile';
-    $Self->{Translation}->{'Deployment state restrictions for the config item'} = '';
+    $Self->{Translation}->{'Deployment state restrictions for the config item'} = 'Restricții de clasă pentru elementul de configurare';
     $Self->{Translation}->{'Select one or more deployment states to restrict selectable config items'} =
-        '';
+        'Selectați una sau mai multe clase pentru a restricționa elementele de configurare selectabile';
     $Self->{Translation}->{'Dynamic (ConfigItem)'} = 'Dinamic (ConfigItem)';
     $Self->{Translation}->{'Static (Version)'} = 'Static (Versiune)';
     $Self->{Translation}->{'Link Referencing Type'} = 'Tipul de referință a legăturii';
@@ -359,7 +359,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         'Definește subobiectul implicit al clasei "ITSMConfigItem".';
     $Self->{Translation}->{'Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
-        '';
+        'Definește coloanele disponibile pentru IC în prezentarea generală a elementelor de configurare în funcție de clasa IC. Fiecare intrare trebuie să fie compusă dintr-un nume de clasă și o matrice de câmpuri disponibile pentru clasa corespunzătoare. Intrările de câmpuri dinamice trebuie să respecte schema DynamicField_FieldName.';
     $Self->{Translation}->{'Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).'} =
         'Definește înălțimea pentru componenta editor de text bogat pentru acest ecran. Introduceți numărul (pixeli) sau valoarea procentuală (relativă).';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =
@@ -419,11 +419,11 @@ sub Data {
     $Self->{Translation}->{'For every webservice (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker config.'} =
         'Pentru fiecare serviciu web (cheie) se poate defini o serie de clase (valoare) pentru care se limitează importul. Pentru toate clasele alese sau pentru toate clasele existente, atributele de identificare vor trebui să fie alese în configurația invocatorului.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
-        '';
+        'Înregistrarea modulului GenericInterface pentru stratul de invocare ConfigItemFetch.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
         'Înregistrarea modulului GenericInterface pentru stratul de invocare ConfigItemFetch.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemUpdate invoker layer.'} =
-        '';
+        'Înregistrarea modulului GenericInterface pentru stratul de invocare ConfigItemFetch.';
     $Self->{Translation}->{'ITSM ConfigItem'} = 'ITSM ConfigItem';
     $Self->{Translation}->{'ITSM config item overview.'} = 'Prezentare generală a elementelor de configurare ITSM.';
     $Self->{Translation}->{'InciState'} = 'InciState';
@@ -587,7 +587,7 @@ sub Data {
     $Self->{Translation}->{'Accounting'} = '';
     $Self->{Translation}->{'Accounting Information'} = '';
     $Self->{Translation}->{'Address Allocation'} = '';
-    $Self->{Translation}->{'Administrator'} = '';
+    $Self->{Translation}->{'Administrator'} = 'Administrare';
     $Self->{Translation}->{'Analog Phone'} = '';
     $Self->{Translation}->{'Apache Lizenz'} = '';
     $Self->{Translation}->{'Appliance Type'} = '';
@@ -595,7 +595,7 @@ sub Data {
     $Self->{Translation}->{'Battery Capacity (Ah)'} = '';
     $Self->{Translation}->{'Battery Type'} = '';
     $Self->{Translation}->{'Building'} = 'Clădire';
-    $Self->{Translation}->{'Bus Interface'} = '';
+    $Self->{Translation}->{'Bus Interface'} = 'Interfață';
     $Self->{Translation}->{'CC0 (Creative Commons Zero)'} = '';
     $Self->{Translation}->{'CIDR'} = '';
     $Self->{Translation}->{'CPU'} = 'CPU';
@@ -724,7 +724,7 @@ sub Data {
     $Self->{Translation}->{'Operating costs'} = '';
     $Self->{Translation}->{'Order Number'} = '';
     $Self->{Translation}->{'Other'} = 'Altele';
-    $Self->{Translation}->{'Outputs'} = '';
+    $Self->{Translation}->{'Outputs'} = 'Ieșire';
     $Self->{Translation}->{'PIN'} = '';
     $Self->{Translation}->{'PIN 2'} = '';
     $Self->{Translation}->{'PUK'} = '';
@@ -749,13 +749,13 @@ sub Data {
     $Self->{Translation}->{'Seat licenses'} = '';
     $Self->{Translation}->{'Serialnumber'} = '';
     $Self->{Translation}->{'Server Software'} = '';
-    $Self->{Translation}->{'Service Agreement'} = '';
+    $Self->{Translation}->{'Service Agreement'} = 'SLA';
     $Self->{Translation}->{'Service Tag'} = '';
     $Self->{Translation}->{'Shareware'} = '';
     $Self->{Translation}->{'Socket Type'} = '';
     $Self->{Translation}->{'Software'} = 'Software';
     $Self->{Translation}->{'Speakers'} = '';
-    $Self->{Translation}->{'Standard SIM'} = '';
+    $Self->{Translation}->{'Standard SIM'} = 'Standard';
     $Self->{Translation}->{'Start IP Address'} = '';
     $Self->{Translation}->{'Storage'} = '';
     $Self->{Translation}->{'Storage Partition'} = '';

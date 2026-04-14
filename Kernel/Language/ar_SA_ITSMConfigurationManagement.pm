@@ -109,7 +109,7 @@ sub Data {
     $Self->{Translation}->{'Object Type'} = 'نوع الكائن';
 
     # Template: AdminDynamicFieldScreen
-    $Self->{Translation}->{'Filter by object type'} = '';
+    $Self->{Translation}->{'Filter by object type'} = 'تصفية حسب النوع';
 
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = 'سيتم استيراد الفئات التالية';
@@ -164,7 +164,7 @@ sub Data {
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = 'معرّف عنصر التكوين %s غير موجود في قاعدة البيانات!';
     $Self->{Translation}->{'ConfigItem'} = 'عنصر التكوين';
     $Self->{Translation}->{'printed by %s at %s'} = 'تمت طباعتها بواسطة %s في %s';
-    $Self->{Translation}->{'Referenced by'} = '';
+    $Self->{Translation}->{'Referenced by'} = 'مَرجِع';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
     $Self->{Translation}->{'Invalid ClassID!'} = 'معرّف الفئة غير صالح!';
@@ -201,9 +201,9 @@ sub Data {
     $Self->{Translation}->{'Class restrictions for the config item'} = 'قيود الفئة لعنصر التكوين';
     $Self->{Translation}->{'Select one or more classes to restrict selectable config items'} =
         'حدد فئة واحدة أو أكثر لتقييد عناصر التكوين القابلة للتحديد';
-    $Self->{Translation}->{'Deployment state restrictions for the config item'} = '';
+    $Self->{Translation}->{'Deployment state restrictions for the config item'} = 'قيود الفئة لعنصر التكوين';
     $Self->{Translation}->{'Select one or more deployment states to restrict selectable config items'} =
-        '';
+        'حدد فئة واحدة أو أكثر لتقييد عناصر التكوين القابلة للتحديد';
     $Self->{Translation}->{'Dynamic (ConfigItem)'} = 'ديناميكي (عنصر التكوين)';
     $Self->{Translation}->{'Static (Version)'} = 'ثابت (إصدار)';
     $Self->{Translation}->{'Link Referencing Type'} = 'نوع الإحالة المرجعية للرابط';
@@ -359,7 +359,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         'يحدد الكائن الفرعي الافتراضي للفئة \'ITSMConfigItem\'.';
     $Self->{Translation}->{'Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
-        '';
+        'يحدد الأعمدة المتاحة من CI في النظرة العامة لعنصر التكوين اعتمادًا على فئة CI. يجب أن يتكون كل إدخال من اسم الفئة ومصفوفة من الحقول المتاحة للفئة المقابلة. يجب أن تحترم إدخالات الحقول الديناميكية المخطط DynamicField_FieldName.';
     $Self->{Translation}->{'Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).'} =
         'يحدد ارتفاع مكون محرر النص المنسق. حدد قيمة رقمية (بكسل) أو نسبة مئوية (نسبية).';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =
@@ -419,11 +419,11 @@ sub Data {
     $Self->{Translation}->{'For every webservice (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker config.'} =
         'لكل خدمة ويب (مفتاح) يمكن تحديد مصفوفة من الفئات (القيمة) التي يتم تقييد الاستيراد عليها. بالنسبة لجميع الفئات المختارة، أو جميع الفئات الموجودة يجب اختيار سمات التعريف في تكوين المستدعي.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
-        '';
+        'تسجيل الوحدة النمطية GenericInterface لطبقة مستدعي ConfigItemFetch.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
         'تسجيل الوحدة النمطية GenericInterface لطبقة مستدعي ConfigItemFetch.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemUpdate invoker layer.'} =
-        '';
+        'تسجيل الوحدة النمطية GenericInterface لطبقة مستدعي ConfigItemFetch.';
     $Self->{Translation}->{'ITSM ConfigItem'} = 'عنصر التكوين ITSMItem';
     $Self->{Translation}->{'ITSM config item overview.'} = 'نظرة عامة على عنصر تكوين ITSM.';
     $Self->{Translation}->{'InciState'} = 'InciState';
@@ -453,9 +453,9 @@ sub Data {
     $Self->{Translation}->{'Parameters for the column filters of the small config item overview. Please note: setting \'Active\' to 0 will only prevent agents from editing settings of this group in their personal preferences, but will still allow administrators to edit the settings of another user\'s behalf. Use \'PreferenceGroup\' to control in which area these settings should be shown in the user interface.'} =
         'معلمات مرشحات الأعمدة في النظرة العامة لعنصر التكوين الصغير. يرجى ملاحظة: تعيين \'نشط\' إلى 0 سيمنع الوكلاء فقط من تحرير إعدادات هذه المجموعة في تفضيلاتهم الشخصية، ولكنه سيسمح للمسؤولين بتحرير إعدادات مستخدم آخر نيابةً عن مستخدم آخر. استخدم \'PreferenceGroup\' للتحكم في المنطقة التي يجب أن تظهر فيها هذه الإعدادات في واجهة المستخدم.';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries per config item class shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        '';
+        'معاملات واجهة الخلفية لوحة المعلومات لعنصر عرض قائمة العملاء في منطقة الوكلاء. "Limit" يحدد عدد العناصر المعروضة افتراضيًا. يمكن استخدام "Group" لتقييد الوصول إلى المكون الإضافي (على سبيل المثال: Group: admin;group1;group2;). "Default" يحدد ما إذا كان المكون الإضافي يجب تمكينه تلقائيًا أم يجب على المستخدم تمكينه يدويًا. "CacheTTLLocal" يحدد مدة تشغيل ذاكرة التخزين المؤقت للمكون الإضافي بالدقائق.';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        '';
+        'معاملات واجهة الخلفية لوحة المعلومات لعنصر عرض قائمة العملاء في منطقة الوكلاء. "Limit" يحدد عدد العناصر المعروضة افتراضيًا. يمكن استخدام "Group" لتقييد الوصول إلى المكون الإضافي (على سبيل المثال: Group: admin;group1;group2;). "Default" يحدد ما إذا كان المكون الإضافي يجب تمكينه تلقائيًا أم يجب على المستخدم تمكينه يدويًا. "CacheTTLLocal" يحدد مدة تشغيل ذاكرة التخزين المؤقت للمكون الإضافي بالدقائق.';
     $Self->{Translation}->{'Parameters for the deployment states color in the preferences view of the agent interface.'} =
         'معلمات لون حالات النشر في عرض التفضيلات في واجهة الوكيل.';
     $Self->{Translation}->{'Parameters for the deployment states in the preferences view of the agent interface.'} =
@@ -755,7 +755,7 @@ sub Data {
     $Self->{Translation}->{'Socket Type'} = 'نوع المقبس';
     $Self->{Translation}->{'Software'} = 'البرمجيات';
     $Self->{Translation}->{'Speakers'} = 'مكبرات الصوت';
-    $Self->{Translation}->{'Standard SIM'} = '';
+    $Self->{Translation}->{'Standard SIM'} = 'قياسي';
     $Self->{Translation}->{'Start IP Address'} = 'بدء عنوان IP';
     $Self->{Translation}->{'Storage'} = 'التخزين';
     $Self->{Translation}->{'Storage Partition'} = 'قسم التخزين';

@@ -109,7 +109,7 @@ sub Data {
     $Self->{Translation}->{'Object Type'} = 'Jenis Objek';
 
     # Template: AdminDynamicFieldScreen
-    $Self->{Translation}->{'Filter by object type'} = '';
+    $Self->{Translation}->{'Filter by object type'} = 'Penyaringan menurut jenis';
 
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = 'Kelas-kelas berikut akan diimpor';
@@ -164,7 +164,7 @@ sub Data {
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = 'ConfigItemID% tidak ditemukan dalam database!';
     $Self->{Translation}->{'ConfigItem'} = 'ItemKonfigurasi';
     $Self->{Translation}->{'printed by %s at %s'} = 'dicetak oleh%s pada%s';
-    $Self->{Translation}->{'Referenced by'} = '';
+    $Self->{Translation}->{'Referenced by'} = 'Referensi';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
     $Self->{Translation}->{'Invalid ClassID!'} = 'ClassID tidak valid!';
@@ -201,9 +201,9 @@ sub Data {
     $Self->{Translation}->{'Class restrictions for the config item'} = 'Pembatasan kelas untuk item konfigurasi';
     $Self->{Translation}->{'Select one or more classes to restrict selectable config items'} =
         'Pilih satu kelas atau lebih untuk membatasi item konfigurasi yang dapat dipilih';
-    $Self->{Translation}->{'Deployment state restrictions for the config item'} = '';
+    $Self->{Translation}->{'Deployment state restrictions for the config item'} = 'Pembatasan kelas untuk item konfigurasi';
     $Self->{Translation}->{'Select one or more deployment states to restrict selectable config items'} =
-        '';
+        'Pilih satu kelas atau lebih untuk membatasi item konfigurasi yang dapat dipilih';
     $Self->{Translation}->{'Dynamic (ConfigItem)'} = 'Dinamis (ConfigItem)';
     $Self->{Translation}->{'Static (Version)'} = 'Statis (Versi)';
     $Self->{Translation}->{'Link Referencing Type'} = 'Jenis Referensi Tautan';
@@ -359,7 +359,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         'Definisikan subobjek default dari kelas \'ITSMConfigItem\'.';
     $Self->{Translation}->{'Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
-        '';
+        'Mendefinisikan kolom CI yang tersedia dalam ikhtisar item konfigurasi tergantung pada kelas CI. Setiap entri harus terdiri dari nama kelas dan larik kolom yang tersedia untuk kelas yang bersangkutan. Entri bidang dinamis harus sesuai dengan skema DynamicField_FieldName.';
     $Self->{Translation}->{'Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).'} =
         'Mendefinisikan tinggi untuk komponen editor teks kaya untuk layar ini. Masukkan nomor (piksel) atau nilai persen (relatif).';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =
@@ -419,11 +419,11 @@ sub Data {
     $Self->{Translation}->{'For every webservice (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker config.'} =
         'Untuk setiap layanan web (key), sebuah larik kelas (value) dapat didefinisikan di mana impor dibatasi. Untuk semua kelas yang dipilih, atau semua kelas yang ada, atribut pengenal harus dipilih dalam konfigurasi pemanggil.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
-        '';
+        'Registrasi modul GenericInterface untuk lapisan pemanggil ConfigItemFetch.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
         'Registrasi modul GenericInterface untuk lapisan pemanggil ConfigItemFetch.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemUpdate invoker layer.'} =
-        '';
+        'Registrasi modul GenericInterface untuk lapisan pemanggil ConfigItemFetch.';
     $Self->{Translation}->{'ITSM ConfigItem'} = 'Item Konfigurasi ITSM';
     $Self->{Translation}->{'ITSM config item overview.'} = 'Ikhtisar item konfigurasi ITSM.';
     $Self->{Translation}->{'InciState'} = 'InciState';
@@ -453,9 +453,9 @@ sub Data {
     $Self->{Translation}->{'Parameters for the column filters of the small config item overview. Please note: setting \'Active\' to 0 will only prevent agents from editing settings of this group in their personal preferences, but will still allow administrators to edit the settings of another user\'s behalf. Use \'PreferenceGroup\' to control in which area these settings should be shown in the user interface.'} =
         'Parameter untuk filter kolom pada ikhtisar item konfigurasi kecil. Harap diperhatikan: mengatur \'Active\' ke 0 hanya akan mencegah agen mengedit pengaturan grup ini dalam preferensi pribadi mereka, tetapi masih memungkinkan administrator untuk mengedit pengaturan atas nama pengguna lain. Gunakan \'PreferenceGroup\' untuk mengontrol di area mana pengaturan ini harus ditampilkan di antarmuka pengguna.';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries per config item class shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        '';
+        'Parameter untuk backend dashboard pelanggan pengguna daftar gambaran dari antarmuka agen. "Batas" adalah jumlah entri yang ditampilkan secara default. "Grup" digunakan untuk membatasi akses ke plugin (e g Grup:.. Admin; group1, group2;). "Default" menentukan apakah plugin diaktifkan secara default atau jika pengguna perlu mengaktifkannya secara manual. "CacheTTLLocal" adalah waktu cache di menit untuk plugin.';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        '';
+        'Parameter untuk backend dashboard pelanggan pengguna daftar gambaran dari antarmuka agen. "Batas" adalah jumlah entri yang ditampilkan secara default. "Grup" digunakan untuk membatasi akses ke plugin (e g Grup:.. Admin; group1, group2;). "Default" menentukan apakah plugin diaktifkan secara default atau jika pengguna perlu mengaktifkannya secara manual. "CacheTTLLocal" adalah waktu cache di menit untuk plugin.';
     $Self->{Translation}->{'Parameters for the deployment states color in the preferences view of the agent interface.'} =
         'Parameter untuk warna state penyebaran dalam preferensi melihat antarmuka agen.';
     $Self->{Translation}->{'Parameters for the deployment states in the preferences view of the agent interface.'} =
@@ -755,7 +755,7 @@ sub Data {
     $Self->{Translation}->{'Socket Type'} = 'Jenis Soket';
     $Self->{Translation}->{'Software'} = 'Perangkat lunak';
     $Self->{Translation}->{'Speakers'} = 'Pembicara';
-    $Self->{Translation}->{'Standard SIM'} = '';
+    $Self->{Translation}->{'Standard SIM'} = 'Standar';
     $Self->{Translation}->{'Start IP Address'} = 'Mulai Alamat IP';
     $Self->{Translation}->{'Storage'} = 'Penyimpanan';
     $Self->{Translation}->{'Storage Partition'} = 'Partisi Penyimpanan';

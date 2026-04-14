@@ -109,7 +109,7 @@ sub Data {
     $Self->{Translation}->{'Object Type'} = '개체 유형';
 
     # Template: AdminDynamicFieldScreen
-    $Self->{Translation}->{'Filter by object type'} = '';
+    $Self->{Translation}->{'Filter by object type'} = '유형별 필터링';
 
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = '다음 클래스를 가져옵니다.';
@@ -164,7 +164,7 @@ sub Data {
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = 'ConfigItemID %s를 데이터베이스에서 찾을 수 없습니다!';
     $Self->{Translation}->{'ConfigItem'} = '구성 항목';
     $Self->{Translation}->{'printed by %s at %s'} = '에서 %s가 인쇄했습니다.';
-    $Self->{Translation}->{'Referenced by'} = '';
+    $Self->{Translation}->{'Referenced by'} = '참고';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
     $Self->{Translation}->{'Invalid ClassID!'} = '잘못된 ClassID입니다!';
@@ -201,9 +201,9 @@ sub Data {
     $Self->{Translation}->{'Class restrictions for the config item'} = '구성 항목의 클래스 제한';
     $Self->{Translation}->{'Select one or more classes to restrict selectable config items'} =
         '하나 이상의 클래스를 선택하여 선택 가능한 구성 항목을 제한합니다.';
-    $Self->{Translation}->{'Deployment state restrictions for the config item'} = '';
+    $Self->{Translation}->{'Deployment state restrictions for the config item'} = '구성 항목의 클래스 제한';
     $Self->{Translation}->{'Select one or more deployment states to restrict selectable config items'} =
-        '';
+        '하나 이상의 클래스를 선택하여 선택 가능한 구성 항목을 제한합니다.';
     $Self->{Translation}->{'Dynamic (ConfigItem)'} = '동적(구성 항목)';
     $Self->{Translation}->{'Static (Version)'} = '정적(버전)';
     $Self->{Translation}->{'Link Referencing Type'} = '링크 참조 유형';
@@ -359,7 +359,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         '\'ITSMConfigItem\' 클래스의 기본 하위 객체를 정의합니다.';
     $Self->{Translation}->{'Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
-        '';
+        'CI 클래스에 따라 구성 항목 개요에서 사용 가능한 CI 열을 정의합니다. 각 항목은 클래스 이름과 해당 클래스에서 사용 가능한 필드 배열로 구성되어야 합니다. 동적 필드 항목은 DynamicField_FieldName 스키마를 따라야 합니다.';
     $Self->{Translation}->{'Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).'} =
         '이 화면의 서식있는 텍스트 편집기 구성 요소의 높이를 정의합니다. 숫자 (픽셀) 또는 퍼센트 값 (상대)을 입력하십시오.';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =
@@ -419,11 +419,11 @@ sub Data {
     $Self->{Translation}->{'For every webservice (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker config.'} =
         '모든 웹서비스(키)에 대해 가져오기가 제한되는 클래스(값)의 배열을 정의할 수 있습니다. 선택한 모든 클래스 또는 모든 기존 클래스에 대해 식별 속성을 인보커 구성에서 선택해야 합니다.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
-        '';
+        'ConfigItemFetch 인보커 레이어에 대한 GenericInterface 모듈 등록.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
         'ConfigItemFetch 인보커 레이어에 대한 GenericInterface 모듈 등록.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemUpdate invoker layer.'} =
-        '';
+        'ConfigItemFetch 인보커 레이어에 대한 GenericInterface 모듈 등록.';
     $Self->{Translation}->{'ITSM ConfigItem'} = 'ITSM 구성 항목';
     $Self->{Translation}->{'ITSM config item overview.'} = 'ITSM 구성 항목 개요.';
     $Self->{Translation}->{'InciState'} = 'InciState';
@@ -453,9 +453,9 @@ sub Data {
     $Self->{Translation}->{'Parameters for the column filters of the small config item overview. Please note: setting \'Active\' to 0 will only prevent agents from editing settings of this group in their personal preferences, but will still allow administrators to edit the settings of another user\'s behalf. Use \'PreferenceGroup\' to control in which area these settings should be shown in the user interface.'} =
         '작은 구성 항목 개요의 열 필터에 대한 매개 변수입니다. 참고: \'활성\'을 0으로 설정하면 상담원이 개인 기본 설정에서 이 그룹의 설정을 편집할 수 없지만 관리자가 다른 사용자의 설정을 대신 편집할 수 있습니다. 사용자 인터페이스에서 이러한 설정이 표시될 영역을 제어하려면 \'PreferenceGroup\'을 사용하세요.';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries per config item class shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        '';
+        '고객 사용자 목록의 대시 보드 백엔드 매개 변수는 에이전트 인터페이스 개요입니다. "제한"은 기본적으로 표시되는 항목 수입니다. "그룹"은 플러그인 (예 : 그룹 : 관리자, 그룹 1, 그룹 2)에 대한 액세스를 제한하는 데 사용됩니다. "기본값"은 플러그인이 기본적으로 활성화되어 있는지 여부 또는 사용자가 수동으로 활성화해야하는지 여부를 결정합니다. "CacheTTLLocal"은 플러그인의 캐시 시간입니다.';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        '';
+        '고객 사용자 목록의 대시 보드 백엔드 매개 변수는 에이전트 인터페이스 개요입니다. "제한"은 기본적으로 표시되는 항목 수입니다. "그룹"은 플러그인 (예 : 그룹 : 관리자, 그룹 1, 그룹 2)에 대한 액세스를 제한하는 데 사용됩니다. "기본값"은 플러그인이 기본적으로 활성화되어 있는지 여부 또는 사용자가 수동으로 활성화해야하는지 여부를 결정합니다. "CacheTTLLocal"은 플러그인의 캐시 시간입니다.';
     $Self->{Translation}->{'Parameters for the deployment states color in the preferences view of the agent interface.'} =
         '상담원 인터페이스의 기본 설정 보기에서 배포 상태의 매개변수 색상을 지정할 수 있습니다.';
     $Self->{Translation}->{'Parameters for the deployment states in the preferences view of the agent interface.'} =
@@ -755,7 +755,7 @@ sub Data {
     $Self->{Translation}->{'Socket Type'} = '소켓 유형';
     $Self->{Translation}->{'Software'} = '소프트웨어';
     $Self->{Translation}->{'Speakers'} = '스피커';
-    $Self->{Translation}->{'Standard SIM'} = '';
+    $Self->{Translation}->{'Standard SIM'} = '표준';
     $Self->{Translation}->{'Start IP Address'} = 'IP 주소 시작';
     $Self->{Translation}->{'Storage'} = '스토리지';
     $Self->{Translation}->{'Storage Partition'} = '스토리지 파티션';

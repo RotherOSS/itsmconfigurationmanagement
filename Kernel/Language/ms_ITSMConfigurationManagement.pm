@@ -25,20 +25,20 @@ sub Data {
 
     # Template: AdminGenericInterfaceOperationConfigItem
     $Self->{Translation}->{'General operation data'} = '';
-    $Self->{Translation}->{'Settings for incoming request data'} = '';
-    $Self->{Translation}->{'Settings for outgoing response data'} = '';
+    $Self->{Translation}->{'Settings for incoming request data'} = 'Pemetaan untuk permintaan masuk data.';
+    $Self->{Translation}->{'Settings for outgoing response data'} = 'Pemetaan untuk tindak balas data yang keluar.';
 
     # Template: AdminITSMConfigItem
     $Self->{Translation}->{'Config Item Management'} = 'Pengurusan Config Item';
     $Self->{Translation}->{'Change class definition'} = 'Ubah definisi kelas';
-    $Self->{Translation}->{'Change role definition'} = '';
+    $Self->{Translation}->{'Change role definition'} = 'Ubah definisi kelas';
     $Self->{Translation}->{'Ready2Import Class Bundles'} = '';
     $Self->{Translation}->{'Here you can import Ready2Import class bundles showcasing our most usual config items. Please note that some additional configuration may be required.'} =
         '';
     $Self->{Translation}->{'Update existing entities'} = '';
     $Self->{Translation}->{'Import Ready2Adopt class bundles'} = '';
-    $Self->{Translation}->{'Config Item Class'} = '';
-    $Self->{Translation}->{'Config Item Role'} = '';
+    $Self->{Translation}->{'Config Item Class'} = 'Barangan Konfigurasi';
+    $Self->{Translation}->{'Config Item Role'} = 'Config Item';
 
     # Template: AgentITSMConfigItemAdd
     $Self->{Translation}->{'Config Item'} = 'Config Item';
@@ -62,9 +62,9 @@ sub Data {
     $Self->{Translation}->{'Name is already in use by the ConfigItems with the following Number(s): %s'} =
         'Nama sudah digunakan oleh ConfigItems dengan Nombor(nombor-nombor) berikut: %s';
     $Self->{Translation}->{'Version Number'} = 'Bilangan versi';
-    $Self->{Translation}->{'Version number of this config item'} = '';
+    $Self->{Translation}->{'Version number of this config item'} = 'Nama config item ini';
     $Self->{Translation}->{'Version Number is already in use by the ConfigItems with the following Number(s): %s'} =
-        '';
+        'Nama sudah digunakan oleh ConfigItems dengan Nombor(nombor-nombor) berikut: %s';
     $Self->{Translation}->{'Deployment State'} = 'Keadaan Pertukaran';
     $Self->{Translation}->{'Incident State'} = 'insiden keadaan';
 
@@ -109,7 +109,7 @@ sub Data {
     $Self->{Translation}->{'Object Type'} = 'Jenis objek';
 
     # Template: AdminDynamicFieldScreen
-    $Self->{Translation}->{'Filter by object type'} = '';
+    $Self->{Translation}->{'Filter by object type'} = 'Tapis mengikut jenis';
 
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = '';
@@ -126,7 +126,7 @@ sub Data {
     $Self->{Translation}->{'Overview: ITSM ConfigItem'} = '';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemBulk.pm
-    $Self->{Translation}->{'No ConfigItemID is given!'} = '';
+    $Self->{Translation}->{'No ConfigItemID is given!'} = 'Tiada ItemID diberikan!';
     $Self->{Translation}->{'You need at least one selected Configuration Item!'} = '';
     $Self->{Translation}->{'You don\'t have write access to this configuration item: %s.'} =
         '';
@@ -134,16 +134,16 @@ sub Data {
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemDelete.pm
     $Self->{Translation}->{'Config item "%s" not found in database!'} = '';
-    $Self->{Translation}->{'Was not able to delete the configitem ID %s!'} = '';
+    $Self->{Translation}->{'Was not able to delete the configitem ID %s!'} = 'Tidak mampu untuk membuang bahasa %s itu!';
     $Self->{Translation}->{'No version found for ConfigItemID %s!'} = '';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemEdit.pm
     $Self->{Translation}->{'No ConfigItemID, DuplicateID or ClassID is given!'} = '';
-    $Self->{Translation}->{'No access is given!'} = '';
+    $Self->{Translation}->{'No access is given!'} = 'Tiada %s diberikan!';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
-    $Self->{Translation}->{'Can\'t show history, no ConfigItemID is given!'} = '';
-    $Self->{Translation}->{'Can\'t show history, no access rights given!'} = '';
+    $Self->{Translation}->{'Can\'t show history, no ConfigItemID is given!'} = 'Tidak boleh menunjukkan sejarah, sebagai tiada ItemID yang diberikan!';
+    $Self->{Translation}->{'Can\'t show history, no access rights given!'} = 'Tidak boleh menunjukkan sejarah, sebagai tiada ItemID yang diberikan!';
     $Self->{Translation}->{'New ConfigItem (ID=%s)'} = '';
     $Self->{Translation}->{'New version (ID=%s)'} = '';
     $Self->{Translation}->{'Deployment state updated (new=%s, old=%s)'} = '';
@@ -164,11 +164,11 @@ sub Data {
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = '';
     $Self->{Translation}->{'ConfigItem'} = 'ConfigItem';
     $Self->{Translation}->{'printed by %s at %s'} = '';
-    $Self->{Translation}->{'Referenced by'} = '';
+    $Self->{Translation}->{'Referenced by'} = 'Rujukan(en)';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
     $Self->{Translation}->{'Invalid ClassID!'} = '';
-    $Self->{Translation}->{'No ClassID is given!'} = '';
+    $Self->{Translation}->{'No ClassID is given!'} = 'Tiada %s diberikan!';
     $Self->{Translation}->{'No access rights for this class given!'} = '';
     $Self->{Translation}->{'No Result!'} = 'Tiada Keputusan!';
     $Self->{Translation}->{'Config Item Search Results'} = 'Hasil carian ConfigItem';
@@ -312,9 +312,9 @@ sub Data {
     $Self->{Translation}->{'Customers have the possibility to manually switch between historic CI versions.'} =
         '';
     $Self->{Translation}->{'Default data to use on attribute for config item search screen. Example: "ITSMConfigItemCreateTimePointFormat=year;ITSMConfigItemCreateTimePointStart=Last;ITSMConfigItemCreateTimePoint=2;".'} =
-        '';
+        'Data asal digunakan untuk sifat bagi skrin carian tiket. Contoh: TicketCreateTimePointFormat=tahun;TicketCreateTimePointStart=Terakhir;TicketCreateTimePoint=2;".';
     $Self->{Translation}->{'Default data to use on attribute for config item search screen. Example: "ITSMConfigItemCreateTimeStartYear=2010;ITSMConfigItemCreateTimeStartMonth=10;ITSMConfigItemCreateTimeStartDay=4;ITSMConfigItemCreateTimeStopYear=2010;ITSMConfigItemCreateTimeStopMonth=11;ITSMConfigItemCreateTimeStopDay=3;".'} =
-        '';
+        'Data asal digunakan untuk sifat bagi skrin carian tiket. Contoh: TicketCrateTimeStartYear=2010;TicketCreateTimeStartMonth=10;TicketCreateTimeStartDay=4;TicketCreateTimeStopYear=2010;TicketCreateTimeStopMonth=11;TicketCreateTimeStopDay=3;".';
     $Self->{Translation}->{'Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = "complex"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.'} =
         'Takrifkan Tindakan dimana butang tetapan itu ada dalam widget objek bersambung (LinkObject::ViewMode = "complex"). Sila pastikan yang Tindakan ini perlu didaftarkan yang berikut fail-fail JS dan CSS: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.';
     $Self->{Translation}->{'Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit.'} =
@@ -328,7 +328,7 @@ sub Data {
     $Self->{Translation}->{'Defines Required permissions to search ITSM configuration items using the Generic Interface.'} =
         'Mentakrifkan kebenaran yang diperlukan untuk mencari barangan konfigurasi ITSM menggunakan Antara Muka Generik.';
     $Self->{Translation}->{'Defines Required permissions to set ITSM configuration items using the Generic Interface.'} =
-        '';
+        'Mentakrifkan kebenaran yang diperlukan untuk mendapatkan barangan konfigurasi ITSM menggunakan Antara Muka Generik.';
     $Self->{Translation}->{'Defines an overview module to show the small view of a configuration item list.'} =
         'Mentakrifkan modul gambaran untuk menunjukkan pandangan yang kecil senarai item konfigurasi.';
     $Self->{Translation}->{'Defines if the link type labels must be shown in the node connections.'} =
@@ -338,24 +338,25 @@ sub Data {
     $Self->{Translation}->{'Defines the available columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         '';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the agent interface.'} =
-        '';
+        'Mentakrifkan sifat tiket asal untuk aturan tiket dalam hasil pencarian tiket dari paparan ejen.';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the customer interface.'} =
         '';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of this operation.'} =
-        '';
+        'Mentakrifkan sifat tiket default untuk pengkelasan tiket dalam hasil carian tiket operasi ini.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the agent interface. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'Mentakrifkan turutan tiket asal dalam hasil carian tiket dari paparan ejen. Atas: yang lama di atas. Bawah: yang terbaru di atas.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'Mentakrifkan turutan tiket asal dalam hasil carian dari paparan pelanggan. Atas: yang lama di atas. Bawah: yang terbaru di atas.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the this operation. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'Mentakrifkan arahan tiket default untuk pengkelasan tiket dalam hasil carian tiket operasi ini. Atas: Tertua di atas. Bawah: Terbaru di atas.';
     $Self->{Translation}->{'Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         '';
     $Self->{Translation}->{'Defines the default relations depth to be shown.'} = '';
     $Self->{Translation}->{'Defines the default shown config item search attribute for config item search screen.'} =
-        '';
+        'Mentakrifkan sifat pencarian tiket yang ditunjuk yang asal untuk skrin carian tiket.';
     $Self->{Translation}->{'Defines the default shown config item search attribute for config item search screen. Example: "Key" must have the name of the Dynamic Field in this case \'X\', "Content" must have the value of the Dynamic Field depending on the Dynamic Field type,  Text: \'a text\', Dropdown: \'1\', Date/Time: \'Search_DynamicField_XTimeSlotStartYear=1974; Search_DynamicField_XTimeSlotStartMonth=01; Search_DynamicField_XTimeSlotStartDay=26; Search_DynamicField_XTimeSlotStartHour=00; Search_DynamicField_XTimeSlotStartMinute=00; Search_DynamicField_XTimeSlotStartSecond=00; Search_DynamicField_XTimeSlotStopYear=2013; Search_DynamicField_XTimeSlotStopMonth=01; Search_DynamicField_XTimeSlotStopDay=26; Search_DynamicField_XTimeSlotStopHour=23; Search_DynamicField_XTimeSlotStopMinute=59; Search_DynamicField_XTimeSlotStopSecond=59;\' and or \'Search_DynamicField_XTimePointFormat=week; Search_DynamicField_XTimePointStart=Before; Search_DynamicField_XTimePointValue=7\';.'} =
-        '';
+        'Mentakrifkan default yang ditunjukkan tiket sifat pencarian skrin carian tiket. Contoh: "Utama" mesti mempunyai nama medan dinamik dalam kes ini \'X\', "Kandungan" mesti mempunyai nilai medan dinamik bergantung kepada jenis Medan Dinamik, Teks: \'teks\', jatuh turun: \'1\', Tarikh/Masa: \'Search_DynamicField_XTimeSlotStartYear = 1974;
+Search_DynamicField_XTimeSlotStartMonth=01; Search_DynamicField_XTimeSlotStartDay=26; Search_DynamicField_XTimeSlotStartHour=00; Search_DynamicField_XTimeSlotStartMinute=00; Search_DynamicField_XTimeSlotStartSecond=00; Search_DynamicField_XTimeSlotStopYear=2013; Search_DynamicField_XTimeSlotStopMonth=01; Search_DynamicField_XTimeSlotStopDay=26; Search_DynamicField_XTimeSlotStopHour=23; Search_DynamicField_XTimeSlotStopMinute=59; Search_DynamicField_XTimeSlotStopSecond=59;\' and or \'Search_DynamicField_XTimePointFormat=week; Search_DynamicField_XTimePointStart=Before; Search_DynamicField_XTimePointValue=7\';.';
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         'Definiert das Standard-Subobject der Klasse';
     $Self->{Translation}->{'Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
@@ -373,33 +374,33 @@ sub Data {
     $Self->{Translation}->{'Defines the search limit for the AgentITSMConfigItemSearch screen.'} =
         'Mentakrifkan had carian untuk skrin CarianItemKonfigITSMAgen.';
     $Self->{Translation}->{'Defines the search limit for the CustomerITSMConfigItem screen.'} =
-        '';
+        'Mentakrifkan had carian untuk skrin ItemKonfigITSMAgen.';
     $Self->{Translation}->{'Defines the search limit for the CustomerITSMConfigItemSearch screen.'} =
-        '';
+        'Mentakrifkan had carian untuk skrin CarianItemKonfigITSMAgen.';
     $Self->{Translation}->{'Defines the shown columns of CIs in the link table complex view for all CI classes. If there is no entry, then the default columns are shown.'} =
         '';
     $Self->{Translation}->{'Defines the shown columns of CIs in the link table complex view, depending on the CI class. Each entry must be prefixed with the class name and double colons (i.e. Computer::). There are a few CI-Attributes that common to all CIs (example for the class Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). To show individual CI-Attributes as defined in the CI-Definition, the following scheme must be used (example for the class Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If there is no entry for a CI class, then the default columns are shown.'} =
         'Mentakrifkan ruangan ditunjukkan CIs dalam pandangan pautan jadual kompleks, bergantung kepada kelas CI . Setiap penyertaan hendaklah dimulakan dengan nama kelas dan titik bertindih dua (iaitu Komputer::). Terdapat beberapa Sifat-sifat-CI yang sama kepada semua CIs (contoh untuk kelas Komputer:Komputer::Nama, Komputer::CurDeplState, Komputer::CreateTime). Untuk menunjukkan sifat individu CI sebagaimana yang ditakrifkan dalam Definisi-CI, skim berikut mesti digunakan (contoh untuk kelas Komputer): Komputer::harddisk::1, Komputer::harddisk::1::Kapasiti::1, komputer::harddisk::2, Komputer::harddisk::2::Kapasiti::1. Jika tiada penyertaan untuk kelas CI, maka ruangan default dipaparkan.';
     $Self->{Translation}->{'Defines which items are available for \'Action\' in third level of the ITSM Config Item ACL structure.'} =
-        '';
+        'Mentakrif barangan mana boleh didapati untuk \'Tindakan\' di peringkat ketiga struktur ACL.';
     $Self->{Translation}->{'Defines which items are available in first level of the ITSM Config Item ACL structure.'} =
-        '';
+        'Mentakrifkan barangan mana yang terdapat pada tahap pertama struktur ACL.';
     $Self->{Translation}->{'Defines which items are available in second level of the ITSM Config Item ACL structure.'} =
-        '';
+        'Mentakrifkan barangan mana yang terdapat pada tahap kedua struktur ACL.';
     $Self->{Translation}->{'Defines which type of link (named from the ticket perspective) can affect the status of a linked CI.'} =
         'Takrifkan jenis sambungan yang mana (dinamakan daripada perspektif tiket) boleh menjejaskan status bagi satu sambungan CI.';
     $Self->{Translation}->{'Defines which type of ticket can affect the status of a linked CI.'} =
         'Takrifkan jenis tiket yang mana boleh menjejaskan status bagi satu sambungan CI.';
     $Self->{Translation}->{'Definition Update'} = '';
-    $Self->{Translation}->{'Delete Configuration Item'} = '';
+    $Self->{Translation}->{'Delete Configuration Item'} = 'Perkara konfigurasi';
     $Self->{Translation}->{'DeplState'} = '';
     $Self->{Translation}->{'Deployment State Color'} = 'Penempatan Keadaan Warna.';
-    $Self->{Translation}->{'DeploymentState'} = '';
+    $Self->{Translation}->{'DeploymentState'} = 'Keadaan Pertukaran';
     $Self->{Translation}->{'Duplicate'} = 'Gandakan';
     $Self->{Translation}->{'Dynamic field event module that marks config item definitions as out of sync, if containing dynamic fields change.'} =
         '';
     $Self->{Translation}->{'Dynamic fields shown in the additional ITSM field screen of the agent interface.'} =
-        '';
+        'Menunjukkan bidang tajuk dalam skrin bidang ITSM tambahan bagi antara muka ejen.';
     $Self->{Translation}->{'Dynamic fields shown in the config item overview screen of the customer interface.'} =
         '';
     $Self->{Translation}->{'Dynamic fields shown in the config item search screen of the agent interface.'} =
@@ -419,22 +420,22 @@ sub Data {
     $Self->{Translation}->{'For every webservice (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker config.'} =
         '';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
-        '';
+        'Pendaftaran modul GenericInterface untuk lapisan pencetus.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
-        '';
+        'Pendaftaran modul GenericInterface untuk lapisan pencetus.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemUpdate invoker layer.'} =
-        '';
-    $Self->{Translation}->{'ITSM ConfigItem'} = '';
+        'Pendaftaran modul GenericInterface untuk lapisan pencetus.';
+    $Self->{Translation}->{'ITSM ConfigItem'} = 'ConfigItem';
     $Self->{Translation}->{'ITSM config item overview.'} = 'pandangan item config ITSM.';
     $Self->{Translation}->{'InciState'} = '';
-    $Self->{Translation}->{'IncidentState'} = '';
+    $Self->{Translation}->{'IncidentState'} = 'insiden keadaan';
     $Self->{Translation}->{'Includes deployment states in the config item search of the customer interface.'} =
         '';
     $Self->{Translation}->{'Includes incident states in the config item search of the customer interface.'} =
         '';
     $Self->{Translation}->{'License accounting configuration item event module.'} = '';
     $Self->{Translation}->{'Maximum number of config items to be displayed in the result of this operation.'} =
-        '';
+        'Jumlah tiket maksimum untuk dipamerkan di keputusan operasi ini.';
     $Self->{Translation}->{'Module to check the group responsible for a class.'} = 'Modul untuk menyemak kumpulan bertanggungjawab untuk kelas.';
     $Self->{Translation}->{'Module to check the group responsible for a configuration item.'} =
         'Modul untuk menyemak kumpulan bertanggungjawab untuk item konfigurasi.';
@@ -442,20 +443,20 @@ sub Data {
     $Self->{Translation}->{'Name Module'} = '';
     $Self->{Translation}->{'Number Module'} = '';
     $Self->{Translation}->{'Number of config items to be displayed in each page of a search result in the agent interface.'} =
-        '';
+        'Jumlah tiket yang akan dipamerkan dalam setiap halaman dari hasil carian dalam paparan ejen.';
     $Self->{Translation}->{'Number of config items to be displayed in each page of a search result in the customer interface.'} =
-        '';
+        'Jumlah tiket yang akan dipamerkan dalam setiap halaman dari hasil carian dalam paparan pelanggan.';
     $Self->{Translation}->{'Objects to search for, how many entries and which attributs to show. ConfigItem attributes have to explicitly be stored via Elasticsearch.'} =
         '';
     $Self->{Translation}->{'Overview.'} = 'Pandangan keseluruhan.';
     $Self->{Translation}->{'Parameters for the categories for config item classes in the preferences view of the agent interface.'} =
-        '';
+        'Parameter untuk keadaan mengatur kedudukan dalam paparan pilihan dari paparan ejen.';
     $Self->{Translation}->{'Parameters for the column filters of the small config item overview. Please note: setting \'Active\' to 0 will only prevent agents from editing settings of this group in their personal preferences, but will still allow administrators to edit the settings of another user\'s behalf. Use \'PreferenceGroup\' to control in which area these settings should be shown in the user interface.'} =
         '';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries per config item class shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        '';
+        'Parameter untuk backend papan pemuka daripada pengguna pelanggan senarai gambaran bagi antara muka ejen. "Had" adalah bilangan penyertaan ditunjukkan secara default. "Kumpulan" digunakan untuk menyekat akses kepada plugin (contoh: Kumpulan: admin; kumpulan1; kumpulan2;). "Default" menentukan jika plugin ini diaktifkan secara lalai atau jika pengguna perlu untuk membolehkan secara manual. "CacheTTLLocal" adalah masa cache dalam minit untuk plugin.';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        '';
+        'Parameter untuk backend papan pemuka daripada pengguna pelanggan senarai gambaran bagi antara muka ejen. "Had" adalah bilangan penyertaan ditunjukkan secara default. "Kumpulan" digunakan untuk menyekat akses kepada plugin (contoh: Kumpulan: admin; kumpulan1; kumpulan2;). "Default" menentukan jika plugin ini diaktifkan secara lalai atau jika pengguna perlu untuk membolehkan secara manual. "CacheTTLLocal" adalah masa cache dalam minit untuk plugin.';
     $Self->{Translation}->{'Parameters for the deployment states color in the preferences view of the agent interface.'} =
         'Parameter untuk warna keadaan mengatur kedudukan dalam paparan pilihan dari paparan ejen.';
     $Self->{Translation}->{'Parameters for the deployment states in the preferences view of the agent interface.'} =
@@ -463,9 +464,9 @@ sub Data {
     $Self->{Translation}->{'Parameters for the example permission groups of the general catalog attributes.'} =
         'Parameter untuk contoh kumpulan yang dibenarkan pada ciri-ciri katalog.';
     $Self->{Translation}->{'Parameters for the name module for config item classes in the preferences view of the agent interface.'} =
-        '';
+        'Parameter untuk keadaan mengatur kedudukan dalam paparan pilihan dari paparan ejen.';
     $Self->{Translation}->{'Parameters for the number module for config item classes in the preferences view of the agent interface.'} =
-        '';
+        'Parameter untuk keadaan mengatur kedudukan dalam paparan pilihan dari paparan ejen.';
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         'Parameter untuk muka surat (di mana item konfigurasi ditunjukkan).';
     $Self->{Translation}->{'Parameters for the version string module for config item classes in the preferences view of the agent interface.'} =
@@ -473,26 +474,26 @@ sub Data {
     $Self->{Translation}->{'Parameters for the version string template toolkit module for config item classes in the preferences view of the agent interface.'} =
         '';
     $Self->{Translation}->{'Parameters for the version trigger for config item classes in the preferences view of the agent interface.'} =
-        '';
+        'Parameter untuk keadaan mengatur kedudukan dalam paparan pilihan dari paparan ejen.';
     $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =
         'Melakukan tindakan yang telah dikonfigurasi untuk setiap acara (sebagai pencetus) untuk setiap Webservice yang telah dikonfigurasi.';
     $Self->{Translation}->{'Permission Group'} = '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item attachment action in the agent interface.'} =
-        '';
+        'Memerlukan kebenaran untuk menggunakan skrin carian item konfigurasi ITSM dalam paparan ejen.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
         'Memerlukan kebenaran untuk menggunakan skrin item konfigurasi ITSM dalam paparan ejen.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the agent interface.'} =
         'Memerlukan kebenaran untuk menggunakan skrin carian item konfigurasi ITSM dalam paparan ejen.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the customer interface.'} =
-        '';
+        'Memerlukan kebenaran untuk menggunakan skrin carian item konfigurasi ITSM dalam paparan ejen.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item tree view screen in the agent interface.'} =
-        '';
+        'Memerlukan kebenaran untuk menggunakan skrin item konfigurasi ITSM dalam paparan ejen.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item zoom screen in the agent interface.'} =
         'Memerlukan kebenaran untuk menggunakan skrin zum item konfigurasi ITSM dalam paparan ejen.';
     $Self->{Translation}->{'Required permissions to use the add ITSM configuration item screen in the agent interface.'} =
         'Memerlukan kebenaran untuk menggunakan skrin tambah item konfigurasi ITSM dalam paparan ejen.';
     $Self->{Translation}->{'Required permissions to use the bulk ITSM configuration item screen in the agent interface.'} =
-        '';
+        'Memerlukan kebenaran untuk menggunakan skrin item konfigurasi ITSM dalam paparan ejen.';
     $Self->{Translation}->{'Required permissions to use the edit ITSM configuration item screen in the agent interface.'} =
         'Memerlukan kebenaran untuk menggunakan skrin edit item konfigurasi ITSM dalam paparan ejen.';
     $Self->{Translation}->{'Required permissions to use the history ITSM configuration item screen in the agent interface.'} =
@@ -584,10 +585,10 @@ sub Data {
     $Self->{Translation}->{'8U: 14 inches (35.56 cm)'} = '';
     $Self->{Translation}->{'9U: 15.75 inches (40.01 cm)'} = '';
     $Self->{Translation}->{'AGPL (Affero General Public License)'} = '';
-    $Self->{Translation}->{'Accounting'} = '';
+    $Self->{Translation}->{'Accounting'} = 'Masa Perakaunan';
     $Self->{Translation}->{'Accounting Information'} = '';
     $Self->{Translation}->{'Address Allocation'} = '';
-    $Self->{Translation}->{'Administrator'} = '';
+    $Self->{Translation}->{'Administrator'} = 'Pentadbiran';
     $Self->{Translation}->{'Analog Phone'} = '';
     $Self->{Translation}->{'Apache Lizenz'} = '';
     $Self->{Translation}->{'Appliance Type'} = '';
@@ -595,7 +596,7 @@ sub Data {
     $Self->{Translation}->{'Battery Capacity (Ah)'} = '';
     $Self->{Translation}->{'Battery Type'} = '';
     $Self->{Translation}->{'Building'} = 'Bangunan';
-    $Self->{Translation}->{'Bus Interface'} = '';
+    $Self->{Translation}->{'Bus Interface'} = 'Paparan';
     $Self->{Translation}->{'CC0 (Creative Commons Zero)'} = '';
     $Self->{Translation}->{'CIDR'} = '';
     $Self->{Translation}->{'CPU'} = 'CPU';
@@ -724,7 +725,7 @@ sub Data {
     $Self->{Translation}->{'Operating costs'} = '';
     $Self->{Translation}->{'Order Number'} = '';
     $Self->{Translation}->{'Other'} = 'lain-lain';
-    $Self->{Translation}->{'Outputs'} = '';
+    $Self->{Translation}->{'Outputs'} = 'Output';
     $Self->{Translation}->{'PIN'} = '';
     $Self->{Translation}->{'PIN 2'} = '';
     $Self->{Translation}->{'PUK'} = '';
@@ -749,13 +750,13 @@ sub Data {
     $Self->{Translation}->{'Seat licenses'} = '';
     $Self->{Translation}->{'Serialnumber'} = '';
     $Self->{Translation}->{'Server Software'} = '';
-    $Self->{Translation}->{'Service Agreement'} = '';
+    $Self->{Translation}->{'Service Agreement'} = 'Tahap Persetujuan Perkhidmatan';
     $Self->{Translation}->{'Service Tag'} = '';
     $Self->{Translation}->{'Shareware'} = '';
     $Self->{Translation}->{'Socket Type'} = '';
     $Self->{Translation}->{'Software'} = '';
     $Self->{Translation}->{'Speakers'} = '';
-    $Self->{Translation}->{'Standard SIM'} = '';
+    $Self->{Translation}->{'Standard SIM'} = 'Piawaian';
     $Self->{Translation}->{'Start IP Address'} = '';
     $Self->{Translation}->{'Storage'} = '';
     $Self->{Translation}->{'Storage Partition'} = '';

@@ -25,8 +25,8 @@ sub Data {
 
     # Template: AdminGenericInterfaceOperationConfigItem
     $Self->{Translation}->{'General operation data'} = '';
-    $Self->{Translation}->{'Settings for incoming request data'} = '';
-    $Self->{Translation}->{'Settings for outgoing response data'} = '';
+    $Self->{Translation}->{'Settings for incoming request data'} = 'Mapiranje za dolazne podatke zahteva';
+    $Self->{Translation}->{'Settings for outgoing response data'} = 'Mapiranje za izlazne podatke odgovora';
 
     # Template: AdminITSMConfigItem
     $Self->{Translation}->{'Config Item Management'} = '';
@@ -34,14 +34,14 @@ sub Data {
     $Self->{Translation}->{'Change role definition'} = '';
     $Self->{Translation}->{'Ready2Import Class Bundles'} = '';
     $Self->{Translation}->{'Here you can import Ready2Import class bundles showcasing our most usual config items. Please note that some additional configuration may be required.'} =
-        '';
+        'Ovde možete aktivirati Ready2Adopt procese primera najbolje prakse koji su spremni za upotrebu. Molimo obratite pažnju da je možda neophodna dodatna konfiguracija.';
     $Self->{Translation}->{'Update existing entities'} = '';
     $Self->{Translation}->{'Import Ready2Adopt class bundles'} = '';
-    $Self->{Translation}->{'Config Item Class'} = '';
+    $Self->{Translation}->{'Config Item Class'} = 'Konfiguracione stavke';
     $Self->{Translation}->{'Config Item Role'} = '';
 
     # Template: AgentITSMConfigItemAdd
-    $Self->{Translation}->{'Config Item'} = '';
+    $Self->{Translation}->{'Config Item'} = 'Konfiguracione stavke';
     $Self->{Translation}->{'Filter for Classes'} = '';
     $Self->{Translation}->{'Select a Class from the list to create a new Config Item.'} = '';
     $Self->{Translation}->{'Class'} = 'klasa';
@@ -55,7 +55,7 @@ sub Data {
     $Self->{Translation}->{'The number of another Configuration Item to link with.'} = '';
 
     # Template: AgentITSMConfigItemDelete
-    $Self->{Translation}->{'Do you really want to delete this config item?'} = '';
+    $Self->{Translation}->{'Do you really want to delete this config item?'} = 'Da li zaista želite da izbrišete ovu promenu?';
 
     # Template: AgentITSMConfigItemEdit
     $Self->{Translation}->{'The name of this config item'} = '';
@@ -65,8 +65,8 @@ sub Data {
     $Self->{Translation}->{'Version number of this config item'} = '';
     $Self->{Translation}->{'Version Number is already in use by the ConfigItems with the following Number(s): %s'} =
         '';
-    $Self->{Translation}->{'Deployment State'} = '';
-    $Self->{Translation}->{'Incident State'} = '';
+    $Self->{Translation}->{'Deployment State'} = 'Boja statusa raspoređivanja';
+    $Self->{Translation}->{'Incident State'} = 'Tip stanja incidenta';
 
     # Template: AgentITSMConfigItemHistory
     $Self->{Translation}->{'History of Config Item: %s'} = '';
@@ -92,7 +92,7 @@ sub Data {
     $Self->{Translation}->{'Max links level reached for ConfigItem!'} = '';
 
     # Template: AgentITSMConfigItemZoom
-    $Self->{Translation}->{'Configuration Item'} = '';
+    $Self->{Translation}->{'Configuration Item'} = 'Ograničenje konfiguracione stavke';
     $Self->{Translation}->{'Configuration Item Information'} = '';
     $Self->{Translation}->{'Current Deployment State'} = '';
     $Self->{Translation}->{'Current Incident State'} = '';
@@ -109,7 +109,7 @@ sub Data {
     $Self->{Translation}->{'Object Type'} = 'Tip objekta';
 
     # Template: AdminDynamicFieldScreen
-    $Self->{Translation}->{'Filter by object type'} = '';
+    $Self->{Translation}->{'Filter by object type'} = 'Filter po tipu';
 
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = '';
@@ -119,38 +119,38 @@ sub Data {
     $Self->{Translation}->{'Do you want to proceed?'} = 'Da li želite da nastavite?';
 
     # Perl Module: Kernel/Modules/AdminITSMConfigItem.pm
-    $Self->{Translation}->{'Need ExampleClasses!'} = '';
+    $Self->{Translation}->{'Need ExampleClasses!'} = 'Neophodan ExampleProcesses!';
     $Self->{Translation}->{'Definition is no valid YAML hash.'} = '';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItem.pm
     $Self->{Translation}->{'Overview: ITSM ConfigItem'} = '';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemBulk.pm
-    $Self->{Translation}->{'No ConfigItemID is given!'} = '';
+    $Self->{Translation}->{'No ConfigItemID is given!'} = 'Nije dat ID Stavke!';
     $Self->{Translation}->{'You need at least one selected Configuration Item!'} = '';
     $Self->{Translation}->{'You don\'t have write access to this configuration item: %s.'} =
         '';
     $Self->{Translation}->{'No definition was defined for class %s!'} = '';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemDelete.pm
-    $Self->{Translation}->{'Config item "%s" not found in database!'} = '';
-    $Self->{Translation}->{'Was not able to delete the configitem ID %s!'} = '';
+    $Self->{Translation}->{'Config item "%s" not found in database!'} = 'Promena "%s" nije nađena u bazi podataka!';
+    $Self->{Translation}->{'Was not able to delete the configitem ID %s!'} = 'Nije bilo moguće obrisati ChangeID %s!';
     $Self->{Translation}->{'No version found for ConfigItemID %s!'} = '';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemEdit.pm
     $Self->{Translation}->{'No ConfigItemID, DuplicateID or ClassID is given!'} = '';
-    $Self->{Translation}->{'No access is given!'} = '';
+    $Self->{Translation}->{'No access is given!'} = 'Nije dat %s!';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
-    $Self->{Translation}->{'Can\'t show history, no ConfigItemID is given!'} = '';
-    $Self->{Translation}->{'Can\'t show history, no access rights given!'} = '';
+    $Self->{Translation}->{'Can\'t show history, no ConfigItemID is given!'} = 'Ne može se prikazati istorijat, jer nije dat ID Stavke!';
+    $Self->{Translation}->{'Can\'t show history, no access rights given!'} = 'Ne može se prikazati istorijat, nije dat TicketID!';
     $Self->{Translation}->{'New ConfigItem (ID=%s)'} = '';
-    $Self->{Translation}->{'New version (ID=%s)'} = '';
+    $Self->{Translation}->{'New version (ID=%s)'} = 'Nova akcija (ID=%s)';
     $Self->{Translation}->{'Deployment state updated (new=%s, old=%s)'} = '';
     $Self->{Translation}->{'Incident state updated (new=%s, old=%s)'} = '';
-    $Self->{Translation}->{'ConfigItem (ID=%s) deleted'} = '';
-    $Self->{Translation}->{'Link to %s (type=%s) added'} = '';
-    $Self->{Translation}->{'Link to %s (type=%s) deleted'} = '';
+    $Self->{Translation}->{'ConfigItem (ID=%s) deleted'} = 'Obrisan uslov (ID=%s)';
+    $Self->{Translation}->{'Link to %s (type=%s) added'} = 'Povezano sa %s (ID=%s)';
+    $Self->{Translation}->{'Link to %s (type=%s) deleted'} = 'Obrisana veza sa %s (ID=%s)';
     $Self->{Translation}->{'ConfigItem definition updated (ID=%s)'} = '';
     $Self->{Translation}->{'Name updated (new=%s, old=%s)'} = '';
     $Self->{Translation}->{'Attribute %s updated from "%s" to "%s"'} = '';
@@ -161,14 +161,14 @@ sub Data {
     # Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
     $Self->{Translation}->{'No ConfigItemID or VersionID is given!'} = '';
     $Self->{Translation}->{'Can\'t show config item, no access rights given!'} = '';
-    $Self->{Translation}->{'ConfigItemID %s not found in database!'} = '';
-    $Self->{Translation}->{'ConfigItem'} = '';
+    $Self->{Translation}->{'ConfigItemID %s not found in database!'} = 'Promena "%s" nije nađena u bazi podataka!';
+    $Self->{Translation}->{'ConfigItem'} = 'Konfiguracione stavke';
     $Self->{Translation}->{'printed by %s at %s'} = '';
-    $Self->{Translation}->{'Referenced by'} = '';
+    $Self->{Translation}->{'Referenced by'} = 'Referenca';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
     $Self->{Translation}->{'Invalid ClassID!'} = '';
-    $Self->{Translation}->{'No ClassID is given!'} = '';
+    $Self->{Translation}->{'No ClassID is given!'} = 'Nije dat ChangeID!';
     $Self->{Translation}->{'No access rights for this class given!'} = '';
     $Self->{Translation}->{'No Result!'} = 'Nema rezultata!';
     $Self->{Translation}->{'Config Item Search Results'} = '';
@@ -192,7 +192,7 @@ sub Data {
     # Perl Module: Kernel/Output/HTML/Dashboard/ITSMConfigItemGeneric.pm
     $Self->{Translation}->{'Shown config items'} = '';
     $Self->{Translation}->{'Deployment State Type'} = '';
-    $Self->{Translation}->{'Current Incident State Type'} = '';
+    $Self->{Translation}->{'Current Incident State Type'} = 'Tip stanja incidenta';
 
     # Perl Module: Kernel/Output/HTML/ITSMConfigItem/LayoutDate.pm
     $Self->{Translation}->{'Between'} = 'između';
@@ -236,7 +236,7 @@ sub Data {
         '';
 
     # Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
-    $Self->{Translation}->{'Expired'} = '';
+    $Self->{Translation}->{'Expired'} = 'Ističe';
     $Self->{Translation}->{'Maintenance'} = '';
     $Self->{Translation}->{'Pilot'} = '';
     $Self->{Translation}->{'Planned'} = '';
@@ -256,9 +256,9 @@ sub Data {
     $Self->{Translation}->{'A mapping of inner field names used in the Process Management TransitionActions ConfigItemAdd and -Update. The keys are the names of the set inner fields of the set with object type ticket which will be used to create/update the CI, and the values are the names of the inner fields of the set with object type ITSMConfigItem.'} =
         '';
     $Self->{Translation}->{'Allows extended search conditions in config item search of the agent interface. With this feature you can search e. g. config item name with this kind of conditions like "(*key1*&&*key2*)" or "(*key1*||*key2*)".'} =
-        '';
+        'Omogućava napredne uslove pretrage tiketa u interfejsu operatera. Sa ovom opcijom moćete pretraživati npr. naslov tiketa sa uslovima kao "(*key1*&&*key2*)" ili "(*key1*||*key2*)".';
     $Self->{Translation}->{'Allows extended search conditions in config item search of the customer interface. With this feature you can search e. g. config item name with this kind of conditions like "(*key1*&&*key2*)" or "(*key1*||*key2*)".'} =
-        '';
+        'Omogućava napredne uslove pretrage tiketa u interfejsu korisnika. Sa ovom opcijom moćete pretraživati npr. naslov tiketa sa uslovima kao "(*key1*&&*key2*)" ili "(*key1*||*key2*)".';
     $Self->{Translation}->{'Assigned CIs'} = 'Dodeljene konfiguracione stavke';
     $Self->{Translation}->{'At a specific time point create a ticket for config items, if the configured requirements are met. The time point is determined by the value of the dynamic field of type date configured under "TimeCIKey" of the ConfigItem, and modified by "TimeModifier". If the latter can be either just a number, or a sign (+/-), a number, and an unit (d/h/m): "7" is equivalent to "+7d". The DynamicField "Ticket->DynamicField" will be used to mark created tickets - it has to exist. The flags \<OTOBO_CONFIGITEM_X\> where X can be NAME, NUMBER and DATE, will be substituted with the respective values in "Ticket->Text".'} =
         '';
@@ -312,9 +312,9 @@ sub Data {
     $Self->{Translation}->{'Customers have the possibility to manually switch between historic CI versions.'} =
         '';
     $Self->{Translation}->{'Default data to use on attribute for config item search screen. Example: "ITSMConfigItemCreateTimePointFormat=year;ITSMConfigItemCreateTimePointStart=Last;ITSMConfigItemCreateTimePoint=2;".'} =
-        '';
+        'Podrazumevani podaci za korišćenje na atributima za prikaz pretrage tiketa. Primer: "TicketCreateTimePointFormat=year;TicketCreateTimePointStart=Last;TicketCreateTimePoint=2;".';
     $Self->{Translation}->{'Default data to use on attribute for config item search screen. Example: "ITSMConfigItemCreateTimeStartYear=2010;ITSMConfigItemCreateTimeStartMonth=10;ITSMConfigItemCreateTimeStartDay=4;ITSMConfigItemCreateTimeStopYear=2010;ITSMConfigItemCreateTimeStopMonth=11;ITSMConfigItemCreateTimeStopDay=3;".'} =
-        '';
+        'Podrazumevani podaci za korišćenje na atributima za prikaz pretrage tiketa. Primer: "TicketCreateTimeStartYear=2010;TicketCreateTimeStartMonth=10;TicketCreateTimeStartDay=4;TicketCreateTimeStopYear=2010;TicketCreateTimeStopMonth=11;TicketCreateTimeStopDay=3;".';
     $Self->{Translation}->{'Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = "complex"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.'} =
         'Definiše akcije gde je dugme postavki dostupno u povezanom grafičkom elementu objekta (LinkObject::ViewMode = "complex"). Molimo da imate na umu da ove Akcije moraju da budu registrovane u sledećim JS i CSS datotekama: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js i Core.Agent.LinkObject.js.';
     $Self->{Translation}->{'Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit.'} =
@@ -328,7 +328,7 @@ sub Data {
     $Self->{Translation}->{'Defines Required permissions to search ITSM configuration items using the Generic Interface.'} =
         'Definiše neophodne dozvole za pretragu ITSM konfiguracionih stavki korišćenjem generičkog interfejsa.';
     $Self->{Translation}->{'Defines Required permissions to set ITSM configuration items using the Generic Interface.'} =
-        '';
+        'Definiše neophodne dozvole za dobijanje ITSM konfiguracionih stavki korišćenjem generičkog interfejsa.';
     $Self->{Translation}->{'Defines an overview module to show the small view of a configuration item list.'} =
         'Definiše modul pregleda za mali prikaz liste konfiguracionih stavki. ';
     $Self->{Translation}->{'Defines if the link type labels must be shown in the node connections.'} =
@@ -338,24 +338,24 @@ sub Data {
     $Self->{Translation}->{'Defines the available columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         '';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the agent interface.'} =
-        '';
+        'Definiše podrazumevani atribut tiketa za sortiranje tiketa u rezultatu pretrage tiketa interfejsa operatera.';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the customer interface.'} =
         '';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of this operation.'} =
-        '';
+        'Definiše podrazumevani atribut tiketa za sortiranje tiketa u rezultatu pretrage tiketa u ovoj operaciji.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the agent interface. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'Definiše podrazumevani redosled tiketa (posle sortiranja po prioritetu) u pregledu pretrage tiketa u interfejsu opreratera. Gore: Najstariji na vrhu. Dole: Najnovije na vrhu.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'Određuje podrazumevani redosled tiketa u pregledu pretrage rezultata u interfejsu klijenta. Gore: Najstariji na vrhu. Dole: Najnovije na vrhu.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the this operation. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'Definiše podrazumevani redosled tiketa u pregledu pretrage tiketa u ovoj operaciji. Gore: Najstariji na vrhu. Dole: Najnovije na vrhu.';
     $Self->{Translation}->{'Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         '';
     $Self->{Translation}->{'Defines the default relations depth to be shown.'} = '';
     $Self->{Translation}->{'Defines the default shown config item search attribute for config item search screen.'} =
-        '';
+        'Definiše podrazumevani prikaz pretrage atributa tiketa za prikaz ekrana pretrage tiketa.';
     $Self->{Translation}->{'Defines the default shown config item search attribute for config item search screen. Example: "Key" must have the name of the Dynamic Field in this case \'X\', "Content" must have the value of the Dynamic Field depending on the Dynamic Field type,  Text: \'a text\', Dropdown: \'1\', Date/Time: \'Search_DynamicField_XTimeSlotStartYear=1974; Search_DynamicField_XTimeSlotStartMonth=01; Search_DynamicField_XTimeSlotStartDay=26; Search_DynamicField_XTimeSlotStartHour=00; Search_DynamicField_XTimeSlotStartMinute=00; Search_DynamicField_XTimeSlotStartSecond=00; Search_DynamicField_XTimeSlotStopYear=2013; Search_DynamicField_XTimeSlotStopMonth=01; Search_DynamicField_XTimeSlotStopDay=26; Search_DynamicField_XTimeSlotStopHour=23; Search_DynamicField_XTimeSlotStopMinute=59; Search_DynamicField_XTimeSlotStopSecond=59;\' and or \'Search_DynamicField_XTimePointFormat=week; Search_DynamicField_XTimePointStart=Before; Search_DynamicField_XTimePointValue=7\';.'} =
-        '';
+        'Definiše podrazumevani prikaz pretrage atributa tiketa za prikaz ekrana pretrage tiketa. Primer: "Key" mora imati naziv dinamičkog polja, u ovom slučaju \'X\', "Content" mora imati vrednost dinamičkog polja u zavisnosti od tipa dinamičkog polja, Tekst: \'a text\', Padajući: \'1\', Datum/Vreme: \'Search_DynamicField_XTimeSlotStartYear=1974; Search_DynamicField_XTimeSlotStartMonth=01; Search_DynamicField_XTimeSlotStartDay=26; Search_DynamicField_XTimeSlotStartHour=00; Search_DynamicField_XTimeSlotStartMinute=00; Search_DynamicField_XTimeSlotStartSecond=00; Search_DynamicField_XTimeSlotStopYear=2013; Search_DynamicField_XTimeSlotStopMonth=01; Search_DynamicField_XTimeSlotStopDay=26; Search_DynamicField_XTimeSlotStopHour=23; Search_DynamicField_XTimeSlotStopMinute=59; Search_DynamicField_XTimeSlotStopSecond=59;\' i/ili \'Search_DynamicField_XTimePointFormat=week; Search_DynamicField_XTimePointStart=Before; Search_DynamicField_XTimePointValue=7\';.';
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         'Određuje podrazumevani podobjekat klase ITSM konfiguraciona stavka.';
     $Self->{Translation}->{'Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
@@ -373,19 +373,19 @@ sub Data {
     $Self->{Translation}->{'Defines the search limit for the AgentITSMConfigItemSearch screen.'} =
         'Definiše granicu pretrage za ekran AgentITSMConfigItemSearch.';
     $Self->{Translation}->{'Defines the search limit for the CustomerITSMConfigItem screen.'} =
-        '';
+        'Definiše granicu pretrage za ekran AgentITSMConfigItem.';
     $Self->{Translation}->{'Defines the search limit for the CustomerITSMConfigItemSearch screen.'} =
-        '';
+        'Definiše granicu pretrage za ekran AgentITSMConfigItemSearch.';
     $Self->{Translation}->{'Defines the shown columns of CIs in the link table complex view for all CI classes. If there is no entry, then the default columns are shown.'} =
         'Definiše prikazane kolone konfiguracionih stavki u tabeli veza u zavisnosti od klase. Ukoliko ne postoji unos za pojedinačnu klasu, biće prikazane podrazumevane kolone.';
     $Self->{Translation}->{'Defines the shown columns of CIs in the link table complex view, depending on the CI class. Each entry must be prefixed with the class name and double colons (i.e. Computer::). There are a few CI-Attributes that common to all CIs (example for the class Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). To show individual CI-Attributes as defined in the CI-Definition, the following scheme must be used (example for the class Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If there is no entry for a CI class, then the default columns are shown.'} =
         'Definiše prikazane kolone konfiguracionih stavki u tabeli veza u zavisnosti od klase. Svaki unos mora sadržati prefiks sa nazivom klase i dvotačkom (npr. Computer::). Postoji par atributa koji su zajednički za sve klase (npr. za klasu Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). Za prikaz pojedinačnih atributa iz definicije, morate koristiti sledeću šemu (primer za klasu Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. Ukoliko ne postoji unos za pojedinačnu klasu, biće prikazane podrazumevane kolone.';
     $Self->{Translation}->{'Defines which items are available for \'Action\' in third level of the ITSM Config Item ACL structure.'} =
-        '';
+        'Definiše koje su stavke slobodne za \'Action\' u trećem nivou ACL strukture.';
     $Self->{Translation}->{'Defines which items are available in first level of the ITSM Config Item ACL structure.'} =
-        '';
+        'Definiše koje su stavke slobodne u prvom nivou ACL strukture.';
     $Self->{Translation}->{'Defines which items are available in second level of the ITSM Config Item ACL structure.'} =
-        '';
+        'Definiše koje su stavke slobodne u drugom nivou ACL strukture';
     $Self->{Translation}->{'Defines which type of link (named from the ticket perspective) can affect the status of a linked CI.'} =
         'Određuje koji tip veze (gledano iz perspektive tiketa) može da utiče na povezanu CI.';
     $Self->{Translation}->{'Defines which type of ticket can affect the status of a linked CI.'} =
@@ -394,16 +394,16 @@ sub Data {
     $Self->{Translation}->{'Delete Configuration Item'} = 'Brisanje konfiguracione stavke';
     $Self->{Translation}->{'DeplState'} = '';
     $Self->{Translation}->{'Deployment State Color'} = 'Boja statusa raspoređivanja';
-    $Self->{Translation}->{'DeploymentState'} = '';
+    $Self->{Translation}->{'DeploymentState'} = 'Boja statusa raspoređivanja';
     $Self->{Translation}->{'Duplicate'} = 'Duplikat';
     $Self->{Translation}->{'Dynamic field event module that marks config item definitions as out of sync, if containing dynamic fields change.'} =
         '';
     $Self->{Translation}->{'Dynamic fields shown in the additional ITSM field screen of the agent interface.'} =
         'Dinamička polja prikazana u ekranu dodatnih ITSM polja u interfejsu operatera.';
     $Self->{Translation}->{'Dynamic fields shown in the config item overview screen of the customer interface.'} =
-        '';
+        'Dinamička polja prikazana u pregledu FAQ u interfejsu klijenta.';
     $Self->{Translation}->{'Dynamic fields shown in the config item search screen of the agent interface.'} =
-        '';
+        'Dinamička polja prikazana u ekranu pretrage promena u interfejsu operatera.';
     $Self->{Translation}->{'Enables configuration item bulk action feature for the agent frontend to work on more than one configuration item at a time.'} =
         'Omogućava masovnu akciju na konfiguracionim stavkama u pristupnom sistemu operatera na više od jedne stavke istovremeno.';
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
@@ -419,22 +419,22 @@ sub Data {
     $Self->{Translation}->{'For every webservice (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker config.'} =
         '';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
-        '';
+        'Registracija modula generičkog interfejsa za sloj pozivaoca.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
-        '';
+        'Registracija modula generičkog interfejsa za sloj pozivaoca.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemUpdate invoker layer.'} =
-        '';
+        'Registracija modula generičkog interfejsa za sloj pozivaoca.';
     $Self->{Translation}->{'ITSM ConfigItem'} = '';
     $Self->{Translation}->{'ITSM config item overview.'} = 'Pregled ITSM konfiguracione stavke.';
     $Self->{Translation}->{'InciState'} = '';
-    $Self->{Translation}->{'IncidentState'} = '';
+    $Self->{Translation}->{'IncidentState'} = 'Tip stanja incidenta';
     $Self->{Translation}->{'Includes deployment states in the config item search of the customer interface.'} =
         '';
     $Self->{Translation}->{'Includes incident states in the config item search of the customer interface.'} =
         '';
     $Self->{Translation}->{'License accounting configuration item event module.'} = '';
     $Self->{Translation}->{'Maximum number of config items to be displayed in the result of this operation.'} =
-        '';
+        'Maksimalni broj tiketa koji će biti prikazani u rezultatu ove operacije.';
     $Self->{Translation}->{'Module to check the group responsible for a class.'} = 'Modul za proveru grupe odgovorne za klasu.';
     $Self->{Translation}->{'Module to check the group responsible for a configuration item.'} =
         'Modul za proveru grupe odgovorne za konfiguracionu stavku.';
@@ -442,20 +442,20 @@ sub Data {
     $Self->{Translation}->{'Name Module'} = '';
     $Self->{Translation}->{'Number Module'} = '';
     $Self->{Translation}->{'Number of config items to be displayed in each page of a search result in the agent interface.'} =
-        '';
+        'Broj tiketa koji će biti prikazani na svakoj strani rezultata pretrage u interfejsu operatera.';
     $Self->{Translation}->{'Number of config items to be displayed in each page of a search result in the customer interface.'} =
-        '';
+        'Broj tiketa koji će biti prikazani na svakoj strani rezultata pretrage u interfejsu klijenta.';
     $Self->{Translation}->{'Objects to search for, how many entries and which attributs to show. ConfigItem attributes have to explicitly be stored via Elasticsearch.'} =
         '';
     $Self->{Translation}->{'Overview.'} = 'Pregled.';
     $Self->{Translation}->{'Parameters for the categories for config item classes in the preferences view of the agent interface.'} =
-        '';
+        'Parametri za statuse primene na prikazu postavki u interfejsu operatera.';
     $Self->{Translation}->{'Parameters for the column filters of the small config item overview. Please note: setting \'Active\' to 0 will only prevent agents from editing settings of this group in their personal preferences, but will still allow administrators to edit the settings of another user\'s behalf. Use \'PreferenceGroup\' to control in which area these settings should be shown in the user interface.'} =
-        '';
+        'Parametri za filter kolona u umanjenom pregledu tiketa. Napomena: podešavanje \'Active\' na 0 će samo onemogućiti operaterima da menjaju svoja lična podešavanja iz ove grupe, ali će administratori i dalje moći da ih menjaju u njihovo ime. Podesite \'PreferenceGroup\' da biste odredili u kom delu interfejsa ova podešavanja treba da budu prikazana.';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries per config item class shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        '';
+        'Parametri za dodatak liste klijent korisnika kontrolne table u interfejsu operatera. "Group" se koristi da ograniči pristup dodatku (npr. Group: admin;group1;group2;). "Default" određuje da li je podrazumevano aktiviran ili da je potrebno da ga korisnik manuelno aktivira. "CacheTTLLocal" je vreme u minutima za keš dodatka.';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        '';
+        'Parametri za dodatak liste klijent korisnika kontrolne table u interfejsu operatera. "Group" se koristi da ograniči pristup dodatku (npr. Group: admin;group1;group2;). "Default" određuje da li je podrazumevano aktiviran ili da je potrebno da ga korisnik manuelno aktivira. "CacheTTLLocal" je vreme u minutima za keš dodatka.';
     $Self->{Translation}->{'Parameters for the deployment states color in the preferences view of the agent interface.'} =
         'Parametri za boje statusa primene na prikazu postavki u interfejsu operatera.';
     $Self->{Translation}->{'Parameters for the deployment states in the preferences view of the agent interface.'} =
@@ -463,9 +463,9 @@ sub Data {
     $Self->{Translation}->{'Parameters for the example permission groups of the general catalog attributes.'} =
         'Parametri za atribute uzorka grupe za dozvole opšteg kataloga';
     $Self->{Translation}->{'Parameters for the name module for config item classes in the preferences view of the agent interface.'} =
-        '';
+        'Parametri za statuse primene na prikazu postavki u interfejsu operatera.';
     $Self->{Translation}->{'Parameters for the number module for config item classes in the preferences view of the agent interface.'} =
-        '';
+        'Parametri za statuse primene na prikazu postavki u interfejsu operatera.';
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         'Parametri za stranice (na kojima su konfiguracione stavke prikazane).';
     $Self->{Translation}->{'Parameters for the version string module for config item classes in the preferences view of the agent interface.'} =
@@ -473,26 +473,26 @@ sub Data {
     $Self->{Translation}->{'Parameters for the version string template toolkit module for config item classes in the preferences view of the agent interface.'} =
         '';
     $Self->{Translation}->{'Parameters for the version trigger for config item classes in the preferences view of the agent interface.'} =
-        '';
+        'Parametri za statuse primene na prikazu postavki u interfejsu operatera.';
     $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =
         'Izvršava podešenu akciju za svaki događaj (kao pozivalac) za svaki konfigurisan veb servis.';
     $Self->{Translation}->{'Permission Group'} = 'Grupa pristupa';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item attachment action in the agent interface.'} =
-        '';
+        'Potrebne dozvole za upotrebu ekrana pretrage ITSM konfiguracione stavke u interfejsu operatera.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
         'Potrebne dozvole za upotrebu ekrana ITSM konfiguracione stavke u interfejsu operatera.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the agent interface.'} =
         'Potrebne dozvole za upotrebu ekrana pretrage ITSM konfiguracione stavke u interfejsu operatera.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the customer interface.'} =
-        '';
+        'Potrebne dozvole za upotrebu ekrana pretrage ITSM konfiguracione stavke u interfejsu operatera.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item tree view screen in the agent interface.'} =
-        '';
+        'Potrebne dozvole za upotrebu ekrana ITSM konfiguracione stavke u interfejsu operatera.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item zoom screen in the agent interface.'} =
         'Potrebne dozvole za upotrebu ekrana detalnog prikaza ITSM konfiguracione stavke u interfejsu operatera.';
     $Self->{Translation}->{'Required permissions to use the add ITSM configuration item screen in the agent interface.'} =
         'Potrebne dozvole za upotrebu ekrana dodavanja ITSM konfiguracione stavke u interfejsu operatera.';
     $Self->{Translation}->{'Required permissions to use the bulk ITSM configuration item screen in the agent interface.'} =
-        '';
+        'Potrebne dozvole za upotrebu ekrana ITSM konfiguracione stavke u interfejsu operatera.';
     $Self->{Translation}->{'Required permissions to use the edit ITSM configuration item screen in the agent interface.'} =
         'Potrebne dozvole za upotrebu ekrana izmene ITSM konfiguracione stavke u interfejsu operatera.';
     $Self->{Translation}->{'Required permissions to use the history ITSM configuration item screen in the agent interface.'} =
@@ -584,10 +584,10 @@ sub Data {
     $Self->{Translation}->{'8U: 14 inches (35.56 cm)'} = '';
     $Self->{Translation}->{'9U: 15.75 inches (40.01 cm)'} = '';
     $Self->{Translation}->{'AGPL (Affero General Public License)'} = '';
-    $Self->{Translation}->{'Accounting'} = '';
+    $Self->{Translation}->{'Accounting'} = 'Nalog';
     $Self->{Translation}->{'Accounting Information'} = '';
     $Self->{Translation}->{'Address Allocation'} = '';
-    $Self->{Translation}->{'Administrator'} = '';
+    $Self->{Translation}->{'Administrator'} = 'Administracija';
     $Self->{Translation}->{'Analog Phone'} = '';
     $Self->{Translation}->{'Apache Lizenz'} = '';
     $Self->{Translation}->{'Appliance Type'} = '';
@@ -595,7 +595,7 @@ sub Data {
     $Self->{Translation}->{'Battery Capacity (Ah)'} = '';
     $Self->{Translation}->{'Battery Type'} = '';
     $Self->{Translation}->{'Building'} = '';
-    $Self->{Translation}->{'Bus Interface'} = '';
+    $Self->{Translation}->{'Bus Interface'} = 'Interfejs';
     $Self->{Translation}->{'CC0 (Creative Commons Zero)'} = '';
     $Self->{Translation}->{'CIDR'} = '';
     $Self->{Translation}->{'CPU'} = '';
@@ -605,7 +605,7 @@ sub Data {
     $Self->{Translation}->{'Card Number'} = '';
     $Self->{Translation}->{'Card Reader'} = '';
     $Self->{Translation}->{'Card Type'} = '';
-    $Self->{Translation}->{'Client Certificates'} = '';
+    $Self->{Translation}->{'Client Certificates'} = 'Klijentski sertifikat';
     $Self->{Translation}->{'Client Software'} = '';
     $Self->{Translation}->{'Client category'} = '';
     $Self->{Translation}->{'Clockrate'} = '';
@@ -617,7 +617,7 @@ sub Data {
     $Self->{Translation}->{'Contact Distributor'} = '';
     $Self->{Translation}->{'Container Management'} = '';
     $Self->{Translation}->{'Contract'} = '';
-    $Self->{Translation}->{'Contract Type'} = '';
+    $Self->{Translation}->{'Contract Type'} = 'Tip sadržaja';
     $Self->{Translation}->{'Contract period from'} = '';
     $Self->{Translation}->{'Contract period until'} = '';
     $Self->{Translation}->{'Cordless Phone (DECT Phone)'} = '';
@@ -724,7 +724,7 @@ sub Data {
     $Self->{Translation}->{'Operating costs'} = '';
     $Self->{Translation}->{'Order Number'} = '';
     $Self->{Translation}->{'Other'} = '';
-    $Self->{Translation}->{'Outputs'} = '';
+    $Self->{Translation}->{'Outputs'} = 'Pregled rezultata';
     $Self->{Translation}->{'PIN'} = '';
     $Self->{Translation}->{'PIN 2'} = '';
     $Self->{Translation}->{'PUK'} = '';
@@ -749,13 +749,13 @@ sub Data {
     $Self->{Translation}->{'Seat licenses'} = '';
     $Self->{Translation}->{'Serialnumber'} = '';
     $Self->{Translation}->{'Server Software'} = '';
-    $Self->{Translation}->{'Service Agreement'} = '';
+    $Self->{Translation}->{'Service Agreement'} = 'Sporazum o nivou usluge';
     $Self->{Translation}->{'Service Tag'} = '';
     $Self->{Translation}->{'Shareware'} = '';
     $Self->{Translation}->{'Socket Type'} = '';
     $Self->{Translation}->{'Software'} = '';
     $Self->{Translation}->{'Speakers'} = '';
-    $Self->{Translation}->{'Standard SIM'} = '';
+    $Self->{Translation}->{'Standard SIM'} = 'Standardan';
     $Self->{Translation}->{'Start IP Address'} = '';
     $Self->{Translation}->{'Storage'} = '';
     $Self->{Translation}->{'Storage Partition'} = '';

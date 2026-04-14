@@ -109,7 +109,7 @@ sub Data {
     $Self->{Translation}->{'Object Type'} = 'Objekttyp';
 
     # Template: AdminDynamicFieldScreen
-    $Self->{Translation}->{'Filter by object type'} = '';
+    $Self->{Translation}->{'Filter by object type'} = 'Filtrera på typ';
 
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = 'Följande klasser kommer att importeras';
@@ -164,7 +164,7 @@ sub Data {
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = 'ConfigItemID %s hittades inte i databasen!';
     $Self->{Translation}->{'ConfigItem'} = 'Konfigurationsenhet';
     $Self->{Translation}->{'printed by %s at %s'} = 'utskriven av %s vid %s';
-    $Self->{Translation}->{'Referenced by'} = '';
+    $Self->{Translation}->{'Referenced by'} = 'Referens';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
     $Self->{Translation}->{'Invalid ClassID!'} = 'Ogiltigt klass-ID!';
@@ -201,9 +201,9 @@ sub Data {
     $Self->{Translation}->{'Class restrictions for the config item'} = 'Klassbegränsningar för konfigurationsobjektet';
     $Self->{Translation}->{'Select one or more classes to restrict selectable config items'} =
         'Välj en eller flera klasser för att begränsa valbara konfigurationsobjekt';
-    $Self->{Translation}->{'Deployment state restrictions for the config item'} = '';
+    $Self->{Translation}->{'Deployment state restrictions for the config item'} = 'Klassbegränsningar för konfigurationsobjektet';
     $Self->{Translation}->{'Select one or more deployment states to restrict selectable config items'} =
-        '';
+        'Välj en eller flera klasser för att begränsa valbara konfigurationsobjekt';
     $Self->{Translation}->{'Dynamic (ConfigItem)'} = 'Dynamisk (KonfigItem)';
     $Self->{Translation}->{'Static (Version)'} = 'Statisk (version)';
     $Self->{Translation}->{'Link Referencing Type'} = 'Typ av länkreferens';
@@ -359,7 +359,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         'Definierar standardunderobjektet för klassen \'ITSMConfigItem\'.';
     $Self->{Translation}->{'Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
-        '';
+        'Definierar de tillgängliga kolumnerna för CI:er i konfigurationsobjektets översikt beroende på CI-klassen. Varje post måste bestå av ett klassnamn och en matris med tillgängliga fält för motsvarande klass. Dynamiska fältposter måste följa schemat DynamicField_FieldName.';
     $Self->{Translation}->{'Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).'} =
         'Definierar höjden för redigeringskomponenten för rik text för den här skärmen. Ange antal (pixlar) eller procentvärde (relativt).';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =
@@ -419,11 +419,11 @@ sub Data {
     $Self->{Translation}->{'For every webservice (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker config.'} =
         'För varje webbtjänst (nyckel) kan en array av klasser (värde) definieras för vilka importen är begränsad. För alla valda klasser, eller alla befintliga klasser, måste de identifierande attributen väljas i konfigurationen av invokern.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
-        '';
+        'Registrering av GenericInterface-modul för ConfigItemFetch-inkallningslagret.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
         'Registrering av GenericInterface-modul för ConfigItemFetch-inkallningslagret.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemUpdate invoker layer.'} =
-        '';
+        'Registrering av GenericInterface-modul för ConfigItemFetch-inkallningslagret.';
     $Self->{Translation}->{'ITSM ConfigItem'} = 'ITSM KonfigItem';
     $Self->{Translation}->{'ITSM config item overview.'} = 'Översikt över ITSM-konfigurationsobjekt.';
     $Self->{Translation}->{'InciState'} = 'InciState';
@@ -755,7 +755,7 @@ sub Data {
     $Self->{Translation}->{'Socket Type'} = 'Typ av uttag';
     $Self->{Translation}->{'Software'} = 'Programvara';
     $Self->{Translation}->{'Speakers'} = 'Högtalare';
-    $Self->{Translation}->{'Standard SIM'} = '';
+    $Self->{Translation}->{'Standard SIM'} = 'Standard';
     $Self->{Translation}->{'Start IP Address'} = 'Start IP-adress';
     $Self->{Translation}->{'Storage'} = 'Förvaring';
     $Self->{Translation}->{'Storage Partition'} = 'Lagringspartition';

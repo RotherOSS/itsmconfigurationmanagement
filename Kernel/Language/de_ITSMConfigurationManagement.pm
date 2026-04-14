@@ -109,7 +109,7 @@ sub Data {
     $Self->{Translation}->{'Object Type'} = 'Objekt-Typ';
 
     # Template: AdminDynamicFieldScreen
-    $Self->{Translation}->{'Filter by object type'} = '';
+    $Self->{Translation}->{'Filter by object type'} = 'Feld nach Objekttyp filtern';
 
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = 'Die folgenden Klassen werde importiert';
@@ -164,7 +164,7 @@ sub Data {
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = 'Configuration Item-ID %s in Datenbank nicht gefunden!';
     $Self->{Translation}->{'ConfigItem'} = 'ConfigItem';
     $Self->{Translation}->{'printed by %s at %s'} = 'gedruckt von %s am %s';
-    $Self->{Translation}->{'Referenced by'} = '';
+    $Self->{Translation}->{'Referenced by'} = 'Referenz';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
     $Self->{Translation}->{'Invalid ClassID!'} = 'Ungültige Klassen-ID!';
@@ -359,7 +359,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         'Definiert das Standard-Unterobjekt der Klasse \'ITSMConfigItem\'.';
     $Self->{Translation}->{'Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
-        '';
+        'Definiert die verfügbaren Spalten der CIs in der Konfigurationsübersicht in Abhängigkeit von der CI-Klasse. Jeder Eintrag muss aus einem Klassennamen und einem Array von verfügbaren Feldern für die entsprechende Klasse bestehen. Dynamische Feldeinträge müssen das Schema DynamicField_FieldName einhalten.';
     $Self->{Translation}->{'Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).'} =
         'Definiert die Höhe der RichText-Editor Komponente. Geben Sie einen Zahlen- (Pixel) oder Prozenwert (relativ) an.';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =
@@ -419,11 +419,11 @@ sub Data {
     $Self->{Translation}->{'For every webservice (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker config.'} =
         'Für jeden Webservice (Schlüssel) kann ein Array von Klassen (Wert) definiert werden, auf die der Import beschränkt wird. Für alle gewählten Klassen oder alle vorhandenen Klassen müssen die identifizierenden Attribute in der Invokerkonfiguration ausgewählt werden.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
-        '';
+        'GenericInterface-Modulregistrierung für die ConfigItemFetch-Aufruferschicht.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
         'GenericInterface-Modulregistrierung für die ConfigItemFetch-Aufruferschicht.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemUpdate invoker layer.'} =
-        '';
+        'GenericInterface-Modulregistrierung für die ConfigItemFetch-Aufruferschicht.';
     $Self->{Translation}->{'ITSM ConfigItem'} = 'ITSM ConfigElement';
     $Self->{Translation}->{'ITSM config item overview.'} = 'ITSM Configuration Item-Übersicht.';
     $Self->{Translation}->{'InciState'} = 'InciState';
@@ -453,9 +453,9 @@ sub Data {
     $Self->{Translation}->{'Parameters for the column filters of the small config item overview. Please note: setting \'Active\' to 0 will only prevent agents from editing settings of this group in their personal preferences, but will still allow administrators to edit the settings of another user\'s behalf. Use \'PreferenceGroup\' to control in which area these settings should be shown in the user interface.'} =
         'Parameter für die Spaltenfilter der kleinen Konfigurationsübersicht. Bitte beachten Sie: Wenn Sie \'Active\' auf 0 setzen, können Agenten die Einstellungen dieser Gruppe nur in ihren persönlichen Präferenzen bearbeiten, Administratoren können jedoch weiterhin die Einstellungen eines anderen Benutzers bearbeiten. Verwenden Sie \'PreferenceGroup\', um zu steuern, in welchem Bereich diese Einstellungen in der Benutzeroberfläche angezeigt werden sollen.';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries per config item class shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        '';
+        'Parameter für das Dashboard-Backend des Kundenlisten-Widgets im Agentenbereich. "Limit" bestimmt die Anzahl der standardmäßig angezeigten Einträge. Über "Group" kann der Zugriff auf das Plugin beschränkt werden (z. B. Group: admin;group1;group2;). "Default" gibt an, ob das Plugin standardmäßig aktiviert sein soll oder ob der Nutzer es manuell aktivieren muss. "CacheTTLLocal" bestimmt die Laufzeit des Plugin-Caches in Minuten.';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        '';
+        'Parameter für das Dashboard-Backend des Kundenlisten-Widgets im Agentenbereich. "Limit" bestimmt die Anzahl der standardmäßig angezeigten Einträge. Über "Group" kann der Zugriff auf das Plugin beschränkt werden (z. B. Group: admin;group1;group2;). "Default" gibt an, ob das Plugin standardmäßig aktiviert sein soll oder ob der Nutzer es manuell aktivieren muss. "CacheTTLLocal" bestimmt die Laufzeit des Plugin-Caches in Minuten.';
     $Self->{Translation}->{'Parameters for the deployment states color in the preferences view of the agent interface.'} =
         'Definition von Farben für Verwendungsstatus in den persönlichen Einstellungen im Agenten-Interface.';
     $Self->{Translation}->{'Parameters for the deployment states in the preferences view of the agent interface.'} =
@@ -755,7 +755,7 @@ sub Data {
     $Self->{Translation}->{'Socket Type'} = 'Buchse Typ';
     $Self->{Translation}->{'Software'} = 'Software';
     $Self->{Translation}->{'Speakers'} = 'Redner';
-    $Self->{Translation}->{'Standard SIM'} = '';
+    $Self->{Translation}->{'Standard SIM'} = 'Standard';
     $Self->{Translation}->{'Start IP Address'} = 'Start-IP-Adresse';
     $Self->{Translation}->{'Storage'} = 'Lagerung';
     $Self->{Translation}->{'Storage Partition'} = 'Speicher-Partition';

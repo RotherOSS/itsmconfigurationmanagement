@@ -109,7 +109,7 @@ sub Data {
     $Self->{Translation}->{'Object Type'} = 'Typ objektu';
 
     # Template: AdminDynamicFieldScreen
-    $Self->{Translation}->{'Filter by object type'} = '';
+    $Self->{Translation}->{'Filter by object type'} = 'Filtrovat podle typu';
 
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = 'Budou importovány následující třídy';
@@ -164,7 +164,7 @@ sub Data {
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = 'ConfigItemID %s nebylo v databázi nalezeno!';
     $Self->{Translation}->{'ConfigItem'} = 'ConfigItem';
     $Self->{Translation}->{'printed by %s at %s'} = 'vytištěno %s na %s';
-    $Self->{Translation}->{'Referenced by'} = '';
+    $Self->{Translation}->{'Referenced by'} = 'Reference';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
     $Self->{Translation}->{'Invalid ClassID!'} = 'Parametry stránek (na kterých se zobrazují konfigurační položky).';
@@ -201,9 +201,9 @@ sub Data {
     $Self->{Translation}->{'Class restrictions for the config item'} = 'Omezení třídy pro položku konfigurace';
     $Self->{Translation}->{'Select one or more classes to restrict selectable config items'} =
         'Výběrem jedné nebo více tříd omezíte vybíratelné položky konfigurace.';
-    $Self->{Translation}->{'Deployment state restrictions for the config item'} = '';
+    $Self->{Translation}->{'Deployment state restrictions for the config item'} = 'Omezení třídy pro položku konfigurace';
     $Self->{Translation}->{'Select one or more deployment states to restrict selectable config items'} =
-        '';
+        'Výběrem jedné nebo více tříd omezíte vybíratelné položky konfigurace.';
     $Self->{Translation}->{'Dynamic (ConfigItem)'} = 'Dynamické (ConfigItem)';
     $Self->{Translation}->{'Static (Version)'} = 'Static (verze)';
     $Self->{Translation}->{'Link Referencing Type'} = 'Typ odkazu Odkazování';
@@ -359,7 +359,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         'Definuje výchozí podobjekt třídy \'ITSMConfigItem\'.';
     $Self->{Translation}->{'Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
-        '';
+        'Definuje dostupné sloupce CI v přehledu položek konfigurace v závislosti na třídě CI. Každá položka se musí skládat z názvu třídy a pole dostupných polí pro příslušnou třídu. Položky dynamických polí musí respektovat schéma DynamicField_FieldName.';
     $Self->{Translation}->{'Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).'} =
         'Definuje výšku komponenty textového editoru pro tuto obrazovku. Zadejte číslo (pixely) nebo procentuální hodnotu (relativní).';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =
@@ -419,11 +419,11 @@ sub Data {
     $Self->{Translation}->{'For every webservice (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker config.'} =
         'Pro každou webovou službu (klíč) lze definovat pole tříd (hodnota), na které je import omezen. Pro všechny zvolené třídy nebo všechny existující třídy bude třeba v konfiguraci invokeru zvolit identifikační atributy.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
-        '';
+        'Registrace modulu GenericInterface pro vrstvu vyvolávače ConfigItemFetch.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
         'Registrace modulu GenericInterface pro vrstvu vyvolávače ConfigItemFetch.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemUpdate invoker layer.'} =
-        '';
+        'Registrace modulu GenericInterface pro vrstvu vyvolávače ConfigItemFetch.';
     $Self->{Translation}->{'ITSM ConfigItem'} = 'ITSM ConfigItem';
     $Self->{Translation}->{'ITSM config item overview.'} = 'Přehled položek konfigurace ITSM.';
     $Self->{Translation}->{'InciState'} = 'InciState';
@@ -453,9 +453,9 @@ sub Data {
     $Self->{Translation}->{'Parameters for the column filters of the small config item overview. Please note: setting \'Active\' to 0 will only prevent agents from editing settings of this group in their personal preferences, but will still allow administrators to edit the settings of another user\'s behalf. Use \'PreferenceGroup\' to control in which area these settings should be shown in the user interface.'} =
         'Parametry pro filtry sloupců přehledu malých konfiguračních položek. Upozornění: Nastavení hodnoty "Aktivní" na 0 pouze zabrání agentům upravovat nastavení této skupiny v jejich osobních preferencích, ale správcům stále umožní upravovat nastavení jménem jiného uživatele. Pomocí \'PreferenceGroup\' můžete řídit, ve které oblasti se mají tato nastavení v uživatelském rozhraní zobrazovat.';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries per config item class shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        '';
+        'Parametry nastavení nástěnky pro přehled podřízených tiketů v rozhraní agenta. "Limit" je množství standardně viditelných vstupů. "Group" se používá k omezení přístupu k pluginu (např.: Group: admin;group1;group2;). "Default" určuje, zda je plugin povolen standardně nebo zda jej musí uživatel povolit manuálně. "CacheTTLLocal" je cachovací čas pluginu - v minutách.';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        '';
+        'Parametry nastavení nástěnky pro přehled podřízených tiketů v rozhraní agenta. "Limit" je množství standardně viditelných vstupů. "Group" se používá k omezení přístupu k pluginu (např.: Group: admin;group1;group2;). "Default" určuje, zda je plugin povolen standardně nebo zda jej musí uživatel povolit manuálně. "CacheTTLLocal" je cachovací čas pluginu - v minutách.';
     $Self->{Translation}->{'Parameters for the deployment states color in the preferences view of the agent interface.'} =
         'Parametry pro stavy nasazení se vybarví v zobrazení předvoleb rozhraní agenta.';
     $Self->{Translation}->{'Parameters for the deployment states in the preferences view of the agent interface.'} =
@@ -755,7 +755,7 @@ sub Data {
     $Self->{Translation}->{'Socket Type'} = 'Typ zásuvky';
     $Self->{Translation}->{'Software'} = 'E-mail';
     $Self->{Translation}->{'Speakers'} = 'Reproduktory';
-    $Self->{Translation}->{'Standard SIM'} = '';
+    $Self->{Translation}->{'Standard SIM'} = 'Standard';
     $Self->{Translation}->{'Start IP Address'} = 'Počáteční IP adresa';
     $Self->{Translation}->{'Storage'} = 'Úložiště';
     $Self->{Translation}->{'Storage Partition'} = 'Úložný oddíl';

@@ -201,9 +201,9 @@ sub Data {
     $Self->{Translation}->{'Class restrictions for the config item'} = 'Περιορισμοί κλάσης για το στοιχείο διαμόρφωσης';
     $Self->{Translation}->{'Select one or more classes to restrict selectable config items'} =
         'Επιλέξτε μία ή περισσότερες κλάσεις για να περιορίσετε τα επιλέξιμα στοιχεία διαμόρφωσης';
-    $Self->{Translation}->{'Deployment state restrictions for the config item'} = '';
+    $Self->{Translation}->{'Deployment state restrictions for the config item'} = 'Περιορισμοί κλάσης για το στοιχείο διαμόρφωσης';
     $Self->{Translation}->{'Select one or more deployment states to restrict selectable config items'} =
-        '';
+        'Επιλέξτε μία ή περισσότερες κλάσεις για να περιορίσετε τα επιλέξιμα στοιχεία διαμόρφωσης';
     $Self->{Translation}->{'Dynamic (ConfigItem)'} = 'Δυναμικό (ConfigItem)';
     $Self->{Translation}->{'Static (Version)'} = 'Static (Έκδοση)';
     $Self->{Translation}->{'Link Referencing Type'} = 'Τύπος αναφοράς συνδέσμου';
@@ -359,7 +359,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         'Ορίζει το προεπιλεγμένο υποαντικείμενο της κλάσης \'ITSMConfigItem\'.';
     $Self->{Translation}->{'Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
-        '';
+        'Καθορίζει τις διαθέσιμες στήλες των CI στην επισκόπηση στοιχείων διαμόρφωσης ανάλογα με την κατηγορία CI. Κάθε καταχώρηση πρέπει να αποτελείται από ένα όνομα κλάσης και έναν πίνακα διαθέσιμων πεδίων για την αντίστοιχη κλάση. Οι καταχωρίσεις δυναμικών πεδίων πρέπει να τηρούν το σχήμα DynamicField_FieldName.';
     $Self->{Translation}->{'Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).'} =
         'Καθορίζει το ύψος για το στοιχείο του επεξεργαστή πλούσιου κειμένου για αυτή την οθόνη. Εισάγετε αριθμό (pixels) ή ποσοστιαία τιμή (σχετική).';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =
@@ -419,11 +419,11 @@ sub Data {
     $Self->{Translation}->{'For every webservice (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker config.'} =
         'Για κάθε υπηρεσία ιστού (κλειδί) μπορεί να οριστεί ένας πίνακας κλάσεων (τιμή), στις οποίες περιορίζεται η εισαγωγή. Για όλες τις επιλεγμένες κλάσεις ή για όλες τις υπάρχουσες κλάσεις θα πρέπει να επιλεγούν τα χαρακτηριστικά αναγνώρισης στο config του invoker.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
-        '';
+        'Εγγραφή μονάδας GenericInterface για το επίπεδο επικαλούμενου ConfigItemFetch.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
         'Εγγραφή μονάδας GenericInterface για το επίπεδο επικαλούμενου ConfigItemFetch.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemUpdate invoker layer.'} =
-        '';
+        'Εγγραφή μονάδας GenericInterface για το επίπεδο επικαλούμενου ConfigItemFetch.';
     $Self->{Translation}->{'ITSM ConfigItem'} = 'ITSM ConfigItem';
     $Self->{Translation}->{'ITSM config item overview.'} = 'Επισκόπηση στοιχείων ρυθμίσεων ITSM.';
     $Self->{Translation}->{'InciState'} = 'InciState';
@@ -755,7 +755,7 @@ sub Data {
     $Self->{Translation}->{'Socket Type'} = 'Τύπος υποδοχής';
     $Self->{Translation}->{'Software'} = 'Λογισμικό';
     $Self->{Translation}->{'Speakers'} = 'Ομιλητές';
-    $Self->{Translation}->{'Standard SIM'} = '';
+    $Self->{Translation}->{'Standard SIM'} = 'Κανονικο';
     $Self->{Translation}->{'Start IP Address'} = 'Διεύθυνση IP έναρξης';
     $Self->{Translation}->{'Storage'} = 'Αποθήκευση';
     $Self->{Translation}->{'Storage Partition'} = 'Διαμέρισμα αποθήκευσης';

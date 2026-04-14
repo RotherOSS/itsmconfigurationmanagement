@@ -164,7 +164,7 @@ sub Data {
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = 'ConfigItemID %s ei löydy tietokannasta!';
     $Self->{Translation}->{'ConfigItem'} = 'ConfigItem';
     $Self->{Translation}->{'printed by %s at %s'} = 'tulostanut %s osoitteessa %s';
-    $Self->{Translation}->{'Referenced by'} = '';
+    $Self->{Translation}->{'Referenced by'} = 'Viite';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
     $Self->{Translation}->{'Invalid ClassID!'} = 'Väärä ClassID!';
@@ -201,9 +201,9 @@ sub Data {
     $Self->{Translation}->{'Class restrictions for the config item'} = 'Luokkarajoitukset konfigurointikohdetta varten';
     $Self->{Translation}->{'Select one or more classes to restrict selectable config items'} =
         'Valitse yksi tai useampi luokka rajoittaaksesi valittavissa olevia konfiguraatiokohteita.';
-    $Self->{Translation}->{'Deployment state restrictions for the config item'} = '';
+    $Self->{Translation}->{'Deployment state restrictions for the config item'} = 'Luokkarajoitukset konfigurointikohdetta varten';
     $Self->{Translation}->{'Select one or more deployment states to restrict selectable config items'} =
-        '';
+        'Valitse yksi tai useampi luokka rajoittaaksesi valittavissa olevia konfiguraatiokohteita.';
     $Self->{Translation}->{'Dynamic (ConfigItem)'} = 'Dynaaminen (ConfigItem)';
     $Self->{Translation}->{'Static (Version)'} = 'Static (versio)';
     $Self->{Translation}->{'Link Referencing Type'} = 'Linkki Viittaustyyppi';
@@ -359,7 +359,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         'Määrittää luokan \'ITSMConfigItem\' oletusarvoisen aliobjektin.';
     $Self->{Translation}->{'Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
-        '';
+        'Määrittää käytettävissä olevat CI-sarakkeet konfigurointikohteen yleiskatsauksessa CI-luokan mukaan. Jokaisen merkinnän on koostuttava luokan nimestä ja kyseisen luokan käytettävissä olevien kenttien joukosta. Dynaamisten kenttien merkintöjen on noudatettava kaavaa DynamicField_FieldName.';
     $Self->{Translation}->{'Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).'} =
         'Määrittää tämän näytön tekstieditorikomponentin korkeuden. Syötä numero (pikseliä) tai prosenttiluku (suhteellinen).';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =
@@ -419,11 +419,11 @@ sub Data {
     $Self->{Translation}->{'For every webservice (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker config.'} =
         'Jokaiselle verkkopalvelulle (avain) voidaan määritellä joukko luokkia (arvo), joihin tuonti on rajoitettu. Kaikille valituille luokille tai kaikille olemassa oleville luokille on valittava tunnistavat attribuutit kutsujan konfiguraatiossa.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
-        '';
+        'GenericInterface-moduulin rekisteröinti ConfigItemFetch-kutsukerrosta varten.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
         'GenericInterface-moduulin rekisteröinti ConfigItemFetch-kutsukerrosta varten.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemUpdate invoker layer.'} =
-        '';
+        'GenericInterface-moduulin rekisteröinti ConfigItemFetch-kutsukerrosta varten.';
     $Self->{Translation}->{'ITSM ConfigItem'} = 'ITSM ConfigItem';
     $Self->{Translation}->{'ITSM config item overview.'} = 'ITSM-määrityskohteen yleiskatsaus.';
     $Self->{Translation}->{'InciState'} = 'InciState';
@@ -755,7 +755,7 @@ sub Data {
     $Self->{Translation}->{'Socket Type'} = 'Pistorasia tyyppi';
     $Self->{Translation}->{'Software'} = 'Ohjelmisto';
     $Self->{Translation}->{'Speakers'} = 'Puhujat';
-    $Self->{Translation}->{'Standard SIM'} = '';
+    $Self->{Translation}->{'Standard SIM'} = 'Vakio';
     $Self->{Translation}->{'Start IP Address'} = 'Aloita IP-osoite';
     $Self->{Translation}->{'Storage'} = 'Varastointi';
     $Self->{Translation}->{'Storage Partition'} = 'Tallennusosio';

@@ -109,7 +109,7 @@ sub Data {
     $Self->{Translation}->{'Object Type'} = 'Objektum típusa';
 
     # Template: AdminDynamicFieldScreen
-    $Self->{Translation}->{'Filter by object type'} = '';
+    $Self->{Translation}->{'Filter by object type'} = 'Mező szűrése objektumtípus szerint';
 
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = 'A következő osztályok kerülnek importálásra';
@@ -164,7 +164,7 @@ sub Data {
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = 'A(z) %s konfigurációelem-azonosító nem található az adatbázisban!';
     $Self->{Translation}->{'ConfigItem'} = 'Konfigurációelem';
     $Self->{Translation}->{'printed by %s at %s'} = 'nyomtatta: %s – %s';
-    $Self->{Translation}->{'Referenced by'} = '';
+    $Self->{Translation}->{'Referenced by'} = 'Hivatkozás';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
     $Self->{Translation}->{'Invalid ClassID!'} = 'Érvénytelen osztályazonosító!';
@@ -201,9 +201,9 @@ sub Data {
     $Self->{Translation}->{'Class restrictions for the config item'} = 'Osztálykorlátozások a konfigurációs elemhez';
     $Self->{Translation}->{'Select one or more classes to restrict selectable config items'} =
         'Egy vagy több osztály kiválasztása a választható konfigurációs elemek korlátozásához';
-    $Self->{Translation}->{'Deployment state restrictions for the config item'} = '';
+    $Self->{Translation}->{'Deployment state restrictions for the config item'} = 'Osztálykorlátozások a konfigurációs elemhez';
     $Self->{Translation}->{'Select one or more deployment states to restrict selectable config items'} =
-        '';
+        'Egy vagy több osztály kiválasztása a választható konfigurációs elemek korlátozásához';
     $Self->{Translation}->{'Dynamic (ConfigItem)'} = 'Dinamikus (ConfigItem)';
     $Self->{Translation}->{'Static (Version)'} = 'Static (változat)';
     $Self->{Translation}->{'Link Referencing Type'} = 'Link hivatkozási típus';
@@ -359,7 +359,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         'Meghatározza az „ITSMConfigItem” osztály alapértelmezett alobjektumát.';
     $Self->{Translation}->{'Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
-        '';
+        'Meghatározza a CI-k elérhető oszlopait a konfigurációs elem áttekintésében a CI-osztálytól függően. Minden egyes bejegyzésnek egy osztálynévből és a megfelelő osztályhoz rendelkezésre álló mezők tömbjéből kell állnia. A dinamikus mezőbejegyzéseknek a DynamicField_FieldName sémát kell követniük.';
     $Self->{Translation}->{'Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).'} =
         'Meghatározza a RichText szerkesztő komponens magasságát ennél a képernyőnél. Szám (képpont) vagy százalék (relatív) értéket adjon meg.';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =
@@ -419,11 +419,11 @@ sub Data {
     $Self->{Translation}->{'For every webservice (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker config.'} =
         'Minden egyes webszolgáltatáshoz (kulcs) megadható egy sor osztály (érték), amelyekre az importálás korlátozva van. Az összes kiválasztott osztályhoz vagy az összes létező osztályhoz az azonosító attribútumokat kell kiválasztani az invoker konfigurációban.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
-        '';
+        'GenericInterface modul regisztráció a ConfigItemFetch invoker réteghez.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
         'GenericInterface modul regisztráció a ConfigItemFetch invoker réteghez.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemUpdate invoker layer.'} =
-        '';
+        'GenericInterface modul regisztráció a ConfigItemFetch invoker réteghez.';
     $Self->{Translation}->{'ITSM ConfigItem'} = 'ITSM ConfigItem';
     $Self->{Translation}->{'ITSM config item overview.'} = 'ITSM konfigurációelem áttekintés.';
     $Self->{Translation}->{'InciState'} = 'InciState';
@@ -453,9 +453,9 @@ sub Data {
     $Self->{Translation}->{'Parameters for the column filters of the small config item overview. Please note: setting \'Active\' to 0 will only prevent agents from editing settings of this group in their personal preferences, but will still allow administrators to edit the settings of another user\'s behalf. Use \'PreferenceGroup\' to control in which area these settings should be shown in the user interface.'} =
         'A kis konfigurációs elemek áttekintésének oszlopszűrőinek paraméterei. Megjegyzés: az "Aktív" 0-ra állítása csak azt akadályozza meg, hogy az ügynökök szerkesszék a csoport beállításait a személyes beállításaikban, de a rendszergazdáknak továbbra is lehetővé teszi, hogy egy másik felhasználó nevében szerkesszék a beállításokat. A \'PreferenceGroup\' segítségével szabályozhatja, hogy ezek a beállítások melyik területen jelenjenek meg a felhasználói felületen.';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries per config item class shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        '';
+        'Paraméterek az ügyintézői felület ügyfél-felhasználó lista áttekintésének vezérlőpult háttérprogramjához. A „Limit” az alapértelmezetten megjelenített bejegyzések száma. A „Group” használható a hozzáférés korlátozásához a bővítményre (például Group: admin;csoport1;csoport2;). A „Default” azt határozza meg, hogy a bővítmény alapértelmezetten engedélyezve van, vagy hogy a felhasználónak kézzel kell engedélyeznie azt. A „CacheTTLLocal” a bővítmény gyorsítótár ideje percben.';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        '';
+        'Paraméterek az ügyintézői felület ügyfél-felhasználó lista áttekintésének vezérlőpult háttérprogramjához. A „Limit” az alapértelmezetten megjelenített bejegyzések száma. A „Group” használható a hozzáférés korlátozásához a bővítményre (például Group: admin;csoport1;csoport2;). A „Default” azt határozza meg, hogy a bővítmény alapértelmezetten engedélyezve van, vagy hogy a felhasználónak kézzel kell engedélyeznie azt. A „CacheTTLLocal” a bővítmény gyorsítótár ideje percben.';
     $Self->{Translation}->{'Parameters for the deployment states color in the preferences view of the agent interface.'} =
         'Paraméterek az üzembe állítási állapotok színeihez az ügyintézői felület beállítások nézetében.';
     $Self->{Translation}->{'Parameters for the deployment states in the preferences view of the agent interface.'} =
@@ -755,7 +755,7 @@ sub Data {
     $Self->{Translation}->{'Socket Type'} = 'Aljzat típusa';
     $Self->{Translation}->{'Software'} = 'Szoftver';
     $Self->{Translation}->{'Speakers'} = 'Hangszórók';
-    $Self->{Translation}->{'Standard SIM'} = '';
+    $Self->{Translation}->{'Standard SIM'} = 'Szabványos';
     $Self->{Translation}->{'Start IP Address'} = 'IP-cím indítása';
     $Self->{Translation}->{'Storage'} = 'Tárolás';
     $Self->{Translation}->{'Storage Partition'} = 'Tárolási partíció';

@@ -164,7 +164,7 @@ sub Data {
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = 'ConfigItemID %s ei leitud andmebaasis!';
     $Self->{Translation}->{'ConfigItem'} = 'ConfigItem';
     $Self->{Translation}->{'printed by %s at %s'} = 'trükitud %s poolt aadressil %s';
-    $Self->{Translation}->{'Referenced by'} = '';
+    $Self->{Translation}->{'Referenced by'} = 'Viited';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
     $Self->{Translation}->{'Invalid ClassID!'} = 'Vale ClassID!';
@@ -201,9 +201,9 @@ sub Data {
     $Self->{Translation}->{'Class restrictions for the config item'} = 'Klassi piirangud konfiguratsioonielemendi jaoks';
     $Self->{Translation}->{'Select one or more classes to restrict selectable config items'} =
         'Valige üks või mitu klassi, et piirata valitavaid konfiguratsioonielemente.';
-    $Self->{Translation}->{'Deployment state restrictions for the config item'} = '';
+    $Self->{Translation}->{'Deployment state restrictions for the config item'} = 'Klassi piirangud konfiguratsioonielemendi jaoks';
     $Self->{Translation}->{'Select one or more deployment states to restrict selectable config items'} =
-        '';
+        'Valige üks või mitu klassi, et piirata valitavaid konfiguratsioonielemente.';
     $Self->{Translation}->{'Dynamic (ConfigItem)'} = 'Dünaamiline (ConfigItem)';
     $Self->{Translation}->{'Static (Version)'} = 'Staatiline (versioon)';
     $Self->{Translation}->{'Link Referencing Type'} = 'Linkide viitamise tüüp';
@@ -359,7 +359,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         'Määratleb klassi \'ITSMConfigItem\' vaikimisi alamobjekti.';
     $Self->{Translation}->{'Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
-        '';
+        'Määratleb CIde olemasolevad veerud konfiguratsioonielemendi ülevaates sõltuvalt CI-klassist. Iga kirje peab koosnema klassi nimest ja vastava klassi jaoks kättesaadavate väljade massiivi. Dünaamiliste väljade kirjed peavad järgima skeemi DynamicField_FieldName.';
     $Self->{Translation}->{'Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).'} =
         'Määrab selle ekraani rikkaliku tekstiredaktori komponendi kõrguse. Sisestage arv (pikslid) või protsentuaalne väärtus (suhteline).';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =
@@ -419,11 +419,11 @@ sub Data {
     $Self->{Translation}->{'For every webservice (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker config.'} =
         'Iga veebiteenuse (võti) jaoks saab määratleda klasside massiivi (väärtus), mille puhul on import piiratud. Kõigi valitud klasside või kõigi olemasolevate klasside jaoks tuleb invoker\'i konfiguratsioonis valida identifitseerivad atribuudid.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
-        '';
+        'GenericInterface\'i mooduli registreerimine ConfigItemFetch kutsuva kihi jaoks.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
         'GenericInterface\'i mooduli registreerimine ConfigItemFetch kutsuva kihi jaoks.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemUpdate invoker layer.'} =
-        '';
+        'GenericInterface\'i mooduli registreerimine ConfigItemFetch kutsuva kihi jaoks.';
     $Self->{Translation}->{'ITSM ConfigItem'} = 'ITSM ConfigItem';
     $Self->{Translation}->{'ITSM config item overview.'} = 'ITSMi konfiguratsioonielemendi ülevaade.';
     $Self->{Translation}->{'InciState'} = 'InciState';

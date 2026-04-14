@@ -164,7 +164,7 @@ sub Data {
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = 'ConfigItemID %s ni najden v podatkovni bazi!';
     $Self->{Translation}->{'ConfigItem'} = 'ConfigItem';
     $Self->{Translation}->{'printed by %s at %s'} = 'natisnil %s na %s';
-    $Self->{Translation}->{'Referenced by'} = '';
+    $Self->{Translation}->{'Referenced by'} = 'Reference';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
     $Self->{Translation}->{'Invalid ClassID!'} = 'Nepravilen ID razreda!';
@@ -201,9 +201,9 @@ sub Data {
     $Self->{Translation}->{'Class restrictions for the config item'} = 'Omejitve razreda za element konfiguracije';
     $Self->{Translation}->{'Select one or more classes to restrict selectable config items'} =
         'Izberite enega ali več razredov za omejitev izbirnih elementov konfiguracije';
-    $Self->{Translation}->{'Deployment state restrictions for the config item'} = '';
+    $Self->{Translation}->{'Deployment state restrictions for the config item'} = 'Omejitve razreda za element konfiguracije';
     $Self->{Translation}->{'Select one or more deployment states to restrict selectable config items'} =
-        '';
+        'Izberite enega ali več razredov za omejitev izbirnih elementov konfiguracije';
     $Self->{Translation}->{'Dynamic (ConfigItem)'} = 'Dinamično (ConfigItem)';
     $Self->{Translation}->{'Static (Version)'} = 'Statično (različica)';
     $Self->{Translation}->{'Link Referencing Type'} = 'Vrsta sklicevanja na povezavo';
@@ -359,7 +359,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         'Opredeljuje privzeti podobjekt razreda \'ITSMConfigItem\'.';
     $Self->{Translation}->{'Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
-        '';
+        'Opredeljuje razpoložljive stolpce CI v pregledu elementa konfiguracije glede na razred CI. Vsak vnos mora biti sestavljen iz imena razreda in polja razpoložljivih polj za ustrezni razred. Vnosi dinamičnih polj morajo upoštevati shemo DynamicField_FieldName.';
     $Self->{Translation}->{'Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).'} =
         'Določa višino komponente urejevalnika bogatega besedila za ta zaslon. Vnesite število (piksli) ali odstotno vrednost (relativno).';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =
@@ -419,11 +419,11 @@ sub Data {
     $Self->{Translation}->{'For every webservice (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker config.'} =
         'Za vsako spletno storitev (ključ) lahko določite niz razredov (vrednost), za katere je uvoz omejen. Za vse izbrane razrede ali vse obstoječe razrede bo treba v konfiguraciji invokerja izbrati identifikacijske atribute.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
-        '';
+        'Registracija modula GenericInterface za sloj invokatorja ConfigItemFetch.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
         'Registracija modula GenericInterface za sloj invokatorja ConfigItemFetch.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemUpdate invoker layer.'} =
-        '';
+        'Registracija modula GenericInterface za sloj invokatorja ConfigItemFetch.';
     $Self->{Translation}->{'ITSM ConfigItem'} = 'ITSM ConfigItem';
     $Self->{Translation}->{'ITSM config item overview.'} = 'Pregled elementa konfiguracije ITSM.';
     $Self->{Translation}->{'InciState'} = 'InciState';
@@ -755,7 +755,7 @@ sub Data {
     $Self->{Translation}->{'Socket Type'} = 'Vrsta vtičnice';
     $Self->{Translation}->{'Software'} = 'Programska oprema';
     $Self->{Translation}->{'Speakers'} = 'Zvočniki';
-    $Self->{Translation}->{'Standard SIM'} = '';
+    $Self->{Translation}->{'Standard SIM'} = 'Standardni';
     $Self->{Translation}->{'Start IP Address'} = 'Začetni naslov IP';
     $Self->{Translation}->{'Storage'} = 'Shranjevanje';
     $Self->{Translation}->{'Storage Partition'} = 'Razdelek za shranjevanje';
