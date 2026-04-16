@@ -5,7 +5,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
-msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:17+0100\nPO-Revision-Date: 2026-03-16 23:00+0000\nLast-Translator: Weblate <noreply-mt-weblate@weblate.org>\nLanguage-Team: Hindi <http://translate.otobo.org/projects/manual-itsmconfigurationmanagement/master/hi/>\nLanguage: hi\nMIME-Version: 1.0\nContent-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 5.16\nGenerated-By: Babel 2.4.0\n"
+msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:17+0100\nPO-Revision-Date: 2026-04-16 22:00+0000\nLast-Translator: Weblate <noreply-mt-weblate@weblate.org>\nLanguage-Team: Hindi <http://translate.otobo.org/projects/manual-itsmconfigurationmanagement/master/hi/>\nLanguage: hi\nMIME-Version: 1.0\nContent-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 5.16\nGenerated-By: Babel 2.4.0\n"
 
 #: ../../content/about.rst:13
 msgid "About"
@@ -1504,20 +1504,22 @@ msgid "ITSMConfigItem::Frontend::MenuModule###300-Edit"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:399
+#, fuzzy
 msgid ""
 "Shows a link in the menu to edit a configuration item in the its zoom "
 "view of the agent interface."
-msgstr ""
+msgstr "प्रतिनिधि अंतरफलक में हर टिकट के अवलोकन में टिकट इतिहास देखने के लिए विकल्प सूची में एक कड़ी दिखाता है।"
 
 #: ../../content/configuration/system_configuration_settings.rst:402
 msgid "ITSMConfigItem::Frontend::MenuModule###400-Print"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:403
+#, fuzzy
 msgid ""
 "Shows a link in the menu to print a configuration item in the its zoom "
 "view of the agent interface."
-msgstr ""
+msgstr "प्रतिनिधि अंतरफलक में हर टिकट के अवलोकन में टिकट इतिहास देखने के लिए विकल्प सूची में एक कड़ी दिखाता है।"
 
 #: ../../content/configuration/system_configuration_settings.rst:406
 msgid "ITSMConfigItem::Frontend::MenuModule###500-Link"
@@ -1544,20 +1546,22 @@ msgid "ITSMConfigItem::Frontend::MenuModule###600-Duplicate"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:415
+#, fuzzy
 msgid ""
 "Shows a link in the menu to duplicate a configuration item in the its "
 "zoom view of the agent interface."
-msgstr ""
+msgstr "प्रतिनिधि अंतरफलक में हर टिकट के अवलोकन में टिकट इतिहास देखने के लिए विकल्प सूची में एक कड़ी दिखाता है।"
 
 #: ../../content/configuration/system_configuration_settings.rst:418
 msgid "ITSMConfigItem::Frontend::MenuModule###700-ConfigItemDelete"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:419
+#, fuzzy
 msgid ""
 "Shows a link in the menu to delete a configuration item in its zoom view "
 "of the agent interface."
-msgstr ""
+msgstr "प्रतिनिधि अंतरफलक में हर टिकट के अवलोकन में टिकट इतिहास देखने के लिए विकल्प सूची में एक कड़ी दिखाता है।"
 
 #: ../../content/configuration/system_configuration_settings.rst:422
 msgid "Frontend::Agent::ITSMConfigItem::MenuModulePre"
@@ -1568,30 +1572,33 @@ msgid "ITSMConfigItem::Frontend::PreMenuModule###100-Zoom"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:426
+#, fuzzy
 msgid ""
 "Shows a link in the menu to zoom into a configuration item in the "
 "configuration item overview of the agent interface."
-msgstr ""
+msgstr "प्रतिनिधि अंतरफलक के टिकट अवलोकन में एक टिकट ज़ूम करने के लिए विकल्प सूची में एक कड़ी दिखाता है।"
 
 #: ../../content/configuration/system_configuration_settings.rst:429
 msgid "ITSMConfigItem::Frontend::PreMenuModule###200-History"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:430
+#, fuzzy
 msgid ""
 "Shows a link in the menu to access the history of a configuration item in"
 " the configuration item overview of the agent interface."
-msgstr ""
+msgstr "प्रतिनिधि अंतरफलक में हर टिकट के अवलोकन में टिकट इतिहास देखने के लिए विकल्प सूची में एक कड़ी दिखाता है।"
 
 #: ../../content/configuration/system_configuration_settings.rst:433
 msgid "ITSMConfigItem::Frontend::PreMenuModule###300-Duplicate"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:434
+#, fuzzy
 msgid ""
 "Shows a link in the menu to duplicate a configuration item in the "
 "configuration item overview of the agent interface."
-msgstr ""
+msgstr "प्रतिनिधि अंतरफलक के टिकट अवलोकन में एक टिकट ज़ूम करने के लिए विकल्प सूची में एक कड़ी दिखाता है।"
 
 #: ../../content/configuration/system_configuration_settings.rst:437
 msgid "Frontend::Agent::ITSMConfigItem::Permission"
@@ -1705,10 +1712,11 @@ msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemAttachment###Permission"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:480
+#, fuzzy
 msgid ""
 "Required permissions to use the ITSM configuration item attachment action"
 " in the agent interface."
-msgstr ""
+msgstr "प्रतिनिधि अंतरफलक में जूम टिकट के टिकट टिप्पणी स्क्रीन का उपयोग करने के लिए आवश्यक अनुमतियां।"
 
 #: ../../content/configuration/system_configuration_settings.rst:483
 msgid "Frontend::Agent::ITSMConfigItemOverview"
@@ -2410,10 +2418,11 @@ msgid "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###Permission"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:880
+#, fuzzy
 msgid ""
 "Required permissions to use the ITSM configuration item search screen in "
 "the customer interface."
-msgstr ""
+msgstr "प्रतिनिधि अंतरफलक में जूम टिकट के टिकट टिप्पणी स्क्रीन का उपयोग करने के लिए आवश्यक अनुमतियां।"
 
 #: ../../content/configuration/system_configuration_settings.rst:883
 msgid "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###DeploymentState"
@@ -2463,10 +2472,11 @@ msgid "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###SortBy::Default"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:900
+#, fuzzy
 msgid ""
 "Defines the default config item attribute for config item sorting of the "
 "config item search result of the customer interface."
-msgstr ""
+msgstr "प्रतिनिधि अंतरफलक के टिकट के खोज परिणाम में तयशुदा टिकट की छँटाई के लिए टिकट की विशेषता को परिभाषित करता है।"
 
 #: ../../content/configuration/system_configuration_settings.rst:903
 msgid "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###Order::Default"
@@ -2638,10 +2648,11 @@ msgid "GenericInterface::Operation::ConfigItemCreate###Permission"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:1001
+#, fuzzy
 msgid ""
 "Defines Required permissions to create ITSM configuration items using the"
 " Generic Interface."
-msgstr ""
+msgstr "प्रतिनिधि अंतरफलक में जूम टिकट के टिकट टिप्पणी स्क्रीन का उपयोग करने के लिए आवश्यक अनुमतियां।"
 
 #: ../../content/configuration/system_configuration_settings.rst:1004
 msgid "GenericInterface::Operation::ConfigItemDelete"
@@ -2652,10 +2663,11 @@ msgid "GenericInterface::Operation::ConfigItemDelete###Permission"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:1008
+#, fuzzy
 msgid ""
 "Defines Required permissions to delete ITSM configuration items using the"
 " Generic Interface."
-msgstr ""
+msgstr "प्रतिनिधि अंतरफलक में जूम टिकट के टिकट टिप्पणी स्क्रीन का उपयोग करने के लिए आवश्यक अनुमतियां।"
 
 #: ../../content/configuration/system_configuration_settings.rst:1011
 msgid "GenericInterface::Operation::ConfigItemGet"
@@ -2666,10 +2678,11 @@ msgid "GenericInterface::Operation::ConfigItemGet###Permission"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:1015
+#, fuzzy
 msgid ""
 "Defines Required permissions to get ITSM configuration items using the "
 "Generic Interface."
-msgstr ""
+msgstr "प्रतिनिधि अंतरफलक में जूम टिकट के टिकट टिप्पणी स्क्रीन का उपयोग करने के लिए आवश्यक अनुमतियां।"
 
 #: ../../content/configuration/system_configuration_settings.rst:1018
 msgid "GenericInterface::Operation::ConfigItemSearch"
@@ -2680,10 +2693,11 @@ msgid "GenericInterface::Operation::ConfigItemSearch###Permission"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:1022
+#, fuzzy
 msgid ""
 "Defines Required permissions to search ITSM configuration items using the"
 " Generic Interface."
-msgstr ""
+msgstr "प्रतिनिधि अंतरफलक में जूम टिकट के टिकट टिप्पणी स्क्रीन का उपयोग करने के लिए आवश्यक अनुमतियां।"
 
 #: ../../content/configuration/system_configuration_settings.rst:1025
 msgid "GenericInterface::Operation::ConfigItemSearch###SearchLimit"
@@ -2700,10 +2714,11 @@ msgid "GenericInterface::Operation::ConfigItemSearch###SortBy::Default"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:1030
+#, fuzzy
 msgid ""
 "Defines the default config item attribute for config item sorting of the "
 "config item search result of this operation."
-msgstr ""
+msgstr "प्रतिनिधि अंतरफलक के टिकट के खोज परिणाम में तयशुदा टिकट की छँटाई के लिए टिकट की विशेषता को परिभाषित करता है।"
 
 #: ../../content/configuration/system_configuration_settings.rst:1033
 msgid "GenericInterface::Operation::ConfigItemSearch###Order::Default"
@@ -2725,10 +2740,11 @@ msgid "GenericInterface::Operation::ConfigItemUpdate###Permission"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:1041
+#, fuzzy
 msgid ""
 "Defines Required permissions to update ITSM configuration items using the"
 " Generic Interface."
-msgstr ""
+msgstr "प्रतिनिधि अंतरफलक में जूम टिकट के टिकट टिप्पणी स्क्रीन का उपयोग करने के लिए आवश्यक अनुमतियां।"
 
 #: ../../content/configuration/system_configuration_settings.rst:1044
 msgid "GenericInterface::Operation::ModuleRegistration"
