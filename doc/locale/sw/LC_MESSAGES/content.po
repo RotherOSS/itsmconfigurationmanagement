@@ -5,7 +5,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
-msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:17+0100\nPO-Revision-Date: 2026-03-16 23:00+0000\nLast-Translator: Weblate <noreply-mt-weblate@weblate.org>\nLanguage-Team: Swahili <http://translate.otobo.org/projects/manual-itsmconfigurationmanagement/master/sw/>\nLanguage: sw\nMIME-Version: 1.0\nContent-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 5.16\nGenerated-By: Babel 2.4.0\n"
+msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:17+0100\nPO-Revision-Date: 2026-04-16 22:00+0000\nLast-Translator: Weblate <noreply-mt-weblate@weblate.org>\nLanguage-Team: Swahili <http://translate.otobo.org/projects/manual-itsmconfigurationmanagement/master/sw/>\nLanguage: sw\nMIME-Version: 1.0\nContent-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 5.16\nGenerated-By: Babel 2.4.0\n"
 
 #: ../../content/about.rst:13
 msgid "About"
@@ -988,20 +988,22 @@ msgid "GeneralCatalogPreferences###VersionStringModule"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:129
+#, fuzzy
 msgid ""
 "Parameters for the version string module for config item classes in the "
 "preferences view of the agent interface."
-msgstr ""
+msgstr "Vigezo kwa ajili ya hali za matumizi kama mandhari ya mapendeleo ya kiolesura cha wakala."
 
 #: ../../content/configuration/system_configuration_settings.rst:132
 msgid "GeneralCatalogPreferences###VersionStringExpression"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:133
+#, fuzzy
 msgid ""
 "Parameters for the version string template toolkit module for config item"
 " classes in the preferences view of the agent interface."
-msgstr ""
+msgstr "Vigezo kwa ajili ya hali za matumizi kama mandhari ya mapendeleo ya kiolesura cha wakala."
 
 #: ../../content/configuration/system_configuration_settings.rst:136
 msgid "GeneralCatalogPreferences###VersionTrigger"
@@ -1037,8 +1039,9 @@ msgid ""
 msgstr "Vigezo kwa mfano ruhusa za vikundi kwa sifa za katalogi za ujumla."
 
 #: ../../content/configuration/system_configuration_settings.rst:148
+#, fuzzy
 msgid "Core::ITSMConfigItem"
-msgstr ""
+msgstr "Kipengele cha usanidi"
 
 #: ../../content/configuration/system_configuration_settings.rst:151
 msgid "ITSMConfigItem::CINameRegex"
@@ -1070,8 +1073,9 @@ msgid "Module to check the group responsible for a configuration item."
 msgstr "Module ya kuangalia makundi yanayohusika na kipengele cha usanidi."
 
 #: ../../content/configuration/system_configuration_settings.rst:163
+#, fuzzy
 msgid "ITSMConfigItem::Hook"
-msgstr ""
+msgstr "Kipengele cha usanidi"
 
 #: ../../content/configuration/system_configuration_settings.rst:164
 #, fuzzy
@@ -2316,10 +2320,11 @@ msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###DynamicField"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:789
+#, fuzzy
 msgid ""
 "Dynamic fields shown in the config item search screen of the agent "
 "interface."
-msgstr ""
+msgstr "Inyesha uga za kichwa cha habari katika skrini ya uga wa ITSM ulioongezwa wa kiolesura cha wakala."
 
 #: ../../content/configuration/system_configuration_settings.rst:792
 msgid "Frontend::Agent::View::Preferences"
@@ -2527,10 +2532,11 @@ msgid "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###SortBy::Default"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:900
+#, fuzzy
 msgid ""
 "Defines the default config item attribute for config item sorting of the "
 "config item search result of the customer interface."
-msgstr ""
+msgstr "Inafafanua sifa ya tiketi chaguo-msingi kwa ajili ya kupanga matokeo ya utafutaji wa tiketi ya kiolesura cha mteja."
 
 #: ../../content/configuration/system_configuration_settings.rst:903
 msgid "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###Order::Default"
