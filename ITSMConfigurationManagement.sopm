@@ -116,6 +116,7 @@
         <File Permission="660" Location="Kernel/Modules/CustomerITSMConfigItemSearch.pm" />
         <File Permission="660" Location="Kernel/Modules/CustomerITSMConfigItemZoom.pm" />
         <File Permission="660" Location="Kernel/Output/HTML/Dashboard/ITSMConfigItemGeneric.pm" />
+        <File Permission="660" Location="Kernel/Output/HTML/Elasticsearch/ElasticsearchConfigItemGeneric.pm" />
         <File Permission="660" Location="Kernel/Output/HTML/ITSMConfigItem/DynamicField.pm" />
         <File Permission="660" Location="Kernel/Output/HTML/ITSMConfigItem/LayoutCustomer.pm" />
         <File Permission="660" Location="Kernel/Output/HTML/ITSMConfigItem/LayoutCustomerCompany.pm" />
