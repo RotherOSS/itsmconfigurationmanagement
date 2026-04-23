@@ -5,7 +5,7 @@
 # Copyright (C) 2012-2020 Znuny GmbH, http://znuny.com/
 # Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
-# $origin: otobo - 6efdc7bf2a3325277cd79a60f0f2407f8ad59e87 - Kernel/System/ZnunyHelper.pm
+# $origin: otobo - 7cc84ce13c8e6c3485605ade5585014abd911579 - Kernel/System/ZnunyHelper.pm
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -25,9 +25,9 @@ use strict;
 use warnings;
 
 # core modules
-use List::AllUtils qw(none);
 
 # CPAN modules
+use List::AllUtils qw(none);
 
 # OTOBO modules
 use Kernel::System::VariableCheck qw(:all);
