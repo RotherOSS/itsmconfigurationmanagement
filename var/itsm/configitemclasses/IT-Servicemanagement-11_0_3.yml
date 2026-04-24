@@ -5983,8 +5983,8 @@
         PossibleNone: '1'
         PossibleValues:
           AGPLAfferoGeneralPublicLicense: AGPL (Affero General Public License)
-          ApacheLizenz: Apache Lizenz
-          BSDLizenzBerkeleySoftwareDistributionLicense: BSD Lizenz (Berkeley Software
+          ApacheLicense: Apache License
+          BSDLicenseBerkeleySoftwareDistributionLicense: BSD License (Berkeley Software
             Distribution License)
           CC0CreativeCommonsZero: CC0 (Creative Commons Zero)
           CreativeCommons: Creative Commons
@@ -5992,7 +5992,7 @@
           Freeware: Freeware
           GPLGeneralPublicLicense: GPL (General Public License)
           LGPLLesserGeneralPublicLicense: LGPL (Lesser General Public License)
-          MITLizenz: MIT Lizenz
+          MITLicense: MIT License
           MPLMozillaPublicLicense: MPL (Mozilla Public License)
           Other: Other
           Perpetuallicenses: Perpetual licenses
