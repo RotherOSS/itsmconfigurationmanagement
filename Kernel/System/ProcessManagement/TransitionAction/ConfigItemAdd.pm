@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -197,17 +197,17 @@ sub Run {
 
     my %ConfigItemParam;
 
-    for my $OptionalAttribute ( qw/Name Number VersionString/ ) {
-        if ( $Param{Config}{ $OptionalAttribute } ) {
-            $ConfigItemParam{$OptionalAttribute} = $Param{Config}{ $OptionalAttribute };
+    for my $OptionalAttribute (qw/Name Number VersionString/) {
+        if ( $Param{Config}{$OptionalAttribute} ) {
+            $ConfigItemParam{$OptionalAttribute} = $Param{Config}{$OptionalAttribute};
         }
     }
 
-    $ConfigItemParam{ClassID}     = $Class2IDMap{     $Param{Config}{Class} };
+    $ConfigItemParam{ClassID}     = $Class2IDMap{ $Param{Config}{Class} };
     $ConfigItemParam{DeplStateID} = $DeplState2IDMap{ $Param{Config}{DeplState} };
     $ConfigItemParam{InciStateID} = $InciState2IDMap{ $Param{Config}{InciState} };
 
-    for my $Needed ( qw/Class DeplState InciState/ ) {
+    for my $Needed (qw/Class DeplState InciState/) {
         if ( !$ConfigItemParam{ $Needed . 'ID' } ) {
             $Kernel::OM->Get('Kernel::System::Log')->Log(
                 Priority => 'error',
@@ -226,30 +226,36 @@ sub Run {
     # add dynamic fields
     CONFIGPARAM:
     for my $ConfigParam ( keys $Param{Config}->%* ) {
-        next CONFIGPARAM if $ConfigParam !~ /^DynamicField_(.+)/;
+        my $FieldName;
 
-        my $FieldName    = $1;
+        if ( $ConfigParam =~ /^DynamicField_(.+)/ ) {
+            $FieldName = $1;
+        }
+        else {
+            next CONFIGPARAM;
+        }
+
         my $DynamicField = $DynamicFieldObject->DynamicFieldGet(
             Name => $FieldName,
         );
 
-        next CONFIGPARAM if !IsHashRefWithData( $DynamicField );
+        next CONFIGPARAM if !IsHashRefWithData($DynamicField);
 
         # for set fields we need to map the name of the inner fields
-        if ( $DynamicField && $DynamicField->{FieldType} eq 'Set' && ref $Param{Config}{ $ConfigParam } ) {
+        if ( $DynamicField && $DynamicField->{FieldType} eq 'Set' && ref $Param{Config}{$ConfigParam} ) {
             SETVALUE:
-            for my $SetValue ( $Param{Config}{ $ConfigParam }->@* ) {
-                next unless $SetValue;
+            for my $SetValue ( $Param{Config}{$ConfigParam}->@* ) {
+                next SETVALUE unless $SetValue;
 
                 for my $InnerField ( keys $SetValue->%* ) {
-                    if ( $SetMapping->{ $InnerField } ) {
-                        $SetValue->{ $SetMapping->{ $InnerField } } = delete $SetValue->{ $InnerField };
+                    if ( $SetMapping->{$InnerField} ) {
+                        $SetValue->{ $SetMapping->{$InnerField} } = delete $SetValue->{$InnerField};
                     }
                 }
             }
         }
 
-        $ConfigItemParam{ $ConfigParam } = $Param{Config}{ $ConfigParam };
+        $ConfigItemParam{$ConfigParam} = $Param{Config}{$ConfigParam};
     }
 
     # create config item
