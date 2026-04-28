@@ -210,6 +210,7 @@ sub Data {
     $Self->{Translation}->{'Whether this link applies to the ConfigItem or the static version of the referencing object. Current Incident State calculation only is performed on dynamic links.'} =
         'Bu bağlantının ConfigItem için mi yoksa başvuran nesnenin statik sürümü için mi geçerli olduğu. Geçerli Olay Durumu hesaplaması yalnızca dinamik bağlantılarda gerçekleştirilir.';
     $Self->{Translation}->{'Select the attribute which config items will be searched by'} = 'Yapılandırma öğelerinin aranacağı özniteliği seçin';
+    $Self->{Translation}->{'Select the type of display'} = '';
 
     # Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
     $Self->{Translation}->{'Base structure is not valid. Please provide a hash with data in YAML format.'} =
@@ -589,9 +590,9 @@ sub Data {
     $Self->{Translation}->{'Address Allocation'} = 'Adres Tahsisi';
     $Self->{Translation}->{'Administrator'} = 'Yönetici';
     $Self->{Translation}->{'Analog Phone'} = 'Analog Telefon';
-    $Self->{Translation}->{'Apache Lizenz'} = '';
+    $Self->{Translation}->{'Apache License'} = '';
     $Self->{Translation}->{'Appliance Type'} = 'Cihaz Tipi';
-    $Self->{Translation}->{'BSD Lizenz (Berkeley Software Distribution License)'} = '';
+    $Self->{Translation}->{'BSD License (Berkeley Software Distribution License)'} = '';
     $Self->{Translation}->{'Battery Capacity (Ah)'} = 'Akü Kapasitesi (Ah)';
     $Self->{Translation}->{'Battery Type'} = 'Pil Tipi';
     $Self->{Translation}->{'Building'} = 'Bina';
@@ -693,7 +694,7 @@ sub Data {
     $Self->{Translation}->{'Loan Agreement'} = 'Kredi Sözleşmesi';
     $Self->{Translation}->{'Located in'} = 'İçinde bulunan';
     $Self->{Translation}->{'Longitude'} = 'Boylam';
-    $Self->{Translation}->{'MIT Lizenz'} = '';
+    $Self->{Translation}->{'MIT License'} = '';
     $Self->{Translation}->{'MPL (Mozilla Public License)'} = '';
     $Self->{Translation}->{'Manufacturer'} = 'Üretici firma';
     $Self->{Translation}->{'Maximum Load Capacity (W)'} = 'Maksimum Yük Kapasitesi (W)';

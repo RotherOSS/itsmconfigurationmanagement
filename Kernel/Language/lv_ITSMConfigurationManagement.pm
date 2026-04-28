@@ -210,6 +210,7 @@ sub Data {
     $Self->{Translation}->{'Whether this link applies to the ConfigItem or the static version of the referencing object. Current Incident State calculation only is performed on dynamic links.'} =
         'Vai šī saite attiecas uz atsauces objekta ConfigItem vai statisko versiju. Pašreizējā incidenta stāvokļa aprēķins tiek veikts tikai dinamiskajām saitēm.';
     $Self->{Translation}->{'Select the attribute which config items will be searched by'} = 'Atlasiet atribūtu, pēc kura tiks meklēti konfigurācijas elementi.';
+    $Self->{Translation}->{'Select the type of display'} = '';
 
     # Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
     $Self->{Translation}->{'Base structure is not valid. Please provide a hash with data in YAML format.'} =
@@ -589,9 +590,9 @@ sub Data {
     $Self->{Translation}->{'Address Allocation'} = 'Adrešu piešķiršana';
     $Self->{Translation}->{'Administrator'} = 'Administrators';
     $Self->{Translation}->{'Analog Phone'} = 'Analogais tālrunis';
-    $Self->{Translation}->{'Apache Lizenz'} = '';
+    $Self->{Translation}->{'Apache License'} = '';
     $Self->{Translation}->{'Appliance Type'} = 'Ierīces tips';
-    $Self->{Translation}->{'BSD Lizenz (Berkeley Software Distribution License)'} = '';
+    $Self->{Translation}->{'BSD License (Berkeley Software Distribution License)'} = '';
     $Self->{Translation}->{'Battery Capacity (Ah)'} = 'Akumulatora ietilpība (Ah)';
     $Self->{Translation}->{'Battery Type'} = 'Akumulatora tips';
     $Self->{Translation}->{'Building'} = 'Ēka';
@@ -693,7 +694,7 @@ sub Data {
     $Self->{Translation}->{'Loan Agreement'} = 'Aizdevuma līgums';
     $Self->{Translation}->{'Located in'} = 'Atrodas';
     $Self->{Translation}->{'Longitude'} = 'Ģeogrāfiskais garums';
-    $Self->{Translation}->{'MIT Lizenz'} = '';
+    $Self->{Translation}->{'MIT License'} = '';
     $Self->{Translation}->{'MPL (Mozilla Public License)'} = '';
     $Self->{Translation}->{'Manufacturer'} = 'Ražotājs';
     $Self->{Translation}->{'Maximum Load Capacity (W)'} = 'Maksimālā slodzes jauda (W)';

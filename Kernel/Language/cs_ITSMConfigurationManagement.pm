@@ -210,6 +210,7 @@ sub Data {
     $Self->{Translation}->{'Whether this link applies to the ConfigItem or the static version of the referencing object. Current Incident State calculation only is performed on dynamic links.'} =
         'Zda se tento odkaz vztahuje na ConfigItem nebo statickou verzi odkazujícího objektu. Výpočet aktuálního stavu incidentu se provádí pouze u dynamických odkazů.';
     $Self->{Translation}->{'Select the attribute which config items will be searched by'} = 'Vyberte atribut, podle kterého se budou hledat položky konfigurace.';
+    $Self->{Translation}->{'Select the type of display'} = '';
 
     # Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
     $Self->{Translation}->{'Base structure is not valid. Please provide a hash with data in YAML format.'} =
@@ -589,9 +590,9 @@ sub Data {
     $Self->{Translation}->{'Address Allocation'} = 'Přidělování adres';
     $Self->{Translation}->{'Administrator'} = 'Správce';
     $Self->{Translation}->{'Analog Phone'} = 'Analogový telefon';
-    $Self->{Translation}->{'Apache Lizenz'} = '';
+    $Self->{Translation}->{'Apache License'} = '';
     $Self->{Translation}->{'Appliance Type'} = 'Typ spotřebiče';
-    $Self->{Translation}->{'BSD Lizenz (Berkeley Software Distribution License)'} = '';
+    $Self->{Translation}->{'BSD License (Berkeley Software Distribution License)'} = '';
     $Self->{Translation}->{'Battery Capacity (Ah)'} = 'Kapacita baterie (Ah)';
     $Self->{Translation}->{'Battery Type'} = 'Typ baterie';
     $Self->{Translation}->{'Building'} = 'Budova';
@@ -693,7 +694,7 @@ sub Data {
     $Self->{Translation}->{'Loan Agreement'} = 'Smlouva o půjčce';
     $Self->{Translation}->{'Located in'} = 'Nachází se v';
     $Self->{Translation}->{'Longitude'} = 'Zeměpisná délka';
-    $Self->{Translation}->{'MIT Lizenz'} = '';
+    $Self->{Translation}->{'MIT License'} = '';
     $Self->{Translation}->{'MPL (Mozilla Public License)'} = '';
     $Self->{Translation}->{'Manufacturer'} = 'Výrobce';
     $Self->{Translation}->{'Maximum Load Capacity (W)'} = 'Maximální zatížitelnost (W)';

@@ -210,6 +210,7 @@ sub Data {
     $Self->{Translation}->{'Whether this link applies to the ConfigItem or the static version of the referencing object. Current Incident State calculation only is performed on dynamic links.'} =
         'Apakah tautan ini berlaku untuk ConfigItem atau versi statis dari objek referensi. Perhitungan Status Insiden saat ini hanya dilakukan pada tautan dinamis.';
     $Self->{Translation}->{'Select the attribute which config items will be searched by'} = 'Pilih atribut yang akan dicari berdasarkan item konfigurasi';
+    $Self->{Translation}->{'Select the type of display'} = '';
 
     # Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
     $Self->{Translation}->{'Base structure is not valid. Please provide a hash with data in YAML format.'} =
@@ -589,9 +590,9 @@ sub Data {
     $Self->{Translation}->{'Address Allocation'} = 'Alokasi Alamat';
     $Self->{Translation}->{'Administrator'} = 'Administrator';
     $Self->{Translation}->{'Analog Phone'} = 'Telepon Analog';
-    $Self->{Translation}->{'Apache Lizenz'} = '';
+    $Self->{Translation}->{'Apache License'} = '';
     $Self->{Translation}->{'Appliance Type'} = 'Jenis Alat';
-    $Self->{Translation}->{'BSD Lizenz (Berkeley Software Distribution License)'} = '';
+    $Self->{Translation}->{'BSD License (Berkeley Software Distribution License)'} = '';
     $Self->{Translation}->{'Battery Capacity (Ah)'} = 'Kapasitas Baterai (Ah)';
     $Self->{Translation}->{'Battery Type'} = 'Jenis Baterai';
     $Self->{Translation}->{'Building'} = 'Membangun';
@@ -693,7 +694,7 @@ sub Data {
     $Self->{Translation}->{'Loan Agreement'} = 'Perjanjian Pinjaman';
     $Self->{Translation}->{'Located in'} = 'Berlokasi di';
     $Self->{Translation}->{'Longitude'} = 'Bujur';
-    $Self->{Translation}->{'MIT Lizenz'} = '';
+    $Self->{Translation}->{'MIT License'} = '';
     $Self->{Translation}->{'MPL (Mozilla Public License)'} = '';
     $Self->{Translation}->{'Manufacturer'} = 'Produsen';
     $Self->{Translation}->{'Maximum Load Capacity (W)'} = 'Kapasitas Beban Maksimum (W)';

@@ -210,6 +210,7 @@ sub Data {
     $Self->{Translation}->{'Whether this link applies to the ConfigItem or the static version of the referencing object. Current Incident State calculation only is performed on dynamic links.'} =
         '이 링크가 구성 항목에 적용되는지 또는 참조 개체의 정적 버전에 적용되는지 여부입니다. 현재 인시던트 상태 계산은 동적 링크에서만 수행됩니다.';
     $Self->{Translation}->{'Select the attribute which config items will be searched by'} = '구성 항목을 검색할 속성을 선택합니다.';
+    $Self->{Translation}->{'Select the type of display'} = '';
 
     # Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
     $Self->{Translation}->{'Base structure is not valid. Please provide a hash with data in YAML format.'} =
@@ -589,9 +590,9 @@ sub Data {
     $Self->{Translation}->{'Address Allocation'} = '주소 할당';
     $Self->{Translation}->{'Administrator'} = '관리자';
     $Self->{Translation}->{'Analog Phone'} = '아날로그 전화';
-    $Self->{Translation}->{'Apache Lizenz'} = '';
+    $Self->{Translation}->{'Apache License'} = '';
     $Self->{Translation}->{'Appliance Type'} = '어플라이언스 유형';
-    $Self->{Translation}->{'BSD Lizenz (Berkeley Software Distribution License)'} = '';
+    $Self->{Translation}->{'BSD License (Berkeley Software Distribution License)'} = '';
     $Self->{Translation}->{'Battery Capacity (Ah)'} = '배터리 용량(Ah)';
     $Self->{Translation}->{'Battery Type'} = '배터리 유형';
     $Self->{Translation}->{'Building'} = '빌딩';
@@ -693,7 +694,7 @@ sub Data {
     $Self->{Translation}->{'Loan Agreement'} = '대출 계약';
     $Self->{Translation}->{'Located in'} = '위치';
     $Self->{Translation}->{'Longitude'} = '경도';
-    $Self->{Translation}->{'MIT Lizenz'} = '';
+    $Self->{Translation}->{'MIT License'} = '';
     $Self->{Translation}->{'MPL (Mozilla Public License)'} = '';
     $Self->{Translation}->{'Manufacturer'} = '제조업체';
     $Self->{Translation}->{'Maximum Load Capacity (W)'} = '최대 부하 용량(W)';

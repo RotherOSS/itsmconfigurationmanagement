@@ -210,6 +210,7 @@ sub Data {
     $Self->{Translation}->{'Whether this link applies to the ConfigItem or the static version of the referencing object. Current Incident State calculation only is performed on dynamic links.'} =
         'Om dette link gælder for ConfigItem eller den statiske version af det refererende objekt. Beregning af aktuel hændelsestilstand udføres kun på dynamiske links.';
     $Self->{Translation}->{'Select the attribute which config items will be searched by'} = 'Vælg den attribut, som konfigurationselementer skal søges efter';
+    $Self->{Translation}->{'Select the type of display'} = '';
 
     # Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
     $Self->{Translation}->{'Base structure is not valid. Please provide a hash with data in YAML format.'} =
@@ -589,9 +590,9 @@ sub Data {
     $Self->{Translation}->{'Address Allocation'} = 'Tildeling af adresser';
     $Self->{Translation}->{'Administrator'} = 'Administrator';
     $Self->{Translation}->{'Analog Phone'} = 'Analog telefon';
-    $Self->{Translation}->{'Apache Lizenz'} = '';
+    $Self->{Translation}->{'Apache License'} = '';
     $Self->{Translation}->{'Appliance Type'} = 'Type apparat';
-    $Self->{Translation}->{'BSD Lizenz (Berkeley Software Distribution License)'} = '';
+    $Self->{Translation}->{'BSD License (Berkeley Software Distribution License)'} = '';
     $Self->{Translation}->{'Battery Capacity (Ah)'} = 'Batterikapacitet (Ah)';
     $Self->{Translation}->{'Battery Type'} = 'Batteritype';
     $Self->{Translation}->{'Building'} = 'Bygning';
@@ -693,7 +694,7 @@ sub Data {
     $Self->{Translation}->{'Loan Agreement'} = 'Låneaftale';
     $Self->{Translation}->{'Located in'} = 'Beliggende i';
     $Self->{Translation}->{'Longitude'} = 'Længdegrad';
-    $Self->{Translation}->{'MIT Lizenz'} = '';
+    $Self->{Translation}->{'MIT License'} = '';
     $Self->{Translation}->{'MPL (Mozilla Public License)'} = '';
     $Self->{Translation}->{'Manufacturer'} = 'Producent';
     $Self->{Translation}->{'Maximum Load Capacity (W)'} = 'Maksimal belastningskapacitet (W)';

@@ -210,6 +210,7 @@ sub Data {
     $Self->{Translation}->{'Whether this link applies to the ConfigItem or the static version of the referencing object. Current Incident State calculation only is performed on dynamic links.'} =
         'Εάν αυτή η σύνδεση ισχύει για το ConfigItem ή τη στατική έκδοση του αντικειμένου αναφοράς. Ο υπολογισμός της τρέχουσας κατάστασης συμβάντος εκτελείται μόνο σε δυναμικές συνδέσεις.';
     $Self->{Translation}->{'Select the attribute which config items will be searched by'} = 'Επιλέξτε το χαρακτηριστικό με βάση το οποίο θα γίνεται η αναζήτηση των στοιχείων διαμόρφωσης';
+    $Self->{Translation}->{'Select the type of display'} = '';
 
     # Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
     $Self->{Translation}->{'Base structure is not valid. Please provide a hash with data in YAML format.'} =
@@ -589,9 +590,9 @@ sub Data {
     $Self->{Translation}->{'Address Allocation'} = 'Κατανομή διευθύνσεων';
     $Self->{Translation}->{'Administrator'} = 'Διαχειριστής';
     $Self->{Translation}->{'Analog Phone'} = 'Αναλογικό τηλέφωνο';
-    $Self->{Translation}->{'Apache Lizenz'} = '';
+    $Self->{Translation}->{'Apache License'} = '';
     $Self->{Translation}->{'Appliance Type'} = 'Τύπος συσκευής';
-    $Self->{Translation}->{'BSD Lizenz (Berkeley Software Distribution License)'} = '';
+    $Self->{Translation}->{'BSD License (Berkeley Software Distribution License)'} = '';
     $Self->{Translation}->{'Battery Capacity (Ah)'} = 'Χωρητικότητα μπαταρίας (Ah)';
     $Self->{Translation}->{'Battery Type'} = 'Τύπος μπαταρίας';
     $Self->{Translation}->{'Building'} = 'Κτίριο';
@@ -693,7 +694,7 @@ sub Data {
     $Self->{Translation}->{'Loan Agreement'} = 'Σύμβαση δανείου';
     $Self->{Translation}->{'Located in'} = 'Βρίσκεται στην';
     $Self->{Translation}->{'Longitude'} = 'Γεωγραφικό μήκος';
-    $Self->{Translation}->{'MIT Lizenz'} = '';
+    $Self->{Translation}->{'MIT License'} = '';
     $Self->{Translation}->{'MPL (Mozilla Public License)'} = '';
     $Self->{Translation}->{'Manufacturer'} = 'Κατασκευαστής';
     $Self->{Translation}->{'Maximum Load Capacity (W)'} = 'Μέγιστη χωρητικότητα φορτίου (W)';

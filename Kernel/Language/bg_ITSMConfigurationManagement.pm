@@ -210,6 +210,7 @@ sub Data {
     $Self->{Translation}->{'Whether this link applies to the ConfigItem or the static version of the referencing object. Current Incident State calculation only is performed on dynamic links.'} =
         'Дали тази връзка се отнася за ConfigItem или за статичната версия на обекта, към който се препраща. Изчисляването на текущото състояние на инцидента се извършва само за динамични връзки.';
     $Self->{Translation}->{'Select the attribute which config items will be searched by'} = 'Изберете атрибута, по който ще се търсят елементите на конфигурацията';
+    $Self->{Translation}->{'Select the type of display'} = '';
 
     # Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
     $Self->{Translation}->{'Base structure is not valid. Please provide a hash with data in YAML format.'} =
@@ -589,9 +590,9 @@ sub Data {
     $Self->{Translation}->{'Address Allocation'} = 'Разпределение на адреси';
     $Self->{Translation}->{'Administrator'} = 'Администратор';
     $Self->{Translation}->{'Analog Phone'} = 'Аналогов телефон';
-    $Self->{Translation}->{'Apache Lizenz'} = '';
+    $Self->{Translation}->{'Apache License'} = '';
     $Self->{Translation}->{'Appliance Type'} = 'Тип на уреда';
-    $Self->{Translation}->{'BSD Lizenz (Berkeley Software Distribution License)'} = '';
+    $Self->{Translation}->{'BSD License (Berkeley Software Distribution License)'} = '';
     $Self->{Translation}->{'Battery Capacity (Ah)'} = 'Капацитет на батерията (Ah)';
     $Self->{Translation}->{'Battery Type'} = 'Тип батерия';
     $Self->{Translation}->{'Building'} = 'Сграда';
@@ -693,7 +694,7 @@ sub Data {
     $Self->{Translation}->{'Loan Agreement'} = 'Споразумение за заем';
     $Self->{Translation}->{'Located in'} = 'Намира се в';
     $Self->{Translation}->{'Longitude'} = 'Дължина';
-    $Self->{Translation}->{'MIT Lizenz'} = '';
+    $Self->{Translation}->{'MIT License'} = '';
     $Self->{Translation}->{'MPL (Mozilla Public License)'} = '';
     $Self->{Translation}->{'Manufacturer'} = 'Производител';
     $Self->{Translation}->{'Maximum Load Capacity (W)'} = 'Максимален капацитет на натоварване (W)';

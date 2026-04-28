@@ -210,6 +210,7 @@ sub Data {
     $Self->{Translation}->{'Whether this link applies to the ConfigItem or the static version of the referencing object. Current Incident State calculation only is performed on dynamic links.'} =
         'ما إذا كان هذا الارتباط ينطبق على عنصر التكوين أو النسخة الثابتة من الكائن المرجعي. يتم إجراء حساب حالة الحادث الحالي فقط على الروابط الديناميكية.';
     $Self->{Translation}->{'Select the attribute which config items will be searched by'} = 'حدد السمة التي سيتم البحث عن عناصر التكوين من خلالها';
+    $Self->{Translation}->{'Select the type of display'} = '';
 
     # Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
     $Self->{Translation}->{'Base structure is not valid. Please provide a hash with data in YAML format.'} =
@@ -589,9 +590,9 @@ sub Data {
     $Self->{Translation}->{'Address Allocation'} = 'تخصيص العنوان';
     $Self->{Translation}->{'Administrator'} = 'المدير';
     $Self->{Translation}->{'Analog Phone'} = 'هاتف تناظري';
-    $Self->{Translation}->{'Apache Lizenz'} = '';
+    $Self->{Translation}->{'Apache License'} = '';
     $Self->{Translation}->{'Appliance Type'} = 'نوع الجهاز';
-    $Self->{Translation}->{'BSD Lizenz (Berkeley Software Distribution License)'} = '';
+    $Self->{Translation}->{'BSD License (Berkeley Software Distribution License)'} = '';
     $Self->{Translation}->{'Battery Capacity (Ah)'} = 'سعة البطارية (آه)';
     $Self->{Translation}->{'Battery Type'} = 'نوع البطارية';
     $Self->{Translation}->{'Building'} = 'البناء';
@@ -693,7 +694,7 @@ sub Data {
     $Self->{Translation}->{'Loan Agreement'} = 'اتفاقية القرض';
     $Self->{Translation}->{'Located in'} = 'تقع في';
     $Self->{Translation}->{'Longitude'} = 'خط الطول';
-    $Self->{Translation}->{'MIT Lizenz'} = '';
+    $Self->{Translation}->{'MIT License'} = '';
     $Self->{Translation}->{'MPL (Mozilla Public License)'} = '';
     $Self->{Translation}->{'Manufacturer'} = 'الشركة المصنعة';
     $Self->{Translation}->{'Maximum Load Capacity (W)'} = 'سعة التحميل القصوى (W)';

@@ -210,6 +210,7 @@ sub Data {
     $Self->{Translation}->{'Whether this link applies to the ConfigItem or the static version of the referencing object. Current Incident State calculation only is performed on dynamic links.'} =
         'Či sa toto prepojenie vzťahuje na ConfigItem alebo statickú verziu odkazujúceho objektu. Výpočet aktuálneho stavu incidentu sa vykonáva len pri dynamických odkazoch.';
     $Self->{Translation}->{'Select the attribute which config items will be searched by'} = 'Vyberte atribút, podľa ktorého sa budú vyhľadávať položky konfigurácie';
+    $Self->{Translation}->{'Select the type of display'} = '';
 
     # Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
     $Self->{Translation}->{'Base structure is not valid. Please provide a hash with data in YAML format.'} =
@@ -589,9 +590,9 @@ sub Data {
     $Self->{Translation}->{'Address Allocation'} = 'Prideľovanie adries';
     $Self->{Translation}->{'Administrator'} = 'Správca';
     $Self->{Translation}->{'Analog Phone'} = 'Analógový telefón';
-    $Self->{Translation}->{'Apache Lizenz'} = '';
+    $Self->{Translation}->{'Apache License'} = '';
     $Self->{Translation}->{'Appliance Type'} = 'Typ spotrebiča';
-    $Self->{Translation}->{'BSD Lizenz (Berkeley Software Distribution License)'} = '';
+    $Self->{Translation}->{'BSD License (Berkeley Software Distribution License)'} = '';
     $Self->{Translation}->{'Battery Capacity (Ah)'} = 'Kapacita batérie (Ah)';
     $Self->{Translation}->{'Battery Type'} = 'Typ batérie';
     $Self->{Translation}->{'Building'} = 'Budova';
@@ -693,7 +694,7 @@ sub Data {
     $Self->{Translation}->{'Loan Agreement'} = 'Zmluva o pôžičke';
     $Self->{Translation}->{'Located in'} = 'Nachádza sa v';
     $Self->{Translation}->{'Longitude'} = 'Zemepisná dĺžka';
-    $Self->{Translation}->{'MIT Lizenz'} = '';
+    $Self->{Translation}->{'MIT License'} = '';
     $Self->{Translation}->{'MPL (Mozilla Public License)'} = '';
     $Self->{Translation}->{'Manufacturer'} = 'Výrobca';
     $Self->{Translation}->{'Maximum Load Capacity (W)'} = 'Maximálna nosnosť (W)';

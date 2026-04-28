@@ -210,6 +210,7 @@ sub Data {
     $Self->{Translation}->{'Whether this link applies to the ConfigItem or the static version of the referencing object. Current Incident State calculation only is performed on dynamic links.'} =
         'Применяется ли эта ссылка к ConfigItem или к статической версии ссылающегося объекта. Расчет текущего состояния инцидента выполняется только для динамических ссылок.';
     $Self->{Translation}->{'Select the attribute which config items will be searched by'} = 'Выберите атрибут, по которому будет осуществляться поиск элементов конфигурации';
+    $Self->{Translation}->{'Select the type of display'} = '';
 
     # Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
     $Self->{Translation}->{'Base structure is not valid. Please provide a hash with data in YAML format.'} =
@@ -589,9 +590,9 @@ sub Data {
     $Self->{Translation}->{'Address Allocation'} = 'Распределение адресов';
     $Self->{Translation}->{'Administrator'} = 'Администратор';
     $Self->{Translation}->{'Analog Phone'} = 'Аналоговый телефон';
-    $Self->{Translation}->{'Apache Lizenz'} = '';
+    $Self->{Translation}->{'Apache License'} = '';
     $Self->{Translation}->{'Appliance Type'} = 'Тип прибора';
-    $Self->{Translation}->{'BSD Lizenz (Berkeley Software Distribution License)'} = '';
+    $Self->{Translation}->{'BSD License (Berkeley Software Distribution License)'} = '';
     $Self->{Translation}->{'Battery Capacity (Ah)'} = 'Емкость аккумулятора (Ач)';
     $Self->{Translation}->{'Battery Type'} = 'Тип батареи';
     $Self->{Translation}->{'Building'} = 'Здание';
@@ -693,7 +694,7 @@ sub Data {
     $Self->{Translation}->{'Loan Agreement'} = 'Договор займа';
     $Self->{Translation}->{'Located in'} = 'Находится в';
     $Self->{Translation}->{'Longitude'} = 'Долгота';
-    $Self->{Translation}->{'MIT Lizenz'} = '';
+    $Self->{Translation}->{'MIT License'} = '';
     $Self->{Translation}->{'MPL (Mozilla Public License)'} = '';
     $Self->{Translation}->{'Manufacturer'} = 'Производитель';
     $Self->{Translation}->{'Maximum Load Capacity (W)'} = 'Максимальная грузоподъемность (Вт)';

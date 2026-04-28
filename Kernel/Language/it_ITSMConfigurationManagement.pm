@@ -210,6 +210,7 @@ sub Data {
     $Self->{Translation}->{'Whether this link applies to the ConfigItem or the static version of the referencing object. Current Incident State calculation only is performed on dynamic links.'} =
         'Se questo collegamento si applica al ConfigItem o alla versione statica dell\'oggetto di riferimento. Il calcolo dello Stato corrente dell\'incidente viene eseguito solo sui collegamenti dinamici.';
     $Self->{Translation}->{'Select the attribute which config items will be searched by'} = 'Selezionare l\'attributo in base al quale gli elementi della configurazione verranno ricercati';
+    $Self->{Translation}->{'Select the type of display'} = '';
 
     # Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
     $Self->{Translation}->{'Base structure is not valid. Please provide a hash with data in YAML format.'} =
@@ -589,9 +590,9 @@ sub Data {
     $Self->{Translation}->{'Address Allocation'} = 'Assegnazione degli indirizzi';
     $Self->{Translation}->{'Administrator'} = 'Amministratore';
     $Self->{Translation}->{'Analog Phone'} = 'Telefono analogico';
-    $Self->{Translation}->{'Apache Lizenz'} = '';
+    $Self->{Translation}->{'Apache License'} = '';
     $Self->{Translation}->{'Appliance Type'} = 'Tipo di apparecchio';
-    $Self->{Translation}->{'BSD Lizenz (Berkeley Software Distribution License)'} = '';
+    $Self->{Translation}->{'BSD License (Berkeley Software Distribution License)'} = '';
     $Self->{Translation}->{'Battery Capacity (Ah)'} = 'Capacità della batteria (Ah)';
     $Self->{Translation}->{'Battery Type'} = 'Tipo di batteria';
     $Self->{Translation}->{'Building'} = 'Edificio';
@@ -693,7 +694,7 @@ sub Data {
     $Self->{Translation}->{'Loan Agreement'} = 'Contratto di prestito';
     $Self->{Translation}->{'Located in'} = 'Situato in';
     $Self->{Translation}->{'Longitude'} = 'Longitudine';
-    $Self->{Translation}->{'MIT Lizenz'} = '';
+    $Self->{Translation}->{'MIT License'} = '';
     $Self->{Translation}->{'MPL (Mozilla Public License)'} = '';
     $Self->{Translation}->{'Manufacturer'} = 'Produttore';
     $Self->{Translation}->{'Maximum Load Capacity (W)'} = 'Capacità di carico massima (W)';

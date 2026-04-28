@@ -210,6 +210,7 @@ sub Data {
     $Self->{Translation}->{'Whether this link applies to the ConfigItem or the static version of the referencing object. Current Incident State calculation only is performed on dynamic links.'} =
         'Om denna länk gäller för ConfigItem eller den statiska versionen av det objekt som refereras till. Beräkningen av Current Incident State utförs endast på dynamiska länkar.';
     $Self->{Translation}->{'Select the attribute which config items will be searched by'} = 'Välj det attribut som konfigurationsobjekten ska sökas efter';
+    $Self->{Translation}->{'Select the type of display'} = '';
 
     # Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
     $Self->{Translation}->{'Base structure is not valid. Please provide a hash with data in YAML format.'} =
@@ -589,9 +590,9 @@ sub Data {
     $Self->{Translation}->{'Address Allocation'} = 'Adresstilldelning';
     $Self->{Translation}->{'Administrator'} = 'Administratör';
     $Self->{Translation}->{'Analog Phone'} = 'Analog telefon';
-    $Self->{Translation}->{'Apache Lizenz'} = '';
+    $Self->{Translation}->{'Apache License'} = '';
     $Self->{Translation}->{'Appliance Type'} = 'Typ av apparat';
-    $Self->{Translation}->{'BSD Lizenz (Berkeley Software Distribution License)'} = '';
+    $Self->{Translation}->{'BSD License (Berkeley Software Distribution License)'} = '';
     $Self->{Translation}->{'Battery Capacity (Ah)'} = 'Batterikapacitet (Ah)';
     $Self->{Translation}->{'Battery Type'} = 'Batterityp';
     $Self->{Translation}->{'Building'} = 'Byggnad';
@@ -693,7 +694,7 @@ sub Data {
     $Self->{Translation}->{'Loan Agreement'} = 'Låneavtal';
     $Self->{Translation}->{'Located in'} = 'Beläget i';
     $Self->{Translation}->{'Longitude'} = 'Longitud';
-    $Self->{Translation}->{'MIT Lizenz'} = '';
+    $Self->{Translation}->{'MIT License'} = '';
     $Self->{Translation}->{'MPL (Mozilla Public License)'} = '';
     $Self->{Translation}->{'Manufacturer'} = 'Tillverkare';
     $Self->{Translation}->{'Maximum Load Capacity (W)'} = 'Maximal lastkapacitet (W)';

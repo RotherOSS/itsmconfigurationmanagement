@@ -210,6 +210,7 @@ sub Data {
     $Self->{Translation}->{'Whether this link applies to the ConfigItem or the static version of the referencing object. Current Incident State calculation only is performed on dynamic links.'} =
         'Kas see link kehtib viitava objekti ConfigItem\'i või staatilise versiooni kohta. Current Incident State\'i arvutamine toimub ainult dünaamiliste linkide puhul.';
     $Self->{Translation}->{'Select the attribute which config items will be searched by'} = 'Valige atribuut, mille järgi konfiguratsioonielemente otsitakse';
+    $Self->{Translation}->{'Select the type of display'} = '';
 
     # Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
     $Self->{Translation}->{'Base structure is not valid. Please provide a hash with data in YAML format.'} =
@@ -589,9 +590,9 @@ sub Data {
     $Self->{Translation}->{'Address Allocation'} = 'Aadressi eraldamine';
     $Self->{Translation}->{'Administrator'} = 'Administraator';
     $Self->{Translation}->{'Analog Phone'} = 'Analoogtelefon';
-    $Self->{Translation}->{'Apache Lizenz'} = '';
+    $Self->{Translation}->{'Apache License'} = '';
     $Self->{Translation}->{'Appliance Type'} = 'Seadme tüüp';
-    $Self->{Translation}->{'BSD Lizenz (Berkeley Software Distribution License)'} = '';
+    $Self->{Translation}->{'BSD License (Berkeley Software Distribution License)'} = '';
     $Self->{Translation}->{'Battery Capacity (Ah)'} = 'Aku mahutavus (Ah)';
     $Self->{Translation}->{'Battery Type'} = 'Aku tüüp';
     $Self->{Translation}->{'Building'} = 'Hoone';
@@ -693,7 +694,7 @@ sub Data {
     $Self->{Translation}->{'Loan Agreement'} = 'Laenuleping';
     $Self->{Translation}->{'Located in'} = 'Asub';
     $Self->{Translation}->{'Longitude'} = 'Pikkuskraad';
-    $Self->{Translation}->{'MIT Lizenz'} = '';
+    $Self->{Translation}->{'MIT License'} = '';
     $Self->{Translation}->{'MPL (Mozilla Public License)'} = '';
     $Self->{Translation}->{'Manufacturer'} = 'Tootja';
     $Self->{Translation}->{'Maximum Load Capacity (W)'} = 'Maksimaalne kandevõime (W)';

@@ -210,6 +210,7 @@ sub Data {
     $Self->{Translation}->{'Whether this link applies to the ConfigItem or the static version of the referencing object. Current Incident State calculation only is performed on dynamic links.'} =
         'Of deze link van toepassing is op het ConfigItem of de statische versie van het object waarnaar verwezen wordt. De berekening van de huidige incidenttoestand wordt alleen uitgevoerd op dynamische links.';
     $Self->{Translation}->{'Select the attribute which config items will be searched by'} = 'Selecteer het attribuut waarop de configuratie-items moeten worden doorzocht';
+    $Self->{Translation}->{'Select the type of display'} = '';
 
     # Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
     $Self->{Translation}->{'Base structure is not valid. Please provide a hash with data in YAML format.'} =
@@ -589,9 +590,9 @@ sub Data {
     $Self->{Translation}->{'Address Allocation'} = 'Adrestoewijzing';
     $Self->{Translation}->{'Administrator'} = 'Beheerder';
     $Self->{Translation}->{'Analog Phone'} = 'Analoge telefoon';
-    $Self->{Translation}->{'Apache Lizenz'} = '';
+    $Self->{Translation}->{'Apache License'} = '';
     $Self->{Translation}->{'Appliance Type'} = 'Type apparaat';
-    $Self->{Translation}->{'BSD Lizenz (Berkeley Software Distribution License)'} = '';
+    $Self->{Translation}->{'BSD License (Berkeley Software Distribution License)'} = '';
     $Self->{Translation}->{'Battery Capacity (Ah)'} = 'Accucapaciteit (Ah)';
     $Self->{Translation}->{'Battery Type'} = 'Batterijtype';
     $Self->{Translation}->{'Building'} = 'Gebouw';
@@ -693,7 +694,7 @@ sub Data {
     $Self->{Translation}->{'Loan Agreement'} = 'Leningsovereenkomst';
     $Self->{Translation}->{'Located in'} = 'Gevestigd in';
     $Self->{Translation}->{'Longitude'} = 'Lengte';
-    $Self->{Translation}->{'MIT Lizenz'} = '';
+    $Self->{Translation}->{'MIT License'} = '';
     $Self->{Translation}->{'MPL (Mozilla Public License)'} = '';
     $Self->{Translation}->{'Manufacturer'} = 'Fabrikant';
     $Self->{Translation}->{'Maximum Load Capacity (W)'} = 'Maximaal draagvermogen (W)';
