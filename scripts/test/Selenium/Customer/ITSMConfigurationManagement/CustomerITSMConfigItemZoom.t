@@ -134,14 +134,13 @@ $Selenium->RunTest(
         }
 
         # Create test user and login.
-        my $TestUserLogin = $Helper->TestUserCreate(
-            Groups => [ 'admin', 'itsm-configitem' ],
+        my $TestUserLogin = $Helper->TestCustomerUserCreate(
         ) || die "Did not get test user";
 
         $Selenium->Login(
             Type     => 'Customer',
-            User     => 'tina',
-            Password => 'tina',
+            User     => $TestUserLogin,
+            Password => $TestUserLogin,
         );
 
         my $ScriptAlias = $ConfigObject->Get('ScriptAlias');
@@ -157,7 +156,7 @@ $Selenium->RunTest(
 
             # Click on ConfigItem class
             $Selenium->find_element(
-                "//a[contains(\@href, \'Action=CustomerITSMConfigItem;Subaction=;Filter=$Index;SortBy=;OrderBy=;Fulltext=' )]"
+                "//a[contains(\@href, \'Action=CustomerITSMConfigItem;Subaction=;Filter=0$Index;SortBy=;OrderBy=;Fulltext=' )]"
             )->VerifiedClick();
 
             # order by descending creation time

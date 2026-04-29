@@ -234,7 +234,7 @@ $Selenium->RunTest(
 
         diag('Step 4');
         for my $StepFourID (
-            qw(Key Identifier)
+            qw(Key_Search Identifier)
             )
         {
             my $Element = $Selenium->find_element(".//*[\@id='Object::0::$StepFourID']");
@@ -248,19 +248,27 @@ $Selenium->RunTest(
         $Selenium->find_element_by_css_ok("table tbody tr td");
 
         # Select 'Number' mapping element.
-        $Selenium->find_element(".//*[\@id='Object::0::Key']/option[2]")->click();
+        $Selenium->execute_script(
+            "\$('#Object\\\\:\\\\:0\\\\:\\\\:Key').val('Number').trigger('redraw.InputField').trigger('change');"
+        );
 
         # Add and select 'Name' mapping element.
         $Selenium->find_element( "#MappingAddButton", 'css' )->VerifiedClick();
-        $Selenium->find_element(".//*[\@id='Object::1::Key']/option[3]")->click();
+        $Selenium->execute_script(
+            "\$('#Object\\\\:\\\\:1\\\\:\\\\:Key').val('Name').trigger('redraw.InputField').trigger('change');"
+        );
 
         # Add and select 'Deployment State' mapping element.
         $Selenium->find_element( "#MappingAddButton", 'css' )->VerifiedClick();
-        $Selenium->find_element(".//*[\@id='Object::2::Key']/option[4]")->click();
+        $Selenium->execute_script(
+            "\$('#Object\\\\:\\\\:2\\\\:\\\\:Key').val('DeplState').trigger('redraw.InputField').trigger('change');"
+        );
 
         # Add and select 'Incident State' mapping element.
         $Selenium->find_element( "#MappingAddButton", 'css' )->VerifiedClick();
-        $Selenium->find_element(".//*[\@id='Object::3::Key']/option[5]")->click();
+        $Selenium->execute_script(
+            "\$('#Object\\\\:\\\\:3\\\\:\\\\:Key').val('InciState').trigger('redraw.InputField').trigger('change');"
+        );
 
         # for every line check if action elements are visible and if their enabled state is correct
         # the first ArrowUp and the last Arrowdown must be disabled, all the others must be enabled
@@ -380,7 +388,7 @@ $Selenium->RunTest(
             );
         }
 
-        # Before importing verify that the config items do not already exists
+        # Before importing verify that the config items do not already exist
         for my $Count ( 1 .. 2 ) {
             my $ImportedConfigItemName = 'Seleniumtest_AdminImportExport_' . $Count;
             my $Count                  = $ConfigItemObject->ConfigItemSearch(
@@ -440,8 +448,6 @@ $Selenium->RunTest(
                 ok( $DeleteSuccess, "ConfigItem $ImportedConfigItemName is deleted - ID $FoundImportedConfigItemID" );
             }
         }
-
-        $DB::single = 1;
 
         # Navigate to AdminImportExport screen.
         $Selenium->VerifiedGet("${ScriptAlias}index.pl?Action=AdminImportExport");
