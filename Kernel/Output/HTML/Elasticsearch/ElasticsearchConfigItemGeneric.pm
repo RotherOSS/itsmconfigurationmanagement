@@ -59,10 +59,10 @@ sub Run {
         SortColumn      => '',
     );
 
-    # # show config items
+    # show config items
     my $Count = 0;
-    CONFIGITEM:
 
+    CONFIGITEM:
     for my $ConfigItem ( $Result->{ConfigItems}->@* ) {
 
         $Count++;
@@ -148,9 +148,6 @@ sub _ElasticSearchConfigItems {
             Limit    => $Self->{PageShown} || $SearchObjects->{ConfigItem}{Count},
             From     => $Self->{StartHit} - 1,
             Result   => 'FULL',
-
-            #            OrderBy  => $Self->{OrderBy},
-            #            SortBy   => $SortBy,
         );
 
         my @ConfigItems = $SearchResult->{Data}->@*;
