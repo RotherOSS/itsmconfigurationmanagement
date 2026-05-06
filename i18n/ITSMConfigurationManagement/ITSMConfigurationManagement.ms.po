@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-03-09 13:29+0000\n"
-"PO-Revision-Date: 2026-04-06 18:00+0000\n"
+"PO-Revision-Date: 2026-05-06 18:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Malay <http://translate.otobo.org/projects/opm-packages/itsm-"
 "configurationmanagement/ms/>\n"
@@ -357,7 +357,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
 msgid "Can't show config item, no access rights given!"
-msgstr ""
+msgstr "Tidak boleh menunjukkan sejarah, sebagai tiada ItemID yang diberikan!"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
 msgid "ConfigItemID %s not found in database!"
@@ -830,6 +830,8 @@ msgstr ""
 #. SysConfig
 msgid "Defines the default config item attribute for config item sorting of the config item search result of the customer interface."
 msgstr ""
+"Mentakrifkan sifat tiket asal untuk aturan tiket dalam hasil pencarian tiket "
+"dari paparan ejen."
 
 #. SysConfig
 msgid "Defines the default config item attribute for config item sorting of the config item search result of this operation."
@@ -1004,6 +1006,8 @@ msgstr ""
 #. SysConfig
 msgid "Dynamic fields shown in the config item search screen of the agent interface."
 msgstr ""
+"Menunjukkan bidang tajuk dalam skrin bidang ITSM tambahan bagi antara muka "
+"ejen."
 
 #. SysConfig
 msgid "Enables configuration item bulk action feature for the agent frontend to work on more than one configuration item at a time."
@@ -1055,7 +1059,7 @@ msgstr "pandangan item config ITSM."
 
 #. SysConfig
 msgid "InciState"
-msgstr ""
+msgstr "insiden keadaan"
 
 #. SysConfig
 msgid "IncidentState"
@@ -1180,10 +1184,14 @@ msgstr "Parameter untuk muka surat (di mana item konfigurasi ditunjukkan)."
 #. SysConfig
 msgid "Parameters for the version string module for config item classes in the preferences view of the agent interface."
 msgstr ""
+"Parameter untuk keadaan mengatur kedudukan dalam paparan pilihan dari "
+"paparan ejen."
 
 #. SysConfig
 msgid "Parameters for the version string template toolkit module for config item classes in the preferences view of the agent interface."
 msgstr ""
+"Parameter untuk keadaan mengatur kedudukan dalam paparan pilihan dari "
+"paparan ejen."
 
 #. SysConfig
 msgid "Parameters for the version trigger for config item classes in the preferences view of the agent interface."
