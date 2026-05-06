@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-03-09 13:29+0000\n"
-"PO-Revision-Date: 2026-04-06 18:00+0000\n"
+"PO-Revision-Date: 2026-05-06 18:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Croatian <http://translate.otobo.org/projects/opm-packages/"
 "itsm-configurationmanagement/hr/>\n"
@@ -720,7 +720,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Configuration Item Limit"
-msgstr ""
+msgstr "Uvoz konfiguracije"
 
 #. SysConfig
 msgid "Configuration Item limit per page."
@@ -785,18 +785,22 @@ msgstr ""
 #. SysConfig
 msgid "Defines Required permissions to delete ITSM configuration items using the Generic Interface."
 msgstr ""
+"Potrebne dozvole za upotrebu prozora za napomene kartice u sučelju operatera."
 
 #. SysConfig
 msgid "Defines Required permissions to get ITSM configuration items using the Generic Interface."
 msgstr ""
+"Potrebne dozvole za upotrebu prozora za napomene kartice u sučelju operatera."
 
 #. SysConfig
 msgid "Defines Required permissions to search ITSM configuration items using the Generic Interface."
 msgstr ""
+"Potrebne dozvole za upotrebu prozora za napomene kartice u sučelju operatera."
 
 #. SysConfig
 msgid "Defines Required permissions to set ITSM configuration items using the Generic Interface."
 msgstr ""
+"Potrebne dozvole za upotrebu prozora za napomene kartice u sučelju operatera."
 
 #. SysConfig
 msgid "Defines an overview module to show the small view of a configuration item list."
@@ -928,7 +932,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Delete Configuration Item"
-msgstr ""
+msgstr "Uvoz konfiguracije"
 
 #. SysConfig
 msgid "DeplState"
@@ -1133,6 +1137,7 @@ msgstr "Grupa dozvola"
 #. SysConfig
 msgid "Required permissions to use the ITSM configuration item attachment action in the agent interface."
 msgstr ""
+"Potrebne dozvole za upotrebu prozora za napomene kartice u sučelju operatera."
 
 #. SysConfig
 msgid "Required permissions to use the ITSM configuration item screen in the agent interface."
@@ -1147,6 +1152,7 @@ msgstr ""
 #. SysConfig
 msgid "Required permissions to use the ITSM configuration item search screen in the customer interface."
 msgstr ""
+"Potrebne dozvole za upotrebu prozora za napomene kartice u sučelju operatera."
 
 #. SysConfig
 msgid "Required permissions to use the ITSM configuration item tree view screen in the agent interface."
