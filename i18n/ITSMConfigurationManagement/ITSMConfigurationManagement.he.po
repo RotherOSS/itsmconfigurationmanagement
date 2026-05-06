@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-03-09 13:29+0000\n"
-"PO-Revision-Date: 2026-04-06 18:00+0000\n"
+"PO-Revision-Date: 2026-05-06 18:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Hebrew <http://translate.otobo.org/projects/opm-packages/itsm-"
 "configurationmanagement/he/>\n"
@@ -720,7 +720,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Configuration Item Limit"
-msgstr ""
+msgstr "הגדרות ייבוא"
 
 #. SysConfig
 msgid "Configuration Item limit per page."
@@ -928,7 +928,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Delete Configuration Item"
-msgstr ""
+msgstr "הגדרות ייבוא"
 
 #. SysConfig
 msgid "DeplState"
