@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-03-09 13:29+0000\n"
-"PO-Revision-Date: 2026-04-06 18:00+0000\n"
+"PO-Revision-Date: 2026-05-06 18:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Galician <http://translate.otobo.org/projects/opm-packages/"
 "itsm-configurationmanagement/gl/>\n"
@@ -719,7 +719,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Configuration Item Limit"
-msgstr ""
+msgstr "Importar Configuración"
 
 #. SysConfig
 msgid "Configuration Item limit per page."
@@ -790,18 +790,22 @@ msgstr ""
 #. SysConfig
 msgid "Defines Required permissions to delete ITSM configuration items using the Generic Interface."
 msgstr ""
+"Permisos requiridos para usar a pantalla de decisión na interface de axente."
 
 #. SysConfig
 msgid "Defines Required permissions to get ITSM configuration items using the Generic Interface."
 msgstr ""
+"Permisos requiridos para usar a pantalla de decisión na interface de axente."
 
 #. SysConfig
 msgid "Defines Required permissions to search ITSM configuration items using the Generic Interface."
 msgstr ""
+"Permisos requiridos para usar a pantalla de decisión na interface de axente."
 
 #. SysConfig
 msgid "Defines Required permissions to set ITSM configuration items using the Generic Interface."
 msgstr ""
+"Permisos requiridos para usar a pantalla de decisión na interface de axente."
 
 #. SysConfig
 msgid "Defines an overview module to show the small view of a configuration item list."
@@ -830,6 +834,8 @@ msgstr ""
 #. SysConfig
 msgid "Defines the default config item attribute for config item sorting of the config item search result of the customer interface."
 msgstr ""
+"Define os atributos de ticket por defecto para a ordenación de ticket do "
+"resultado da busca de ticket da interface axente."
 
 #. SysConfig
 msgid "Defines the default config item attribute for config item sorting of the config item search result of this operation."
@@ -971,7 +977,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Delete Configuration Item"
-msgstr ""
+msgstr "Importar Configuración"
 
 #. SysConfig
 msgid "DeplState"
@@ -1006,6 +1012,8 @@ msgstr ""
 #. SysConfig
 msgid "Dynamic fields shown in the config item search screen of the agent interface."
 msgstr ""
+"Mostra campos de título na pantalla campo ITSM adicional da interface de "
+"axente."
 
 #. SysConfig
 msgid "Enables configuration item bulk action feature for the agent frontend to work on more than one configuration item at a time."
@@ -1061,7 +1069,7 @@ msgstr ""
 
 #. SysConfig
 msgid "InciState"
-msgstr ""
+msgstr "Estado do Incidente"
 
 #. SysConfig
 msgid "IncidentState"
@@ -1199,6 +1207,7 @@ msgstr ""
 #. SysConfig
 msgid "Required permissions to use the ITSM configuration item attachment action in the agent interface."
 msgstr ""
+"Permisos requiridos para usar a pantalla de decisión na interface de axente."
 
 #. SysConfig
 msgid "Required permissions to use the ITSM configuration item screen in the agent interface."
@@ -1213,6 +1222,7 @@ msgstr ""
 #. SysConfig
 msgid "Required permissions to use the ITSM configuration item search screen in the customer interface."
 msgstr ""
+"Permisos requiridos para usar a pantalla de decisión na interface de axente."
 
 #. SysConfig
 msgid "Required permissions to use the ITSM configuration item tree view screen in the agent interface."
@@ -1268,6 +1278,8 @@ msgstr ""
 #. SysConfig
 msgid "Sets the deployment state in the configuration item bulk screen of the agent interface."
 msgstr ""
+"Establece o tipo de ticket na pantalla de ticket masivo da interface de "
+"axente."
 
 #. SysConfig
 msgid "Sets the incident state in the configuration item bulk screen of the agent interface."
@@ -1278,10 +1290,14 @@ msgstr ""
 #. SysConfig
 msgid "Shows a link in the menu that allows linking a configuration item with another object in the config item zoom view of the agent interface."
 msgstr ""
+"Mostra un enlace no menu para editar unha enquisa na súa vista zoom da "
+"interface de axente."
 
 #. SysConfig
 msgid "Shows a link in the menu to access the history of a configuration item in the configuration item overview of the agent interface."
 msgstr ""
+"Mostra un enlace no menu para cambiar a decisión dun ticket na súa vista "
+"zoom da interface de axente."
 
 #. SysConfig
 msgid "Shows a link in the menu to access the history of a configuration item in the its zoom view of the agent interface."
@@ -1302,6 +1318,8 @@ msgstr ""
 #. SysConfig
 msgid "Shows a link in the menu to duplicate a configuration item in the configuration item overview of the agent interface."
 msgstr ""
+"Mostra un enlace no menu para editar unha enquisa na súa vista zoom da "
+"interface de axente."
 
 #. SysConfig
 msgid "Shows a link in the menu to duplicate a configuration item in the its zoom view of the agent interface."
@@ -1330,6 +1348,8 @@ msgstr ""
 #. SysConfig
 msgid "Shows a link in the menu to zoom into a configuration item in the configuration item overview of the agent interface."
 msgstr ""
+"Mostra un enlace no menu para editar unha enquisa na súa vista zoom da "
+"interface de axente."
 
 #. SysConfig
 msgid "Shows the config item history (reverse ordered) in the agent interface."
