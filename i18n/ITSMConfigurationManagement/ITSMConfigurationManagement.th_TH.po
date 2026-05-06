@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-03-09 13:29+0000\n"
-"PO-Revision-Date: 2026-05-06 18:00+0000\n"
+"PO-Revision-Date: 2026-05-06 20:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Thai <http://translate.otobo.org/projects/opm-packages/itsm-"
 "configurationmanagement/th/>\n"
@@ -990,7 +990,7 @@ msgstr "แสดงหัวข้อฟิลด์ในหน้าจอฟ
 
 #. SysConfig
 msgid "Dynamic fields shown in the config item overview screen of the customer interface."
-msgstr ""
+msgstr "แสดงหัวข้อฟิลด์ในหน้าจอฟิลด์เพิ่มเติมของ ITSMในอินเตอร์เฟซของเอเย่นต์"
 
 #. SysConfig
 msgid "Dynamic fields shown in the config item search screen of the agent interface."
