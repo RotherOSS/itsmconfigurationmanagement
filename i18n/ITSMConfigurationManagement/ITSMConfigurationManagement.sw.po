@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-03-09 13:29+0000\n"
-"PO-Revision-Date: 2026-05-06 18:00+0000\n"
+"PO-Revision-Date: 2026-05-06 20:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Swahili <http://translate.otobo.org/projects/opm-packages/"
 "itsm-configurationmanagement/sw/>\n"
@@ -1022,6 +1022,8 @@ msgstr ""
 #. SysConfig
 msgid "Dynamic fields shown in the config item overview screen of the customer interface."
 msgstr ""
+"Inyesha uga za kichwa cha habari katika skrini ya uga wa ITSM ulioongezwa wa "
+"kiolesura cha wakala."
 
 #. SysConfig
 msgid "Dynamic fields shown in the config item search screen of the agent interface."
