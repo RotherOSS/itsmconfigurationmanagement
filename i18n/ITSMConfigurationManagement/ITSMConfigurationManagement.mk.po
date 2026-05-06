@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-03-09 13:29+0000\n"
-"PO-Revision-Date: 2026-04-06 18:00+0000\n"
+"PO-Revision-Date: 2026-05-06 18:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Macedonian <http://translate.otobo.org/projects/opm-packages/"
 "itsm-configurationmanagement/mk/>\n"
@@ -1017,7 +1017,7 @@ msgstr ""
 
 #. SysConfig
 msgid "InciState"
-msgstr ""
+msgstr "Состојба на Инцидент"
 
 #. SysConfig
 msgid "IncidentState"
@@ -1124,10 +1124,14 @@ msgstr "Параметри за страниви(во кои конфигура�
 #. SysConfig
 msgid "Parameters for the version string module for config item classes in the preferences view of the agent interface."
 msgstr ""
+"Параметри за распоред состојбите во прегледот со опциите  на агент "
+"интерфејсот."
 
 #. SysConfig
 msgid "Parameters for the version string template toolkit module for config item classes in the preferences view of the agent interface."
 msgstr ""
+"Параметри за распоред состојбите во прегледот со опциите  на агент "
+"интерфејсот."
 
 #. SysConfig
 msgid "Parameters for the version trigger for config item classes in the preferences view of the agent interface."
