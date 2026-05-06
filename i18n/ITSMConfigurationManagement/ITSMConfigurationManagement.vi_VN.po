@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-03-09 13:29+0000\n"
-"PO-Revision-Date: 2026-05-06 18:00+0000\n"
+"PO-Revision-Date: 2026-05-06 20:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Vietnamese <http://translate.otobo.org/projects/opm-packages/"
 "itsm-configurationmanagement/vi/>\n"
@@ -119,7 +119,7 @@ msgstr ""
 
 #. Template: AgentITSMConfigItemEdit
 msgid "Version number of this config item"
-msgstr ""
+msgstr "Trạng thái triển khai của đối tượng này"
 
 #. Template: AgentITSMConfigItemEdit
 msgid "Version Number is already in use by the ConfigItems with the following Number(s): %s"
