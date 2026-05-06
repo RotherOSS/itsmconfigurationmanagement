@@ -1156,7 +1156,7 @@ sub DefinitionSetOutOfSync {
         }
 
         for my $FieldID ( $Param{Classes}{$ClassID}->@* ) {
-            if ( !grep { $_ == $FieldID } $Current{$ClassID}->@* ) {
+            if ( none { $_ == $FieldID } $Current{$ClassID}->@* ) {
                 push @{ $New{$ClassID} }, $FieldID;
             }
         }
@@ -1813,6 +1813,45 @@ sub ClassImport {
                 Message  => "Could not add dynamic field $FieldConfig->{Name}.",
             );
         }
+
+        my $IsScriptField = $Kernel::OM->Get('Kernel::System::DynamicField::Backend')->HasBehavior(
+            DynamicFieldConfig => {
+                $FieldConfig->%*,
+                ID => $FieldID,
+            },
+            Behavior => 'IsScriptField',
+        );
+
+        # set events for script fields
+        if ( $IsScriptField && IsArrayRefWithData( $FieldConfig->{Config}{UpdateEvents} ) ) {
+            my $Config = $FieldConfig->{FieldType} ? $Kernel::OM->Get('Kernel::Config')->Get('DynamicFields::Driver')->{ $FieldConfig->{FieldType} } : {};
+
+            # Check module validity
+            if ( !$Config->{Module} || !$Kernel::OM->Get('Kernel::System::Main')->Require( $Config->{Module} ) ) {
+                next DYNAMICFIELD;
+            }
+
+            my $DriverObject = $Kernel::OM->Get( $Config->{Module} );
+
+            # validate update events against possible events
+            my $PossibleConditions = $DriverObject->GetPossibleExecutionConditions(
+                ObjectType => $FieldConfig->{ObjectType},
+                FieldID    => $FieldID,
+            );
+
+            my @FilteredUpdateEvents;
+            if ( IsArrayRefWithData( $PossibleConditions->{PossibleUpdateEvents} ) ) {
+                my %PossibleUpdateEvents = map { $_ => $_ } $PossibleConditions->{PossibleUpdateEvents}->@*;
+                @FilteredUpdateEvents = grep { $PossibleUpdateEvents{$_} } $FieldConfig->{Config}{UpdateEvents}->@*;
+            }
+
+            if (@FilteredUpdateEvents) {
+                $DriverObject->SetUpdateEvents(
+                    FieldID => $FieldID,
+                    Events  => \@FilteredUpdateEvents,
+                );
+            }
+        }
     }
 
     # trigger dynamic field events
@@ -1931,12 +1970,12 @@ sub ClassExport {
                 }
 
                 # single-value attributes
-                elsif ( grep { $_ eq $PreferenceKey } qw(NameModule NumberModule VersionStringModule) ) {
+                elsif ( any { $_ eq $PreferenceKey } qw(NameModule NumberModule VersionStringModule) ) {
                     $ExportItem{Class}{$PreferenceKey} = $ClassPreferences{$PreferenceKey}[0];
                 }
 
                 # multi-value attributes
-                elsif ( grep { $_ eq $PreferenceKey } qw(Categories VersionTrigger) ) {
+                elsif ( any { $_ eq $PreferenceKey } qw(Categories VersionTrigger) ) {
                     $ExportItem{Class}{$PreferenceKey} = $ClassPreferences{$PreferenceKey};
                 }
             }
@@ -2365,7 +2404,7 @@ sub _DynamicFieldConfigTransform {
 
     my $DynamicFieldConfig = $Param{DynamicFieldConfig};
 
-    if ( grep { $Param{DynamicFieldConfig}{FieldType} eq $_ } qw(Agent ConfigItem ConfigItemVersion CustomerCompany CustomerUser FAQ Ticket) ) {
+    if ( any { $Param{DynamicFieldConfig}{FieldType} eq $_ } qw(Agent ConfigItem ConfigItemVersion CustomerCompany CustomerUser FAQ Ticket) ) {
 
         # needed transformation: Name -> ID
         if ( $Param{Action} eq 'Import' ) {
