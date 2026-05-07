@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -27,13 +27,10 @@ use Test2::V0;
 # OTOBO modules
 use Kernel::System::UnitTest::RegisterOM;    # Set up $Kernel::OM
 
-################################
 # test Ticket DF Reference
 # to static ConfigItemVersion
-################################
 
 # boilerplate
-
 $Kernel::OM->ObjectParamAdd(
     'Kernel::System::UnitTest::Helper' => {
         RestoreDatabase => 1,
@@ -56,21 +53,18 @@ my $RandomID = $Helper->GetRandomID;
 _LoadReadyToImportClasses();
 
 # global OM objects
-my $DBObject           = $Kernel::OM->Get('Kernel::System::DB');
-my $ConfigItemObject   = $Kernel::OM->Get('Kernel::System::ITSMConfigItem');
-my $TicketObject       = $Kernel::OM->Get('Kernel::System::Ticket');
-my $DynamicFieldObject = $Kernel::OM->Get('Kernel::System::DynamicField');
-my $BackendObject      = $Kernel::OM->Get('Kernel::System::DynamicField::Backend');
-my $LayoutObject       = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
-my $LinkObject         = $Kernel::OM->Get('Kernel::System::LinkObject');
+my $DBObject         = $Kernel::OM->Get('Kernel::System::DB');
+my $ConfigItemObject = $Kernel::OM->Get('Kernel::System::ITSMConfigItem');
+my $TicketObject     = $Kernel::OM->Get('Kernel::System::Ticket');
+my $BackendObject    = $Kernel::OM->Get('Kernel::System::DynamicField::Backend');
+my $LayoutObject     = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
+my $LinkObject       = $Kernel::OM->Get('Kernel::System::LinkObject');
 
 # catch state before test run
 my $InitialConfigItemsCount     = _FetchConfigItemCount();
 my $InitialConfigItemLinksCount = _FetchConfigItemLinksCount();
 
-###############################
 # prepare environment
-###############################
 
 # fetch config state ids
 my $IncidientStateOperationalID = _GeneralCatalogID(
@@ -103,10 +97,7 @@ my %PossibleTypesList = $LinkObject->PossibleTypesList(
 
 my @LinkTypes = keys %PossibleTypesList;
 
-###############################
 # iterate over avail LinkTypes
-###############################
-
 for my $LinkType (@LinkTypes) {
 
     subtest "Test LinkType=$LinkType" => sub {
@@ -118,9 +109,7 @@ for my $LinkType (@LinkTypes) {
             'DF created'
         );
 
-        ###############################
         # create test config items
-        ###############################
 
         # create TestLocation1
         my $TestLocation1ID = $ConfigItemObject->ConfigItemAdd(
@@ -160,14 +149,11 @@ for my $LinkType (@LinkTypes) {
                 LinkType           => $LinkType,
                 DynamicFieldConfig => $DynamicFieldConfig,
             ),
-            "WellblechsHausen$LinkType$RandomID",
+            "WellblechsHausen$LinkType$RandomID: 1",
             "Ticket DF Location Name is: WellblechsHausen$LinkType$RandomID",
         );
 
-        ###############################
         # change TestLocation Name
-        ###############################
-
         my $CountryDefinition = $ConfigItemObject->DefinitionGet(
             ClassID => $CountryClassID,
         );
@@ -183,7 +169,6 @@ for my $LinkType (@LinkTypes) {
         );
 
         # assert there are now two versions
-
         _AssertLocationVersion(
             Location => $TestLocation1ID,
             Versions => [
@@ -199,14 +184,11 @@ for my $LinkType (@LinkTypes) {
                 LinkType           => $LinkType,
                 DynamicFieldConfig => $DynamicFieldConfig,
             ),
-            "WellblechsHausen$LinkType$RandomID",
+            "WellblechsHausen$LinkType$RandomID: 1",
             "DF Title is WellblechsHausen$LinkType$RandomID"
         );
 
-        ###############################
         # cleanup
-        ###############################
-
         subtest "Cleanup $LinkType" => sub {
             $ConfigItemObject->EventHandlerTransaction();
 
@@ -239,13 +221,10 @@ for my $LinkType (@LinkTypes) {
 
 done_testing;
 
-###############################
 # procedural helper methods
-###############################
 
 # Prepare the General Catalog classes by reloading
 # (and updating) the whole ready2load bundle
-
 sub _LoadReadyToImportClasses {
 
     my $Home = $Kernel::OM->Get('Kernel::Config')->Get('Home');
@@ -312,7 +291,7 @@ sub _GetVersionIDFromVersionString {
     my $Versions      = $Param{Versions};
     my $VersionString = $Param{VersionString};
 
-    for my $Version (@$Versions) {
+    for my $Version ( $Versions->@* ) {
 
         if ( $Version->{VersionString} eq $VersionString ) {
             return $Version->{VersionID};
@@ -365,10 +344,10 @@ sub _AssertLocationVersion {
         ConfigItemID => $LocationID,
     );
 
-    my $VersionCount = @$Versions;
+    my $VersionCount = $Versions->@*;
 
     is(
-        scalar @$VersionListRef,
+        scalar $VersionListRef->@*,
         $VersionCount,
         "Count of Versions is $VersionCount for Location ID $LocationID"
     );
@@ -406,12 +385,12 @@ sub _CreateTicketDFConfigItem {
 
     my $ConfigHashRef = {
         ClassIDs              => ["$CountryClassID"],
-        DisplayType           => 'ConfigItemName',
+        DisplayType           => 'ConfigItemNameVersionString',
         EditFieldMode         => 'Dropdown',
         ImportSearchAttribute => '',
         LinkDirection         => 'ReferencingIsSource',
         LinkReferencingType   => 'Static',
-        LinkType              => $Param{LinkType},          # 'RelevantTo',
+        LinkType              => $Param{LinkType},                # 'RelevantTo',
         MultiValue            => '0',
         Multiselect           => 0,
         PossibleNone          => '1',
