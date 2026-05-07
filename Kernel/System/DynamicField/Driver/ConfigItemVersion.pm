@@ -22,7 +22,7 @@ use warnings;
 use namespace::autoclean;
 use utf8;
 
-use parent qw(Kernel::System::DynamicField::Driver::BaseReference);
+use parent qw(Kernel::System::DynamicField::Driver::ConfigItem);
 
 # core modules
 use List::Util qw(any);
@@ -332,74 +332,17 @@ sub EditFieldRender {
 sub GetFieldTypeSettings {
     my ( $Self, %Param ) = @_;
 
-    my $ReferencingObjectType = $Param{ObjectType};
-
-    # First fetch the generic settings.
+    # First fetch the settings from ConfigItem driver.
     my @FieldTypeSettings = $Self->SUPER::GetFieldTypeSettings(
         %Param,
     );
 
-    # Add the selection of the config item class.
-    {
-        my $ClassID2Name = $Kernel::OM->Get('Kernel::System::GeneralCatalog')->ItemList(
-            Class => 'ITSM::ConfigItem::Class',
-        );
-
-        push @FieldTypeSettings,
-            {
-                ConfigParamName => 'ClassIDs',
-                Label           => Translatable('Class restrictions for the config item'),
-                Explanation     => Translatable('Select one or more classes to restrict selectable config items'),
-                InputType       => 'Selection',
-                SelectionData   => $ClassID2Name,
-                PossibleNone    => 0,                                                                                # the class is required
-                Multiple        => 1,
-            };
-    }
-
-    # Add the selection of the config item deployment state.
-    {
-        my $DeploymentStatesList = $Kernel::OM->Get('Kernel::System::GeneralCatalog')->ItemList(
-            Class => 'ITSM::ConfigItem::DeploymentState',
-        );
-        push @FieldTypeSettings,
-            {
-                ConfigParamName => 'DeplStateIDs',
-                Label           => Translatable('Deployment state restrictions for the config item'),
-                Explanation     => Translatable('Select one or more deployment states to restrict selectable config items'),
-                InputType       => 'Selection',
-                SelectionData   => $DeploymentStatesList,
-                PossibleNone    => 1,
-                Multiple        => 1,
-            };
-    }
-
-    # Select the link referencing type
-    if ( $ReferencingObjectType =~ m/^ITSMConfigItem/ ) {
-        my @SelectionData = (
-            {
-                Key   => 'Dynamic',
-                Value => Translatable('Dynamic (ConfigItem)'),
-            },
-            {
-                Key   => 'Static',
-                Value => Translatable('Static (Version)'),
-            },
-        );
-
-        push @FieldTypeSettings,
-            {
-                ConfigParamName => 'LinkReferencingType',
-                Label           => Translatable('Link Referencing Type'),
-                Explanation     => Translatable(
-                'Whether this link applies to the ConfigItem or the static version of the referencing object. Current Incident State calculation only is performed on dynamic links.'
-                ),
-                InputType     => 'Selection',
-                SelectionData => \@SelectionData,
-                DefaultKey    => 'Dynamic',
-                PossibleNone  => 0,
-            };
-    }
+    # clean up settings which we will replace here
+    @FieldTypeSettings = grep {
+        $_->{ConfigParamName} ne 'SearchAttribute'
+            && $_->{ConfigParamName} ne 'ImportSearchAttribute'
+            && $_->{ConfigParamName} ne 'DisplayType'
+    } @FieldTypeSettings;
 
     # Support configurable search key
     push @FieldTypeSettings,
@@ -472,12 +415,6 @@ sub GetFieldTypeSettings {
             },
             PossibleNone => 1,
             Multiple     => 0,
-        };
-
-    # Support reference filters
-    push @FieldTypeSettings,
-        {
-            ConfigParamName => 'ReferenceFilterList',
         };
 
     return @FieldTypeSettings;
