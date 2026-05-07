@@ -523,7 +523,17 @@ sub SearchObjects {
         # include configured search param if present
         my $SearchAttribute = $DFDetails->{ImportSearchAttribute} || 'Name';
 
-        $SearchParams{$SearchAttribute} = "$Param{Term}";
+        # dynamic field attribute
+        if ( $SearchAttribute =~ m{^Dyn}i ) {
+            $SearchParams{$SearchAttribute} = {
+                Equals => $Param{Term},
+            };
+        }
+
+        # name or number
+        else {
+            $SearchParams{$SearchAttribute} = "$Param{Term}";
+        }
     }
     else {
 
