@@ -297,7 +297,7 @@ sub Data {
         '';
     $Self->{Translation}->{'ConfigItems with the following deployment states will not be stored on the Elasticsearch server. To apply this to existing CIs, the CI migration has to be run via console, after changing this option.'} =
         '';
-    $Self->{Translation}->{'Configuration Item Limit'} = '';
+    $Self->{Translation}->{'Configuration Item Limit'} = 'Uvoz konfiguracije';
     $Self->{Translation}->{'Configuration Item limit per page.'} = '';
     $Self->{Translation}->{'Configuration Management Database.'} = '';
     $Self->{Translation}->{'Configuration item bulk module.'} = '';
@@ -323,13 +323,13 @@ sub Data {
     $Self->{Translation}->{'Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
         '';
     $Self->{Translation}->{'Defines Required permissions to delete ITSM configuration items using the Generic Interface.'} =
-        '';
+        'Potrebne dozvole za upotrebu prozora za napomene kartice u sučelju operatera.';
     $Self->{Translation}->{'Defines Required permissions to get ITSM configuration items using the Generic Interface.'} =
-        '';
+        'Potrebne dozvole za upotrebu prozora za napomene kartice u sučelju operatera.';
     $Self->{Translation}->{'Defines Required permissions to search ITSM configuration items using the Generic Interface.'} =
-        '';
+        'Potrebne dozvole za upotrebu prozora za napomene kartice u sučelju operatera.';
     $Self->{Translation}->{'Defines Required permissions to set ITSM configuration items using the Generic Interface.'} =
-        '';
+        'Potrebne dozvole za upotrebu prozora za napomene kartice u sučelju operatera.';
     $Self->{Translation}->{'Defines an overview module to show the small view of a configuration item list.'} =
         '';
     $Self->{Translation}->{'Defines if the link type labels must be shown in the node connections.'} =
@@ -392,7 +392,7 @@ sub Data {
     $Self->{Translation}->{'Defines which type of ticket can affect the status of a linked CI.'} =
         '';
     $Self->{Translation}->{'Definition Update'} = '';
-    $Self->{Translation}->{'Delete Configuration Item'} = '';
+    $Self->{Translation}->{'Delete Configuration Item'} = 'Uvoz konfiguracije';
     $Self->{Translation}->{'DeplState'} = '';
     $Self->{Translation}->{'Deployment State Color'} = '';
     $Self->{Translation}->{'DeploymentState'} = '';
@@ -479,13 +479,13 @@ sub Data {
         '';
     $Self->{Translation}->{'Permission Group'} = 'Grupa dozvola';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item attachment action in the agent interface.'} =
-        '';
+        'Potrebne dozvole za upotrebu prozora za napomene kartice u sučelju operatera.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
         'Potrebne dozvole za upotrebu prozora za napomene kartice u sučelju operatera.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the agent interface.'} =
         'Potrebne dozvole za upotrebu prozora za napomene kartice u sučelju operatera.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the customer interface.'} =
-        '';
+        'Potrebne dozvole za upotrebu prozora za napomene kartice u sučelju operatera.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item tree view screen in the agent interface.'} =
         'Potrebne dozvole za upotrebu prozora slobodnog teksta kartice u sučelju operatera.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item zoom screen in the agent interface.'} =

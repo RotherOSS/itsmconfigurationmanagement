@@ -160,7 +160,7 @@ sub Data {
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
     $Self->{Translation}->{'No ConfigItemID or VersionID is given!'} = '';
-    $Self->{Translation}->{'Can\'t show config item, no access rights given!'} = '';
+    $Self->{Translation}->{'Can\'t show config item, no access rights given!'} = 'Tidak boleh menunjukkan sejarah, sebagai tiada ItemID yang diberikan!';
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = '';
     $Self->{Translation}->{'ConfigItem'} = 'ConfigItem';
     $Self->{Translation}->{'printed by %s at %s'} = '';
@@ -341,7 +341,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the agent interface.'} =
         'Mentakrifkan sifat tiket asal untuk aturan tiket dalam hasil pencarian tiket dari paparan ejen.';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the customer interface.'} =
-        '';
+        'Mentakrifkan sifat tiket asal untuk aturan tiket dalam hasil pencarian tiket dari paparan ejen.';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of this operation.'} =
         'Mentakrifkan sifat tiket default untuk pengkelasan tiket dalam hasil carian tiket operasi ini.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the agent interface. Up: oldest on top. Down: latest on top.'} =
@@ -403,9 +403,9 @@ Search_DynamicField_XTimeSlotStartMonth=01; Search_DynamicField_XTimeSlotStartDa
     $Self->{Translation}->{'Dynamic fields shown in the additional ITSM field screen of the agent interface.'} =
         'Menunjukkan bidang tajuk dalam skrin bidang ITSM tambahan bagi antara muka ejen.';
     $Self->{Translation}->{'Dynamic fields shown in the config item overview screen of the customer interface.'} =
-        '';
+        'Menunjukkan bidang tajuk dalam skrin bidang ITSM tambahan bagi antara muka ejen.';
     $Self->{Translation}->{'Dynamic fields shown in the config item search screen of the agent interface.'} =
-        '';
+        'Menunjukkan bidang tajuk dalam skrin bidang ITSM tambahan bagi antara muka ejen.';
     $Self->{Translation}->{'Enables configuration item bulk action feature for the agent frontend to work on more than one configuration item at a time.'} =
         'Membolehkan ciri tindakan pukal item konfigurasi untuk frontend ejen untuk bekerja pada lebih daripada satu item konfigurasi pada satu masa.';
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
@@ -428,7 +428,7 @@ Search_DynamicField_XTimeSlotStartMonth=01; Search_DynamicField_XTimeSlotStartDa
         'Pendaftaran modul GenericInterface untuk lapisan pencetus.';
     $Self->{Translation}->{'ITSM ConfigItem'} = 'ConfigItem';
     $Self->{Translation}->{'ITSM config item overview.'} = 'pandangan item config ITSM.';
-    $Self->{Translation}->{'InciState'} = '';
+    $Self->{Translation}->{'InciState'} = 'insiden keadaan';
     $Self->{Translation}->{'IncidentState'} = 'insiden keadaan';
     $Self->{Translation}->{'Includes deployment states in the config item search of the customer interface.'} =
         '';
@@ -471,9 +471,9 @@ Search_DynamicField_XTimeSlotStartMonth=01; Search_DynamicField_XTimeSlotStartDa
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         'Parameter untuk muka surat (di mana item konfigurasi ditunjukkan).';
     $Self->{Translation}->{'Parameters for the version string module for config item classes in the preferences view of the agent interface.'} =
-        '';
+        'Parameter untuk keadaan mengatur kedudukan dalam paparan pilihan dari paparan ejen.';
     $Self->{Translation}->{'Parameters for the version string template toolkit module for config item classes in the preferences view of the agent interface.'} =
-        '';
+        'Parameter untuk keadaan mengatur kedudukan dalam paparan pilihan dari paparan ejen.';
     $Self->{Translation}->{'Parameters for the version trigger for config item classes in the preferences view of the agent interface.'} =
         'Parameter untuk keadaan mengatur kedudukan dalam paparan pilihan dari paparan ejen.';
     $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =

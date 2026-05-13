@@ -58,11 +58,11 @@ sub Data {
     $Self->{Translation}->{'Do you really want to delete this config item?'} = 'Bạn có thật sự muốn xoá đáp án?';
 
     # Template: AgentITSMConfigItemEdit
-    $Self->{Translation}->{'The name of this config item'} = '';
+    $Self->{Translation}->{'The name of this config item'} = 'Trạng thái triển khai của đối tượng này';
     $Self->{Translation}->{'Name is already in use by the ConfigItems with the following Number(s): %s'} =
         '';
     $Self->{Translation}->{'Version Number'} = '';
-    $Self->{Translation}->{'Version number of this config item'} = '';
+    $Self->{Translation}->{'Version number of this config item'} = 'Trạng thái triển khai của đối tượng này';
     $Self->{Translation}->{'Version Number is already in use by the ConfigItems with the following Number(s): %s'} =
         '';
     $Self->{Translation}->{'Deployment State'} = '';
@@ -297,7 +297,7 @@ sub Data {
         '';
     $Self->{Translation}->{'ConfigItems with the following deployment states will not be stored on the Elasticsearch server. To apply this to existing CIs, the CI migration has to be run via console, after changing this option.'} =
         '';
-    $Self->{Translation}->{'Configuration Item Limit'} = '';
+    $Self->{Translation}->{'Configuration Item Limit'} = 'Cấu h';
     $Self->{Translation}->{'Configuration Item limit per page.'} = '';
     $Self->{Translation}->{'Configuration Management Database.'} = '';
     $Self->{Translation}->{'Configuration item bulk module.'} = '';
@@ -392,7 +392,7 @@ sub Data {
     $Self->{Translation}->{'Defines which type of ticket can affect the status of a linked CI.'} =
         '';
     $Self->{Translation}->{'Definition Update'} = '';
-    $Self->{Translation}->{'Delete Configuration Item'} = '';
+    $Self->{Translation}->{'Delete Configuration Item'} = 'Cấu h';
     $Self->{Translation}->{'DeplState'} = '';
     $Self->{Translation}->{'Deployment State Color'} = '';
     $Self->{Translation}->{'DeploymentState'} = '';
@@ -427,7 +427,7 @@ sub Data {
         '';
     $Self->{Translation}->{'ITSM ConfigItem'} = '';
     $Self->{Translation}->{'ITSM config item overview.'} = '';
-    $Self->{Translation}->{'InciState'} = '';
+    $Self->{Translation}->{'InciState'} = 'Trạng thái sự cố';
     $Self->{Translation}->{'IncidentState'} = 'Trạng thái sự cố';
     $Self->{Translation}->{'Includes deployment states in the config item search of the customer interface.'} =
         '';
@@ -509,17 +509,17 @@ sub Data {
     $Self->{Translation}->{'Sets the incident state in the configuration item bulk screen of the agent interface.'} =
         '';
     $Self->{Translation}->{'Shows a link in the menu that allows linking a configuration item with another object in the config item zoom view of the agent interface.'} =
-        '';
+        'Hiển thị liên kết trong trình đơn để sửa khảo sát trong khi xem chi tiết khảo sát ở giao diện điều hành viên.';
     $Self->{Translation}->{'Shows a link in the menu to access the history of a configuration item in the configuration item overview of the agent interface.'} =
-        '';
+        'Hiển thị liên kết trong trình đơn để sửa khảo sát trong khi xem chi tiết khảo sát ở giao diện điều hành viên.';
     $Self->{Translation}->{'Shows a link in the menu to access the history of a configuration item in the its zoom view of the agent interface.'} =
-        '';
+        'Hiển thị liên kết trong trình đơn để sửa khảo sát trong khi xem chi tiết khảo sát ở giao diện điều hành viên.';
     $Self->{Translation}->{'Shows a link in the menu to delete a configuration item in its zoom view of the agent interface.'} =
         'Hiển thị liên kết trong trình đơn để sửa khảo sát trong khi xem chi tiết khảo sát ở giao diện điều hành viên.';
     $Self->{Translation}->{'Shows a link in the menu to display the configuration item links as a Tree View.'} =
         '';
     $Self->{Translation}->{'Shows a link in the menu to duplicate a configuration item in the configuration item overview of the agent interface.'} =
-        '';
+        'Hiển thị liên kết trong trình đơn để sửa khảo sát trong khi xem chi tiết khảo sát ở giao diện điều hành viên.';
     $Self->{Translation}->{'Shows a link in the menu to duplicate a configuration item in the its zoom view of the agent interface.'} =
         'Hiển thị liên kết trong trình đơn để sửa khảo sát trong khi xem chi tiết khảo sát ở giao diện điều hành viên.';
     $Self->{Translation}->{'Shows a link in the menu to edit a configuration item in the its zoom view of the agent interface.'} =
@@ -529,7 +529,7 @@ sub Data {
     $Self->{Translation}->{'Shows a link in the menu to print a configuration item in the its zoom view of the agent interface.'} =
         'Hiển thị liên kết trong trình đơn để sửa khảo sát trong khi xem chi tiết khảo sát ở giao diện điều hành viên.';
     $Self->{Translation}->{'Shows a link in the menu to zoom into a configuration item in the configuration item overview of the agent interface.'} =
-        '';
+        'Hiển thị liên kết trong trình đơn để sửa khảo sát trong khi xem chi tiết khảo sát ở giao diện điều hành viên.';
     $Self->{Translation}->{'Shows the config item history (reverse ordered) in the agent interface.'} =
         '';
     $Self->{Translation}->{'The default category which is shown, if none is selected.'} = '';

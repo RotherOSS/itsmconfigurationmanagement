@@ -38,7 +38,7 @@ sub Data {
     $Self->{Translation}->{'Update existing entities'} = '';
     $Self->{Translation}->{'Import Ready2Adopt class bundles'} = '';
     $Self->{Translation}->{'Config Item Class'} = 'Konfiguracione stavke';
-    $Self->{Translation}->{'Config Item Role'} = '';
+    $Self->{Translation}->{'Config Item Role'} = 'Konfiguracione stavke';
 
     # Template: AgentITSMConfigItemAdd
     $Self->{Translation}->{'Config Item'} = 'Konfiguracione stavke';
@@ -48,8 +48,8 @@ sub Data {
 
     # Template: AgentITSMConfigItemBulk
     $Self->{Translation}->{'ITSM ConfigItem Bulk Action'} = '';
-    $Self->{Translation}->{'Deployment state'} = '';
-    $Self->{Translation}->{'Incident state'} = '';
+    $Self->{Translation}->{'Deployment state'} = 'Boja statusa raspoređivanja';
+    $Self->{Translation}->{'Incident state'} = 'Tip stanja incidenta';
     $Self->{Translation}->{'Link to another'} = '';
     $Self->{Translation}->{'Invalid Configuration Item number!'} = '';
     $Self->{Translation}->{'The number of another Configuration Item to link with.'} = '';
@@ -94,8 +94,8 @@ sub Data {
     # Template: AgentITSMConfigItemZoom
     $Self->{Translation}->{'Configuration Item'} = 'Ograničenje konfiguracione stavke';
     $Self->{Translation}->{'Configuration Item Information'} = '';
-    $Self->{Translation}->{'Current Deployment State'} = '';
-    $Self->{Translation}->{'Current Incident State'} = '';
+    $Self->{Translation}->{'Current Deployment State'} = 'Boja statusa raspoređivanja';
+    $Self->{Translation}->{'Current Incident State'} = 'Tip stanja incidenta';
     $Self->{Translation}->{'Last changed'} = 'Zadnji put promenjeno';
     $Self->{Translation}->{'Last changed by'} = 'Promenio';
 
@@ -160,7 +160,7 @@ sub Data {
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
     $Self->{Translation}->{'No ConfigItemID or VersionID is given!'} = '';
-    $Self->{Translation}->{'Can\'t show config item, no access rights given!'} = '';
+    $Self->{Translation}->{'Can\'t show config item, no access rights given!'} = 'Ne može se prikazati istorijat, nije dat TicketID!';
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = 'Promena "%s" nije nađena u bazi podataka!';
     $Self->{Translation}->{'ConfigItem'} = 'Konfiguracione stavke';
     $Self->{Translation}->{'printed by %s at %s'} = '';
@@ -191,7 +191,7 @@ sub Data {
 
     # Perl Module: Kernel/Output/HTML/Dashboard/ITSMConfigItemGeneric.pm
     $Self->{Translation}->{'Shown config items'} = '';
-    $Self->{Translation}->{'Deployment State Type'} = '';
+    $Self->{Translation}->{'Deployment State Type'} = 'Boja statusa raspoređivanja';
     $Self->{Translation}->{'Current Incident State Type'} = 'Tip stanja incidenta';
 
     # Perl Module: Kernel/Output/HTML/ITSMConfigItem/LayoutDate.pm
@@ -341,7 +341,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the agent interface.'} =
         'Definiše podrazumevani atribut tiketa za sortiranje tiketa u rezultatu pretrage tiketa interfejsa operatera.';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the customer interface.'} =
-        '';
+        'Definiše podrazumevani atribut tiketa za sortiranje tiketa u rezultatu pretrage tiketa interfejsa operatera.';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of this operation.'} =
         'Definiše podrazumevani atribut tiketa za sortiranje tiketa u rezultatu pretrage tiketa u ovoj operaciji.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the agent interface. Up: oldest on top. Down: latest on top.'} =
@@ -425,9 +425,9 @@ sub Data {
         'Registracija modula generičkog interfejsa za sloj pozivaoca.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemUpdate invoker layer.'} =
         'Registracija modula generičkog interfejsa za sloj pozivaoca.';
-    $Self->{Translation}->{'ITSM ConfigItem'} = '';
+    $Self->{Translation}->{'ITSM ConfigItem'} = 'Konfiguracione stavke';
     $Self->{Translation}->{'ITSM config item overview.'} = 'Pregled ITSM konfiguracione stavke.';
-    $Self->{Translation}->{'InciState'} = '';
+    $Self->{Translation}->{'InciState'} = 'Tip stanja incidenta';
     $Self->{Translation}->{'IncidentState'} = 'Tip stanja incidenta';
     $Self->{Translation}->{'Includes deployment states in the config item search of the customer interface.'} =
         '';
@@ -470,9 +470,9 @@ sub Data {
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         'Parametri za stranice (na kojima su konfiguracione stavke prikazane).';
     $Self->{Translation}->{'Parameters for the version string module for config item classes in the preferences view of the agent interface.'} =
-        '';
+        'Parametri za statuse primene na prikazu postavki u interfejsu operatera.';
     $Self->{Translation}->{'Parameters for the version string template toolkit module for config item classes in the preferences view of the agent interface.'} =
-        '';
+        'Parametri za statuse primene na prikazu postavki u interfejsu operatera.';
     $Self->{Translation}->{'Parameters for the version trigger for config item classes in the preferences view of the agent interface.'} =
         'Parametri za statuse primene na prikazu postavki u interfejsu operatera.';
     $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =

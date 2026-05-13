@@ -297,7 +297,7 @@ sub Data {
         '';
     $Self->{Translation}->{'ConfigItems with the following deployment states will not be stored on the Elasticsearch server. To apply this to existing CIs, the CI migration has to be run via console, after changing this option.'} =
         '';
-    $Self->{Translation}->{'Configuration Item Limit'} = '';
+    $Self->{Translation}->{'Configuration Item Limit'} = 'Importar Configuración';
     $Self->{Translation}->{'Configuration Item limit per page.'} = '';
     $Self->{Translation}->{'Configuration Management Database.'} = '';
     $Self->{Translation}->{'Configuration item bulk module.'} = '';
@@ -323,13 +323,13 @@ sub Data {
     $Self->{Translation}->{'Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
         '';
     $Self->{Translation}->{'Defines Required permissions to delete ITSM configuration items using the Generic Interface.'} =
-        '';
+        'Permisos requiridos para usar a pantalla de decisión na interface de axente.';
     $Self->{Translation}->{'Defines Required permissions to get ITSM configuration items using the Generic Interface.'} =
-        '';
+        'Permisos requiridos para usar a pantalla de decisión na interface de axente.';
     $Self->{Translation}->{'Defines Required permissions to search ITSM configuration items using the Generic Interface.'} =
-        '';
+        'Permisos requiridos para usar a pantalla de decisión na interface de axente.';
     $Self->{Translation}->{'Defines Required permissions to set ITSM configuration items using the Generic Interface.'} =
-        '';
+        'Permisos requiridos para usar a pantalla de decisión na interface de axente.';
     $Self->{Translation}->{'Defines an overview module to show the small view of a configuration item list.'} =
         'Define un módulo de vista xeral para mostrar a vista pequena dunha lista de enquisas.';
     $Self->{Translation}->{'Defines if the link type labels must be shown in the node connections.'} =
@@ -341,7 +341,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the agent interface.'} =
         'Define os atributos de ticket por defecto para a ordenación de ticket do resultado da busca de ticket da interface axente.';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the customer interface.'} =
-        '';
+        'Define os atributos de ticket por defecto para a ordenación de ticket do resultado da busca de ticket da interface axente.';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of this operation.'} =
         'Define os atributos de ticket por defecto para a ordenación de ticket do resultado da busca de ticket desta operación.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the agent interface. Up: oldest on top. Down: latest on top.'} =
@@ -392,7 +392,7 @@ sub Data {
     $Self->{Translation}->{'Defines which type of ticket can affect the status of a linked CI.'} =
         '';
     $Self->{Translation}->{'Definition Update'} = '';
-    $Self->{Translation}->{'Delete Configuration Item'} = '';
+    $Self->{Translation}->{'Delete Configuration Item'} = 'Importar Configuración';
     $Self->{Translation}->{'DeplState'} = '';
     $Self->{Translation}->{'Deployment State Color'} = '';
     $Self->{Translation}->{'DeploymentState'} = '';
@@ -402,9 +402,9 @@ sub Data {
     $Self->{Translation}->{'Dynamic fields shown in the additional ITSM field screen of the agent interface.'} =
         'Mostra campos de título na pantalla campo ITSM adicional da interface de axente.';
     $Self->{Translation}->{'Dynamic fields shown in the config item overview screen of the customer interface.'} =
-        '';
+        'Mostra campos de título na pantalla campo ITSM adicional da interface de axente.';
     $Self->{Translation}->{'Dynamic fields shown in the config item search screen of the agent interface.'} =
-        '';
+        'Mostra campos de título na pantalla campo ITSM adicional da interface de axente.';
     $Self->{Translation}->{'Enables configuration item bulk action feature for the agent frontend to work on more than one configuration item at a time.'} =
         'Permite función de acción en masa do ticket para o frontend de axente para traballar en máis dun ticket á vez.';
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
@@ -427,7 +427,7 @@ sub Data {
         'InterfaceXenérica módulo rexistro para a capa do invocador.';
     $Self->{Translation}->{'ITSM ConfigItem'} = '';
     $Self->{Translation}->{'ITSM config item overview.'} = '';
-    $Self->{Translation}->{'InciState'} = '';
+    $Self->{Translation}->{'InciState'} = 'Estado do Incidente';
     $Self->{Translation}->{'IncidentState'} = 'Estado do Incidente';
     $Self->{Translation}->{'Includes deployment states in the config item search of the customer interface.'} =
         '';
@@ -479,13 +479,13 @@ sub Data {
         'Executa a acción configurada para cada evento (coma un Invocador) para cada Servizo Web configurado.';
     $Self->{Translation}->{'Permission Group'} = '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item attachment action in the agent interface.'} =
-        '';
+        'Permisos requiridos para usar a pantalla de decisión na interface de axente.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
         'Permisos requiridos para usar a pantalla de decisión na interface de axente.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the agent interface.'} =
         'Permisos requiridos para usar a pantalla de decisión na interface de axente.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the customer interface.'} =
-        '';
+        'Permisos requiridos para usar a pantalla de decisión na interface de axente.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item tree view screen in the agent interface.'} =
         'Permisos requiridos para empregar a pantalla de texto libre de tíckets da interface do axente.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item zoom screen in the agent interface.'} =
@@ -505,13 +505,13 @@ sub Data {
     $Self->{Translation}->{'Set the incident state of a CI automatically when a Ticket is Linked to a CI.'} =
         '';
     $Self->{Translation}->{'Sets the deployment state in the configuration item bulk screen of the agent interface.'} =
-        '';
+        'Establece o tipo de ticket na pantalla de ticket masivo da interface de axente.';
     $Self->{Translation}->{'Sets the incident state in the configuration item bulk screen of the agent interface.'} =
         'Establece o tipo de ticket na pantalla de ticket masivo da interface de axente.';
     $Self->{Translation}->{'Shows a link in the menu that allows linking a configuration item with another object in the config item zoom view of the agent interface.'} =
-        '';
+        'Mostra un enlace no menu para editar unha enquisa na súa vista zoom da interface de axente.';
     $Self->{Translation}->{'Shows a link in the menu to access the history of a configuration item in the configuration item overview of the agent interface.'} =
-        '';
+        'Mostra un enlace no menu para cambiar a decisión dun ticket na súa vista zoom da interface de axente.';
     $Self->{Translation}->{'Shows a link in the menu to access the history of a configuration item in the its zoom view of the agent interface.'} =
         'Mostra un enlace no menu para cambiar a decisión dun ticket na súa vista zoom da interface de axente.';
     $Self->{Translation}->{'Shows a link in the menu to delete a configuration item in its zoom view of the agent interface.'} =
@@ -519,7 +519,7 @@ sub Data {
     $Self->{Translation}->{'Shows a link in the menu to display the configuration item links as a Tree View.'} =
         '';
     $Self->{Translation}->{'Shows a link in the menu to duplicate a configuration item in the configuration item overview of the agent interface.'} =
-        '';
+        'Mostra un enlace no menu para editar unha enquisa na súa vista zoom da interface de axente.';
     $Self->{Translation}->{'Shows a link in the menu to duplicate a configuration item in the its zoom view of the agent interface.'} =
         'Mostra un enlace no menu para editar unha enquisa na súa vista zoom da interface de axente.';
     $Self->{Translation}->{'Shows a link in the menu to edit a configuration item in the its zoom view of the agent interface.'} =
@@ -529,7 +529,7 @@ sub Data {
     $Self->{Translation}->{'Shows a link in the menu to print a configuration item in the its zoom view of the agent interface.'} =
         'Mostra un enlace no menu para editar unha enquisa na súa vista zoom da interface de axente.';
     $Self->{Translation}->{'Shows a link in the menu to zoom into a configuration item in the configuration item overview of the agent interface.'} =
-        '';
+        'Mostra un enlace no menu para editar unha enquisa na súa vista zoom da interface de axente.';
     $Self->{Translation}->{'Shows the config item history (reverse ordered) in the agent interface.'} =
         'Mostra o historico do ticket (ordeado o revé) na interface de axente.';
     $Self->{Translation}->{'The default category which is shown, if none is selected.'} = '';

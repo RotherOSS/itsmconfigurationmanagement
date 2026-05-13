@@ -427,7 +427,7 @@ sub Data {
         '';
     $Self->{Translation}->{'ITSM ConfigItem'} = 'КонфигЧлен';
     $Self->{Translation}->{'ITSM config item overview.'} = '';
-    $Self->{Translation}->{'InciState'} = '';
+    $Self->{Translation}->{'InciState'} = 'Состојба на Инцидент';
     $Self->{Translation}->{'IncidentState'} = 'Состојба на Инцидент';
     $Self->{Translation}->{'Includes deployment states in the config item search of the customer interface.'} =
         '';
@@ -470,9 +470,9 @@ sub Data {
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         'Параметри за страниви(во кои конфигурациските членови се прикажани).';
     $Self->{Translation}->{'Parameters for the version string module for config item classes in the preferences view of the agent interface.'} =
-        '';
+        'Параметри за распоред состојбите во прегледот со опциите  на агент интерфејсот.';
     $Self->{Translation}->{'Parameters for the version string template toolkit module for config item classes in the preferences view of the agent interface.'} =
-        '';
+        'Параметри за распоред состојбите во прегледот со опциите  на агент интерфејсот.';
     $Self->{Translation}->{'Parameters for the version trigger for config item classes in the preferences view of the agent interface.'} =
         'Параметри за распоред состојбите во прегледот со опциите  на агент интерфејсот.';
     $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =

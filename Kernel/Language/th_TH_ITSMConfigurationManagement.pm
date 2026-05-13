@@ -160,7 +160,7 @@ sub Data {
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
     $Self->{Translation}->{'No ConfigItemID or VersionID is given!'} = '';
-    $Self->{Translation}->{'Can\'t show config item, no access rights given!'} = '';
+    $Self->{Translation}->{'Can\'t show config item, no access rights given!'} = 'ไม่สามารถแสดงประวัติ ไม่ได้รับ TicketID!';
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = '';
     $Self->{Translation}->{'ConfigItem'} = 'ConfigItem';
     $Self->{Translation}->{'printed by %s at %s'} = '';
@@ -341,7 +341,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the agent interface.'} =
         'กำหนดคแอตทริบิวต์เริ่มต้นของตั๋วสำหรับการเรียงลำดับตั๋วของผลลัพธ์ของการค้นหาตั๋วในอินเตอร์เฟซเอเย่นต์';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the customer interface.'} =
-        '';
+        'กำหนดคแอตทริบิวต์เริ่มต้นของตั๋วสำหรับการเรียงลำดับตั๋วของผลลัพธ์ของการค้นหาตั๋วในอินเตอร์เฟซเอเย่นต์';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of this operation.'} =
         'กำหนดคแอตทริบิวต์เริ่มต้นของตั๋วสำหรับการเรียงลำดับตั๋วของผลลัพธ์ของการค้นหาตั๋วของการดำเนินการนี้';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the agent interface. Up: oldest on top. Down: latest on top.'} =
@@ -402,9 +402,9 @@ sub Data {
     $Self->{Translation}->{'Dynamic fields shown in the additional ITSM field screen of the agent interface.'} =
         'แสดงหัวข้อฟิลด์ในหน้าจอฟิลด์เพิ่มเติมของ ITSMในอินเตอร์เฟซของเอเย่นต์';
     $Self->{Translation}->{'Dynamic fields shown in the config item overview screen of the customer interface.'} =
-        '';
+        'แสดงหัวข้อฟิลด์ในหน้าจอฟิลด์เพิ่มเติมของ ITSMในอินเตอร์เฟซของเอเย่นต์';
     $Self->{Translation}->{'Dynamic fields shown in the config item search screen of the agent interface.'} =
-        '';
+        'แสดงหัวข้อฟิลด์ในหน้าจอฟิลด์เพิ่มเติมของ ITSMในอินเตอร์เฟซของเอเย่นต์';
     $Self->{Translation}->{'Enables configuration item bulk action feature for the agent frontend to work on more than one configuration item at a time.'} =
         'เปิดใช้งานการตั้งค่ารายการคุณลักษณะของการทำงานเป็นกลุ่ม สำหรับฟรอนต์เอนของเอเย่นต์เพื่อทำงานกับรายการการกำหนดค่าที่มีมากกว่าหนึ่งในหนึ่งครั้ง';
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
@@ -427,7 +427,7 @@ sub Data {
         'การลงทะเบียนโมดูล GenericInterface สำหรับชั้นของผู้ร้องขอ';
     $Self->{Translation}->{'ITSM ConfigItem'} = 'ConfigItem';
     $Self->{Translation}->{'ITSM config item overview.'} = '';
-    $Self->{Translation}->{'InciState'} = '';
+    $Self->{Translation}->{'InciState'} = 'สถานภาพของเหต์การณ์';
     $Self->{Translation}->{'IncidentState'} = 'สถานภาพของเหต์การณ์';
     $Self->{Translation}->{'Includes deployment states in the config item search of the customer interface.'} =
         '';
@@ -470,9 +470,9 @@ sub Data {
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         'พารามิเตอร์สำหรับแต่ละหน้า(ซึ่ง configuration items แสดง)';
     $Self->{Translation}->{'Parameters for the version string module for config item classes in the preferences view of the agent interface.'} =
-        '';
+        'พารามิเตอร์สำหรับการพัฒนาสถานภาพในมุมมองการตั้งค่าของอินเตอร์เฟซเอเย่นต์';
     $Self->{Translation}->{'Parameters for the version string template toolkit module for config item classes in the preferences view of the agent interface.'} =
-        '';
+        'พารามิเตอร์สำหรับการพัฒนาสถานภาพในมุมมองการตั้งค่าของอินเตอร์เฟซเอเย่นต์';
     $Self->{Translation}->{'Parameters for the version trigger for config item classes in the preferences view of the agent interface.'} =
         'พารามิเตอร์สำหรับการพัฒนาสถานภาพในมุมมองการตั้งค่าของอินเตอร์เฟซเอเย่นต์';
     $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =
