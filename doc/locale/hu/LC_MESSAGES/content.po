@@ -5,7 +5,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
-msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:17+0100\nPO-Revision-Date: 2026-03-16 23:00+0000\nLast-Translator: Weblate <noreply-mt-weblate@weblate.org>\nLanguage-Team: Hungarian <http://translate.otobo.org/projects/manual-itsmconfigurationmanagement/master/hu/>\nLanguage: hu\nMIME-Version: 1.0\nContent-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 5.16\nGenerated-By: Babel 2.4.0\n"
+msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:17+0100\nPO-Revision-Date: 2026-05-16 22:00+0000\nLast-Translator: Weblate <noreply-mt-weblate@weblate.org>\nLanguage-Team: Hungarian <http://translate.otobo.org/projects/manual-itsmconfigurationmanagement/master/hu/>\nLanguage: hu\nMIME-Version: 1.0\nContent-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 5.16\nGenerated-By: Babel 2.4.0\n"
 
 #: ../../content/about.rst:13
 #, fuzzy
@@ -18,16 +18,19 @@ msgid "Contact"
 msgstr "Kapcsolat"
 
 #: ../../content/about.rst:17
+#, fuzzy
 msgid "Rother OSS GmbH"
-msgstr ""
+msgstr "Rother OSS GmbH"
 
 #: ../../content/about.rst:18
+#, fuzzy
 msgid "Email: hello@otobo.io"
-msgstr ""
+msgstr "E-mail: hello@otobo.de"
 
 #: ../../content/about.rst:19
+#, fuzzy
 msgid "Web: https://otobo.io"
-msgstr ""
+msgstr "Web: https://otobo.de"
 
 #: ../../content/about.rst:22
 #, fuzzy
@@ -35,10 +38,11 @@ msgid "Version"
 msgstr "Verzió"
 
 #: ../../content/about.rst:23
+#, fuzzy
 msgid ""
 "Author: |doc-vendor| / Version: |doc-version| / Date of release: |doc-"
 "datestamp|"
-msgstr ""
+msgstr "Szerző: |doc-vendor| / Verzió: |doc-version| / Kiadás dátuma: |doc-datestamp|"
 
 #: ../../content/about.rst:27
 msgid "Terms and Conditions"
@@ -1453,8 +1457,9 @@ msgid "List of all Package events to be displayed in the GUI."
 msgstr "Az összes csomagesemény listája, amelyek megjelennek a grafikus felületen."
 
 #: ../../content/configuration/system_configuration_settings.rst:344
+#, fuzzy
 msgid "Frontend::Admin::ModuleRegistration"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration"
 
 #: ../../content/configuration/system_configuration_settings.rst:347
 msgid "Frontend::Module###AdminITSMConfigItem"
@@ -1495,8 +1500,9 @@ msgid "Admin area navigation for the agent interface."
 msgstr "Adminisztrációs terület navigáció az ügyintézői felülethez."
 
 #: ../../content/configuration/system_configuration_settings.rst:362
+#, fuzzy
 msgid "Frontend::Admin::ModuleRegistration::Loader"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration::Loader"
 
 #: ../../content/configuration/system_configuration_settings.rst:365
 msgid "Loader::Module::AdminITSMConfigItem###002-ITSMConfigItem"
@@ -1520,8 +1526,9 @@ msgid "Loader::Module::AdminGenericInterfaceInvokerConfigItem###007-ITSMConfigur
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:373
+#, fuzzy
 msgid "Frontend::Admin::ModuleRegistration::MainMenu"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration::MainMenu"
 
 #: ../../content/configuration/system_configuration_settings.rst:376
 msgid "Frontend::Navigation###AdminITSMConfigItem###003-ITSMConfigItem"
@@ -1835,8 +1842,9 @@ msgid ""
 msgstr "Műveletek meghatározása, ahol egy beállítások gomb érhető el a kapcsolt objektumok felületi elemen (LinkObject::ViewMode = „összetett”). Ne feledje, hogy ezeknek a műveleteknek rendelkezniük kell a következő JS és CSS fájlok regisztrálásával: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js és Core.Agent.LinkObject.js."
 
 #: ../../content/configuration/system_configuration_settings.rst:497
+#, fuzzy
 msgid "Frontend::Agent::ModuleRegistration"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration"
 
 #: ../../content/configuration/system_configuration_settings.rst:500
 msgid "Frontend::Module###AgentITSMConfigItem"
@@ -1883,16 +1891,19 @@ msgid "Frontend::Module###AgentITSMConfigItemAttachment"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:544
+#, fuzzy
 msgid "Frontend::Agent::ModuleRegistration::Loader"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration::Loader"
 
 #: ../../content/configuration/system_configuration_settings.rst:547
+#, fuzzy
 msgid "Loader::Module::AgentITSMConfigItem###003-ITSMConfigItem"
-msgstr ""
+msgstr "Loader::Module::AgentITSMConfigItemZoom###437-OSM"
 
 #: ../../content/configuration/system_configuration_settings.rst:551
+#, fuzzy
 msgid "Loader::Module::AgentITSMConfigItemZoom###003-ITSMConfigItem"
-msgstr ""
+msgstr "Loader::Module::AgentITSMConfigItemZoom###437-OSM"
 
 #: ../../content/configuration/system_configuration_settings.rst:555
 msgid "Loader::Module::AgentITSMConfigItemEdit###003-ITSMConfigItem"
@@ -1915,12 +1926,14 @@ msgid "Loader::Module::AgentITSMConfigItemHistory###003-ITSMConfigItem"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:575
+#, fuzzy
 msgid "Frontend::Agent::ModuleRegistration::MainMenu"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration::MainMenu"
 
 #: ../../content/configuration/system_configuration_settings.rst:578
+#, fuzzy
 msgid "Frontend::Navigation###AgentITSMConfigItem###003-ITSMConfigItem"
-msgstr ""
+msgstr "Frontend::Navigation###AgentITSMConfigItem###004-OpenStreetMap"
 
 #: ../../content/configuration/system_configuration_settings.rst:582
 msgid "Frontend::Navigation###AgentITSMConfigItemAdd###003-ITSMConfigItem"
@@ -1935,8 +1948,9 @@ msgid "Frontend::Navigation###AgentITSMConfigItemBulk###003-ITSMConfigItem"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:594
+#, fuzzy
 msgid "Frontend::Agent::ModuleRegistration::MainMenu::Search"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration::MainMenu"
 
 #: ../../content/configuration/system_configuration_settings.rst:597
 msgid "Frontend::Search###ConfigItem"
@@ -2457,8 +2471,9 @@ msgid "ITSMConfigItem::Frontend::CustomerOverview###Small"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:835
+#, fuzzy
 msgid "Frontend::Customer::ModuleRegistration"
-msgstr ""
+msgstr "Frontend::Customer::ModuleRegistration"
 
 #: ../../content/configuration/system_configuration_settings.rst:838
 msgid "CustomerFrontend::Module###CustomerITSMConfigItem"
@@ -2485,8 +2500,9 @@ msgid "CustomerFrontend::Module###CustomerITSMConfigItemAttachment"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:854
+#, fuzzy
 msgid "Frontend::Customer::ModuleRegistration::Loader"
-msgstr ""
+msgstr "Frontend::Customer::ModuleRegistration::Loader"
 
 #: ../../content/configuration/system_configuration_settings.rst:857
 msgid "Loader::Module::CustomerITSMConfigItem###003-ITSMConfigItem"
@@ -2508,8 +2524,9 @@ msgid "Loader::Module::CustomerITSMConfigItemZoom###003-ITSMConfigItem"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:869
+#, fuzzy
 msgid "Frontend::Customer::ModuleRegistration::MainMenu"
-msgstr ""
+msgstr "Frontend::Customer::ModuleRegistration::MainMenu"
 
 #: ../../content/configuration/system_configuration_settings.rst:872
 msgid "CustomerFrontend::Navigation###CustomerITSMConfigItem###003-ITSMConfigItem"
@@ -2902,18 +2919,21 @@ msgstr ""
 
 #: ../../content/configuration/system_requirements.rst:13
 #: ../../content/system_requirements.rst:13
+#, fuzzy
 msgid "System requirements"
-msgstr ""
+msgstr "Rendszerkövetelmények"
 
 #: ../../content/configuration/system_requirements.rst:16
 #: ../../content/system_requirements.rst:16
+#, fuzzy
 msgid "Framework"
-msgstr ""
+msgstr "Keretrendszer"
 
 #: ../../content/configuration/system_requirements.rst:19
 #: ../../content/system_requirements.rst:19
+#, fuzzy
 msgid "OTOBO 11.0.x"
-msgstr ""
+msgstr "OTOBO 10.1.x"
 
 #: ../../content/configuration/system_requirements.rst:22
 #: ../../content/system_requirements.rst:22
@@ -2928,13 +2948,15 @@ msgstr ""
 
 #: ../../content/configuration/system_requirements.rst:28
 #: ../../content/system_requirements.rst:28
+#, fuzzy
 msgid "Third-party software"
-msgstr ""
+msgstr "Harmadik féltől származó szoftverek"
 
 #: ../../content/configuration/system_requirements.rst:29
 #: ../../content/system_requirements.rst:29
+#, fuzzy
 msgid "\\-"
-msgstr ""
+msgstr "\\-"
 
 #: ../../content/index.rst:13
 msgid "Package Documentation: ITSMConfigurationManagement"
@@ -3039,14 +3061,17 @@ msgstr ""
 #~ msgid "Web: https://otobo.de"
 #~ msgstr ""
 
+#, fuzzy
 msgctxt "1"
 msgid "OTOBO 11.0.x"
-msgstr ""
+msgstr "OTOBO 10.1.x"
 
+#, fuzzy
 msgctxt "1"
 msgid "\\-"
-msgstr ""
+msgstr "\\-"
 
+#, fuzzy
 msgctxt "1"
 msgid "Rother OSS GmbH"
-msgstr ""
+msgstr "Rother OSS GmbH"
