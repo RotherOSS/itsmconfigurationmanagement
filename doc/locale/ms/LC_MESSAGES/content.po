@@ -5,7 +5,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
-msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:17+0100\nPO-Revision-Date: 2026-04-16 22:00+0000\nLast-Translator: Weblate <noreply-mt-weblate@weblate.org>\nLanguage-Team: Malay <http://translate.otobo.org/projects/manual-itsmconfigurationmanagement/master/ms/>\nLanguage: ms\nMIME-Version: 1.0\nContent-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\nX-Generator: Weblate 5.16\nGenerated-By: Babel 2.4.0\n"
+msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:17+0100\nPO-Revision-Date: 2026-05-16 22:00+0000\nLast-Translator: Weblate <noreply-mt-weblate@weblate.org>\nLanguage-Team: Malay <http://translate.otobo.org/projects/manual-itsmconfigurationmanagement/master/ms/>\nLanguage: ms\nMIME-Version: 1.0\nContent-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\nX-Generator: Weblate 5.16\nGenerated-By: Babel 2.4.0\n"
 
 #: ../../content/about.rst:13
 msgid "About"
@@ -2620,10 +2620,11 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:950
 #: ../../content/configuration/system_configuration_settings.rst:954
+#, fuzzy
 msgid ""
 "Dynamic fields shown in the config item overview screen of the customer "
 "interface."
-msgstr ""
+msgstr "Menunjukkan bidang tajuk dalam skrin bidang ITSM tambahan bagi antara muka ejen."
 
 #: ../../content/configuration/system_configuration_settings.rst:953
 msgid "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###DynamicField"
