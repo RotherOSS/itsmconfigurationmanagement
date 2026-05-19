@@ -22,6 +22,7 @@ use utf8;
 use namespace::autoclean;
 
 # core modules
+use List::Util qw(any none);
 
 # CPAN modules
 
@@ -145,14 +146,14 @@ sub new {
 
                 my $DeleteFilter = 0;
                 if ( IsArrayRefWithData( $Self->{ColumnFilter}->{$Column} ) ) {
-                    if ( grep { $_ eq 'DeleteFilter' } @{ $Self->{ColumnFilter}->{$Column} } ) {
+                    if ( any { $_ eq 'DeleteFilter' } @{ $Self->{ColumnFilter}->{$Column} } ) {
                         $DeleteFilter = 1;
                     }
                 }
                 elsif ( IsHashRefWithData( $Self->{ColumnFilter}->{$Column} ) ) {
 
                     if (
-                        grep { $Self->{ColumnFilter}->{$Column}->{$_} eq 'DeleteFilter' }
+                        any { $Self->{ColumnFilter}->{$Column}->{$_} eq 'DeleteFilter' }
                         keys %{ $Self->{ColumnFilter}->{$Column} }
                         )
                     {
@@ -398,7 +399,7 @@ sub Preferences {
     my %Columns;
     for my $ColumnName ( sort { $a cmp $b } @ColumnsAvailable ) {
         $Columns{Columns}->{$ColumnName} = ( grep { $ColumnName eq $_ } @ColumnsEnabled ) ? 1 : 0;
-        if ( !grep { $_ eq $ColumnName } @ColumnsEnabled ) {
+        if ( none { $_ eq $ColumnName } @ColumnsEnabled ) {
             push @ColumnsAvailableNotEnabled, $ColumnName;
         }
     }
@@ -571,7 +572,9 @@ sub Run {
 
         # check if a color is defined in preferences
         next ITEMID unless $GeneralCatalogPreferences{Color};
+
         my ($Color) = $GeneralCatalogPreferences{Color}->@*;
+
         next ITEMID unless $Color;
 
         # get deployment state
@@ -1330,7 +1333,9 @@ sub Run {
     CONFIGITEMID:
     for my $ConfigItemID ( @{$ConfigItemIDs} ) {
         $Count++;
+
         next CONFIGITEMID if $Count < $Self->{StartHit};
+
         my $ConfigItemRef = $ConfigItemObject->ConfigItemGet(
             ConfigItemID  => $ConfigItemID,
             DynamicFields => 0,
