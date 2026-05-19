@@ -2087,7 +2087,7 @@
     </Setting>
 
     <Setting Name="AgentCustomerInformationCenter::Backend###0060-CIC-ITSMConfigItemCustomerCompany" Required="0" Valid="1">
-        <Description Translatable="1">Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).</Description>
+        <Description Translatable="1">Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is to specify which customer company reference dynamic field which is used to filter for the selected customer company. "ShownClasses" is a list to optionally restrict classes of the shown config items. Leaving this list empty defaults to all classes which match the customer company in the dynamic field configured in "ConfigItemKey".</Description>
         <Navigation>Frontend::Agent::View::CustomerInformationCenter</Navigation>
         <Value>
             <Hash>
@@ -2095,16 +2095,16 @@
                 <Item Key="Title" Translatable="1">Assigned CIs</Item>
                 <Item Key="Description" Translatable="1">CIs assigned to customer company</Item>
                 <Item Key="Attributes">CustomerCompany</Item>
-                <Item Key="Filter" Translatable="1">All</Item>
+                <Item Key="Filter" Translatable="1">AssignedToEntity</Item>
                 <Item Key="Limit">10</Item>
                 <Item Key="Permission">ro</Item>
                 <Item Key="Block">ContentLarge</Item>
                 <Item Key="Group"></Item>
                 <Item Key="Default">1</Item>
                 <Item Key="CacheTTLLocal">0.5</Item>
-                <Item Key="ConfigItemKey">
-                    <Hash>
-                    </Hash>
+                <Item Key="ConfigItemKey"></Item>
+                <Item Key="ShownClasses">
+                    <Array></Array>
                 </Item>
                 <Item Key="DefaultColumns">
                     <Hash>
@@ -2128,7 +2128,7 @@
     </Setting>
 
     <Setting Name="AgentCustomerUserInformationCenter::Backend###0060-CUIC-ITSMConfigItemCustomerUser" Required="0" Valid="1">
-        <Description Translatable="1">Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries per config item class shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).</Description>
+        <Description Translatable="1">Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries per config item class shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is to specify which customer user reference dynamic field which is used to filter for the selected customer user. "ShownClasses" is a list to optionally restrict classes of the shown config items. Leaving this list empty defaults to all classes which match the customer user in the dynamic field configured in "ConfigItemKey".</Description>
         <Navigation>Frontend::Agent::View::CustomerUserInformationCenter</Navigation>
         <Value>
             <Hash>
@@ -2136,35 +2136,17 @@
                 <Item Key="Title" Translatable="1">Assigned CIs</Item>
                 <Item Key="Description" Translatable="1">CIs assigned to customer user</Item>
                 <Item Key="Attributes">Customer</Item>
-                <Item Key="Filter" Translatable="1">All</Item>
+                <Item Key="Filter" Translatable="1">AssignedToEntity</Item>
                 <Item Key="Limit">10</Item>
                 <Item Key="Permission">ro</Item>
                 <Item Key="Block">ContentLarge</Item>
                 <Item Key="Group"></Item>
                 <Item Key="Default">1</Item>
                 <Item Key="CacheTTLLocal">0.5</Item>
-                <Item Key="ConfigItemKey">
-                    <Hash>
-                        <Item Key="Appliance">Contact-User</Item>
-                        <Item Key="Client">Contact-User</Item>
-                        <Item Key="Client (virtual)">Contact-User</Item>
-                        <Item Key="Display">Contact-User</Item>
-                        <Item Key="Device (unidentified)">Contact-User</Item>
-                        <Item Key="Mobile Device">Contact-User</Item>
-                        <Item Key="Other Accessories">Contact-User</Item>
-                        <Item Key="Phone">Contact-User</Item>
-                        <Item Key="Printer">Contact-User</Item>
-                        <Item Key="Projector">Contact-User</Item>
-                        <Item Key="Router (Firewall)">Contact-User</Item>
-                        <Item Key="Server">Contact-User</Item>
-                        <Item Key="Server (virtual)">Contact-User</Item>
-                        <Item Key="Smartboard">Contact-User</Item>
-                        <Item Key="Storage">Contact-User</Item>
-                        <Item Key="Switch">Contact-User</Item>
-                        <Item Key="UPS">Contact-User</Item>
-                        <Item Key="WLAN access point">Contact-User</Item>
-                    </Hash>
+                <Item Key="ShownClasses">
+                    <Array></Array>
                 </Item>
+                <Item Key="ConfigItemKey">Contact-User</Item>
                 <Item Key="DefaultColumns">
                     <Hash>
                         <DefaultItem ValueType="Select">
