@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-03-09 13:29+0000\n"
-"PO-Revision-Date: 2026-04-06 18:00+0000\n"
-"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"PO-Revision-Date: 2026-05-21 10:00+0000\n"
+"Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/opm-packages/"
 "itsm-configurationmanagement/hu/>\n"
 "Language: hu\n"
@@ -869,7 +869,9 @@ msgstr ""
 
 #. SysConfig
 msgid "Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
-msgstr "Meghatározza a RichText szerkesztő komponens magasságát ennél a képernyőnél. Szám (képpont) vagy százalék (relatív) értéket adjon meg."
+msgstr ""
+"Meghatározza a Rich Text szerkesztő-összetevő magasságát ennél a "
+"képernyőnél. Szám (képpont) vagy százalék (relatív) értéket adjon meg."
 
 #. SysConfig
 msgid "Defines the number of rows for the CI definition editor in the admin interface."
