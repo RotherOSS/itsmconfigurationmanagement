@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2026-04-28 11:42+0000\n"
+"POT-Creation-Date: 2026-05-26 12:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -220,6 +220,10 @@ msgstr ""
 
 #. Template: AdminDynamicFieldScreen
 msgid "Filter by object type"
+msgstr ""
+
+#. Template: AdminDynamicFieldScreen
+msgid "Add DynamicField"
 msgstr ""
 
 #. JS Template: ClassImportConfirm
@@ -487,6 +491,10 @@ msgid "Select the attribute which config items will be searched by"
 msgstr ""
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
+msgid "External-source key"
+msgstr ""
+
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
 msgid "Select the type of display"
 msgstr ""
 
@@ -608,6 +616,10 @@ msgstr ""
 
 #. SysConfig
 msgid "Assigned CIs"
+msgstr ""
+
+#. SysConfig
+msgid "AssignedToEntity"
 msgstr ""
 
 #. SysConfig
@@ -1079,11 +1091,11 @@ msgid "Parameters for the column filters of the small config item overview. Plea
 msgstr ""
 
 #. SysConfig
-msgid "Parameters for the dashboard backend of the customer company config item overview of the agent interface . \"Limit\" is the number of entries per config item class shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin. \"ConfigItemKey\" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName)."
+msgid "Parameters for the dashboard backend of the customer company config item overview show in the agent interface. \"Limit\" is the number of entries shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin. \"ConfigItemKey\" is to specify which customer company reference dynamic field is used to filter for the selected customer company. \"ShownClasses\" is a list to optionally restrict classes of the shown config items. Leaving this list empty defaults to all classes which match the customer company in the dynamic field configured in \"ConfigItemKey\"."
 msgstr ""
 
 #. SysConfig
-msgid "Parameters for the dashboard backend of the customer company config item overview of the agent interface . \"Limit\" is the number of entries shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin. \"ConfigItemKey\" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName)."
+msgid "Parameters for the dashboard backend of the customer company config item overview shown in the agent interface. \"Limit\" is the number of entries per config item class shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin. \"ConfigItemKey\" is to specify which customer user reference dynamic field is used to filter for the selected customer user. \"ShownClasses\" is a list to optionally restrict classes of the shown config items. Leaving this list empty defaults to all classes which match the customer user in the dynamic field configured in \"ConfigItemKey\"."
 msgstr ""
 
 #. SysConfig

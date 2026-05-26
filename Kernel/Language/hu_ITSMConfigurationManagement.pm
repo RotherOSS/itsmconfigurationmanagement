@@ -96,7 +96,7 @@ sub Data {
     $Self->{Translation}->{'Configuration Item Information'} = 'Konfigurációelem-információk';
     $Self->{Translation}->{'Current Deployment State'} = 'Jelenlegi üzembe állítási állapot';
     $Self->{Translation}->{'Current Incident State'} = 'Jelenlegi incidensállapot';
-    $Self->{Translation}->{'Last changed'} = 'Utolsó módosítás';
+    $Self->{Translation}->{'Last changed'} = 'Utoljára módosítva';
     $Self->{Translation}->{'Last changed by'} = 'Utoljára módosította';
 
     # Template: CustomerITSMConfigItem
@@ -110,6 +110,7 @@ sub Data {
 
     # Template: AdminDynamicFieldScreen
     $Self->{Translation}->{'Filter by object type'} = 'Mező szűrése objektumtípus szerint';
+    $Self->{Translation}->{'Add DynamicField'} = '';
 
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = 'A következő osztályok kerülnek importálásra';
@@ -210,6 +211,7 @@ sub Data {
     $Self->{Translation}->{'Whether this link applies to the ConfigItem or the static version of the referencing object. Current Incident State calculation only is performed on dynamic links.'} =
         'A hivatkozás a hivatkozó objektum ConfigItem vagy statikus változatára vonatkozik-e. Az aktuális incidensállapot számítása csak dinamikus hivatkozások esetén történik.';
     $Self->{Translation}->{'Select the attribute which config items will be searched by'} = 'Válassza ki azt az attribútumot, amely alapján a konfigurációs elemeket keresni fogják.';
+    $Self->{Translation}->{'External-source key'} = '';
     $Self->{Translation}->{'Select the type of display'} = '';
 
     # Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
@@ -261,6 +263,7 @@ sub Data {
     $Self->{Translation}->{'Allows extended search conditions in config item search of the customer interface. With this feature you can search e. g. config item name with this kind of conditions like "(*key1*&&*key2*)" or "(*key1*||*key2*)".'} =
         'Lehetővé teszi a kiterjesztett keresési feltételeket az ügyfélfelület konfigurációs elemkeresésében. Ezzel a funkcióval kereshet például a konfigurációs elem nevére olyan feltételekkel, mint "(*key1*&&*key2*)" vagy "(*key1*||*key2*)".';
     $Self->{Translation}->{'Assigned CIs'} = 'Hozzárendelt konfigurációelemek';
+    $Self->{Translation}->{'AssignedToEntity'} = '';
     $Self->{Translation}->{'At a specific time point create a ticket for config items, if the configured requirements are met. The time point is determined by the value of the dynamic field of type date configured under "TimeCIKey" of the ConfigItem, and modified by "TimeModifier". If the latter can be either just a number, or a sign (+/-), a number, and an unit (d/h/m): "7" is equivalent to "+7d". The DynamicField "Ticket->DynamicField" will be used to mark created tickets - it has to exist. The flags \<OTOBO_CONFIGITEM_X\> where X can be NAME, NUMBER and DATE, will be substituted with the respective values in "Ticket->Text".'} =
         '';
     $Self->{Translation}->{'Attributes for license accounting.'} = '';
@@ -362,7 +365,7 @@ sub Data {
     $Self->{Translation}->{'Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         'Meghatározza a CI-k elérhető oszlopait a konfigurációs elem áttekintésében a CI-osztálytól függően. Minden egyes bejegyzésnek egy osztálynévből és a megfelelő osztályhoz rendelkezésre álló mezők tömbjéből kell állnia. A dinamikus mezőbejegyzéseknek a DynamicField_FieldName sémát kell követniük.';
     $Self->{Translation}->{'Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).'} =
-        'Meghatározza a RichText szerkesztő komponens magasságát ennél a képernyőnél. Szám (képpont) vagy százalék (relatív) értéket adjon meg.';
+        'Meghatározza a Rich Text szerkesztő-összetevő magasságát ennél a képernyőnél. Szám (képpont) vagy százalék (relatív) értéket adjon meg.';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =
         'Meghatározza a CI meghatározás-szerkesztő sorainak számát az adminisztrációs felületen.';
     $Self->{Translation}->{'Defines the order of incident states from high (e.g. cricital) to low (e.g. functional).'} =
@@ -453,10 +456,10 @@ sub Data {
         'A konfigurációs elemosztályok kategóriáinak paraméterei az ügynöki felület beállítások nézetében.';
     $Self->{Translation}->{'Parameters for the column filters of the small config item overview. Please note: setting \'Active\' to 0 will only prevent agents from editing settings of this group in their personal preferences, but will still allow administrators to edit the settings of another user\'s behalf. Use \'PreferenceGroup\' to control in which area these settings should be shown in the user interface.'} =
         'A kis konfigurációs elemek áttekintésének oszlopszűrőinek paraméterei. Megjegyzés: az "Aktív" 0-ra állítása csak azt akadályozza meg, hogy az ügynökök szerkesszék a csoport beállításait a személyes beállításaikban, de a rendszergazdáknak továbbra is lehetővé teszi, hogy egy másik felhasználó nevében szerkesszék a beállításokat. A \'PreferenceGroup\' segítségével szabályozhatja, hogy ezek a beállítások melyik területen jelenjenek meg a felhasználói felületen.';
-    $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries per config item class shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        'Paraméterek az ügyintézői felület ügyfél-felhasználó lista áttekintésének vezérlőpult háttérprogramjához. A „Limit” az alapértelmezetten megjelenített bejegyzések száma. A „Group” használható a hozzáférés korlátozásához a bővítményre (például Group: admin;csoport1;csoport2;). A „Default” azt határozza meg, hogy a bővítmény alapértelmezetten engedélyezve van, vagy hogy a felhasználónak kézzel kell engedélyeznie azt. A „CacheTTLLocal” a bővítmény gyorsítótár ideje percben.';
-    $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        'Paraméterek az ügyintézői felület ügyfél-felhasználó lista áttekintésének vezérlőpult háttérprogramjához. A „Limit” az alapértelmezetten megjelenített bejegyzések száma. A „Group” használható a hozzáférés korlátozásához a bővítményre (például Group: admin;csoport1;csoport2;). A „Default” azt határozza meg, hogy a bővítmény alapértelmezetten engedélyezve van, vagy hogy a felhasználónak kézzel kell engedélyeznie azt. A „CacheTTLLocal” a bővítmény gyorsítótár ideje percben.';
+    $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview show in the agent interface. "Limit" is the number of entries shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is to specify which customer company reference dynamic field is used to filter for the selected customer company. "ShownClasses" is a list to optionally restrict classes of the shown config items. Leaving this list empty defaults to all classes which match the customer company in the dynamic field configured in "ConfigItemKey".'} =
+        '';
+    $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview shown in the agent interface. "Limit" is the number of entries per config item class shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is to specify which customer user reference dynamic field is used to filter for the selected customer user. "ShownClasses" is a list to optionally restrict classes of the shown config items. Leaving this list empty defaults to all classes which match the customer user in the dynamic field configured in "ConfigItemKey".'} =
+        '';
     $Self->{Translation}->{'Parameters for the deployment states color in the preferences view of the agent interface.'} =
         'Paraméterek az üzembe állítási állapotok színeihez az ügyintézői felület beállítások nézetében.';
     $Self->{Translation}->{'Parameters for the deployment states in the preferences view of the agent interface.'} =
@@ -692,7 +695,7 @@ sub Data {
     $Self->{Translation}->{'Lithium Iron Phosphate (LiFePO4) Battery'} = 'Lítium vas-foszfát (LiFePO4) akkumulátor';
     $Self->{Translation}->{'Lithium-Ion (Li-ion) Battery'} = 'Lítium-ion (Li-ion) akkumulátor';
     $Self->{Translation}->{'Loan Agreement'} = 'Hitelszerződés';
-    $Self->{Translation}->{'Located in'} = 'Található';
+    $Self->{Translation}->{'Located in'} = 'Ebben található';
     $Self->{Translation}->{'Longitude'} = 'Hosszúság';
     $Self->{Translation}->{'MIT License'} = '';
     $Self->{Translation}->{'MPL (Mozilla Public License)'} = '';

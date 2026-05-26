@@ -110,6 +110,7 @@ sub Data {
 
     # Template: AdminDynamicFieldScreen
     $Self->{Translation}->{'Filter by object type'} = 'Filtrer ut fra type';
+    $Self->{Translation}->{'Add DynamicField'} = '';
 
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = 'Følgende klasser vil bli importert';
@@ -210,6 +211,7 @@ sub Data {
     $Self->{Translation}->{'Whether this link applies to the ConfigItem or the static version of the referencing object. Current Incident State calculation only is performed on dynamic links.'} =
         'Om denne koblingen gjelder ConfigItem eller den statiske versjonen av referanseobjektet. Beregning av gjeldende hendelsesstatus utføres bare på dynamiske koblinger.';
     $Self->{Translation}->{'Select the attribute which config items will be searched by'} = 'Velg attributtet som konfigurasjonselementene skal søkes etter';
+    $Self->{Translation}->{'External-source key'} = '';
     $Self->{Translation}->{'Select the type of display'} = '';
 
     # Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
@@ -261,6 +263,7 @@ sub Data {
     $Self->{Translation}->{'Allows extended search conditions in config item search of the customer interface. With this feature you can search e. g. config item name with this kind of conditions like "(*key1*&&*key2*)" or "(*key1*||*key2*)".'} =
         'Tillater utvidede søkebetingelser i konfigureringselement-søk i kundegrensesnittet. Med denne funksjonen kan du f.eks. søke etter konfigurasjonselementnavn med denne typen betingelser som "(*nøkkel1*&&*nøkkel2*)" eller "(*nøkkel1*||*nøkkel2*)".';
     $Self->{Translation}->{'Assigned CIs'} = 'Tildelte KI-er';
+    $Self->{Translation}->{'AssignedToEntity'} = '';
     $Self->{Translation}->{'At a specific time point create a ticket for config items, if the configured requirements are met. The time point is determined by the value of the dynamic field of type date configured under "TimeCIKey" of the ConfigItem, and modified by "TimeModifier". If the latter can be either just a number, or a sign (+/-), a number, and an unit (d/h/m): "7" is equivalent to "+7d". The DynamicField "Ticket->DynamicField" will be used to mark created tickets - it has to exist. The flags \<OTOBO_CONFIGITEM_X\> where X can be NAME, NUMBER and DATE, will be substituted with the respective values in "Ticket->Text".'} =
         '';
     $Self->{Translation}->{'Attributes for license accounting.'} = '';
@@ -453,10 +456,10 @@ sub Data {
         'Parametere for kategoriene for konfigurasjonselementklasser i preferansevisningen i agentgrensesnittet.';
     $Self->{Translation}->{'Parameters for the column filters of the small config item overview. Please note: setting \'Active\' to 0 will only prevent agents from editing settings of this group in their personal preferences, but will still allow administrators to edit the settings of another user\'s behalf. Use \'PreferenceGroup\' to control in which area these settings should be shown in the user interface.'} =
         'Parametere for kolonnefiltrene i oversikten over små konfigurasjonselementer. Merk: Hvis du setter "Active" til 0, vil det bare hindre agenter i å redigere innstillingene for denne gruppen i sine personlige preferanser, men det vil fortsatt være mulig for administratorer å redigere innstillingene på vegne av en annen bruker. Bruk "PreferenceGroup" til å kontrollere i hvilket område disse innstillingene skal vises i brukergrensesnittet.';
-    $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries per config item class shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        'Parametere for dashbord-backend av kundebrukerlisteoversikten over agentgrensesnittet. "Limit" er antallet oppføringer som vises som standard. "Gruppe" brukes til å begrense tilgangen til plugin-modulen (f.eks. Group: admin;group1;group2;). "Standard" avgjør om plugin-en er aktivert som standard eller om brukeren må aktivere den manuelt. "CacheTTLLocal" er hurtigbuffertiden i minutter for plugin.';
-    $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName).'} =
-        'Parametere for dashbord-backend av kundebrukerlisteoversikten over agentgrensesnittet. "Limit" er antallet oppføringer som vises som standard. "Gruppe" brukes til å begrense tilgangen til plugin-modulen (f.eks. Group: admin;group1;group2;). "Standard" avgjør om plugin-en er aktivert som standard eller om brukeren må aktivere den manuelt. "CacheTTLLocal" er hurtigbuffertiden i minutter for plugin.';
+    $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview show in the agent interface. "Limit" is the number of entries shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is to specify which customer company reference dynamic field is used to filter for the selected customer company. "ShownClasses" is a list to optionally restrict classes of the shown config items. Leaving this list empty defaults to all classes which match the customer company in the dynamic field configured in "ConfigItemKey".'} =
+        '';
+    $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview shown in the agent interface. "Limit" is the number of entries per config item class shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is to specify which customer user reference dynamic field is used to filter for the selected customer user. "ShownClasses" is a list to optionally restrict classes of the shown config items. Leaving this list empty defaults to all classes which match the customer user in the dynamic field configured in "ConfigItemKey".'} =
+        '';
     $Self->{Translation}->{'Parameters for the deployment states color in the preferences view of the agent interface.'} =
         'Parametere for fargene for distribusjonsstatusene i preferansevisningen i agentgrensesnittet.';
     $Self->{Translation}->{'Parameters for the deployment states in the preferences view of the agent interface.'} =
