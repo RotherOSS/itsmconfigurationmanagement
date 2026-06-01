@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -279,6 +279,64 @@ sub Run {
             $RequiredAttributes{ $CurrentCI . 'ID' } = $GeneralCatalogItem->{ItemID};
         }
 
+        # get latest definition for the class
+        my $ClassID = $RemoteCIData->{ClassID};
+        if ( !$ClassID ) {
+            my $ClassList = $GeneralCatalogObject->ItemList(
+                Class => 'ITSM::ConfigItem::Class',
+            );
+            my %ReverseClassList = reverse $ClassList->%*;
+            $ClassID = $ReverseClassList{ $RemoteCIData->{Class} };
+        }
+        my $Definition = $ConfigItemObject->DefinitionGet(
+            ClassID => $ClassID,
+        );
+
+        # validate dynamic fields
+        DATA:
+        for my $Data ( pairs $RemoteCIData->%* ) {
+            my ( $Key, $Value ) = $Data->@*;
+
+            next DATA unless ( $Key =~ /^DynamicField_/ );
+
+            if ( $Key =~ /^DynamicField_(?<PlainFieldName>[A-Za-z0-9-]+)/ ) {
+                my $PlainFieldName = $+{PlainFieldName};
+
+                # check if field is in class definition
+                if ( !$Definition->{DynamicFieldRef}{$PlainFieldName} ) {
+                    return {
+                        ErrorCode    => "$Self->{OperationName}.InvalidParameter",
+                        ErrorMessage => "$Self->{OperationName}: DynamicField->Name parameter is invalid!",
+                    };
+                }
+
+                # get dynamic field config
+                my $DynamicFieldConfig = $Definition->{DynamicFieldRef}{$PlainFieldName};
+
+                # validate value
+                {
+                    # possible structures are string and array, no data inside is needed
+                    if ( !IsString($Value) && ref $Value ne 'ARRAY' ) {
+                        return;
+                    }
+
+                    my $ValidateValue = $Kernel::OM->Get('Kernel::System::DynamicField::Backend')->FieldValueValidate(
+                        DynamicFieldConfig => $DynamicFieldConfig,
+                        Value              => $Value,
+                        ExternalSource     => 1,
+                        UserID             => 1,
+                    );
+
+                    if ( !$ValidateValue ) {
+                        return {
+                            ErrorCode    => "$Self->{OperationName}.InvalidParameter",
+                            ErrorMessage => "$Self->{OperationName}: DynamicField->Value parameter is invalid!",
+                        };
+                    }
+                }
+            }
+        }
+
         my $Identifier = $OperationConfig->{ 'Identifier' . $RequiredAttributes{ClassID} };
         if ( !$Identifier ) {
             $Kernel::OM->Get('Kernel::System::Log')->Log(
@@ -295,7 +353,8 @@ sub Run {
 
         # prepare search
         my %SearchParam = (
-            Result => 'ARRAY',
+            Result         => 'ARRAY',
+            QueryCondition => 0,
         );
         ATTRIBUTE:
         for my $Attribute ( $Identifier->@* ) {
@@ -570,6 +629,11 @@ sub Run {
 
         next CONFIGITEMID unless IsHashRefWithData($DFValues);
 
+        # get config item data for version id
+        my $ConfigItem = $ConfigItemObject->ConfigItemGet(
+            ConfigItemID => $ConfigItemID,
+        );
+
         # first, set dynamic field reference values
         DFREF:
         for my $DFRefName ( keys %DFRefLookup ) {
@@ -578,7 +642,7 @@ sub Run {
 
             my $Success = $DynamicFieldBackendObject->ValueSet(
                 DynamicFieldConfig => $DFRefLookup{$DFRefName},
-                ObjectID           => $ConfigItemID,
+                ObjectID           => $ConfigItem->{VersionID},
                 Value              => $DFValues->{$DFRefName},
                 UserID             => $UserID,
                 ExternalSource     => 1,
@@ -593,7 +657,7 @@ sub Run {
 
             my $Success = $DynamicFieldBackendObject->ValueSet(
                 DynamicFieldConfig => $DFLensLookup{$DFLensName},
-                ObjectID           => $ConfigItemID,
+                ObjectID           => $ConfigItem->{VersionID},
                 Value              => $DFValues->{$DFLensName},
                 UserID             => $UserID,
                 ExternalSource     => 1,

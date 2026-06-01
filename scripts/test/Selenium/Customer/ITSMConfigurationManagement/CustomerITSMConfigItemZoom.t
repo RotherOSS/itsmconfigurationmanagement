@@ -107,6 +107,14 @@ $Selenium->RunTest(
             Key   => 'CustomerFrontend::Module###CustomerITSMConfigItem',
             Value => $CustomerITSMConfigItemSysConfig{EffectiveValue}
         );
+        %CustomerITSMConfigItemSysConfig = $Kernel::OM->Get('Kernel::System::SysConfig')->SettingGet(
+            Name => 'CustomerFrontend::Module###CustomerITSMConfigItemZoom',
+        );
+        $Helper->ConfigSettingChange(
+            Valid => 1,
+            Key   => 'CustomerFrontend::Module###CustomerITSMConfigItemZoom',
+            Value => $CustomerITSMConfigItemSysConfig{EffectiveValue}
+        );
 
         for my $Index ( 1 .. 5 ) {
             my %PermissionConditionsSysConfig = $Kernel::OM->Get('Kernel::System::SysConfig')->SettingGet(
@@ -144,14 +152,12 @@ $Selenium->RunTest(
 
         # Check each of ConfigItem class filters for their respective test ConfigItem
         CONFIGITEM:
-        for my $Index ( 1 .. 5 ) {
+        for my $Index ( 2 .. 5 ) {
 
             # Click on ConfigItem class
             $Selenium->find_element(
                 "//a[contains(\@href, \'Action=CustomerITSMConfigItem;Subaction=;Filter=0$Index;SortBy=;OrderBy=;Fulltext=' )]"
             )->VerifiedClick();
-
-            next CONFIGITEM if $Index == 1;
 
             # order by descending creation time
             $Selenium->find_element(
@@ -168,15 +174,31 @@ $Selenium->RunTest(
                 "Test ConfigItem number $ConfigItemNumber - found",
             );
 
-        }
+            # Verify there is a link to CustomerITSMConfigItemZoom on ConfigItem Number column.
+            my $ConfigItemID = $ConfigItemIDs[ $Index - 2 ];
+            $ConfigItemNumber = $ConfigItemNumbers[ $Index - 2 ];
+            $Self->True(
+                $Selenium->execute_script(
+                    "return \$('tr:eq(\"1\") a:contains($ConfigItemNumber)[href*=\"ItemID=$ConfigItemID\"]').length;"
+                ),
+                "Link on ConfigItem 'Number' column correct."
+            );
 
-        # Verify there is a link to CustomerITSMConfigItemZoom on ConfigItem Number column.
-        $Self->True(
-            $Selenium->execute_script(
-                "return \$('tr:eq(\"1\") a:contains($ConfigItemNumbers[3])[href*=\"ItemID=$ConfigItemIDs[3]\"]').length;"
-            ),
-            "Link on ConfigItem 'Number' column correct."
-        );
+            $Selenium->find_element("//a[contains(text(), \'$ConfigItemNumber\' )]")->VerifiedClick();
+
+            # check ConfigItem values on the zoom screen
+            my $Value = $TestClasses[ $Index - 2 ] . "#$ConfigItemNumber";
+            $Self->True(
+                $Selenium->execute_script(
+                    "return \$('p:contains($Value)').length"
+                ),
+                "ConfigItem field value '$Value' found in config item zoom",
+            );
+            $Selenium->go_back();
+            $Selenium->WaitFor(
+                JavaScript => 'return document.readyState === "complete";',
+            );
+        }
 
         # Delete created test ConfigItems.
         for my $ConfigItemDelete (@ConfigItemIDs) {

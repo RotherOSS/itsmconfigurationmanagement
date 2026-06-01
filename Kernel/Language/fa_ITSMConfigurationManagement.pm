@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -25,20 +25,20 @@ sub Data {
 
     # Template: AdminGenericInterfaceOperationConfigItem
     $Self->{Translation}->{'General operation data'} = '';
-    $Self->{Translation}->{'Settings for incoming request data'} = '';
-    $Self->{Translation}->{'Settings for outgoing response data'} = '';
+    $Self->{Translation}->{'Settings for incoming request data'} = 'نگاشت برای درخواست داده های ورودی';
+    $Self->{Translation}->{'Settings for outgoing response data'} = 'نگاشت برای پاسخ خروجی داده';
 
     # Template: AdminITSMConfigItem
     $Self->{Translation}->{'Config Item Management'} = 'مدیریت CI';
     $Self->{Translation}->{'Change class definition'} = 'تغییر تعریف کلاس';
-    $Self->{Translation}->{'Change role definition'} = '';
+    $Self->{Translation}->{'Change role definition'} = 'تغییر تعریف کلاس';
     $Self->{Translation}->{'Ready2Import Class Bundles'} = '';
     $Self->{Translation}->{'Here you can import Ready2Import class bundles showcasing our most usual config items. Please note that some additional configuration may be required.'} =
         '';
     $Self->{Translation}->{'Update existing entities'} = '';
     $Self->{Translation}->{'Import Ready2Adopt class bundles'} = '';
-    $Self->{Translation}->{'Config Item Class'} = '';
-    $Self->{Translation}->{'Config Item Role'} = '';
+    $Self->{Translation}->{'Config Item Class'} = 'آیتم پیکربندی';
+    $Self->{Translation}->{'Config Item Role'} = 'آیتم پیکربندی';
 
     # Template: AgentITSMConfigItemAdd
     $Self->{Translation}->{'Config Item'} = 'آیتم پیکربندی';
@@ -55,14 +55,14 @@ sub Data {
     $Self->{Translation}->{'The number of another Configuration Item to link with.'} = '';
 
     # Template: AgentITSMConfigItemDelete
-    $Self->{Translation}->{'Do you really want to delete this config item?'} = '';
+    $Self->{Translation}->{'Do you really want to delete this config item?'} = 'آیا شما واقعا می خواهید  این فعالیت را حذف کنید ؟';
 
     # Template: AgentITSMConfigItemEdit
     $Self->{Translation}->{'The name of this config item'} = 'نام این آیتم‌های پیکربندی';
     $Self->{Translation}->{'Name is already in use by the ConfigItems with the following Number(s): %s'} =
         '';
     $Self->{Translation}->{'Version Number'} = 'شماره نسخه';
-    $Self->{Translation}->{'Version number of this config item'} = '';
+    $Self->{Translation}->{'Version number of this config item'} = 'نام این آیتم‌های پیکربندی';
     $Self->{Translation}->{'Version Number is already in use by the ConfigItems with the following Number(s): %s'} =
         '';
     $Self->{Translation}->{'Deployment State'} = 'وضعیت نصب';
@@ -108,6 +108,10 @@ sub Data {
     # Template: AdminACL
     $Self->{Translation}->{'Object Type'} = 'نوع موضوع';
 
+    # Template: AdminDynamicFieldScreen
+    $Self->{Translation}->{'Filter by object type'} = 'فیلتر بر اساس نوع';
+    $Self->{Translation}->{'Add DynamicField'} = '';
+
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = '';
     $Self->{Translation}->{'The following roles will be imported'} = '';
@@ -116,7 +120,7 @@ sub Data {
     $Self->{Translation}->{'Do you want to proceed?'} = '';
 
     # Perl Module: Kernel/Modules/AdminITSMConfigItem.pm
-    $Self->{Translation}->{'Need ExampleClasses!'} = '';
+    $Self->{Translation}->{'Need ExampleClasses!'} = 'نیاز ExampleProcesses!';
     $Self->{Translation}->{'Definition is no valid YAML hash.'} = '';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItem.pm
@@ -139,8 +143,8 @@ sub Data {
     $Self->{Translation}->{'No access is given!'} = '';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
-    $Self->{Translation}->{'Can\'t show history, no ConfigItemID is given!'} = '';
-    $Self->{Translation}->{'Can\'t show history, no access rights given!'} = '';
+    $Self->{Translation}->{'Can\'t show history, no ConfigItemID is given!'} = 'نمی تواند تاریخ را نشان دهد، هیچ TicketID داده نشده است!';
+    $Self->{Translation}->{'Can\'t show history, no access rights given!'} = 'نمی تواند تاریخ را نشان دهد، هیچ TicketID داده نشده است!';
     $Self->{Translation}->{'New ConfigItem (ID=%s)'} = '';
     $Self->{Translation}->{'New version (ID=%s)'} = '';
     $Self->{Translation}->{'Deployment state updated (new=%s, old=%s)'} = '';
@@ -152,13 +156,16 @@ sub Data {
     $Self->{Translation}->{'Name updated (new=%s, old=%s)'} = '';
     $Self->{Translation}->{'Attribute %s updated from "%s" to "%s"'} = '';
     $Self->{Translation}->{'Version %s deleted'} = '';
+    $Self->{Translation}->{'File "%s" uploaded'} = '';
+    $Self->{Translation}->{'File "%s" removed'} = '';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
     $Self->{Translation}->{'No ConfigItemID or VersionID is given!'} = '';
-    $Self->{Translation}->{'Can\'t show config item, no access rights given!'} = '';
+    $Self->{Translation}->{'Can\'t show config item, no access rights given!'} = 'نمی تواند تاریخ را نشان دهد، هیچ TicketID داده نشده است!';
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = '';
     $Self->{Translation}->{'ConfigItem'} = 'آیتم پیکربندی';
     $Self->{Translation}->{'printed by %s at %s'} = '';
+    $Self->{Translation}->{'Referenced by'} = 'منبع';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
     $Self->{Translation}->{'Invalid ClassID!'} = '';
@@ -195,12 +202,8 @@ sub Data {
     $Self->{Translation}->{'Class restrictions for the config item'} = '';
     $Self->{Translation}->{'Select one or more classes to restrict selectable config items'} =
         '';
-    $Self->{Translation}->{'Link type'} = '';
-    $Self->{Translation}->{'Select the link type.'} = '';
-    $Self->{Translation}->{'Forwards: Referencing (Source) -> Referenced (Target)'} = '';
-    $Self->{Translation}->{'Backwards: Referenced (Source) -> Referencing (Target)'} = '';
-    $Self->{Translation}->{'Link Direction'} = '';
-    $Self->{Translation}->{'The referencing object is the one containing this dynamic field, the referenced object is the one selected as value of the dynamic field.'} =
+    $Self->{Translation}->{'Deployment state restrictions for the config item'} = '';
+    $Self->{Translation}->{'Select one or more deployment states to restrict selectable config items'} =
         '';
     $Self->{Translation}->{'Dynamic (ConfigItem)'} = '';
     $Self->{Translation}->{'Static (Version)'} = '';
@@ -208,6 +211,8 @@ sub Data {
     $Self->{Translation}->{'Whether this link applies to the ConfigItem or the static version of the referencing object. Current Incident State calculation only is performed on dynamic links.'} =
         '';
     $Self->{Translation}->{'Select the attribute which config items will be searched by'} = '';
+    $Self->{Translation}->{'External-source key'} = '';
+    $Self->{Translation}->{'Select the type of display'} = '';
 
     # Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
     $Self->{Translation}->{'Base structure is not valid. Please provide a hash with data in YAML format.'} =
@@ -222,10 +227,11 @@ sub Data {
 
     # Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
     $Self->{Translation}->{'Maximum number of one element'} = 'حداکثر شماره یک عنصر';
-    $Self->{Translation}->{'Empty fields indicate that the current values are kept'} = 'فیلدهای خالی مشخص می‌کند که مقادیر کنونی باقی خواهند ماند';
+    $Self->{Translation}->{'Maximum number of one Set dynamic field element'} = '';
+    $Self->{Translation}->{'Maximum number of one element within a Set dynamic field element'} =
+        '';
     $Self->{Translation}->{'Import/Export attachments (as the last entries per line)'} = '';
     $Self->{Translation}->{'Version String'} = '';
-    $Self->{Translation}->{'Skipped'} = '';
 
     # Perl Module: Kernel/Modules/AdminDynamicField.pm
     $Self->{Translation}->{'Error synchronizing the definitions. Please check the log.'} = '';
@@ -250,12 +256,18 @@ sub Data {
     # SysConfig
     $Self->{Translation}->{'0 - Hidden'} = '';
     $Self->{Translation}->{'1 - Shown'} = '';
+    $Self->{Translation}->{'A mapping of inner field names used in the Process Management TransitionActions ConfigItemAdd and -Update. The keys are the names of the set inner fields of the set with object type ticket which will be used to create/update the CI, and the values are the names of the inner fields of the set with object type ITSMConfigItem.'} =
+        '';
     $Self->{Translation}->{'Allows extended search conditions in config item search of the agent interface. With this feature you can search e. g. config item name with this kind of conditions like "(*key1*&&*key2*)" or "(*key1*||*key2*)".'} =
-        '';
+        'اجازه می دهد تا شرایط جستجو شده در جستجوی بلیط از رابط عامل عمومی است. با این ویژگی شما می توانید به عنوان مثال عنوان بلیط با این نوع از شرایط مانند \ جستجو "(* key1 * && * key2 *) " یا \ "(* key1 * || * key2 *) ".';
     $Self->{Translation}->{'Allows extended search conditions in config item search of the customer interface. With this feature you can search e. g. config item name with this kind of conditions like "(*key1*&&*key2*)" or "(*key1*||*key2*)".'} =
-        '';
+        'اجازه می دهد تا شرایط جستجو شده در جستجوی بلیط از رابط عامل عمومی است. با این ویژگی شما می توانید به عنوان مثال عنوان بلیط با این نوع از شرایط مانند \ جستجو "(* key1 * && * key2 *) " یا \ "(* key1 * || * key2 *) ".';
     $Self->{Translation}->{'Assigned CIs'} = '';
-    $Self->{Translation}->{'At a specific time point create a ticket for config items, if the configured requirements are met. The time point is determined by the value of the field configured under "TimeCIKey" of the ConfigItem, and modified by "TimeModifier". If the latter can be either just a number, or a sign (+/-), a number, and an unit (d/h/m): "7" is equivalent to "+7d". The DynamicField "Ticket->DynamicField" will be used to mark created tickets - it has to exist. The flags \<OTOBO_CONFIGITEM_X\> where X can be NAME, NUMBER and DATE, will be substituted with the respective values in "Ticket->Text".'} =
+    $Self->{Translation}->{'AssignedToEntity'} = '';
+    $Self->{Translation}->{'At a specific time point create a ticket for config items, if the configured requirements are met. The time point is determined by the value of the dynamic field of type date configured under "TimeCIKey" of the ConfigItem, and modified by "TimeModifier". If the latter can be either just a number, or a sign (+/-), a number, and an unit (d/h/m): "7" is equivalent to "+7d". The DynamicField "Ticket->DynamicField" will be used to mark created tickets - it has to exist. The flags \<OTOBO_CONFIGITEM_X\> where X can be NAME, NUMBER and DATE, will be substituted with the respective values in "Ticket->Text".'} =
+        '';
+    $Self->{Translation}->{'Attributes for license accounting.'} = '';
+    $Self->{Translation}->{'Attributes for licenses counting, where "TotalLicensesDF", "AvailableLicensesDF" and "LicenseReferenceDF" are the names of the dynamic fields used to track the remaining licenses. If used, only deployment states in "ValidDeplStates" are considered. If a threshold is defined in "MinimumLicenses", a ticket will automatically be created if less licenses are available. For this, the checkbox dynamic field "Ticket->DynamicField" must exist. The tags \<OTOBO_CONFIGITEM_X\> where X can be NAME, NUMBER, LICENSES_AVAIL and LICENSES_MIN, will be substituted with the respective values in "Ticket->Text" by the config item name, number, available licenses, and minimum required available licenses, respectively.'} =
         '';
     $Self->{Translation}->{'CIs assigned to customer company'} = '';
     $Self->{Translation}->{'CIs assigned to customer user'} = '';
@@ -270,22 +282,14 @@ sub Data {
     $Self->{Translation}->{'Column config item filters for ConfigItem Overview.'} = '';
     $Self->{Translation}->{'Columns that can be filtered in the config item overview of the agent interface. Note: Only Config Item attributes and Dynamic Fields (DynamicField_NameX) are allowed.'} =
         '';
-    $Self->{Translation}->{'Columns that can be filtered in the config item overview of the customer interface. Note: Only Config Item attributes and Dynamic Fields (DynamicField_NameX) are allowed.'} =
-        '';
-    $Self->{Translation}->{'Columns that can be filtered in the config item search result overview of the agent interface. Note: Only Config Item attributes and Dynamic Fields (DynamicField_NameX) are allowed.'} =
-        '';
-    $Self->{Translation}->{'Config Items'} = '';
+    $Self->{Translation}->{'Config Items'} = 'آیتم پیکربندی';
     $Self->{Translation}->{'Config item add.'} = '';
     $Self->{Translation}->{'Config item edit.'} = '';
-    $Self->{Translation}->{'Config item event module that count the licenses for OTOBOCILicenseCount feature.'} =
+    $Self->{Translation}->{'Config item event module that enables accounting licenses for a given config item.'} =
         '';
     $Self->{Translation}->{'Config item event module that enables logging to history in the agent interface.'} =
         'ماژول رویداد آیتم پیکربندی که ثبت وقایع در تاریخچه را در واسط کاربری کارشناس فعال می‌سازد.';
     $Self->{Translation}->{'Config item event module that updates config items to their current definition.'} =
-        '';
-    $Self->{Translation}->{'Config item event module that updates the table configitem_ĺink.'} =
-        '';
-    $Self->{Translation}->{'Config item event module updates the current incident state.'} =
         '';
     $Self->{Translation}->{'Config item history.'} = '';
     $Self->{Translation}->{'Config item print.'} = '';
@@ -301,6 +305,10 @@ sub Data {
     $Self->{Translation}->{'Configuration Management Database.'} = '';
     $Self->{Translation}->{'Configuration item bulk module.'} = '';
     $Self->{Translation}->{'Configuration item search backend router of the agent interface.'} =
+        'تغییر مسیریاب جستجو در رابط کاربری کارشناس';
+    $Self->{Translation}->{'Configure the columns which are available for viewing Permission Conditions in the customer interface, when the corresponding Permission Condition Columns are not specifically configured. This setting is used as a fallback for the other Permission Condition Columns settings.'} =
+        '';
+    $Self->{Translation}->{'Configure the columns which are available when viewing the corresponding Permission Condition in the customer interface.'} =
         '';
     $Self->{Translation}->{'Create and manage the definitions for Configuration Items.'} = 'ساخت و مدیریت تعاریف آیتم‌های پیکربندی';
     $Self->{Translation}->{'Creates Tickets for ConfigItems at specific time points.'} = '';
@@ -308,9 +316,9 @@ sub Data {
     $Self->{Translation}->{'Customers have the possibility to manually switch between historic CI versions.'} =
         '';
     $Self->{Translation}->{'Default data to use on attribute for config item search screen. Example: "ITSMConfigItemCreateTimePointFormat=year;ITSMConfigItemCreateTimePointStart=Last;ITSMConfigItemCreateTimePoint=2;".'} =
-        '';
+        'داده های پیش فرض برای استفاده بر روی ویژگی برای صفحه نمایش جستجو بلیط. به عنوان مثال: \ "TicketCreateTimePointFormat = سال؛ TicketCreateTimePointStart = آخرین. TicketCreateTimePoint = 2؛ ".';
     $Self->{Translation}->{'Default data to use on attribute for config item search screen. Example: "ITSMConfigItemCreateTimeStartYear=2010;ITSMConfigItemCreateTimeStartMonth=10;ITSMConfigItemCreateTimeStartDay=4;ITSMConfigItemCreateTimeStopYear=2010;ITSMConfigItemCreateTimeStopMonth=11;ITSMConfigItemCreateTimeStopDay=3;".'} =
-        '';
+        'داده های پیش فرض برای استفاده بر روی ویژگی برای صفحه نمایش جستجو بلیط. به عنوان مثال: \ "TicketCreateTimeStartYear = 2010؛ TicketCreateTimeStartMonth = 10؛ TicketCreateTimeStartDay = 4؛ TicketCreateTimeStopYear = 2010؛ TicketCreateTimeStopMonth = 11؛ TicketCreateTimeStopDay = 3؛ ".';
     $Self->{Translation}->{'Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = "complex"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.'} =
         'تعریف عملیات که در آن یک دکمه تنظیمات در دسترس است در اشیاء مرتبط ویجت (LinkObject :: ViewMode = \ "پیچیده "). لطفا توجه داشته باشید که این اقدامات باید در بر داشت زیر JS و CSS فایل های ثبت نام کرده اند: Core.AllocationList.css، Core.UI.AllocationList.js، Core.UI.Table.Sort.js، Core.Agent.TableFilters.js.';
     $Self->{Translation}->{'Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit.'} =
@@ -318,15 +326,15 @@ sub Data {
     $Self->{Translation}->{'Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
         '';
     $Self->{Translation}->{'Defines Required permissions to delete ITSM configuration items using the Generic Interface.'} =
-        '';
+        'دسترسی مورد نیاز برای استفاده از صفحه نمایش توجه داشته باشید بلیط در رابط عامل.';
     $Self->{Translation}->{'Defines Required permissions to get ITSM configuration items using the Generic Interface.'} =
-        '';
+        'دسترسی مورد نیاز برای استفاده از صفحه نمایش توجه داشته باشید بلیط در رابط عامل.';
     $Self->{Translation}->{'Defines Required permissions to search ITSM configuration items using the Generic Interface.'} =
-        '';
+        'دسترسی مورد نیاز برای استفاده از صفحه نمایش توجه داشته باشید بلیط در رابط عامل.';
     $Self->{Translation}->{'Defines Required permissions to set ITSM configuration items using the Generic Interface.'} =
-        '';
+        'دسترسی مورد نیاز برای استفاده از صفحه نمایش توجه داشته باشید بلیط در رابط عامل.';
     $Self->{Translation}->{'Defines an overview module to show the small view of a configuration item list.'} =
-        '';
+        'تعریف ماژول نمای کلی برای نمایش نمای کوچک از فهرست تغییرات';
     $Self->{Translation}->{'Defines if the link type labels must be shown in the node connections.'} =
         '';
     $Self->{Translation}->{'Defines regular expressions individually for each ConfigItem class to check the ConfigItem name and to show corresponding error messages.'} =
@@ -334,25 +342,27 @@ sub Data {
     $Self->{Translation}->{'Defines the available columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         '';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the agent interface.'} =
-        '';
+        'تعریف می کند که به طور پیش فرض ویژگی بلیط برای مرتب سازی بلیط از نتیجه جستجو بلیط رابط عامل.';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the customer interface.'} =
-        '';
+        'تعریف می کند که به طور پیش فرض ویژگی بلیط برای مرتب سازی بلیط از نتیجه جستجو بلیط رابط عامل.';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of this operation.'} =
-        '';
+        'تعریف می کند که به طور پیش فرض ویژگی بلیط برای مرتب سازی بلیط از نتیجه جستجو بلیط این عملیات.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the agent interface. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'تعریف می کند که به طور پیش فرض سفارش بلیط در نتیجه جستجو بلیط رابط عامل. تا: قدیمی ترین در بالای صفحه. پایین: شدن در بالای صفحه.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'تعریف می کند که به طور پیش فرض سفارش بلیط از یک نتیجه جستجو در رابط مشتری. تا: قدیمی ترین در بالای صفحه. پایین: شدن در بالای صفحه.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the this operation. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'تعریف می کند که به طور پیش فرض سفارش بلیط در نتیجه جستجو بلیط از این عملیات. تا: قدیمی ترین در بالای صفحه. پایین: شدن در بالای صفحه.';
     $Self->{Translation}->{'Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         '';
     $Self->{Translation}->{'Defines the default relations depth to be shown.'} = '';
     $Self->{Translation}->{'Defines the default shown config item search attribute for config item search screen.'} =
-        '';
+        'تعریف می کند که به طور پیش فرض نشان داده بلیط ویژگی جستجو برای صفحه نمایش جستجو بلیط.';
     $Self->{Translation}->{'Defines the default shown config item search attribute for config item search screen. Example: "Key" must have the name of the Dynamic Field in this case \'X\', "Content" must have the value of the Dynamic Field depending on the Dynamic Field type,  Text: \'a text\', Dropdown: \'1\', Date/Time: \'Search_DynamicField_XTimeSlotStartYear=1974; Search_DynamicField_XTimeSlotStartMonth=01; Search_DynamicField_XTimeSlotStartDay=26; Search_DynamicField_XTimeSlotStartHour=00; Search_DynamicField_XTimeSlotStartMinute=00; Search_DynamicField_XTimeSlotStartSecond=00; Search_DynamicField_XTimeSlotStopYear=2013; Search_DynamicField_XTimeSlotStopMonth=01; Search_DynamicField_XTimeSlotStopDay=26; Search_DynamicField_XTimeSlotStopHour=23; Search_DynamicField_XTimeSlotStopMinute=59; Search_DynamicField_XTimeSlotStopSecond=59;\' and or \'Search_DynamicField_XTimePointFormat=week; Search_DynamicField_XTimePointStart=Before; Search_DynamicField_XTimePointValue=7\';.'} =
-        '';
+        'تعریف می کند که به طور پیش فرض نشان داده بلیط ویژگی جستجو برای صفحه نمایش جستجو بلیط. به عنوان مثال: \ "کلید " باید نام زمینه پویا در این مورد \'X\'، \ "محتوا "، باید ارزش درست پویا بسته به نوع پویا درست، متن را داشته باشد: یک متن، کرکره : \'1\'، تاریخ / زمان: Search_DynamicField_XTimeSlotStartYear = 1974؛ Search_DynamicField_XTimeSlotStartMonth = 01؛ Search_DynamicField_XTimeSlotStartDay = 26؛ Search_DynamicField_XTimeSlotStartHour = 00؛ Search_DynamicField_XTimeSlotStartMinute = 00؛ Search_DynamicField_XTimeSlotStartSecond = 00؛ Search_DynamicField_XTimeSlotStopYear = 2013؛ Search_DynamicField_XTimeSlotStopMonth = 01؛ Search_DynamicField_XTimeSlotStopDay = 26؛ Search_DynamicField_XTimeSlotStopHour = 23؛ Search_DynamicField_XTimeSlotStopMinute = 59؛ Search_DynamicField_XTimeSlotStopSecond = 59؛ \' و یا "Search_DynamicField_XTimePointFormat = هفته؛ Search_DynamicField_XTimePointStart = قبل از. Search_DynamicField_XTimePointValue = 7 \'؛.';
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
+        '';
+    $Self->{Translation}->{'Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         '';
     $Self->{Translation}->{'Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).'} =
         'تعریف می کند که ارتفاع برای غنی جزء ویرایشگر متن برای این صفحه نمایش. تعداد (پیکسل) یا ارزش درصد (نسبی) را وارد کنید.';
@@ -375,20 +385,20 @@ sub Data {
     $Self->{Translation}->{'Defines the shown columns of CIs in the link table complex view, depending on the CI class. Each entry must be prefixed with the class name and double colons (i.e. Computer::). There are a few CI-Attributes that common to all CIs (example for the class Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). To show individual CI-Attributes as defined in the CI-Definition, the following scheme must be used (example for the class Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If there is no entry for a CI class, then the default columns are shown.'} =
         '';
     $Self->{Translation}->{'Defines which items are available for \'Action\' in third level of the ITSM Config Item ACL structure.'} =
-        '';
+        'تعریف می کند که اقلام برای \'عمل\' در سطح سوم ساختار ACL در دسترس هستند.';
     $Self->{Translation}->{'Defines which items are available in first level of the ITSM Config Item ACL structure.'} =
-        '';
+        'تعریف می کند که اقلام در سطح اول از ساختار ACL در دسترس هستند.';
     $Self->{Translation}->{'Defines which items are available in second level of the ITSM Config Item ACL structure.'} =
-        '';
+        'تعریف می کند که اقلام در سطح دوم از ساختار ACL در دسترس هستند.';
     $Self->{Translation}->{'Defines which type of link (named from the ticket perspective) can affect the status of a linked CI.'} =
         '';
     $Self->{Translation}->{'Defines which type of ticket can affect the status of a linked CI.'} =
         '';
     $Self->{Translation}->{'Definition Update'} = '';
-    $Self->{Translation}->{'Delete Configuration Item'} = '';
+    $Self->{Translation}->{'Delete Configuration Item'} = 'آیتم پیکربندی';
     $Self->{Translation}->{'DeplState'} = '';
-    $Self->{Translation}->{'Deployment State Color'} = '';
-    $Self->{Translation}->{'DeploymentState'} = '';
+    $Self->{Translation}->{'Deployment State Color'} = 'وضعیت نصب';
+    $Self->{Translation}->{'DeploymentState'} = 'وضعیت نصب';
     $Self->{Translation}->{'Duplicate'} = 'تکثیر';
     $Self->{Translation}->{'Dynamic field event module that marks config item definitions as out of sync, if containing dynamic fields change.'} =
         '';
@@ -399,9 +409,9 @@ sub Data {
     $Self->{Translation}->{'Dynamic fields shown in the config item search screen of the agent interface.'} =
         '';
     $Self->{Translation}->{'Enables configuration item bulk action feature for the agent frontend to work on more than one configuration item at a time.'} =
-        '';
+        'حجم درخواست از ویژگی های عمل برای ظاهر عامل به کار بر روی بیش از درخواست در یک زمان قادر می سازد.';
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
-        '';
+        'ویژگی های عمل حجم درخواست تنها برای گروه های ذکر شده را قادر می سازد .';
     $Self->{Translation}->{'Enables/disables the functionality to check ITSM onfiguration items for unique names. Before enabling this option you should check your system for already existing config items with duplicate names. You can do this with the console command Admin::ITSM::ConfigItem::ListDuplicates.'} =
         '';
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
@@ -412,20 +422,23 @@ sub Data {
         '';
     $Self->{Translation}->{'For every webservice (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker config.'} =
         '';
+    $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
+        'GenericInterface ثبت نام ماژول برای لایه invoker است.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
-        '';
-    $Self->{Translation}->{'ITSM ConfigItem'} = '';
+        'GenericInterface ثبت نام ماژول برای لایه invoker است.';
+    $Self->{Translation}->{'GenericInterface module registration for the ConfigItemUpdate invoker layer.'} =
+        'GenericInterface ثبت نام ماژول برای لایه invoker است.';
+    $Self->{Translation}->{'ITSM ConfigItem'} = 'آیتم پیکربندی';
     $Self->{Translation}->{'ITSM config item overview.'} = '';
-    $Self->{Translation}->{'If this option is activated, linked items are only counted if they belong to one of the listed classes.'} =
-        '';
-    $Self->{Translation}->{'InciState'} = '';
-    $Self->{Translation}->{'IncidentState'} = '';
+    $Self->{Translation}->{'InciState'} = 'وضعیت رخداد';
+    $Self->{Translation}->{'IncidentState'} = 'وضعیت رخداد';
     $Self->{Translation}->{'Includes deployment states in the config item search of the customer interface.'} =
         '';
     $Self->{Translation}->{'Includes incident states in the config item search of the customer interface.'} =
         '';
+    $Self->{Translation}->{'License accounting configuration item event module.'} = '';
     $Self->{Translation}->{'Maximum number of config items to be displayed in the result of this operation.'} =
-        '';
+        'حداکثر تعداد درخواست در نتیجه این کار نمایش داده می شود.';
     $Self->{Translation}->{'Module to check the group responsible for a class.'} = '';
     $Self->{Translation}->{'Module to check the group responsible for a configuration item.'} =
         '';
@@ -433,9 +446,9 @@ sub Data {
     $Self->{Translation}->{'Name Module'} = '';
     $Self->{Translation}->{'Number Module'} = '';
     $Self->{Translation}->{'Number of config items to be displayed in each page of a search result in the agent interface.'} =
-        '';
+        'تعداد بلیط در هر صفحه از یک نتیجه جستجو در رابط عامل نمایش داده شود.';
     $Self->{Translation}->{'Number of config items to be displayed in each page of a search result in the customer interface.'} =
-        '';
+        'تعداد بلیط در هر صفحه از یک نتیجه جستجو در رابط مشتری نمایش داده می شود.';
     $Self->{Translation}->{'Objects to search for, how many entries and which attributs to show. ConfigItem attributes have to explicitly be stored via Elasticsearch.'} =
         '';
     $Self->{Translation}->{'Overview.'} = 'پیش نمایش';
@@ -443,7 +456,9 @@ sub Data {
         '';
     $Self->{Translation}->{'Parameters for the column filters of the small config item overview. Please note: setting \'Active\' to 0 will only prevent agents from editing settings of this group in their personal preferences, but will still allow administrators to edit the settings of another user\'s behalf. Use \'PreferenceGroup\' to control in which area these settings should be shown in the user interface.'} =
         '';
-    $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin.'} =
+    $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview show in the agent interface. "Limit" is the number of entries shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is to specify which customer company reference dynamic field is used to filter for the selected customer company. "ShownClasses" is a list to optionally restrict classes of the shown config items. Leaving this list empty defaults to all classes which match the customer company in the dynamic field configured in "ConfigItemKey".'} =
+        '';
+    $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview shown in the agent interface. "Limit" is the number of entries per config item class shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is to specify which customer user reference dynamic field is used to filter for the selected customer user. "ShownClasses" is a list to optionally restrict classes of the shown config items. Leaving this list empty defaults to all classes which match the customer user in the dynamic field configured in "ConfigItemKey".'} =
         '';
     $Self->{Translation}->{'Parameters for the deployment states color in the preferences view of the agent interface.'} =
         '';
@@ -467,59 +482,59 @@ sub Data {
         'انجام عمل پیکربندی برای هر رویداد (به عنوان یک Invoker) برای هر از webservice پیکربندی شده است.';
     $Self->{Translation}->{'Permission Group'} = '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item attachment action in the agent interface.'} =
-        '';
+        'دسترسی مورد نیاز برای استفاده از صفحه نمایش خروجی ایمیل در صفحه ی کارشناس.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
-        '';
+        'دسترسی مورد نیاز برای استفاده از صفحه نمایش توجه داشته باشید بلیط در رابط عامل.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the agent interface.'} =
-        '';
+        'دسترسی مورد نیاز برای استفاده از صفحه نمایش خروجی ایمیل در صفحه ی کارشناس.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the customer interface.'} =
-        '';
+        'دسترسی مورد نیاز برای استفاده از صفحه نمایش خروجی ایمیل در صفحه ی کارشناس.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item tree view screen in the agent interface.'} =
-        '';
+        'دسترسی مورد نیاز برای استفاده ازدرخواست صفحه نمایش های متنی رایگان در صفحه ی کارشناس.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item zoom screen in the agent interface.'} =
-        '';
+        'دسترسی مورد نیاز برای استفاده از صفحه نمایش خروجی ایمیل در صفحه ی کارشناس.';
     $Self->{Translation}->{'Required permissions to use the add ITSM configuration item screen in the agent interface.'} =
-        '';
+        'دسترسی مورد نیاز برای استفاده از صفحه نمایش خروجی ایمیل در صفحه ی کارشناس.';
     $Self->{Translation}->{'Required permissions to use the bulk ITSM configuration item screen in the agent interface.'} =
-        '';
+        'دسترسی مورد نیاز برای استفاده از صفحه نمایش خروجی ایمیل در صفحه ی کارشناس.';
     $Self->{Translation}->{'Required permissions to use the edit ITSM configuration item screen in the agent interface.'} =
-        '';
+        'دسترسی مورد نیاز برای استفاده از صفحه نمایش خروجی ایمیل در صفحه ی کارشناس.';
     $Self->{Translation}->{'Required permissions to use the history ITSM configuration item screen in the agent interface.'} =
-        '';
+        'دسترسی مورد نیاز برای استفاده از صفحه نمایش توجه داشته باشید بلیط در رابط عامل.';
     $Self->{Translation}->{'Required permissions to use the print ITSM configuration item screen in the agent interface.'} =
-        '';
+        'دسترسی مورد نیاز برای استفاده از صفحه نمایش توجه داشته باشید بلیط در رابط عامل.';
     $Self->{Translation}->{'Required privileges to delete config items.'} = '';
     $Self->{Translation}->{'Search config items.'} = '';
     $Self->{Translation}->{'Set the incident state of a CI automatically when a Ticket is Linked to a CI.'} =
         '';
     $Self->{Translation}->{'Sets the deployment state in the configuration item bulk screen of the agent interface.'} =
-        '';
+        'نوع بلیط در صفحه نمایش فله بلیط رابط عامل تنظیم می کند.';
     $Self->{Translation}->{'Sets the incident state in the configuration item bulk screen of the agent interface.'} =
-        '';
+        'نوع بلیط در صفحه نمایش فله بلیط رابط عامل تنظیم می کند.';
     $Self->{Translation}->{'Shows a link in the menu that allows linking a configuration item with another object in the config item zoom view of the agent interface.'} =
-        '';
+        'نشان می دهد یک لینک در منوی ثبت نام یک بلیط به یک فرایند در نظر زوم بلیط رابط عامل.';
     $Self->{Translation}->{'Shows a link in the menu to access the history of a configuration item in the configuration item overview of the agent interface.'} =
-        '';
+        'یک لینک در منوی نشان می دهد برای دیدن تاریخ یک بلیط در هر مروری بلیط رابط عامل.';
     $Self->{Translation}->{'Shows a link in the menu to access the history of a configuration item in the its zoom view of the agent interface.'} =
-        '';
+        'یک لینک در منوی نشان می دهد برای دیدن تاریخ یک بلیط در هر مروری بلیط رابط عامل.';
     $Self->{Translation}->{'Shows a link in the menu to delete a configuration item in its zoom view of the agent interface.'} =
-        '';
+        'نشان می دهد یک لینک در منوی ثبت نام یک بلیط به یک فرایند در نظر زوم بلیط رابط عامل.';
     $Self->{Translation}->{'Shows a link in the menu to display the configuration item links as a Tree View.'} =
         '';
     $Self->{Translation}->{'Shows a link in the menu to duplicate a configuration item in the configuration item overview of the agent interface.'} =
-        '';
+        'نشان می دهد یک لینک در منوی ثبت نام یک بلیط به یک فرایند در نظر زوم بلیط رابط عامل.';
     $Self->{Translation}->{'Shows a link in the menu to duplicate a configuration item in the its zoom view of the agent interface.'} =
-        '';
+        'نشان می دهد یک لینک در منوی ثبت نام یک بلیط به یک فرایند در نظر زوم بلیط رابط عامل.';
     $Self->{Translation}->{'Shows a link in the menu to edit a configuration item in the its zoom view of the agent interface.'} =
-        '';
+        'نشان می دهد یک لینک در منوی ثبت نام یک بلیط به یک فرایند در نظر زوم بلیط رابط عامل.';
     $Self->{Translation}->{'Shows a link in the menu to go back in the configuration item zoom view of the agent interface.'} =
-        '';
+        'یک لینک در منوی نشان می دهد به زوم یک بلیط در مروری بلیط رابط عامل.';
     $Self->{Translation}->{'Shows a link in the menu to print a configuration item in the its zoom view of the agent interface.'} =
-        '';
+        'نشان می دهد یک لینک در منوی ثبت نام یک بلیط به یک فرایند در نظر زوم بلیط رابط عامل.';
     $Self->{Translation}->{'Shows a link in the menu to zoom into a configuration item in the configuration item overview of the agent interface.'} =
-        '';
+        'نشان می دهد یک لینک در منوی ثبت نام یک بلیط به یک فرایند در نظر زوم بلیط رابط عامل.';
     $Self->{Translation}->{'Shows the config item history (reverse ordered) in the agent interface.'} =
-        '';
+        'تاریخ بلیط (معکوس دستور داد) در رابط عامل نشان می دهد.';
     $Self->{Translation}->{'The default category which is shown, if none is selected.'} = '';
     $Self->{Translation}->{'The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. The default is ConfigItem#.'} =
         '';
@@ -527,20 +542,247 @@ sub Data {
     $Self->{Translation}->{'Version String Expression'} = '';
     $Self->{Translation}->{'Version String Module'} = '';
     $Self->{Translation}->{'Version Trigger'} = '';
+    $Self->{Translation}->{'Whether fields should be automatically filled (1), and in that case also be hidden from ticket formulars (2).'} =
+        '';
     $Self->{Translation}->{'Whether the execution of ConfigItemACL can be avoided by checking cached field dependencies. This can improve loading times of formulars, but has to be disabled, if ACLModules are to be used for ITSMConfigItem- and Form-ReturnTypes.'} =
         '';
     $Self->{Translation}->{'Which general information is shown in the header.'} = '';
-    $Self->{Translation}->{'With this option it´s possible to fill automaticly a CI field, depending on the count of linked CI´s with the existing type DependsOn.'} =
-        '';
-    $Self->{Translation}->{'With this option it´s possible to fill automaticly a CI field, depending on the count of linked CI´s.'} =
-        '';
-    $Self->{Translation}->{'With this option it´s possible to fill automaticly a CI field, depending on the count of linked CI´s. The setting CounterClassName include the name of the class and CounterFieldName is used to store the count of used licence.'} =
-        '';
     $Self->{Translation}->{'class'} = 'کلاس';
     $Self->{Translation}->{'global'} = '';
     $Self->{Translation}->{'postproductive'} = '';
     $Self->{Translation}->{'preproductive'} = '';
     $Self->{Translation}->{'productive'} = '';
+
+    # Ready to adopt classes: IT-Servicemanagement-11_0_3
+    $Self->{Translation}->{'10U: 17.5 inches (44.45 cm)'} = '';
+    $Self->{Translation}->{'12U: 21 inches (53.34 cm)'} = '';
+    $Self->{Translation}->{'15U: 26.25 inches (66.68 cm)'} = '';
+    $Self->{Translation}->{'18U: 31.5 inches (80.01 cm)'} = '';
+    $Self->{Translation}->{'19-inch Rack'} = '';
+    $Self->{Translation}->{'1U: 1.75 inches (4.45 cm)'} = '';
+    $Self->{Translation}->{'20U: 35 inches (88.9 cm)'} = '';
+    $Self->{Translation}->{'21-inch Rack'} = '';
+    $Self->{Translation}->{'22U: 38.5 inches (97.79 cm)'} = '';
+    $Self->{Translation}->{'23-inch Rack'} = '';
+    $Self->{Translation}->{'23.6 inches (600 mm)'} = '';
+    $Self->{Translation}->{'24U: 42 inches (106.68 cm)'} = '';
+    $Self->{Translation}->{'27U: 47.25 inches (120.02 cm)'} = '';
+    $Self->{Translation}->{'2U: 3.5 inches (8.89 cm)'} = '';
+    $Self->{Translation}->{'30U: 52.5 inches (133.35 cm)'} = '';
+    $Self->{Translation}->{'31.5 inches (800 mm)'} = '';
+    $Self->{Translation}->{'33U: 57.75 inches (146.68 cm)'} = '';
+    $Self->{Translation}->{'35.4 inches (900 mm)'} = '';
+    $Self->{Translation}->{'36U: 63 inches (160.02 cm)'} = '';
+    $Self->{Translation}->{'39.4 inches (1000 mm)'} = '';
+    $Self->{Translation}->{'39U: 68.25 inches (173.35 cm)'} = '';
+    $Self->{Translation}->{'3U: 5.25 inches (13.34 cm)'} = '';
+    $Self->{Translation}->{'42U: 73.5 inches (186.69 cm)'} = '';
+    $Self->{Translation}->{'43.3 inches (1100 mm):'} = '';
+    $Self->{Translation}->{'45U: 78.75 inches (200.02 cm)'} = '';
+    $Self->{Translation}->{'47.2 inches (1200 mm)'} = '';
+    $Self->{Translation}->{'48U: 84 inches (213.36 cm)'} = '';
+    $Self->{Translation}->{'4U: 7 inches (17.78 cm)'} = '';
+    $Self->{Translation}->{'5U: 8.75 inches (22.23 cm)'} = '';
+    $Self->{Translation}->{'6U: 10.5 inches (26.67 cm)'} = '';
+    $Self->{Translation}->{'7U: 12.25 inches (31.12 cm)'} = '';
+    $Self->{Translation}->{'8U: 14 inches (35.56 cm)'} = '';
+    $Self->{Translation}->{'9U: 15.75 inches (40.01 cm)'} = '';
+    $Self->{Translation}->{'AGPL (Affero General Public License)'} = '';
+    $Self->{Translation}->{'Accounting'} = '';
+    $Self->{Translation}->{'Accounting Information'} = '';
+    $Self->{Translation}->{'Address Allocation'} = '';
+    $Self->{Translation}->{'Administrator'} = '';
+    $Self->{Translation}->{'Analog Phone'} = '';
+    $Self->{Translation}->{'Apache License'} = '';
+    $Self->{Translation}->{'Appliance Type'} = '';
+    $Self->{Translation}->{'BSD License (Berkeley Software Distribution License)'} = '';
+    $Self->{Translation}->{'Battery Capacity (Ah)'} = '';
+    $Self->{Translation}->{'Battery Type'} = '';
+    $Self->{Translation}->{'Building'} = 'ساختمان';
+    $Self->{Translation}->{'Bus Interface'} = 'واسط';
+    $Self->{Translation}->{'CC0 (Creative Commons Zero)'} = '';
+    $Self->{Translation}->{'CIDR'} = '';
+    $Self->{Translation}->{'CPU'} = 'سی‌پی‌یو';
+    $Self->{Translation}->{'CPU Class'} = '';
+    $Self->{Translation}->{'Capacity (GB)'} = '';
+    $Self->{Translation}->{'Capacity per graphics card'} = '';
+    $Self->{Translation}->{'Card Number'} = '';
+    $Self->{Translation}->{'Card Reader'} = '';
+    $Self->{Translation}->{'Card Type'} = '';
+    $Self->{Translation}->{'Client Certificates'} = '';
+    $Self->{Translation}->{'Client Software'} = '';
+    $Self->{Translation}->{'Client category'} = '';
+    $Self->{Translation}->{'Clockrate'} = '';
+    $Self->{Translation}->{'Clockspeed'} = '';
+    $Self->{Translation}->{'Code Signing Certificates'} = '';
+    $Self->{Translation}->{'Conference Phone'} = '';
+    $Self->{Translation}->{'Consulting Agreement'} = '';
+    $Self->{Translation}->{'Contact'} = '';
+    $Self->{Translation}->{'Contact Distributor'} = '';
+    $Self->{Translation}->{'Container Management'} = '';
+    $Self->{Translation}->{'Contract'} = '';
+    $Self->{Translation}->{'Contract Type'} = '';
+    $Self->{Translation}->{'Contract period from'} = '';
+    $Self->{Translation}->{'Contract period until'} = '';
+    $Self->{Translation}->{'Cordless Phone (DECT Phone)'} = '';
+    $Self->{Translation}->{'Cost unit'} = '';
+    $Self->{Translation}->{'Count of licenses'} = '';
+    $Self->{Translation}->{'Creation Date'} = '';
+    $Self->{Translation}->{'Creative Commons'} = '';
+    $Self->{Translation}->{'Custom Rack'} = '';
+    $Self->{Translation}->{'DHCP'} = '';
+    $Self->{Translation}->{'DHCP Reserved'} = '';
+    $Self->{Translation}->{'DNS-Server'} = '';
+    $Self->{Translation}->{'DVI'} = '';
+    $Self->{Translation}->{'Date of Invoice'} = '';
+    $Self->{Translation}->{'Date of Order'} = '';
+    $Self->{Translation}->{'Date of Warranty'} = '';
+    $Self->{Translation}->{'Date of release'} = '';
+    $Self->{Translation}->{'Desktop'} = 'رومیزی';
+    $Self->{Translation}->{'DisplayPort'} = '';
+    $Self->{Translation}->{'Document Signing Certificates'} = '';
+    $Self->{Translation}->{'EPL (Eclipse Public License)'} = '';
+    $Self->{Translation}->{'ETSI Rack'} = '';
+    $Self->{Translation}->{'Email Certificates (S/MIME Certificates)'} = '';
+    $Self->{Translation}->{'Embedded SIM (eSIM)'} = '';
+    $Self->{Translation}->{'Employment Contract'} = '';
+    $Self->{Translation}->{'End IP Address'} = '';
+    $Self->{Translation}->{'End of support'} = '';
+    $Self->{Translation}->{'Expiry Date'} = '';
+    $Self->{Translation}->{'External Hard Drive'} = '';
+    $Self->{Translation}->{'Firewall'} = '';
+    $Self->{Translation}->{'Firmware'} = '';
+    $Self->{Translation}->{'Flywheel Energy Storage'} = '';
+    $Self->{Translation}->{'Form Factor'} = '';
+    $Self->{Translation}->{'Franchise Agreement'} = '';
+    $Self->{Translation}->{'Freeware'} = 'نرم افزار مجانی';
+    $Self->{Translation}->{'GPL (General Public License)'} = '';
+    $Self->{Translation}->{'General Information'} = '';
+    $Self->{Translation}->{'Graphics Cards'} = '';
+    $Self->{Translation}->{'Graphics card'} = '';
+    $Self->{Translation}->{'HDMI'} = '';
+    $Self->{Translation}->{'Hardware'} = '';
+    $Self->{Translation}->{'Hardware Model'} = '';
+    $Self->{Translation}->{'Hardware Weight'} = '';
+    $Self->{Translation}->{'Headset'} = '';
+    $Self->{Translation}->{'IP Protocol'} = '';
+    $Self->{Translation}->{'Identity and Access Management (IAM)'} = '';
+    $Self->{Translation}->{'Inventory Number'} = '';
+    $Self->{Translation}->{'Inverstment costs'} = '';
+    $Self->{Translation}->{'Invoice Number'} = '';
+    $Self->{Translation}->{'Keyboard'} = 'صفحه کلید';
+    $Self->{Translation}->{'LCD Monitor (Liquid Crystal Display)'} = '';
+    $Self->{Translation}->{'LED Monitor (Light Emitting Diode)'} = '';
+    $Self->{Translation}->{'LGPL (Lesser General Public License)'} = '';
+    $Self->{Translation}->{'Landline Phone'} = '';
+    $Self->{Translation}->{'Laptop'} = 'کیفی';
+    $Self->{Translation}->{'Latitude'} = '';
+    $Self->{Translation}->{'Layer 1: Physical Layer'} = '';
+    $Self->{Translation}->{'Layer 2: Data Link Layer'} = '';
+    $Self->{Translation}->{'Layer 3: Network Layer'} = '';
+    $Self->{Translation}->{'Layer 3: Network Layer (Supernet)'} = '';
+    $Self->{Translation}->{'Layer 4: Transport Layer'} = '';
+    $Self->{Translation}->{'Layer 5: Session Layer'} = '';
+    $Self->{Translation}->{'Layer 6: Presentation Layer'} = '';
+    $Self->{Translation}->{'Layer 7: Application Layer'} = '';
+    $Self->{Translation}->{'Lease Agreement'} = '';
+    $Self->{Translation}->{'License Agreement'} = '';
+    $Self->{Translation}->{'License Count'} = '';
+    $Self->{Translation}->{'License Key'} = '';
+    $Self->{Translation}->{'License Type'} = '';
+    $Self->{Translation}->{'License period from'} = '';
+    $Self->{Translation}->{'License period until'} = '';
+    $Self->{Translation}->{'Lithium Iron Phosphate (LiFePO4) Battery'} = '';
+    $Self->{Translation}->{'Lithium-Ion (Li-ion) Battery'} = '';
+    $Self->{Translation}->{'Loan Agreement'} = '';
+    $Self->{Translation}->{'Located in'} = '';
+    $Self->{Translation}->{'Longitude'} = '';
+    $Self->{Translation}->{'MIT License'} = '';
+    $Self->{Translation}->{'MPL (Mozilla Public License)'} = '';
+    $Self->{Translation}->{'Manufacturer'} = '';
+    $Self->{Translation}->{'Maximum Load Capacity (W)'} = '';
+    $Self->{Translation}->{'Memory'} = '';
+    $Self->{Translation}->{'Memory Type'} = '';
+    $Self->{Translation}->{'Micro SIM'} = '';
+    $Self->{Translation}->{'Mini-Rack'} = '';
+    $Self->{Translation}->{'Mobile Number'} = '';
+    $Self->{Translation}->{'Mobile/Embedded'} = '';
+    $Self->{Translation}->{'Model'} = 'مدل';
+    $Self->{Translation}->{'Model Description'} = '';
+    $Self->{Translation}->{'Monitor Resolution'} = '';
+    $Self->{Translation}->{'Monitor Size'} = '';
+    $Self->{Translation}->{'Mouse'} = 'ماوس';
+    $Self->{Translation}->{'Nano SIM'} = '';
+    $Self->{Translation}->{'Network'} = '';
+    $Self->{Translation}->{'Network Info'} = '';
+    $Self->{Translation}->{'Network Information'} = '';
+    $Self->{Translation}->{'Network Layer'} = '';
+    $Self->{Translation}->{'Nickel-Cadmium (NiCd) Battery'} = '';
+    $Self->{Translation}->{'Nickel-Metal Hydride (NiMH) Battery'} = '';
+    $Self->{Translation}->{'Non-Disclosure Agreement (NDA)'} = '';
+    $Self->{Translation}->{'Notebook'} = '';
+    $Self->{Translation}->{'Number of CPUs'} = '';
+    $Self->{Translation}->{'Number of RAM modules'} = '';
+    $Self->{Translation}->{'Number of graphics cards'} = '';
+    $Self->{Translation}->{'OLED Monitor (Organic Light Emitting Diode)'} = '';
+    $Self->{Translation}->{'Operating costs'} = '';
+    $Self->{Translation}->{'Order Number'} = '';
+    $Self->{Translation}->{'Other'} = 'غیره';
+    $Self->{Translation}->{'Outputs'} = 'نوع نتیجه';
+    $Self->{Translation}->{'PIN'} = '';
+    $Self->{Translation}->{'PIN 2'} = '';
+    $Self->{Translation}->{'PUK'} = '';
+    $Self->{Translation}->{'PUK 2'} = '';
+    $Self->{Translation}->{'Partnership Agreement'} = '';
+    $Self->{Translation}->{'Perpetual licenses'} = '';
+    $Self->{Translation}->{'Phone / VoIP'} = '';
+    $Self->{Translation}->{'Phone Number'} = '';
+    $Self->{Translation}->{'Phone Type'} = '';
+    $Self->{Translation}->{'Physical Cores'} = '';
+    $Self->{Translation}->{'Power Delivery'} = '';
+    $Self->{Translation}->{'Public Domain'} = '';
+    $Self->{Translation}->{'Purchased at'} = '';
+    $Self->{Translation}->{'Rack Depth'} = '';
+    $Self->{Translation}->{'Rack Units (U)'} = '';
+    $Self->{Translation}->{'Room'} = 'اتاق';
+    $Self->{Translation}->{'SIM Card'} = '';
+    $Self->{Translation}->{'SSL/TLS Certificates'} = '';
+    $Self->{Translation}->{'Sales Contract'} = '';
+    $Self->{Translation}->{'Satellite Phone'} = '';
+    $Self->{Translation}->{'Sealed Lead-Acid (SLA) Battery'} = '';
+    $Self->{Translation}->{'Seat licenses'} = '';
+    $Self->{Translation}->{'Serialnumber'} = '';
+    $Self->{Translation}->{'Server Software'} = '';
+    $Self->{Translation}->{'Service Agreement'} = 'توافق سطح سرویس';
+    $Self->{Translation}->{'Service Tag'} = '';
+    $Self->{Translation}->{'Shareware'} = '';
+    $Self->{Translation}->{'Socket Type'} = '';
+    $Self->{Translation}->{'Software'} = '';
+    $Self->{Translation}->{'Speakers'} = '';
+    $Self->{Translation}->{'Standard SIM'} = 'استاندارد';
+    $Self->{Translation}->{'Start IP Address'} = '';
+    $Self->{Translation}->{'Storage'} = '';
+    $Self->{Translation}->{'Storage Partition'} = '';
+    $Self->{Translation}->{'Subscription-based licenses'} = '';
+    $Self->{Translation}->{'Subsidiary'} = '';
+    $Self->{Translation}->{'Summary'} = '';
+    $Self->{Translation}->{'Thin Client'} = '';
+    $Self->{Translation}->{'Threads'} = '';
+    $Self->{Translation}->{'Thunderbolt'} = '';
+    $Self->{Translation}->{'Total Graphics card RAM (GB)'} = '';
+    $Self->{Translation}->{'Total RAM (GB)'} = '';
+    $Self->{Translation}->{'Touchscreen Monitor'} = '';
+    $Self->{Translation}->{'Tower'} = '';
+    $Self->{Translation}->{'USB Hub'} = '';
+    $Self->{Translation}->{'USB-C'} = '';
+    $Self->{Translation}->{'VGA'} = '';
+    $Self->{Translation}->{'VPN'} = '';
+    $Self->{Translation}->{'VR Headset'} = '';
+    $Self->{Translation}->{'Virtual Client'} = '';
+    $Self->{Translation}->{'VirtualLink'} = '';
+    $Self->{Translation}->{'VoIP Phone'} = '';
+    $Self->{Translation}->{'Volume licenses'} = '';
+    $Self->{Translation}->{'Webcam'} = '';
 
 
     push @{ $Self->{JavaScriptStrings} // [] }, (

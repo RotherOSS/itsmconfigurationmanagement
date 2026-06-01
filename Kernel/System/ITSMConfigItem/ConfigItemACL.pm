@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -145,7 +145,6 @@ sub ConfigItemAcl {
     # do not execute ACLs if UserID 1 is used
     return if $Param{UserID} && $Param{UserID} == 1;
 
-    # get config object
     my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
 
     my $ACLs       = $ConfigObject->Get('ConfigItemAcl');

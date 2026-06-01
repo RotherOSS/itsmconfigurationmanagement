@@ -22,6 +22,7 @@ use utf8;
 use namespace::autoclean;
 
 # core modules
+use List::Util qw(any none);
 
 # CPAN modules
 
@@ -42,15 +43,6 @@ sub new {
     for my $Needed (qw(Config Name UserID)) {
         die "Got no $Needed!" if ( !$Self->{$Needed} );
     }
-
-    # get general catalog object
-    my $GeneralCatalogObject = $Kernel::OM->Get('Kernel::System::GeneralCatalog');
-
-    # get class list
-    my $ClassList = $GeneralCatalogObject->ItemList(
-        Class => 'ITSM::ConfigItem::Class',
-    );
-    my %RevertedClassList = reverse $ClassList->%*;
 
     # get param object
     my $ParamObject = $Kernel::OM->Get('Kernel::System::Web::Request');
@@ -145,14 +137,14 @@ sub new {
 
                 my $DeleteFilter = 0;
                 if ( IsArrayRefWithData( $Self->{ColumnFilter}->{$Column} ) ) {
-                    if ( grep { $_ eq 'DeleteFilter' } @{ $Self->{ColumnFilter}->{$Column} } ) {
+                    if ( any { $_ eq 'DeleteFilter' } @{ $Self->{ColumnFilter}->{$Column} } ) {
                         $DeleteFilter = 1;
                     }
                 }
                 elsif ( IsHashRefWithData( $Self->{ColumnFilter}->{$Column} ) ) {
 
                     if (
-                        grep { $Self->{ColumnFilter}->{$Column}->{$_} eq 'DeleteFilter' }
+                        any { $Self->{ColumnFilter}->{$Column}->{$_} eq 'DeleteFilter' }
                         keys %{ $Self->{ColumnFilter}->{$Column} }
                         )
                     {
@@ -297,42 +289,8 @@ sub new {
         'CurInciState' => 1,
     };
 
-    # set config item key filter
-    my %ConfigItemKeys;
-    my %RemoveKeys;
-
-    if ( IsHashRefWithData( $Self->{Config}{ConfigItemKey} ) ) {
-        CLASS:
-        for my $Class ( keys $Self->{Config}{ConfigItemKey}->%* ) {
-
-            # configured class not found on system
-            if ( !$RevertedClassList{$Class} ) {
-                $Kernel::OM->Get('Kernel::System::Log')->Log(
-                    Priority => 'notice',
-                    Message  => "The class '$Class' was configured for the widget $Self->{Action}, but does not exist on the system.",
-                );
-                next CLASS;
-            }
-
-            push $ConfigItemKeys{ $Self->{Config}{ConfigItemKey}{$Class} }->@*, $RevertedClassList{$Class};
-            $RemoveKeys{ $Self->{Config}{ConfigItemKey}{$Class} } = 1;
-        }
-    }
-    $Self->{ConfigItemKeys} = \%ConfigItemKeys;
-
-    if ( $Self->{Action} eq 'AgentCustomerInformationCenter' ) {
-        my $CustomerUserWidgetConfig = $ConfigObject->Get('AgentCustomerUserInformationCenter::Backend###0060-CUIC-ITSMConfigItemCustomerUser');
-        for my $ConfigItemKey ( keys $CustomerUserWidgetConfig->{Config}{ConfigItemKey}->%* ) {
-            $RemoveKeys{$ConfigItemKey} = 1;
-        }
-    }
-
-    # remove CustomerID if Customer Information Center
-    for my $RemoveKey ( keys %RemoveKeys ) {
-        delete $Self->{ColumnFilter}{$RemoveKey};
-        delete $Self->{GetColumnFilter}{$RemoveKey};
-        delete $Self->{GetColumnFilterSelect}{$RemoveKey};
-        delete $Self->{ValidFiltrableColumns}{$RemoveKey};
+    if ( $Self->{Config}{ConfigItemKey} ) {
+        $Self->{ConfigItemKey} = $Self->{Config}{ConfigItemKey};
     }
 
     return $Self;
@@ -398,7 +356,7 @@ sub Preferences {
     my %Columns;
     for my $ColumnName ( sort { $a cmp $b } @ColumnsAvailable ) {
         $Columns{Columns}->{$ColumnName} = ( grep { $ColumnName eq $_ } @ColumnsEnabled ) ? 1 : 0;
-        if ( !grep { $_ eq $ColumnName } @ColumnsEnabled ) {
+        if ( none { $_ eq $ColumnName } @ColumnsEnabled ) {
             push @ColumnsAvailableNotEnabled, $ColumnName;
         }
     }
@@ -571,7 +529,9 @@ sub Run {
 
         # check if a color is defined in preferences
         next ITEMID unless $GeneralCatalogPreferences{Color};
+
         my ($Color) = $GeneralCatalogPreferences{Color}->@*;
+
         next ITEMID unless $Color;
 
         # get deployment state
@@ -698,30 +658,26 @@ sub Run {
             my %ColumnFilter = %{ $Self->{ColumnFilter} || {} };
 
             # Execute search.
-            if ( $Self->{AdditionalFilter} && IsArrayRefWithData( $ConfigItemSearchSummary{ $Self->{AdditionalFilter} } ) ) {
+            if ( $Self->{AdditionalFilter} && IsHashRefWithData( $ConfigItemSearchSummary{ $Self->{AdditionalFilter} } ) ) {
 
-                for my $KeyConfig ( $ConfigItemSearchSummary{ $Self->{AdditionalFilter} }->@* ) {
-
-                    # if classes are filtered, adjust search config accordingly
-                    if ( $ColumnFilter{ClassIDs} ) {
-                        my @FilteredClassIDs;
-                        for my $ClassID ( $KeyConfig->{ClassIDs}->@* ) {
-                            if ( grep { $_ == $ClassID } $ColumnFilter{ClassIDs}->@* ) {
-                                push @FilteredClassIDs, $ClassID;
-                            }
+                # if classes are filtered, adjust search config accordingly
+                if ( $ColumnFilter{ClassIDs} ) {
+                    my @FilteredClassIDs;
+                    for my $ClassID ( $ConfigItemSearchSummary{ $Self->{AdditionalFilter} }->{ClassIDs}->@* ) {
+                        if ( any { $_ == $ClassID } $ColumnFilter{ClassIDs}->@* ) {
+                            push @FilteredClassIDs, $ClassID;
                         }
-                        $KeyConfig->{ClassIDs} = \@FilteredClassIDs;
                     }
-
-                    push @ConfigItemIDsArray, $ConfigItemObject->ConfigItemSearch(
-                        Result => 'ARRAY',
-                        %ConfigItemSearch,
-                        $KeyConfig->%*,
-                        %{ $ConfigItemSearchSummary{ $Self->{Filter} } },
-                        %ColumnFilter,
-                        Limit => $Self->{PageShown} + $Self->{StartHit} - 1,
-                    );
+                    $ConfigItemSearchSummary{ $Self->{AdditionalFilter} }->{ClassIDs} = \@FilteredClassIDs;
                 }
+
+                @ConfigItemIDsArray = $ConfigItemObject->ConfigItemSearch(
+                    Result => 'ARRAY',
+                    %ConfigItemSearch,
+                    $ConfigItemSearchSummary{ $Self->{AdditionalFilter} }->%*,
+                    %ColumnFilter,
+                    Limit => $Self->{PageShown} + $Self->{StartHit} - 1,
+                );
             }
         }
         $ConfigItemIDs = \@ConfigItemIDsArray;
@@ -734,16 +690,11 @@ sub Run {
     ) // {};
 
     # If no cache or new list result, do count lookup.
-    if ( !$Summary || !$CacheUsed ) {
-
-        # Define the summary types for which no count is needed, because we have no output.
-        my %LookupNoCountSummaryType = (
-            AssignedToEntity => 1,
-        );
+    if ( !$Summary->%* || !$CacheUsed ) {
 
         TYPE:
         for my $Type ( sort keys %ConfigItemSearchSummary ) {
-            next TYPE if $LookupNoCountSummaryType{$Type};
+
             next TYPE if !$ConfigItemSearchSummary{$Type};
 
             # Copy original column filter.
@@ -754,7 +705,7 @@ sub Run {
 
                 # Verify if current column filter element is already present in the config item search
                 #   summary, to delete it from the column filter hash.
-                if ( $Self->{AdditionalFilter} && grep { $_->{$Element} } $ConfigItemSearchSummary{ $Self->{AdditionalFilter} }->@* ) {
+                if ( $Self->{AdditionalFilter} && $ConfigItemSearchSummary{ $Self->{AdditionalFilter} }{$Element} ) {
                     delete $ColumnFilter{$Element};
                 }
             }
@@ -763,30 +714,13 @@ sub Run {
 
             if ( !$Self->{Config}->{IsProcessWidget} || IsArrayRefWithData( $Self->{ProcessList} ) ) {
 
-                # Change filter name accordingly.
-                my $Filter;
-
-                # Filter is used and is not in user prefered values, show no results.
-                # See bug#12808 ( https://bugs.otrs.org/show_bug.cgi?id=12808 ).
-                if (
-                    $Filter
-                    && IsArrayRefWithData( $ConfigItemSearchSummary{$Type}->{$Filter} )
-                    && IsArrayRefWithData( $ColumnFilter{$Filter} )
-                    && !grep { $ColumnFilter{$Filter}->[0] == $_ } @{ $ConfigItemSearchSummary{$Type}->{$Filter} }
-                    )
-                {
-                    $Summary->{$Type} = 0;
-                }
-
                 # Execute search.
-                else {
-                    $Summary->{$Type} = $ConfigItemObject->ConfigItemSearch(
-                        Result => 'COUNT',
-                        %ConfigItemSearch,
-                        %{ $ConfigItemSearchSummary{$Type} },
-                        %ColumnFilter,
-                    ) || 0;
-                }
+                $Summary->{$Type} = $ConfigItemObject->ConfigItemSearch(
+                    Result => 'COUNT',
+                    %ConfigItemSearch,
+                    $ConfigItemSearchSummary{ $Self->{AdditionalFilter} }->%*,
+                    %ColumnFilter,
+                ) || 0;
             }
         }
     }
@@ -1330,7 +1264,9 @@ sub Run {
     CONFIGITEMID:
     for my $ConfigItemID ( @{$ConfigItemIDs} ) {
         $Count++;
+
         next CONFIGITEMID if $Count < $Self->{StartHit};
+
         my $ConfigItemRef = $ConfigItemObject->ConfigItemGet(
             ConfigItemID  => $ConfigItemID,
             DynamicFields => 0,
@@ -1958,40 +1894,44 @@ sub _SearchParamsGet {
 
     my %ConfigItemSearchSummary;
     if ( $Self->{Action} eq 'AgentCustomerUserInformationCenter' ) {
-
-        # Add filters for assigend and accessible config items for the customer user information center as a
-        #   additional filter together with the other filters. One of them must be always active.
-        my @ConfigItemKeyConfigs;
-        for my $ConfigItemKeyDF ( keys $Self->{ConfigItemKeys}->%* ) {
-            push @ConfigItemKeyConfigs, {
-                ClassIDs                        => $Self->{ConfigItemKeys}{$ConfigItemKeyDF},
-                "DynamicField_$ConfigItemKeyDF" => {
-                    Equals => $Param{CustomerUserID} // undef,
+        if ( $Self->{ConfigItemKey} ) {
+            %ConfigItemSearchSummary = (
+                AssignedToEntity => {
+                    "DynamicField_$Self->{ConfigItemKey}" => {
+                        Equals => $Param{CustomerUserID} // undef,
+                    },
                 },
-            };
+            );
         }
-        %ConfigItemSearchSummary = (
-            AssignedToEntity => \@ConfigItemKeyConfigs,
-            %ConfigItemSearchSummary,
-        );
     }
     elsif ( $Self->{Action} eq 'AgentCustomerInformationCenter' ) {
-
-        # Add filters for assigend and accessible config items for the customer user information center as a
-        #   additional filter together with the other filters. One of them must be always active.
-        my @ConfigItemKeyConfigs;
-        for my $ConfigItemKeyDF ( keys $Self->{ConfigItemKeys}->%* ) {
-            push @ConfigItemKeyConfigs, {
-                ClassIDs                        => $Self->{ConfigItemKeys}{$ConfigItemKeyDF},
-                "DynamicField_$ConfigItemKeyDF" => {
-                    Equals => $Param{CustomerID} // undef,
+        if ( $Self->{ConfigItemKey} ) {
+            %ConfigItemSearchSummary = (
+                AssignedToEntity => {
+                    "DynamicField_$Self->{ConfigItemKey}" => {
+                        Equals => $Param{CustomerID} // undef,
+                    },
                 },
-            };
+            );
         }
-        %ConfigItemSearchSummary = (
-            AssignedToEntity => \@ConfigItemKeyConfigs,
-            %ConfigItemSearchSummary,
+    }
+
+    if ( IsArrayRefWithData( $Self->{Config}{ShownClasses} ) ) {
+
+        # get class list
+        my $ClassList = $Kernel::OM->Get('Kernel::System::GeneralCatalog')->ItemList(
+            Class => 'ITSM::ConfigItem::Class',
         );
+        my %RevertedClassList = reverse $ClassList->%*;
+
+        my @ClassIDs;
+        for my $ClassName ( $Self->{Config}{ShownClasses}->@* ) {
+            if ( $RevertedClassList{$ClassName} ) {
+                push @ClassIDs, $RevertedClassList{$ClassName};
+            }
+        }
+
+        $ConfigItemSearchSummary{AssignedToEntity}{ClassIDs} = \@ClassIDs;
     }
 
     return (
