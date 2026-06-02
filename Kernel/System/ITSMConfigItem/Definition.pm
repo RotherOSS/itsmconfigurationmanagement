@@ -1693,13 +1693,15 @@ sub ClassImport {
 
         # Get current setting value.
         my %Setting = $SysConfigObject->SettingGet(
-            Name => 'DynamicField::Namespaces',
+            Name => 'Namespaces###DynamicField',
         );
 
         # ensure compatibility with unit tests
-        my $ExistingNamespaces = $Kernel::OM->Get('Kernel::Config')->Get('DynamicField::Namespaces') || [];
-        my %AllNamespaces      = (
-            ( map { $_ => 1 } $ExistingNamespaces->@* ),
+        my @ExistingNamespaces = $Kernel::OM->Get('Kernel::System::Namespace')->NamespacesList(
+            Scope => 'DynamicField',
+        );
+        my %AllNamespaces = (
+            ( map { $_ => 1 } @ExistingNamespaces ),
             %Namespaces,
         );
 
@@ -1707,7 +1709,7 @@ sub ClassImport {
         my $UpdateNamespaces = 0;
         NEWNAMESPACE:
         for my $NewNamespace ( keys %AllNamespaces ) {
-            if ( none { $NewNamespace eq $_ } $ExistingNamespaces->@* ) {
+            if ( none { $NewNamespace eq $_ } @ExistingNamespaces ) {
                 $UpdateNamespaces = 1;
                 last NEWNAMESPACE;
             }
@@ -1722,7 +1724,7 @@ sub ClassImport {
 
             # Update setting with modified data
             my %Result = $SysConfigObject->SettingUpdate(
-                Name              => 'DynamicField::Namespaces',
+                Name              => 'Namespaces###DynamicField',
                 IsValid           => 1,
                 EffectiveValue    => [ keys %AllNamespaces ],
                 ExclusiveLockGUID => $ExclusiveLockGUID,
@@ -1731,7 +1733,7 @@ sub ClassImport {
             if ( !$Result{Success} ) {
                 return {
                     Success      => 0,
-                    ErrorMessage => 'Could not update setting DynamicField::Namespaces.',
+                    ErrorMessage => 'Could not update setting Namespaces###DynamicField.',
                 };
             }
 
@@ -1742,15 +1744,15 @@ sub ClassImport {
             if ( !$Success ) {
                 return {
                     Success      => 0,
-                    ErrorMessage => 'Could not unlock setting DynamicField::Namespaces.',
+                    ErrorMessage => 'Could not unlock setting Namespaces###DynamicField.',
                 };
             }
 
             my %DeploymentResult = $SysConfigObject->ConfigurationDeploy(
-                Comments      => "ClassImport updating DynamicField::Namespaces",
+                Comments      => "ClassImport updating Namespaces###DynamicField",
                 UserID        => 1,
                 Force         => 1,
-                DirtySettings => ['DynamicField::Namespaces'],
+                DirtySettings => ['Namespaces###DynamicField'],
             );
 
             if ( !$DeploymentResult{Success} ) {

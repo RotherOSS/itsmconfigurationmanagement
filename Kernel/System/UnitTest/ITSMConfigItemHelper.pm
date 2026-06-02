@@ -282,7 +282,7 @@ sub TestConfigItemCreateLegacyClasses {
     # preliminary create needed namespaces to not interfere with sysconfig afterwards
     $Param{HelperObject}->ConfigSettingChange(
         Valid => 1,
-        Key   => 'DynamicField::Namespaces',
+        Key   => 'Namespaces###DynamicField',
         Value => [
             'Computer',
             'Hardware',

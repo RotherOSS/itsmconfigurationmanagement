@@ -515,7 +515,7 @@ END_XML
     }
 
     # set namespace setting if empty
-    my $NamespacesSetting = $Kernel::OM->Get('Kernel::Config')->Get('DynamicField::Namespaces');
+    my $NamespacesSetting = $Kernel::OM->Get('Kernel::Config')->Get('Namespaces###DynamicField');
     if ( %Namespaces && ( !$NamespacesSetting || !$NamespacesSetting->@* ) ) {
         my $SysConfigObject = $Kernel::OM->Get('Kernel::System::SysConfig');
 
@@ -526,7 +526,7 @@ END_XML
         );
 
         $SysConfigObject->SettingUpdate(
-            Name              => 'DynamicField::Namespaces',
+            Name              => 'Namespaces###DynamicField',
             IsValid           => 1,
             EffectiveValue    => [ sort keys %Namespaces ],
             ExclusiveLockGUID => $ExclusiveLockGUID,
