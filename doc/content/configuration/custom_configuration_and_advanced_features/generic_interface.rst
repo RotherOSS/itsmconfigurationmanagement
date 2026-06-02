@@ -1,6 +1,6 @@
 Configuration: Web Services
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-The ITSMConfigurationManagement package also extends the existing web service capabilities. Before diving into this section, make sure you're familiar with the basics of OTOBO web services. You can find an introduction in `OTOBO 11 Administration Manual: Webservices <https://doc.otobo.de/manual/admin/11.0/en/content/administration-area/processes-automation/web-services.html>`_.
+The ITSMConfigurationManagement package also extends the existing web service capabilities. Before diving into this section, make sure you're familiar with the basics of OTOBO web services. You can find an introduction in `OTOBO 11 Administration Manual: Webservices <https://doc.otobo.de/manual/admin/11.1/en/content/administration-area/processes-automation/web-services.html>`_.
 
 .. note::
 
@@ -30,7 +30,7 @@ With this operation, it is possible to fetch config item data from an OTOBO syst
       DebugThreshold: debug
       TestMode: '0'
     Description: ''
-    FrameworkVersion: 11.0.x
+    FrameworkVersion: 11.1.x
     Provider:
       Operation:
         ConfigItemGet:
@@ -130,7 +130,7 @@ With this operation, it is possible to search for config items based on a wide v
       DebugThreshold: debug
       TestMode: '0'
     Description: ''
-    FrameworkVersion: 11.0.x
+    FrameworkVersion: 11.1.x
     Provider:
       Operation:
         ConfigItemSearch:
@@ -304,7 +304,7 @@ With this operation, it is possible to add or update one or more config items ba
       DebugThreshold: debug
       TestMode: '0'
     Description: ''
-    FrameworkVersion: 11.0.x
+    FrameworkVersion: 11.1.x
     Provider:
       Operation:
         ConfigItemUpsert:
@@ -419,7 +419,7 @@ With this operation, it is possible to delete an existing config item. A simple 
       DebugThreshold: debug
       TestMode: '0'
     Description: ''
-    FrameworkVersion: 11.0.x
+    FrameworkVersion: 11.1.x
     Provider:
       Operation:
         ConfigItemDelete:
@@ -493,7 +493,7 @@ Using the ConfigItemCreate invoker, it is possible to send config item data to a
       DebugThreshold: debug
       TestMode: '0'
     Description: ''
-    FrameworkVersion: 11.0.x
+    FrameworkVersion: 11.1.x
     RemoteSystem: ''
     Requester:
       Invoker:
@@ -583,7 +583,7 @@ Using the ConfigItemFetch invoker, it is possible to fetch data from a remote en
     DebugThreshold: debug
     TestMode: '0'
   Description: ''
-  FrameworkVersion: 11.0.x
+  FrameworkVersion: 11.1.x
   RemoteSystem: ''
   Requester:
     Invoker:
@@ -866,7 +866,7 @@ Using the ConfigItemUpdate invoker, it is possible to send config item data to a
     DebugThreshold: debug
     TestMode: '0'
   Description: ''
-  FrameworkVersion: 11.0.x
+  FrameworkVersion: 11.1.x
   RemoteSystem: ''
   Requester:
     Invoker:
