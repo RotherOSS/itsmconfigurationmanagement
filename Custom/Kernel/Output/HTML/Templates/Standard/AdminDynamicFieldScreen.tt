@@ -4,7 +4,7 @@
 # Copyright (C) 2012-2020 Znuny GmbH, http://znuny.com/
 # Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
-# $origin: otobo - ff9e297baf287e16071d3ac6ad7f6c13f11ac7fa - Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldScreen.tt
+# $origin: otobo - dcfb08c4441433f9992cd0a0c6ca6e240aa56a46 - Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldScreen.tt
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -91,7 +91,7 @@
                         <li class="FilterMessage Hidden">[% Translate("No matches found.") | html %]</li>
 [% RenderBlockStart("NoDataFoundMsg") %]
                         <li>
-                            [% Translate("No data found.") | html %] <a href="[% Env("Baselink") %]Action=AdminDynamicField" >[% Translate("Add DynamicField") | html %]</a>
+                            [% Translate("No data found.") | html %] <a href="[% Env("Baselink") %]Action=AdminDynamicField" >[% Translate("Add Dynamic Field") | html %]</a>
                         </li>
 [% RenderBlockEnd("NoDataFoundMsg") %]
 [% RenderBlockStart("DynamicFieldOverviewRow") %]

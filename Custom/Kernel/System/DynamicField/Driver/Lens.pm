@@ -3,7 +3,7 @@
 # --
 # Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
-# $origin: otobo - 40f86f5574c18aa845fce606d4217242311575df - Kernel/System/DynamicField/Driver/Lens.pm
+# $origin: otobo - 724220993f638e7affe92ee6c5c9217d43e60911 - Kernel/System/DynamicField/Driver/Lens.pm
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -28,6 +28,7 @@ use utf8;
 use parent qw(Kernel::System::DynamicField::Driver::Base);
 
 # core modules
+use List::Util qw(any);
 
 # CPAN modules
 
@@ -81,7 +82,8 @@ sub new {
     $Self->{FieldCSSClass} = 'DynamicFieldLens';
 
     # set field behaviors
-    #   NOTE behaviors IsACLReducible and IsCustomerInterfaceCapable get overridden with the attribute fields behaviors in sub HasBehavior
+    #   NOTE behaviors IsACLReducible, IsCustomerInterfaceCapable, IsReferenceField and
+    #   IsSetField get overridden with the attribute fields behaviors in sub HasBehavior
     $Self->{Behaviors} = {
         'IsACLReducible'               => 0,
         'IsNotificationEventCondition' => 1,
@@ -91,6 +93,8 @@ sub new {
         'IsCustomerInterfaceCapable'   => 0,
         'IsHiddenInTicketInformation'  => 0,
         'SetsDynamicContent'           => 1,
+        'IsReferenceField'             => 0,
+        'IsSetField'                   => 0,
         'IsSetCapable'                 => 1,
     };
 
@@ -173,7 +177,7 @@ sub ValueSet {
 
             $LensDFConfig->{SetIndex} = $SetIndex;
 
-            # with param SetIndex, a single obect id is returned
+            # with param SetIndex, a single object id is returned
             # as we are already saving we trust, that the reference edit field has been validated
             my $ReferencedObjectID = $Self->_GetReferencedObjectID(
                 ObjectID               => $Param{ObjectID},
@@ -288,8 +292,10 @@ sub EditFieldRender {
     $AttributeDFConfig->{Label} = $LensDFConfig->{Label};
     my $AttributeFieldHTML = $Kernel::OM->Get('Kernel::System::DynamicField::Backend')->EditFieldRender(
         %Param,
-        UseDefaultValue    => 0,
-        DynamicFieldConfig => $AttributeDFConfig,
+        DynamicFieldConfig => {
+            $AttributeDFConfig->%*,
+            ProcessSuffix => $Param{DynamicFieldConfig}{ProcessSuffix},
+        },
     );
 
     return $AttributeFieldHTML;
@@ -589,7 +595,7 @@ sub HasBehavior {
 
     # TODO: Think about additional behaviors we can just adopt from the attribute field
     # for certain behaviors instead use the attribute field behaviors
-    if ( grep { $Param{Behavior} eq $_ } qw/IsACLReducible IsCustomerInterfaceCapable/ ) {
+    if ( any { $Param{Behavior} eq $_ } qw/IsACLReducible IsCustomerInterfaceCapable IsSetField IsReferenceField/ ) {
         my $AttributeDFConfig = $Self->_GetAttributeDFConfig(
             LensDynamicFieldConfig => $Param{DynamicFieldConfig},
         );
@@ -617,6 +623,22 @@ sub PossibleValuesGet {
     );
 }
 
+sub ObjectDescriptionGet {
+    my ( $Self, %Param ) = @_;
+
+    my $AttributeDFConfig = $Self->_GetAttributeDFConfig(
+        LensDynamicFieldConfig => $Param{DynamicFieldConfig},
+    );
+
+    return $Kernel::OM->Get('Kernel::System::DynamicField::Backend')->ObjectDescriptionGet(
+        %Param,
+        DynamicFieldConfig => {
+            $AttributeDFConfig->%*,
+            Name => $Param{DynamicFieldConfig}{Name},
+        },
+    );
+}
+
 sub BuildSelectionDataGet {
     my ( $Self, %Param ) = @_;
 
@@ -630,10 +652,27 @@ sub BuildSelectionDataGet {
     );
 }
 
+sub SearchObjects {
+    my ( $Self, %Param ) = @_;
+
+    my $AttributeDFConfig = $Self->_GetAttributeDFConfig(
+        LensDynamicFieldConfig => $Param{DynamicFieldConfig},
+    );
+
+    return $Kernel::OM->Get('Kernel::System::DynamicField::Backend')->SearchObjects(
+        %Param,
+        DynamicFieldConfig => {
+            $AttributeDFConfig->%*,
+            Name => $Param{DynamicFieldConfig}{Name},
+        },
+    );
+}
+
 sub GetFieldState {
     my ( $Self, %Param ) = @_;
 
     my $DynamicFieldConfig = $Param{DynamicFieldConfig};
+    my $DFParam            = $Param{GetParam}{DynamicField};
     my $NeedsReset;
 
     # reset if the referenced object changes
@@ -642,193 +681,185 @@ sub GetFieldState {
     }
 
     # or if we have the field reappear
-    elsif ( $Param{CachedVisibility} && !$Param{CachedVisibility}{ 'DynamicField_' . $DynamicFieldConfig->{Name} } ) {
+    elsif ( !$Param{CachedVisibility} || !$Param{CachedVisibility}{ 'DynamicField_' . $DynamicFieldConfig->{Name} } ) {
         $NeedsReset = 1;
     }
 
-    # TODO: also on initial run?
-
-    return () if !$NeedsReset;
-
-    my $DFParam = $Param{GetParam}{DynamicField};
-
     my $AttributeFieldValue;
-    my $IsACLReducible = $Self->HasBehavior(
-        DynamicFieldConfig => $DynamicFieldConfig,
-        Behavior           => 'IsACLReducible',
-    );
+    if ($NeedsReset) {
 
-    my %Return;
-    my $ReferenceID = $DFParam->{ $DynamicFieldConfig->{Config}{ReferenceDFName} } ? $DFParam->{ $DynamicFieldConfig->{Config}{ReferenceDFName} }[0] : undef;
+        my $ReferenceID = $DFParam->{ $DynamicFieldConfig->{Config}{ReferenceDFName} } ? $DFParam->{ $DynamicFieldConfig->{Config}{ReferenceDFName} }[0] : undef;
 
-    # get the current value of the referenced attribute field if an object is referenced
-    if ($ReferenceID) {
+        # get the current value of the referenced attribute field if an object is referenced
+        if ($ReferenceID) {
 
-        my $ReferenceDFName = $DynamicFieldConfig->{Config}{ReferenceDFName} . ( $DynamicFieldConfig->{ProcessSuffix} // '' );
+            my $ReferenceDFName = $DynamicFieldConfig->{Config}{ReferenceDFName} . ( $DynamicFieldConfig->{ProcessSuffix} // '' );
 
-        if ( defined $Param{SetIndex} ) {
-            $ReferenceDFName .= "_$Param{SetIndex}";
-            $DynamicFieldConfig->{SetIndex} = $Param{SetIndex};
-        }
+            if ( defined $Param{SetIndex} ) {
+                $ReferenceDFName .= "_$Param{SetIndex}";
+                $DynamicFieldConfig->{SetIndex} = $Param{SetIndex};
+            }
 
-        # if the value would change, we need to verify that the user is really allowed
-        # to access the provided referenced object via this form
-        # this is the case if either the referenced object was shown via a search (1)
-        # or is currently stored for the edited ticket/ci/... (2)
-        my $LastSearchResults = $Kernel::OM->Get('Kernel::System::Web::FormCache')->GetFormData(
-            LayoutObject => $Kernel::OM->Get('Kernel::Output::HTML::Layout'),
-            Key          => 'PossibleValues_' . $ReferenceDFName,
-        );
-
-        # in set case, we fetch the template values and either concat them to the search results
-        #   or, if no search results are present, use the template values entirely
-        if ( defined $Param{SetIndex} ) {
-            my $TemplateName          = $DynamicFieldConfig->{Config}{ReferenceDFName} . '_Template';
-            my $TemplateSearchResults = $Kernel::OM->Get('Kernel::System::Web::FormCache')->GetFormData(
+            # if the value would change, we need to verify that the user is really allowed
+            # to access the provided referenced object via this form
+            # this is the case if either the referenced object was shown via a search (1)
+            # or is currently stored for the edited ticket/ci/... (2)
+            my $LastSearchResults = $Kernel::OM->Get('Kernel::System::Web::FormCache')->GetFormData(
                 LayoutObject => $Kernel::OM->Get('Kernel::Output::HTML::Layout'),
-                Key          => 'PossibleValues_' . $TemplateName,
+                Key          => 'PossibleValues_' . $ReferenceDFName,
             );
 
-            if ( ref $LastSearchResults && ref $TemplateSearchResults ) {
-                push $LastSearchResults->@*, $TemplateSearchResults->@*;
+            # in set case, we fetch the template values and either concat them to the search results
+            #   or, if no search results are present, use the template values entirely
+            if ( defined $Param{SetIndex} ) {
+                my $TemplateName          = $DynamicFieldConfig->{Config}{ReferenceDFName} . '_Template';
+                my $TemplateSearchResults = $Kernel::OM->Get('Kernel::System::Web::FormCache')->GetFormData(
+                    LayoutObject => $Kernel::OM->Get('Kernel::Output::HTML::Layout'),
+                    Key          => 'PossibleValues_' . $TemplateName,
+                );
+
+                if ( ref $LastSearchResults && ref $TemplateSearchResults ) {
+                    push $LastSearchResults->@*, $TemplateSearchResults->@*;
+                }
+                elsif ( ref $TemplateSearchResults ) {
+                    $LastSearchResults = $TemplateSearchResults;
+                }
             }
-            elsif ( ref $TemplateSearchResults ) {
-                $LastSearchResults = $TemplateSearchResults;
+
+            # if a search has already been performed for this form id
+            my $Allowed = ( grep { $_ eq $ReferenceID } $LastSearchResults->@* ) ? 1 : 0;
+
+            # abort if requested value is not allowed
+            if ( !$Allowed ) {
+                $Kernel::OM->Get('Kernel::System::Log')->Log(
+                    Priority => 'notice',
+                    Message  => "Value $ReferenceID for lens field $DynamicFieldConfig->{Name} is not allowed.",
+                );
+                return;
             }
+
+            $AttributeFieldValue = $Self->ValueGet(
+                DynamicFieldConfig => $DynamicFieldConfig,
+
+                # TODO: Instead we could just send $DFParam->{ $DynamicFieldConfig->{Config}{ReferenceDFName} } as ObjectID
+                # but we would need to interpret it later (from ConfigItemID to LastVersionID, e.g.)
+                # TODO: Validate the Reference ObjectID here, or earlier, to prevent data leaks!
+                ObjectID              => 1,    # will not be used;
+                UseReferenceEditField => 1,
+            ) // '';
         }
-
-        # if a search has already been performed for this form id
-        my $Allowed = ( grep { $_ eq $ReferenceID } $LastSearchResults->@* ) ? 1 : 0;
-
-        # abort if requested value is not allowed
-        if ( !$Allowed ) {
-            $Kernel::OM->Get('Kernel::System::Log')->Log(
-                Priority => 'notice',
-                Message  => "Value $ReferenceID for lens field $DynamicFieldConfig->{Name} is not allowed.",
-            );
-            return;
+        else {
+            $AttributeFieldValue = '';
         }
-
-        $AttributeFieldValue = $Self->ValueGet(
-            DynamicFieldConfig => $DynamicFieldConfig,
-
-            # TODO: Instead we could just send $DFParam->{ $DynamicFieldConfig->{Config}{ReferenceDFName} } as ObjectID
-            # but we would need to interpret it later (from ConfigItemID to LastVersionID, e.g.)
-            # TODO: Validate the Reference ObjectID here, or earlier, to prevent data leaks!
-            ObjectID              => 1,    # will not be used;
-            UseReferenceEditField => 1,
-        ) // '';
-    }
-    else {
-        $AttributeFieldValue = '';
     }
 
-    # set the new value if it differs
-    if (
-        $Self->ValueIsDifferent(
-            DynamicFieldConfig => $DynamicFieldConfig,
-            Value1             => $DFParam->{"DynamicField_$DynamicFieldConfig->{Name}"},
-            Value2             => $AttributeFieldValue,
-        )
-        )
-    {
-        $Return{NewValue} = $AttributeFieldValue;
-
-        # already write the new value to DFParam, for possible values check further down
-        $DFParam->{"DynamicField_$DynamicFieldConfig->{Name}"} = $AttributeFieldValue;
-    }
-
-    # if this field is non ACL reducible, set the field values
-    return %Return if !$IsACLReducible;
-
-    # get possible values if ACLReducible
-    # this is what the FieldRestrictions object would do for other fields
-    my $PossibleValues = $Self->PossibleValuesGet(
-        DynamicFieldConfig => $DynamicFieldConfig,
+    my $AttributeDFConfig = $Self->_GetAttributeDFConfig(
+        LensDynamicFieldConfig => $DynamicFieldConfig,
     );
 
-    # convert possible values key => value to key => key for ACLs using a Hash slice
-    my %AclData = %{$PossibleValues};
-    @AclData{ keys %AclData } = keys %AclData;
-
-    # set possible values filter from ACLs
-    if ( $Param{TicketObject} ) {
-        my $ACL = $Param{TicketObject}->TicketAcl(
-            %{ $Param{GetParam} },
-            TicketID       => $Param{TicketID},
-            Action         => $Param{Action},
-            UserID         => $Param{UserID},
-            CustomerUserID => $Param{CustomerUser} || '',
-            ReturnType     => 'Ticket',
-            ReturnSubType  => 'DynamicField_' . $DynamicFieldConfig->{Name},
-            Data           => \%AclData,
-        );
-        if ($ACL) {
-            my %Filter = $Param{TicketObject}->TicketAclData();
-
-            # convert Filter key => key back to key => value using map
-            %{$PossibleValues} = map { $_ => $PossibleValues->{$_} } keys %Filter;
-        }
+    my %FieldStates = $Param{FieldRestrictionsObject}->GetFieldStates(
+        %Param,
+        NeedsReset       => $NeedsReset,                                      # to bypass checks in reference driver
+        CachedVisibility => $NeedsReset ? undef : $Param{CachedVisibility},
+        DynamicFields    => {
+            $DynamicFieldConfig->{Name} => {
+                $AttributeDFConfig->%*,
+                ProcessSuffix => $DynamicFieldConfig->{ProcessSuffix},
+                Name          => $DynamicFieldConfig->{Name},
+            },
+        },
+        GetParam => {
+            $Param{GetParam}->%*,
+            DynamicField => {
+                $Param{GetParam}{DynamicField}->%*,
+                'DynamicField_' . $DynamicFieldConfig->{Name} => $AttributeFieldValue // $Param{GetParam}{DynamicField}{ 'DynamicField_' . $DynamicFieldConfig->{Name} },
+            },
+        },
+    );
+    if ( defined $FieldStates{NewValues}{ 'DynamicField_' . $DynamicFieldConfig->{Name} } ) {
+        $FieldStates{NewValue} = $FieldStates{NewValues}{ 'DynamicField_' . $DynamicFieldConfig->{Name} };
     }
-    elsif ( $Param{ConfigItemObject} ) {
-        my $ACL = $Param{ConfigItemObject}->ConfigItemAcl(
-            %{ $Param{GetParam} },
-            ConfigItemID  => $Param{ConfigItemID},
-            Action        => $Param{Action},
-            UserID        => $Param{UserID},
-            ReturnType    => 'ConfigItem',
-            ReturnSubType => 'DynamicField_' . $DynamicFieldConfig->{Name},
-            Data          => \%AclData,
-        );
-        if ($ACL) {
-            my %Filter = $Param{ConfigItemObject}->ConfigItemAclData();
-
-            # convert Filter key => key back to key => value using map
-            %{$PossibleValues} = map { $_ => $PossibleValues->{$_} } keys %Filter;
-        }
-    }
-    else {
-        $Kernel::OM->Get('Kernel::System::Log')->Log(
-            'Priority' => 'error',
-            'Message'  => "Need Ticket or CI Object.",
-        );
-
-        return ();
+    elsif ( defined $AttributeFieldValue ) {
+        $FieldStates{NewValue} = $AttributeFieldValue;
     }
 
-    # check whether all selected entries are still valid
-    if (
-        defined $DFParam->{"DynamicField_$DynamicFieldConfig->{Name}"}
-        &&
-        ( $DFParam->{"DynamicField_$DynamicFieldConfig->{Name}"} || $DFParam->{"DynamicField_$DynamicFieldConfig->{Name}"} eq '0' )
-        )
-    {
-        # multiselect fields
-        if ( ref( $DFParam->{"DynamicField_$DynamicFieldConfig->{Name}"} ) ) {
-            SELECTED:
-            for my $Selected ( @{ $DFParam->{"DynamicField_$DynamicFieldConfig->{Name}"} } ) {
+    # prevent autovivification
+    if ( exists $FieldStates{Fields}{ $DynamicFieldConfig->{Name} } && exists $FieldStates{Fields}{ $DynamicFieldConfig->{Name} }{PossibleValues} ) {
+        $FieldStates{PossibleValues}->%* = $FieldStates{Fields}{ $DynamicFieldConfig->{Name} }{PossibleValues}->%*;
+    }
 
-                # if a selected value is not possible anymore
-                if ( !defined $PossibleValues->{$Selected} ) {
-                    $Return{NewValue} = grep { defined $PossibleValues->{$Selected} } @{ $DFParam->{"DynamicField_$DynamicFieldConfig->{Name}"} };
+    # necessary clean-up to avoid interference with GetFieldState mechanism in FieldRestrictions modules
+    if ( !IsHashRefWithData( $FieldStates{Sets} ) ) {
+        delete $FieldStates{Sets};
+    }
+    elsif ($NeedsReset) {
 
-                    last SELECTED;
+        # fill values with data with set value data
+        if ( IsArrayRefWithData($AttributeFieldValue) ) {
+
+            my $DynamicFieldBackendObject = $Kernel::OM->Get('Kernel::System::DynamicField::Backend');
+
+            # get set inner dynamic fields from attribute field
+            my $InnerDynamicFields = $Self->_GetIncludedDynamicFields(
+                InputFieldDefinition => $AttributeDFConfig->{Config}{Include},
+            );
+
+            for my $Index ( 0 .. $#{$AttributeFieldValue} ) {
+
+                my $ValueItem = $AttributeFieldValue->[$Index];
+                my @DFNames   = keys $ValueItem->%*;
+
+                for my $DFName (@DFNames) {
+
+                    my $SuffixedDFName = $DFName . ( $DynamicFieldConfig->{ProcessSuffix} || '' ) . "_$Index";
+
+                    # fill up dynamic field configs of set-inner fields
+                    if ( !exists $FieldStates{Sets}{$DFName} ) {
+                        $FieldStates{Sets}{$DFName}{DynamicFieldConfig} = $InnerDynamicFields->{$DFName};
+                    }
+
+                    # set FieldStates hash
+                    my $IsACLReducible = $DynamicFieldBackendObject->HasBehavior(
+                        DynamicFieldConfig => $InnerDynamicFields->{$DFName},
+                        Behavior           => 'IsACLReducible',
+                    );
+                    if ( !$IsACLReducible ) {
+                        $FieldStates{Sets}{$DFName}{FieldStates}{$SuffixedDFName} = {
+                            NotACLReducible => 1,
+                            PossibleValues  => undef,
+                        };
+                    }
+
+                    # fill up values hash
+                    if ( !exists $FieldStates{Sets}{$DFName}{Values}{$SuffixedDFName} ) {
+                        $FieldStates{Sets}{$DFName}{Values}{$SuffixedDFName} = $ValueItem->{$DFName};
+                    }
                 }
             }
         }
 
-        # singleselect fields
-        else {
-            if ( !defined $PossibleValues->{ $DFParam->{"DynamicField_$DynamicFieldConfig->{Name}"} } ) {
-                $Return{NewValue} = '';
-            }
-        }
+        my $SetValueCount     = IsArrayRefWithData( $FieldStates{NewValue} ) ? scalar $FieldStates{NewValue}->@* : 1;
+        my $CompleteFieldName = $DynamicFieldConfig->{Name} . ( $DynamicFieldConfig->{ProcessSuffix} || '' );
+
+        # add count of Set values for adding the correct number of fields in the frontend
+        $FieldStates{Sets}{ $DynamicFieldConfig->{Name} } = {
+            DynamicFieldConfig => {
+                $AttributeDFConfig->%*,
+                Name => $DynamicFieldConfig->{Name},
+            },
+            FieldStates => {
+                $CompleteFieldName => {
+                    PossibleValues  => undef,
+                    NotACLReducible => 1,
+                },
+            },
+            Values => {
+                $CompleteFieldName => $SetValueCount,
+            },
+        };
     }
 
-    return (
-        %Return,
-        PossibleValues => $PossibleValues,
-    );
+    return %FieldStates;
 }
 
 =head1 internal methods
@@ -965,6 +996,95 @@ sub _GetReferencedObjectID {
     }
 
     return $ObjectID->[0];
+}
+
+=head2 _GetIncludedDynamicFields($Include, $DynamicFieldObject)
+
+Helper Function for getting the Dynamic Fields from an Include, i.e.
+$DynamicFields = $GetIncludedDynamicFields->($Param{DynamicFieldConfig}{Config}{Include});
+This subroutine takes three arguments:
+$Include: a list of hash references containing information about the items to include
+$DynamicFieldObject: an object used to retrieve dynamic field information
+and returns either the DynamicFields or undef in case of an error.
+
+=cut
+
+sub _GetIncludedDynamicFields {
+    my ( $Self, %Param ) = @_;
+
+    my $DynamicFieldObject = $Kernel::OM->Get('Kernel::System::DynamicField');
+    my %DynamicField;
+
+    # This subroutine takes a DFEntry and the DynamicFieldObject as arguments
+    # It retrieves the dynamic field definition for the given DFEntry
+    # If the definition is not available, it retrieves it from the DynamicFieldObject
+    # Returns the dynamic field definition
+    my $GetDynamicField = sub {
+
+        my ($DFEntry) = @_;
+
+        my $DynamicField = $DFEntry->{Definition} // $DynamicFieldObject->DynamicFieldGet(
+            Name => $DFEntry->{DF},
+        );
+
+        return $DynamicField;
+    };
+
+    ITEM:
+    for my $IncludeItem ( @{ $Param{InputFieldDefinition} } ) {
+
+        if ( $IncludeItem->{Grid} ) {
+
+            for my $Row ( @{ $IncludeItem->{Grid}{Rows} } ) {
+
+                DFENTRY:
+                for my $DFEntry ( $Row->@* ) {
+
+                    my $DynamicField = $GetDynamicField->($DFEntry);
+                    if ( IsHashRefWithData($DynamicField) ) {
+                        if ( $DFEntry->{Label} ) {
+                            $DynamicField->{Label} = $DFEntry->{Label};
+                        }
+                        $DynamicField->{Mandatory}      = $DFEntry->{Mandatory};
+                        $DynamicField->{Readonly}       = $DFEntry->{Readonly};
+                        $DynamicField{ $DFEntry->{DF} } = $DynamicField;
+                    }
+                    else {
+                        $Kernel::OM->Get('Kernel::System::Log')->Log(
+                            Priority => 'error',
+                            Message  => "DynamicFieldConfig missing for field: $DFEntry->{DF}, or is not a Ticket Dynamic Field!",
+                        );
+
+                        next DFENTRY;
+                    }
+                }
+            }
+        }
+        elsif ( $IncludeItem->{DF} ) {
+
+            my $DynamicField = $GetDynamicField->($IncludeItem);
+            if ($DynamicField) {
+                if ( $IncludeItem->{Label} ) {
+                    $DynamicField->{Label} = $IncludeItem->{Label};
+                }
+                $DynamicField->{Mandatory}          = $IncludeItem->{Mandatory};
+                $DynamicField->{Readonly}           = $IncludeItem->{Readonly};
+                $DynamicField{ $IncludeItem->{DF} } = $DynamicField;
+            }
+            else {
+                $Kernel::OM->Get('Kernel::System::Log')->Log(
+                    Priority => 'error',
+                    Message  => "DynamicFieldConfig missing for field: $IncludeItem->{DF}, or is not a Ticket Dynamic Field!",
+                );
+                next ITEM;
+            }
+        }
+        else {
+            next ITEM;
+        }
+    }
+
+    return \%DynamicField;
 }
 
 1;
