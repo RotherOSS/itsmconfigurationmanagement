@@ -171,7 +171,7 @@ sub GetFieldStates {
             );
     }
 
-    # don't skip any fields initially or if ACLPreselction is disabled
+    # don't skip any fields initially or if ACLPreselection is disabled
     my $CompleteRun = $CachedVisibility ? 0 : 1;
 
     # shortcut
@@ -313,7 +313,7 @@ sub GetFieldStates {
                 }
             }
 
-            # if values are present, Fieldrestrictions have to be checked again for the newly changed elements
+            # if values are present, FieldRestrictions have to be checked again for the newly changed elements
             if ($UpdateRequired) {
 
                 # delete entry and remember change

@@ -1156,7 +1156,7 @@ sub DefinitionSetOutOfSync {
         }
 
         for my $FieldID ( $Param{Classes}{$ClassID}->@* ) {
-            if ( !grep { $_ == $FieldID } $Current{$ClassID}->@* ) {
+            if ( none { $_ == $FieldID } $Current{$ClassID}->@* ) {
                 push @{ $New{$ClassID} }, $FieldID;
             }
         }
@@ -1933,12 +1933,12 @@ sub ClassExport {
                 }
 
                 # single-value attributes
-                elsif ( grep { $_ eq $PreferenceKey } qw(NameModule NumberModule VersionStringModule) ) {
+                elsif ( any { $_ eq $PreferenceKey } qw(NameModule NumberModule VersionStringModule) ) {
                     $ExportItem{Class}{$PreferenceKey} = $ClassPreferences{$PreferenceKey}[0];
                 }
 
                 # multi-value attributes
-                elsif ( grep { $_ eq $PreferenceKey } qw(Categories VersionTrigger) ) {
+                elsif ( any { $_ eq $PreferenceKey } qw(Categories VersionTrigger) ) {
                     $ExportItem{Class}{$PreferenceKey} = $ClassPreferences{$PreferenceKey};
                 }
             }
@@ -1977,7 +1977,7 @@ sub ClassExport {
 =head2 _ProcessRoles
 
 For convenience the YAML for a config item class may contain a subtree called Roles. Usually these Roles
-load other YAML documents which contain a Section hash. These section a merged into the toplevel Section hash.
+load other YAML documents which contain a Section hash. These section a merged into the top-level Section hash.
 The keys of the merged in sections are the Role key joined with the loaded section name. The join marker is C<::>.
 
 The passed in hash reference is modified in place.
@@ -2367,7 +2367,7 @@ sub _DynamicFieldConfigTransform {
 
     my $DynamicFieldConfig = $Param{DynamicFieldConfig};
 
-    if ( grep { $Param{DynamicFieldConfig}{FieldType} eq $_ } qw(Agent ConfigItem ConfigItemVersion CustomerCompany CustomerUser FAQ Ticket) ) {
+    if ( any { $Param{DynamicFieldConfig}{FieldType} eq $_ } qw(Agent ConfigItem ConfigItemVersion CustomerCompany CustomerUser FAQ Ticket) ) {
 
         # needed transformation: Name -> ID
         if ( $Param{Action} eq 'Import' ) {
@@ -2497,7 +2497,7 @@ changed.
 sub _DefinitionCreateAfterRoleCreate {
     my ( $Self, %Param ) = @_;
 
-    # get the name of the roled the name of the role to the role definition
+    # get the name of the role to the role definition
     my $RoleName;
     {
         my $RoleID      = $Param{RoleID};
