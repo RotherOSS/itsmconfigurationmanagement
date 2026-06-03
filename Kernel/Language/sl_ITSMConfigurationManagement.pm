@@ -105,13 +105,6 @@ sub Data {
     # Template: CustomerITSMConfigItemSearch
     $Self->{Translation}->{'ConfigItem Search'} = 'ConfigItem Iskanje';
 
-    # Template: AdminACL
-    $Self->{Translation}->{'Object Type'} = 'Vrsta predmeta';
-
-    # Template: AdminDynamicFieldScreen
-    $Self->{Translation}->{'Filter by object type'} = '';
-    $Self->{Translation}->{'Add DynamicField'} = '';
-
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = 'Uvoženi bodo naslednji razredi';
     $Self->{Translation}->{'The following roles will be imported'} = 'Uvožene bodo naslednje vloge';
@@ -214,6 +207,10 @@ sub Data {
     $Self->{Translation}->{'External-source key'} = '';
     $Self->{Translation}->{'Select the type of display'} = '';
 
+    # Perl Module: Kernel/System/DynamicField/Driver/ConfigItemVersion.pm
+    $Self->{Translation}->{'Activate this option to display values as a tree, grouped by config items.'} =
+        '';
+
     # Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
     $Self->{Translation}->{'Base structure is not valid. Please provide a hash with data in YAML format.'} =
         'Osnovna struktura ni veljavna. Navedite hash s podatki v obliki YAML.';
@@ -230,7 +227,6 @@ sub Data {
     $Self->{Translation}->{'Maximum number of one Set dynamic field element'} = '';
     $Self->{Translation}->{'Maximum number of one element within a Set dynamic field element'} =
         '';
-    $Self->{Translation}->{'Import/Export attachments (as the last entries per line)'} = 'Uvoz/izvoz priponk (kot zadnji vnosi v vrstici)';
     $Self->{Translation}->{'Version String'} = 'Verzija String';
 
     # Perl Module: Kernel/Modules/AdminDynamicField.pm
@@ -279,6 +275,7 @@ sub Data {
     $Self->{Translation}->{'Choose a module to enforce a version string scheme.'} = 'Izberite modul za uveljavitev sheme verižnih nizov različic.';
     $Self->{Translation}->{'Choose attributes to trigger the creation of a new version.'} = 'Izberite atribute za sprožitev ustvarjanja nove različice.';
     $Self->{Translation}->{'Choose categories to assign to this config item class.'} = 'Izberite kategorije, ki jih želite dodeliti temu razredu elementov konfiguracije.';
+    $Self->{Translation}->{'Color definitions for the public interface.'} = '';
     $Self->{Translation}->{'Column config item filters for ConfigItem Overview.'} = 'Filtri elementa konfiguracije stolpca za pregled elementa konfiguracije.';
     $Self->{Translation}->{'Columns that can be filtered in the config item overview of the agent interface. Note: Only Config Item attributes and Dynamic Fields (DynamicField_NameX) are allowed.'} =
         'Stolpci, ki jih je mogoče filtrirati v pregledu elementov konfiguracije v vmesniku agenta. Opomba: Dovoljeni so samo atributi elementa konfiguracije in dinamična polja (DynamicField_NameX).';
@@ -323,6 +320,8 @@ sub Data {
         'Opredelite dejanja, pri katerih je v gradniku povezanih predmetov na voljo gumb za nastavitve (LinkObject::ViewMode = "complex"). Upoštevajte, da morajo te akcije registrirati naslednje datoteke JS in CSS: V tem primeru je treba za uporabo nastavitev in funkcij za povezovanje objektov in njihovih funkcij v sistemu nastaviti naslednje datoteke: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js in Core.Agent.LinkObject.js.';
     $Self->{Translation}->{'Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit.'} =
         'Opredelitev sheme Template::Toolkit za niza različic. Uporablja se samo, če je modul Version String Module nastavljen na TemplateToolkit.';
+    $Self->{Translation}->{'Define a set of conditions under which a config item can be publicly seen. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
+        '';
     $Self->{Translation}->{'Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
         'Opredelite niz pogojev, pod katerimi lahko stranka vidi element konfiguracije. Pogoji so lahko po želji omejeni na določene skupine strank. Ime je edini obvezni atribut. Če ne navedete drugih možnosti, bodo v tej kategoriji vidni vsi elementi konfiguracije.';
     $Self->{Translation}->{'Defines Required permissions to delete ITSM configuration items using the Generic Interface.'} =
@@ -345,12 +344,16 @@ sub Data {
         'Določa privzeti atribut elementa konfiguracije za razvrščanje elementov konfiguracije v rezultatu iskanja elementov konfiguracije v vmesniku agenta.';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the customer interface.'} =
         'Določa privzeti atribut elementa konfiguracije za razvrščanje elementov konfiguracije v rezultatu iskanja elementov konfiguracije v vmesniku za stranke.';
+    $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the public interface.'} =
+        '';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of this operation.'} =
         'Določa privzeti atribut elementa konfiguracije za razvrščanje elementa konfiguracije v rezultat iskanja elementa konfiguracije te operacije.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the agent interface. Up: oldest on top. Down: latest on top.'} =
         'Določa privzeti vrstni red elementov konfiguracije v rezultatu iskanja elementov konfiguracije v vmesniku agenta. Navzgor: najstarejši na vrhu. Navzdol: najnovejši na vrhu.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top.'} =
         'Določa privzeti vrstni red elementov konfiguracije v rezultatu iskanja elementov konfiguracije v vmesniku za stranke. Navzgor: najstarejši na vrhu. Navzdol: najnovejši na vrhu.';
+    $Self->{Translation}->{'Defines the default config item order in the config item search result of the public interface. Up: oldest on top. Down: latest on top.'} =
+        '';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the this operation. Up: oldest on top. Down: latest on top.'} =
         'Določa privzeti vrstni red elementov konfiguracije v rezultatu iskanja elementov konfiguracije te operacije. Navzgor: najstarejši na vrhu. Navzdol: najnovejši na vrhu.';
     $Self->{Translation}->{'Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
@@ -380,6 +383,8 @@ sub Data {
         'Določa omejitev iskanja za zaslon CustomerITSMConfigItem.';
     $Self->{Translation}->{'Defines the search limit for the CustomerITSMConfigItemSearch screen.'} =
         'Določa omejitev iskanja za zaslon CustomerITSMConfigItemSearch.';
+    $Self->{Translation}->{'Defines the search limit for the PublicITSMConfigItemSearch screen.'} =
+        '';
     $Self->{Translation}->{'Defines the shown columns of CIs in the link table complex view for all CI classes. If there is no entry, then the default columns are shown.'} =
         'Opredeljuje prikazane stolpce KI v kompleksnem pogledu preglednice povezav za vse razrede KI. Če vnosa ni, so prikazani privzeti stolpci.';
     $Self->{Translation}->{'Defines the shown columns of CIs in the link table complex view, depending on the CI class. Each entry must be prefixed with the class name and double colons (i.e. Computer::). There are a few CI-Attributes that common to all CIs (example for the class Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). To show individual CI-Attributes as defined in the CI-Definition, the following scheme must be used (example for the class Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If there is no entry for a CI class, then the default columns are shown.'} =
@@ -406,6 +411,8 @@ sub Data {
         'Dinamična polja, prikazana na zaslonu dodatnega polja ITSM v vmesniku agenta.';
     $Self->{Translation}->{'Dynamic fields shown in the config item overview screen of the customer interface.'} =
         'Dinamična polja, prikazana na zaslonu za pregled elementa konfiguracije v vmesniku za stranke.';
+    $Self->{Translation}->{'Dynamic fields shown in the config item overview screen of the public interface.'} =
+        '';
     $Self->{Translation}->{'Dynamic fields shown in the config item search screen of the agent interface.'} =
         'Dinamična polja, prikazana na zaslonu za iskanje elementov konfiguracije v vmesniku agenta.';
     $Self->{Translation}->{'Enables configuration item bulk action feature for the agent frontend to work on more than one configuration item at a time.'} =
@@ -432,11 +439,22 @@ sub Data {
     $Self->{Translation}->{'ITSM config item overview.'} = 'Pregled elementa konfiguracije ITSM.';
     $Self->{Translation}->{'InciState'} = 'InciState';
     $Self->{Translation}->{'IncidentState'} = 'IncidentState';
+    $Self->{Translation}->{'Includes classes in the config item search of the public interface.'} =
+        '';
     $Self->{Translation}->{'Includes deployment states in the config item search of the customer interface.'} =
         'Vključuje stanja uvajanja v iskanje elementov konfiguracije v uporabniškem vmesniku.';
+    $Self->{Translation}->{'Includes deployment states in the config item search of the public interface.'} =
+        '';
     $Self->{Translation}->{'Includes incident states in the config item search of the customer interface.'} =
         'Vključuje stanja incidentov v iskanje elementov konfiguracije v uporabniškem vmesniku.';
+    $Self->{Translation}->{'Includes incident states in the config item search of the public interface.'} =
+        '';
+    $Self->{Translation}->{'Includes the name in the config item search of the public interface.'} =
+        '';
+    $Self->{Translation}->{'Includes the number in the config item search of the public interface.'} =
+        '';
     $Self->{Translation}->{'License accounting configuration item event module.'} = '';
+    $Self->{Translation}->{'Loader module registration for the public interface.'} = '';
     $Self->{Translation}->{'Maximum number of config items to be displayed in the result of this operation.'} =
         'Največje število elementov konfiguracije, ki se prikažejo v rezultatu te operacije.';
     $Self->{Translation}->{'Module to check the group responsible for a class.'} = 'Modul za preverjanje skupine, odgovorne za razred.';
@@ -449,6 +467,8 @@ sub Data {
         'Število elementov konfiguracije, ki se prikažejo na vsaki strani rezultata iskanja v vmesniku agenta.';
     $Self->{Translation}->{'Number of config items to be displayed in each page of a search result in the customer interface.'} =
         'Število elementov konfiguracije, ki se prikažejo na vsaki strani rezultata iskanja v uporabniškem vmesniku.';
+    $Self->{Translation}->{'Number of config items to be displayed in each page of the public interface.'} =
+        '';
     $Self->{Translation}->{'Objects to search for, how many entries and which attributs to show. ConfigItem attributes have to explicitly be stored via Elasticsearch.'} =
         'Predmeti za iskanje, koliko vnosov in kateri atributi naj se prikažejo. Atributi ConfigItem morajo biti izrecno shranjeni prek storitve Elasticsearch.';
     $Self->{Translation}->{'Overview.'} = 'Pregled.';
@@ -481,6 +501,9 @@ sub Data {
     $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =
         'Izvede konfigurirano dejanje za vsak dogodek (kot Invoker) za vsako konfigurirano spletno storitev.';
     $Self->{Translation}->{'Permission Group'} = 'Skupina dovoljenj';
+    $Self->{Translation}->{'Public users can see historic CI versions.'} = '';
+    $Self->{Translation}->{'Public users have the possibility to manually switch between historic CI versions.'} =
+        '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item attachment action in the agent interface.'} =
         'Zahtevana dovoljenja za uporabo dejanja pritrditve elementa konfiguracije ITSM v vmesniku agenta.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
@@ -538,6 +561,8 @@ sub Data {
     $Self->{Translation}->{'The default category which is shown, if none is selected.'} = 'Privzeta kategorija, ki se prikaže, če ni izbrana nobena.';
     $Self->{Translation}->{'The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. The default is ConfigItem#.'} =
         'Identifikator elementa konfiguracije, npr. ConfigItem#, MyConfigItem#. Privzeto je ConfigItem#.';
+    $Self->{Translation}->{'Title for the public interface overview.'} = '';
+    $Self->{Translation}->{'Title for the public interface search.'} = '';
     $Self->{Translation}->{'Triggers ConfigItemFetch invoker automatically.'} = 'Samodejno sproži sprožilca ConfigItemFetch.';
     $Self->{Translation}->{'Version String Expression'} = 'Različica String Izraz';
     $Self->{Translation}->{'Version String Module'} = 'Različica String Modul';
@@ -786,13 +811,9 @@ sub Data {
 
 
     push @{ $Self->{JavaScriptStrings} // [] }, (
-    'Add all',
     'An error occurred during class import.',
     'An error occurred during communication.',
-    'An item with this name is already present.',
-    'Cancel',
     'Confirm',
-    'Delete',
     'Dismiss',
     'Do you want to proceed?',
     'Importing classes/roles and their related fields',
@@ -806,7 +827,6 @@ sub Data {
     'Submit',
     'The following classes will be imported',
     'The following roles will be imported',
-    'This item still contains sub items. Are you sure you want to remove this item including its sub items?',
     'Yes',
     );
 

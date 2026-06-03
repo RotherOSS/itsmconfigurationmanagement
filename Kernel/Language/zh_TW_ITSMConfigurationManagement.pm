@@ -105,13 +105,6 @@ sub Data {
     # Template: CustomerITSMConfigItemSearch
     $Self->{Translation}->{'ConfigItem Search'} = '配置项搜索';
 
-    # Template: AdminACL
-    $Self->{Translation}->{'Object Type'} = '对象类型';
-
-    # Template: AdminDynamicFieldScreen
-    $Self->{Translation}->{'Filter by object type'} = '按類型過濾';
-    $Self->{Translation}->{'Add DynamicField'} = '';
-
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = '将导入以下类别';
     $Self->{Translation}->{'The following roles will be imported'} = '将导入以下角色';
@@ -214,6 +207,10 @@ sub Data {
     $Self->{Translation}->{'External-source key'} = '';
     $Self->{Translation}->{'Select the type of display'} = '';
 
+    # Perl Module: Kernel/System/DynamicField/Driver/ConfigItemVersion.pm
+    $Self->{Translation}->{'Activate this option to display values as a tree, grouped by config items.'} =
+        '';
+
     # Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
     $Self->{Translation}->{'Base structure is not valid. Please provide a hash with data in YAML format.'} =
         '基础结构无效。请提供包含 YAML 格式数据的哈希值。';
@@ -230,7 +227,6 @@ sub Data {
     $Self->{Translation}->{'Maximum number of one Set dynamic field element'} = '';
     $Self->{Translation}->{'Maximum number of one element within a Set dynamic field element'} =
         '';
-    $Self->{Translation}->{'Import/Export attachments (as the last entries per line)'} = '导入/导出附件（作为每行的最后一个条目）';
     $Self->{Translation}->{'Version String'} = '版本字符串';
 
     # Perl Module: Kernel/Modules/AdminDynamicField.pm
@@ -279,6 +275,7 @@ sub Data {
     $Self->{Translation}->{'Choose a module to enforce a version string scheme.'} = '选择一个模块来执行版本字符串方案。';
     $Self->{Translation}->{'Choose attributes to trigger the creation of a new version.'} = '选择触发创建新版本的属性。';
     $Self->{Translation}->{'Choose categories to assign to this config item class.'} = '选择要分配给此配置项类别的类别。';
+    $Self->{Translation}->{'Color definitions for the public interface.'} = '';
     $Self->{Translation}->{'Column config item filters for ConfigItem Overview.'} = '配置项概览的列配置项过滤器。';
     $Self->{Translation}->{'Columns that can be filtered in the config item overview of the agent interface. Note: Only Config Item attributes and Dynamic Fields (DynamicField_NameX) are allowed.'} =
         '可在代理界面配置项概览中过滤的列。注意：只允许使用配置项属性和动态字段 (DynamicField_NameX)。';
@@ -323,6 +320,8 @@ sub Data {
         '定义可在链接对象 widget 中使用设置按钮的操作（LinkObject::ViewMode = "complex"）。请注意，这些操作必须已注册以下 JS 和 CSS 文件：Core.AllocationList.css、Core.UI.AllocationList.js、Core.UI.Table.Sort.js、Core.Agent.TableFilters.js 和 Core.Agent.LinkObject.js。';
     $Self->{Translation}->{'Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit.'} =
         '为版本字符串定义一个 Template::Toolkit 方案。仅在版本字符串模块设置为 TemplateToolkit 时使用。';
+    $Self->{Translation}->{'Define a set of conditions under which a config item can be publicly seen. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
+        '';
     $Self->{Translation}->{'Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
         '定义一组允许客户查看配置项的条件。可选择将条件限制为某些客户组。名称是唯一的强制属性。如果没有给出其他选项，则该类别下的所有配置项都将可见。';
     $Self->{Translation}->{'Defines Required permissions to delete ITSM configuration items using the Generic Interface.'} =
@@ -345,12 +344,16 @@ sub Data {
         '定义代理界面配置项搜索结果中配置项排序的默认配置项属性。';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the customer interface.'} =
         '定义客户界面配置项搜索结果中配置项排序的默认配置项属性。';
+    $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the public interface.'} =
+        '';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of this operation.'} =
         '定义此操作的配置项搜索结果的配置项排序默认配置项属性。';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the agent interface. Up: oldest on top. Down: latest on top.'} =
         '定义代理界面配置项搜索结果中的默认配置项顺序。上：最旧的在最前面。下：最新的在上。';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top.'} =
         '定义客户界面配置项搜索结果中的默认配置项顺序。上：最旧的在最前面。下：最新的在上。';
+    $Self->{Translation}->{'Defines the default config item order in the config item search result of the public interface. Up: oldest on top. Down: latest on top.'} =
+        '';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the this operation. Up: oldest on top. Down: latest on top.'} =
         '定义此操作的配置项搜索结果中的默认配置项顺序。上：最旧的在最前面。下：最新的在上。';
     $Self->{Translation}->{'Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
@@ -380,6 +383,8 @@ sub Data {
         '定义客户ITSMConfigItem 屏幕的搜索限制。';
     $Self->{Translation}->{'Defines the search limit for the CustomerITSMConfigItemSearch screen.'} =
         '定义客户ITSMConfigItemSearch 屏幕的搜索限制。';
+    $Self->{Translation}->{'Defines the search limit for the PublicITSMConfigItemSearch screen.'} =
+        '';
     $Self->{Translation}->{'Defines the shown columns of CIs in the link table complex view for all CI classes. If there is no entry, then the default columns are shown.'} =
         '定义链接表复合视图中所有 CI 类的 CI 显示列。如果没有条目，则显示默认列。';
     $Self->{Translation}->{'Defines the shown columns of CIs in the link table complex view, depending on the CI class. Each entry must be prefixed with the class name and double colons (i.e. Computer::). There are a few CI-Attributes that common to all CIs (example for the class Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). To show individual CI-Attributes as defined in the CI-Definition, the following scheme must be used (example for the class Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If there is no entry for a CI class, then the default columns are shown.'} =
@@ -406,6 +411,8 @@ sub Data {
         '在代理界面的附加 ITSM 字段屏幕中显示的动态字段。';
     $Self->{Translation}->{'Dynamic fields shown in the config item overview screen of the customer interface.'} =
         '客户界面配置项目概览屏幕中显示的动态字段。';
+    $Self->{Translation}->{'Dynamic fields shown in the config item overview screen of the public interface.'} =
+        '';
     $Self->{Translation}->{'Dynamic fields shown in the config item search screen of the agent interface.'} =
         '在代理界面的配置项搜索屏幕中显示的动态字段。';
     $Self->{Translation}->{'Enables configuration item bulk action feature for the agent frontend to work on more than one configuration item at a time.'} =
@@ -432,11 +439,22 @@ sub Data {
     $Self->{Translation}->{'ITSM config item overview.'} = 'ITSM 配置项目概览。';
     $Self->{Translation}->{'InciState'} = '状态';
     $Self->{Translation}->{'IncidentState'} = '事件状态';
+    $Self->{Translation}->{'Includes classes in the config item search of the public interface.'} =
+        '';
     $Self->{Translation}->{'Includes deployment states in the config item search of the customer interface.'} =
         '在客户界面的配置项搜索中包含部署状态。';
+    $Self->{Translation}->{'Includes deployment states in the config item search of the public interface.'} =
+        '';
     $Self->{Translation}->{'Includes incident states in the config item search of the customer interface.'} =
         '在客户界面的配置项目搜索中包含事件状态。';
+    $Self->{Translation}->{'Includes incident states in the config item search of the public interface.'} =
+        '';
+    $Self->{Translation}->{'Includes the name in the config item search of the public interface.'} =
+        '';
+    $Self->{Translation}->{'Includes the number in the config item search of the public interface.'} =
+        '';
     $Self->{Translation}->{'License accounting configuration item event module.'} = '';
+    $Self->{Translation}->{'Loader module registration for the public interface.'} = '';
     $Self->{Translation}->{'Maximum number of config items to be displayed in the result of this operation.'} =
         '在此操作结果中显示的配置项的最大数量。';
     $Self->{Translation}->{'Module to check the group responsible for a class.'} = '检查负责班级的小组的模块。';
@@ -449,6 +467,8 @@ sub Data {
         '在代理界面搜索结果的每一页中显示的配置项数量。';
     $Self->{Translation}->{'Number of config items to be displayed in each page of a search result in the customer interface.'} =
         '客户界面搜索结果每页显示的配置项数量。';
+    $Self->{Translation}->{'Number of config items to be displayed in each page of the public interface.'} =
+        '';
     $Self->{Translation}->{'Objects to search for, how many entries and which attributs to show. ConfigItem attributes have to explicitly be stored via Elasticsearch.'} =
         '要搜索的对象、条目数量以及要显示的属性。配置项属性必须通过 Elasticsearch 明确存储。';
     $Self->{Translation}->{'Overview.'} = '概況';
@@ -481,6 +501,9 @@ sub Data {
     $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =
         '为每个配置的 Webservice 的每个事件（作为调用者）执行配置的操作。';
     $Self->{Translation}->{'Permission Group'} = '权限组';
+    $Self->{Translation}->{'Public users can see historic CI versions.'} = '';
+    $Self->{Translation}->{'Public users have the possibility to manually switch between historic CI versions.'} =
+        '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item attachment action in the agent interface.'} =
         '在代理界面中使用 ITSM 配置项目附件操作所需的权限。';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
@@ -538,6 +561,8 @@ sub Data {
     $Self->{Translation}->{'The default category which is shown, if none is selected.'} = '如果未选择任何类别，则显示默认类别。';
     $Self->{Translation}->{'The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. The default is ConfigItem#.'} =
         '配置项的标识符，如 ConfigItem#、MyConfigItem#。默认为 ConfigItem#。';
+    $Self->{Translation}->{'Title for the public interface overview.'} = '';
+    $Self->{Translation}->{'Title for the public interface search.'} = '';
     $Self->{Translation}->{'Triggers ConfigItemFetch invoker automatically.'} = '自动触发 ConfigItemFetch 调用器。';
     $Self->{Translation}->{'Version String Expression'} = '版本字符串表达式';
     $Self->{Translation}->{'Version String Module'} = '版本字符串模块';
@@ -786,13 +811,9 @@ sub Data {
 
 
     push @{ $Self->{JavaScriptStrings} // [] }, (
-    'Add all',
     'An error occurred during class import.',
     'An error occurred during communication.',
-    'An item with this name is already present.',
-    'Cancel',
     'Confirm',
-    'Delete',
     'Dismiss',
     'Do you want to proceed?',
     'Importing classes/roles and their related fields',
@@ -806,7 +827,6 @@ sub Data {
     'Submit',
     'The following classes will be imported',
     'The following roles will be imported',
-    'This item still contains sub items. Are you sure you want to remove this item including its sub items?',
     'Yes',
     );
 

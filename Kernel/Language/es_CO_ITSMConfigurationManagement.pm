@@ -105,13 +105,6 @@ sub Data {
     # Template: CustomerITSMConfigItemSearch
     $Self->{Translation}->{'ConfigItem Search'} = 'Búsqueda ConfigItem';
 
-    # Template: AdminACL
-    $Self->{Translation}->{'Object Type'} = 'Tipo de objeto';
-
-    # Template: AdminDynamicFieldScreen
-    $Self->{Translation}->{'Filter by object type'} = 'Filtrar por tipo';
-    $Self->{Translation}->{'Add DynamicField'} = '';
-
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = 'Se importarán las siguientes clases';
     $Self->{Translation}->{'The following roles will be imported'} = 'Se importarán las siguientes funciones';
@@ -214,6 +207,10 @@ sub Data {
     $Self->{Translation}->{'External-source key'} = '';
     $Self->{Translation}->{'Select the type of display'} = '';
 
+    # Perl Module: Kernel/System/DynamicField/Driver/ConfigItemVersion.pm
+    $Self->{Translation}->{'Activate this option to display values as a tree, grouped by config items.'} =
+        '';
+
     # Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
     $Self->{Translation}->{'Base structure is not valid. Please provide a hash with data in YAML format.'} =
         'La estructura base no es válida. Por favor, proporcione un hash con datos en formato YAML.';
@@ -230,7 +227,6 @@ sub Data {
     $Self->{Translation}->{'Maximum number of one Set dynamic field element'} = '';
     $Self->{Translation}->{'Maximum number of one element within a Set dynamic field element'} =
         '';
-    $Self->{Translation}->{'Import/Export attachments (as the last entries per line)'} = 'Importar/exportar archivos adjuntos (como últimas entradas por línea)';
     $Self->{Translation}->{'Version String'} = 'Versión Cadena';
 
     # Perl Module: Kernel/Modules/AdminDynamicField.pm
@@ -279,6 +275,7 @@ sub Data {
     $Self->{Translation}->{'Choose a module to enforce a version string scheme.'} = 'Elija un módulo para aplicar un esquema de cadenas de versiones.';
     $Self->{Translation}->{'Choose attributes to trigger the creation of a new version.'} = 'Elija atributos para activar la creación de una nueva versión.';
     $Self->{Translation}->{'Choose categories to assign to this config item class.'} = 'Elija las categorías que desea asignar a esta clase de elemento de configuración.';
+    $Self->{Translation}->{'Color definitions for the public interface.'} = '';
     $Self->{Translation}->{'Column config item filters for ConfigItem Overview.'} = 'Filtros de elementos de configuración de columna para ConfigItem Overview.';
     $Self->{Translation}->{'Columns that can be filtered in the config item overview of the agent interface. Note: Only Config Item attributes and Dynamic Fields (DynamicField_NameX) are allowed.'} =
         'Columnas que se pueden filtrar en la vista general de elementos de configuración de la interfaz del agente. Nota: Solo se permiten atributos de elementos de configuración y campos dinámicos (DynamicField_NameX).';
@@ -323,6 +320,8 @@ sub Data {
         'Defina acciones donde un botón de configuración esté disponible en el widget de objetos vinculados (LinkObject::ViewMode = "complejo"). Tenga en cuenta que estas acciones deben haber registrado los siguientes archivos JS y CSS: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js y Core.Agent .LinkObject.js.';
     $Self->{Translation}->{'Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit.'} =
         'Define un esquema Template::Toolkit para cadenas de versión. Sólo se utiliza si Version String Module se establece en TemplateToolkit.';
+    $Self->{Translation}->{'Define a set of conditions under which a config item can be publicly seen. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
+        '';
     $Self->{Translation}->{'Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
         'Define un conjunto de condiciones bajo las cuales un cliente puede ver un elemento de configuración. Las condiciones pueden restringirse opcionalmente a determinados grupos de clientes. El nombre es el único atributo obligatorio. Si no se especifica ninguna otra opción, todos los elementos de configuración serán visibles en esa categoría.';
     $Self->{Translation}->{'Defines Required permissions to delete ITSM configuration items using the Generic Interface.'} =
@@ -345,12 +344,16 @@ sub Data {
         'Define el atributo de elemento de configuración predeterminado para la clasificación de elementos de configuración del resultado de la búsqueda de elementos de configuración de la interfaz del agente.';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the customer interface.'} =
         'Define el atributo de elemento de configuración predeterminado para la clasificación de elementos de configuración del resultado de la búsqueda de elementos de configuración de la interfaz de cliente.';
+    $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the public interface.'} =
+        '';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of this operation.'} =
         'Define el atributo de elemento de configuración predeterminado para la clasificación de elementos de configuración del resultado de la búsqueda de elementos de configuración de esta operación.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the agent interface. Up: oldest on top. Down: latest on top.'} =
         'Define el orden predeterminado de los elementos de configuración en el resultado de la búsqueda de elementos de configuración de la interfaz del agente. Arriba: el más antiguo arriba. Abajo: el más reciente arriba.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top.'} =
         'Define el orden predeterminado de los elementos de configuración en el resultado de la búsqueda de elementos de configuración de la interfaz de cliente. Arriba: el más antiguo arriba. Abajo: el más reciente arriba.';
+    $Self->{Translation}->{'Defines the default config item order in the config item search result of the public interface. Up: oldest on top. Down: latest on top.'} =
+        '';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the this operation. Up: oldest on top. Down: latest on top.'} =
         'Define el orden predeterminado de los elementos de configuración en el resultado de la búsqueda de elementos de configuración de esta operación. Arriba: el más antiguo arriba. Abajo: el más reciente arriba.';
     $Self->{Translation}->{'Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
@@ -380,6 +383,8 @@ sub Data {
         'Define el límite de búsqueda para la pantalla CustomerITSMConfigItem.';
     $Self->{Translation}->{'Defines the search limit for the CustomerITSMConfigItemSearch screen.'} =
         'Define el límite de búsqueda para la pantalla CustomerITSMConfigItemSearch.';
+    $Self->{Translation}->{'Defines the search limit for the PublicITSMConfigItemSearch screen.'} =
+        '';
     $Self->{Translation}->{'Defines the shown columns of CIs in the link table complex view for all CI classes. If there is no entry, then the default columns are shown.'} =
         'Define las columnas mostradas de los CIs en la vista compleja de la tabla de enlaces para todas las clases de CI. Si no hay ninguna entrada, se muestran las columnas por defecto.';
     $Self->{Translation}->{'Defines the shown columns of CIs in the link table complex view, depending on the CI class. Each entry must be prefixed with the class name and double colons (i.e. Computer::). There are a few CI-Attributes that common to all CIs (example for the class Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). To show individual CI-Attributes as defined in the CI-Definition, the following scheme must be used (example for the class Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If there is no entry for a CI class, then the default columns are shown.'} =
@@ -406,6 +411,8 @@ sub Data {
         'Campos dinámicos mostrados en la pantalla de campos ITSM adicionales de la interfaz del agente.';
     $Self->{Translation}->{'Dynamic fields shown in the config item overview screen of the customer interface.'} =
         'Campos dinámicos mostrados en la pantalla de resumen de elementos de configuración de la interfaz de cliente.';
+    $Self->{Translation}->{'Dynamic fields shown in the config item overview screen of the public interface.'} =
+        '';
     $Self->{Translation}->{'Dynamic fields shown in the config item search screen of the agent interface.'} =
         'Campos dinámicos mostrados en la pantalla de búsqueda de elementos de configuración de la interfaz del agente.';
     $Self->{Translation}->{'Enables configuration item bulk action feature for the agent frontend to work on more than one configuration item at a time.'} =
@@ -432,11 +439,22 @@ sub Data {
     $Self->{Translation}->{'ITSM config item overview.'} = 'Resumen de elementos de configuración ITSM.';
     $Self->{Translation}->{'InciState'} = 'InciState';
     $Self->{Translation}->{'IncidentState'} = 'EstadoIncidente';
+    $Self->{Translation}->{'Includes classes in the config item search of the public interface.'} =
+        '';
     $Self->{Translation}->{'Includes deployment states in the config item search of the customer interface.'} =
         'Incluye los estados de despliegue en la búsqueda de elementos de configuración de la interfaz de cliente.';
+    $Self->{Translation}->{'Includes deployment states in the config item search of the public interface.'} =
+        '';
     $Self->{Translation}->{'Includes incident states in the config item search of the customer interface.'} =
         'Incluye estados de incidencias en la búsqueda de elementos de configuración de la interfaz de cliente.';
+    $Self->{Translation}->{'Includes incident states in the config item search of the public interface.'} =
+        '';
+    $Self->{Translation}->{'Includes the name in the config item search of the public interface.'} =
+        '';
+    $Self->{Translation}->{'Includes the number in the config item search of the public interface.'} =
+        '';
     $Self->{Translation}->{'License accounting configuration item event module.'} = '';
+    $Self->{Translation}->{'Loader module registration for the public interface.'} = '';
     $Self->{Translation}->{'Maximum number of config items to be displayed in the result of this operation.'} =
         'Número máximo de elementos de configuración que se mostrarán en el resultado de esta operación.';
     $Self->{Translation}->{'Module to check the group responsible for a class.'} = 'Módulo para comprobar el grupo responsable de una clase.';
@@ -449,6 +467,8 @@ sub Data {
         'Número de elementos de configuración que se mostrarán en cada página de un resultado de búsqueda en la interfaz del agente.';
     $Self->{Translation}->{'Number of config items to be displayed in each page of a search result in the customer interface.'} =
         'Número de elementos de configuración que deben mostrarse en cada página de un resultado de búsqueda en la interfaz del cliente.';
+    $Self->{Translation}->{'Number of config items to be displayed in each page of the public interface.'} =
+        '';
     $Self->{Translation}->{'Objects to search for, how many entries and which attributs to show. ConfigItem attributes have to explicitly be stored via Elasticsearch.'} =
         'Objetos a buscar, cuántas entradas y qué atributos mostrar. Los atributos ConfigItem deben almacenarse explícitamente a través de Elasticsearch.';
     $Self->{Translation}->{'Overview.'} = 'Visión general.';
@@ -481,6 +501,9 @@ sub Data {
     $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =
         'Realiza la acción configurada para cada evento (como Invoker) para cada Webservice configurado.';
     $Self->{Translation}->{'Permission Group'} = 'Grupo de permisos';
+    $Self->{Translation}->{'Public users can see historic CI versions.'} = '';
+    $Self->{Translation}->{'Public users have the possibility to manually switch between historic CI versions.'} =
+        '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item attachment action in the agent interface.'} =
         'Permisos necesarios para utilizar la acción de adjuntar elementos de configuración ITSM en la interfaz del agente.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
@@ -538,6 +561,8 @@ sub Data {
     $Self->{Translation}->{'The default category which is shown, if none is selected.'} = 'La categoría por defecto que se muestra, si no se selecciona ninguna.';
     $Self->{Translation}->{'The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. The default is ConfigItem#.'} =
         'El identificador de un elemento de configuración, por ejemplo ConfigItem#, MyConfigItem#. Por defecto es ConfigItem#.';
+    $Self->{Translation}->{'Title for the public interface overview.'} = '';
+    $Self->{Translation}->{'Title for the public interface search.'} = '';
     $Self->{Translation}->{'Triggers ConfigItemFetch invoker automatically.'} = 'Activa automáticamente el invocador ConfigItemFetch.';
     $Self->{Translation}->{'Version String Expression'} = 'Expresión de cadena de versión';
     $Self->{Translation}->{'Version String Module'} = 'Módulo de cadenas de versión';
@@ -786,13 +811,9 @@ sub Data {
 
 
     push @{ $Self->{JavaScriptStrings} // [] }, (
-    'Add all',
     'An error occurred during class import.',
     'An error occurred during communication.',
-    'An item with this name is already present.',
-    'Cancel',
     'Confirm',
-    'Delete',
     'Dismiss',
     'Do you want to proceed?',
     'Importing classes/roles and their related fields',
@@ -806,7 +827,6 @@ sub Data {
     'Submit',
     'The following classes will be imported',
     'The following roles will be imported',
-    'This item still contains sub items. Are you sure you want to remove this item including its sub items?',
     'Yes',
     );
 

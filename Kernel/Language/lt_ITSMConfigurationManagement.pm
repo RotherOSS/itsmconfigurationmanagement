@@ -105,13 +105,6 @@ sub Data {
     # Template: CustomerITSMConfigItemSearch
     $Self->{Translation}->{'ConfigItem Search'} = 'ConfigItem Paieška';
 
-    # Template: AdminACL
-    $Self->{Translation}->{'Object Type'} = 'Objekto tipas';
-
-    # Template: AdminDynamicFieldScreen
-    $Self->{Translation}->{'Filter by object type'} = '';
-    $Self->{Translation}->{'Add DynamicField'} = '';
-
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = 'Importuojamos šios klasės';
     $Self->{Translation}->{'The following roles will be imported'} = 'Bus importuojami šie vaidmenys';
@@ -214,6 +207,10 @@ sub Data {
     $Self->{Translation}->{'External-source key'} = '';
     $Self->{Translation}->{'Select the type of display'} = '';
 
+    # Perl Module: Kernel/System/DynamicField/Driver/ConfigItemVersion.pm
+    $Self->{Translation}->{'Activate this option to display values as a tree, grouped by config items.'} =
+        '';
+
     # Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
     $Self->{Translation}->{'Base structure is not valid. Please provide a hash with data in YAML format.'} =
         'Bazinė struktūra negalioja. Pateikite hash su duomenimis YAML formatu.';
@@ -230,7 +227,6 @@ sub Data {
     $Self->{Translation}->{'Maximum number of one Set dynamic field element'} = '';
     $Self->{Translation}->{'Maximum number of one element within a Set dynamic field element'} =
         '';
-    $Self->{Translation}->{'Import/Export attachments (as the last entries per line)'} = 'Importuoti ir (arba) eksportuoti priedus (kaip paskutinius įrašus eilutėje)';
     $Self->{Translation}->{'Version String'} = 'Versijos eilutė';
 
     # Perl Module: Kernel/Modules/AdminDynamicField.pm
@@ -279,6 +275,7 @@ sub Data {
     $Self->{Translation}->{'Choose a module to enforce a version string scheme.'} = 'Pasirinkite modulį, kuris užtikrins versijų eilučių schemą.';
     $Self->{Translation}->{'Choose attributes to trigger the creation of a new version.'} = 'Pasirinkite atributus, kad būtų sukurta nauja versija.';
     $Self->{Translation}->{'Choose categories to assign to this config item class.'} = 'Pasirinkite kategorijas, kurias norite priskirti šiai konfigūracijos elementų klasei.';
+    $Self->{Translation}->{'Color definitions for the public interface.'} = '';
     $Self->{Translation}->{'Column config item filters for ConfigItem Overview.'} = 'Stulpelio konfigūracijos elementų filtrai ConfigItem Overview.';
     $Self->{Translation}->{'Columns that can be filtered in the config item overview of the agent interface. Note: Only Config Item attributes and Dynamic Fields (DynamicField_NameX) are allowed.'} =
         'Stulpeliai, kuriuos galima filtruoti agento sąsajos konfigūracijos elementų apžvalgoje. Pastaba: Leidžiami tik konfigūracijos elemento atributai ir dinaminiai laukai (DynamicField_NameX).';
@@ -323,6 +320,8 @@ sub Data {
         'Apibrėžti veiksmus, kai susietų objektų valdiklyje (LinkObject::ViewMode = "complex") yra nustatymų mygtukas. Atkreipkite dėmesį, kad šiuose veiksmuose turi būti užregistruoti šie JS ir CSS failai: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js ir Core.Agent.LinkObject.js.';
     $Self->{Translation}->{'Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit.'} =
         'Apibrėžkite "Template::Toolkit" schemą, skirtą versijų eilutėms. Naudojama tik tada, jei versijų eilučių modulis nustatytas į TemplateToolkit.';
+    $Self->{Translation}->{'Define a set of conditions under which a config item can be publicly seen. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
+        '';
     $Self->{Translation}->{'Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
         'Apibrėžkite sąlygų, kuriomis klientui leidžiama matyti konfigūracijos elementą, rinkinį. Sąlygas galima apriboti tam tikroms klientų grupėms. Pavadinimas yra vienintelis privalomas atributas. Jei kitų parinkčių nenurodyta, visi konfigūracijos elementai bus matomi toje kategorijoje.';
     $Self->{Translation}->{'Defines Required permissions to delete ITSM configuration items using the Generic Interface.'} =
@@ -345,12 +344,16 @@ sub Data {
         'Nustato numatytojo konfigūracijos elemento atributą konfigūracijos elementų rūšiavimui agento sąsajos konfigūracijos elementų paieškos rezultatuose.';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the customer interface.'} =
         'Nustato numatytąjį konfigūracijos elemento atributą konfigūracijos elementų rūšiavimui klientų sąsajos konfigūracijos elementų paieškos rezultatuose.';
+    $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the public interface.'} =
+        '';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of this operation.'} =
         'Nustato numatytojo konfigūracijos elemento atributą, skirtą šios operacijos konfigūracijos elementų paieškos rezultatui rūšiuoti.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the agent interface. Up: oldest on top. Down: latest on top.'} =
         'Nustato numatytąją konfigūracijos elementų tvarką agento sąsajos konfigūracijos elementų paieškos rezultatuose. Aukštyn: seniausias viršuje. Žemyn: naujausias viršuje.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top.'} =
         'Nustato numatytoji konfigūracijos elementų tvarka kliento sąsajos konfigūracijos elementų paieškos rezultatuose. Aukštyn: seniausias viršuje. Žemyn: naujausias viršuje.';
+    $Self->{Translation}->{'Defines the default config item order in the config item search result of the public interface. Up: oldest on top. Down: latest on top.'} =
+        '';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the this operation. Up: oldest on top. Down: latest on top.'} =
         'Nustato numatytoji konfigūracijos elementų tvarka šios operacijos konfigūracijos elementų paieškos rezultate. Į viršų: seniausia viršuje. Žemyn: naujausias viršuje.';
     $Self->{Translation}->{'Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
@@ -380,6 +383,8 @@ sub Data {
         'Nustato CustomerITSMConfigItem ekrano paieškos ribą.';
     $Self->{Translation}->{'Defines the search limit for the CustomerITSMConfigItemSearch screen.'} =
         'Nustato CustomerITSMConfigItemSearch ekrano paieškos ribą.';
+    $Self->{Translation}->{'Defines the search limit for the PublicITSMConfigItemSearch screen.'} =
+        '';
     $Self->{Translation}->{'Defines the shown columns of CIs in the link table complex view for all CI classes. If there is no entry, then the default columns are shown.'} =
         'Nustato nuorodų lentelės sudėtingame rodinyje rodomus visų klasių KI stulpelius. Jei įrašo nėra, rodomi numatytieji stulpeliai.';
     $Self->{Translation}->{'Defines the shown columns of CIs in the link table complex view, depending on the CI class. Each entry must be prefixed with the class name and double colons (i.e. Computer::). There are a few CI-Attributes that common to all CIs (example for the class Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). To show individual CI-Attributes as defined in the CI-Definition, the following scheme must be used (example for the class Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If there is no entry for a CI class, then the default columns are shown.'} =
@@ -406,6 +411,8 @@ sub Data {
         'Dinaminiai laukai, rodomi agento sąsajos papildomo ITSM lauko ekrane.';
     $Self->{Translation}->{'Dynamic fields shown in the config item overview screen of the customer interface.'} =
         'Dinaminiai laukai, rodomi kliento sąsajos konfigūracijos elemento apžvalgos ekrane.';
+    $Self->{Translation}->{'Dynamic fields shown in the config item overview screen of the public interface.'} =
+        '';
     $Self->{Translation}->{'Dynamic fields shown in the config item search screen of the agent interface.'} =
         'Dinaminiai laukai, rodomi agento sąsajos konfigūracijos elementų paieškos ekrane.';
     $Self->{Translation}->{'Enables configuration item bulk action feature for the agent frontend to work on more than one configuration item at a time.'} =
@@ -432,11 +439,22 @@ sub Data {
     $Self->{Translation}->{'ITSM config item overview.'} = 'ITSM konfigūracijos elementų apžvalga.';
     $Self->{Translation}->{'InciState'} = 'InciState';
     $Self->{Translation}->{'IncidentState'} = 'IncidentState';
+    $Self->{Translation}->{'Includes classes in the config item search of the public interface.'} =
+        '';
     $Self->{Translation}->{'Includes deployment states in the config item search of the customer interface.'} =
         'Įtraukti diegimo būsenas į konfigūracijos elementų paiešką kliento sąsajoje.';
+    $Self->{Translation}->{'Includes deployment states in the config item search of the public interface.'} =
+        '';
     $Self->{Translation}->{'Includes incident states in the config item search of the customer interface.'} =
         'Įtraukti incidento būsenas į konfigūracijos elementų paiešką klientų sąsajoje.';
+    $Self->{Translation}->{'Includes incident states in the config item search of the public interface.'} =
+        '';
+    $Self->{Translation}->{'Includes the name in the config item search of the public interface.'} =
+        '';
+    $Self->{Translation}->{'Includes the number in the config item search of the public interface.'} =
+        '';
     $Self->{Translation}->{'License accounting configuration item event module.'} = '';
+    $Self->{Translation}->{'Loader module registration for the public interface.'} = '';
     $Self->{Translation}->{'Maximum number of config items to be displayed in the result of this operation.'} =
         'Didžiausias konfigūracijos elementų, kurie bus rodomi šios operacijos rezultate, skaičius.';
     $Self->{Translation}->{'Module to check the group responsible for a class.'} = 'Modulis, skirtas už klasę atsakingai grupei patikrinti.';
@@ -449,6 +467,8 @@ sub Data {
         'Konfigūracijos elementų, rodomų kiekviename paieškos rezultatų puslapyje agento sąsajoje, skaičius.';
     $Self->{Translation}->{'Number of config items to be displayed in each page of a search result in the customer interface.'} =
         'Konfigūracijos elementų, kurie bus rodomi kiekviename paieškos rezultatų puslapyje kliento sąsajoje, skaičius.';
+    $Self->{Translation}->{'Number of config items to be displayed in each page of the public interface.'} =
+        '';
     $Self->{Translation}->{'Objects to search for, how many entries and which attributs to show. ConfigItem attributes have to explicitly be stored via Elasticsearch.'} =
         'Objektų, kurių reikia ieškoti, kiek įrašų ir kokius atributus rodyti. ConfigItem atributai turi būti aiškiai saugomi per "Elasticsearch".';
     $Self->{Translation}->{'Overview.'} = 'Apžvalga.';
@@ -481,6 +501,9 @@ sub Data {
     $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =
         'Atlieka sukonfigūruotą veiksmą kiekvienam įvykiui (kaip Invoker) kiekvienai sukonfigūruotai žiniatinklio paslaugai.';
     $Self->{Translation}->{'Permission Group'} = 'Leidimų grupė';
+    $Self->{Translation}->{'Public users can see historic CI versions.'} = '';
+    $Self->{Translation}->{'Public users have the possibility to manually switch between historic CI versions.'} =
+        '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item attachment action in the agent interface.'} =
         'Reikalingi leidimai naudoti ITSM konfigūracijos elemento prijungimo veiksmą agento sąsajoje.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
@@ -538,6 +561,8 @@ sub Data {
     $Self->{Translation}->{'The default category which is shown, if none is selected.'} = 'Numatytoji kategorija, kuri rodoma, jei nepasirinkta nė viena.';
     $Self->{Translation}->{'The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. The default is ConfigItem#.'} =
         'Konfigūracijos elemento identifikatorius, pvz., ConfigItem#, MyConfigItem#. Numatytoji reikšmė yra ConfigItem#.';
+    $Self->{Translation}->{'Title for the public interface overview.'} = '';
+    $Self->{Translation}->{'Title for the public interface search.'} = '';
     $Self->{Translation}->{'Triggers ConfigItemFetch invoker automatically.'} = 'Automatiškai paleidžia ConfigItemFetch invokatorių.';
     $Self->{Translation}->{'Version String Expression'} = 'Versija Styginių eilutė Išraiška';
     $Self->{Translation}->{'Version String Module'} = 'Versijos eilutės modulis';
@@ -786,13 +811,9 @@ sub Data {
 
 
     push @{ $Self->{JavaScriptStrings} // [] }, (
-    'Add all',
     'An error occurred during class import.',
     'An error occurred during communication.',
-    'An item with this name is already present.',
-    'Cancel',
     'Confirm',
-    'Delete',
     'Dismiss',
     'Do you want to proceed?',
     'Importing classes/roles and their related fields',
@@ -806,7 +827,6 @@ sub Data {
     'Submit',
     'The following classes will be imported',
     'The following roles will be imported',
-    'This item still contains sub items. Are you sure you want to remove this item including its sub items?',
     'Yes',
     );
 
