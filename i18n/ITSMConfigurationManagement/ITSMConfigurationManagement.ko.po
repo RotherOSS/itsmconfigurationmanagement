@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2026-03-09 13:29+0000\n"
+"POT-Creation-Date: 2026-05-26 12:42+0000\n"
 "PO-Revision-Date: 2026-04-06 20:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Korean <http://translate.otobo.org/projects/opm-packages/itsm-"
@@ -42,8 +42,12 @@ msgid "Ready2Import Class Bundles"
 msgstr "Ready2Import 클래스 번들"
 
 #. Template: AdminITSMConfigItem
-msgid "Here you can import Ready2Import class bundles showcasing our most usual config items. Please note that some additional configuration may be required."
-msgstr "여기에서 가장 일반적인 구성 항목을 보여주는 Ready2Import 클래스 번들을 가져올 수 있습니다. 몇 가지 추가 구성이 필요할 수 있습니다."
+msgid ""
+"Here you can import Ready2Import class bundles showcasing our most usual "
+"config items. Please note that some additional configuration may be required."
+msgstr ""
+"여기에서 가장 일반적인 구성 항목을 보여주는 Ready2Import 클래스 번들을 가져"
+"올 수 있습니다. 몇 가지 추가 구성이 필요할 수 있습니다."
 
 #. Template: AdminITSMConfigItem
 msgid "Update existing entities"
@@ -110,7 +114,8 @@ msgid "The name of this config item"
 msgstr "이 구성 항목의 이름"
 
 #. Template: AgentITSMConfigItemEdit
-msgid "Name is already in use by the ConfigItems with the following Number(s): %s"
+msgid ""
+"Name is already in use by the ConfigItems with the following Number(s): %s"
 msgstr "이름이 이미 다음 번호의 구성 항목에서 사용 중입니다: %s."
 
 #. Template: AgentITSMConfigItemEdit
@@ -122,7 +127,9 @@ msgid "Version number of this config item"
 msgstr "이 구성 항목의 버전 번호"
 
 #. Template: AgentITSMConfigItemEdit
-msgid "Version Number is already in use by the ConfigItems with the following Number(s): %s"
+msgid ""
+"Version Number is already in use by the ConfigItems with the following "
+"Number(s): %s"
 msgstr "버전 번호가 다음 번호의 ConfigItems에서 이미 사용 중입니다: %s."
 
 #. Template: AgentITSMConfigItemEdit
@@ -225,6 +232,10 @@ msgstr "개체 유형"
 msgid "Filter by object type"
 msgstr "유형별 필터링"
 
+#. Template: AdminDynamicFieldScreen
+msgid "Add DynamicField"
+msgstr ""
+
 #. JS Template: ClassImportConfirm
 msgid "The following classes will be imported"
 msgstr "다음 클래스를 가져옵니다."
@@ -234,8 +245,12 @@ msgid "The following roles will be imported"
 msgstr "다음 역할을 가져옵니다."
 
 #. JS Template: ClassImportConfirm
-msgid "Note that also corresponding dynamic fields and GeneralCatalog classes will be created and there is no automatic removal."
-msgstr "해당 동적 필드와 일반 카탈로그 클래스도 생성되며 자동으로 제거되지 않는다는 점에 유의하세요."
+msgid ""
+"Note that also corresponding dynamic fields and GeneralCatalog classes will "
+"be created and there is no automatic removal."
+msgstr ""
+"해당 동적 필드와 일반 카탈로그 클래스도 생성되며 자동으로 제거되지 않는다는 "
+"점에 유의하세요."
 
 #. JS Template: ClassImportConfirm
 msgid "Do you want to proceed?"
@@ -395,7 +410,9 @@ msgstr "구성 항목 검색 결과"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemZoom.pm
 msgid "Can't show item, no access rights for ConfigItem are given!"
-msgstr "항목을 표시할 수 없습니다. 구성 항목에 대한 액세스 권한이 부여되지 않았습니다!"
+msgstr ""
+"항목을 표시할 수 없습니다. 구성 항목에 대한 액세스 권한이 부여되지 않았습니"
+"다!"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemZoom.pm
 msgid "ConfigItem not found!"
@@ -466,7 +483,8 @@ msgid "Deployment state restrictions for the config item"
 msgstr "구성 항목의 클래스 제한"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
-msgid "Select one or more deployment states to restrict selectable config items"
+msgid ""
+"Select one or more deployment states to restrict selectable config items"
 msgstr "하나 이상의 클래스를 선택하여 선택 가능한 구성 항목을 제한합니다."
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
@@ -482,15 +500,29 @@ msgid "Link Referencing Type"
 msgstr "링크 참조 유형"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
-msgid "Whether this link applies to the ConfigItem or the static version of the referencing object. Current Incident State calculation only is performed on dynamic links."
-msgstr "이 링크가 구성 항목에 적용되는지 또는 참조 개체의 정적 버전에 적용되는지 여부입니다. 현재 인시던트 상태 계산은 동적 링크에서만 수행됩니다."
+msgid ""
+"Whether this link applies to the ConfigItem or the static version of the "
+"referencing object. Current Incident State calculation only is performed on "
+"dynamic links."
+msgstr ""
+"이 링크가 구성 항목에 적용되는지 또는 참조 개체의 정적 버전에 적용되는지 여부"
+"입니다. 현재 인시던트 상태 계산은 동적 링크에서만 수행됩니다."
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
 msgid "Select the attribute which config items will be searched by"
 msgstr "구성 항목을 검색할 속성을 선택합니다."
 
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
+msgid "External-source key"
+msgstr ""
+
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
+msgid "Select the type of display"
+msgstr ""
+
 #. Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
-msgid "Base structure is not valid. Please provide a hash with data in YAML format."
+msgid ""
+"Base structure is not valid. Please provide a hash with data in YAML format."
 msgstr "기본 구조가 유효하지 않습니다. YAML 형식의 데이터 해시를 입력하세요."
 
 #. Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
@@ -538,8 +570,12 @@ msgid "Error synchronizing the definitions. Please check the log."
 msgstr "정의 동기화 중 오류가 발생했습니다. 로그를 확인해 주세요."
 
 #. Perl Module: Kernel/Modules/AdminDynamicField.pm
-msgid "You have ITSMConfigItem definitions which are not synchronized. Please deploy your ITSMConfigItem dynamic field changes."
-msgstr "동기화되지 않은 ITSMConfigItem 정의가 있습니다. ITSMConfigItem 동적 필드 변경 사항을 배포하세요."
+msgid ""
+"You have ITSMConfigItem definitions which are not synchronized. Please "
+"deploy your ITSMConfigItem dynamic field changes."
+msgstr ""
+"동기화되지 않은 ITSMConfigItem 정의가 있습니다. ITSMConfigItem 동적 필드 변"
+"경 사항을 배포하세요."
 
 #. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
 msgid "Expired"
@@ -594,23 +630,53 @@ msgid "1 - Shown"
 msgstr "1 - 표시됨"
 
 #. SysConfig
-msgid "A mapping of inner field names used in the Process Management TransitionActions ConfigItemAdd and -Update. The keys are the names of the set inner fields of the set with object type ticket which will be used to create/update the CI, and the values are the names of the inner fields of the set with object type ITSMConfigItem."
+msgid ""
+"A mapping of inner field names used in the Process Management "
+"TransitionActions ConfigItemAdd and -Update. The keys are the names of the "
+"set inner fields of the set with object type ticket which will be used to "
+"create/update the CI, and the values are the names of the inner fields of "
+"the set with object type ITSMConfigItem."
 msgstr ""
 
 #. SysConfig
-msgid "Allows extended search conditions in config item search of the agent interface. With this feature you can search e. g. config item name with this kind of conditions like \"(*key1*&&*key2*)\" or \"(*key1*||*key2*)\"."
-msgstr "상담원 인터페이스의 구성 항목 검색에서 확장 검색 조건을 허용합니다. 이 기능을 사용하면 예를 들어 \"(*key1*&&*key2*)\" 또는 \"(*key1*||*key2*)\"와 같은 조건으로 구성 항목 이름을 검색할 수 있습니다."
+msgid ""
+"Allows extended search conditions in config item search of the agent "
+"interface. With this feature you can search e. g. config item name with this "
+"kind of conditions like \"(*key1*&&*key2*)\" or \"(*key1*||*key2*)\"."
+msgstr ""
+"상담원 인터페이스의 구성 항목 검색에서 확장 검색 조건을 허용합니다. 이 기능"
+"을 사용하면 예를 들어 \"(*key1*&&*key2*)\" 또는 \"(*key1*||*key2*)\"와 같은 "
+"조건으로 구성 항목 이름을 검색할 수 있습니다."
 
 #. SysConfig
-msgid "Allows extended search conditions in config item search of the customer interface. With this feature you can search e. g. config item name with this kind of conditions like \"(*key1*&&*key2*)\" or \"(*key1*||*key2*)\"."
-msgstr "고객 인터페이스의 설정 항목 검색에서 확장 검색 조건을 허용합니다. 이 기능을 사용하면 예를 들어 \"(*key1*&&*key2*)\" 또는 \"(*key1*||*key2*)\"와 같은 조건으로 구성 항목 이름을 검색할 수 있습니다."
+msgid ""
+"Allows extended search conditions in config item search of the customer "
+"interface. With this feature you can search e. g. config item name with this "
+"kind of conditions like \"(*key1*&&*key2*)\" or \"(*key1*||*key2*)\"."
+msgstr ""
+"고객 인터페이스의 설정 항목 검색에서 확장 검색 조건을 허용합니다. 이 기능을 "
+"사용하면 예를 들어 \"(*key1*&&*key2*)\" 또는 \"(*key1*||*key2*)\"와 같은 조건"
+"으로 구성 항목 이름을 검색할 수 있습니다."
 
 #. SysConfig
 msgid "Assigned CIs"
 msgstr "할당된 CI"
 
 #. SysConfig
-msgid "At a specific time point create a ticket for config items, if the configured requirements are met. The time point is determined by the value of the dynamic field of type date configured under \"TimeCIKey\" of the ConfigItem, and modified by \"TimeModifier\". If the latter can be either just a number, or a sign (+/-), a number, and an unit (d/h/m): \"7\" is equivalent to \"+7d\". The DynamicField \"Ticket->DynamicField\" will be used to mark created tickets - it has to exist. The flags \\\\<OTOBO_CONFIGITEM_X\\\\> where X can be NAME, NUMBER and DATE, will be substituted with the respective values in \"Ticket->Text\"."
+msgid "AssignedToEntity"
+msgstr ""
+
+#. SysConfig
+msgid ""
+"At a specific time point create a ticket for config items, if the configured "
+"requirements are met. The time point is determined by the value of the "
+"dynamic field of type date configured under \"TimeCIKey\" of the ConfigItem, "
+"and modified by \"TimeModifier\". If the latter can be either just a number, "
+"or a sign (+/-), a number, and an unit (d/h/m): \"7\" is equivalent to "
+"\"+7d\". The DynamicField \"Ticket->DynamicField\" will be used to mark "
+"created tickets - it has to exist. The flags \\\\<OTOBO_CONFIGITEM_X\\\\> "
+"where X can be NAME, NUMBER and DATE, will be substituted with the "
+"respective values in \"Ticket->Text\"."
 msgstr ""
 
 #. SysConfig
@@ -618,7 +684,18 @@ msgid "Attributes for license accounting."
 msgstr ""
 
 #. SysConfig
-msgid "Attributes for licenses counting, where \"TotalLicensesDF\", \"AvailableLicensesDF\" and \"LicenseReferenceDF\" are the names of the dynamic fields used to track the remaining licenses. If used, only deployment states in \"ValidDeplStates\" are considered. If a threshold is defined in \"MinimumLicenses\", a ticket will automatically be created if less licenses are available. For this, the checkbox dynamic field \"Ticket->DynamicField\" must exist. The tags \\\\<OTOBO_CONFIGITEM_X\\\\> where X can be NAME, NUMBER, LICENSES_AVAIL and LICENSES_MIN, will be substituted with the respective values in \"Ticket->Text\" by the config item name, number, available licenses, and minimum required available licenses, respectively."
+msgid ""
+"Attributes for licenses counting, where \"TotalLicensesDF\", "
+"\"AvailableLicensesDF\" and \"LicenseReferenceDF\" are the names of the "
+"dynamic fields used to track the remaining licenses. If used, only "
+"deployment states in \"ValidDeplStates\" are considered. If a threshold is "
+"defined in \"MinimumLicenses\", a ticket will automatically be created if "
+"less licenses are available. For this, the checkbox dynamic field \"Ticket-"
+">DynamicField\" must exist. The tags \\\\<OTOBO_CONFIGITEM_X\\\\> where X "
+"can be NAME, NUMBER, LICENSES_AVAIL and LICENSES_MIN, will be substituted "
+"with the respective values in \"Ticket->Text\" by the config item name, "
+"number, available licenses, and minimum required available licenses, "
+"respectively."
 msgstr ""
 
 #. SysConfig
@@ -634,8 +711,13 @@ msgid "CMDB Settings"
 msgstr "CMDB 설정"
 
 #. SysConfig
-msgid "Check for a unique name only within the same ConfigItem class ('class') or globally ('global'), which means every existing ConfigItem is taken into account when looking for duplicates."
-msgstr "동일한 구성항목 클래스('class') 또는 전역('global') 내에서만 고유한 이름을 확인하므로 중복을 찾을 때 기존의 모든 구성항목이 고려됩니다."
+msgid ""
+"Check for a unique name only within the same ConfigItem class ('class') or "
+"globally ('global'), which means every existing ConfigItem is taken into "
+"account when looking for duplicates."
+msgstr ""
+"동일한 구성항목 클래스('class') 또는 전역('global') 내에서만 고유한 이름을 확"
+"인하므로 중복을 찾을 때 기존의 모든 구성항목이 고려됩니다."
 
 #. SysConfig
 msgid "Choose a module to enforce a naming scheme."
@@ -662,8 +744,13 @@ msgid "Column config item filters for ConfigItem Overview."
 msgstr "구성 항목 개요에 대한 열 구성 항목 필터."
 
 #. SysConfig
-msgid "Columns that can be filtered in the config item overview of the agent interface. Note: Only Config Item attributes and Dynamic Fields (DynamicField_NameX) are allowed."
-msgstr "상담원 인터페이스의 구성 항목 개요에서 필터링할 수 있는 열입니다. 참고: 구성 항목 속성과 동적 필드(DynamicField_NameX) 만 허용됩니다."
+msgid ""
+"Columns that can be filtered in the config item overview of the agent "
+"interface. Note: Only Config Item attributes and Dynamic Fields "
+"(DynamicField_NameX) are allowed."
+msgstr ""
+"상담원 인터페이스의 구성 항목 개요에서 필터링할 수 있는 열입니다. 참고: 구성 "
+"항목 속성과 동적 필드(DynamicField_NameX) 만 허용됩니다."
 
 #. SysConfig
 msgid "Config Items"
@@ -678,15 +765,22 @@ msgid "Config item edit."
 msgstr "구성 항목 편집."
 
 #. SysConfig
-msgid "Config item event module that enables accounting licenses for a given config item."
+msgid ""
+"Config item event module that enables accounting licenses for a given config "
+"item."
 msgstr ""
 
 #. SysConfig
-msgid "Config item event module that enables logging to history in the agent interface."
-msgstr "상담원 인터페이스에서 기록에 로깅할 수 있는 구성 항목 이벤트 모듈입니다."
+msgid ""
+"Config item event module that enables logging to history in the agent "
+"interface."
+msgstr ""
+"상담원 인터페이스에서 기록에 로깅할 수 있는 구성 항목 이벤트 모듈입니다."
 
 #. SysConfig
-msgid "Config item event module that updates config items to their current definition."
+msgid ""
+"Config item event module that updates config items to their current "
+"definition."
 msgstr "구성 항목을 현재 정의로 업데이트하는 구성 항목 이벤트 모듈입니다."
 
 #. SysConfig
@@ -710,12 +804,24 @@ msgid "ConfigItem Version"
 msgstr "구성 항목 버전"
 
 #. SysConfig
-msgid "ConfigItems of the following classes will not be stored on the Elasticsearch server. To apply this to existing CIs, the CI migration has to be run via console, after changing this option."
-msgstr "다음 클래스의 구성 항목은 Elasticsearch 서버에 저장되지 않습니다. 이를 기존 CI에 적용하려면 이 옵션을 변경한 후 콘솔을 통해 CI 마이그레이션을 실행해야 합니다."
+msgid ""
+"ConfigItems of the following classes will not be stored on the Elasticsearch "
+"server. To apply this to existing CIs, the CI migration has to be run via "
+"console, after changing this option."
+msgstr ""
+"다음 클래스의 구성 항목은 Elasticsearch 서버에 저장되지 않습니다. 이를 기존 "
+"CI에 적용하려면 이 옵션을 변경한 후 콘솔을 통해 CI 마이그레이션을 실행해야 합"
+"니다."
 
 #. SysConfig
-msgid "ConfigItems with the following deployment states will not be stored on the Elasticsearch server. To apply this to existing CIs, the CI migration has to be run via console, after changing this option."
-msgstr "다음 배포 상태의 구성 항목은 Elasticsearch 서버에 저장되지 않습니다. 이를 기존 CI에 적용하려면 이 옵션을 변경한 후 콘솔을 통해 CI 마이그레이션을 실행해야 합니다."
+msgid ""
+"ConfigItems with the following deployment states will not be stored on the "
+"Elasticsearch server. To apply this to existing CIs, the CI migration has to "
+"be run via console, after changing this option."
+msgstr ""
+"다음 배포 상태의 구성 항목은 Elasticsearch 서버에 저장되지 않습니다. 이를 기"
+"존 CI에 적용하려면 이 옵션을 변경한 후 콘솔을 통해 CI 마이그레이션을 실행해"
+"야 합니다."
 
 #. SysConfig
 msgid "Configuration Item Limit"
@@ -738,11 +844,17 @@ msgid "Configuration item search backend router of the agent interface."
 msgstr "상담원 인터페이스의 구성 항목 검색 백엔드 라우터입니다."
 
 #. SysConfig
-msgid "Configure the columns which are available for viewing Permission Conditions in the customer interface, when the corresponding Permission Condition Columns are not specifically configured. This setting is used as a fallback for the other Permission Condition Columns settings."
+msgid ""
+"Configure the columns which are available for viewing Permission Conditions "
+"in the customer interface, when the corresponding Permission Condition "
+"Columns are not specifically configured. This setting is used as a fallback "
+"for the other Permission Condition Columns settings."
 msgstr ""
 
 #. SysConfig
-msgid "Configure the columns which are available when viewing the corresponding Permission Condition in the customer interface."
+msgid ""
+"Configure the columns which are available when viewing the corresponding "
+"Permission Condition in the customer interface."
 msgstr ""
 
 #. SysConfig
@@ -758,47 +870,95 @@ msgid "Customers can see historic CI versions."
 msgstr "고객은 과거 CI 버전을 볼 수 있습니다."
 
 #. SysConfig
-msgid "Customers have the possibility to manually switch between historic CI versions."
+msgid ""
+"Customers have the possibility to manually switch between historic CI "
+"versions."
 msgstr "고객은 이전 CI 버전 간에 수동으로 전환할 수 있습니다."
 
 #. SysConfig
-msgid "Default data to use on attribute for config item search screen. Example: \"ITSMConfigItemCreateTimePointFormat=year;ITSMConfigItemCreateTimePointStart=Last;ITSMConfigItemCreateTimePoint=2;\"."
-msgstr "구성 항목 검색 화면의 속성에 사용할 기본 데이터입니다. 예: \"ITSMConfigItemCreateTimePointFormat=year;ITSMConfigItemCreateTimePointStart=Last;ITSMConfigItemCreateTimePoint=2;\"."
+msgid ""
+"Default data to use on attribute for config item search screen. Example: "
+"\"ITSMConfigItemCreateTimePointFormat=year;ITSMConfigItemCreateTimePointStart=Last;ITSMConfigItemCreateTimePoint=2;\"."
+msgstr ""
+"구성 항목 검색 화면의 속성에 사용할 기본 데이터입니다. 예: "
+"\"ITSMConfigItemCreateTimePointFormat=year;ITSMConfigItemCreateTimePointStart=Last;ITSMConfigItemCreateTimePoint=2;\"."
 
 #. SysConfig
-msgid "Default data to use on attribute for config item search screen. Example: \"ITSMConfigItemCreateTimeStartYear=2010;ITSMConfigItemCreateTimeStartMonth=10;ITSMConfigItemCreateTimeStartDay=4;ITSMConfigItemCreateTimeStopYear=2010;ITSMConfigItemCreateTimeStopMonth=11;ITSMConfigItemCreateTimeStopDay=3;\"."
-msgstr "구성 항목 검색 화면의 속성에 사용할 기본 데이터입니다. 예: \"ITSMConfigItemCreateTimeStartYear=2010;ITSMConfigItemCreateTimeStartMonth=10;ITSMConfigItemCreateTimeStartDay=4;ITSMConfigItemCreateTimeStopYear=2010;ITSMConfigItemCreateTimeStopMonth=11;ITSMConfigItemCreateTimeStopDay=3;\"."
+msgid ""
+"Default data to use on attribute for config item search screen. Example: "
+"\"ITSMConfigItemCreateTimeStartYear=2010;ITSMConfigItemCreateTimeStartMonth=10;ITSMConfigItemCreateTimeStartDay=4;ITSMConfigItemCreateTimeStopYear=2010;ITSMConfigItemCreateTimeStopMonth=11;ITSMConfigItemCreateTimeStopDay=3;\"."
+msgstr ""
+"구성 항목 검색 화면의 속성에 사용할 기본 데이터입니다. 예: "
+"\"ITSMConfigItemCreateTimeStartYear=2010;ITSMConfigItemCreateTimeStartMonth=10;ITSMConfigItemCreateTimeStartDay=4;ITSMConfigItemCreateTimeStopYear=2010;ITSMConfigItemCreateTimeStopMonth=11;ITSMConfigItemCreateTimeStopDay=3;\"."
 
 #. SysConfig
-msgid "Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
-msgstr "링크 객체 위젯에서 설정 버튼을 사용할 수있는 액션 정의 (LinkObject :: ViewMode = \"complex\"). 이러한 작업은 다음 JS 및 CSS 파일을 등록해야합니다. Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js."
+msgid ""
+"Define Actions where a settings button is available in the linked objects "
+"widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions "
+"must have registered the following JS and CSS files: "
+"Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, "
+"Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
+msgstr ""
+"링크 객체 위젯에서 설정 버튼을 사용할 수있는 액션 정의 (LinkObject :: "
+"ViewMode = \"complex\"). 이러한 작업은 다음 JS 및 CSS 파일을 등록해야합니다. "
+"Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, "
+"Core.Agent.TableFilters.js."
 
 #. SysConfig
-msgid "Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit."
-msgstr "버전 문자열에 대한 템플릿::툴킷 체계를 정의합니다. 버전 문자열 모듈이 TemplateToolkit으로 설정된 경우에만 사용됩니다."
+msgid ""
+"Define a Template::Toolkit scheme for version strings. Only used if Version "
+"String Module is set to TemplateToolkit."
+msgstr ""
+"버전 문자열에 대한 템플릿::툴킷 체계를 정의합니다. 버전 문자열 모듈이 "
+"TemplateToolkit으로 설정된 경우에만 사용됩니다."
 
 #. SysConfig
-msgid "Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category."
-msgstr "고객이 구성 항목을 볼 수 있도록 허용되는 조건 집합을 정의합니다. 조건은 선택적으로 특정 고객 그룹으로 제한할 수 있습니다. 이름은 유일한 필수 속성입니다. 다른 옵션을 지정하지 않으면 모든 구성 항목이 해당 카테고리 아래에 표시됩니다."
+msgid ""
+"Define a set of conditions under which a customer is allowed to see a config "
+"item. Conditions can optionally be restricted to certain customer groups. "
+"Name is the only mandatory attribute. If no other options are given, all "
+"config items will be visible under that category."
+msgstr ""
+"고객이 구성 항목을 볼 수 있도록 허용되는 조건 집합을 정의합니다. 조건은 선택"
+"적으로 특정 고객 그룹으로 제한할 수 있습니다. 이름은 유일한 필수 속성입니다. "
+"다른 옵션을 지정하지 않으면 모든 구성 항목이 해당 카테고리 아래에 표시됩니다."
 
 #. SysConfig
-msgid "Defines Required permissions to delete ITSM configuration items using the Generic Interface."
-msgstr "일반 인터페이스를 사용하여 ITSM 구성 항목을 삭제하는 데 필요한 권한을 정의합니다."
+msgid ""
+"Defines Required permissions to delete ITSM configuration items using the "
+"Generic Interface."
+msgstr ""
+"일반 인터페이스를 사용하여 ITSM 구성 항목을 삭제하는 데 필요한 권한을 정의합"
+"니다."
 
 #. SysConfig
-msgid "Defines Required permissions to get ITSM configuration items using the Generic Interface."
-msgstr "일반 인터페이스를 사용하여 ITSM 구성 항목을 가져오는 데 필요한 권한을 정의합니다."
+msgid ""
+"Defines Required permissions to get ITSM configuration items using the "
+"Generic Interface."
+msgstr ""
+"일반 인터페이스를 사용하여 ITSM 구성 항목을 가져오는 데 필요한 권한을 정의합"
+"니다."
 
 #. SysConfig
-msgid "Defines Required permissions to search ITSM configuration items using the Generic Interface."
-msgstr "일반 인터페이스를 사용하여 ITSM 구성 항목을 검색하는 데 필요한 권한을 정의합니다."
+msgid ""
+"Defines Required permissions to search ITSM configuration items using the "
+"Generic Interface."
+msgstr ""
+"일반 인터페이스를 사용하여 ITSM 구성 항목을 검색하는 데 필요한 권한을 정의합"
+"니다."
 
 #. SysConfig
-msgid "Defines Required permissions to set ITSM configuration items using the Generic Interface."
-msgstr "일반 인터페이스를 사용하여 ITSM 구성 항목을 설정하는 데 필요한 권한을 정의합니다."
+msgid ""
+"Defines Required permissions to set ITSM configuration items using the "
+"Generic Interface."
+msgstr ""
+"일반 인터페이스를 사용하여 ITSM 구성 항목을 설정하는 데 필요한 권한을 정의합"
+"니다."
 
 #. SysConfig
-msgid "Defines an overview module to show the small view of a configuration item list."
+msgid ""
+"Defines an overview module to show the small view of a configuration item "
+"list."
 msgstr "구성 항목 목록의 작은 보기를 표시하는 개요 모듈을 정의합니다."
 
 #. SysConfig
@@ -806,79 +966,179 @@ msgid "Defines if the link type labels must be shown in the node connections."
 msgstr "노드 연결에 링크 유형 레이블을 표시할지 여부를 정의합니다."
 
 #. SysConfig
-msgid "Defines regular expressions individually for each ConfigItem class to check the ConfigItem name and to show corresponding error messages."
-msgstr "각 구성 항목 클래스에 대해 개별적으로 정규식을 정의하여 구성 항목 이름을 확인하고 해당 오류 메시지를 표시합니다."
+msgid ""
+"Defines regular expressions individually for each ConfigItem class to check "
+"the ConfigItem name and to show corresponding error messages."
+msgstr ""
+"각 구성 항목 클래스에 대해 개별적으로 정규식을 정의하여 구성 항목 이름을 확인"
+"하고 해당 오류 메시지를 표시합니다."
 
 #. SysConfig
-msgid "Defines the available columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName."
-msgstr "CI 클래스에 따라 구성 항목 개요에서 사용 가능한 CI 열을 정의합니다. 각 항목은 클래스 이름과 해당 클래스에서 사용 가능한 필드 배열로 구성되어야 합니다. 동적 필드 항목은 DynamicField_FieldName 스키마를 따라야 합니다."
+msgid ""
+"Defines the available columns of CIs in the config item overview depending "
+"on the CI class. Each entry must consist of a class name and an array of "
+"available fields for the corresponding class. Dynamic field entries have to "
+"honor the scheme DynamicField_FieldName."
+msgstr ""
+"CI 클래스에 따라 구성 항목 개요에서 사용 가능한 CI 열을 정의합니다. 각 항목"
+"은 클래스 이름과 해당 클래스에서 사용 가능한 필드 배열로 구성되어야 합니다. "
+"동적 필드 항목은 DynamicField_FieldName 스키마를 따라야 합니다."
 
 #. SysConfig
-msgid "Defines the default config item attribute for config item sorting of the config item search result of the agent interface."
-msgstr "상담원 인터페이스의 구성 항목 검색 결과의 구성 항목 정렬을 위한 기본 구성 항목 속성을 정의합니다."
+msgid ""
+"Defines the default config item attribute for config item sorting of the "
+"config item search result of the agent interface."
+msgstr ""
+"상담원 인터페이스의 구성 항목 검색 결과의 구성 항목 정렬을 위한 기본 구성 항"
+"목 속성을 정의합니다."
 
 #. SysConfig
-msgid "Defines the default config item attribute for config item sorting of the config item search result of the customer interface."
-msgstr "고객 인터페이스의 구성 항목 검색 결과의 구성 항목 정렬을 위한 기본 구성 항목 속성을 정의합니다."
+msgid ""
+"Defines the default config item attribute for config item sorting of the "
+"config item search result of the customer interface."
+msgstr ""
+"고객 인터페이스의 구성 항목 검색 결과의 구성 항목 정렬을 위한 기본 구성 항목 "
+"속성을 정의합니다."
 
 #. SysConfig
-msgid "Defines the default config item attribute for config item sorting of the config item search result of this operation."
-msgstr "이 작업의 구성 항목 검색 결과의 구성 항목 정렬에 대한 기본 구성 항목 속성을 정의합니다."
+msgid ""
+"Defines the default config item attribute for config item sorting of the "
+"config item search result of this operation."
+msgstr ""
+"이 작업의 구성 항목 검색 결과의 구성 항목 정렬에 대한 기본 구성 항목 속성을 "
+"정의합니다."
 
 #. SysConfig
-msgid "Defines the default config item order in the config item search result of the agent interface. Up: oldest on top. Down: latest on top."
-msgstr "상담원 인터페이스의 구성 항목 검색 결과에서 기본 구성 항목 순서를 정의합니다. 위쪽: 가장 오래된 항목을 맨 위에 배치합니다. 아래로: 최신 항목이 맨 위에 있습니다."
+msgid ""
+"Defines the default config item order in the config item search result of "
+"the agent interface. Up: oldest on top. Down: latest on top."
+msgstr ""
+"상담원 인터페이스의 구성 항목 검색 결과에서 기본 구성 항목 순서를 정의합니"
+"다. 위쪽: 가장 오래된 항목을 맨 위에 배치합니다. 아래로: 최신 항목이 맨 위에 "
+"있습니다."
 
 #. SysConfig
-msgid "Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top."
-msgstr "고객 인터페이스의 구성 항목 검색 결과에서 기본 구성 항목 순서를 정의합니다. 위쪽: 가장 오래된 항목을 맨 위에 표시합니다. 아래로: 최신 항목을 맨 위에 배치합니다."
+msgid ""
+"Defines the default config item order in the config item search result of "
+"the customer interface. Up: oldest on top. Down: latest on top."
+msgstr ""
+"고객 인터페이스의 구성 항목 검색 결과에서 기본 구성 항목 순서를 정의합니다. "
+"위쪽: 가장 오래된 항목을 맨 위에 표시합니다. 아래로: 최신 항목을 맨 위에 배치"
+"합니다."
 
 #. SysConfig
-msgid "Defines the default config item order in the config item search result of the this operation. Up: oldest on top. Down: latest on top."
-msgstr "이 작업의 구성 항목 검색 결과에서 기본 구성 항목 순서를 정의합니다. 위로: 가장 오래된 항목을 위에 표시합니다. 아래로: 최신 항목을 맨 위에 배치합니다."
+msgid ""
+"Defines the default config item order in the config item search result of "
+"the this operation. Up: oldest on top. Down: latest on top."
+msgstr ""
+"이 작업의 구성 항목 검색 결과에서 기본 구성 항목 순서를 정의합니다. 위로: 가"
+"장 오래된 항목을 위에 표시합니다. 아래로: 최신 항목을 맨 위에 배치합니다."
 
 #. SysConfig
-msgid "Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName."
-msgstr "CI 클래스에 따라 구성 항목 개요에 표시되는 CI의 기본 열을 정의합니다. 각 항목은 클래스 이름과 해당 클래스에 사용 가능한 필드 배열로 구성되어야 합니다. 동적 필드 항목은 DynamicField_FieldName 스키마를 따라야 합니다."
+msgid ""
+"Defines the default displayed columns of CIs in the config item overview "
+"depending on the CI class. Each entry must consist of a class name and an "
+"array of available fields for the corresponding class. Dynamic field entries "
+"have to honor the scheme DynamicField_FieldName."
+msgstr ""
+"CI 클래스에 따라 구성 항목 개요에 표시되는 CI의 기본 열을 정의합니다. 각 항목"
+"은 클래스 이름과 해당 클래스에 사용 가능한 필드 배열로 구성되어야 합니다. 동"
+"적 필드 항목은 DynamicField_FieldName 스키마를 따라야 합니다."
 
 #. SysConfig
 msgid "Defines the default relations depth to be shown."
 msgstr "표시할 기본 관계 깊이를 정의합니다."
 
 #. SysConfig
-msgid "Defines the default shown config item search attribute for config item search screen."
-msgstr "구성 항목 검색 화면에 기본적으로 표시되는 구성 항목 검색 속성을 정의합니다."
+msgid ""
+"Defines the default shown config item search attribute for config item "
+"search screen."
+msgstr ""
+"구성 항목 검색 화면에 기본적으로 표시되는 구성 항목 검색 속성을 정의합니다."
 
 #. SysConfig
-msgid "Defines the default shown config item search attribute for config item search screen. Example: \"Key\" must have the name of the Dynamic Field in this case 'X', \"Content\" must have the value of the Dynamic Field depending on the Dynamic Field type,  Text: 'a text', Dropdown: '1', Date/Time: 'Search_DynamicField_XTimeSlotStartYear=1974; Search_DynamicField_XTimeSlotStartMonth=01; Search_DynamicField_XTimeSlotStartDay=26; Search_DynamicField_XTimeSlotStartHour=00; Search_DynamicField_XTimeSlotStartMinute=00; Search_DynamicField_XTimeSlotStartSecond=00; Search_DynamicField_XTimeSlotStopYear=2013; Search_DynamicField_XTimeSlotStopMonth=01; Search_DynamicField_XTimeSlotStopDay=26; Search_DynamicField_XTimeSlotStopHour=23; Search_DynamicField_XTimeSlotStopMinute=59; Search_DynamicField_XTimeSlotStopSecond=59;' and or 'Search_DynamicField_XTimePointFormat=week; Search_DynamicField_XTimePointStart=Before; Search_DynamicField_XTimePointValue=7';."
-msgstr "구성 항목 검색 화면에 기본적으로 표시되는 구성 항목 검색 속성을 정의합니다. 예: \"키\"는 동적 필드의 이름(이 경우 'X'), \"콘텐츠\"는 동적 필드 유형에 따라 동적 필드의 값(텍스트: '텍스트', 드롭다운: '1', 날짜/시간)이어야 합니다: 'Search_DynamicField_XTimeSlotStartYear=1974; Search_DynamicField_XTimeSlotStartMonth=01; Search_DynamicField_XTimeSlotStartDay=26; Search_DynamicField_XTimeSlotStartHour=00'; Search_DynamicField_XTimeSlotStartMinute=00; Search_DynamicField_XTimeSlotStartSecond=00; Search_DynamicField_XTimeSlotStopYear=2013; Search_DynamicField_XTimeSlotStopMonth=01; Search_DynamicField_XTimeSlotStopDay=26; Search_DynamicField_XTimeSlotStopHour=23; Search_DynamicField_XTimeSlotStopMinute=59; Search_DynamicField_XTimeSlotStopSecond=59;' 및 또는 'Search_DynamicField_XTimePointFormat=week; Search_DynamicField_XTimePointStart=Before; Search_DynamicField_XTimePointValue=7';."
+msgid ""
+"Defines the default shown config item search attribute for config item "
+"search screen. Example: \"Key\" must have the name of the Dynamic Field in "
+"this case 'X', \"Content\" must have the value of the Dynamic Field "
+"depending on the Dynamic Field type,  Text: 'a text', Dropdown: '1', Date/"
+"Time: 'Search_DynamicField_XTimeSlotStartYear=1974; "
+"Search_DynamicField_XTimeSlotStartMonth=01; "
+"Search_DynamicField_XTimeSlotStartDay=26; "
+"Search_DynamicField_XTimeSlotStartHour=00; "
+"Search_DynamicField_XTimeSlotStartMinute=00; "
+"Search_DynamicField_XTimeSlotStartSecond=00; "
+"Search_DynamicField_XTimeSlotStopYear=2013; "
+"Search_DynamicField_XTimeSlotStopMonth=01; "
+"Search_DynamicField_XTimeSlotStopDay=26; "
+"Search_DynamicField_XTimeSlotStopHour=23; "
+"Search_DynamicField_XTimeSlotStopMinute=59; "
+"Search_DynamicField_XTimeSlotStopSecond=59;' and or "
+"'Search_DynamicField_XTimePointFormat=week; "
+"Search_DynamicField_XTimePointStart=Before; "
+"Search_DynamicField_XTimePointValue=7';."
+msgstr ""
+"구성 항목 검색 화면에 기본적으로 표시되는 구성 항목 검색 속성을 정의합니다. "
+"예: \"키\"는 동적 필드의 이름(이 경우 'X'), \"콘텐츠\"는 동적 필드 유형에 따"
+"라 동적 필드의 값(텍스트: '텍스트', 드롭다운: '1', 날짜/시간)이어야 합니다: "
+"'Search_DynamicField_XTimeSlotStartYear=1974; "
+"Search_DynamicField_XTimeSlotStartMonth=01; "
+"Search_DynamicField_XTimeSlotStartDay=26; "
+"Search_DynamicField_XTimeSlotStartHour=00'; "
+"Search_DynamicField_XTimeSlotStartMinute=00; "
+"Search_DynamicField_XTimeSlotStartSecond=00; "
+"Search_DynamicField_XTimeSlotStopYear=2013; "
+"Search_DynamicField_XTimeSlotStopMonth=01; "
+"Search_DynamicField_XTimeSlotStopDay=26; "
+"Search_DynamicField_XTimeSlotStopHour=23; "
+"Search_DynamicField_XTimeSlotStopMinute=59; "
+"Search_DynamicField_XTimeSlotStopSecond=59;' 및 또는 "
+"'Search_DynamicField_XTimePointFormat=week; "
+"Search_DynamicField_XTimePointStart=Before; "
+"Search_DynamicField_XTimePointValue=7';."
 
 #. SysConfig
 msgid "Defines the default subobject of the class 'ITSMConfigItem'."
 msgstr "'ITSMConfigItem' 클래스의 기본 하위 객체를 정의합니다."
 
 #. SysConfig
-msgid "Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName."
+msgid ""
+"Defines the disabled columns of CIs in the config item overview depending on "
+"the CI class. Each entry must consist of a class name and an array of "
+"available fields for the corresponding class. Dynamic field entries have to "
+"honor the scheme DynamicField_FieldName."
 msgstr ""
-"CI 클래스에 따라 구성 항목 개요에서 사용 가능한 CI 열을 정의합니다. 각 "
-"항목은 클래스 이름과 해당 클래스에서 사용 가능한 필드 배열로 구성되어야 "
-"합니다. 동적 필드 항목은 DynamicField_FieldName 스키마를 따라야 합니다."
+"CI 클래스에 따라 구성 항목 개요에서 사용 가능한 CI 열을 정의합니다. 각 항목"
+"은 클래스 이름과 해당 클래스에서 사용 가능한 필드 배열로 구성되어야 합니다. "
+"동적 필드 항목은 DynamicField_FieldName 스키마를 따라야 합니다."
 
 #. SysConfig
-msgid "Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
-msgstr "이 화면의 서식있는 텍스트 편집기 구성 요소의 높이를 정의합니다. 숫자 (픽셀) 또는 퍼센트 값 (상대)을 입력하십시오."
+msgid ""
+"Defines the height for the rich text editor component for this screen. Enter "
+"number (pixels) or percent value (relative)."
+msgstr ""
+"이 화면의 서식있는 텍스트 편집기 구성 요소의 높이를 정의합니다. 숫자 (픽셀) "
+"또는 퍼센트 값 (상대)을 입력하십시오."
 
 #. SysConfig
-msgid "Defines the number of rows for the CI definition editor in the admin interface."
+msgid ""
+"Defines the number of rows for the CI definition editor in the admin "
+"interface."
 msgstr "관리자 인터페이스에서 CI 정의 편집기의 행 수를 정의합니다."
 
 #. SysConfig
-msgid "Defines the order of incident states from high (e.g. cricital) to low (e.g. functional)."
-msgstr "인시던트 상태의 순서를 높음(예: 크리시탈)에서 낮음(예: 기능)으로 정의합니다."
+msgid ""
+"Defines the order of incident states from high (e.g. cricital) to low (e.g. "
+"functional)."
+msgstr ""
+"인시던트 상태의 순서를 높음(예: 크리시탈)에서 낮음(예: 기능)으로 정의합니다."
 
 #. SysConfig
-msgid "Defines the relevant deployment states where linked tickets can affect the status of a CI."
-msgstr "연결된 티켓이 CI의 상태에 영향을 줄 수 있는 관련 배포 상태를 정의합니다."
+msgid ""
+"Defines the relevant deployment states where linked tickets can affect the "
+"status of a CI."
+msgstr ""
+"연결된 티켓이 CI의 상태에 영향을 줄 수 있는 관련 배포 상태를 정의합니다."
 
 #. SysConfig
 msgid "Defines the search limit for the AgentITSMConfigItem screen."
@@ -897,28 +1157,63 @@ msgid "Defines the search limit for the CustomerITSMConfigItemSearch screen."
 msgstr "CustomerITSMConfigItemSearch 화면의 검색 제한을 정의합니다."
 
 #. SysConfig
-msgid "Defines the shown columns of CIs in the link table complex view for all CI classes. If there is no entry, then the default columns are shown."
-msgstr "모든 CI 클래스에 대해 링크 테이블 복합 보기에 표시되는 CI 열을 정의합니다. 항목이 없으면 기본 열이 표시됩니다."
+msgid ""
+"Defines the shown columns of CIs in the link table complex view for all CI "
+"classes. If there is no entry, then the default columns are shown."
+msgstr ""
+"모든 CI 클래스에 대해 링크 테이블 복합 보기에 표시되는 CI 열을 정의합니다. 항"
+"목이 없으면 기본 열이 표시됩니다."
 
 #. SysConfig
-msgid "Defines the shown columns of CIs in the link table complex view, depending on the CI class. Each entry must be prefixed with the class name and double colons (i.e. Computer::). There are a few CI-Attributes that common to all CIs (example for the class Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). To show individual CI-Attributes as defined in the CI-Definition, the following scheme must be used (example for the class Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If there is no entry for a CI class, then the default columns are shown."
-msgstr "CI 클래스에 따라 링크 테이블 복합 보기에 표시되는 CI 열을 정의합니다. 각 항목 앞에는 클래스 이름과 이중 콜론(예: 컴퓨터::)이 와야 합니다. 모든 CI에 공통으로 적용되는 몇 가지 CI 속성이 있습니다(예: Computer 클래스의 경우: Computer::Name, Computer::CurDeplState, Computer::CreateTime). CI 정의에 정의된 대로 개별 CI 속성을 표시하려면 다음 스키마를 사용해야 합니다(예: Computer 클래스의 경우): 컴퓨터::하드디스크::1, 컴퓨터::하드디스크::1::용량::1, 컴퓨터::하드디스크::2, 컴퓨터::하드디스크::2::용량::1. CI 클래스에 대한 항목이 없는 경우 기본 열이 표시됩니다."
+msgid ""
+"Defines the shown columns of CIs in the link table complex view, depending "
+"on the CI class. Each entry must be prefixed with the class name and double "
+"colons (i.e. Computer::). There are a few CI-Attributes that common to all "
+"CIs (example for the class Computer: Computer::Name, Computer::CurDeplState, "
+"Computer::CreateTime). To show individual CI-Attributes as defined in the CI-"
+"Definition, the following scheme must be used (example for the class "
+"Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, "
+"Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If there is no "
+"entry for a CI class, then the default columns are shown."
+msgstr ""
+"CI 클래스에 따라 링크 테이블 복합 보기에 표시되는 CI 열을 정의합니다. 각 항"
+"목 앞에는 클래스 이름과 이중 콜론(예: 컴퓨터::)이 와야 합니다. 모든 CI에 공통"
+"으로 적용되는 몇 가지 CI 속성이 있습니다(예: Computer 클래스의 경우: "
+"Computer::Name, Computer::CurDeplState, Computer::CreateTime). CI 정의에 정의"
+"된 대로 개별 CI 속성을 표시하려면 다음 스키마를 사용해야 합니다(예: Computer "
+"클래스의 경우): 컴퓨터::하드디스크::1, 컴퓨터::하드디스크::1::용량::1, 컴퓨"
+"터::하드디스크::2, 컴퓨터::하드디스크::2::용량::1. CI 클래스에 대한 항목이 없"
+"는 경우 기본 열이 표시됩니다."
 
 #. SysConfig
-msgid "Defines which items are available for 'Action' in third level of the ITSM Config Item ACL structure."
-msgstr "ITSM 구성 항목 ACL 구조의 세 번째 수준에서 '동작'에 사용할 수 있는 항목을 정의합니다."
+msgid ""
+"Defines which items are available for 'Action' in third level of the ITSM "
+"Config Item ACL structure."
+msgstr ""
+"ITSM 구성 항목 ACL 구조의 세 번째 수준에서 '동작'에 사용할 수 있는 항목을 정"
+"의합니다."
 
 #. SysConfig
-msgid "Defines which items are available in first level of the ITSM Config Item ACL structure."
-msgstr "ITSM 구성 항목 ACL 구조의 첫 번째 수준에서 사용할 수 있는 항목을 정의합니다."
+msgid ""
+"Defines which items are available in first level of the ITSM Config Item ACL "
+"structure."
+msgstr ""
+"ITSM 구성 항목 ACL 구조의 첫 번째 수준에서 사용할 수 있는 항목을 정의합니다."
 
 #. SysConfig
-msgid "Defines which items are available in second level of the ITSM Config Item ACL structure."
-msgstr "ITSM 구성 항목 ACL 구조의 두 번째 수준에서 사용할 수 있는 항목을 정의합니다."
+msgid ""
+"Defines which items are available in second level of the ITSM Config Item "
+"ACL structure."
+msgstr ""
+"ITSM 구성 항목 ACL 구조의 두 번째 수준에서 사용할 수 있는 항목을 정의합니다."
 
 #. SysConfig
-msgid "Defines which type of link (named from the ticket perspective) can affect the status of a linked CI."
-msgstr "연결된 CI의 상태에 영향을 미칠 수 있는 링크 유형(티켓 관점에서 명명됨)을 정의합니다."
+msgid ""
+"Defines which type of link (named from the ticket perspective) can affect "
+"the status of a linked CI."
+msgstr ""
+"연결된 CI의 상태에 영향을 미칠 수 있는 링크 유형(티켓 관점에서 명명됨)을 정의"
+"합니다."
 
 #. SysConfig
 msgid "Defines which type of ticket can affect the status of a linked CI."
@@ -949,59 +1244,105 @@ msgid "Duplicate"
 msgstr "중복"
 
 #. SysConfig
-msgid "Dynamic field event module that marks config item definitions as out of sync, if containing dynamic fields change."
-msgstr "동적 필드 변경 사항이 포함된 경우 구성 항목 정의가 동기화되지 않은 것으로 표시하는 동적 필드 이벤트 모듈입니다."
+msgid ""
+"Dynamic field event module that marks config item definitions as out of "
+"sync, if containing dynamic fields change."
+msgstr ""
+"동적 필드 변경 사항이 포함된 경우 구성 항목 정의가 동기화되지 않은 것으로 표"
+"시하는 동적 필드 이벤트 모듈입니다."
 
 #. SysConfig
-msgid "Dynamic fields shown in the additional ITSM field screen of the agent interface."
+msgid ""
+"Dynamic fields shown in the additional ITSM field screen of the agent "
+"interface."
 msgstr "상담원 인터페이스의 추가 ITSM 필드 화면에 표시되는 동적 필드입니다."
 
 #. SysConfig
-msgid "Dynamic fields shown in the config item overview screen of the customer interface."
+msgid ""
+"Dynamic fields shown in the config item overview screen of the customer "
+"interface."
 msgstr "고객 인터페이스의 구성 항목 개요 화면에 표시되는 동적 필드입니다."
 
 #. SysConfig
-msgid "Dynamic fields shown in the config item search screen of the agent interface."
+msgid ""
+"Dynamic fields shown in the config item search screen of the agent interface."
 msgstr "상담원 인터페이스의 구성 항목 검색 화면에 표시되는 동적 필드입니다."
 
 #. SysConfig
-msgid "Enables configuration item bulk action feature for the agent frontend to work on more than one configuration item at a time."
-msgstr "상담원 프런트엔드에서 한 번에 두 개 이상의 구성 항목에 대해 작업할 수 있도록 구성 항목 일괄 작업 기능을 사용 설정합니다."
+msgid ""
+"Enables configuration item bulk action feature for the agent frontend to "
+"work on more than one configuration item at a time."
+msgstr ""
+"상담원 프런트엔드에서 한 번에 두 개 이상의 구성 항목에 대해 작업할 수 있도록 "
+"구성 항목 일괄 작업 기능을 사용 설정합니다."
 
 #. SysConfig
-msgid "Enables configuration item bulk action feature only for the listed groups."
+msgid ""
+"Enables configuration item bulk action feature only for the listed groups."
 msgstr "나열된 그룹에 대해서만 구성 항목 일괄 작업 기능을 활성화합니다."
 
 #. SysConfig
-msgid "Enables/disables the functionality to check ITSM onfiguration items for unique names. Before enabling this option you should check your system for already existing config items with duplicate names. You can do this with the console command Admin::ITSM::ConfigItem::ListDuplicates."
-msgstr "고유한 이름이 있는지 ITSM 구성 항목을 확인하는 기능을 사용/사용 안 함으로 설정합니다. 이 옵션을 사용 설정하기 전에 시스템에 이미 존재하는 구성 항목에 중복된 이름이 있는지 확인해야 합니다. 이 작업은 콘솔 명령인 Admin::ITSM::ConfigItem::ListDuplicates를 사용하여 수행할 수 있습니다."
+msgid ""
+"Enables/disables the functionality to check ITSM onfiguration items for "
+"unique names. Before enabling this option you should check your system for "
+"already existing config items with duplicate names. You can do this with the "
+"console command Admin::ITSM::ConfigItem::ListDuplicates."
+msgstr ""
+"고유한 이름이 있는지 ITSM 구성 항목을 확인하는 기능을 사용/사용 안 함으로 설"
+"정합니다. 이 옵션을 사용 설정하기 전에 시스템에 이미 존재하는 구성 항목에 중"
+"복된 이름이 있는지 확인해야 합니다. 이 작업은 콘솔 명령인 "
+"Admin::ITSM::ConfigItem::ListDuplicates를 사용하여 수행할 수 있습니다."
 
 #. SysConfig
 msgid "Event module to set configitem-status on ticket-configitem-link."
-msgstr "이벤트 모듈을 사용하여 티켓-configitem-link에서 configitem-status를 설정합니다."
+msgstr ""
+"이벤트 모듈을 사용하여 티켓-configitem-link에서 configitem-status를 설정합니"
+"다."
 
 #. SysConfig
-msgid "Fields of the configuration item index, used for the fulltext search. Fields are also stored, but are not mandatory for the overall functionality. Inclusion of attachments can be disabled by setting the entry to 0 or deleting it."
-msgstr "전체 텍스트 검색에 사용되는 구성 항목 인덱스의 필드입니다. 필드도 저장되지만 전체 기능에 필수적인 것은 아닙니다. 첨부 파일 포함은 항목을 0으로 설정하거나 삭제하여 비활성화할 수 있습니다."
+msgid ""
+"Fields of the configuration item index, used for the fulltext search. Fields "
+"are also stored, but are not mandatory for the overall functionality. "
+"Inclusion of attachments can be disabled by setting the entry to 0 or "
+"deleting it."
+msgstr ""
+"전체 텍스트 검색에 사용되는 구성 항목 인덱스의 필드입니다. 필드도 저장되지만 "
+"전체 기능에 필수적인 것은 아닙니다. 첨부 파일 포함은 항목을 0으로 설정하거나 "
+"삭제하여 비활성화할 수 있습니다."
 
 #. SysConfig
-msgid "Fields stored in the configuration item index which are used for other things besides fulltext searches. For the complete functionality all fields are mandatory."
-msgstr "전체 텍스트 검색 외에 다른 용도로 사용되는 구성 항목 인덱스에 저장된 필드입니다. 전체 기능을 사용하려면 모든 필드가 필수입니다."
+msgid ""
+"Fields stored in the configuration item index which are used for other "
+"things besides fulltext searches. For the complete functionality all fields "
+"are mandatory."
+msgstr ""
+"전체 텍스트 검색 외에 다른 용도로 사용되는 구성 항목 인덱스에 저장된 필드입니"
+"다. 전체 기능을 사용하려면 모든 필드가 필수입니다."
 
 #. SysConfig
-msgid "For every webservice (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker config."
-msgstr "모든 웹서비스(키)에 대해 가져오기가 제한되는 클래스(값)의 배열을 정의할 수 있습니다. 선택한 모든 클래스 또는 모든 기존 클래스에 대해 식별 속성을 인보커 구성에서 선택해야 합니다."
+msgid ""
+"For every webservice (key) an array of classes (value) can be defined on "
+"which the import is restricted. For all chosen classes, or all existing "
+"classes the identifying attributes will have to be chosen in the invoker "
+"config."
+msgstr ""
+"모든 웹서비스(키)에 대해 가져오기가 제한되는 클래스(값)의 배열을 정의할 수 있"
+"습니다. 선택한 모든 클래스 또는 모든 기존 클래스에 대해 식별 속성을 인보커 구"
+"성에서 선택해야 합니다."
 
 #. SysConfig
-msgid "GenericInterface module registration for the ConfigItemCreate invoker layer."
+msgid ""
+"GenericInterface module registration for the ConfigItemCreate invoker layer."
 msgstr "ConfigItemFetch 인보커 레이어에 대한 GenericInterface 모듈 등록."
 
 #. SysConfig
-msgid "GenericInterface module registration for the ConfigItemFetch invoker layer."
+msgid ""
+"GenericInterface module registration for the ConfigItemFetch invoker layer."
 msgstr "ConfigItemFetch 인보커 레이어에 대한 GenericInterface 모듈 등록."
 
 #. SysConfig
-msgid "GenericInterface module registration for the ConfigItemUpdate invoker layer."
+msgid ""
+"GenericInterface module registration for the ConfigItemUpdate invoker layer."
 msgstr "ConfigItemFetch 인보커 레이어에 대한 GenericInterface 모듈 등록."
 
 #. SysConfig
@@ -1021,11 +1362,14 @@ msgid "IncidentState"
 msgstr "인시던트 상태"
 
 #. SysConfig
-msgid "Includes deployment states in the config item search of the customer interface."
+msgid ""
+"Includes deployment states in the config item search of the customer "
+"interface."
 msgstr "고객 인터페이스의 구성 항목 검색에 배포 상태를 포함합니다."
 
 #. SysConfig
-msgid "Includes incident states in the config item search of the customer interface."
+msgid ""
+"Includes incident states in the config item search of the customer interface."
 msgstr "고객 인터페이스의 구성 항목 검색에 인시던트 상태를 포함합니다."
 
 #. SysConfig
@@ -1033,7 +1377,9 @@ msgid "License accounting configuration item event module."
 msgstr ""
 
 #. SysConfig
-msgid "Maximum number of config items to be displayed in the result of this operation."
+msgid ""
+"Maximum number of config items to be displayed in the result of this "
+"operation."
 msgstr "이 작업의 결과에 표시할 최대 구성 항목 수입니다."
 
 #. SysConfig
@@ -1057,136 +1403,276 @@ msgid "Number Module"
 msgstr "숫자 모듈"
 
 #. SysConfig
-msgid "Number of config items to be displayed in each page of a search result in the agent interface."
-msgstr "상담원 인터페이스에서 검색 결과의 각 페이지에 표시할 구성 항목의 수입니다."
+msgid ""
+"Number of config items to be displayed in each page of a search result in "
+"the agent interface."
+msgstr ""
+"상담원 인터페이스에서 검색 결과의 각 페이지에 표시할 구성 항목의 수입니다."
 
 #. SysConfig
-msgid "Number of config items to be displayed in each page of a search result in the customer interface."
+msgid ""
+"Number of config items to be displayed in each page of a search result in "
+"the customer interface."
 msgstr "고객 인터페이스에서 검색 결과의 각 페이지에 표시할 구성 항목 수입니다."
 
 #. SysConfig
-msgid "Objects to search for, how many entries and which attributs to show. ConfigItem attributes have to explicitly be stored via Elasticsearch."
-msgstr "검색할 개체, 표시할 항목 수, 표시할 속성. 구성 항목 속성은 Elasticsearch를 통해 명시적으로 저장해야 합니다."
+msgid ""
+"Objects to search for, how many entries and which attributs to show. "
+"ConfigItem attributes have to explicitly be stored via Elasticsearch."
+msgstr ""
+"검색할 개체, 표시할 항목 수, 표시할 속성. 구성 항목 속성은 Elasticsearch를 통"
+"해 명시적으로 저장해야 합니다."
 
 #. SysConfig
 msgid "Overview."
 msgstr "개요."
 
 #. SysConfig
-msgid "Parameters for the categories for config item classes in the preferences view of the agent interface."
-msgstr "상담원 인터페이스의 기본 설정 보기에서 구성 항목 클래스의 카테고리에 대한 매개 변수입니다."
-
-#. SysConfig
-msgid "Parameters for the column filters of the small config item overview. Please note: setting 'Active' to 0 will only prevent agents from editing settings of this group in their personal preferences, but will still allow administrators to edit the settings of another user's behalf. Use 'PreferenceGroup' to control in which area these settings should be shown in the user interface."
-msgstr "작은 구성 항목 개요의 열 필터에 대한 매개 변수입니다. 참고: '활성'을 0으로 설정하면 상담원이 개인 기본 설정에서 이 그룹의 설정을 편집할 수 없지만 관리자가 다른 사용자의 설정을 대신 편집할 수 있습니다. 사용자 인터페이스에서 이러한 설정이 표시될 영역을 제어하려면 'PreferenceGroup'을 사용하세요."
-
-#. SysConfig
-msgid "Parameters for the dashboard backend of the customer company config item overview of the agent interface . \"Limit\" is the number of entries per config item class shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin. \"ConfigItemKey\" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName)."
+msgid ""
+"Parameters for the categories for config item classes in the preferences "
+"view of the agent interface."
 msgstr ""
-"고객 사용자 목록의 대시 보드 백엔드 매개 변수는 에이전트 인터페이스 "
-"개요입니다. \"제한\"은 기본적으로 표시되는 항목 수입니다. \"그룹\"은 "
-"플러그인 (예 : 그룹 : 관리자, 그룹 1, 그룹 2)에 대한 액세스를 제한하는 데 "
-"사용됩니다. \"기본값\"은 플러그인이 기본적으로 활성화되어 있는지 여부 또는 "
-"사용자가 수동으로 활성화해야하는지 여부를 결정합니다. \"CacheTTLLocal\"은 "
-"플러그인의 캐시 시간입니다."
+"상담원 인터페이스의 기본 설정 보기에서 구성 항목 클래스의 카테고리에 대한 매"
+"개 변수입니다."
 
 #. SysConfig
-msgid "Parameters for the dashboard backend of the customer company config item overview of the agent interface . \"Limit\" is the number of entries shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin. \"ConfigItemKey\" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName)."
+msgid ""
+"Parameters for the column filters of the small config item overview. Please "
+"note: setting 'Active' to 0 will only prevent agents from editing settings "
+"of this group in their personal preferences, but will still allow "
+"administrators to edit the settings of another user's behalf. Use "
+"'PreferenceGroup' to control in which area these settings should be shown in "
+"the user interface."
 msgstr ""
-"고객 사용자 목록의 대시 보드 백엔드 매개 변수는 에이전트 인터페이스 "
-"개요입니다. \"제한\"은 기본적으로 표시되는 항목 수입니다. \"그룹\"은 "
-"플러그인 (예 : 그룹 : 관리자, 그룹 1, 그룹 2)에 대한 액세스를 제한하는 데 "
-"사용됩니다. \"기본값\"은 플러그인이 기본적으로 활성화되어 있는지 여부 또는 "
-"사용자가 수동으로 활성화해야하는지 여부를 결정합니다. \"CacheTTLLocal\"은 "
-"플러그인의 캐시 시간입니다."
+"작은 구성 항목 개요의 열 필터에 대한 매개 변수입니다. 참고: '활성'을 0으로 설"
+"정하면 상담원이 개인 기본 설정에서 이 그룹의 설정을 편집할 수 없지만 관리자"
+"가 다른 사용자의 설정을 대신 편집할 수 있습니다. 사용자 인터페이스에서 이러"
+"한 설정이 표시될 영역을 제어하려면 'PreferenceGroup'을 사용하세요."
 
 #. SysConfig
-msgid "Parameters for the deployment states color in the preferences view of the agent interface."
-msgstr "상담원 인터페이스의 기본 설정 보기에서 배포 상태의 매개변수 색상을 지정할 수 있습니다."
+#, fuzzy
+#| msgid ""
+#| "Parameters for the dashboard backend of the customer company config item "
+#| "overview of the agent interface . \"Limit\" is the number of entries "
+#| "shown by default. \"Group\" is used to restrict the access to the plugin "
+#| "(e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin "
+#| "is enabled by default or if the user needs to enable it manually. "
+#| "\"CacheTTLLocal\" is the cache time in minutes for the plugin. "
+#| "\"ConfigItemKey\" is used to specify which reference field is used for a "
+#| "ConfigItem class (Key=Class, Value=DynamicFieldName)."
+msgid ""
+"Parameters for the dashboard backend of the customer company config item "
+"overview show in the agent interface. \"Limit\" is the number of entries "
+"shown by default. \"Group\" is used to restrict the access to the plugin (e. "
+"g. Group: admin;group1;group2;). \"Default\" determines if the plugin is "
+"enabled by default or if the user needs to enable it manually. "
+"\"CacheTTLLocal\" is the cache time in minutes for the plugin. "
+"\"ConfigItemKey\" is to specify which customer company reference dynamic "
+"field is used to filter for the selected customer company. \"ShownClasses\" "
+"is a list to optionally restrict classes of the shown config items. Leaving "
+"this list empty defaults to all classes which match the customer company in "
+"the dynamic field configured in \"ConfigItemKey\"."
+msgstr ""
+"고객 사용자 목록의 대시 보드 백엔드 매개 변수는 에이전트 인터페이스 개요입니"
+"다. \"제한\"은 기본적으로 표시되는 항목 수입니다. \"그룹\"은 플러그인 (예 : "
+"그룹 : 관리자, 그룹 1, 그룹 2)에 대한 액세스를 제한하는 데 사용됩니다. \"기본"
+"값\"은 플러그인이 기본적으로 활성화되어 있는지 여부 또는 사용자가 수동으로 활"
+"성화해야하는지 여부를 결정합니다. \"CacheTTLLocal\"은 플러그인의 캐시 시간입"
+"니다."
 
 #. SysConfig
-msgid "Parameters for the deployment states in the preferences view of the agent interface."
-msgstr "상담원 인터페이스의 기본 설정 보기에서 배포 상태에 대한 매개변수입니다."
+#, fuzzy
+#| msgid ""
+#| "Parameters for the dashboard backend of the customer company config item "
+#| "overview of the agent interface . \"Limit\" is the number of entries per "
+#| "config item class shown by default. \"Group\" is used to restrict the "
+#| "access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" "
+#| "determines if the plugin is enabled by default or if the user needs to "
+#| "enable it manually. \"CacheTTLLocal\" is the cache time in minutes for "
+#| "the plugin. \"ConfigItemKey\" is used to specify which reference field is "
+#| "used for a ConfigItem class (Key=Class, Value=DynamicFieldName)."
+msgid ""
+"Parameters for the dashboard backend of the customer company config item "
+"overview shown in the agent interface. \"Limit\" is the number of entries "
+"per config item class shown by default. \"Group\" is used to restrict the "
+"access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" "
+"determines if the plugin is enabled by default or if the user needs to "
+"enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the "
+"plugin. \"ConfigItemKey\" is to specify which customer user reference "
+"dynamic field is used to filter for the selected customer user. "
+"\"ShownClasses\" is a list to optionally restrict classes of the shown "
+"config items. Leaving this list empty defaults to all classes which match "
+"the customer user in the dynamic field configured in \"ConfigItemKey\"."
+msgstr ""
+"고객 사용자 목록의 대시 보드 백엔드 매개 변수는 에이전트 인터페이스 개요입니"
+"다. \"제한\"은 기본적으로 표시되는 항목 수입니다. \"그룹\"은 플러그인 (예 : "
+"그룹 : 관리자, 그룹 1, 그룹 2)에 대한 액세스를 제한하는 데 사용됩니다. \"기본"
+"값\"은 플러그인이 기본적으로 활성화되어 있는지 여부 또는 사용자가 수동으로 활"
+"성화해야하는지 여부를 결정합니다. \"CacheTTLLocal\"은 플러그인의 캐시 시간입"
+"니다."
 
 #. SysConfig
-msgid "Parameters for the example permission groups of the general catalog attributes."
+msgid ""
+"Parameters for the deployment states color in the preferences view of the "
+"agent interface."
+msgstr ""
+"상담원 인터페이스의 기본 설정 보기에서 배포 상태의 매개변수 색상을 지정할 수 "
+"있습니다."
+
+#. SysConfig
+msgid ""
+"Parameters for the deployment states in the preferences view of the agent "
+"interface."
+msgstr ""
+"상담원 인터페이스의 기본 설정 보기에서 배포 상태에 대한 매개변수입니다."
+
+#. SysConfig
+msgid ""
+"Parameters for the example permission groups of the general catalog "
+"attributes."
 msgstr "일반 카탈로그 속성의 예시 권한 그룹에 대한 매개변수입니다."
 
 #. SysConfig
-msgid "Parameters for the name module for config item classes in the preferences view of the agent interface."
-msgstr "상담원 인터페이스의 기본 설정 보기에서 구성 항목 클래스의 이름 모듈에 대한 매개 변수입니다."
+msgid ""
+"Parameters for the name module for config item classes in the preferences "
+"view of the agent interface."
+msgstr ""
+"상담원 인터페이스의 기본 설정 보기에서 구성 항목 클래스의 이름 모듈에 대한 매"
+"개 변수입니다."
 
 #. SysConfig
-msgid "Parameters for the number module for config item classes in the preferences view of the agent interface."
-msgstr "상담원 인터페이스의 기본 설정 보기에서 구성 항목 클래스의 번호 모듈에 대한 매개 변수입니다."
+msgid ""
+"Parameters for the number module for config item classes in the preferences "
+"view of the agent interface."
+msgstr ""
+"상담원 인터페이스의 기본 설정 보기에서 구성 항목 클래스의 번호 모듈에 대한 매"
+"개 변수입니다."
 
 #. SysConfig
 msgid "Parameters for the pages (in which the configuration items are shown)."
 msgstr "페이지의 매개변수(구성 항목이 표시되는 페이지)입니다."
 
 #. SysConfig
-msgid "Parameters for the version string module for config item classes in the preferences view of the agent interface."
-msgstr "상담원 인터페이스의 기본 설정 보기에서 구성 항목 클래스에 대한 버전 문자열 모듈의 매개 변수입니다."
+msgid ""
+"Parameters for the version string module for config item classes in the "
+"preferences view of the agent interface."
+msgstr ""
+"상담원 인터페이스의 기본 설정 보기에서 구성 항목 클래스에 대한 버전 문자열 모"
+"듈의 매개 변수입니다."
 
 #. SysConfig
-msgid "Parameters for the version string template toolkit module for config item classes in the preferences view of the agent interface."
-msgstr "상담원 인터페이스의 기본 설정 보기에서 구성 항목 클래스에 대한 버전 문자열 템플릿 툴킷 모듈의 매개 변수입니다."
+msgid ""
+"Parameters for the version string template toolkit module for config item "
+"classes in the preferences view of the agent interface."
+msgstr ""
+"상담원 인터페이스의 기본 설정 보기에서 구성 항목 클래스에 대한 버전 문자열 템"
+"플릿 툴킷 모듈의 매개 변수입니다."
 
 #. SysConfig
-msgid "Parameters for the version trigger for config item classes in the preferences view of the agent interface."
-msgstr "상담원 인터페이스의 기본 설정 보기에서 구성 항목 클래스에 대한 버전 트리거의 매개 변수입니다."
+msgid ""
+"Parameters for the version trigger for config item classes in the "
+"preferences view of the agent interface."
+msgstr ""
+"상담원 인터페이스의 기본 설정 보기에서 구성 항목 클래스에 대한 버전 트리거의 "
+"매개 변수입니다."
 
 #. SysConfig
-msgid "Performs the configured action for each event (as an Invoker) for each configured Webservice."
-msgstr "구성된 각 웹서비스의 각 이벤트에 대해 구성된 작업을 (인보커로서) 수행합니다."
+msgid ""
+"Performs the configured action for each event (as an Invoker) for each "
+"configured Webservice."
+msgstr ""
+"구성된 각 웹서비스의 각 이벤트에 대해 구성된 작업을 (인보커로서) 수행합니다."
 
 #. SysConfig
 msgid "Permission Group"
 msgstr "권한 그룹"
 
 #. SysConfig
-msgid "Required permissions to use the ITSM configuration item attachment action in the agent interface."
-msgstr "상담원 인터페이스에서 ITSM 구성 항목 첨부 작업을 사용하기 위해 필요한 권한입니다."
+msgid ""
+"Required permissions to use the ITSM configuration item attachment action in "
+"the agent interface."
+msgstr ""
+"상담원 인터페이스에서 ITSM 구성 항목 첨부 작업을 사용하기 위해 필요한 권한입"
+"니다."
 
 #. SysConfig
-msgid "Required permissions to use the ITSM configuration item screen in the agent interface."
-msgstr "상담원 인터페이스에서 ITSM 구성 항목 화면을 사용하기 위해 필요한 권한입니다."
+msgid ""
+"Required permissions to use the ITSM configuration item screen in the agent "
+"interface."
+msgstr ""
+"상담원 인터페이스에서 ITSM 구성 항목 화면을 사용하기 위해 필요한 권한입니다."
 
 #. SysConfig
-msgid "Required permissions to use the ITSM configuration item search screen in the agent interface."
-msgstr "상담원 인터페이스에서 ITSM 구성 항목 검색 화면을 사용하기 위해 필요한 권한입니다."
+msgid ""
+"Required permissions to use the ITSM configuration item search screen in the "
+"agent interface."
+msgstr ""
+"상담원 인터페이스에서 ITSM 구성 항목 검색 화면을 사용하기 위해 필요한 권한입"
+"니다."
 
 #. SysConfig
-msgid "Required permissions to use the ITSM configuration item search screen in the customer interface."
-msgstr "고객 인터페이스에서 ITSM 구성 항목 검색 화면을 사용하기 위해 필요한 권한입니다."
+msgid ""
+"Required permissions to use the ITSM configuration item search screen in the "
+"customer interface."
+msgstr ""
+"고객 인터페이스에서 ITSM 구성 항목 검색 화면을 사용하기 위해 필요한 권한입니"
+"다."
 
 #. SysConfig
-msgid "Required permissions to use the ITSM configuration item tree view screen in the agent interface."
-msgstr "상담원 인터페이스에서 ITSM 구성 항목 트리 보기 화면을 사용하기 위해 필요한 권한입니다."
+msgid ""
+"Required permissions to use the ITSM configuration item tree view screen in "
+"the agent interface."
+msgstr ""
+"상담원 인터페이스에서 ITSM 구성 항목 트리 보기 화면을 사용하기 위해 필요한 권"
+"한입니다."
 
 #. SysConfig
-msgid "Required permissions to use the ITSM configuration item zoom screen in the agent interface."
-msgstr "상담원 인터페이스에서 ITSM 구성 항목 확대 화면을 사용하기 위해 필요한 권한입니다."
+msgid ""
+"Required permissions to use the ITSM configuration item zoom screen in the "
+"agent interface."
+msgstr ""
+"상담원 인터페이스에서 ITSM 구성 항목 확대 화면을 사용하기 위해 필요한 권한입"
+"니다."
 
 #. SysConfig
-msgid "Required permissions to use the add ITSM configuration item screen in the agent interface."
-msgstr "상담원 인터페이스에서 ITSM 구성 항목 추가 화면을 사용하기 위해 필요한 권한입니다."
+msgid ""
+"Required permissions to use the add ITSM configuration item screen in the "
+"agent interface."
+msgstr ""
+"상담원 인터페이스에서 ITSM 구성 항목 추가 화면을 사용하기 위해 필요한 권한입"
+"니다."
 
 #. SysConfig
-msgid "Required permissions to use the bulk ITSM configuration item screen in the agent interface."
-msgstr "상담원 인터페이스에서 일괄 ITSM 구성 항목 화면을 사용하기 위해 필요한 권한입니다."
+msgid ""
+"Required permissions to use the bulk ITSM configuration item screen in the "
+"agent interface."
+msgstr ""
+"상담원 인터페이스에서 일괄 ITSM 구성 항목 화면을 사용하기 위해 필요한 권한입"
+"니다."
 
 #. SysConfig
-msgid "Required permissions to use the edit ITSM configuration item screen in the agent interface."
-msgstr "상담원 인터페이스에서 ITSM 구성 항목 편집 화면을 사용하기 위해 필요한 권한입니다."
+msgid ""
+"Required permissions to use the edit ITSM configuration item screen in the "
+"agent interface."
+msgstr ""
+"상담원 인터페이스에서 ITSM 구성 항목 편집 화면을 사용하기 위해 필요한 권한입"
+"니다."
 
 #. SysConfig
-msgid "Required permissions to use the history ITSM configuration item screen in the agent interface."
-msgstr "상담원 인터페이스에서 기록 ITSM 구성 항목 화면을 사용하기 위해 필요한 권한입니다."
+msgid ""
+"Required permissions to use the history ITSM configuration item screen in "
+"the agent interface."
+msgstr ""
+"상담원 인터페이스에서 기록 ITSM 구성 항목 화면을 사용하기 위해 필요한 권한입"
+"니다."
 
 #. SysConfig
-msgid "Required permissions to use the print ITSM configuration item screen in the agent interface."
-msgstr "상담원 인터페이스에서 ITSM 구성 항목 인쇄 화면을 사용하기 위해 필요한 권한입니다."
+msgid ""
+"Required permissions to use the print ITSM configuration item screen in the "
+"agent interface."
+msgstr ""
+"상담원 인터페이스에서 ITSM 구성 항목 인쇄 화면을 사용하기 위해 필요한 권한입"
+"니다."
 
 #. SysConfig
 msgid "Required privileges to delete config items."
@@ -1197,60 +1683,108 @@ msgid "Search config items."
 msgstr "구성 항목을 검색합니다."
 
 #. SysConfig
-msgid "Set the incident state of a CI automatically when a Ticket is Linked to a CI."
+msgid ""
+"Set the incident state of a CI automatically when a Ticket is Linked to a CI."
 msgstr "티켓이 CI에 연결되면 자동으로 CI의 인시던트 상태를 설정합니다."
 
 #. SysConfig
-msgid "Sets the deployment state in the configuration item bulk screen of the agent interface."
+msgid ""
+"Sets the deployment state in the configuration item bulk screen of the agent "
+"interface."
 msgstr "상담원 인터페이스의 구성 항목 일괄 화면에서 배포 상태를 설정합니다."
 
 #. SysConfig
-msgid "Sets the incident state in the configuration item bulk screen of the agent interface."
-msgstr "상담원 인터페이스의 구성 항목 일괄 화면에서 인시던트 상태를 설정합니다."
+msgid ""
+"Sets the incident state in the configuration item bulk screen of the agent "
+"interface."
+msgstr ""
+"상담원 인터페이스의 구성 항목 일괄 화면에서 인시던트 상태를 설정합니다."
 
 #. SysConfig
-msgid "Shows a link in the menu that allows linking a configuration item with another object in the config item zoom view of the agent interface."
-msgstr "상담원 인터페이스의 구성 항목 확대/축소 보기에서 구성 항목을 다른 개체와 연결할 수 있는 링크를 메뉴에 표시합니다."
+msgid ""
+"Shows a link in the menu that allows linking a configuration item with "
+"another object in the config item zoom view of the agent interface."
+msgstr ""
+"상담원 인터페이스의 구성 항목 확대/축소 보기에서 구성 항목을 다른 개체와 연결"
+"할 수 있는 링크를 메뉴에 표시합니다."
 
 #. SysConfig
-msgid "Shows a link in the menu to access the history of a configuration item in the configuration item overview of the agent interface."
-msgstr "상담원 인터페이스의 구성 항목 개요에 있는 구성 항목의 기록에 액세스할 수 있는 링크를 메뉴에 표시합니다."
+msgid ""
+"Shows a link in the menu to access the history of a configuration item in "
+"the configuration item overview of the agent interface."
+msgstr ""
+"상담원 인터페이스의 구성 항목 개요에 있는 구성 항목의 기록에 액세스할 수 있"
+"는 링크를 메뉴에 표시합니다."
 
 #. SysConfig
-msgid "Shows a link in the menu to access the history of a configuration item in the its zoom view of the agent interface."
-msgstr "메뉴에 상담원 인터페이스의 확대 보기에서 구성 항목의 기록에 액세스할 수 있는 링크를 표시합니다."
+msgid ""
+"Shows a link in the menu to access the history of a configuration item in "
+"the its zoom view of the agent interface."
+msgstr ""
+"메뉴에 상담원 인터페이스의 확대 보기에서 구성 항목의 기록에 액세스할 수 있는 "
+"링크를 표시합니다."
 
 #. SysConfig
-msgid "Shows a link in the menu to delete a configuration item in its zoom view of the agent interface."
-msgstr "메뉴에 상담원 인터페이스의 확대 보기에서 구성 항목을 삭제할 수 있는 링크를 표시합니다."
+msgid ""
+"Shows a link in the menu to delete a configuration item in its zoom view of "
+"the agent interface."
+msgstr ""
+"메뉴에 상담원 인터페이스의 확대 보기에서 구성 항목을 삭제할 수 있는 링크를 표"
+"시합니다."
 
 #. SysConfig
-msgid "Shows a link in the menu to display the configuration item links as a Tree View."
+msgid ""
+"Shows a link in the menu to display the configuration item links as a Tree "
+"View."
 msgstr "메뉴에 구성 항목 링크를 트리 보기로 표시하는 링크를 표시합니다."
 
 #. SysConfig
-msgid "Shows a link in the menu to duplicate a configuration item in the configuration item overview of the agent interface."
-msgstr "상담원 인터페이스의 구성 항목 개요에 있는 구성 항목을 복제할 수 있는 링크를 메뉴에 표시합니다."
+msgid ""
+"Shows a link in the menu to duplicate a configuration item in the "
+"configuration item overview of the agent interface."
+msgstr ""
+"상담원 인터페이스의 구성 항목 개요에 있는 구성 항목을 복제할 수 있는 링크를 "
+"메뉴에 표시합니다."
 
 #. SysConfig
-msgid "Shows a link in the menu to duplicate a configuration item in the its zoom view of the agent interface."
-msgstr "메뉴에 링크를 표시하여 상담원 인터페이스의 확대/축소 보기에서 구성 항목을 복제할 수 있습니다."
+msgid ""
+"Shows a link in the menu to duplicate a configuration item in the its zoom "
+"view of the agent interface."
+msgstr ""
+"메뉴에 링크를 표시하여 상담원 인터페이스의 확대/축소 보기에서 구성 항목을 복"
+"제할 수 있습니다."
 
 #. SysConfig
-msgid "Shows a link in the menu to edit a configuration item in the its zoom view of the agent interface."
-msgstr "상담원 인터페이스의 확대 보기에서 구성 항목을 편집할 수 있는 링크를 메뉴에 표시합니다."
+msgid ""
+"Shows a link in the menu to edit a configuration item in the its zoom view "
+"of the agent interface."
+msgstr ""
+"상담원 인터페이스의 확대 보기에서 구성 항목을 편집할 수 있는 링크를 메뉴에 표"
+"시합니다."
 
 #. SysConfig
-msgid "Shows a link in the menu to go back in the configuration item zoom view of the agent interface."
-msgstr "메뉴에 상담원 인터페이스의 구성 항목 확대/축소 보기로 돌아갈 수 있는 링크를 표시합니다."
+msgid ""
+"Shows a link in the menu to go back in the configuration item zoom view of "
+"the agent interface."
+msgstr ""
+"메뉴에 상담원 인터페이스의 구성 항목 확대/축소 보기로 돌아갈 수 있는 링크를 "
+"표시합니다."
 
 #. SysConfig
-msgid "Shows a link in the menu to print a configuration item in the its zoom view of the agent interface."
-msgstr "메뉴에 링크를 표시하여 상담원 인터페이스의 확대 보기에서 구성 항목을 인쇄할 수 있습니다."
+msgid ""
+"Shows a link in the menu to print a configuration item in the its zoom view "
+"of the agent interface."
+msgstr ""
+"메뉴에 링크를 표시하여 상담원 인터페이스의 확대 보기에서 구성 항목을 인쇄할 "
+"수 있습니다."
 
 #. SysConfig
-msgid "Shows a link in the menu to zoom into a configuration item in the configuration item overview of the agent interface."
-msgstr "상담원 인터페이스의 구성 항목 개요에 있는 구성 항목을 확대할 수 있는 링크를 메뉴에 표시합니다."
+msgid ""
+"Shows a link in the menu to zoom into a configuration item in the "
+"configuration item overview of the agent interface."
+msgstr ""
+"상담원 인터페이스의 구성 항목 개요에 있는 구성 항목을 확대할 수 있는 링크를 "
+"메뉴에 표시합니다."
 
 #. SysConfig
 msgid "Shows the config item history (reverse ordered) in the agent interface."
@@ -1261,8 +1795,12 @@ msgid "The default category which is shown, if none is selected."
 msgstr "선택되지 않은 경우 표시되는 기본 카테고리입니다."
 
 #. SysConfig
-msgid "The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. The default is ConfigItem#."
-msgstr "구성 항목의 식별자(예: ConfigItem#, MyConfigItem#)입니다. 기본값은 ConfigItem#입니다."
+msgid ""
+"The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. "
+"The default is ConfigItem#."
+msgstr ""
+"구성 항목의 식별자(예: ConfigItem#, MyConfigItem#)입니다. 기본값은 "
+"ConfigItem#입니다."
 
 #. SysConfig
 msgid "Triggers ConfigItemFetch invoker automatically."
@@ -1281,12 +1819,21 @@ msgid "Version Trigger"
 msgstr "버전 트리거"
 
 #. SysConfig
-msgid "Whether fields should be automatically filled (1), and in that case also be hidden from ticket formulars (2)."
+msgid ""
+"Whether fields should be automatically filled (1), and in that case also be "
+"hidden from ticket formulars (2)."
 msgstr ""
 
 #. SysConfig
-msgid "Whether the execution of ConfigItemACL can be avoided by checking cached field dependencies. This can improve loading times of formulars, but has to be disabled, if ACLModules are to be used for ITSMConfigItem- and Form-ReturnTypes."
-msgstr "캐시된 필드 종속성을 확인하여 ConfigItemACL의 실행을 피할 수 있는지 여부. 이 옵션은 수식의 로딩 시간을 개선할 수 있지만, ACLModule을 ITSMConfigItem 및 Form-ReturnTypes에 사용하려는 경우 비활성화해야 합니다."
+msgid ""
+"Whether the execution of ConfigItemACL can be avoided by checking cached "
+"field dependencies. This can improve loading times of formulars, but has to "
+"be disabled, if ACLModules are to be used for ITSMConfigItem- and Form-"
+"ReturnTypes."
+msgstr ""
+"캐시된 필드 종속성을 확인하여 ConfigItemACL의 실행을 피할 수 있는지 여부. 이 "
+"옵션은 수식의 로딩 시간을 개선할 수 있지만, ACLModule을 ITSMConfigItem 및 "
+"Form-ReturnTypes에 사용하려는 경우 비활성화해야 합니다."
 
 #. SysConfig
 msgid "Which general information is shown in the header."
@@ -1313,768 +1860,116 @@ msgid "productive"
 msgstr "생산성"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Summary"
-msgstr "요약"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Network Info"
-msgstr "네트워크 정보"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Accounting"
-msgstr "회계"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Located in"
-msgstr "위치"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Date of Order"
-msgstr "주문 날짜"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Network Information"
-msgstr "네트워크 정보"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Operating costs"
-msgstr "운영 비용"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Service Tag"
-msgstr "서비스 태그"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Date of Warranty"
-msgstr "보증 기간"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Manufacturer"
-msgstr "제조업체"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Model Description"
-msgstr "모델 설명"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Contact Distributor"
-msgstr "총판 연락처"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Appliance Type"
-msgstr "어플라이언스 유형"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Phone / VoIP"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Firewall"
-msgstr "방화벽"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "VPN"
-msgstr "VPN"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "DNS-Server"
-msgstr "DNS 서버"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Container Management"
-msgstr "컨테이너 관리"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Identity and Access Management (IAM)"
-msgstr "ID 및 액세스 관리(IAM)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Other"
-msgstr "기타"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Order Number"
-msgstr "주문 번호"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Cost unit"
-msgstr "비용 단위"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Date of Invoice"
-msgstr "송장 날짜"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Model"
-msgstr "모델"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Purchased at"
-msgstr "다음에서 구매"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Invoice Number"
-msgstr "송장 번호"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Administrator"
-msgstr "관리자"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Inverstment costs"
-msgstr "투자 비용"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Inventory Number"
-msgstr "재고 번호"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Serialnumber"
-msgstr "일련번호"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Subsidiary"
-msgstr "자회사"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "SSL/TLS Certificates"
-msgstr "SSL/TLS 인증서"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Code Signing Certificates"
-msgstr "코드 서명 인증서"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Email Certificates (S/MIME Certificates)"
-msgstr "이메일 인증서(S/MIME 인증서)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Document Signing Certificates"
-msgstr "문서 서명 인증서"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Client Certificates"
-msgstr "클라이언트 인증서"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Creation Date"
-msgstr "생성 날짜"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Expiry Date"
-msgstr "만료 날짜"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Hardware"
-msgstr "하드웨어"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Software"
-msgstr "소프트웨어"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Number of graphics cards"
-msgstr "그래픽 카드 수"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Total Graphics card RAM (GB)"
-msgstr "총 그래픽 카드 RAM(GB)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Client category"
-msgstr "고객 카테고리"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Notebook"
-msgstr "노트북"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Desktop"
-msgstr "데스크톱"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Virtual Client"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Thin Client"
-msgstr "씬 클라이언트"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Storage Partition"
-msgstr "스토리지 파티션"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "License Count"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Physical Cores"
-msgstr "물리적 코어"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Storage"
-msgstr "스토리지"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Outputs"
-msgstr "출력"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Thunderbolt"
-msgstr "썬더볼트"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "DVI"
-msgstr "DVI"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "VGA"
-msgstr "VGA"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "HDMI"
-msgstr "HDMI"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "VirtualLink"
-msgstr "VirtualLink"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "DisplayPort"
-msgstr "디스플레이 포트"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "USB-C"
-msgstr "USB-C"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Memory Type"
-msgstr "메모리 유형"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Bus Interface"
-msgstr "버스 인터페이스"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Graphics card"
-msgstr "그래픽 카드"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Threads"
-msgstr "스레드"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Capacity per graphics card"
-msgstr "그래픽 카드당 용량"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Clockrate"
-msgstr "시계 속도"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Clockspeed"
-msgstr "시계 속도"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Client Software"
-msgstr "클라이언트 소프트웨어"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "License period from"
-msgstr "라이선스 기간"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Total RAM (GB)"
-msgstr "총 RAM(GB)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Number of RAM modules"
-msgstr "RAM 모듈 수"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Number of CPUs"
-msgstr "CPU 수"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Capacity (GB)"
-msgstr "용량(GB)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Socket Type"
-msgstr "소켓 유형"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "CPU Class"
-msgstr "CPU 클래스"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Mobile/Embedded"
-msgstr "모바일/임베디드"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Laptop"
-msgstr "노트북"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "License Type"
-msgstr "라이선스 유형"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "License period until"
-msgstr "라이선스 기간"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Firmware"
-msgstr "펌웨어"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Accounting Information"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Contract Type"
-msgstr "계약 유형"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Service Agreement"
-msgstr "서비스 계약"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Non-Disclosure Agreement (NDA)"
-msgstr "기밀 유지 계약(NDA)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "License Agreement"
-msgstr "라이선스 계약"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Franchise Agreement"
-msgstr "프랜차이즈 계약"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Loan Agreement"
-msgstr "대출 계약"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Consulting Agreement"
-msgstr "컨설팅 계약"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Lease Agreement"
-msgstr "임대 계약"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Employment Contract"
-msgstr "고용 계약"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Sales Contract"
-msgstr "판매 계약"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Partnership Agreement"
-msgstr "파트너십 계약"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Contract period until"
-msgstr "계약 기간"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Contract period from"
-msgstr "계약 기간"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "End of support"
-msgstr "지원 종료"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Date of release"
-msgstr "출시 날짜"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Monitor Size"
-msgstr "모니터 크기"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Power Delivery"
-msgstr "전력 공급"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Touchscreen Monitor"
-msgstr "터치스크린 모니터"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "LED Monitor (Light Emitting Diode)"
-msgstr "LED 모니터(발광 다이오드)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "OLED Monitor (Organic Light Emitting Diode)"
-msgstr "OLED 모니터(유기 발광 다이오드)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "LCD Monitor (Liquid Crystal Display)"
-msgstr "LCD 모니터(액정 디스플레이)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Monitor Resolution"
-msgstr "모니터 해상도"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "CIDR"
-msgstr "CIDR"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Start IP Address"
-msgstr "IP 주소 시작"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Network Layer"
-msgstr "네트워크 계층"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Layer 2: Data Link Layer"
-msgstr "레이어 2: 데이터 링크 레이어"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Layer 5: Session Layer"
-msgstr "레이어 5: 세션 레이어"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Layer 7: Application Layer"
-msgstr "레이어 7: 애플리케이션 레이어"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Layer 3: Network Layer (Supernet)"
-msgstr "레이어 3: 네트워크 레이어(슈퍼넷)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Layer 6: Presentation Layer"
-msgstr "레이어 6: 프레젠테이션 레이어"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Layer 1: Physical Layer"
-msgstr "레이어 1: 물리적 레이어"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Layer 3: Network Layer"
-msgstr "레이어 3: 네트워크 레이어"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Layer 4: Transport Layer"
-msgstr "레이어 4: 전송 레이어"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "End IP Address"
-msgstr "최종 IP 주소"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "IP Protocol"
-msgstr "IP 프로토콜"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Address Allocation"
-msgstr "주소 할당"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "DHCP Reserved"
-msgstr "DHCP 예약"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "DHCP"
-msgstr "DHCP"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Contact"
-msgstr "연락처"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Contract"
-msgstr "계약"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "CPU"
-msgstr "CPU"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Form Factor"
-msgstr "폼 팩터"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "General Information"
-msgstr "일반 정보"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Graphics Cards"
-msgstr "그래픽 카드"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Memory"
-msgstr "메모리"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Hardware Model"
-msgstr "하드웨어 모델"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Network"
-msgstr "네트워크"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Server Software"
-msgstr "서버 소프트웨어"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "SIM Card"
-msgstr "SIM 카드"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Count of licenses"
-msgstr "라이선스 수"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Seat licenses"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "MIT Lizenz"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "MPL (Mozilla Public License)"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Creative Commons"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Perpetual licenses"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "EPL (Eclipse Public License)"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "BSD Lizenz (Berkeley Software Distribution License)"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "AGPL (Affero General Public License)"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Freeware"
-msgstr "프리웨어"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Subscription-based licenses"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "CC0 (Creative Commons Zero)"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "GPL (General Public License)"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Public Domain"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Volume licenses"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Apache Lizenz"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Shareware"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "LGPL (Lesser General Public License)"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "License Key"
-msgstr "라이선스 키"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Mobile Number"
-msgstr "휴대폰 번호"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Card Reader"
-msgstr "카드 리더"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "VR Headset"
-msgstr "VR 헤드셋"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Headset"
-msgstr "헤드셋"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "External Hard Drive"
-msgstr "외장 하드 드라이브"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Speakers"
-msgstr "스피커"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "USB Hub"
-msgstr "USB 허브"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Mouse"
-msgstr "마우스"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Keyboard"
-msgstr "키보드"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Webcam"
-msgstr "웹캠"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Phone Number"
-msgstr "전화번호"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Phone Type"
-msgstr "전화 유형"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "VoIP Phone"
-msgstr "VoIP 전화"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Satellite Phone"
-msgstr "위성 전화"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Analog Phone"
-msgstr "아날로그 전화"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Conference Phone"
-msgstr "회의용 전화"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Cordless Phone (DECT Phone)"
-msgstr "무선 전화기(DECT 전화기)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Landline Phone"
-msgstr "유선 전화"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Rack Depth"
-msgstr "랙 깊이"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "23.6 inches (600 mm)"
-msgstr "23.6인치(600mm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "39.4 inches (1000 mm)"
-msgstr "39.4인치(1000mm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "47.2 inches (1200 mm)"
-msgstr "47.2인치(1200mm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "35.4 inches (900 mm)"
-msgstr "35.4인치(900mm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "31.5 inches (800 mm)"
-msgstr "31.5인치(800mm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "43.3 inches (1100 mm):"
-msgstr "43.3인치(1100mm):"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Rack Units (U)"
-msgstr "랙 유닛(U)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "2U: 3.5 inches (8.89 cm)"
-msgstr "2U: 3.5인치(8.89cm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "45U: 78.75 inches (200.02 cm)"
-msgstr "45U: 78.75인치(200.02cm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "1U: 1.75 inches (4.45 cm)"
-msgstr "1U: 1.75인치(4.45cm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "10U: 17.5 inches (44.45 cm)"
 msgstr "10U: 17.5인치(44.45cm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "39U: 68.25 inches (173.35 cm)"
-msgstr "39U: 68.25인치(173.35cm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "20U: 35 inches (88.9 cm)"
-msgstr "20U: 35인치(88.9cm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "4U: 7 inches (17.78 cm)"
-msgstr "4U: 7인치(17.78cm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "15U: 26.25 inches (66.68 cm)"
-msgstr "15U: 26.25인치(66.68cm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "36U: 63 inches (160.02 cm)"
-msgstr "36U: 63인치(160.02cm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "24U: 42 inches (106.68 cm)"
-msgstr "24U: 42인치(106.68cm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "7U: 12.25 inches (31.12 cm)"
-msgstr "7U: 12.25인치(31.12cm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "9U: 15.75 inches (40.01 cm)"
-msgstr "9U: 15.75인치(40.01cm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "8U: 14 inches (35.56 cm)"
-msgstr "8U: 14인치(35.56cm)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "12U: 21 inches (53.34 cm)"
 msgstr "12U: 21인치(53.34cm)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "30U: 52.5 inches (133.35 cm)"
-msgstr "30U: 52.5인치(133.35cm)"
+msgid "15U: 26.25 inches (66.68 cm)"
+msgstr "15U: 26.25인치(66.68cm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "18U: 31.5 inches (80.01 cm)"
+msgstr "18U: 31.5인치(80.01cm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "19-inch Rack"
+msgstr "19인치 랙"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "1U: 1.75 inches (4.45 cm)"
+msgstr "1U: 1.75인치(4.45cm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "20U: 35 inches (88.9 cm)"
+msgstr "20U: 35인치(88.9cm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "21-inch Rack"
+msgstr "21인치 랙"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "22U: 38.5 inches (97.79 cm)"
 msgstr "22U: 38.5인치(97.79cm)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "23-inch Rack"
+msgstr "23인치 랙"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "23.6 inches (600 mm)"
+msgstr "23.6인치(600mm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "24U: 42 inches (106.68 cm)"
+msgstr "24U: 42인치(106.68cm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "27U: 47.25 inches (120.02 cm)"
+msgstr "27U: 47.25인치(120.02cm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "2U: 3.5 inches (8.89 cm)"
+msgstr "2U: 3.5인치(8.89cm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "30U: 52.5 inches (133.35 cm)"
+msgstr "30U: 52.5인치(133.35cm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "31.5 inches (800 mm)"
+msgstr "31.5인치(800mm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "33U: 57.75 inches (146.68 cm)"
+msgstr "33U: 57.75인치(146.68cm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "35.4 inches (900 mm)"
+msgstr "35.4인치(900mm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "36U: 63 inches (160.02 cm)"
+msgstr "36U: 63인치(160.02cm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "39.4 inches (1000 mm)"
+msgstr "39.4인치(1000mm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "39U: 68.25 inches (173.35 cm)"
+msgstr "39U: 68.25인치(173.35cm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "3U: 5.25 inches (13.34 cm)"
+msgstr "3U: 5.25인치(13.34cm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "42U: 73.5 inches (186.69 cm)"
+msgstr "42U: 73.5인치(186.69cm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "43.3 inches (1100 mm):"
+msgstr "43.3인치(1100mm):"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "45U: 78.75 inches (200.02 cm)"
+msgstr "45U: 78.75인치(200.02cm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "47.2 inches (1200 mm)"
+msgstr "47.2인치(1200mm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "48U: 84 inches (213.36 cm)"
 msgstr "48U: 84인치(213.36cm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "4U: 7 inches (17.78 cm)"
+msgstr "4U: 7인치(17.78cm)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "5U: 8.75 inches (22.23 cm)"
@@ -2085,92 +1980,586 @@ msgid "6U: 10.5 inches (26.67 cm)"
 msgstr "6U: 10.5인치(26.67cm)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "42U: 73.5 inches (186.69 cm)"
-msgstr "42U: 73.5인치(186.69cm)"
+msgid "7U: 12.25 inches (31.12 cm)"
+msgstr "7U: 12.25인치(31.12cm)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "33U: 57.75 inches (146.68 cm)"
-msgstr "33U: 57.75인치(146.68cm)"
+msgid "8U: 14 inches (35.56 cm)"
+msgstr "8U: 14인치(35.56cm)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "3U: 5.25 inches (13.34 cm)"
-msgstr "3U: 5.25인치(13.34cm)"
+msgid "9U: 15.75 inches (40.01 cm)"
+msgstr "9U: 15.75인치(40.01cm)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "27U: 47.25 inches (120.02 cm)"
-msgstr "27U: 47.25인치(120.02cm)"
+msgid "AGPL (Affero General Public License)"
+msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "18U: 31.5 inches (80.01 cm)"
-msgstr "18U: 31.5인치(80.01cm)"
+msgid "Accounting"
+msgstr "회계"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "ETSI Rack"
-msgstr "ETSI 랙"
+msgid "Accounting Information"
+msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "23-inch Rack"
-msgstr "23인치 랙"
+msgid "Address Allocation"
+msgstr "주소 할당"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "21-inch Rack"
-msgstr "21인치 랙"
+msgid "Administrator"
+msgstr "관리자"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Custom Rack"
-msgstr "맞춤형 랙"
+msgid "Analog Phone"
+msgstr "아날로그 전화"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Tower"
-msgstr "타워"
+msgid "Apache License"
+msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Mini-Rack"
-msgstr "미니 랙"
+msgid "Appliance Type"
+msgstr "어플라이언스 유형"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "19-inch Rack"
-msgstr "19인치 랙"
+msgid "BSD License (Berkeley Software Distribution License)"
+msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Hardware Weight"
-msgstr "하드웨어 무게"
+msgid "Battery Capacity (Ah)"
+msgstr "배터리 용량(Ah)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Room"
-msgstr "방"
+msgid "Battery Type"
+msgstr "배터리 유형"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Building"
 msgstr "빌딩"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Bus Interface"
+msgstr "버스 인터페이스"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "CC0 (Creative Commons Zero)"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "CIDR"
+msgstr "CIDR"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "CPU"
+msgstr "CPU"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "CPU Class"
+msgstr "CPU 클래스"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Capacity (GB)"
+msgstr "용량(GB)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Capacity per graphics card"
+msgstr "그래픽 카드당 용량"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Card Number"
+msgstr "카드 번호"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Card Reader"
+msgstr "카드 리더"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Card Type"
 msgstr "카드 유형"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Micro SIM"
+msgid "Client Certificates"
+msgstr "클라이언트 인증서"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Client Software"
+msgstr "클라이언트 소프트웨어"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Client category"
+msgstr "고객 카테고리"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Clockrate"
+msgstr "시계 속도"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Clockspeed"
+msgstr "시계 속도"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Code Signing Certificates"
+msgstr "코드 서명 인증서"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Conference Phone"
+msgstr "회의용 전화"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Consulting Agreement"
+msgstr "컨설팅 계약"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Contact"
+msgstr "연락처"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Contact Distributor"
+msgstr "총판 연락처"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Container Management"
+msgstr "컨테이너 관리"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Contract"
+msgstr "계약"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Contract Type"
+msgstr "계약 유형"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Contract period from"
+msgstr "계약 기간"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Contract period until"
+msgstr "계약 기간"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Cordless Phone (DECT Phone)"
+msgstr "무선 전화기(DECT 전화기)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Cost unit"
+msgstr "비용 단위"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Count of licenses"
+msgstr "라이선스 수"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Creation Date"
+msgstr "생성 날짜"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Creative Commons"
 msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Standard SIM"
-msgstr "표준"
+msgid "Custom Rack"
+msgstr "맞춤형 랙"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Nano SIM"
+msgid "DHCP"
+msgstr "DHCP"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "DHCP Reserved"
+msgstr "DHCP 예약"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "DNS-Server"
+msgstr "DNS 서버"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "DVI"
+msgstr "DVI"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Date of Invoice"
+msgstr "송장 날짜"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Date of Order"
+msgstr "주문 날짜"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Date of Warranty"
+msgstr "보증 기간"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Date of release"
+msgstr "출시 날짜"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Desktop"
+msgstr "데스크톱"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "DisplayPort"
+msgstr "디스플레이 포트"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Document Signing Certificates"
+msgstr "문서 서명 인증서"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "EPL (Eclipse Public License)"
 msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "ETSI Rack"
+msgstr "ETSI 랙"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Email Certificates (S/MIME Certificates)"
+msgstr "이메일 인증서(S/MIME 인증서)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Embedded SIM (eSIM)"
 msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "PUK 2"
-msgstr "PUK 2"
+msgid "Employment Contract"
+msgstr "고용 계약"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Card Number"
-msgstr "카드 번호"
+msgid "End IP Address"
+msgstr "최종 IP 주소"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "End of support"
+msgstr "지원 종료"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Expiry Date"
+msgstr "만료 날짜"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "External Hard Drive"
+msgstr "외장 하드 드라이브"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Firewall"
+msgstr "방화벽"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Firmware"
+msgstr "펌웨어"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Flywheel Energy Storage"
+msgstr "플라이휠 에너지 저장"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Form Factor"
+msgstr "폼 팩터"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Franchise Agreement"
+msgstr "프랜차이즈 계약"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Freeware"
+msgstr "프리웨어"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "GPL (General Public License)"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "General Information"
+msgstr "일반 정보"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Graphics Cards"
+msgstr "그래픽 카드"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Graphics card"
+msgstr "그래픽 카드"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "HDMI"
+msgstr "HDMI"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Hardware"
+msgstr "하드웨어"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Hardware Model"
+msgstr "하드웨어 모델"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Hardware Weight"
+msgstr "하드웨어 무게"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Headset"
+msgstr "헤드셋"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "IP Protocol"
+msgstr "IP 프로토콜"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Identity and Access Management (IAM)"
+msgstr "ID 및 액세스 관리(IAM)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Inventory Number"
+msgstr "재고 번호"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Inverstment costs"
+msgstr "투자 비용"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Invoice Number"
+msgstr "송장 번호"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Keyboard"
+msgstr "키보드"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "LCD Monitor (Liquid Crystal Display)"
+msgstr "LCD 모니터(액정 디스플레이)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "LED Monitor (Light Emitting Diode)"
+msgstr "LED 모니터(발광 다이오드)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "LGPL (Lesser General Public License)"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Landline Phone"
+msgstr "유선 전화"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Laptop"
+msgstr "노트북"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Latitude"
+msgstr "위도"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Layer 1: Physical Layer"
+msgstr "레이어 1: 물리적 레이어"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Layer 2: Data Link Layer"
+msgstr "레이어 2: 데이터 링크 레이어"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Layer 3: Network Layer"
+msgstr "레이어 3: 네트워크 레이어"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Layer 3: Network Layer (Supernet)"
+msgstr "레이어 3: 네트워크 레이어(슈퍼넷)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Layer 4: Transport Layer"
+msgstr "레이어 4: 전송 레이어"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Layer 5: Session Layer"
+msgstr "레이어 5: 세션 레이어"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Layer 6: Presentation Layer"
+msgstr "레이어 6: 프레젠테이션 레이어"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Layer 7: Application Layer"
+msgstr "레이어 7: 애플리케이션 레이어"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Lease Agreement"
+msgstr "임대 계약"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "License Agreement"
+msgstr "라이선스 계약"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "License Count"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "License Key"
+msgstr "라이선스 키"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "License Type"
+msgstr "라이선스 유형"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "License period from"
+msgstr "라이선스 기간"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "License period until"
+msgstr "라이선스 기간"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Lithium Iron Phosphate (LiFePO4) Battery"
+msgstr "리튬 인산철(LiFePO4) 배터리"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Lithium-Ion (Li-ion) Battery"
+msgstr "리튬 이온(리튬 이온) 배터리"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Loan Agreement"
+msgstr "대출 계약"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Located in"
+msgstr "위치"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Longitude"
+msgstr "경도"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+#, fuzzy
+#| msgid "License Key"
+msgid "MIT License"
+msgstr "라이선스 키"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "MPL (Mozilla Public License)"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Manufacturer"
+msgstr "제조업체"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Maximum Load Capacity (W)"
+msgstr "최대 부하 용량(W)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Memory"
+msgstr "메모리"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Memory Type"
+msgstr "메모리 유형"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Micro SIM"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Mini-Rack"
+msgstr "미니 랙"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Mobile Number"
+msgstr "휴대폰 번호"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Mobile/Embedded"
+msgstr "모바일/임베디드"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Model"
+msgstr "모델"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Model Description"
+msgstr "모델 설명"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Monitor Resolution"
+msgstr "모니터 해상도"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Monitor Size"
+msgstr "모니터 크기"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Mouse"
+msgstr "마우스"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Nano SIM"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Network"
+msgstr "네트워크"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Network Info"
+msgstr "네트워크 정보"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Network Information"
+msgstr "네트워크 정보"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Network Layer"
+msgstr "네트워크 계층"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Nickel-Cadmium (NiCd) Battery"
+msgstr "니켈 카드뮴(NiCd) 배터리"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Nickel-Metal Hydride (NiMH) Battery"
+msgstr "니켈-금속 수소 배터리(NiMH)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Non-Disclosure Agreement (NDA)"
+msgstr "기밀 유지 계약(NDA)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Notebook"
+msgstr "노트북"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Number of CPUs"
+msgstr "CPU 수"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Number of RAM modules"
+msgstr "RAM 모듈 수"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Number of graphics cards"
+msgstr "그래픽 카드 수"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "OLED Monitor (Organic Light Emitting Diode)"
+msgstr "OLED 모니터(유기 발광 다이오드)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Operating costs"
+msgstr "운영 비용"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Order Number"
+msgstr "주문 번호"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Other"
+msgstr "기타"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Outputs"
+msgstr "출력"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "PIN"
@@ -2185,45 +2574,205 @@ msgid "PUK"
 msgstr "PUK"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Longitude"
-msgstr "경도"
+msgid "PUK 2"
+msgstr "PUK 2"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Latitude"
-msgstr "위도"
+msgid "Partnership Agreement"
+msgstr "파트너십 계약"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Battery Type"
-msgstr "배터리 유형"
+msgid "Perpetual licenses"
+msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Lithium-Ion (Li-ion) Battery"
-msgstr "리튬 이온(리튬 이온) 배터리"
+msgid "Phone / VoIP"
+msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Lithium Iron Phosphate (LiFePO4) Battery"
-msgstr "리튬 인산철(LiFePO4) 배터리"
+msgid "Phone Number"
+msgstr "전화번호"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Nickel-Metal Hydride (NiMH) Battery"
-msgstr "니켈-금속 수소 배터리(NiMH)"
+msgid "Phone Type"
+msgstr "전화 유형"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Physical Cores"
+msgstr "물리적 코어"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Power Delivery"
+msgstr "전력 공급"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Public Domain"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Purchased at"
+msgstr "다음에서 구매"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Rack Depth"
+msgstr "랙 깊이"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Rack Units (U)"
+msgstr "랙 유닛(U)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Room"
+msgstr "방"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "SIM Card"
+msgstr "SIM 카드"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "SSL/TLS Certificates"
+msgstr "SSL/TLS 인증서"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Sales Contract"
+msgstr "판매 계약"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Satellite Phone"
+msgstr "위성 전화"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Sealed Lead-Acid (SLA) Battery"
 msgstr "밀폐형 납축(SLA) 배터리"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Nickel-Cadmium (NiCd) Battery"
-msgstr "니켈 카드뮴(NiCd) 배터리"
+msgid "Seat licenses"
+msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Flywheel Energy Storage"
-msgstr "플라이휠 에너지 저장"
+msgid "Serialnumber"
+msgstr "일련번호"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Battery Capacity (Ah)"
-msgstr "배터리 용량(Ah)"
+msgid "Server Software"
+msgstr "서버 소프트웨어"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Maximum Load Capacity (W)"
-msgstr "최대 부하 용량(W)"
+msgid "Service Agreement"
+msgstr "서비스 계약"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Service Tag"
+msgstr "서비스 태그"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Shareware"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Socket Type"
+msgstr "소켓 유형"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Software"
+msgstr "소프트웨어"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Speakers"
+msgstr "스피커"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Standard SIM"
+msgstr "표준"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Start IP Address"
+msgstr "IP 주소 시작"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Storage"
+msgstr "스토리지"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Storage Partition"
+msgstr "스토리지 파티션"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Subscription-based licenses"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Subsidiary"
+msgstr "자회사"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Summary"
+msgstr "요약"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Thin Client"
+msgstr "씬 클라이언트"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Threads"
+msgstr "스레드"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Thunderbolt"
+msgstr "썬더볼트"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Total Graphics card RAM (GB)"
+msgstr "총 그래픽 카드 RAM(GB)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Total RAM (GB)"
+msgstr "총 RAM(GB)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Touchscreen Monitor"
+msgstr "터치스크린 모니터"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Tower"
+msgstr "타워"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "USB Hub"
+msgstr "USB 허브"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "USB-C"
+msgstr "USB-C"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "VGA"
+msgstr "VGA"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "VPN"
+msgstr "VPN"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "VR Headset"
+msgstr "VR 헤드셋"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Virtual Client"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "VirtualLink"
+msgstr "VirtualLink"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "VoIP Phone"
+msgstr "VoIP 전화"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Volume licenses"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Webcam"
+msgstr "웹캠"

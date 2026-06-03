@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2026-03-09 13:29+0000\n"
+"POT-Creation-Date: 2026-05-26 12:42+0000\n"
 "PO-Revision-Date: 2026-04-06 18:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Japanese <http://translate.otobo.org/projects/opm-packages/"
@@ -42,8 +42,12 @@ msgid "Ready2Import Class Bundles"
 msgstr "Ready2Import クラスバンドル"
 
 #. Template: AdminITSMConfigItem
-msgid "Here you can import Ready2Import class bundles showcasing our most usual config items. Please note that some additional configuration may be required."
-msgstr "ここでは、Ready2Importクラスバンドルをインポートすることができます。追加設定が必要な場合もありますのでご注意ください。"
+msgid ""
+"Here you can import Ready2Import class bundles showcasing our most usual "
+"config items. Please note that some additional configuration may be required."
+msgstr ""
+"ここでは、Ready2Importクラスバンドルをインポートすることができます。追加設定"
+"が必要な場合もありますのでご注意ください。"
 
 #. Template: AdminITSMConfigItem
 msgid "Update existing entities"
@@ -110,7 +114,8 @@ msgid "The name of this config item"
 msgstr "この 構成アイテム の名称"
 
 #. Template: AgentITSMConfigItemEdit
-msgid "Name is already in use by the ConfigItems with the following Number(s): %s"
+msgid ""
+"Name is already in use by the ConfigItems with the following Number(s): %s"
 msgstr "この名称はすでに Number(s): %s の構成アイテムで使用中です。"
 
 #. Template: AgentITSMConfigItemEdit
@@ -122,8 +127,11 @@ msgid "Version number of this config item"
 msgstr "この設定項目のバージョン番号"
 
 #. Template: AgentITSMConfigItemEdit
-msgid "Version Number is already in use by the ConfigItems with the following Number(s): %s"
-msgstr "バージョン番号は、以下の番号の ConfigItems によって既に使用されています: %s"
+msgid ""
+"Version Number is already in use by the ConfigItems with the following "
+"Number(s): %s"
+msgstr ""
+"バージョン番号は、以下の番号の ConfigItems によって既に使用されています: %s"
 
 #. Template: AgentITSMConfigItemEdit
 msgid "Deployment State"
@@ -225,6 +233,10 @@ msgstr "オブジェクトの種類"
 msgid "Filter by object type"
 msgstr "タイプでフィルタ"
 
+#. Template: AdminDynamicFieldScreen
+msgid "Add DynamicField"
+msgstr ""
+
 #. JS Template: ClassImportConfirm
 msgid "The following classes will be imported"
 msgstr "以下のクラスがインポートされる。"
@@ -234,8 +246,12 @@ msgid "The following roles will be imported"
 msgstr "以下の役割がインポートされる。"
 
 #. JS Template: ClassImportConfirm
-msgid "Note that also corresponding dynamic fields and GeneralCatalog classes will be created and there is no automatic removal."
-msgstr "対応するダイナミック・フィールドとGeneralCatalogクラスも作成され、自動的に削除されないことに注意してください。"
+msgid ""
+"Note that also corresponding dynamic fields and GeneralCatalog classes will "
+"be created and there is no automatic removal."
+msgstr ""
+"対応するダイナミック・フィールドとGeneralCatalogクラスも作成され、自動的に削"
+"除されないことに注意してください。"
 
 #. JS Template: ClassImportConfirm
 msgid "Do you want to proceed?"
@@ -395,7 +411,8 @@ msgstr "構成アイテムの検索結果"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemZoom.pm
 msgid "Can't show item, no access rights for ConfigItem are given!"
-msgstr "構成アイテムを表示できません。構成アイテムのアクセス権は与えられていません！"
+msgstr ""
+"構成アイテムを表示できません。構成アイテムのアクセス権は与えられていません！"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemZoom.pm
 msgid "ConfigItem not found!"
@@ -466,7 +483,8 @@ msgid "Deployment state restrictions for the config item"
 msgstr "設定項目のクラス制限"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
-msgid "Select one or more deployment states to restrict selectable config items"
+msgid ""
+"Select one or more deployment states to restrict selectable config items"
 msgstr "選択可能な設定項目を制限するために、1つ以上のクラスを選択します。"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
@@ -482,16 +500,32 @@ msgid "Link Referencing Type"
 msgstr "リンク参照タイプ"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
-msgid "Whether this link applies to the ConfigItem or the static version of the referencing object. Current Incident State calculation only is performed on dynamic links."
-msgstr "このリンクが参照オブジェクトの ConfigItem と静的バージョンのどちらに適用されるか。現在のインシデント・ステートの計算は、ダイナミック・リンクに対してのみ実行されます。"
+msgid ""
+"Whether this link applies to the ConfigItem or the static version of the "
+"referencing object. Current Incident State calculation only is performed on "
+"dynamic links."
+msgstr ""
+"このリンクが参照オブジェクトの ConfigItem と静的バージョンのどちらに適用され"
+"るか。現在のインシデント・ステートの計算は、ダイナミック・リンクに対してのみ"
+"実行されます。"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
 msgid "Select the attribute which config items will be searched by"
 msgstr "設定項目を検索する属性を選択します。"
 
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
+msgid "External-source key"
+msgstr ""
+
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
+msgid "Select the type of display"
+msgstr ""
+
 #. Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
-msgid "Base structure is not valid. Please provide a hash with data in YAML format."
-msgstr "ベース構造が無効です。YAML形式のデータを含むハッシュを指定してください。"
+msgid ""
+"Base structure is not valid. Please provide a hash with data in YAML format."
+msgstr ""
+"ベース構造が無効です。YAML形式のデータを含むハッシュを指定してください。"
 
 #. Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
 msgid "Starting the YAML string with '---' is required."
@@ -538,8 +572,12 @@ msgid "Error synchronizing the definitions. Please check the log."
 msgstr "定義の同期にエラーが発生しました。ログを確認してください。"
 
 #. Perl Module: Kernel/Modules/AdminDynamicField.pm
-msgid "You have ITSMConfigItem definitions which are not synchronized. Please deploy your ITSMConfigItem dynamic field changes."
-msgstr "ITSMConfigItemの定義が同期されていません。ITSMConfigItemの動的フィールドの変更を展開してください。"
+msgid ""
+"You have ITSMConfigItem definitions which are not synchronized. Please "
+"deploy your ITSMConfigItem dynamic field changes."
+msgstr ""
+"ITSMConfigItemの定義が同期されていません。ITSMConfigItemの動的フィールドの変"
+"更を展開してください。"
 
 #. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
 msgid "Expired"
@@ -594,23 +632,53 @@ msgid "1 - Shown"
 msgstr "1 - 表示"
 
 #. SysConfig
-msgid "A mapping of inner field names used in the Process Management TransitionActions ConfigItemAdd and -Update. The keys are the names of the set inner fields of the set with object type ticket which will be used to create/update the CI, and the values are the names of the inner fields of the set with object type ITSMConfigItem."
+msgid ""
+"A mapping of inner field names used in the Process Management "
+"TransitionActions ConfigItemAdd and -Update. The keys are the names of the "
+"set inner fields of the set with object type ticket which will be used to "
+"create/update the CI, and the values are the names of the inner fields of "
+"the set with object type ITSMConfigItem."
 msgstr ""
 
 #. SysConfig
-msgid "Allows extended search conditions in config item search of the agent interface. With this feature you can search e. g. config item name with this kind of conditions like \"(*key1*&&*key2*)\" or \"(*key1*||*key2*)\"."
-msgstr "エージェントインタフェースの設定項目検索において、拡張検索条件を許可します。この機能により、\"(*key1*&*key2*) \"や\"(*key1*|*key2*) \"のような条件で設定項目名を検索することができます。"
+msgid ""
+"Allows extended search conditions in config item search of the agent "
+"interface. With this feature you can search e. g. config item name with this "
+"kind of conditions like \"(*key1*&&*key2*)\" or \"(*key1*||*key2*)\"."
+msgstr ""
+"エージェントインタフェースの設定項目検索において、拡張検索条件を許可します。"
+"この機能により、\"(*key1*&*key2*) \"や\"(*key1*|*key2*) \"のような条件で設定"
+"項目名を検索することができます。"
 
 #. SysConfig
-msgid "Allows extended search conditions in config item search of the customer interface. With this feature you can search e. g. config item name with this kind of conditions like \"(*key1*&&*key2*)\" or \"(*key1*||*key2*)\"."
-msgstr "カスタマーインターフェイスの設定項目検索において、検索条件を拡張することができます。この機能を使用すると、\"(*key1*&*key2*) \"または\"(*key1*|*key2*) \"のような条件で設定項目名を検索できます。"
+msgid ""
+"Allows extended search conditions in config item search of the customer "
+"interface. With this feature you can search e. g. config item name with this "
+"kind of conditions like \"(*key1*&&*key2*)\" or \"(*key1*||*key2*)\"."
+msgstr ""
+"カスタマーインターフェイスの設定項目検索において、検索条件を拡張することがで"
+"きます。この機能を使用すると、\"(*key1*&*key2*) \"または\"(*key1*|*key2*) "
+"\"のような条件で設定項目名を検索できます。"
 
 #. SysConfig
 msgid "Assigned CIs"
 msgstr "割り当てられたCI"
 
 #. SysConfig
-msgid "At a specific time point create a ticket for config items, if the configured requirements are met. The time point is determined by the value of the dynamic field of type date configured under \"TimeCIKey\" of the ConfigItem, and modified by \"TimeModifier\". If the latter can be either just a number, or a sign (+/-), a number, and an unit (d/h/m): \"7\" is equivalent to \"+7d\". The DynamicField \"Ticket->DynamicField\" will be used to mark created tickets - it has to exist. The flags \\\\<OTOBO_CONFIGITEM_X\\\\> where X can be NAME, NUMBER and DATE, will be substituted with the respective values in \"Ticket->Text\"."
+msgid "AssignedToEntity"
+msgstr ""
+
+#. SysConfig
+msgid ""
+"At a specific time point create a ticket for config items, if the configured "
+"requirements are met. The time point is determined by the value of the "
+"dynamic field of type date configured under \"TimeCIKey\" of the ConfigItem, "
+"and modified by \"TimeModifier\". If the latter can be either just a number, "
+"or a sign (+/-), a number, and an unit (d/h/m): \"7\" is equivalent to "
+"\"+7d\". The DynamicField \"Ticket->DynamicField\" will be used to mark "
+"created tickets - it has to exist. The flags \\\\<OTOBO_CONFIGITEM_X\\\\> "
+"where X can be NAME, NUMBER and DATE, will be substituted with the "
+"respective values in \"Ticket->Text\"."
 msgstr ""
 
 #. SysConfig
@@ -618,7 +686,18 @@ msgid "Attributes for license accounting."
 msgstr ""
 
 #. SysConfig
-msgid "Attributes for licenses counting, where \"TotalLicensesDF\", \"AvailableLicensesDF\" and \"LicenseReferenceDF\" are the names of the dynamic fields used to track the remaining licenses. If used, only deployment states in \"ValidDeplStates\" are considered. If a threshold is defined in \"MinimumLicenses\", a ticket will automatically be created if less licenses are available. For this, the checkbox dynamic field \"Ticket->DynamicField\" must exist. The tags \\\\<OTOBO_CONFIGITEM_X\\\\> where X can be NAME, NUMBER, LICENSES_AVAIL and LICENSES_MIN, will be substituted with the respective values in \"Ticket->Text\" by the config item name, number, available licenses, and minimum required available licenses, respectively."
+msgid ""
+"Attributes for licenses counting, where \"TotalLicensesDF\", "
+"\"AvailableLicensesDF\" and \"LicenseReferenceDF\" are the names of the "
+"dynamic fields used to track the remaining licenses. If used, only "
+"deployment states in \"ValidDeplStates\" are considered. If a threshold is "
+"defined in \"MinimumLicenses\", a ticket will automatically be created if "
+"less licenses are available. For this, the checkbox dynamic field \"Ticket-"
+">DynamicField\" must exist. The tags \\\\<OTOBO_CONFIGITEM_X\\\\> where X "
+"can be NAME, NUMBER, LICENSES_AVAIL and LICENSES_MIN, will be substituted "
+"with the respective values in \"Ticket->Text\" by the config item name, "
+"number, available licenses, and minimum required available licenses, "
+"respectively."
 msgstr ""
 
 #. SysConfig
@@ -634,8 +713,14 @@ msgid "CMDB Settings"
 msgstr "CMDBの設定"
 
 #. SysConfig
-msgid "Check for a unique name only within the same ConfigItem class ('class') or globally ('global'), which means every existing ConfigItem is taken into account when looking for duplicates."
-msgstr "同じConfigItemクラス（ 'class'）内またはグローバル（ 'global'）内でのみ一意の名前を確認します。これは、重複を検索するときに既存のConfigItemがすべて考慮されることを意味します。"
+msgid ""
+"Check for a unique name only within the same ConfigItem class ('class') or "
+"globally ('global'), which means every existing ConfigItem is taken into "
+"account when looking for duplicates."
+msgstr ""
+"同じConfigItemクラス（ 'class'）内またはグローバル（ 'global'）内でのみ一意の"
+"名前を確認します。これは、重複を検索するときに既存のConfigItemがすべて考慮さ"
+"れることを意味します。"
 
 #. SysConfig
 msgid "Choose a module to enforce a naming scheme."
@@ -662,8 +747,13 @@ msgid "Column config item filters for ConfigItem Overview."
 msgstr "ConfigItem概要のカラム設定項目フィルタ。"
 
 #. SysConfig
-msgid "Columns that can be filtered in the config item overview of the agent interface. Note: Only Config Item attributes and Dynamic Fields (DynamicField_NameX) are allowed."
-msgstr "エージェントインタフェースの設定項目概要でフィルタリングできる列。注意: コンフィグ項目属性と動的フィールド (DynamicField_NameX) のみ許可されます。"
+msgid ""
+"Columns that can be filtered in the config item overview of the agent "
+"interface. Note: Only Config Item attributes and Dynamic Fields "
+"(DynamicField_NameX) are allowed."
+msgstr ""
+"エージェントインタフェースの設定項目概要でフィルタリングできる列。注意: コン"
+"フィグ項目属性と動的フィールド (DynamicField_NameX) のみ許可されます。"
 
 #. SysConfig
 msgid "Config Items"
@@ -678,15 +768,22 @@ msgid "Config item edit."
 msgstr "構成アイテムを修正します。"
 
 #. SysConfig
-msgid "Config item event module that enables accounting licenses for a given config item."
+msgid ""
+"Config item event module that enables accounting licenses for a given config "
+"item."
 msgstr ""
 
 #. SysConfig
-msgid "Config item event module that enables logging to history in the agent interface."
-msgstr "担当者Webインタフェースの履歴を記録する構成アイテムのイベントモジュール"
+msgid ""
+"Config item event module that enables logging to history in the agent "
+"interface."
+msgstr ""
+"担当者Webインタフェースの履歴を記録する構成アイテムのイベントモジュール"
 
 #. SysConfig
-msgid "Config item event module that updates config items to their current definition."
+msgid ""
+"Config item event module that updates config items to their current "
+"definition."
 msgstr "コンフィグ項目を現在の定義に更新するコンフィグ項目イベントモジュール。"
 
 #. SysConfig
@@ -710,12 +807,24 @@ msgid "ConfigItem Version"
 msgstr "設定項目バージョン"
 
 #. SysConfig
-msgid "ConfigItems of the following classes will not be stored on the Elasticsearch server. To apply this to existing CIs, the CI migration has to be run via console, after changing this option."
-msgstr "以下のクラスのConfigItemsはElasticsearchサーバに保存されません。既存のCIに適用するには、このオプションを変更した後に、コンソール経由でCIマイグレーションを実行する必要があります。"
+msgid ""
+"ConfigItems of the following classes will not be stored on the Elasticsearch "
+"server. To apply this to existing CIs, the CI migration has to be run via "
+"console, after changing this option."
+msgstr ""
+"以下のクラスのConfigItemsはElasticsearchサーバに保存されません。既存のCIに適"
+"用するには、このオプションを変更した後に、コンソール経由でCIマイグレーション"
+"を実行する必要があります。"
 
 #. SysConfig
-msgid "ConfigItems with the following deployment states will not be stored on the Elasticsearch server. To apply this to existing CIs, the CI migration has to be run via console, after changing this option."
-msgstr "以下のデプロイ状態のConfigItemsは、Elasticsearchサーバに保存されません。既存のCIに適用するには、このオプションを変更した後に、コンソール経由でCIマイグレーションを実行する必要があります。"
+msgid ""
+"ConfigItems with the following deployment states will not be stored on the "
+"Elasticsearch server. To apply this to existing CIs, the CI migration has to "
+"be run via console, after changing this option."
+msgstr ""
+"以下のデプロイ状態のConfigItemsは、Elasticsearchサーバに保存されません。既存"
+"のCIに適用するには、このオプションを変更した後に、コンソール経由でCIマイグ"
+"レーションを実行する必要があります。"
 
 #. SysConfig
 msgid "Configuration Item Limit"
@@ -738,11 +847,17 @@ msgid "Configuration item search backend router of the agent interface."
 msgstr "担当者インターフェースの構成アイテムの検索バックエンドルーター"
 
 #. SysConfig
-msgid "Configure the columns which are available for viewing Permission Conditions in the customer interface, when the corresponding Permission Condition Columns are not specifically configured. This setting is used as a fallback for the other Permission Condition Columns settings."
+msgid ""
+"Configure the columns which are available for viewing Permission Conditions "
+"in the customer interface, when the corresponding Permission Condition "
+"Columns are not specifically configured. This setting is used as a fallback "
+"for the other Permission Condition Columns settings."
 msgstr ""
 
 #. SysConfig
-msgid "Configure the columns which are available when viewing the corresponding Permission Condition in the customer interface."
+msgid ""
+"Configure the columns which are available when viewing the corresponding "
+"Permission Condition in the customer interface."
 msgstr ""
 
 #. SysConfig
@@ -758,128 +873,279 @@ msgid "Customers can see historic CI versions."
 msgstr "顧客は過去のCIバージョンを見ることができる。"
 
 #. SysConfig
-msgid "Customers have the possibility to manually switch between historic CI versions."
+msgid ""
+"Customers have the possibility to manually switch between historic CI "
+"versions."
 msgstr "顧客は、過去のCIバージョンを手動で切り替えることができる。"
 
 #. SysConfig
-msgid "Default data to use on attribute for config item search screen. Example: \"ITSMConfigItemCreateTimePointFormat=year;ITSMConfigItemCreateTimePointStart=Last;ITSMConfigItemCreateTimePoint=2;\"."
-msgstr "設定項目検索画面の属性で使用するデフォルトデータ。例：\"ITSMConfigItemCreateTimePointFormat=year;ITSMConfigItemCreateTimePointStart=Last;ITSMConfigItemCreateTimePoint=2;\"。"
+msgid ""
+"Default data to use on attribute for config item search screen. Example: "
+"\"ITSMConfigItemCreateTimePointFormat=year;ITSMConfigItemCreateTimePointStart=Last;ITSMConfigItemCreateTimePoint=2;\"."
+msgstr ""
+"設定項目検索画面の属性で使用するデフォルトデータ。例："
+"\"ITSMConfigItemCreateTimePointFormat=year;ITSMConfigItemCreateTimePointStart=Last;ITSMConfigItemCreateTimePoint=2;\"。"
 
 #. SysConfig
-msgid "Default data to use on attribute for config item search screen. Example: \"ITSMConfigItemCreateTimeStartYear=2010;ITSMConfigItemCreateTimeStartMonth=10;ITSMConfigItemCreateTimeStartDay=4;ITSMConfigItemCreateTimeStopYear=2010;ITSMConfigItemCreateTimeStopMonth=11;ITSMConfigItemCreateTimeStopDay=3;\"."
-msgstr "コンフィグ項目検索画面の属性で使用するデフォルトデータ。例：\"ITSMConfigItemCreateTimeStartYear=2010;ITSMConfigItemCreateTimeStartMonth=10;ITSMConfigItemCreateTimeStartDay=4;ITSMConfigItemCreateTimeStopYear=2010;ITSMConfigItemCreateTimeStopMonth=11;ITSMConfigItemCreateTimeStopDay=3;\"。"
+msgid ""
+"Default data to use on attribute for config item search screen. Example: "
+"\"ITSMConfigItemCreateTimeStartYear=2010;ITSMConfigItemCreateTimeStartMonth=10;ITSMConfigItemCreateTimeStartDay=4;ITSMConfigItemCreateTimeStopYear=2010;ITSMConfigItemCreateTimeStopMonth=11;ITSMConfigItemCreateTimeStopDay=3;\"."
+msgstr ""
+"コンフィグ項目検索画面の属性で使用するデフォルトデータ。例："
+"\"ITSMConfigItemCreateTimeStartYear=2010;ITSMConfigItemCreateTimeStartMonth=10;ITSMConfigItemCreateTimeStartDay=4;ITSMConfigItemCreateTimeStopYear=2010;ITSMConfigItemCreateTimeStopMonth=11;ITSMConfigItemCreateTimeStopDay=3;\"。"
 
 #. SysConfig
-msgid "Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
-msgstr "リンクされたオブジェクト ウィジェット (LinkObject::ViewMode = \"complex\") で設定ボタンが使用できるアクションを定義します。これらのアクションには、Core.AllocationList.css、Core.UI.AllocationList.js、Core.UI.Table.Sort.js、Core.Agent.TableFilters.js、および Core.Agent.LinkObject.js の JS および CSS ファイルが登録されている必要があることに注意してください。"
+msgid ""
+"Define Actions where a settings button is available in the linked objects "
+"widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions "
+"must have registered the following JS and CSS files: "
+"Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, "
+"Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
+msgstr ""
+"リンクされたオブジェクト ウィジェット (LinkObject::ViewMode = \"complex\") で"
+"設定ボタンが使用できるアクションを定義します。これらのアクションには、"
+"Core.AllocationList.css、Core.UI.AllocationList.js、Core.UI.Table.Sort.js、"
+"Core.Agent.TableFilters.js、および Core.Agent.LinkObject.js の JS および CSS "
+"ファイルが登録されている必要があることに注意してください。"
 
 #. SysConfig
-msgid "Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit."
-msgstr "バージョン文字列用の Template::Toolkit スキームを定義します。バージョン文字列モジュールが TemplateToolkit に設定されている場合にのみ使用されます。"
+msgid ""
+"Define a Template::Toolkit scheme for version strings. Only used if Version "
+"String Module is set to TemplateToolkit."
+msgstr ""
+"バージョン文字列用の Template::Toolkit スキームを定義します。バージョン文字列"
+"モジュールが TemplateToolkit に設定されている場合にのみ使用されます。"
 
 #. SysConfig
-msgid "Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category."
-msgstr "顧客が設定項目を見ることを許可される一連の条件を定義します。条件は、オプションで特定の顧客グループに制限することができます。名前は唯一の必須属性です。他のオプションが指定されていない場合、すべての設定項目がそのカテゴリの下に表示されます。"
+msgid ""
+"Define a set of conditions under which a customer is allowed to see a config "
+"item. Conditions can optionally be restricted to certain customer groups. "
+"Name is the only mandatory attribute. If no other options are given, all "
+"config items will be visible under that category."
+msgstr ""
+"顧客が設定項目を見ることを許可される一連の条件を定義します。条件は、オプショ"
+"ンで特定の顧客グループに制限することができます。名前は唯一の必須属性です。他"
+"のオプションが指定されていない場合、すべての設定項目がそのカテゴリの下に表示"
+"されます。"
 
 #. SysConfig
-msgid "Defines Required permissions to delete ITSM configuration items using the Generic Interface."
-msgstr "ジェネリック・インターフェースを活用して構成アイテムを削除するために必要な権限を定義します。"
+msgid ""
+"Defines Required permissions to delete ITSM configuration items using the "
+"Generic Interface."
+msgstr ""
+"ジェネリック・インターフェースを活用して構成アイテムを削除するために必要な権"
+"限を定義します。"
 
 #. SysConfig
-msgid "Defines Required permissions to get ITSM configuration items using the Generic Interface."
-msgstr "ジェネリックインターフェイスを活用して構成アイテムを取得する権限を定義する。"
+msgid ""
+"Defines Required permissions to get ITSM configuration items using the "
+"Generic Interface."
+msgstr ""
+"ジェネリックインターフェイスを活用して構成アイテムを取得する権限を定義する。"
 
 #. SysConfig
-msgid "Defines Required permissions to search ITSM configuration items using the Generic Interface."
-msgstr "ジェネリックインターフェイスを活用して構成アイテムを検索する権限を定義する。"
+msgid ""
+"Defines Required permissions to search ITSM configuration items using the "
+"Generic Interface."
+msgstr ""
+"ジェネリックインターフェイスを活用して構成アイテムを検索する権限を定義する。"
 
 #. SysConfig
-msgid "Defines Required permissions to set ITSM configuration items using the Generic Interface."
-msgstr "Generic Interfaceを使用してITSM構成項目を設定するために必要な権限を定義します。"
+msgid ""
+"Defines Required permissions to set ITSM configuration items using the "
+"Generic Interface."
+msgstr ""
+"Generic Interfaceを使用してITSM構成項目を設定するために必要な権限を定義しま"
+"す。"
 
 #. SysConfig
-msgid "Defines an overview module to show the small view of a configuration item list."
-msgstr "構成アイテムを定義して、構成アイテムのリストの小さなビューを表示します。"
+msgid ""
+"Defines an overview module to show the small view of a configuration item "
+"list."
+msgstr ""
+"構成アイテムを定義して、構成アイテムのリストの小さなビューを表示します。"
 
 #. SysConfig
 msgid "Defines if the link type labels must be shown in the node connections."
 msgstr "ノードの接続にリンクタイプのラベルを表示するかどうかを定義します。"
 
 #. SysConfig
-msgid "Defines regular expressions individually for each ConfigItem class to check the ConfigItem name and to show corresponding error messages."
-msgstr "各ConfigItemクラスの正規表現を個別に定義して、ConfigItem名を確認し、対応するエラーメッセージを表示します。"
+msgid ""
+"Defines regular expressions individually for each ConfigItem class to check "
+"the ConfigItem name and to show corresponding error messages."
+msgstr ""
+"各ConfigItemクラスの正規表現を個別に定義して、ConfigItem名を確認し、対応する"
+"エラーメッセージを表示します。"
 
 #. SysConfig
-msgid "Defines the available columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName."
-msgstr "CIクラスに応じて、設定項目の概要で利用可能なCIの列を定義します。各項目は、クラス名と、対応するクラスで利用可能なフィールドの配列から構成されなければなりません。動的フィールドのエントリは、DynamicField_FieldName スキームに従わなければなりません。"
+msgid ""
+"Defines the available columns of CIs in the config item overview depending "
+"on the CI class. Each entry must consist of a class name and an array of "
+"available fields for the corresponding class. Dynamic field entries have to "
+"honor the scheme DynamicField_FieldName."
+msgstr ""
+"CIクラスに応じて、設定項目の概要で利用可能なCIの列を定義します。各項目は、ク"
+"ラス名と、対応するクラスで利用可能なフィールドの配列から構成されなければなり"
+"ません。動的フィールドのエントリは、DynamicField_FieldName スキームに従わなけ"
+"ればなりません。"
 
 #. SysConfig
-msgid "Defines the default config item attribute for config item sorting of the config item search result of the agent interface."
-msgstr "エージェントインタフェースの設定項目検索結果の設定項目ソートのデフォルトの設定項目属性を定義します。"
+msgid ""
+"Defines the default config item attribute for config item sorting of the "
+"config item search result of the agent interface."
+msgstr ""
+"エージェントインタフェースの設定項目検索結果の設定項目ソートのデフォルトの設"
+"定項目属性を定義します。"
 
 #. SysConfig
-msgid "Defines the default config item attribute for config item sorting of the config item search result of the customer interface."
-msgstr "顧客インタフェースの設定項目検索結果の設定項目ソートのデフォルトの設定項目属性を定義します。"
+msgid ""
+"Defines the default config item attribute for config item sorting of the "
+"config item search result of the customer interface."
+msgstr ""
+"顧客インタフェースの設定項目検索結果の設定項目ソートのデフォルトの設定項目属"
+"性を定義します。"
 
 #. SysConfig
-msgid "Defines the default config item attribute for config item sorting of the config item search result of this operation."
-msgstr "この操作のコンフィグ項目検索結果のコンフィグ項目ソートのデフォルトのコンフィグ項目属性を定義します。"
+msgid ""
+"Defines the default config item attribute for config item sorting of the "
+"config item search result of this operation."
+msgstr ""
+"この操作のコンフィグ項目検索結果のコンフィグ項目ソートのデフォルトのコンフィ"
+"グ項目属性を定義します。"
 
 #. SysConfig
-msgid "Defines the default config item order in the config item search result of the agent interface. Up: oldest on top. Down: latest on top."
-msgstr "エージェントインタフェースの設定項目検索結果のデフォルトの設定項目順序を定義します。上: 最も古いものが上。Down: 最新が上。"
+msgid ""
+"Defines the default config item order in the config item search result of "
+"the agent interface. Up: oldest on top. Down: latest on top."
+msgstr ""
+"エージェントインタフェースの設定項目検索結果のデフォルトの設定項目順序を定義"
+"します。上: 最も古いものが上。Down: 最新が上。"
 
 #. SysConfig
-msgid "Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top."
-msgstr "カスタマインタフェースの設定項目検索結果のデフォルトの設定項目順序を定義します。上: 古い順に表示されます。下：最新が上。"
+msgid ""
+"Defines the default config item order in the config item search result of "
+"the customer interface. Up: oldest on top. Down: latest on top."
+msgstr ""
+"カスタマインタフェースの設定項目検索結果のデフォルトの設定項目順序を定義しま"
+"す。上: 古い順に表示されます。下：最新が上。"
 
 #. SysConfig
-msgid "Defines the default config item order in the config item search result of the this operation. Up: oldest on top. Down: latest on top."
-msgstr "この操作のコンフィグ項目検索結果のデフォルトのコンフィグ項目順序を定義します。Up:古い順。Down：最新が上。"
+msgid ""
+"Defines the default config item order in the config item search result of "
+"the this operation. Up: oldest on top. Down: latest on top."
+msgstr ""
+"この操作のコンフィグ項目検索結果のデフォルトのコンフィグ項目順序を定義しま"
+"す。Up:古い順。Down：最新が上。"
 
 #. SysConfig
-msgid "Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName."
-msgstr "CIクラスに応じて、設定項目の概要に表示されるCIのデフォルトの列を定義します。各項目は、クラス名と、対応するクラスで利用可能なフィールドの配列から構成されなければなりません。動的フィールドのエントリは、DynamicField_FieldNameスキームに従わなければなりません。"
+msgid ""
+"Defines the default displayed columns of CIs in the config item overview "
+"depending on the CI class. Each entry must consist of a class name and an "
+"array of available fields for the corresponding class. Dynamic field entries "
+"have to honor the scheme DynamicField_FieldName."
+msgstr ""
+"CIクラスに応じて、設定項目の概要に表示されるCIのデフォルトの列を定義します。"
+"各項目は、クラス名と、対応するクラスで利用可能なフィールドの配列から構成され"
+"なければなりません。動的フィールドのエントリは、DynamicField_FieldNameスキー"
+"ムに従わなければなりません。"
 
 #. SysConfig
 msgid "Defines the default relations depth to be shown."
 msgstr "表示されるデフォルトの関係の深さを定義する。"
 
 #. SysConfig
-msgid "Defines the default shown config item search attribute for config item search screen."
+msgid ""
+"Defines the default shown config item search attribute for config item "
+"search screen."
 msgstr "設定項目検索画面のデフォルトの表示設定項目検索属性を定義します。"
 
 #. SysConfig
-msgid "Defines the default shown config item search attribute for config item search screen. Example: \"Key\" must have the name of the Dynamic Field in this case 'X', \"Content\" must have the value of the Dynamic Field depending on the Dynamic Field type,  Text: 'a text', Dropdown: '1', Date/Time: 'Search_DynamicField_XTimeSlotStartYear=1974; Search_DynamicField_XTimeSlotStartMonth=01; Search_DynamicField_XTimeSlotStartDay=26; Search_DynamicField_XTimeSlotStartHour=00; Search_DynamicField_XTimeSlotStartMinute=00; Search_DynamicField_XTimeSlotStartSecond=00; Search_DynamicField_XTimeSlotStopYear=2013; Search_DynamicField_XTimeSlotStopMonth=01; Search_DynamicField_XTimeSlotStopDay=26; Search_DynamicField_XTimeSlotStopHour=23; Search_DynamicField_XTimeSlotStopMinute=59; Search_DynamicField_XTimeSlotStopSecond=59;' and or 'Search_DynamicField_XTimePointFormat=week; Search_DynamicField_XTimePointStart=Before; Search_DynamicField_XTimePointValue=7';."
-msgstr "コンフィグ項目検索画面にデフォルトで表示されるコンフィグ項目検索属性を定義します。例: \"Key \"にはダイナミック・フィールドの名前 (この場合は 'X')、\"Content\" にはダイナミック・フィールドのタイプに応じてダイナミック・フィールドの値、Text: 'a text'、Dropdown: '1'、Date/Time：'Search_DynamicField_XTimeSlotStartYear=1974; Search_DynamicField_XTimeSlotStartMonth=01; Search_DynamicField_XTimeSlotStartDay=26; Search_DynamicField_XTimeSlotStartHour=00；Search_DynamicField_XTimeSlotStartMinute=00; Search_DynamicField_XTimeSlotStartSecond=00; Search_DynamicField_XTimeSlotStopYear=2013; Search_DynamicField_XTimeSlotStopMonth=01；Search_DynamicField_XTimeSlotStopDay=26; Search_DynamicField_XTimeSlotStopHour=23; Search_DynamicField_XTimeSlotStopMinute=59; Search_DynamicField_XTimeSlotStopSecond=59；'、または 'Search_DynamicField_XTimePointFormat=week; Search_DynamicField_XTimePointStart=Before; Search_DynamicField_XTimePointValue=7';."
+msgid ""
+"Defines the default shown config item search attribute for config item "
+"search screen. Example: \"Key\" must have the name of the Dynamic Field in "
+"this case 'X', \"Content\" must have the value of the Dynamic Field "
+"depending on the Dynamic Field type,  Text: 'a text', Dropdown: '1', Date/"
+"Time: 'Search_DynamicField_XTimeSlotStartYear=1974; "
+"Search_DynamicField_XTimeSlotStartMonth=01; "
+"Search_DynamicField_XTimeSlotStartDay=26; "
+"Search_DynamicField_XTimeSlotStartHour=00; "
+"Search_DynamicField_XTimeSlotStartMinute=00; "
+"Search_DynamicField_XTimeSlotStartSecond=00; "
+"Search_DynamicField_XTimeSlotStopYear=2013; "
+"Search_DynamicField_XTimeSlotStopMonth=01; "
+"Search_DynamicField_XTimeSlotStopDay=26; "
+"Search_DynamicField_XTimeSlotStopHour=23; "
+"Search_DynamicField_XTimeSlotStopMinute=59; "
+"Search_DynamicField_XTimeSlotStopSecond=59;' and or "
+"'Search_DynamicField_XTimePointFormat=week; "
+"Search_DynamicField_XTimePointStart=Before; "
+"Search_DynamicField_XTimePointValue=7';."
+msgstr ""
+"コンフィグ項目検索画面にデフォルトで表示されるコンフィグ項目検索属性を定義し"
+"ます。例: \"Key \"にはダイナミック・フィールドの名前 (この場合は 'X')、"
+"\"Content\" にはダイナミック・フィールドのタイプに応じてダイナミック・フィー"
+"ルドの値、Text: 'a text'、Dropdown: '1'、Date/"
+"Time：'Search_DynamicField_XTimeSlotStartYear=1974; "
+"Search_DynamicField_XTimeSlotStartMonth=01; "
+"Search_DynamicField_XTimeSlotStartDay=26; "
+"Search_DynamicField_XTimeSlotStartHour=00；"
+"Search_DynamicField_XTimeSlotStartMinute=00; "
+"Search_DynamicField_XTimeSlotStartSecond=00; "
+"Search_DynamicField_XTimeSlotStopYear=2013; "
+"Search_DynamicField_XTimeSlotStopMonth=01；"
+"Search_DynamicField_XTimeSlotStopDay=26; "
+"Search_DynamicField_XTimeSlotStopHour=23; "
+"Search_DynamicField_XTimeSlotStopMinute=59; "
+"Search_DynamicField_XTimeSlotStopSecond=59；'、または "
+"'Search_DynamicField_XTimePointFormat=week; "
+"Search_DynamicField_XTimePointStart=Before; "
+"Search_DynamicField_XTimePointValue=7';."
 
 #. SysConfig
 msgid "Defines the default subobject of the class 'ITSMConfigItem'."
 msgstr "構成アイテムのクラスのデフォルトのサブオブジェクトを定義する。"
 
 #. SysConfig
-msgid "Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName."
+msgid ""
+"Defines the disabled columns of CIs in the config item overview depending on "
+"the CI class. Each entry must consist of a class name and an array of "
+"available fields for the corresponding class. Dynamic field entries have to "
+"honor the scheme DynamicField_FieldName."
 msgstr ""
-"CIクラスに応じて、設定項目の概要で利用可能なCIの列を定義します。各項目は、"
-"クラス名と、対応するクラスで利用可能なフィールドの配列から構成されなければな"
-"りません。動的フィールドのエントリは、DynamicField_FieldName スキームに従わな"
-"ければなりません。"
+"CIクラスに応じて、設定項目の概要で利用可能なCIの列を定義します。各項目は、ク"
+"ラス名と、対応するクラスで利用可能なフィールドの配列から構成されなければなり"
+"ません。動的フィールドのエントリは、DynamicField_FieldName スキームに従わなけ"
+"ればなりません。"
 
 #. SysConfig
-msgid "Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
-msgstr "この画面のリッチ テキスト エディター コンポーネントの高さを定義します。数値 (ピクセル) またはパーセント値 (相対) を入力します。"
+msgid ""
+"Defines the height for the rich text editor component for this screen. Enter "
+"number (pixels) or percent value (relative)."
+msgstr ""
+"この画面のリッチ テキスト エディター コンポーネントの高さを定義します。数値 "
+"(ピクセル) またはパーセント値 (相対) を入力します。"
 
 #. SysConfig
-msgid "Defines the number of rows for the CI definition editor in the admin interface."
+msgid ""
+"Defines the number of rows for the CI definition editor in the admin "
+"interface."
 msgstr "管理インターフェイス Cl 定義エディタの行数を定義する。"
 
 #. SysConfig
-msgid "Defines the order of incident states from high (e.g. cricital) to low (e.g. functional)."
-msgstr "インシデント状態の高（例: 危険）から低（例: 情報）へのインシデント状態の順序を定義する。"
+msgid ""
+"Defines the order of incident states from high (e.g. cricital) to low (e.g. "
+"functional)."
+msgstr ""
+"インシデント状態の高（例: 危険）から低（例: 情報）へのインシデント状態の順序"
+"を定義する。"
 
 #. SysConfig
-msgid "Defines the relevant deployment states where linked tickets can affect the status of a CI."
-msgstr "リンクされたチケットがCIのステータスに影響を与える可能性がある、関連するデプロイ・ステータスを定義します。"
+msgid ""
+"Defines the relevant deployment states where linked tickets can affect the "
+"status of a CI."
+msgstr ""
+"リンクされたチケットがCIのステータスに影響を与える可能性がある、関連するデプ"
+"ロイ・ステータスを定義します。"
 
 #. SysConfig
 msgid "Defines the search limit for the AgentITSMConfigItem screen."
@@ -898,28 +1164,61 @@ msgid "Defines the search limit for the CustomerITSMConfigItemSearch screen."
 msgstr "CustomerITSMConfigItemSearch 画面の検索制限を定義します。"
 
 #. SysConfig
-msgid "Defines the shown columns of CIs in the link table complex view for all CI classes. If there is no entry, then the default columns are shown."
-msgstr "全ての CI クラスのリンク テーブル複合ビューに表示される CI の列を定義します。 エントリがない場合は、デフォルトの列が表示されます。"
+msgid ""
+"Defines the shown columns of CIs in the link table complex view for all CI "
+"classes. If there is no entry, then the default columns are shown."
+msgstr ""
+"全ての CI クラスのリンク テーブル複合ビューに表示される CI の列を定義しま"
+"す。 エントリがない場合は、デフォルトの列が表示されます。"
 
 #. SysConfig
-msgid "Defines the shown columns of CIs in the link table complex view, depending on the CI class. Each entry must be prefixed with the class name and double colons (i.e. Computer::). There are a few CI-Attributes that common to all CIs (example for the class Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). To show individual CI-Attributes as defined in the CI-Definition, the following scheme must be used (example for the class Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If there is no entry for a CI class, then the default columns are shown."
-msgstr "CI クラスに応じて、リンク テーブル複合ビューに表示される CI の列を定義します。 各エントリには、クラス名と二重コロンを接頭辞として付ける必要があります (例: Computer::)。全ての CI に共通する CI 属性がいくつかあります。 (クラス Computer の例: Computer::Name、Computer::CurDeplState、Computer::CreateTime)　 CI 定義で定義されている個々の CI 属性を表示するには、次のスキームを使用する必要があります (クラス Computer の例): Computer::HardDisk::1、Computer::HardDisk::1::Capacity::1　 CI クラスのエントリがない場合は、デフォルトの列が表示されます。"
+msgid ""
+"Defines the shown columns of CIs in the link table complex view, depending "
+"on the CI class. Each entry must be prefixed with the class name and double "
+"colons (i.e. Computer::). There are a few CI-Attributes that common to all "
+"CIs (example for the class Computer: Computer::Name, Computer::CurDeplState, "
+"Computer::CreateTime). To show individual CI-Attributes as defined in the CI-"
+"Definition, the following scheme must be used (example for the class "
+"Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, "
+"Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If there is no "
+"entry for a CI class, then the default columns are shown."
+msgstr ""
+"CI クラスに応じて、リンク テーブル複合ビューに表示される CI の列を定義しま"
+"す。 各エントリには、クラス名と二重コロンを接頭辞として付ける必要があります "
+"(例: Computer::)。全ての CI に共通する CI 属性がいくつかあります。 (クラス "
+"Computer の例: Computer::Name、Computer::CurDeplState、"
+"Computer::CreateTime)　 CI 定義で定義されている個々の CI 属性を表示するには、"
+"次のスキームを使用する必要があります (クラス Computer の例): "
+"Computer::HardDisk::1、Computer::HardDisk::1::Capacity::1　 CI クラスのエント"
+"リがない場合は、デフォルトの列が表示されます。"
 
 #. SysConfig
-msgid "Defines which items are available for 'Action' in third level of the ITSM Config Item ACL structure."
-msgstr "ITSM 構成項目 ACL 構造の第 3 レベルで、「アクション」に使用できる項目を定義します。"
+msgid ""
+"Defines which items are available for 'Action' in third level of the ITSM "
+"Config Item ACL structure."
+msgstr ""
+"ITSM 構成項目 ACL 構造の第 3 レベルで、「アクション」に使用できる項目を定義し"
+"ます。"
 
 #. SysConfig
-msgid "Defines which items are available in first level of the ITSM Config Item ACL structure."
+msgid ""
+"Defines which items are available in first level of the ITSM Config Item ACL "
+"structure."
 msgstr "ITSM 構成項目 ACL 構造の第 1 レベルで利用可能な項目を定義します。"
 
 #. SysConfig
-msgid "Defines which items are available in second level of the ITSM Config Item ACL structure."
+msgid ""
+"Defines which items are available in second level of the ITSM Config Item "
+"ACL structure."
 msgstr "ITSM 構成項目 ACL 構造の第 2 レベルで利用可能な項目を定義します。"
 
 #. SysConfig
-msgid "Defines which type of link (named from the ticket perspective) can affect the status of a linked CI."
-msgstr "リンクされたCIのステータスに影響するリンクのタイプ（チケットの観点から名前が付けられます）を定義します。"
+msgid ""
+"Defines which type of link (named from the ticket perspective) can affect "
+"the status of a linked CI."
+msgstr ""
+"リンクされたCIのステータスに影響するリンクのタイプ（チケットの観点から名前が"
+"付けられます）を定義します。"
 
 #. SysConfig
 msgid "Defines which type of ticket can affect the status of a linked CI."
@@ -950,59 +1249,107 @@ msgid "Duplicate"
 msgstr "コピー"
 
 #. SysConfig
-msgid "Dynamic field event module that marks config item definitions as out of sync, if containing dynamic fields change."
-msgstr "ダイナミック・フィールド・イベント・モジュールは、ダイナミック・フィールドが変更された場合、コンフィグ・アイテムの定義が同期されていないとマークします。"
+msgid ""
+"Dynamic field event module that marks config item definitions as out of "
+"sync, if containing dynamic fields change."
+msgstr ""
+"ダイナミック・フィールド・イベント・モジュールは、ダイナミック・フィールドが"
+"変更された場合、コンフィグ・アイテムの定義が同期されていないとマークします。"
 
 #. SysConfig
-msgid "Dynamic fields shown in the additional ITSM field screen of the agent interface."
-msgstr "担当者インターフェイスの ITSMフィールド画面に表示するダイナミック・フィールド"
+msgid ""
+"Dynamic fields shown in the additional ITSM field screen of the agent "
+"interface."
+msgstr ""
+"担当者インターフェイスの ITSMフィールド画面に表示するダイナミック・フィールド"
 
 #. SysConfig
-msgid "Dynamic fields shown in the config item overview screen of the customer interface."
+msgid ""
+"Dynamic fields shown in the config item overview screen of the customer "
+"interface."
 msgstr "顧客インターフェースの設定項目概要画面に表示される動的フィールド。"
 
 #. SysConfig
-msgid "Dynamic fields shown in the config item search screen of the agent interface."
-msgstr "エージェントインターフェースの設定項目検索画面に表示される動的フィールド。"
+msgid ""
+"Dynamic fields shown in the config item search screen of the agent interface."
+msgstr ""
+"エージェントインターフェースの設定項目検索画面に表示される動的フィールド。"
 
 #. SysConfig
-msgid "Enables configuration item bulk action feature for the agent frontend to work on more than one configuration item at a time."
-msgstr "担当者フロントエンドが一度に複数の設定項目で機能するように設定項目一括操作機能を有効にします。"
+msgid ""
+"Enables configuration item bulk action feature for the agent frontend to "
+"work on more than one configuration item at a time."
+msgstr ""
+"担当者フロントエンドが一度に複数の設定項目で機能するように設定項目一括操作機"
+"能を有効にします。"
 
 #. SysConfig
-msgid "Enables configuration item bulk action feature only for the listed groups."
+msgid ""
+"Enables configuration item bulk action feature only for the listed groups."
 msgstr "リストされたグループの構成アイテム一括処理機能のみを有効にします。"
 
 #. SysConfig
-msgid "Enables/disables the functionality to check ITSM onfiguration items for unique names. Before enabling this option you should check your system for already existing config items with duplicate names. You can do this with the console command Admin::ITSM::ConfigItem::ListDuplicates."
-msgstr "ITSMの設定項目が一意な名前であるかどうかをチェックする機能の有効/無効を設定します。このオプションを有効にする前に、重複した名前を持つ既存の設定項目がないかシステムをチェックする必要があります。これは、コンソールコマンド Admin::ITSM::ConfigItem::ListDuplicates で実行できます。"
+msgid ""
+"Enables/disables the functionality to check ITSM onfiguration items for "
+"unique names. Before enabling this option you should check your system for "
+"already existing config items with duplicate names. You can do this with the "
+"console command Admin::ITSM::ConfigItem::ListDuplicates."
+msgstr ""
+"ITSMの設定項目が一意な名前であるかどうかをチェックする機能の有効/無効を設定し"
+"ます。このオプションを有効にする前に、重複した名前を持つ既存の設定項目がない"
+"かシステムをチェックする必要があります。これは、コンソールコマンド "
+"Admin::ITSM::ConfigItem::ListDuplicates で実行できます。"
 
 #. SysConfig
 msgid "Event module to set configitem-status on ticket-configitem-link."
-msgstr "チケット構成アイテムのリンクに構成アイテムのステータスを設定するイベントモジュール"
+msgstr ""
+"チケット構成アイテムのリンクに構成アイテムのステータスを設定するイベントモ"
+"ジュール"
 
 #. SysConfig
-msgid "Fields of the configuration item index, used for the fulltext search. Fields are also stored, but are not mandatory for the overall functionality. Inclusion of attachments can be disabled by setting the entry to 0 or deleting it."
-msgstr "全文検索に使用される設定項目インデックスのフィールド。フィールドも保存されますが、全体的な機能には必須ではありません。エントリを 0 に設定するか、削除することで、添付ファイルのインクルードを無効にすることができます。"
+msgid ""
+"Fields of the configuration item index, used for the fulltext search. Fields "
+"are also stored, but are not mandatory for the overall functionality. "
+"Inclusion of attachments can be disabled by setting the entry to 0 or "
+"deleting it."
+msgstr ""
+"全文検索に使用される設定項目インデックスのフィールド。フィールドも保存されま"
+"すが、全体的な機能には必須ではありません。エントリを 0 に設定するか、削除する"
+"ことで、添付ファイルのインクルードを無効にすることができます。"
 
 #. SysConfig
-msgid "Fields stored in the configuration item index which are used for other things besides fulltext searches. For the complete functionality all fields are mandatory."
-msgstr "設定項目インデックスに格納されるフィールドで、全文検索以外に使用される。完全な機能のために、すべてのフィールドは必須です。"
+msgid ""
+"Fields stored in the configuration item index which are used for other "
+"things besides fulltext searches. For the complete functionality all fields "
+"are mandatory."
+msgstr ""
+"設定項目インデックスに格納されるフィールドで、全文検索以外に使用される。完全"
+"な機能のために、すべてのフィールドは必須です。"
 
 #. SysConfig
-msgid "For every webservice (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker config."
-msgstr "各Webサービス(キー)に対して、インポートを制限するクラスの配列(値)を定義することができます。選択されたすべてのクラス、あるいは既存のすべてのクラスについて、インボーカの設定で識別属性を選択する必要があります。"
+msgid ""
+"For every webservice (key) an array of classes (value) can be defined on "
+"which the import is restricted. For all chosen classes, or all existing "
+"classes the identifying attributes will have to be chosen in the invoker "
+"config."
+msgstr ""
+"各Webサービス(キー)に対して、インポートを制限するクラスの配列(値)を定義するこ"
+"とができます。選択されたすべてのクラス、あるいは既存のすべてのクラスについ"
+"て、インボーカの設定で識別属性を選択する必要があります。"
 
 #. SysConfig
-msgid "GenericInterface module registration for the ConfigItemCreate invoker layer."
+msgid ""
+"GenericInterface module registration for the ConfigItemCreate invoker layer."
 msgstr "ConfigItemFetch invokerレイヤーのGenericInterfaceモジュール登録。"
 
 #. SysConfig
-msgid "GenericInterface module registration for the ConfigItemFetch invoker layer."
+msgid ""
+"GenericInterface module registration for the ConfigItemFetch invoker layer."
 msgstr "ConfigItemFetch invokerレイヤーのGenericInterfaceモジュール登録。"
 
 #. SysConfig
-msgid "GenericInterface module registration for the ConfigItemUpdate invoker layer."
+msgid ""
+"GenericInterface module registration for the ConfigItemUpdate invoker layer."
 msgstr "ConfigItemFetch invokerレイヤーのGenericInterfaceモジュール登録。"
 
 #. SysConfig
@@ -1022,11 +1369,16 @@ msgid "IncidentState"
 msgstr "インシデントステート"
 
 #. SysConfig
-msgid "Includes deployment states in the config item search of the customer interface."
-msgstr "カスタマーインターフェースの設定項目検索にデプロイメントステートが含まれるようになりました。"
+msgid ""
+"Includes deployment states in the config item search of the customer "
+"interface."
+msgstr ""
+"カスタマーインターフェースの設定項目検索にデプロイメントステートが含まれるよ"
+"うになりました。"
 
 #. SysConfig
-msgid "Includes incident states in the config item search of the customer interface."
+msgid ""
+"Includes incident states in the config item search of the customer interface."
 msgstr "カスタマーインターフェースの設定項目検索にインシデント状態を含める。"
 
 #. SysConfig
@@ -1034,7 +1386,9 @@ msgid "License accounting configuration item event module."
 msgstr ""
 
 #. SysConfig
-msgid "Maximum number of config items to be displayed in the result of this operation."
+msgid ""
+"Maximum number of config items to be displayed in the result of this "
+"operation."
 msgstr "この操作の結果に表示されるコンフィグ項目の最大数。"
 
 #. SysConfig
@@ -1058,136 +1412,269 @@ msgid "Number Module"
 msgstr "ナンバー・モジュール"
 
 #. SysConfig
-msgid "Number of config items to be displayed in each page of a search result in the agent interface."
-msgstr "エージェントインターフェースの検索結果の各ページに表示される設定項目の数。"
+msgid ""
+"Number of config items to be displayed in each page of a search result in "
+"the agent interface."
+msgstr ""
+"エージェントインターフェースの検索結果の各ページに表示される設定項目の数。"
 
 #. SysConfig
-msgid "Number of config items to be displayed in each page of a search result in the customer interface."
-msgstr "カスタマーインターフェースの検索結果の各ページに表示される設定項目の数。"
+msgid ""
+"Number of config items to be displayed in each page of a search result in "
+"the customer interface."
+msgstr ""
+"カスタマーインターフェースの検索結果の各ページに表示される設定項目の数。"
 
 #. SysConfig
-msgid "Objects to search for, how many entries and which attributs to show. ConfigItem attributes have to explicitly be stored via Elasticsearch."
-msgstr "検索するオブジェクト、エントリ数、表示する属性。ConfigItem の属性は、明示的に Elasticsearch 経由で保存する必要があります。"
+msgid ""
+"Objects to search for, how many entries and which attributs to show. "
+"ConfigItem attributes have to explicitly be stored via Elasticsearch."
+msgstr ""
+"検索するオブジェクト、エントリ数、表示する属性。ConfigItem の属性は、明示的"
+"に Elasticsearch 経由で保存する必要があります。"
 
 #. SysConfig
 msgid "Overview."
 msgstr "概要"
 
 #. SysConfig
-msgid "Parameters for the categories for config item classes in the preferences view of the agent interface."
-msgstr "エージェントインタフェースの環境設定ビューの設定項目クラスのカテゴリのパラメータ。"
+msgid ""
+"Parameters for the categories for config item classes in the preferences "
+"view of the agent interface."
+msgstr ""
+"エージェントインタフェースの環境設定ビューの設定項目クラスのカテゴリのパラ"
+"メータ。"
 
 #. SysConfig
-msgid "Parameters for the column filters of the small config item overview. Please note: setting 'Active' to 0 will only prevent agents from editing settings of this group in their personal preferences, but will still allow administrators to edit the settings of another user's behalf. Use 'PreferenceGroup' to control in which area these settings should be shown in the user interface."
-msgstr "小設定項目概要の列フィルタ用のパラメータです。注意: 'Active' を 0 に設定すると、エージェントは個人設定でこのグループの設定を編集できなくなりますが、管理者は他のユーザの設定を編集することができます。PreferenceGroup' を使用して、これらの設定をユーザインターフェイスのどのエリアに表示するかを制御します。"
+msgid ""
+"Parameters for the column filters of the small config item overview. Please "
+"note: setting 'Active' to 0 will only prevent agents from editing settings "
+"of this group in their personal preferences, but will still allow "
+"administrators to edit the settings of another user's behalf. Use "
+"'PreferenceGroup' to control in which area these settings should be shown in "
+"the user interface."
+msgstr ""
+"小設定項目概要の列フィルタ用のパラメータです。注意: 'Active' を 0 に設定する"
+"と、エージェントは個人設定でこのグループの設定を編集できなくなりますが、管理"
+"者は他のユーザの設定を編集することができます。PreferenceGroup' を使用して、こ"
+"れらの設定をユーザインターフェイスのどのエリアに表示するかを制御します。"
 
 #. SysConfig
-msgid "Parameters for the dashboard backend of the customer company config item overview of the agent interface . \"Limit\" is the number of entries per config item class shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin. \"ConfigItemKey\" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName)."
+#, fuzzy
+#| msgid ""
+#| "Parameters for the dashboard backend of the customer company config item "
+#| "overview of the agent interface . \"Limit\" is the number of entries "
+#| "shown by default. \"Group\" is used to restrict the access to the plugin "
+#| "(e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin "
+#| "is enabled by default or if the user needs to enable it manually. "
+#| "\"CacheTTLLocal\" is the cache time in minutes for the plugin. "
+#| "\"ConfigItemKey\" is used to specify which reference field is used for a "
+#| "ConfigItem class (Key=Class, Value=DynamicFieldName)."
+msgid ""
+"Parameters for the dashboard backend of the customer company config item "
+"overview show in the agent interface. \"Limit\" is the number of entries "
+"shown by default. \"Group\" is used to restrict the access to the plugin (e. "
+"g. Group: admin;group1;group2;). \"Default\" determines if the plugin is "
+"enabled by default or if the user needs to enable it manually. "
+"\"CacheTTLLocal\" is the cache time in minutes for the plugin. "
+"\"ConfigItemKey\" is to specify which customer company reference dynamic "
+"field is used to filter for the selected customer company. \"ShownClasses\" "
+"is a list to optionally restrict classes of the shown config items. Leaving "
+"this list empty defaults to all classes which match the customer company in "
+"the dynamic field configured in \"ConfigItemKey\"."
 msgstr ""
 "担当者インターフェイスのスレーブ チケット概要のダッシュボード バックエンドの"
-"パラメーター。 「制限」は、デフォルトで表示されるエントリの数です。 「"
-"グループ」はプラグインへのアクセスを制限するために使用されます (例: "
-"グループ: admin;group1;group2;)。 「デフォルト」は、プラグインがデフォルトで"
-"有効になっているか、ユーザーが手動で有効にする必要があるかを決定します。 「"
-"CacheTTLLocal」は、プラグインのキャッシュ時間 (分単位) です。"
+"パラメーター。 「制限」は、デフォルトで表示されるエントリの数です。 「グルー"
+"プ」はプラグインへのアクセスを制限するために使用されます (例: グループ: "
+"admin;group1;group2;)。 「デフォルト」は、プラグインがデフォルトで有効になっ"
+"ているか、ユーザーが手動で有効にする必要があるかを決定します。 "
+"「CacheTTLLocal」は、プラグインのキャッシュ時間 (分単位) です。"
 
 #. SysConfig
-msgid "Parameters for the dashboard backend of the customer company config item overview of the agent interface . \"Limit\" is the number of entries shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin. \"ConfigItemKey\" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName)."
+#, fuzzy
+#| msgid ""
+#| "Parameters for the dashboard backend of the customer company config item "
+#| "overview of the agent interface . \"Limit\" is the number of entries per "
+#| "config item class shown by default. \"Group\" is used to restrict the "
+#| "access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" "
+#| "determines if the plugin is enabled by default or if the user needs to "
+#| "enable it manually. \"CacheTTLLocal\" is the cache time in minutes for "
+#| "the plugin. \"ConfigItemKey\" is used to specify which reference field is "
+#| "used for a ConfigItem class (Key=Class, Value=DynamicFieldName)."
+msgid ""
+"Parameters for the dashboard backend of the customer company config item "
+"overview shown in the agent interface. \"Limit\" is the number of entries "
+"per config item class shown by default. \"Group\" is used to restrict the "
+"access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" "
+"determines if the plugin is enabled by default or if the user needs to "
+"enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the "
+"plugin. \"ConfigItemKey\" is to specify which customer user reference "
+"dynamic field is used to filter for the selected customer user. "
+"\"ShownClasses\" is a list to optionally restrict classes of the shown "
+"config items. Leaving this list empty defaults to all classes which match "
+"the customer user in the dynamic field configured in \"ConfigItemKey\"."
 msgstr ""
 "担当者インターフェイスのスレーブ チケット概要のダッシュボード バックエンドの"
-"パラメーター。 「制限」は、デフォルトで表示されるエントリの数です。 「"
-"グループ」はプラグインへのアクセスを制限するために使用されます (例: "
-"グループ: admin;group1;group2;)。 「デフォルト」は、プラグインがデフォルトで"
-"有効になっているか、ユーザーが手動で有効にする必要があるかを決定します。 「"
-"CacheTTLLocal」は、プラグインのキャッシュ時間 (分単位) です。"
+"パラメーター。 「制限」は、デフォルトで表示されるエントリの数です。 「グルー"
+"プ」はプラグインへのアクセスを制限するために使用されます (例: グループ: "
+"admin;group1;group2;)。 「デフォルト」は、プラグインがデフォルトで有効になっ"
+"ているか、ユーザーが手動で有効にする必要があるかを決定します。 "
+"「CacheTTLLocal」は、プラグインのキャッシュ時間 (分単位) です。"
 
 #. SysConfig
-msgid "Parameters for the deployment states color in the preferences view of the agent interface."
-msgstr "デプロイメントのパラメータは、担当者Webインタフェースの環境設定ビューで色を示します。"
+msgid ""
+"Parameters for the deployment states color in the preferences view of the "
+"agent interface."
+msgstr ""
+"デプロイメントのパラメータは、担当者Webインタフェースの環境設定ビューで色を示"
+"します。"
 
 #. SysConfig
-msgid "Parameters for the deployment states in the preferences view of the agent interface."
+msgid ""
+"Parameters for the deployment states in the preferences view of the agent "
+"interface."
 msgstr "担当者Webインタフェースの環境設定ビューでデプロイ状態のパラメータ"
 
 #. SysConfig
-msgid "Parameters for the example permission groups of the general catalog attributes."
+msgid ""
+"Parameters for the example permission groups of the general catalog "
+"attributes."
 msgstr "ジェネラル・カタログの属性の権限グループの設定値例です。"
 
 #. SysConfig
-msgid "Parameters for the name module for config item classes in the preferences view of the agent interface."
-msgstr "エージェントインタフェースの環境設定ビューの設定項目クラスの名前モジュールのパラメータ。"
+msgid ""
+"Parameters for the name module for config item classes in the preferences "
+"view of the agent interface."
+msgstr ""
+"エージェントインタフェースの環境設定ビューの設定項目クラスの名前モジュールの"
+"パラメータ。"
 
 #. SysConfig
-msgid "Parameters for the number module for config item classes in the preferences view of the agent interface."
-msgstr "エージェントインタフェースの環境設定ビューの設定項目クラスの番号モジュールのパラメータ。"
+msgid ""
+"Parameters for the number module for config item classes in the preferences "
+"view of the agent interface."
+msgstr ""
+"エージェントインタフェースの環境設定ビューの設定項目クラスの番号モジュールの"
+"パラメータ。"
 
 #. SysConfig
 msgid "Parameters for the pages (in which the configuration items are shown)."
 msgstr "ページのパラメータ（構成アイテムが表示されます）。"
 
 #. SysConfig
-msgid "Parameters for the version string module for config item classes in the preferences view of the agent interface."
-msgstr "エージェントインタフェースの環境設定ビューの設定項目クラスのバージョン文字列モジュールのパラメータ。"
+msgid ""
+"Parameters for the version string module for config item classes in the "
+"preferences view of the agent interface."
+msgstr ""
+"エージェントインタフェースの環境設定ビューの設定項目クラスのバージョン文字列"
+"モジュールのパラメータ。"
 
 #. SysConfig
-msgid "Parameters for the version string template toolkit module for config item classes in the preferences view of the agent interface."
-msgstr "エージェントインターフェイスの環境設定ビューの設定項目クラス用のバージョン文字列テンプレートツールキットモジュールのパラメータ。"
+msgid ""
+"Parameters for the version string template toolkit module for config item "
+"classes in the preferences view of the agent interface."
+msgstr ""
+"エージェントインターフェイスの環境設定ビューの設定項目クラス用のバージョン文"
+"字列テンプレートツールキットモジュールのパラメータ。"
 
 #. SysConfig
-msgid "Parameters for the version trigger for config item classes in the preferences view of the agent interface."
-msgstr "エージェントインタフェースの環境設定ビューの設定項目クラスのバージョントリガーのパラメータ。"
+msgid ""
+"Parameters for the version trigger for config item classes in the "
+"preferences view of the agent interface."
+msgstr ""
+"エージェントインタフェースの環境設定ビューの設定項目クラスのバージョントリ"
+"ガーのパラメータ。"
 
 #. SysConfig
-msgid "Performs the configured action for each event (as an Invoker) for each configured Webservice."
-msgstr "設定された各Webサービスの各イベントに対して（Invokerとして）設定されたアクションを実行します。"
+msgid ""
+"Performs the configured action for each event (as an Invoker) for each "
+"configured Webservice."
+msgstr ""
+"設定された各Webサービスの各イベントに対して（Invokerとして）設定されたアク"
+"ションを実行します。"
 
 #. SysConfig
 msgid "Permission Group"
 msgstr "権限グループ"
 
 #. SysConfig
-msgid "Required permissions to use the ITSM configuration item attachment action in the agent interface."
-msgstr "エージェントインターフェイスでITSM構成項目添付アクションを使用するために必要な権限。"
+msgid ""
+"Required permissions to use the ITSM configuration item attachment action in "
+"the agent interface."
+msgstr ""
+"エージェントインターフェイスでITSM構成項目添付アクションを使用するために必要"
+"な権限。"
 
 #. SysConfig
-msgid "Required permissions to use the ITSM configuration item screen in the agent interface."
+msgid ""
+"Required permissions to use the ITSM configuration item screen in the agent "
+"interface."
 msgstr "担当者Webインターフェイスで構成アイテム画面を使用するために必要な権限"
 
 #. SysConfig
-msgid "Required permissions to use the ITSM configuration item search screen in the agent interface."
-msgstr "担当者Webインターフェイスの構成アイテムの検索画面を使用するために必要な権限"
+msgid ""
+"Required permissions to use the ITSM configuration item search screen in the "
+"agent interface."
+msgstr ""
+"担当者Webインターフェイスの構成アイテムの検索画面を使用するために必要な権限"
 
 #. SysConfig
-msgid "Required permissions to use the ITSM configuration item search screen in the customer interface."
-msgstr "カスタマーインターフェースのITSM構成項目検索画面を使用するために必要な権限。"
+msgid ""
+"Required permissions to use the ITSM configuration item search screen in the "
+"customer interface."
+msgstr ""
+"カスタマーインターフェースのITSM構成項目検索画面を使用するために必要な権限。"
 
 #. SysConfig
-msgid "Required permissions to use the ITSM configuration item tree view screen in the agent interface."
-msgstr "エージェントインターフェイスでITSM構成項目ツリービュー画面を使用するために必要な権限。"
+msgid ""
+"Required permissions to use the ITSM configuration item tree view screen in "
+"the agent interface."
+msgstr ""
+"エージェントインターフェイスでITSM構成項目ツリービュー画面を使用するために必"
+"要な権限。"
 
 #. SysConfig
-msgid "Required permissions to use the ITSM configuration item zoom screen in the agent interface."
-msgstr "担当者Webインターフェイス構成アイテムのズーム画面を使用するために必要な権限"
+msgid ""
+"Required permissions to use the ITSM configuration item zoom screen in the "
+"agent interface."
+msgstr ""
+"担当者Webインターフェイス構成アイテムのズーム画面を使用するために必要な権限"
 
 #. SysConfig
-msgid "Required permissions to use the add ITSM configuration item screen in the agent interface."
-msgstr "担当者Webインターフェイスで構成アイテムの追加画面を使用するために必要な権限"
+msgid ""
+"Required permissions to use the add ITSM configuration item screen in the "
+"agent interface."
+msgstr ""
+"担当者Webインターフェイスで構成アイテムの追加画面を使用するために必要な権限"
 
 #. SysConfig
-msgid "Required permissions to use the bulk ITSM configuration item screen in the agent interface."
-msgstr "エージェントインターフェイスの一括ITSM設定項目画面を使用するために必要な権限。"
+msgid ""
+"Required permissions to use the bulk ITSM configuration item screen in the "
+"agent interface."
+msgstr ""
+"エージェントインターフェイスの一括ITSM設定項目画面を使用するために必要な権"
+"限。"
 
 #. SysConfig
-msgid "Required permissions to use the edit ITSM configuration item screen in the agent interface."
-msgstr "担当者Webインターフェイスで構成アイテムの編集画面を使用するために必要な権限"
+msgid ""
+"Required permissions to use the edit ITSM configuration item screen in the "
+"agent interface."
+msgstr ""
+"担当者Webインターフェイスで構成アイテムの編集画面を使用するために必要な権限"
 
 #. SysConfig
-msgid "Required permissions to use the history ITSM configuration item screen in the agent interface."
-msgstr "担当者Webインターフェイスで構成アイテムの履歴画面を使用するために必要な権限"
+msgid ""
+"Required permissions to use the history ITSM configuration item screen in "
+"the agent interface."
+msgstr ""
+"担当者Webインターフェイスで構成アイテムの履歴画面を使用するために必要な権限"
 
 #. SysConfig
-msgid "Required permissions to use the print ITSM configuration item screen in the agent interface."
-msgstr "担当者Webインタフェースで構成アイテムの印刷画面を使用するために必要な権限"
+msgid ""
+"Required permissions to use the print ITSM configuration item screen in the "
+"agent interface."
+msgstr ""
+"担当者Webインタフェースで構成アイテムの印刷画面を使用するために必要な権限"
 
 #. SysConfig
 msgid "Required privileges to delete config items."
@@ -1198,60 +1685,112 @@ msgid "Search config items."
 msgstr "構成アイテムを検索"
 
 #. SysConfig
-msgid "Set the incident state of a CI automatically when a Ticket is Linked to a CI."
-msgstr "チケットがCIにリンクされている場合、CIのインシデントのステータスを自動的に設定します。"
+msgid ""
+"Set the incident state of a CI automatically when a Ticket is Linked to a CI."
+msgstr ""
+"チケットがCIにリンクされている場合、CIのインシデントのステータスを自動的に設"
+"定します。"
 
 #. SysConfig
-msgid "Sets the deployment state in the configuration item bulk screen of the agent interface."
-msgstr "担当者インターフェイスの構成アイテムの一括画面でデプロイ状態を設定します。"
+msgid ""
+"Sets the deployment state in the configuration item bulk screen of the agent "
+"interface."
+msgstr ""
+"担当者インターフェイスの構成アイテムの一括画面でデプロイ状態を設定します。"
 
 #. SysConfig
-msgid "Sets the incident state in the configuration item bulk screen of the agent interface."
-msgstr "担当者インターフェイスの構成アイテムの一括画面でインシデントのステータスを設定します。"
+msgid ""
+"Sets the incident state in the configuration item bulk screen of the agent "
+"interface."
+msgstr ""
+"担当者インターフェイスの構成アイテムの一括画面でインシデントのステータスを設"
+"定します。"
 
 #. SysConfig
-msgid "Shows a link in the menu that allows linking a configuration item with another object in the config item zoom view of the agent interface."
-msgstr "担当者インターフェイスの構成アイテムのズーム ビューで、構成アイテムを別のオブジェクトにリンクできるようにするメニュー内のリンクを表示します。"
+msgid ""
+"Shows a link in the menu that allows linking a configuration item with "
+"another object in the config item zoom view of the agent interface."
+msgstr ""
+"担当者インターフェイスの構成アイテムのズーム ビューで、構成アイテムを別のオブ"
+"ジェクトにリンクできるようにするメニュー内のリンクを表示します。"
 
 #. SysConfig
-msgid "Shows a link in the menu to access the history of a configuration item in the configuration item overview of the agent interface."
-msgstr "担当者インターフェイスの構成アイテムの概要にある構成アイテムの履歴にアクセスするためのリンクをメニューに表示します。"
+msgid ""
+"Shows a link in the menu to access the history of a configuration item in "
+"the configuration item overview of the agent interface."
+msgstr ""
+"担当者インターフェイスの構成アイテムの概要にある構成アイテムの履歴にアクセス"
+"するためのリンクをメニューに表示します。"
 
 #. SysConfig
-msgid "Shows a link in the menu to access the history of a configuration item in the its zoom view of the agent interface."
-msgstr "担当者インターフェイスのズーム ビューで構成アイテムの履歴にアクセスするためのリンクをメニューに表示します。"
+msgid ""
+"Shows a link in the menu to access the history of a configuration item in "
+"the its zoom view of the agent interface."
+msgstr ""
+"担当者インターフェイスのズーム ビューで構成アイテムの履歴にアクセスするための"
+"リンクをメニューに表示します。"
 
 #. SysConfig
-msgid "Shows a link in the menu to delete a configuration item in its zoom view of the agent interface."
-msgstr "メニューにリンクを表示して、担当者Webインターフェイスのズーム表示で設定項目を削除します。"
+msgid ""
+"Shows a link in the menu to delete a configuration item in its zoom view of "
+"the agent interface."
+msgstr ""
+"メニューにリンクを表示して、担当者Webインターフェイスのズーム表示で設定項目を"
+"削除します。"
 
 #. SysConfig
-msgid "Shows a link in the menu to display the configuration item links as a Tree View."
+msgid ""
+"Shows a link in the menu to display the configuration item links as a Tree "
+"View."
 msgstr "設定項目のリンクをツリー表示するためのリンクをメニューに表示します。"
 
 #. SysConfig
-msgid "Shows a link in the menu to duplicate a configuration item in the configuration item overview of the agent interface."
-msgstr "担当者インターフェイスの構成アイテムの概要で構成アイテムを複製するためのメニューのリンクを表示します。"
+msgid ""
+"Shows a link in the menu to duplicate a configuration item in the "
+"configuration item overview of the agent interface."
+msgstr ""
+"担当者インターフェイスの構成アイテムの概要で構成アイテムを複製するためのメ"
+"ニューのリンクを表示します。"
 
 #. SysConfig
-msgid "Shows a link in the menu to duplicate a configuration item in the its zoom view of the agent interface."
-msgstr "担当者インターフェイスのズーム ビューで構成アイテムを複製するためのリンクをメニューに表示します。"
+msgid ""
+"Shows a link in the menu to duplicate a configuration item in the its zoom "
+"view of the agent interface."
+msgstr ""
+"担当者インターフェイスのズーム ビューで構成アイテムを複製するためのリンクをメ"
+"ニューに表示します。"
 
 #. SysConfig
-msgid "Shows a link in the menu to edit a configuration item in the its zoom view of the agent interface."
-msgstr "担当者インターフェイスのズーム ビューで構成アイテムを編集するためのメニューのリンクを表示します。"
+msgid ""
+"Shows a link in the menu to edit a configuration item in the its zoom view "
+"of the agent interface."
+msgstr ""
+"担当者インターフェイスのズーム ビューで構成アイテムを編集するためのメニューの"
+"リンクを表示します。"
 
 #. SysConfig
-msgid "Shows a link in the menu to go back in the configuration item zoom view of the agent interface."
-msgstr "担当者インターフェイスの構成アイテムのズーム ビューに戻るためのリンクをメニューに表示します。"
+msgid ""
+"Shows a link in the menu to go back in the configuration item zoom view of "
+"the agent interface."
+msgstr ""
+"担当者インターフェイスの構成アイテムのズーム ビューに戻るためのリンクをメ"
+"ニューに表示します。"
 
 #. SysConfig
-msgid "Shows a link in the menu to print a configuration item in the its zoom view of the agent interface."
-msgstr "担当者インターフェイスのズーム ビューで構成アイテムを印刷するためのメニューのリンクを表示します。"
+msgid ""
+"Shows a link in the menu to print a configuration item in the its zoom view "
+"of the agent interface."
+msgstr ""
+"担当者インターフェイスのズーム ビューで構成アイテムを印刷するためのメニューの"
+"リンクを表示します。"
 
 #. SysConfig
-msgid "Shows a link in the menu to zoom into a configuration item in the configuration item overview of the agent interface."
-msgstr "担当者インターフェイスの構成アイテムの概要で構成アイテムを拡大するためのメニューのリンクを表示します。"
+msgid ""
+"Shows a link in the menu to zoom into a configuration item in the "
+"configuration item overview of the agent interface."
+msgstr ""
+"担当者インターフェイスの構成アイテムの概要で構成アイテムを拡大するためのメ"
+"ニューのリンクを表示します。"
 
 #. SysConfig
 msgid "Shows the config item history (reverse ordered) in the agent interface."
@@ -1262,8 +1801,12 @@ msgid "The default category which is shown, if none is selected."
 msgstr "何も選択されていない場合に表示されるデフォルトのカテゴリー。"
 
 #. SysConfig
-msgid "The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. The default is ConfigItem#."
-msgstr "構成アイテムの識別子。 ConfigItem＃、MyConfigItem＃、 デフォルトはConfigItem＃です。"
+msgid ""
+"The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. "
+"The default is ConfigItem#."
+msgstr ""
+"構成アイテムの識別子。 ConfigItem＃、MyConfigItem＃、 デフォルトはConfigItem"
+"＃です。"
 
 #. SysConfig
 msgid "Triggers ConfigItemFetch invoker automatically."
@@ -1282,12 +1825,22 @@ msgid "Version Trigger"
 msgstr "バージョン・トリガー"
 
 #. SysConfig
-msgid "Whether fields should be automatically filled (1), and in that case also be hidden from ticket formulars (2)."
+msgid ""
+"Whether fields should be automatically filled (1), and in that case also be "
+"hidden from ticket formulars (2)."
 msgstr ""
 
 #. SysConfig
-msgid "Whether the execution of ConfigItemACL can be avoided by checking cached field dependencies. This can improve loading times of formulars, but has to be disabled, if ACLModules are to be used for ITSMConfigItem- and Form-ReturnTypes."
-msgstr "キャッシュされたフィールドの依存関係をチェックすることで、ConfigItemACLの実行を回避できるかどうか。これはフォームのロード時間を改善することができるが、ACLModule を ITSMConfigItem- と Form-ReturnType で使用する場合は無効にしなければならない。"
+msgid ""
+"Whether the execution of ConfigItemACL can be avoided by checking cached "
+"field dependencies. This can improve loading times of formulars, but has to "
+"be disabled, if ACLModules are to be used for ITSMConfigItem- and Form-"
+"ReturnTypes."
+msgstr ""
+"キャッシュされたフィールドの依存関係をチェックすることで、ConfigItemACLの実行"
+"を回避できるかどうか。これはフォームのロード時間を改善することができるが、"
+"ACLModule を ITSMConfigItem- と Form-ReturnType で使用する場合は無効にしなけ"
+"ればならない。"
 
 #. SysConfig
 msgid "Which general information is shown in the header."
@@ -1314,768 +1867,116 @@ msgid "productive"
 msgstr "生産"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Summary"
-msgstr "概要"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Network Info"
-msgstr "ネットワーク情報"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Accounting"
-msgstr "会計"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Located in"
-msgstr "所在地"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Date of Order"
-msgstr "注文日"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Network Information"
-msgstr "ネットワーク情報"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Operating costs"
-msgstr "営業費用"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Service Tag"
-msgstr "サービスタグ"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Date of Warranty"
-msgstr "ワラント取得日"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Manufacturer"
-msgstr "メーカー"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Model Description"
-msgstr "モデル説明"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Contact Distributor"
-msgstr "販売代理店"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Appliance Type"
-msgstr "アプライアンス・タイプ"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Phone / VoIP"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Firewall"
-msgstr "ファイアウォール"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "VPN"
-msgstr "かそうへいいきもう"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "DNS-Server"
-msgstr "DNSサーバー"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Container Management"
-msgstr "コンテナ管理"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Identity and Access Management (IAM)"
-msgstr "アイデンティティとアクセス管理（IAM）"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Other"
-msgstr "他"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Order Number"
-msgstr "注文番号"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Cost unit"
-msgstr "コスト単位"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Date of Invoice"
-msgstr "請求書の日付"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Model"
-msgstr "モデル"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Purchased at"
-msgstr "で購入。"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Invoice Number"
-msgstr "インボイス番号"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Administrator"
-msgstr "管理者"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Inverstment costs"
-msgstr "投資コスト"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Inventory Number"
-msgstr "在庫番号"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Serialnumber"
-msgstr "シリアル番号"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Subsidiary"
-msgstr "子会社"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "SSL/TLS Certificates"
-msgstr "SSL/TLS証明書"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Code Signing Certificates"
-msgstr "コード署名証明書"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Email Certificates (S/MIME Certificates)"
-msgstr "電子メール証明書（S/MIME 証明書）"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Document Signing Certificates"
-msgstr "文書署名証明書"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Client Certificates"
-msgstr "クライアント証明書"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Creation Date"
-msgstr "作成日"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Expiry Date"
-msgstr "有効期限"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Hardware"
-msgstr "ハードウェア"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Software"
-msgstr "ソフトウェア"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Number of graphics cards"
-msgstr "グラフィックカードの枚数"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Total Graphics card RAM (GB)"
-msgstr "グラフィックスカードRAM合計（GB）"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Client category"
-msgstr "顧客カテゴリー"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Notebook"
-msgstr "ノート"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Desktop"
-msgstr "デスクトップ"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Virtual Client"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Thin Client"
-msgstr "シンクライアント"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Storage Partition"
-msgstr "ストレージ・パーティション"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "License Count"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Physical Cores"
-msgstr "フィジカル・コア"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Storage"
-msgstr "ストレージ"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Outputs"
-msgstr "出力"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Thunderbolt"
-msgstr "サンダーボルト"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "DVI"
-msgstr "ディヴィ"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "VGA"
-msgstr "ブイジーエー"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "HDMI"
-msgstr "HDMI"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "VirtualLink"
-msgstr "バーチャルリンク"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "DisplayPort"
-msgstr "ディスプレイポート"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "USB-C"
-msgstr "USB-C"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Memory Type"
-msgstr "メモリータイプ"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Bus Interface"
-msgstr "バス・インターフェース"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Graphics card"
-msgstr "グラフィックスカード"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Threads"
-msgstr "スレッド"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Capacity per graphics card"
-msgstr "グラフィックスカード1枚あたりの容量"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Clockrate"
-msgstr "クロックレート"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Clockspeed"
-msgstr "クロックスピード"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Client Software"
-msgstr "クライアント・ソフトウェア"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "License period from"
-msgstr "ライセンス期間"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Total RAM (GB)"
-msgstr "合計RAM (GB)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Number of RAM modules"
-msgstr "RAMモジュール数"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Number of CPUs"
-msgstr "CPU数"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Capacity (GB)"
-msgstr "容量 (GB)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Socket Type"
-msgstr "ソケットタイプ"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "CPU Class"
-msgstr "CPUクラス"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Mobile/Embedded"
-msgstr "モバイル/組み込み"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Laptop"
-msgstr "ノートPC"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "License Type"
-msgstr "ライセンスの種類"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "License period until"
-msgstr "ライセンス期間"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Firmware"
-msgstr "ファームウェア"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Accounting Information"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Contract Type"
-msgstr "契約タイプ"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Service Agreement"
-msgstr "サービス契約"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Non-Disclosure Agreement (NDA)"
-msgstr "秘密保持契約（NDA）"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "License Agreement"
-msgstr "ライセンス契約"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Franchise Agreement"
-msgstr "フランチャイズ契約"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Loan Agreement"
-msgstr "ローン契約"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Consulting Agreement"
-msgstr "コンサルティング契約"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Lease Agreement"
-msgstr "リース契約"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Employment Contract"
-msgstr "雇用契約"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Sales Contract"
-msgstr "売買契約"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Partnership Agreement"
-msgstr "パートナーシップ契約"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Contract period until"
-msgstr "契約期間"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Contract period from"
-msgstr "契約期間"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "End of support"
-msgstr "サポート終了"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Date of release"
-msgstr "リリース日"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Monitor Size"
-msgstr "モニターサイズ"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Power Delivery"
-msgstr "パワー・デリバリー"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Touchscreen Monitor"
-msgstr "タッチスクリーンモニター"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "LED Monitor (Light Emitting Diode)"
-msgstr "LEDモニター（発光ダイオード）"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "OLED Monitor (Organic Light Emitting Diode)"
-msgstr "OLEDモニター（有機発光ダイオード）"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "LCD Monitor (Liquid Crystal Display)"
-msgstr "LCDモニター（液晶ディスプレイ）"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Monitor Resolution"
-msgstr "モニター解像度"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "CIDR"
-msgstr "CIDR"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Start IP Address"
-msgstr "開始IPアドレス"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Network Layer"
-msgstr "ネットワーク層"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Layer 2: Data Link Layer"
-msgstr "レイヤー2：データリンク・レイヤー"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Layer 5: Session Layer"
-msgstr "レイヤー5：セッション・レイヤー"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Layer 7: Application Layer"
-msgstr "レイヤー7：アプリケーション・レイヤー"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Layer 3: Network Layer (Supernet)"
-msgstr "レイヤー3：ネットワーク・レイヤー（スーパーネット）"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Layer 6: Presentation Layer"
-msgstr "レイヤー6：プレゼンテーション・レイヤー"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Layer 1: Physical Layer"
-msgstr "レイヤー1：物理レイヤー"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Layer 3: Network Layer"
-msgstr "レイヤー3：ネットワーク・レイヤー"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Layer 4: Transport Layer"
-msgstr "レイヤー4：トランスポート・レイヤー"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "End IP Address"
-msgstr "終了IPアドレス"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "IP Protocol"
-msgstr "IPプロトコル"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Address Allocation"
-msgstr "アドレス割り当て"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "DHCP Reserved"
-msgstr "DHCP予約"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "DHCP"
-msgstr "ディーエイチシーピー"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Contact"
-msgstr "連絡先"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Contract"
-msgstr "契約"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "CPU"
-msgstr "CPU"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Form Factor"
-msgstr "フォームファクター"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "General Information"
-msgstr "一般情報"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Graphics Cards"
-msgstr "グラフィックスカード"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Memory"
-msgstr "メモリー"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Hardware Model"
-msgstr "ハードウェア・モデル"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Network"
-msgstr "ネットワーク"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Server Software"
-msgstr "サーバー・ソフトウェア"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "SIM Card"
-msgstr "SIMカード"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Count of licenses"
-msgstr "ライセンス数"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Seat licenses"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "MIT Lizenz"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "MPL (Mozilla Public License)"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Creative Commons"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Perpetual licenses"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "EPL (Eclipse Public License)"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "BSD Lizenz (Berkeley Software Distribution License)"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "AGPL (Affero General Public License)"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Freeware"
-msgstr "フリーウェア"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Subscription-based licenses"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "CC0 (Creative Commons Zero)"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "GPL (General Public License)"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Public Domain"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Volume licenses"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Apache Lizenz"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Shareware"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "LGPL (Lesser General Public License)"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "License Key"
-msgstr "ライセンスキー"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Mobile Number"
-msgstr "携帯電話番号"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Card Reader"
-msgstr "カードリーダー"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "VR Headset"
-msgstr "VRヘッドセット"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Headset"
-msgstr "ヘッドセット"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "External Hard Drive"
-msgstr "外付けハードドライブ"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Speakers"
-msgstr "スピーカー"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "USB Hub"
-msgstr "USBハブ"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Mouse"
-msgstr "マウス"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Keyboard"
-msgstr "キーボード"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Webcam"
-msgstr "ウェブカメラ"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Phone Number"
-msgstr "電話番号"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Phone Type"
-msgstr "電話タイプ"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "VoIP Phone"
-msgstr "VoIPフォン"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Satellite Phone"
-msgstr "衛星電話"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Analog Phone"
-msgstr "アナログ電話"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Conference Phone"
-msgstr "電話会議"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Cordless Phone (DECT Phone)"
-msgstr "コードレス電話（DECT電話）"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Landline Phone"
-msgstr "固定電話"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Rack Depth"
-msgstr "ラックの奥行き"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "23.6 inches (600 mm)"
-msgstr "23.6インチ（600mm）"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "39.4 inches (1000 mm)"
-msgstr "39.4インチ（1000mm）"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "47.2 inches (1200 mm)"
-msgstr "47.2インチ（1200mm）"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "35.4 inches (900 mm)"
-msgstr "35.4インチ（900mm）"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "31.5 inches (800 mm)"
-msgstr "31.5インチ（800mm）"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "43.3 inches (1100 mm):"
-msgstr "43.3インチ（1100mm）："
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Rack Units (U)"
-msgstr "ラックユニット (U)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "2U: 3.5 inches (8.89 cm)"
-msgstr "2U：3.5インチ（8.89cm）"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "45U: 78.75 inches (200.02 cm)"
-msgstr "45U：78.75インチ（200.02cm）"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "1U: 1.75 inches (4.45 cm)"
-msgstr "1U：1.75インチ（4.45cm）"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "10U: 17.5 inches (44.45 cm)"
 msgstr "10U：17.5インチ（44.45cm）"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "39U: 68.25 inches (173.35 cm)"
-msgstr "39U：68.25インチ（173.35cm）"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "20U: 35 inches (88.9 cm)"
-msgstr "20U：35インチ（88.9cm）"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "4U: 7 inches (17.78 cm)"
-msgstr "4U：7インチ（17.78cm）"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "15U: 26.25 inches (66.68 cm)"
-msgstr "15U：26.25インチ（66.68cm）"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "36U: 63 inches (160.02 cm)"
-msgstr "36U：63インチ（160.02cm）"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "24U: 42 inches (106.68 cm)"
-msgstr "24U：42インチ（106.68cm）"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "7U: 12.25 inches (31.12 cm)"
-msgstr "7U：12.25インチ（31.12cm）"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "9U: 15.75 inches (40.01 cm)"
-msgstr "9U：15.75インチ（40.01cm）"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "8U: 14 inches (35.56 cm)"
-msgstr "8U：14インチ（35.56cm）"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "12U: 21 inches (53.34 cm)"
 msgstr "12U：21インチ（53.34cm）"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "30U: 52.5 inches (133.35 cm)"
-msgstr "30U：52.5インチ（133.35cm）"
+msgid "15U: 26.25 inches (66.68 cm)"
+msgstr "15U：26.25インチ（66.68cm）"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "18U: 31.5 inches (80.01 cm)"
+msgstr "18U：31.5インチ（80.01cm）"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "19-inch Rack"
+msgstr "19インチラック"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "1U: 1.75 inches (4.45 cm)"
+msgstr "1U：1.75インチ（4.45cm）"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "20U: 35 inches (88.9 cm)"
+msgstr "20U：35インチ（88.9cm）"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "21-inch Rack"
+msgstr "21インチラック"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "22U: 38.5 inches (97.79 cm)"
 msgstr "22U：38.5インチ（97.79cm）"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "23-inch Rack"
+msgstr "23インチラック"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "23.6 inches (600 mm)"
+msgstr "23.6インチ（600mm）"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "24U: 42 inches (106.68 cm)"
+msgstr "24U：42インチ（106.68cm）"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "27U: 47.25 inches (120.02 cm)"
+msgstr "27U：47.25インチ（120.02cm）"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "2U: 3.5 inches (8.89 cm)"
+msgstr "2U：3.5インチ（8.89cm）"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "30U: 52.5 inches (133.35 cm)"
+msgstr "30U：52.5インチ（133.35cm）"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "31.5 inches (800 mm)"
+msgstr "31.5インチ（800mm）"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "33U: 57.75 inches (146.68 cm)"
+msgstr "33U：57.75インチ（146.68cm）"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "35.4 inches (900 mm)"
+msgstr "35.4インチ（900mm）"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "36U: 63 inches (160.02 cm)"
+msgstr "36U：63インチ（160.02cm）"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "39.4 inches (1000 mm)"
+msgstr "39.4インチ（1000mm）"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "39U: 68.25 inches (173.35 cm)"
+msgstr "39U：68.25インチ（173.35cm）"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "3U: 5.25 inches (13.34 cm)"
+msgstr "3U：5.25インチ（13.34cm）"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "42U: 73.5 inches (186.69 cm)"
+msgstr "42U：73.5インチ（186.69cm）"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "43.3 inches (1100 mm):"
+msgstr "43.3インチ（1100mm）："
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "45U: 78.75 inches (200.02 cm)"
+msgstr "45U：78.75インチ（200.02cm）"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "47.2 inches (1200 mm)"
+msgstr "47.2インチ（1200mm）"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "48U: 84 inches (213.36 cm)"
 msgstr "48U：84インチ（213.36cm）"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "4U: 7 inches (17.78 cm)"
+msgstr "4U：7インチ（17.78cm）"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "5U: 8.75 inches (22.23 cm)"
@@ -2086,92 +1987,586 @@ msgid "6U: 10.5 inches (26.67 cm)"
 msgstr "6U：10.5インチ（26.67cm）"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "42U: 73.5 inches (186.69 cm)"
-msgstr "42U：73.5インチ（186.69cm）"
+msgid "7U: 12.25 inches (31.12 cm)"
+msgstr "7U：12.25インチ（31.12cm）"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "33U: 57.75 inches (146.68 cm)"
-msgstr "33U：57.75インチ（146.68cm）"
+msgid "8U: 14 inches (35.56 cm)"
+msgstr "8U：14インチ（35.56cm）"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "3U: 5.25 inches (13.34 cm)"
-msgstr "3U：5.25インチ（13.34cm）"
+msgid "9U: 15.75 inches (40.01 cm)"
+msgstr "9U：15.75インチ（40.01cm）"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "27U: 47.25 inches (120.02 cm)"
-msgstr "27U：47.25インチ（120.02cm）"
+msgid "AGPL (Affero General Public License)"
+msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "18U: 31.5 inches (80.01 cm)"
-msgstr "18U：31.5インチ（80.01cm）"
+msgid "Accounting"
+msgstr "会計"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "ETSI Rack"
-msgstr "ETSIラック"
+msgid "Accounting Information"
+msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "23-inch Rack"
-msgstr "23インチラック"
+msgid "Address Allocation"
+msgstr "アドレス割り当て"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "21-inch Rack"
-msgstr "21インチラック"
+msgid "Administrator"
+msgstr "管理者"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Custom Rack"
-msgstr "カスタムラック"
+msgid "Analog Phone"
+msgstr "アナログ電話"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Tower"
-msgstr "タワー"
+msgid "Apache License"
+msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Mini-Rack"
-msgstr "ミニラック"
+msgid "Appliance Type"
+msgstr "アプライアンス・タイプ"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "19-inch Rack"
-msgstr "19インチラック"
+msgid "BSD License (Berkeley Software Distribution License)"
+msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Hardware Weight"
-msgstr "ハードウェア重量"
+msgid "Battery Capacity (Ah)"
+msgstr "バッテリー容量（Ah）"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Room"
-msgstr "室内"
+msgid "Battery Type"
+msgstr "バッテリータイプ"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Building"
 msgstr "構築"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Bus Interface"
+msgstr "バス・インターフェース"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "CC0 (Creative Commons Zero)"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "CIDR"
+msgstr "CIDR"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "CPU"
+msgstr "CPU"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "CPU Class"
+msgstr "CPUクラス"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Capacity (GB)"
+msgstr "容量 (GB)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Capacity per graphics card"
+msgstr "グラフィックスカード1枚あたりの容量"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Card Number"
+msgstr "カード番号"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Card Reader"
+msgstr "カードリーダー"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Card Type"
 msgstr "カードの種類"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Micro SIM"
+msgid "Client Certificates"
+msgstr "クライアント証明書"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Client Software"
+msgstr "クライアント・ソフトウェア"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Client category"
+msgstr "顧客カテゴリー"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Clockrate"
+msgstr "クロックレート"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Clockspeed"
+msgstr "クロックスピード"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Code Signing Certificates"
+msgstr "コード署名証明書"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Conference Phone"
+msgstr "電話会議"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Consulting Agreement"
+msgstr "コンサルティング契約"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Contact"
+msgstr "連絡先"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Contact Distributor"
+msgstr "販売代理店"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Container Management"
+msgstr "コンテナ管理"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Contract"
+msgstr "契約"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Contract Type"
+msgstr "契約タイプ"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Contract period from"
+msgstr "契約期間"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Contract period until"
+msgstr "契約期間"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Cordless Phone (DECT Phone)"
+msgstr "コードレス電話（DECT電話）"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Cost unit"
+msgstr "コスト単位"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Count of licenses"
+msgstr "ライセンス数"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Creation Date"
+msgstr "作成日"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Creative Commons"
 msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Standard SIM"
-msgstr "スタンダード"
+msgid "Custom Rack"
+msgstr "カスタムラック"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Nano SIM"
+msgid "DHCP"
+msgstr "ディーエイチシーピー"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "DHCP Reserved"
+msgstr "DHCP予約"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "DNS-Server"
+msgstr "DNSサーバー"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "DVI"
+msgstr "ディヴィ"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Date of Invoice"
+msgstr "請求書の日付"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Date of Order"
+msgstr "注文日"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Date of Warranty"
+msgstr "ワラント取得日"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Date of release"
+msgstr "リリース日"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Desktop"
+msgstr "デスクトップ"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "DisplayPort"
+msgstr "ディスプレイポート"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Document Signing Certificates"
+msgstr "文書署名証明書"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "EPL (Eclipse Public License)"
 msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "ETSI Rack"
+msgstr "ETSIラック"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Email Certificates (S/MIME Certificates)"
+msgstr "電子メール証明書（S/MIME 証明書）"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Embedded SIM (eSIM)"
 msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "PUK 2"
-msgstr "PUK 2"
+msgid "Employment Contract"
+msgstr "雇用契約"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Card Number"
-msgstr "カード番号"
+msgid "End IP Address"
+msgstr "終了IPアドレス"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "End of support"
+msgstr "サポート終了"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Expiry Date"
+msgstr "有効期限"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "External Hard Drive"
+msgstr "外付けハードドライブ"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Firewall"
+msgstr "ファイアウォール"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Firmware"
+msgstr "ファームウェア"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Flywheel Energy Storage"
+msgstr "フライホイール・エネルギー貯蔵"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Form Factor"
+msgstr "フォームファクター"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Franchise Agreement"
+msgstr "フランチャイズ契約"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Freeware"
+msgstr "フリーウェア"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "GPL (General Public License)"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "General Information"
+msgstr "一般情報"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Graphics Cards"
+msgstr "グラフィックスカード"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Graphics card"
+msgstr "グラフィックスカード"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "HDMI"
+msgstr "HDMI"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Hardware"
+msgstr "ハードウェア"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Hardware Model"
+msgstr "ハードウェア・モデル"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Hardware Weight"
+msgstr "ハードウェア重量"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Headset"
+msgstr "ヘッドセット"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "IP Protocol"
+msgstr "IPプロトコル"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Identity and Access Management (IAM)"
+msgstr "アイデンティティとアクセス管理（IAM）"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Inventory Number"
+msgstr "在庫番号"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Inverstment costs"
+msgstr "投資コスト"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Invoice Number"
+msgstr "インボイス番号"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Keyboard"
+msgstr "キーボード"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "LCD Monitor (Liquid Crystal Display)"
+msgstr "LCDモニター（液晶ディスプレイ）"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "LED Monitor (Light Emitting Diode)"
+msgstr "LEDモニター（発光ダイオード）"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "LGPL (Lesser General Public License)"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Landline Phone"
+msgstr "固定電話"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Laptop"
+msgstr "ノートPC"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Latitude"
+msgstr "緯度"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Layer 1: Physical Layer"
+msgstr "レイヤー1：物理レイヤー"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Layer 2: Data Link Layer"
+msgstr "レイヤー2：データリンク・レイヤー"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Layer 3: Network Layer"
+msgstr "レイヤー3：ネットワーク・レイヤー"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Layer 3: Network Layer (Supernet)"
+msgstr "レイヤー3：ネットワーク・レイヤー（スーパーネット）"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Layer 4: Transport Layer"
+msgstr "レイヤー4：トランスポート・レイヤー"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Layer 5: Session Layer"
+msgstr "レイヤー5：セッション・レイヤー"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Layer 6: Presentation Layer"
+msgstr "レイヤー6：プレゼンテーション・レイヤー"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Layer 7: Application Layer"
+msgstr "レイヤー7：アプリケーション・レイヤー"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Lease Agreement"
+msgstr "リース契約"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "License Agreement"
+msgstr "ライセンス契約"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "License Count"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "License Key"
+msgstr "ライセンスキー"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "License Type"
+msgstr "ライセンスの種類"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "License period from"
+msgstr "ライセンス期間"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "License period until"
+msgstr "ライセンス期間"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Lithium Iron Phosphate (LiFePO4) Battery"
+msgstr "リン酸鉄リチウム（LiFePO4）電池"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Lithium-Ion (Li-ion) Battery"
+msgstr "リチウムイオン（Li-ion）バッテリー"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Loan Agreement"
+msgstr "ローン契約"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Located in"
+msgstr "所在地"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Longitude"
+msgstr "経度"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+#, fuzzy
+#| msgid "License Key"
+msgid "MIT License"
+msgstr "ライセンスキー"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "MPL (Mozilla Public License)"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Manufacturer"
+msgstr "メーカー"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Maximum Load Capacity (W)"
+msgstr "最大負荷容量 (W)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Memory"
+msgstr "メモリー"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Memory Type"
+msgstr "メモリータイプ"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Micro SIM"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Mini-Rack"
+msgstr "ミニラック"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Mobile Number"
+msgstr "携帯電話番号"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Mobile/Embedded"
+msgstr "モバイル/組み込み"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Model"
+msgstr "モデル"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Model Description"
+msgstr "モデル説明"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Monitor Resolution"
+msgstr "モニター解像度"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Monitor Size"
+msgstr "モニターサイズ"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Mouse"
+msgstr "マウス"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Nano SIM"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Network"
+msgstr "ネットワーク"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Network Info"
+msgstr "ネットワーク情報"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Network Information"
+msgstr "ネットワーク情報"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Network Layer"
+msgstr "ネットワーク層"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Nickel-Cadmium (NiCd) Battery"
+msgstr "ニッケルカドミウム（NiCd）電池"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Nickel-Metal Hydride (NiMH) Battery"
+msgstr "ニッケル水素電池"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Non-Disclosure Agreement (NDA)"
+msgstr "秘密保持契約（NDA）"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Notebook"
+msgstr "ノート"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Number of CPUs"
+msgstr "CPU数"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Number of RAM modules"
+msgstr "RAMモジュール数"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Number of graphics cards"
+msgstr "グラフィックカードの枚数"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "OLED Monitor (Organic Light Emitting Diode)"
+msgstr "OLEDモニター（有機発光ダイオード）"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Operating costs"
+msgstr "営業費用"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Order Number"
+msgstr "注文番号"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Other"
+msgstr "他"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Outputs"
+msgstr "出力"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "PIN"
@@ -2186,45 +2581,205 @@ msgid "PUK"
 msgstr "PUK"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Longitude"
-msgstr "経度"
+msgid "PUK 2"
+msgstr "PUK 2"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Latitude"
-msgstr "緯度"
+msgid "Partnership Agreement"
+msgstr "パートナーシップ契約"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Battery Type"
-msgstr "バッテリータイプ"
+msgid "Perpetual licenses"
+msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Lithium-Ion (Li-ion) Battery"
-msgstr "リチウムイオン（Li-ion）バッテリー"
+msgid "Phone / VoIP"
+msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Lithium Iron Phosphate (LiFePO4) Battery"
-msgstr "リン酸鉄リチウム（LiFePO4）電池"
+msgid "Phone Number"
+msgstr "電話番号"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Nickel-Metal Hydride (NiMH) Battery"
-msgstr "ニッケル水素電池"
+msgid "Phone Type"
+msgstr "電話タイプ"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Physical Cores"
+msgstr "フィジカル・コア"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Power Delivery"
+msgstr "パワー・デリバリー"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Public Domain"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Purchased at"
+msgstr "で購入。"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Rack Depth"
+msgstr "ラックの奥行き"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Rack Units (U)"
+msgstr "ラックユニット (U)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Room"
+msgstr "室内"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "SIM Card"
+msgstr "SIMカード"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "SSL/TLS Certificates"
+msgstr "SSL/TLS証明書"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Sales Contract"
+msgstr "売買契約"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Satellite Phone"
+msgstr "衛星電話"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Sealed Lead-Acid (SLA) Battery"
 msgstr "密閉型鉛蓄電池 (SLA)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Nickel-Cadmium (NiCd) Battery"
-msgstr "ニッケルカドミウム（NiCd）電池"
+msgid "Seat licenses"
+msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Flywheel Energy Storage"
-msgstr "フライホイール・エネルギー貯蔵"
+msgid "Serialnumber"
+msgstr "シリアル番号"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Battery Capacity (Ah)"
-msgstr "バッテリー容量（Ah）"
+msgid "Server Software"
+msgstr "サーバー・ソフトウェア"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Maximum Load Capacity (W)"
-msgstr "最大負荷容量 (W)"
+msgid "Service Agreement"
+msgstr "サービス契約"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Service Tag"
+msgstr "サービスタグ"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Shareware"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Socket Type"
+msgstr "ソケットタイプ"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Software"
+msgstr "ソフトウェア"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Speakers"
+msgstr "スピーカー"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Standard SIM"
+msgstr "スタンダード"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Start IP Address"
+msgstr "開始IPアドレス"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Storage"
+msgstr "ストレージ"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Storage Partition"
+msgstr "ストレージ・パーティション"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Subscription-based licenses"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Subsidiary"
+msgstr "子会社"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Summary"
+msgstr "概要"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Thin Client"
+msgstr "シンクライアント"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Threads"
+msgstr "スレッド"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Thunderbolt"
+msgstr "サンダーボルト"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Total Graphics card RAM (GB)"
+msgstr "グラフィックスカードRAM合計（GB）"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Total RAM (GB)"
+msgstr "合計RAM (GB)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Touchscreen Monitor"
+msgstr "タッチスクリーンモニター"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Tower"
+msgstr "タワー"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "USB Hub"
+msgstr "USBハブ"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "USB-C"
+msgstr "USB-C"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "VGA"
+msgstr "ブイジーエー"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "VPN"
+msgstr "かそうへいいきもう"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "VR Headset"
+msgstr "VRヘッドセット"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Virtual Client"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "VirtualLink"
+msgstr "バーチャルリンク"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "VoIP Phone"
+msgstr "VoIPフォン"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Volume licenses"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Webcam"
+msgstr "ウェブカメラ"

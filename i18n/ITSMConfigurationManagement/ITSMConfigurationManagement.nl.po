@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2026-03-09 13:29+0000\n"
+"POT-Creation-Date: 2026-05-26 12:42+0000\n"
 "PO-Revision-Date: 2026-04-06 18:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Dutch <http://translate.otobo.org/projects/opm-packages/itsm-"
@@ -42,8 +42,13 @@ msgid "Ready2Import Class Bundles"
 msgstr "Ready2Import klassenbundels"
 
 #. Template: AdminITSMConfigItem
-msgid "Here you can import Ready2Import class bundles showcasing our most usual config items. Please note that some additional configuration may be required."
-msgstr "Hier kunt u Ready2Import klassebundels importeren die onze meest gebruikelijke configuratie-items tonen. Houd er rekening mee dat sommige aanvullende configuraties nodig kunnen zijn."
+msgid ""
+"Here you can import Ready2Import class bundles showcasing our most usual "
+"config items. Please note that some additional configuration may be required."
+msgstr ""
+"Hier kunt u Ready2Import klassebundels importeren die onze meest "
+"gebruikelijke configuratie-items tonen. Houd er rekening mee dat sommige "
+"aanvullende configuraties nodig kunnen zijn."
 
 #. Template: AdminITSMConfigItem
 msgid "Update existing entities"
@@ -71,7 +76,9 @@ msgstr "Filter op klassen"
 
 #. Template: AgentITSMConfigItemAdd
 msgid "Select a Class from the list to create a new Config Item."
-msgstr "Selecteer een klasse uit de lijst om een nieuw configuratie-item aan te maken."
+msgstr ""
+"Selecteer een klasse uit de lijst om een nieuw configuratie-item aan te "
+"maken."
 
 #. Template: AgentITSMConfigItemAdd
 msgid "Class"
@@ -110,8 +117,10 @@ msgid "The name of this config item"
 msgstr "De naam van dit configuratie-item"
 
 #. Template: AgentITSMConfigItemEdit
-msgid "Name is already in use by the ConfigItems with the following Number(s): %s"
-msgstr "Naam is al in gebruik door de ConfigItems met de volgende Nummer(s): %s"
+msgid ""
+"Name is already in use by the ConfigItems with the following Number(s): %s"
+msgstr ""
+"Naam is al in gebruik door de ConfigItems met de volgende Nummer(s): %s"
 
 #. Template: AgentITSMConfigItemEdit
 msgid "Version Number"
@@ -122,8 +131,11 @@ msgid "Version number of this config item"
 msgstr "Versienummer van dit config item"
 
 #. Template: AgentITSMConfigItemEdit
-msgid "Version Number is already in use by the ConfigItems with the following Number(s): %s"
-msgstr "Versienummer is al in gebruik door de ConfigItems met het volgende nummer: %s"
+msgid ""
+"Version Number is already in use by the ConfigItems with the following "
+"Number(s): %s"
+msgstr ""
+"Versienummer is al in gebruik door de ConfigItems met het volgende nummer: %s"
 
 #. Template: AgentITSMConfigItemEdit
 msgid "Deployment State"
@@ -225,6 +237,10 @@ msgstr "Type object"
 msgid "Filter by object type"
 msgstr "Filter op type"
 
+#. Template: AdminDynamicFieldScreen
+msgid "Add DynamicField"
+msgstr ""
+
 #. JS Template: ClassImportConfirm
 msgid "The following classes will be imported"
 msgstr "De volgende klassen worden geïmporteerd"
@@ -234,8 +250,12 @@ msgid "The following roles will be imported"
 msgstr "De volgende rollen worden geïmporteerd"
 
 #. JS Template: ClassImportConfirm
-msgid "Note that also corresponding dynamic fields and GeneralCatalog classes will be created and there is no automatic removal."
-msgstr "Merk op dat ook overeenkomstige dynamische velden en GeneralCatalog klassen worden aangemaakt en dat deze niet automatisch worden verwijderd."
+msgid ""
+"Note that also corresponding dynamic fields and GeneralCatalog classes will "
+"be created and there is no automatic removal."
+msgstr ""
+"Merk op dat ook overeenkomstige dynamische velden en GeneralCatalog klassen "
+"worden aangemaakt en dat deze niet automatisch worden verwijderd."
 
 #. JS Template: ClassImportConfirm
 msgid "Do you want to proceed?"
@@ -275,7 +295,9 @@ msgstr "Config item \"%s\" niet gevonden in database!"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemDelete.pm
 msgid "Was not able to delete the configitem ID %s!"
-msgstr "Definieert het aantal rijen voor de CI-definitie-editor in de beheerinterface."
+msgstr ""
+"Definieert het aantal rijen voor de CI-definitie-editor in de "
+"beheerinterface."
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemDelete.pm
 msgid "No version found for ConfigItemID %s!"
@@ -395,7 +417,9 @@ msgstr "Config item zoekresultaten"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemZoom.pm
 msgid "Can't show item, no access rights for ConfigItem are given!"
-msgstr "Kan item niet weergeven, er zijn geen toegangsrechten voor ConfigItem gegeven!"
+msgstr ""
+"Kan item niet weergeven, er zijn geen toegangsrechten voor ConfigItem "
+"gegeven!"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemZoom.pm
 msgid "ConfigItem not found!"
@@ -459,14 +483,16 @@ msgstr "Klassebeperkingen voor het config item"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
 msgid "Select one or more classes to restrict selectable config items"
-msgstr "Selecteer een of meer klassen om selecteerbare configuratie-items te beperken"
+msgstr ""
+"Selecteer een of meer klassen om selecteerbare configuratie-items te beperken"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
 msgid "Deployment state restrictions for the config item"
 msgstr "Klassebeperkingen voor het config item"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
-msgid "Select one or more deployment states to restrict selectable config items"
+msgid ""
+"Select one or more deployment states to restrict selectable config items"
 msgstr ""
 "Selecteer een of meer klassen om selecteerbare configuratie-items te beperken"
 
@@ -483,16 +509,33 @@ msgid "Link Referencing Type"
 msgstr "Type verwijzing"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
-msgid "Whether this link applies to the ConfigItem or the static version of the referencing object. Current Incident State calculation only is performed on dynamic links."
-msgstr "Of deze link van toepassing is op het ConfigItem of de statische versie van het object waarnaar verwezen wordt. De berekening van de huidige incidenttoestand wordt alleen uitgevoerd op dynamische links."
+msgid ""
+"Whether this link applies to the ConfigItem or the static version of the "
+"referencing object. Current Incident State calculation only is performed on "
+"dynamic links."
+msgstr ""
+"Of deze link van toepassing is op het ConfigItem of de statische versie van "
+"het object waarnaar verwezen wordt. De berekening van de huidige "
+"incidenttoestand wordt alleen uitgevoerd op dynamische links."
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
 msgid "Select the attribute which config items will be searched by"
-msgstr "Selecteer het attribuut waarop de configuratie-items moeten worden doorzocht"
+msgstr ""
+"Selecteer het attribuut waarop de configuratie-items moeten worden doorzocht"
+
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
+msgid "External-source key"
+msgstr ""
+
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
+msgid "Select the type of display"
+msgstr ""
 
 #. Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
-msgid "Base structure is not valid. Please provide a hash with data in YAML format."
-msgstr "Basisstructuur is ongeldig. Geef een hash met gegevens in YAML-indeling."
+msgid ""
+"Base structure is not valid. Please provide a hash with data in YAML format."
+msgstr ""
+"Basisstructuur is ongeldig. Geef een hash met gegevens in YAML-indeling."
 
 #. Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
 msgid "Starting the YAML string with '---' is required."
@@ -539,8 +582,12 @@ msgid "Error synchronizing the definitions. Please check the log."
 msgstr "Fout bij het synchroniseren van de definities. Controleer het logboek."
 
 #. Perl Module: Kernel/Modules/AdminDynamicField.pm
-msgid "You have ITSMConfigItem definitions which are not synchronized. Please deploy your ITSMConfigItem dynamic field changes."
-msgstr "Je hebt ITSMConfigItem definities die niet gesynchroniseerd zijn. Implementeer je ITSMConfigItem dynamische veldwijzigingen."
+msgid ""
+"You have ITSMConfigItem definitions which are not synchronized. Please "
+"deploy your ITSMConfigItem dynamic field changes."
+msgstr ""
+"Je hebt ITSMConfigItem definities die niet gesynchroniseerd zijn. "
+"Implementeer je ITSMConfigItem dynamische veldwijzigingen."
 
 #. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
 msgid "Expired"
@@ -595,23 +642,55 @@ msgid "1 - Shown"
 msgstr "1 - Afgebeeld"
 
 #. SysConfig
-msgid "A mapping of inner field names used in the Process Management TransitionActions ConfigItemAdd and -Update. The keys are the names of the set inner fields of the set with object type ticket which will be used to create/update the CI, and the values are the names of the inner fields of the set with object type ITSMConfigItem."
+msgid ""
+"A mapping of inner field names used in the Process Management "
+"TransitionActions ConfigItemAdd and -Update. The keys are the names of the "
+"set inner fields of the set with object type ticket which will be used to "
+"create/update the CI, and the values are the names of the inner fields of "
+"the set with object type ITSMConfigItem."
 msgstr ""
 
 #. SysConfig
-msgid "Allows extended search conditions in config item search of the agent interface. With this feature you can search e. g. config item name with this kind of conditions like \"(*key1*&&*key2*)\" or \"(*key1*||*key2*)\"."
-msgstr "Maakt uitgebreide zoekvoorwaarden mogelijk bij het zoeken naar config items in de agent interface. Met deze functie kun je bijvoorbeeld zoeken op config item naam met dit soort condities zoals \"(*key1*&&*key2*)\" of \"(*key1*|*key2*)\"."
+msgid ""
+"Allows extended search conditions in config item search of the agent "
+"interface. With this feature you can search e. g. config item name with this "
+"kind of conditions like \"(*key1*&&*key2*)\" or \"(*key1*||*key2*)\"."
+msgstr ""
+"Maakt uitgebreide zoekvoorwaarden mogelijk bij het zoeken naar config items "
+"in de agent interface. Met deze functie kun je bijvoorbeeld zoeken op config "
+"item naam met dit soort condities zoals \"(*key1*&&*key2*)\" of \"(*key1*|"
+"*key2*)\"."
 
 #. SysConfig
-msgid "Allows extended search conditions in config item search of the customer interface. With this feature you can search e. g. config item name with this kind of conditions like \"(*key1*&&*key2*)\" or \"(*key1*||*key2*)\"."
-msgstr "Maakt uitgebreide zoekvoorwaarden mogelijk bij het zoeken naar configuraties in de klanteninterface. Met deze functie kun je bijvoorbeeld zoeken op config item naam met dit soort condities zoals \"(*key1*&&*key2*)\" of \"(*key1*|*key2*)\"."
+msgid ""
+"Allows extended search conditions in config item search of the customer "
+"interface. With this feature you can search e. g. config item name with this "
+"kind of conditions like \"(*key1*&&*key2*)\" or \"(*key1*||*key2*)\"."
+msgstr ""
+"Maakt uitgebreide zoekvoorwaarden mogelijk bij het zoeken naar configuraties "
+"in de klanteninterface. Met deze functie kun je bijvoorbeeld zoeken op "
+"config item naam met dit soort condities zoals \"(*key1*&&*key2*)\" of "
+"\"(*key1*|*key2*)\"."
 
 #. SysConfig
 msgid "Assigned CIs"
 msgstr "Toegewezen CI's"
 
 #. SysConfig
-msgid "At a specific time point create a ticket for config items, if the configured requirements are met. The time point is determined by the value of the dynamic field of type date configured under \"TimeCIKey\" of the ConfigItem, and modified by \"TimeModifier\". If the latter can be either just a number, or a sign (+/-), a number, and an unit (d/h/m): \"7\" is equivalent to \"+7d\". The DynamicField \"Ticket->DynamicField\" will be used to mark created tickets - it has to exist. The flags \\\\<OTOBO_CONFIGITEM_X\\\\> where X can be NAME, NUMBER and DATE, will be substituted with the respective values in \"Ticket->Text\"."
+msgid "AssignedToEntity"
+msgstr ""
+
+#. SysConfig
+msgid ""
+"At a specific time point create a ticket for config items, if the configured "
+"requirements are met. The time point is determined by the value of the "
+"dynamic field of type date configured under \"TimeCIKey\" of the ConfigItem, "
+"and modified by \"TimeModifier\". If the latter can be either just a number, "
+"or a sign (+/-), a number, and an unit (d/h/m): \"7\" is equivalent to "
+"\"+7d\". The DynamicField \"Ticket->DynamicField\" will be used to mark "
+"created tickets - it has to exist. The flags \\\\<OTOBO_CONFIGITEM_X\\\\> "
+"where X can be NAME, NUMBER and DATE, will be substituted with the "
+"respective values in \"Ticket->Text\"."
 msgstr ""
 
 #. SysConfig
@@ -619,7 +698,18 @@ msgid "Attributes for license accounting."
 msgstr ""
 
 #. SysConfig
-msgid "Attributes for licenses counting, where \"TotalLicensesDF\", \"AvailableLicensesDF\" and \"LicenseReferenceDF\" are the names of the dynamic fields used to track the remaining licenses. If used, only deployment states in \"ValidDeplStates\" are considered. If a threshold is defined in \"MinimumLicenses\", a ticket will automatically be created if less licenses are available. For this, the checkbox dynamic field \"Ticket->DynamicField\" must exist. The tags \\\\<OTOBO_CONFIGITEM_X\\\\> where X can be NAME, NUMBER, LICENSES_AVAIL and LICENSES_MIN, will be substituted with the respective values in \"Ticket->Text\" by the config item name, number, available licenses, and minimum required available licenses, respectively."
+msgid ""
+"Attributes for licenses counting, where \"TotalLicensesDF\", "
+"\"AvailableLicensesDF\" and \"LicenseReferenceDF\" are the names of the "
+"dynamic fields used to track the remaining licenses. If used, only "
+"deployment states in \"ValidDeplStates\" are considered. If a threshold is "
+"defined in \"MinimumLicenses\", a ticket will automatically be created if "
+"less licenses are available. For this, the checkbox dynamic field \"Ticket-"
+">DynamicField\" must exist. The tags \\\\<OTOBO_CONFIGITEM_X\\\\> where X "
+"can be NAME, NUMBER, LICENSES_AVAIL and LICENSES_MIN, will be substituted "
+"with the respective values in \"Ticket->Text\" by the config item name, "
+"number, available licenses, and minimum required available licenses, "
+"respectively."
 msgstr ""
 
 #. SysConfig
@@ -635,8 +725,14 @@ msgid "CMDB Settings"
 msgstr "CMDB-instellingen"
 
 #. SysConfig
-msgid "Check for a unique name only within the same ConfigItem class ('class') or globally ('global'), which means every existing ConfigItem is taken into account when looking for duplicates."
-msgstr "Controleer alleen op een unieke naam binnen dezelfde ConfigItem-klasse ('class') of globaal ('global'), wat betekent dat elk bestaand ConfigItem in aanmerking wordt genomen bij het zoeken naar duplicaten."
+msgid ""
+"Check for a unique name only within the same ConfigItem class ('class') or "
+"globally ('global'), which means every existing ConfigItem is taken into "
+"account when looking for duplicates."
+msgstr ""
+"Controleer alleen op een unieke naam binnen dezelfde ConfigItem-klasse "
+"('class') of globaal ('global'), wat betekent dat elk bestaand ConfigItem in "
+"aanmerking wordt genomen bij het zoeken naar duplicaten."
 
 #. SysConfig
 msgid "Choose a module to enforce a naming scheme."
@@ -663,8 +759,14 @@ msgid "Column config item filters for ConfigItem Overview."
 msgstr "Kolom config item filters voor ConfigItem Overzicht."
 
 #. SysConfig
-msgid "Columns that can be filtered in the config item overview of the agent interface. Note: Only Config Item attributes and Dynamic Fields (DynamicField_NameX) are allowed."
-msgstr "Kolommen die kunnen worden gefilterd in het config item overzicht van de agent interface. Opmerking: Alleen Config Item attributen en Dynamische velden (DynamicField_NameX) zijn toegestaan."
+msgid ""
+"Columns that can be filtered in the config item overview of the agent "
+"interface. Note: Only Config Item attributes and Dynamic Fields "
+"(DynamicField_NameX) are allowed."
+msgstr ""
+"Kolommen die kunnen worden gefilterd in het config item overzicht van de "
+"agent interface. Opmerking: Alleen Config Item attributen en Dynamische "
+"velden (DynamicField_NameX) zijn toegestaan."
 
 #. SysConfig
 msgid "Config Items"
@@ -679,16 +781,26 @@ msgid "Config item edit."
 msgstr "Configuratie-item bewerken."
 
 #. SysConfig
-msgid "Config item event module that enables accounting licenses for a given config item."
+msgid ""
+"Config item event module that enables accounting licenses for a given config "
+"item."
 msgstr ""
 
 #. SysConfig
-msgid "Config item event module that enables logging to history in the agent interface."
-msgstr "Configuratie-item gebeurtenismodule die het loggen naar geschiedenis in de agentinterface mogelijk maakt."
+msgid ""
+"Config item event module that enables logging to history in the agent "
+"interface."
+msgstr ""
+"Configuratie-item gebeurtenismodule die het loggen naar geschiedenis in de "
+"agentinterface mogelijk maakt."
 
 #. SysConfig
-msgid "Config item event module that updates config items to their current definition."
-msgstr "Config item event module die config items bijwerkt naar hun huidige definitie."
+msgid ""
+"Config item event module that updates config items to their current "
+"definition."
+msgstr ""
+"Config item event module die config items bijwerkt naar hun huidige "
+"definitie."
 
 #. SysConfig
 msgid "Config item history."
@@ -711,12 +823,24 @@ msgid "ConfigItem Version"
 msgstr "ConfigItem Versie"
 
 #. SysConfig
-msgid "ConfigItems of the following classes will not be stored on the Elasticsearch server. To apply this to existing CIs, the CI migration has to be run via console, after changing this option."
-msgstr "ConfigItems van de volgende klassen worden niet opgeslagen op de Elasticsearch server. Om dit toe te passen op bestaande CIs, moet de CI-migratie worden uitgevoerd via de console, na het wijzigen van deze optie."
+msgid ""
+"ConfigItems of the following classes will not be stored on the Elasticsearch "
+"server. To apply this to existing CIs, the CI migration has to be run via "
+"console, after changing this option."
+msgstr ""
+"ConfigItems van de volgende klassen worden niet opgeslagen op de "
+"Elasticsearch server. Om dit toe te passen op bestaande CIs, moet de CI-"
+"migratie worden uitgevoerd via de console, na het wijzigen van deze optie."
 
 #. SysConfig
-msgid "ConfigItems with the following deployment states will not be stored on the Elasticsearch server. To apply this to existing CIs, the CI migration has to be run via console, after changing this option."
-msgstr "ConfigItems met de volgende deployment states worden niet opgeslagen op de Elasticsearch server. Om dit toe te passen op bestaande CIs, moet de CI-migratie worden uitgevoerd via de console, na het wijzigen van deze optie."
+msgid ""
+"ConfigItems with the following deployment states will not be stored on the "
+"Elasticsearch server. To apply this to existing CIs, the CI migration has to "
+"be run via console, after changing this option."
+msgstr ""
+"ConfigItems met de volgende deployment states worden niet opgeslagen op de "
+"Elasticsearch server. Om dit toe te passen op bestaande CIs, moet de CI-"
+"migratie worden uitgevoerd via de console, na het wijzigen van deze optie."
 
 #. SysConfig
 msgid "Configuration Item Limit"
@@ -739,11 +863,17 @@ msgid "Configuration item search backend router of the agent interface."
 msgstr "Configuratie-item zoek backend router van de agentinterface."
 
 #. SysConfig
-msgid "Configure the columns which are available for viewing Permission Conditions in the customer interface, when the corresponding Permission Condition Columns are not specifically configured. This setting is used as a fallback for the other Permission Condition Columns settings."
+msgid ""
+"Configure the columns which are available for viewing Permission Conditions "
+"in the customer interface, when the corresponding Permission Condition "
+"Columns are not specifically configured. This setting is used as a fallback "
+"for the other Permission Condition Columns settings."
 msgstr ""
 
 #. SysConfig
-msgid "Configure the columns which are available when viewing the corresponding Permission Condition in the customer interface."
+msgid ""
+"Configure the columns which are available when viewing the corresponding "
+"Permission Condition in the customer interface."
 msgstr ""
 
 #. SysConfig
@@ -759,107 +889,127 @@ msgid "Customers can see historic CI versions."
 msgstr "Klanten kunnen historische CI-versies zien."
 
 #. SysConfig
-msgid "Customers have the possibility to manually switch between historic CI versions."
-msgstr "Klanten hebben de mogelijkheid om handmatig te wisselen tussen historische CI-versies."
+msgid ""
+"Customers have the possibility to manually switch between historic CI "
+"versions."
+msgstr ""
+"Klanten hebben de mogelijkheid om handmatig te wisselen tussen historische "
+"CI-versies."
 
 #. SysConfig
-msgid "Default data to use on attribute for config item search screen. Example: \"ITSMConfigItemCreateTimePointFormat=year;ITSMConfigItemCreateTimePointStart=Last;ITSMConfigItemCreateTimePoint=2;\"."
-msgstr "Standaard gegevens om te gebruiken op attribuut voor config item zoekscherm. Voorbeeld: \"ITSMConfigItemCreateTimePointFormat=year;ITSMConfigItemCreateTimePointStart=Last;ITSMConfigItemCreateTimePoint=2;\"."
+msgid ""
+"Default data to use on attribute for config item search screen. Example: "
+"\"ITSMConfigItemCreateTimePointFormat=year;ITSMConfigItemCreateTimePointStart=Last;ITSMConfigItemCreateTimePoint=2;\"."
+msgstr ""
+"Standaard gegevens om te gebruiken op attribuut voor config item zoekscherm. "
+"Voorbeeld: "
+"\"ITSMConfigItemCreateTimePointFormat=year;ITSMConfigItemCreateTimePointStart=Last;ITSMConfigItemCreateTimePoint=2;\"."
 
 #. SysConfig
-msgid "Default data to use on attribute for config item search screen. Example: \"ITSMConfigItemCreateTimeStartYear=2010;ITSMConfigItemCreateTimeStartMonth=10;ITSMConfigItemCreateTimeStartDay=4;ITSMConfigItemCreateTimeStopYear=2010;ITSMConfigItemCreateTimeStopMonth=11;ITSMConfigItemCreateTimeStopDay=3;\"."
-msgstr "Standaard gegevens om te gebruiken op attribuut voor config item zoekscherm. Voorbeeld: \"ITSMConfigItemCreateTimeStartYear=2010;ITSMConfigItemCreateTimeStartMonth=10;ITSMConfigItemCreateTimeStartDay=4;ITSMConfigItemCreateTimeStopYear=2010;ITSMConfigItemCreateTimeStopMonth=11;ITSMConfigItemCreateTimeStopDay=3;\"."
+msgid ""
+"Default data to use on attribute for config item search screen. Example: "
+"\"ITSMConfigItemCreateTimeStartYear=2010;ITSMConfigItemCreateTimeStartMonth=10;ITSMConfigItemCreateTimeStartDay=4;ITSMConfigItemCreateTimeStopYear=2010;ITSMConfigItemCreateTimeStopMonth=11;ITSMConfigItemCreateTimeStopDay=3;\"."
+msgstr ""
+"Standaard gegevens om te gebruiken op attribuut voor config item zoekscherm. "
+"Voorbeeld: "
+"\"ITSMConfigItemCreateTimeStartYear=2010;ITSMConfigItemCreateTimeStartMonth=10;ITSMConfigItemCreateTimeStartDay=4;ITSMConfigItemCreateTimeStopYear=2010;ITSMConfigItemCreateTimeStopMonth=11;ITSMConfigItemCreateTimeStopDay=3;\"."
 
 #. SysConfig
-msgid "Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
-msgstr "Definieer acties waarbij een instellingenknop beschikbaar is in de widget van gekoppelde objecten (LinkObject::ViewMode = \"complex\"). Houd er rekening mee dat deze acties de volgende JS- en CSS-bestanden moeten hebben geregistreerd: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js en Core.Agent.LinkObject.js."
+msgid ""
+"Define Actions where a settings button is available in the linked objects "
+"widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions "
+"must have registered the following JS and CSS files: "
+"Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, "
+"Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
+msgstr ""
+"Definieer acties waarbij een instellingenknop beschikbaar is in de widget "
+"van gekoppelde objecten (LinkObject::ViewMode = \"complex\"). Houd er "
+"rekening mee dat deze acties de volgende JS- en CSS-bestanden moeten hebben "
+"geregistreerd: Core.AllocationList.css, Core.UI.AllocationList.js, "
+"Core.UI.Table.Sort.js, Core.Agent.TableFilters.js en "
+"Core.Agent.LinkObject.js."
 
 #. SysConfig
-msgid "Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit."
-msgstr "Definieer een Template::Toolkit schema voor versiestrings. Alleen gebruikt als Version String Module is ingesteld op TemplateToolkit."
+msgid ""
+"Define a Template::Toolkit scheme for version strings. Only used if Version "
+"String Module is set to TemplateToolkit."
+msgstr ""
+"Definieer een Template::Toolkit schema voor versiestrings. Alleen gebruikt "
+"als Version String Module is ingesteld op TemplateToolkit."
 
 #. SysConfig
-msgid "Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category."
-msgstr "Definieer een set voorwaarden waaronder een klant een configuratie-item mag zien. Voorwaarden kunnen optioneel worden beperkt tot bepaalde klantgroepen. Naam is het enige verplichte attribuut. Als er geen andere opties worden gegeven, zullen alle configuratie-items zichtbaar zijn onder die categorie."
+msgid ""
+"Define a set of conditions under which a customer is allowed to see a config "
+"item. Conditions can optionally be restricted to certain customer groups. "
+"Name is the only mandatory attribute. If no other options are given, all "
+"config items will be visible under that category."
+msgstr ""
+"Definieer een set voorwaarden waaronder een klant een configuratie-item mag "
+"zien. Voorwaarden kunnen optioneel worden beperkt tot bepaalde klantgroepen. "
+"Naam is het enige verplichte attribuut. Als er geen andere opties worden "
+"gegeven, zullen alle configuratie-items zichtbaar zijn onder die categorie."
 
 #. SysConfig
-msgid "Defines Required permissions to delete ITSM configuration items using the Generic Interface."
-msgstr "Definieert de vereiste machtigingen om ITSM-configuratie-items te verwijderen met behulp van de Generieke Interface."
+msgid ""
+"Defines Required permissions to delete ITSM configuration items using the "
+"Generic Interface."
+msgstr ""
+"Definieert de vereiste machtigingen om ITSM-configuratie-items te "
+"verwijderen met behulp van de Generieke Interface."
 
 #. SysConfig
-msgid "Defines Required permissions to get ITSM configuration items using the Generic Interface."
-msgstr "Definieert de vereiste machtigingen om ITSM-configuratie-items op te halen met de Generieke Interface."
+msgid ""
+"Defines Required permissions to get ITSM configuration items using the "
+"Generic Interface."
+msgstr ""
+"Definieert de vereiste machtigingen om ITSM-configuratie-items op te halen "
+"met de Generieke Interface."
 
 #. SysConfig
-msgid "Defines Required permissions to search ITSM configuration items using the Generic Interface."
-msgstr "Definieert de vereiste machtigingen om ITSM-configuratie-items te doorzoeken met behulp van de Generieke Interface."
+msgid ""
+"Defines Required permissions to search ITSM configuration items using the "
+"Generic Interface."
+msgstr ""
+"Definieert de vereiste machtigingen om ITSM-configuratie-items te doorzoeken "
+"met behulp van de Generieke Interface."
 
 #. SysConfig
-msgid "Defines Required permissions to set ITSM configuration items using the Generic Interface."
-msgstr "Definieert de vereiste machtigingen om ITSM-configuratie-items in te stellen met behulp van de Generieke Interface."
+msgid ""
+"Defines Required permissions to set ITSM configuration items using the "
+"Generic Interface."
+msgstr ""
+"Definieert de vereiste machtigingen om ITSM-configuratie-items in te stellen "
+"met behulp van de Generieke Interface."
 
 #. SysConfig
-msgid "Defines an overview module to show the small view of a configuration item list."
-msgstr "Definieert een overzichtsmodule om de kleine weergave van een lijst met configuratie-items weer te geven."
+msgid ""
+"Defines an overview module to show the small view of a configuration item "
+"list."
+msgstr ""
+"Definieert een overzichtsmodule om de kleine weergave van een lijst met "
+"configuratie-items weer te geven."
 
 #. SysConfig
 msgid "Defines if the link type labels must be shown in the node connections."
-msgstr "Definieert of de labels van het linktype moeten worden weergegeven in de knooppuntverbindingen."
+msgstr ""
+"Definieert of de labels van het linktype moeten worden weergegeven in de "
+"knooppuntverbindingen."
 
 #. SysConfig
-msgid "Defines regular expressions individually for each ConfigItem class to check the ConfigItem name and to show corresponding error messages."
-msgstr "Definieert reguliere expressies afzonderlijk voor elke ConfigItem-klasse om de ConfigItem-naam te controleren en overeenkomstige foutmeldingen weer te geven."
+msgid ""
+"Defines regular expressions individually for each ConfigItem class to check "
+"the ConfigItem name and to show corresponding error messages."
+msgstr ""
+"Definieert reguliere expressies afzonderlijk voor elke ConfigItem-klasse om "
+"de ConfigItem-naam te controleren en overeenkomstige foutmeldingen weer te "
+"geven."
 
 #. SysConfig
-msgid "Defines the available columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName."
-msgstr "Definieert de beschikbare kolommen van CIs in het config item overzicht afhankelijk van de CI klasse. Elke entry moet bestaan uit een classnaam en een array van beschikbare velden voor de overeenstemmende class. Dynamische veldregels moeten het schema DynamicField_FieldName respecteren."
-
-#. SysConfig
-msgid "Defines the default config item attribute for config item sorting of the config item search result of the agent interface."
-msgstr "Definieert het standaard config item attribuut voor het sorteren van het config item van het zoekresultaat van de agent interface."
-
-#. SysConfig
-msgid "Defines the default config item attribute for config item sorting of the config item search result of the customer interface."
-msgstr "Definieert het standaard config item attribuut voor config item sortering van het config item zoekresultaat van de klanteninterface."
-
-#. SysConfig
-msgid "Defines the default config item attribute for config item sorting of the config item search result of this operation."
-msgstr "Definieert het standaard config item attribuut voor het sorteren van het config item zoekresultaat van deze bewerking."
-
-#. SysConfig
-msgid "Defines the default config item order in the config item search result of the agent interface. Up: oldest on top. Down: latest on top."
-msgstr "Definieert de standaard volgorde van config items in het zoekresultaat van de agent interface. Omhoog: oudste bovenaan. Omlaag: nieuwste bovenaan."
-
-#. SysConfig
-msgid "Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top."
-msgstr "Definieert de standaard volgorde van config items in het zoekresultaat van de klanteninterface. Omhoog: oudste bovenaan. Omlaag: nieuwste bovenaan."
-
-#. SysConfig
-msgid "Defines the default config item order in the config item search result of the this operation. Up: oldest on top. Down: latest on top."
-msgstr "Definieert de standaard volgorde van configuratie-items in het zoekresultaat van deze bewerking. Omhoog: oudste bovenaan. Omlaag: nieuwste bovenaan."
-
-#. SysConfig
-msgid "Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName."
-msgstr "Definieert de standaard getoonde kolommen van CIs in het configuratie-item overzicht, afhankelijk van de CI klasse. Elk item moet bestaan uit een classnaam en een array van beschikbare velden voor de overeenstemmende class. Dynamische veldregels moeten voldoen aan het schema DynamicField_FieldName."
-
-#. SysConfig
-msgid "Defines the default relations depth to be shown."
-msgstr "Bepaalt de standaard te tonen relatiediepte."
-
-#. SysConfig
-msgid "Defines the default shown config item search attribute for config item search screen."
-msgstr "Definieert het standaard getoonde config item zoekkenmerk voor het config item zoekscherm."
-
-#. SysConfig
-msgid "Defines the default shown config item search attribute for config item search screen. Example: \"Key\" must have the name of the Dynamic Field in this case 'X', \"Content\" must have the value of the Dynamic Field depending on the Dynamic Field type,  Text: 'a text', Dropdown: '1', Date/Time: 'Search_DynamicField_XTimeSlotStartYear=1974; Search_DynamicField_XTimeSlotStartMonth=01; Search_DynamicField_XTimeSlotStartDay=26; Search_DynamicField_XTimeSlotStartHour=00; Search_DynamicField_XTimeSlotStartMinute=00; Search_DynamicField_XTimeSlotStartSecond=00; Search_DynamicField_XTimeSlotStopYear=2013; Search_DynamicField_XTimeSlotStopMonth=01; Search_DynamicField_XTimeSlotStopDay=26; Search_DynamicField_XTimeSlotStopHour=23; Search_DynamicField_XTimeSlotStopMinute=59; Search_DynamicField_XTimeSlotStopSecond=59;' and or 'Search_DynamicField_XTimePointFormat=week; Search_DynamicField_XTimePointStart=Before; Search_DynamicField_XTimePointValue=7';."
-msgstr "Definieert het standaard getoonde config item zoekkenmerk voor het config item zoekscherm. Voorbeeld: \"Key\" moet de naam hebben van het dynamische veld in dit geval 'X', \"Content\" moet de waarde hebben van het dynamische veld afhankelijk van het dynamische veldtype, Text: \"een tekst\", Dropdown: \"1\", Date/Time: 'Search_DynamicField_XTimeSlotStartYear=1974; Search_DynamicField_XTimeSlotStartMonth=01; Search_DynamicField_XTimeSlotStartDay=26; Search_DynamicField_XTimeSlotStartHour=00; Search_DynamicField_XTimeSlotStartMinute=00; Search_DynamicField_XTimeSlotStartSecond=00; Search_DynamicField_XTimeSlotStopYear=2013; Search_DynamicField_XTimeSlotStopMonth=01; Search_DynamicField_XTimeSlotStopDay=26; Search_DynamicField_XTimeSlotStopHour=23; Search_DynamicField_XTimeSlotStopMinute=59; Search_DynamicField_XTimeSlotStopSecond=59;' en of 'Search_DynamicField_XTimePointFormat=week; Search_DynamicField_XTimePointStart=Before; Search_DynamicField_XTimePointValue=7';."
-
-#. SysConfig
-msgid "Defines the default subobject of the class 'ITSMConfigItem'."
-msgstr "Definieert het standaard subobject van de klasse 'ITSMConfigItem'."
-
-#. SysConfig
-msgid "Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName."
+msgid ""
+"Defines the available columns of CIs in the config item overview depending "
+"on the CI class. Each entry must consist of a class name and an array of "
+"available fields for the corresponding class. Dynamic field entries have to "
+"honor the scheme DynamicField_FieldName."
 msgstr ""
 "Definieert de beschikbare kolommen van CIs in het config item overzicht "
 "afhankelijk van de CI klasse. Elke entry moet bestaan uit een classnaam en "
@@ -867,20 +1017,167 @@ msgstr ""
 "veldregels moeten het schema DynamicField_FieldName respecteren."
 
 #. SysConfig
-msgid "Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
-msgstr "Bepaalt de hoogte voor de rich text editorcomponent voor dit scherm. Voer een getal (pixels) of een procentuele waarde (relatief) in."
+msgid ""
+"Defines the default config item attribute for config item sorting of the "
+"config item search result of the agent interface."
+msgstr ""
+"Definieert het standaard config item attribuut voor het sorteren van het "
+"config item van het zoekresultaat van de agent interface."
 
 #. SysConfig
-msgid "Defines the number of rows for the CI definition editor in the admin interface."
-msgstr "Definieert het aantal rijen voor de CI-definitie-editor in de beheerinterface."
+msgid ""
+"Defines the default config item attribute for config item sorting of the "
+"config item search result of the customer interface."
+msgstr ""
+"Definieert het standaard config item attribuut voor config item sortering "
+"van het config item zoekresultaat van de klanteninterface."
 
 #. SysConfig
-msgid "Defines the order of incident states from high (e.g. cricital) to low (e.g. functional)."
-msgstr "Definieert de volgorde van de incidenttoestanden van hoog (bijv. cricitaal) naar laag (bijv. functioneel)."
+msgid ""
+"Defines the default config item attribute for config item sorting of the "
+"config item search result of this operation."
+msgstr ""
+"Definieert het standaard config item attribuut voor het sorteren van het "
+"config item zoekresultaat van deze bewerking."
 
 #. SysConfig
-msgid "Defines the relevant deployment states where linked tickets can affect the status of a CI."
-msgstr "Definieert de relevante deployment states waar gekoppelde tickets de status van een CI kunnen beïnvloeden."
+msgid ""
+"Defines the default config item order in the config item search result of "
+"the agent interface. Up: oldest on top. Down: latest on top."
+msgstr ""
+"Definieert de standaard volgorde van config items in het zoekresultaat van "
+"de agent interface. Omhoog: oudste bovenaan. Omlaag: nieuwste bovenaan."
+
+#. SysConfig
+msgid ""
+"Defines the default config item order in the config item search result of "
+"the customer interface. Up: oldest on top. Down: latest on top."
+msgstr ""
+"Definieert de standaard volgorde van config items in het zoekresultaat van "
+"de klanteninterface. Omhoog: oudste bovenaan. Omlaag: nieuwste bovenaan."
+
+#. SysConfig
+msgid ""
+"Defines the default config item order in the config item search result of "
+"the this operation. Up: oldest on top. Down: latest on top."
+msgstr ""
+"Definieert de standaard volgorde van configuratie-items in het zoekresultaat "
+"van deze bewerking. Omhoog: oudste bovenaan. Omlaag: nieuwste bovenaan."
+
+#. SysConfig
+msgid ""
+"Defines the default displayed columns of CIs in the config item overview "
+"depending on the CI class. Each entry must consist of a class name and an "
+"array of available fields for the corresponding class. Dynamic field entries "
+"have to honor the scheme DynamicField_FieldName."
+msgstr ""
+"Definieert de standaard getoonde kolommen van CIs in het configuratie-item "
+"overzicht, afhankelijk van de CI klasse. Elk item moet bestaan uit een "
+"classnaam en een array van beschikbare velden voor de overeenstemmende "
+"class. Dynamische veldregels moeten voldoen aan het schema "
+"DynamicField_FieldName."
+
+#. SysConfig
+msgid "Defines the default relations depth to be shown."
+msgstr "Bepaalt de standaard te tonen relatiediepte."
+
+#. SysConfig
+msgid ""
+"Defines the default shown config item search attribute for config item "
+"search screen."
+msgstr ""
+"Definieert het standaard getoonde config item zoekkenmerk voor het config "
+"item zoekscherm."
+
+#. SysConfig
+msgid ""
+"Defines the default shown config item search attribute for config item "
+"search screen. Example: \"Key\" must have the name of the Dynamic Field in "
+"this case 'X', \"Content\" must have the value of the Dynamic Field "
+"depending on the Dynamic Field type,  Text: 'a text', Dropdown: '1', Date/"
+"Time: 'Search_DynamicField_XTimeSlotStartYear=1974; "
+"Search_DynamicField_XTimeSlotStartMonth=01; "
+"Search_DynamicField_XTimeSlotStartDay=26; "
+"Search_DynamicField_XTimeSlotStartHour=00; "
+"Search_DynamicField_XTimeSlotStartMinute=00; "
+"Search_DynamicField_XTimeSlotStartSecond=00; "
+"Search_DynamicField_XTimeSlotStopYear=2013; "
+"Search_DynamicField_XTimeSlotStopMonth=01; "
+"Search_DynamicField_XTimeSlotStopDay=26; "
+"Search_DynamicField_XTimeSlotStopHour=23; "
+"Search_DynamicField_XTimeSlotStopMinute=59; "
+"Search_DynamicField_XTimeSlotStopSecond=59;' and or "
+"'Search_DynamicField_XTimePointFormat=week; "
+"Search_DynamicField_XTimePointStart=Before; "
+"Search_DynamicField_XTimePointValue=7';."
+msgstr ""
+"Definieert het standaard getoonde config item zoekkenmerk voor het config "
+"item zoekscherm. Voorbeeld: \"Key\" moet de naam hebben van het dynamische "
+"veld in dit geval 'X', \"Content\" moet de waarde hebben van het dynamische "
+"veld afhankelijk van het dynamische veldtype, Text: \"een tekst\", Dropdown: "
+"\"1\", Date/Time: 'Search_DynamicField_XTimeSlotStartYear=1974; "
+"Search_DynamicField_XTimeSlotStartMonth=01; "
+"Search_DynamicField_XTimeSlotStartDay=26; "
+"Search_DynamicField_XTimeSlotStartHour=00; "
+"Search_DynamicField_XTimeSlotStartMinute=00; "
+"Search_DynamicField_XTimeSlotStartSecond=00; "
+"Search_DynamicField_XTimeSlotStopYear=2013; "
+"Search_DynamicField_XTimeSlotStopMonth=01; "
+"Search_DynamicField_XTimeSlotStopDay=26; "
+"Search_DynamicField_XTimeSlotStopHour=23; "
+"Search_DynamicField_XTimeSlotStopMinute=59; "
+"Search_DynamicField_XTimeSlotStopSecond=59;' en of "
+"'Search_DynamicField_XTimePointFormat=week; "
+"Search_DynamicField_XTimePointStart=Before; "
+"Search_DynamicField_XTimePointValue=7';."
+
+#. SysConfig
+msgid "Defines the default subobject of the class 'ITSMConfigItem'."
+msgstr "Definieert het standaard subobject van de klasse 'ITSMConfigItem'."
+
+#. SysConfig
+msgid ""
+"Defines the disabled columns of CIs in the config item overview depending on "
+"the CI class. Each entry must consist of a class name and an array of "
+"available fields for the corresponding class. Dynamic field entries have to "
+"honor the scheme DynamicField_FieldName."
+msgstr ""
+"Definieert de beschikbare kolommen van CIs in het config item overzicht "
+"afhankelijk van de CI klasse. Elke entry moet bestaan uit een classnaam en "
+"een array van beschikbare velden voor de overeenstemmende class. Dynamische "
+"veldregels moeten het schema DynamicField_FieldName respecteren."
+
+#. SysConfig
+msgid ""
+"Defines the height for the rich text editor component for this screen. Enter "
+"number (pixels) or percent value (relative)."
+msgstr ""
+"Bepaalt de hoogte voor de rich text editorcomponent voor dit scherm. Voer "
+"een getal (pixels) of een procentuele waarde (relatief) in."
+
+#. SysConfig
+msgid ""
+"Defines the number of rows for the CI definition editor in the admin "
+"interface."
+msgstr ""
+"Definieert het aantal rijen voor de CI-definitie-editor in de "
+"beheerinterface."
+
+#. SysConfig
+msgid ""
+"Defines the order of incident states from high (e.g. cricital) to low (e.g. "
+"functional)."
+msgstr ""
+"Definieert de volgorde van de incidenttoestanden van hoog (bijv. cricitaal) "
+"naar laag (bijv. functioneel)."
+
+#. SysConfig
+msgid ""
+"Defines the relevant deployment states where linked tickets can affect the "
+"status of a CI."
+msgstr ""
+"Definieert de relevante deployment states waar gekoppelde tickets de status "
+"van een CI kunnen beïnvloeden."
 
 #. SysConfig
 msgid "Defines the search limit for the AgentITSMConfigItem screen."
@@ -899,32 +1196,74 @@ msgid "Defines the search limit for the CustomerITSMConfigItemSearch screen."
 msgstr "Definieert de zoeklimiet voor het scherm CustomerITSMConfigItemSearch."
 
 #. SysConfig
-msgid "Defines the shown columns of CIs in the link table complex view for all CI classes. If there is no entry, then the default columns are shown."
-msgstr "Definieert de getoonde kolommen van CI's in de koppeltabel complexe weergave voor alle CI-klassen. Als er geen invoer is, dan worden de standaard kolommen getoond."
+msgid ""
+"Defines the shown columns of CIs in the link table complex view for all CI "
+"classes. If there is no entry, then the default columns are shown."
+msgstr ""
+"Definieert de getoonde kolommen van CI's in de koppeltabel complexe weergave "
+"voor alle CI-klassen. Als er geen invoer is, dan worden de standaard "
+"kolommen getoond."
 
 #. SysConfig
-msgid "Defines the shown columns of CIs in the link table complex view, depending on the CI class. Each entry must be prefixed with the class name and double colons (i.e. Computer::). There are a few CI-Attributes that common to all CIs (example for the class Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). To show individual CI-Attributes as defined in the CI-Definition, the following scheme must be used (example for the class Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If there is no entry for a CI class, then the default columns are shown."
-msgstr "Definieert de getoonde kolommen van CIs in de linktabel complexe weergave, afhankelijk van de CI-klasse. Elk item moet voorafgegaan worden door de naam van de klasse en dubbele dubbele punten (bv. Computer::). Er zijn een paar CI-attributen die gemeenschappelijk zijn voor alle CI's (voorbeeld voor de klasse Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). Om individuele CI-Attributen te tonen zoals gedefinieerd in de CI-definitie, moet het volgende schema gebruikt worden (voorbeeld voor de klasse Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capaciteit::1, Computer::HardDisk::2, Computer::HardDisk::2::Capaciteit::1. Als er geen invoer is voor een CI-klasse, dan worden de standaardkolommen weergegeven."
+msgid ""
+"Defines the shown columns of CIs in the link table complex view, depending "
+"on the CI class. Each entry must be prefixed with the class name and double "
+"colons (i.e. Computer::). There are a few CI-Attributes that common to all "
+"CIs (example for the class Computer: Computer::Name, Computer::CurDeplState, "
+"Computer::CreateTime). To show individual CI-Attributes as defined in the CI-"
+"Definition, the following scheme must be used (example for the class "
+"Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, "
+"Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If there is no "
+"entry for a CI class, then the default columns are shown."
+msgstr ""
+"Definieert de getoonde kolommen van CIs in de linktabel complexe weergave, "
+"afhankelijk van de CI-klasse. Elk item moet voorafgegaan worden door de naam "
+"van de klasse en dubbele dubbele punten (bv. Computer::). Er zijn een paar "
+"CI-attributen die gemeenschappelijk zijn voor alle CI's (voorbeeld voor de "
+"klasse Computer: Computer::Name, Computer::CurDeplState, "
+"Computer::CreateTime). Om individuele CI-Attributen te tonen zoals "
+"gedefinieerd in de CI-definitie, moet het volgende schema gebruikt worden "
+"(voorbeeld voor de klasse Computer): Computer::HardDisk::1, "
+"Computer::HardDisk::1::Capaciteit::1, Computer::HardDisk::2, "
+"Computer::HardDisk::2::Capaciteit::1. Als er geen invoer is voor een CI-"
+"klasse, dan worden de standaardkolommen weergegeven."
 
 #. SysConfig
-msgid "Defines which items are available for 'Action' in third level of the ITSM Config Item ACL structure."
-msgstr "Definieert welke items beschikbaar zijn voor 'Actie' op het derde niveau van de ITSM Config Item ACL structuur."
+msgid ""
+"Defines which items are available for 'Action' in third level of the ITSM "
+"Config Item ACL structure."
+msgstr ""
+"Definieert welke items beschikbaar zijn voor 'Actie' op het derde niveau van "
+"de ITSM Config Item ACL structuur."
 
 #. SysConfig
-msgid "Defines which items are available in first level of the ITSM Config Item ACL structure."
-msgstr "Definieert welke items beschikbaar zijn in het eerste niveau van de ITSM Config Item ACL structuur."
+msgid ""
+"Defines which items are available in first level of the ITSM Config Item ACL "
+"structure."
+msgstr ""
+"Definieert welke items beschikbaar zijn in het eerste niveau van de ITSM "
+"Config Item ACL structuur."
 
 #. SysConfig
-msgid "Defines which items are available in second level of the ITSM Config Item ACL structure."
-msgstr "Definieert welke items beschikbaar zijn in het tweede niveau van de ITSM Config Item ACL structuur."
+msgid ""
+"Defines which items are available in second level of the ITSM Config Item "
+"ACL structure."
+msgstr ""
+"Definieert welke items beschikbaar zijn in het tweede niveau van de ITSM "
+"Config Item ACL structuur."
 
 #. SysConfig
-msgid "Defines which type of link (named from the ticket perspective) can affect the status of a linked CI."
-msgstr "Definieert welk type link (genoemd vanuit het ticketperspectief) de status van een gekoppelde CI kan beïnvloeden."
+msgid ""
+"Defines which type of link (named from the ticket perspective) can affect "
+"the status of a linked CI."
+msgstr ""
+"Definieert welk type link (genoemd vanuit het ticketperspectief) de status "
+"van een gekoppelde CI kan beïnvloeden."
 
 #. SysConfig
 msgid "Defines which type of ticket can affect the status of a linked CI."
-msgstr "Definieert welk type ticket de status van een gekoppelde CI kan beïnvloeden."
+msgstr ""
+"Definieert welk type ticket de status van een gekoppelde CI kan beïnvloeden."
 
 #. SysConfig
 msgid "Definition Update"
@@ -951,60 +1290,119 @@ msgid "Duplicate"
 msgstr "Dupliceren"
 
 #. SysConfig
-msgid "Dynamic field event module that marks config item definitions as out of sync, if containing dynamic fields change."
-msgstr "Dynamische veld event module die config item definities markeert als niet gesynchroniseerd, als de dynamische velden die het bevat veranderen."
+msgid ""
+"Dynamic field event module that marks config item definitions as out of "
+"sync, if containing dynamic fields change."
+msgstr ""
+"Dynamische veld event module die config item definities markeert als niet "
+"gesynchroniseerd, als de dynamische velden die het bevat veranderen."
 
 #. SysConfig
-msgid "Dynamic fields shown in the additional ITSM field screen of the agent interface."
-msgstr "Dynamische velden die worden weergegeven in het extra ITSM-veldscherm van de agentinterface."
+msgid ""
+"Dynamic fields shown in the additional ITSM field screen of the agent "
+"interface."
+msgstr ""
+"Dynamische velden die worden weergegeven in het extra ITSM-veldscherm van de "
+"agentinterface."
 
 #. SysConfig
-msgid "Dynamic fields shown in the config item overview screen of the customer interface."
-msgstr "Dynamische velden die worden weergegeven in het scherm Config itemoverzicht van de klanteninterface."
+msgid ""
+"Dynamic fields shown in the config item overview screen of the customer "
+"interface."
+msgstr ""
+"Dynamische velden die worden weergegeven in het scherm Config itemoverzicht "
+"van de klanteninterface."
 
 #. SysConfig
-msgid "Dynamic fields shown in the config item search screen of the agent interface."
-msgstr "Dynamische velden die worden weergegeven in het zoekscherm voor config items van de agentinterface."
+msgid ""
+"Dynamic fields shown in the config item search screen of the agent interface."
+msgstr ""
+"Dynamische velden die worden weergegeven in het zoekscherm voor config items "
+"van de agentinterface."
 
 #. SysConfig
-msgid "Enables configuration item bulk action feature for the agent frontend to work on more than one configuration item at a time."
-msgstr "Maakt bulkactie voor configuratie-items mogelijk, zodat de agent frontend aan meer dan één configuratie-item tegelijk kan werken."
+msgid ""
+"Enables configuration item bulk action feature for the agent frontend to "
+"work on more than one configuration item at a time."
+msgstr ""
+"Maakt bulkactie voor configuratie-items mogelijk, zodat de agent frontend "
+"aan meer dan één configuratie-item tegelijk kan werken."
 
 #. SysConfig
-msgid "Enables configuration item bulk action feature only for the listed groups."
-msgstr "Schakelt de functie bulkactie voor configuratie-items alleen in voor de vermelde groepen."
+msgid ""
+"Enables configuration item bulk action feature only for the listed groups."
+msgstr ""
+"Schakelt de functie bulkactie voor configuratie-items alleen in voor de "
+"vermelde groepen."
 
 #. SysConfig
-msgid "Enables/disables the functionality to check ITSM onfiguration items for unique names. Before enabling this option you should check your system for already existing config items with duplicate names. You can do this with the console command Admin::ITSM::ConfigItem::ListDuplicates."
-msgstr "Schakelt de functionaliteit in of uit om ITSM onfiguratie items te controleren op unieke namen. Voordat je deze optie inschakelt, moet je je systeem controleren op bestaande configuratie-items met dubbele namen. Je kunt dit doen met het console commando Admin::ITSM::ConfigItem::ListDuplicates."
+msgid ""
+"Enables/disables the functionality to check ITSM onfiguration items for "
+"unique names. Before enabling this option you should check your system for "
+"already existing config items with duplicate names. You can do this with the "
+"console command Admin::ITSM::ConfigItem::ListDuplicates."
+msgstr ""
+"Schakelt de functionaliteit in of uit om ITSM onfiguratie items te "
+"controleren op unieke namen. Voordat je deze optie inschakelt, moet je je "
+"systeem controleren op bestaande configuratie-items met dubbele namen. Je "
+"kunt dit doen met het console commando "
+"Admin::ITSM::ConfigItem::ListDuplicates."
 
 #. SysConfig
 msgid "Event module to set configitem-status on ticket-configitem-link."
-msgstr "Gebeurtenismodule om configitem-status in te stellen op ticket-configitem-link."
+msgstr ""
+"Gebeurtenismodule om configitem-status in te stellen op ticket-configitem-"
+"link."
 
 #. SysConfig
-msgid "Fields of the configuration item index, used for the fulltext search. Fields are also stored, but are not mandatory for the overall functionality. Inclusion of attachments can be disabled by setting the entry to 0 or deleting it."
-msgstr "Velden van de configuratie-itemindex, gebruikt voor het zoeken in de volledige tekst. Velden worden ook opgeslagen, maar zijn niet verplicht voor de algemene functionaliteit. Het opnemen van bijlagen kan worden uitgeschakeld door het item op 0 te zetten of te verwijderen."
+msgid ""
+"Fields of the configuration item index, used for the fulltext search. Fields "
+"are also stored, but are not mandatory for the overall functionality. "
+"Inclusion of attachments can be disabled by setting the entry to 0 or "
+"deleting it."
+msgstr ""
+"Velden van de configuratie-itemindex, gebruikt voor het zoeken in de "
+"volledige tekst. Velden worden ook opgeslagen, maar zijn niet verplicht voor "
+"de algemene functionaliteit. Het opnemen van bijlagen kan worden "
+"uitgeschakeld door het item op 0 te zetten of te verwijderen."
 
 #. SysConfig
-msgid "Fields stored in the configuration item index which are used for other things besides fulltext searches. For the complete functionality all fields are mandatory."
-msgstr "Velden die zijn opgeslagen in de index van het configuratie-item en die worden gebruikt voor andere dingen dan zoeken in de volledige tekst. Voor de volledige functionaliteit zijn alle velden verplicht."
+msgid ""
+"Fields stored in the configuration item index which are used for other "
+"things besides fulltext searches. For the complete functionality all fields "
+"are mandatory."
+msgstr ""
+"Velden die zijn opgeslagen in de index van het configuratie-item en die "
+"worden gebruikt voor andere dingen dan zoeken in de volledige tekst. Voor de "
+"volledige functionaliteit zijn alle velden verplicht."
 
 #. SysConfig
-msgid "For every webservice (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker config."
-msgstr "Voor elke webservice (key) kan een array van klassen (value) worden gedefinieerd waarop de import wordt beperkt. Voor alle gekozen klassen, of alle bestaande klassen moeten de identificerende attributen worden gekozen in de config van de invoker."
+msgid ""
+"For every webservice (key) an array of classes (value) can be defined on "
+"which the import is restricted. For all chosen classes, or all existing "
+"classes the identifying attributes will have to be chosen in the invoker "
+"config."
+msgstr ""
+"Voor elke webservice (key) kan een array van klassen (value) worden "
+"gedefinieerd waarop de import wordt beperkt. Voor alle gekozen klassen, of "
+"alle bestaande klassen moeten de identificerende attributen worden gekozen "
+"in de config van de invoker."
 
 #. SysConfig
-msgid "GenericInterface module registration for the ConfigItemCreate invoker layer."
+msgid ""
+"GenericInterface module registration for the ConfigItemCreate invoker layer."
 msgstr ""
 "GenericInterface moduleregistratie voor de ConfigItemFetch invoker laag."
 
 #. SysConfig
-msgid "GenericInterface module registration for the ConfigItemFetch invoker layer."
-msgstr "GenericInterface moduleregistratie voor de ConfigItemFetch invoker laag."
+msgid ""
+"GenericInterface module registration for the ConfigItemFetch invoker layer."
+msgstr ""
+"GenericInterface moduleregistratie voor de ConfigItemFetch invoker laag."
 
 #. SysConfig
-msgid "GenericInterface module registration for the ConfigItemUpdate invoker layer."
+msgid ""
+"GenericInterface module registration for the ConfigItemUpdate invoker layer."
 msgstr ""
 "GenericInterface moduleregistratie voor de ConfigItemFetch invoker laag."
 
@@ -1025,28 +1423,42 @@ msgid "IncidentState"
 msgstr "IncidentState"
 
 #. SysConfig
-msgid "Includes deployment states in the config item search of the customer interface."
-msgstr "Omvat deployment states in het zoeken naar configuratie-items in de klanteninterface."
+msgid ""
+"Includes deployment states in the config item search of the customer "
+"interface."
+msgstr ""
+"Omvat deployment states in het zoeken naar configuratie-items in de "
+"klanteninterface."
 
 #. SysConfig
-msgid "Includes incident states in the config item search of the customer interface."
-msgstr "Inclusief incidenttoestanden in het zoeken naar configuraties in de klanteninterface."
+msgid ""
+"Includes incident states in the config item search of the customer interface."
+msgstr ""
+"Inclusief incidenttoestanden in het zoeken naar configuraties in de "
+"klanteninterface."
 
 #. SysConfig
 msgid "License accounting configuration item event module."
 msgstr ""
 
 #. SysConfig
-msgid "Maximum number of config items to be displayed in the result of this operation."
-msgstr "Maximumaantal configuratie-items dat moet worden weergegeven in het resultaat van deze bewerking."
+msgid ""
+"Maximum number of config items to be displayed in the result of this "
+"operation."
+msgstr ""
+"Maximumaantal configuratie-items dat moet worden weergegeven in het "
+"resultaat van deze bewerking."
 
 #. SysConfig
 msgid "Module to check the group responsible for a class."
-msgstr "Module om de groep te controleren die verantwoordelijk is voor een klas."
+msgstr ""
+"Module om de groep te controleren die verantwoordelijk is voor een klas."
 
 #. SysConfig
 msgid "Module to check the group responsible for a configuration item."
-msgstr "Module om de groep te controleren die verantwoordelijk is voor een configuratie-item."
+msgstr ""
+"Module om de groep te controleren die verantwoordelijk is voor een "
+"configuratie-item."
 
 #. SysConfig
 msgid "Module to generate ITSM config item statistics."
@@ -1061,124 +1473,257 @@ msgid "Number Module"
 msgstr "Nummer Module"
 
 #. SysConfig
-msgid "Number of config items to be displayed in each page of a search result in the agent interface."
-msgstr "Aantal configuratie-items dat moet worden weergegeven op elke pagina van een zoekresultaat in de agentinterface."
+msgid ""
+"Number of config items to be displayed in each page of a search result in "
+"the agent interface."
+msgstr ""
+"Aantal configuratie-items dat moet worden weergegeven op elke pagina van een "
+"zoekresultaat in de agentinterface."
 
 #. SysConfig
-msgid "Number of config items to be displayed in each page of a search result in the customer interface."
-msgstr "Aantal configuratie-items dat moet worden weergegeven op elke pagina van een zoekresultaat in de klanteninterface."
+msgid ""
+"Number of config items to be displayed in each page of a search result in "
+"the customer interface."
+msgstr ""
+"Aantal configuratie-items dat moet worden weergegeven op elke pagina van een "
+"zoekresultaat in de klanteninterface."
 
 #. SysConfig
-msgid "Objects to search for, how many entries and which attributs to show. ConfigItem attributes have to explicitly be stored via Elasticsearch."
-msgstr "Objecten waarnaar gezocht moet worden, hoeveel items en welke attributen getoond moeten worden. ConfigItem-attributen moeten expliciet worden opgeslagen via Elasticsearch."
+msgid ""
+"Objects to search for, how many entries and which attributs to show. "
+"ConfigItem attributes have to explicitly be stored via Elasticsearch."
+msgstr ""
+"Objecten waarnaar gezocht moet worden, hoeveel items en welke attributen "
+"getoond moeten worden. ConfigItem-attributen moeten expliciet worden "
+"opgeslagen via Elasticsearch."
 
 #. SysConfig
 msgid "Overview."
 msgstr "Overzicht."
 
 #. SysConfig
-msgid "Parameters for the categories for config item classes in the preferences view of the agent interface."
-msgstr "Parameters voor de categorieën voor config item klassen in de voorkeuren weergave van de agent interface."
+msgid ""
+"Parameters for the categories for config item classes in the preferences "
+"view of the agent interface."
+msgstr ""
+"Parameters voor de categorieën voor config item klassen in de voorkeuren "
+"weergave van de agent interface."
 
 #. SysConfig
-msgid "Parameters for the column filters of the small config item overview. Please note: setting 'Active' to 0 will only prevent agents from editing settings of this group in their personal preferences, but will still allow administrators to edit the settings of another user's behalf. Use 'PreferenceGroup' to control in which area these settings should be shown in the user interface."
-msgstr "Parameters voor de kolomfilters van het kleine configuratie-itemoverzicht. Let op: als je 'Actief' op 0 zet, kunnen agents alleen de instellingen van deze groep niet bewerken in hun persoonlijke voorkeuren, maar kunnen beheerders wel de instellingen van een andere gebruiker bewerken. Gebruik 'PreferenceGroup' om te bepalen in welk gebied deze instellingen moeten worden weergegeven in de gebruikersinterface."
+msgid ""
+"Parameters for the column filters of the small config item overview. Please "
+"note: setting 'Active' to 0 will only prevent agents from editing settings "
+"of this group in their personal preferences, but will still allow "
+"administrators to edit the settings of another user's behalf. Use "
+"'PreferenceGroup' to control in which area these settings should be shown in "
+"the user interface."
+msgstr ""
+"Parameters voor de kolomfilters van het kleine configuratie-itemoverzicht. "
+"Let op: als je 'Actief' op 0 zet, kunnen agents alleen de instellingen van "
+"deze groep niet bewerken in hun persoonlijke voorkeuren, maar kunnen "
+"beheerders wel de instellingen van een andere gebruiker bewerken. Gebruik "
+"'PreferenceGroup' om te bepalen in welk gebied deze instellingen moeten "
+"worden weergegeven in de gebruikersinterface."
 
 #. SysConfig
-msgid "Parameters for the dashboard backend of the customer company config item overview of the agent interface . \"Limit\" is the number of entries per config item class shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin. \"ConfigItemKey\" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName)."
+msgid ""
+"Parameters for the dashboard backend of the customer company config item "
+"overview show in the agent interface. \"Limit\" is the number of entries "
+"shown by default. \"Group\" is used to restrict the access to the plugin (e. "
+"g. Group: admin;group1;group2;). \"Default\" determines if the plugin is "
+"enabled by default or if the user needs to enable it manually. "
+"\"CacheTTLLocal\" is the cache time in minutes for the plugin. "
+"\"ConfigItemKey\" is to specify which customer company reference dynamic "
+"field is used to filter for the selected customer company. \"ShownClasses\" "
+"is a list to optionally restrict classes of the shown config items. Leaving "
+"this list empty defaults to all classes which match the customer company in "
+"the dynamic field configured in \"ConfigItemKey\"."
 msgstr ""
 
 #. SysConfig
-msgid "Parameters for the dashboard backend of the customer company config item overview of the agent interface . \"Limit\" is the number of entries shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin. \"ConfigItemKey\" is used to specify which reference field is used for a ConfigItem class (Key=Class, Value=DynamicFieldName)."
+msgid ""
+"Parameters for the dashboard backend of the customer company config item "
+"overview shown in the agent interface. \"Limit\" is the number of entries "
+"per config item class shown by default. \"Group\" is used to restrict the "
+"access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" "
+"determines if the plugin is enabled by default or if the user needs to "
+"enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the "
+"plugin. \"ConfigItemKey\" is to specify which customer user reference "
+"dynamic field is used to filter for the selected customer user. "
+"\"ShownClasses\" is a list to optionally restrict classes of the shown "
+"config items. Leaving this list empty defaults to all classes which match "
+"the customer user in the dynamic field configured in \"ConfigItemKey\"."
 msgstr ""
 
 #. SysConfig
-msgid "Parameters for the deployment states color in the preferences view of the agent interface."
-msgstr "Parameters voor de inzetstatussen kleuren in de voorkeurenweergave van de agentinterface."
+msgid ""
+"Parameters for the deployment states color in the preferences view of the "
+"agent interface."
+msgstr ""
+"Parameters voor de inzetstatussen kleuren in de voorkeurenweergave van de "
+"agentinterface."
 
 #. SysConfig
-msgid "Parameters for the deployment states in the preferences view of the agent interface."
-msgstr "Parameters voor de inzetstatussen in de voorkeurenweergave van de agentinterface."
+msgid ""
+"Parameters for the deployment states in the preferences view of the agent "
+"interface."
+msgstr ""
+"Parameters voor de inzetstatussen in de voorkeurenweergave van de "
+"agentinterface."
 
 #. SysConfig
-msgid "Parameters for the example permission groups of the general catalog attributes."
-msgstr "Parameters voor de voorbeeld perimssiegroepen van de algemene catalog attributen."
+msgid ""
+"Parameters for the example permission groups of the general catalog "
+"attributes."
+msgstr ""
+"Parameters voor de voorbeeld perimssiegroepen van de algemene catalog "
+"attributen."
 
 #. SysConfig
-msgid "Parameters for the name module for config item classes in the preferences view of the agent interface."
-msgstr "Parameters voor de naammodule voor config item klassen in de voorkeurenweergave van de agent interface."
+msgid ""
+"Parameters for the name module for config item classes in the preferences "
+"view of the agent interface."
+msgstr ""
+"Parameters voor de naammodule voor config item klassen in de "
+"voorkeurenweergave van de agent interface."
 
 #. SysConfig
-msgid "Parameters for the number module for config item classes in the preferences view of the agent interface."
-msgstr "Parameters voor de nummermodule voor config itemklassen in de voorkeurenweergave van de agentinterface."
+msgid ""
+"Parameters for the number module for config item classes in the preferences "
+"view of the agent interface."
+msgstr ""
+"Parameters voor de nummermodule voor config itemklassen in de "
+"voorkeurenweergave van de agentinterface."
 
 #. SysConfig
 msgid "Parameters for the pages (in which the configuration items are shown)."
-msgstr "Parameters voor de pagina's (waarop de configuratie-items worden weergegeven)."
+msgstr ""
+"Parameters voor de pagina's (waarop de configuratie-items worden "
+"weergegeven)."
 
 #. SysConfig
-msgid "Parameters for the version string module for config item classes in the preferences view of the agent interface."
-msgstr "Parameters voor de versie string module voor config item klassen in de voorkeuren weergave van de agent interface."
+msgid ""
+"Parameters for the version string module for config item classes in the "
+"preferences view of the agent interface."
+msgstr ""
+"Parameters voor de versie string module voor config item klassen in de "
+"voorkeuren weergave van de agent interface."
 
 #. SysConfig
-msgid "Parameters for the version string template toolkit module for config item classes in the preferences view of the agent interface."
-msgstr "Parameters voor de versie string template toolkit module voor config item klassen in de voorkeuren weergave van de agent interface."
+msgid ""
+"Parameters for the version string template toolkit module for config item "
+"classes in the preferences view of the agent interface."
+msgstr ""
+"Parameters voor de versie string template toolkit module voor config item "
+"klassen in de voorkeuren weergave van de agent interface."
 
 #. SysConfig
-msgid "Parameters for the version trigger for config item classes in the preferences view of the agent interface."
-msgstr "Parameters voor de versieactivering voor config itemklassen in de voorkeurenweergave van de agentinterface."
+msgid ""
+"Parameters for the version trigger for config item classes in the "
+"preferences view of the agent interface."
+msgstr ""
+"Parameters voor de versieactivering voor config itemklassen in de "
+"voorkeurenweergave van de agentinterface."
 
 #. SysConfig
-msgid "Performs the configured action for each event (as an Invoker) for each configured Webservice."
-msgstr "Voert de geconfigureerde actie uit voor elke gebeurtenis (als Invoker) voor elke geconfigureerde webservice."
+msgid ""
+"Performs the configured action for each event (as an Invoker) for each "
+"configured Webservice."
+msgstr ""
+"Voert de geconfigureerde actie uit voor elke gebeurtenis (als Invoker) voor "
+"elke geconfigureerde webservice."
 
 #. SysConfig
 msgid "Permission Group"
 msgstr "Permissie groep"
 
 #. SysConfig
-msgid "Required permissions to use the ITSM configuration item attachment action in the agent interface."
-msgstr "Vereiste machtigingen om de ITSM configuratie item attachment actie te gebruiken in de agent interface."
+msgid ""
+"Required permissions to use the ITSM configuration item attachment action in "
+"the agent interface."
+msgstr ""
+"Vereiste machtigingen om de ITSM configuratie item attachment actie te "
+"gebruiken in de agent interface."
 
 #. SysConfig
-msgid "Required permissions to use the ITSM configuration item screen in the agent interface."
-msgstr "Vereiste machtigingen om het ITSM-configuratie-item scherm in de agent interface te gebruiken."
+msgid ""
+"Required permissions to use the ITSM configuration item screen in the agent "
+"interface."
+msgstr ""
+"Vereiste machtigingen om het ITSM-configuratie-item scherm in de agent "
+"interface te gebruiken."
 
 #. SysConfig
-msgid "Required permissions to use the ITSM configuration item search screen in the agent interface."
-msgstr "Vereiste machtigingen om het zoekscherm voor ITSM-configuratie-items in de agentinterface te gebruiken."
+msgid ""
+"Required permissions to use the ITSM configuration item search screen in the "
+"agent interface."
+msgstr ""
+"Vereiste machtigingen om het zoekscherm voor ITSM-configuratie-items in de "
+"agentinterface te gebruiken."
 
 #. SysConfig
-msgid "Required permissions to use the ITSM configuration item search screen in the customer interface."
-msgstr "Vereiste machtigingen om het zoekscherm voor ITSM-configuratie-items in de klanteninterface te gebruiken."
+msgid ""
+"Required permissions to use the ITSM configuration item search screen in the "
+"customer interface."
+msgstr ""
+"Vereiste machtigingen om het zoekscherm voor ITSM-configuratie-items in de "
+"klanteninterface te gebruiken."
 
 #. SysConfig
-msgid "Required permissions to use the ITSM configuration item tree view screen in the agent interface."
-msgstr "Vereiste machtigingen om het ITSM-configuratie item boomstructuur scherm te gebruiken in de agent interface."
+msgid ""
+"Required permissions to use the ITSM configuration item tree view screen in "
+"the agent interface."
+msgstr ""
+"Vereiste machtigingen om het ITSM-configuratie item boomstructuur scherm te "
+"gebruiken in de agent interface."
 
 #. SysConfig
-msgid "Required permissions to use the ITSM configuration item zoom screen in the agent interface."
-msgstr "Vereiste machtigingen om het ITSM-configuratie item zoomscherm te gebruiken in de agent interface."
+msgid ""
+"Required permissions to use the ITSM configuration item zoom screen in the "
+"agent interface."
+msgstr ""
+"Vereiste machtigingen om het ITSM-configuratie item zoomscherm te gebruiken "
+"in de agent interface."
 
 #. SysConfig
-msgid "Required permissions to use the add ITSM configuration item screen in the agent interface."
-msgstr "Vereiste machtigingen om het scherm ITSM-configuratie-item toevoegen in de agentinterface te gebruiken."
+msgid ""
+"Required permissions to use the add ITSM configuration item screen in the "
+"agent interface."
+msgstr ""
+"Vereiste machtigingen om het scherm ITSM-configuratie-item toevoegen in de "
+"agentinterface te gebruiken."
 
 #. SysConfig
-msgid "Required permissions to use the bulk ITSM configuration item screen in the agent interface."
-msgstr "Vereiste machtigingen om het bulk ITSM-configuratie-item scherm in de agent interface te gebruiken."
+msgid ""
+"Required permissions to use the bulk ITSM configuration item screen in the "
+"agent interface."
+msgstr ""
+"Vereiste machtigingen om het bulk ITSM-configuratie-item scherm in de agent "
+"interface te gebruiken."
 
 #. SysConfig
-msgid "Required permissions to use the edit ITSM configuration item screen in the agent interface."
-msgstr "Vereiste machtigingen om het scherm ITSM-configuratie-item bewerken in de agentinterface te gebruiken."
+msgid ""
+"Required permissions to use the edit ITSM configuration item screen in the "
+"agent interface."
+msgstr ""
+"Vereiste machtigingen om het scherm ITSM-configuratie-item bewerken in de "
+"agentinterface te gebruiken."
 
 #. SysConfig
-msgid "Required permissions to use the history ITSM configuration item screen in the agent interface."
-msgstr "Vereiste machtigingen om het ITSM-configuratie-item geschiedenis scherm in de agent interface te gebruiken."
+msgid ""
+"Required permissions to use the history ITSM configuration item screen in "
+"the agent interface."
+msgstr ""
+"Vereiste machtigingen om het ITSM-configuratie-item geschiedenis scherm in "
+"de agent interface te gebruiken."
 
 #. SysConfig
-msgid "Required permissions to use the print ITSM configuration item screen in the agent interface."
-msgstr "Vereiste machtigingen om het scherm met ITSM-configuratie-items afdrukken te gebruiken in de agentinterface."
+msgid ""
+"Required permissions to use the print ITSM configuration item screen in the "
+"agent interface."
+msgstr ""
+"Vereiste machtigingen om het scherm met ITSM-configuratie-items afdrukken te "
+"gebruiken in de agentinterface."
 
 #. SysConfig
 msgid "Required privileges to delete config items."
@@ -1189,72 +1734,134 @@ msgid "Search config items."
 msgstr "Configuratie-items zoeken."
 
 #. SysConfig
-msgid "Set the incident state of a CI automatically when a Ticket is Linked to a CI."
-msgstr "Stel de incidentstatus van een CI automatisch in wanneer een ticket is gekoppeld aan een CI."
+msgid ""
+"Set the incident state of a CI automatically when a Ticket is Linked to a CI."
+msgstr ""
+"Stel de incidentstatus van een CI automatisch in wanneer een ticket is "
+"gekoppeld aan een CI."
 
 #. SysConfig
-msgid "Sets the deployment state in the configuration item bulk screen of the agent interface."
-msgstr "Stelt de uitrolstatus in het bulkscherm voor configuratie-items van de agentinterface in."
+msgid ""
+"Sets the deployment state in the configuration item bulk screen of the agent "
+"interface."
+msgstr ""
+"Stelt de uitrolstatus in het bulkscherm voor configuratie-items van de "
+"agentinterface in."
 
 #. SysConfig
-msgid "Sets the incident state in the configuration item bulk screen of the agent interface."
-msgstr "Stelt de incidentstatus in in het bulkscherm voor configuratie-items van de agentinterface."
+msgid ""
+"Sets the incident state in the configuration item bulk screen of the agent "
+"interface."
+msgstr ""
+"Stelt de incidentstatus in in het bulkscherm voor configuratie-items van de "
+"agentinterface."
 
 #. SysConfig
-msgid "Shows a link in the menu that allows linking a configuration item with another object in the config item zoom view of the agent interface."
-msgstr "Toont een link in het menu waarmee een configuratie-item kan worden gekoppeld aan een ander object in de zoomweergave van het configuratie-item in de agentinterface."
+msgid ""
+"Shows a link in the menu that allows linking a configuration item with "
+"another object in the config item zoom view of the agent interface."
+msgstr ""
+"Toont een link in het menu waarmee een configuratie-item kan worden "
+"gekoppeld aan een ander object in de zoomweergave van het configuratie-item "
+"in de agentinterface."
 
 #. SysConfig
-msgid "Shows a link in the menu to access the history of a configuration item in the configuration item overview of the agent interface."
-msgstr "Toont een link in het menu voor toegang tot de geschiedenis van een configuratie-item in het configuratie-itemoverzicht van de agent interface."
+msgid ""
+"Shows a link in the menu to access the history of a configuration item in "
+"the configuration item overview of the agent interface."
+msgstr ""
+"Toont een link in het menu voor toegang tot de geschiedenis van een "
+"configuratie-item in het configuratie-itemoverzicht van de agent interface."
 
 #. SysConfig
-msgid "Shows a link in the menu to access the history of a configuration item in the its zoom view of the agent interface."
-msgstr "Toont een link in het menu voor toegang tot de geschiedenis van een configuratie-item in de zoomweergave van de agentinterface."
+msgid ""
+"Shows a link in the menu to access the history of a configuration item in "
+"the its zoom view of the agent interface."
+msgstr ""
+"Toont een link in het menu voor toegang tot de geschiedenis van een "
+"configuratie-item in de zoomweergave van de agentinterface."
 
 #. SysConfig
-msgid "Shows a link in the menu to delete a configuration item in its zoom view of the agent interface."
-msgstr "Toont een link in het menu om een configuratie-item te verwijderen in de zoomweergave van de agentinterface."
+msgid ""
+"Shows a link in the menu to delete a configuration item in its zoom view of "
+"the agent interface."
+msgstr ""
+"Toont een link in het menu om een configuratie-item te verwijderen in de "
+"zoomweergave van de agentinterface."
 
 #. SysConfig
-msgid "Shows a link in the menu to display the configuration item links as a Tree View."
-msgstr "Toont een link in het menu om de links naar configuratie-items weer te geven als een boomstructuur."
+msgid ""
+"Shows a link in the menu to display the configuration item links as a Tree "
+"View."
+msgstr ""
+"Toont een link in het menu om de links naar configuratie-items weer te geven "
+"als een boomstructuur."
 
 #. SysConfig
-msgid "Shows a link in the menu to duplicate a configuration item in the configuration item overview of the agent interface."
-msgstr "Toont een link in het menu om een configuratie item te dupliceren in het configuratie item overzicht van de agent interface."
+msgid ""
+"Shows a link in the menu to duplicate a configuration item in the "
+"configuration item overview of the agent interface."
+msgstr ""
+"Toont een link in het menu om een configuratie item te dupliceren in het "
+"configuratie item overzicht van de agent interface."
 
 #. SysConfig
-msgid "Shows a link in the menu to duplicate a configuration item in the its zoom view of the agent interface."
-msgstr "Toont een link in het menu om een configuratie item te dupliceren in de zoom weergave van de agent interface."
+msgid ""
+"Shows a link in the menu to duplicate a configuration item in the its zoom "
+"view of the agent interface."
+msgstr ""
+"Toont een link in het menu om een configuratie item te dupliceren in de zoom "
+"weergave van de agent interface."
 
 #. SysConfig
-msgid "Shows a link in the menu to edit a configuration item in the its zoom view of the agent interface."
-msgstr "Toont een link in het menu om een configuratie-item te bewerken in de zoomweergave van de agentinterface."
+msgid ""
+"Shows a link in the menu to edit a configuration item in the its zoom view "
+"of the agent interface."
+msgstr ""
+"Toont een link in het menu om een configuratie-item te bewerken in de "
+"zoomweergave van de agentinterface."
 
 #. SysConfig
-msgid "Shows a link in the menu to go back in the configuration item zoom view of the agent interface."
-msgstr "Toont een link in het menu om terug te gaan in de configuratie item zoom weergave van de agent interface."
+msgid ""
+"Shows a link in the menu to go back in the configuration item zoom view of "
+"the agent interface."
+msgstr ""
+"Toont een link in het menu om terug te gaan in de configuratie item zoom "
+"weergave van de agent interface."
 
 #. SysConfig
-msgid "Shows a link in the menu to print a configuration item in the its zoom view of the agent interface."
-msgstr "Toont een link in het menu om een configuratie-item af te drukken in de zoomweergave van de agentinterface."
+msgid ""
+"Shows a link in the menu to print a configuration item in the its zoom view "
+"of the agent interface."
+msgstr ""
+"Toont een link in het menu om een configuratie-item af te drukken in de "
+"zoomweergave van de agentinterface."
 
 #. SysConfig
-msgid "Shows a link in the menu to zoom into a configuration item in the configuration item overview of the agent interface."
-msgstr "Toont een link in het menu om in te zoomen op een configuratie-item in het configuratie-itemoverzicht van de agent interface."
+msgid ""
+"Shows a link in the menu to zoom into a configuration item in the "
+"configuration item overview of the agent interface."
+msgstr ""
+"Toont een link in het menu om in te zoomen op een configuratie-item in het "
+"configuratie-itemoverzicht van de agent interface."
 
 #. SysConfig
 msgid "Shows the config item history (reverse ordered) in the agent interface."
-msgstr "Toont de config item geschiedenis (omgekeerd geordend) in de agent interface."
+msgstr ""
+"Toont de config item geschiedenis (omgekeerd geordend) in de agent interface."
 
 #. SysConfig
 msgid "The default category which is shown, if none is selected."
-msgstr "De standaardcategorie die wordt weergegeven als er geen is geselecteerd."
+msgstr ""
+"De standaardcategorie die wordt weergegeven als er geen is geselecteerd."
 
 #. SysConfig
-msgid "The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. The default is ConfigItem#."
-msgstr "De identifier voor een configuratie-item, bijv. ConfigItem#, MyConfigItem#. De standaardwaarde is ConfigItem#."
+msgid ""
+"The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. "
+"The default is ConfigItem#."
+msgstr ""
+"De identifier voor een configuratie-item, bijv. ConfigItem#, MyConfigItem#. "
+"De standaardwaarde is ConfigItem#."
 
 #. SysConfig
 msgid "Triggers ConfigItemFetch invoker automatically."
@@ -1273,12 +1880,22 @@ msgid "Version Trigger"
 msgstr "Versie trekker"
 
 #. SysConfig
-msgid "Whether fields should be automatically filled (1), and in that case also be hidden from ticket formulars (2)."
+msgid ""
+"Whether fields should be automatically filled (1), and in that case also be "
+"hidden from ticket formulars (2)."
 msgstr ""
 
 #. SysConfig
-msgid "Whether the execution of ConfigItemACL can be avoided by checking cached field dependencies. This can improve loading times of formulars, but has to be disabled, if ACLModules are to be used for ITSMConfigItem- and Form-ReturnTypes."
-msgstr "Of het uitvoeren van ConfigItemACL vermeden kan worden door veldafhankelijkheden in de cache te controleren. Dit kan de laadtijd van formulieren verbeteren, maar moet uitgeschakeld worden als ACLModules gebruikt moeten worden voor ITSMConfigItem- en Form-ReturnTypes."
+msgid ""
+"Whether the execution of ConfigItemACL can be avoided by checking cached "
+"field dependencies. This can improve loading times of formulars, but has to "
+"be disabled, if ACLModules are to be used for ITSMConfigItem- and Form-"
+"ReturnTypes."
+msgstr ""
+"Of het uitvoeren van ConfigItemACL vermeden kan worden door "
+"veldafhankelijkheden in de cache te controleren. Dit kan de laadtijd van "
+"formulieren verbeteren, maar moet uitgeschakeld worden als ACLModules "
+"gebruikt moeten worden voor ITSMConfigItem- en Form-ReturnTypes."
 
 #. SysConfig
 msgid "Which general information is shown in the header."
@@ -1305,768 +1922,116 @@ msgid "productive"
 msgstr "productief"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Summary"
-msgstr "Samenvatting"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Network Info"
-msgstr "Netwerk informatie"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Accounting"
-msgstr "Boekhouding"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Located in"
-msgstr "Gevestigd in"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Date of Order"
-msgstr "Datum bestelling"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Network Information"
-msgstr "Netwerkinformatie"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Operating costs"
-msgstr "Bedrijfskosten"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Service Tag"
-msgstr "Servicetag"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Date of Warranty"
-msgstr "Datum van garantie"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Manufacturer"
-msgstr "Fabrikant"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Model Description"
-msgstr "Model Beschrijving"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Contact Distributor"
-msgstr "Neem contact op met distributeur"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Appliance Type"
-msgstr "Type apparaat"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Phone / VoIP"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Firewall"
-msgstr "Firewall"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "VPN"
-msgstr "VPN"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "DNS-Server"
-msgstr "DNS-server"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Container Management"
-msgstr "Beheer van containers"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Identity and Access Management (IAM)"
-msgstr "Identiteits- en toegangsbeheer (IAM)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Other"
-msgstr "Overige"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Order Number"
-msgstr "Bestelnummer"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Cost unit"
-msgstr "Kosteneenheid"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Date of Invoice"
-msgstr "Datum factuur"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Model"
-msgstr "Model"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Purchased at"
-msgstr "Gekocht bij"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Invoice Number"
-msgstr "Factuurnummer"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Administrator"
-msgstr "Beheerder"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Inverstment costs"
-msgstr "Inversteringskosten"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Inventory Number"
-msgstr "Inventarisnummer"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Serialnumber"
-msgstr "Serienummer"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Subsidiary"
-msgstr "Dochteronderneming"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "SSL/TLS Certificates"
-msgstr "SSL/TLS-certificaten"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Code Signing Certificates"
-msgstr "Code ondertekenende certificaten"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Email Certificates (S/MIME Certificates)"
-msgstr "E-mailcertificaten (S/MIME-certificaten)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Document Signing Certificates"
-msgstr "Certificaten voor documentondertekening"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Client Certificates"
-msgstr "Klantcertificaten"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Creation Date"
-msgstr "Aanmaakdatum"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Expiry Date"
-msgstr "Vervaldatum"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Hardware"
-msgstr "Hardware"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Software"
-msgstr "Software"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Number of graphics cards"
-msgstr "Aantal grafische kaarten"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Total Graphics card RAM (GB)"
-msgstr "Totaal RAM-geheugen grafische kaart (GB)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Client category"
-msgstr "Categorie klanten"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Notebook"
-msgstr "Notebook"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Desktop"
-msgstr "Desktop"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Virtual Client"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Thin Client"
-msgstr "Thin Client"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Storage Partition"
-msgstr "Opslagpartitie"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "License Count"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Physical Cores"
-msgstr "Fysieke kernen"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Storage"
-msgstr "Opslag"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Outputs"
-msgstr "Uitgangen"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Thunderbolt"
-msgstr "Thunderbolt"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "DVI"
-msgstr "DVI"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "VGA"
-msgstr "VGA"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "HDMI"
-msgstr "HDMI"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "VirtualLink"
-msgstr "VirtualLink"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "DisplayPort"
-msgstr "DisplayPort"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "USB-C"
-msgstr "USB-C"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Memory Type"
-msgstr "Type geheugen"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Bus Interface"
-msgstr "Businterface"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Graphics card"
-msgstr "Grafische kaart"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Threads"
-msgstr "Draden"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Capacity per graphics card"
-msgstr "Capaciteit per grafische kaart"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Clockrate"
-msgstr "Kloksnelheid"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Clockspeed"
-msgstr "Kloksnelheid"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Client Software"
-msgstr "Software voor klanten"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "License period from"
-msgstr "Licentieperiode van"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Total RAM (GB)"
-msgstr "Totaal RAM-geheugen (GB)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Number of RAM modules"
-msgstr "Aantal RAM-modules"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Number of CPUs"
-msgstr "Aantal CPU's"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Capacity (GB)"
-msgstr "Capaciteit (GB)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Socket Type"
-msgstr "Type stopcontact"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "CPU Class"
-msgstr "CPU-klasse"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Mobile/Embedded"
-msgstr "Mobiel ingebed"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Laptop"
-msgstr "Laptop"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "License Type"
-msgstr "Licentie Type"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "License period until"
-msgstr "Licentieperiode tot"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Firmware"
-msgstr "Firmware"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Accounting Information"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Contract Type"
-msgstr "Type contract"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Service Agreement"
-msgstr "Serviceovereenkomst"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Non-Disclosure Agreement (NDA)"
-msgstr "Geheimhoudingsovereenkomst (NDA)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "License Agreement"
-msgstr "Licentieovereenkomst"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Franchise Agreement"
-msgstr "Franchiseovereenkomst"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Loan Agreement"
-msgstr "Leningsovereenkomst"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Consulting Agreement"
-msgstr "Adviesovereenkomst"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Lease Agreement"
-msgstr "Huurovereenkomst"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Employment Contract"
-msgstr "Arbeidsovereenkomst"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Sales Contract"
-msgstr "Verkoopcontract"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Partnership Agreement"
-msgstr "Partnerschapsovereenkomst"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Contract period until"
-msgstr "Contractperiode tot"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Contract period from"
-msgstr "Contractperiode van"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "End of support"
-msgstr "Einde ondersteuning"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Date of release"
-msgstr "Datum van uitgave"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Monitor Size"
-msgstr "Afmeting monitor"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Power Delivery"
-msgstr "Stroomvoorziening"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Touchscreen Monitor"
-msgstr "Touchscreen monitor"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "LED Monitor (Light Emitting Diode)"
-msgstr "LED-monitor (lichtemitterende diode)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "OLED Monitor (Organic Light Emitting Diode)"
-msgstr "OLED-monitor (organische lichtemitterende diode)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "LCD Monitor (Liquid Crystal Display)"
-msgstr "LCD-monitor (vloeibaar-kristalscherm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Monitor Resolution"
-msgstr "Monitorresolutie"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "CIDR"
-msgstr "CIDR"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Start IP Address"
-msgstr "Start IP-adres"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Network Layer"
-msgstr "Netwerklaag"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Layer 2: Data Link Layer"
-msgstr "Laag 2: Datalinklaag"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Layer 5: Session Layer"
-msgstr "Laag 5: Sessielaag"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Layer 7: Application Layer"
-msgstr "Laag 7: Toepassingslaag"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Layer 3: Network Layer (Supernet)"
-msgstr "Laag 3: netwerklaag (Supernet)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Layer 6: Presentation Layer"
-msgstr "Laag 6: Presentatielaag"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Layer 1: Physical Layer"
-msgstr "Laag 1: Fysieke laag"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Layer 3: Network Layer"
-msgstr "Laag 3: netwerklaag"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Layer 4: Transport Layer"
-msgstr "Laag 4: Transportlaag"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "End IP Address"
-msgstr "IP-adres einde"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "IP Protocol"
-msgstr "IP-protocol"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Address Allocation"
-msgstr "Adrestoewijzing"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "DHCP Reserved"
-msgstr "DHCP Gereserveerd"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "DHCP"
-msgstr "DHCP"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Contact"
-msgstr "Neem contact op met"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Contract"
-msgstr "Contract"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "CPU"
-msgstr "CPU"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Form Factor"
-msgstr "Vormfactor"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "General Information"
-msgstr "Algemene informatie"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Graphics Cards"
-msgstr "Grafische kaarten"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Memory"
-msgstr "Geheugen"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Hardware Model"
-msgstr "Hardwaremodel"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Network"
-msgstr "Netwerk"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Server Software"
-msgstr "Server Software"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "SIM Card"
-msgstr "SIM-kaart"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Count of licenses"
-msgstr "Aantal licenties"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Seat licenses"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "MIT Lizenz"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "MPL (Mozilla Public License)"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Creative Commons"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Perpetual licenses"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "EPL (Eclipse Public License)"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "BSD Lizenz (Berkeley Software Distribution License)"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "AGPL (Affero General Public License)"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Freeware"
-msgstr "Freeware"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Subscription-based licenses"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "CC0 (Creative Commons Zero)"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "GPL (General Public License)"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Public Domain"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Volume licenses"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Apache Lizenz"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Shareware"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "LGPL (Lesser General Public License)"
-msgstr ""
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "License Key"
-msgstr "Licentiesleutel"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Mobile Number"
-msgstr "Mobiel nummer"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Card Reader"
-msgstr "Kaartlezer"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "VR Headset"
-msgstr "VR-koptelefoon"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Headset"
-msgstr "Hoofdtelefoon"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "External Hard Drive"
-msgstr "Externe harde schijf"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Speakers"
-msgstr "Luidsprekers"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "USB Hub"
-msgstr "USB-hub"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Mouse"
-msgstr "Muis"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Keyboard"
-msgstr "Toetsenbord"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Webcam"
-msgstr "Webcam"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Phone Number"
-msgstr "Telefoonnummer"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Phone Type"
-msgstr "Telefoon Type"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "VoIP Phone"
-msgstr "VoIP-telefoon"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Satellite Phone"
-msgstr "Satelliet telefoon"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Analog Phone"
-msgstr "Analoge telefoon"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Conference Phone"
-msgstr "Conferentietelefoon"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Cordless Phone (DECT Phone)"
-msgstr "Draadloze telefoon (DECT-telefoon)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Landline Phone"
-msgstr "Vaste telefoon"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Rack Depth"
-msgstr "Diepte rek"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "23.6 inches (600 mm)"
-msgstr "23,6 inch (600 mm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "39.4 inches (1000 mm)"
-msgstr "39,4 inch (1000 mm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "47.2 inches (1200 mm)"
-msgstr "47,2 inch (1200 mm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "35.4 inches (900 mm)"
-msgstr "35,4 inch (900 mm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "31.5 inches (800 mm)"
-msgstr "31,5 inch (800 mm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "43.3 inches (1100 mm):"
-msgstr "43,3 inch (1100 mm):"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Rack Units (U)"
-msgstr "Eenheden rek (U)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "2U: 3.5 inches (8.89 cm)"
-msgstr "2U: 3,5 inch (8,89 cm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "45U: 78.75 inches (200.02 cm)"
-msgstr "45U: 200,02 cm (78,75 inch)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "1U: 1.75 inches (4.45 cm)"
-msgstr "1U: 4,45 cm (1,75 inch)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "10U: 17.5 inches (44.45 cm)"
 msgstr "10U: 17,5 inch (44,45 cm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "39U: 68.25 inches (173.35 cm)"
-msgstr "39U: 173,35 cm (68,25 inch)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "20U: 35 inches (88.9 cm)"
-msgstr "20U: 88,9 cm (35 inch)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "4U: 7 inches (17.78 cm)"
-msgstr "4U: 7 inch (17,78 cm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "15U: 26.25 inches (66.68 cm)"
-msgstr "15U: 26,25 inch (66,68 cm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "36U: 63 inches (160.02 cm)"
-msgstr "36U: 63 inch (160,02 cm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "24U: 42 inches (106.68 cm)"
-msgstr "24U: 42 inch (106,68 cm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "7U: 12.25 inches (31.12 cm)"
-msgstr "7U: 12,25 inch (31,12 cm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "9U: 15.75 inches (40.01 cm)"
-msgstr "9U: 15,75 inch (40,01 cm)"
-
-#. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "8U: 14 inches (35.56 cm)"
-msgstr "8U: 14 inch (35,56 cm)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "12U: 21 inches (53.34 cm)"
 msgstr "12U: 53,34 cm (21 inch)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "30U: 52.5 inches (133.35 cm)"
-msgstr "30U: 52,5 inch (133,35 cm)"
+msgid "15U: 26.25 inches (66.68 cm)"
+msgstr "15U: 26,25 inch (66,68 cm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "18U: 31.5 inches (80.01 cm)"
+msgstr "18U: 31,5 inch (80,01 cm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "19-inch Rack"
+msgstr "19-inch rek"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "1U: 1.75 inches (4.45 cm)"
+msgstr "1U: 4,45 cm (1,75 inch)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "20U: 35 inches (88.9 cm)"
+msgstr "20U: 88,9 cm (35 inch)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "21-inch Rack"
+msgstr "21-inch rek"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "22U: 38.5 inches (97.79 cm)"
 msgstr "22U: 38,5 inch (97,79 cm)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "23-inch Rack"
+msgstr "23-inch rek"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "23.6 inches (600 mm)"
+msgstr "23,6 inch (600 mm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "24U: 42 inches (106.68 cm)"
+msgstr "24U: 42 inch (106,68 cm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "27U: 47.25 inches (120.02 cm)"
+msgstr "27U: 47,25 inch (120,02 cm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "2U: 3.5 inches (8.89 cm)"
+msgstr "2U: 3,5 inch (8,89 cm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "30U: 52.5 inches (133.35 cm)"
+msgstr "30U: 52,5 inch (133,35 cm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "31.5 inches (800 mm)"
+msgstr "31,5 inch (800 mm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "33U: 57.75 inches (146.68 cm)"
+msgstr "33U: 57,75 inch (146,68 cm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "35.4 inches (900 mm)"
+msgstr "35,4 inch (900 mm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "36U: 63 inches (160.02 cm)"
+msgstr "36U: 63 inch (160,02 cm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "39.4 inches (1000 mm)"
+msgstr "39,4 inch (1000 mm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "39U: 68.25 inches (173.35 cm)"
+msgstr "39U: 173,35 cm (68,25 inch)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "3U: 5.25 inches (13.34 cm)"
+msgstr "3U: 13,34 cm (5,25 inch)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "42U: 73.5 inches (186.69 cm)"
+msgstr "42U: 73,5 inch (186,69 cm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "43.3 inches (1100 mm):"
+msgstr "43,3 inch (1100 mm):"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "45U: 78.75 inches (200.02 cm)"
+msgstr "45U: 200,02 cm (78,75 inch)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "47.2 inches (1200 mm)"
+msgstr "47,2 inch (1200 mm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "48U: 84 inches (213.36 cm)"
 msgstr "48U: 213,36 cm (84 inch)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "4U: 7 inches (17.78 cm)"
+msgstr "4U: 7 inch (17,78 cm)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "5U: 8.75 inches (22.23 cm)"
@@ -2077,92 +2042,586 @@ msgid "6U: 10.5 inches (26.67 cm)"
 msgstr "6U: 10,5 inch (26,67 cm)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "42U: 73.5 inches (186.69 cm)"
-msgstr "42U: 73,5 inch (186,69 cm)"
+msgid "7U: 12.25 inches (31.12 cm)"
+msgstr "7U: 12,25 inch (31,12 cm)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "33U: 57.75 inches (146.68 cm)"
-msgstr "33U: 57,75 inch (146,68 cm)"
+msgid "8U: 14 inches (35.56 cm)"
+msgstr "8U: 14 inch (35,56 cm)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "3U: 5.25 inches (13.34 cm)"
-msgstr "3U: 13,34 cm (5,25 inch)"
+msgid "9U: 15.75 inches (40.01 cm)"
+msgstr "9U: 15,75 inch (40,01 cm)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "27U: 47.25 inches (120.02 cm)"
-msgstr "27U: 47,25 inch (120,02 cm)"
+msgid "AGPL (Affero General Public License)"
+msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "18U: 31.5 inches (80.01 cm)"
-msgstr "18U: 31,5 inch (80,01 cm)"
+msgid "Accounting"
+msgstr "Boekhouding"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "ETSI Rack"
-msgstr "ETSI-rek"
+msgid "Accounting Information"
+msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "23-inch Rack"
-msgstr "23-inch rek"
+msgid "Address Allocation"
+msgstr "Adrestoewijzing"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "21-inch Rack"
-msgstr "21-inch rek"
+msgid "Administrator"
+msgstr "Beheerder"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Custom Rack"
-msgstr "Rek op maat"
+msgid "Analog Phone"
+msgstr "Analoge telefoon"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Tower"
-msgstr "Toren"
+msgid "Apache License"
+msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Mini-Rack"
-msgstr "Mini-Rack"
+msgid "Appliance Type"
+msgstr "Type apparaat"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "19-inch Rack"
-msgstr "19-inch rek"
+msgid "BSD License (Berkeley Software Distribution License)"
+msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Hardware Weight"
-msgstr "Gewicht hardware"
+msgid "Battery Capacity (Ah)"
+msgstr "Accucapaciteit (Ah)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Room"
-msgstr "Kamer"
+msgid "Battery Type"
+msgstr "Batterijtype"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Building"
 msgstr "Gebouw"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Bus Interface"
+msgstr "Businterface"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "CC0 (Creative Commons Zero)"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "CIDR"
+msgstr "CIDR"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "CPU"
+msgstr "CPU"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "CPU Class"
+msgstr "CPU-klasse"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Capacity (GB)"
+msgstr "Capaciteit (GB)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Capacity per graphics card"
+msgstr "Capaciteit per grafische kaart"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Card Number"
+msgstr "Kaartnummer"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Card Reader"
+msgstr "Kaartlezer"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Card Type"
 msgstr "Kaarttype"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Micro SIM"
+msgid "Client Certificates"
+msgstr "Klantcertificaten"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Client Software"
+msgstr "Software voor klanten"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Client category"
+msgstr "Categorie klanten"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Clockrate"
+msgstr "Kloksnelheid"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Clockspeed"
+msgstr "Kloksnelheid"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Code Signing Certificates"
+msgstr "Code ondertekenende certificaten"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Conference Phone"
+msgstr "Conferentietelefoon"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Consulting Agreement"
+msgstr "Adviesovereenkomst"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Contact"
+msgstr "Neem contact op met"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Contact Distributor"
+msgstr "Neem contact op met distributeur"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Container Management"
+msgstr "Beheer van containers"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Contract"
+msgstr "Contract"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Contract Type"
+msgstr "Type contract"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Contract period from"
+msgstr "Contractperiode van"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Contract period until"
+msgstr "Contractperiode tot"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Cordless Phone (DECT Phone)"
+msgstr "Draadloze telefoon (DECT-telefoon)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Cost unit"
+msgstr "Kosteneenheid"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Count of licenses"
+msgstr "Aantal licenties"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Creation Date"
+msgstr "Aanmaakdatum"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Creative Commons"
 msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Standard SIM"
-msgstr "Standaard"
+msgid "Custom Rack"
+msgstr "Rek op maat"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Nano SIM"
+msgid "DHCP"
+msgstr "DHCP"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "DHCP Reserved"
+msgstr "DHCP Gereserveerd"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "DNS-Server"
+msgstr "DNS-server"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "DVI"
+msgstr "DVI"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Date of Invoice"
+msgstr "Datum factuur"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Date of Order"
+msgstr "Datum bestelling"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Date of Warranty"
+msgstr "Datum van garantie"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Date of release"
+msgstr "Datum van uitgave"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Desktop"
+msgstr "Desktop"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "DisplayPort"
+msgstr "DisplayPort"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Document Signing Certificates"
+msgstr "Certificaten voor documentondertekening"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "EPL (Eclipse Public License)"
 msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "ETSI Rack"
+msgstr "ETSI-rek"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Email Certificates (S/MIME Certificates)"
+msgstr "E-mailcertificaten (S/MIME-certificaten)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Embedded SIM (eSIM)"
 msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "PUK 2"
-msgstr "PUK 2"
+msgid "Employment Contract"
+msgstr "Arbeidsovereenkomst"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Card Number"
-msgstr "Kaartnummer"
+msgid "End IP Address"
+msgstr "IP-adres einde"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "End of support"
+msgstr "Einde ondersteuning"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Expiry Date"
+msgstr "Vervaldatum"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "External Hard Drive"
+msgstr "Externe harde schijf"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Firewall"
+msgstr "Firewall"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Firmware"
+msgstr "Firmware"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Flywheel Energy Storage"
+msgstr "Vliegwiel Energieopslag"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Form Factor"
+msgstr "Vormfactor"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Franchise Agreement"
+msgstr "Franchiseovereenkomst"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Freeware"
+msgstr "Freeware"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "GPL (General Public License)"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "General Information"
+msgstr "Algemene informatie"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Graphics Cards"
+msgstr "Grafische kaarten"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Graphics card"
+msgstr "Grafische kaart"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "HDMI"
+msgstr "HDMI"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Hardware"
+msgstr "Hardware"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Hardware Model"
+msgstr "Hardwaremodel"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Hardware Weight"
+msgstr "Gewicht hardware"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Headset"
+msgstr "Hoofdtelefoon"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "IP Protocol"
+msgstr "IP-protocol"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Identity and Access Management (IAM)"
+msgstr "Identiteits- en toegangsbeheer (IAM)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Inventory Number"
+msgstr "Inventarisnummer"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Inverstment costs"
+msgstr "Inversteringskosten"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Invoice Number"
+msgstr "Factuurnummer"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Keyboard"
+msgstr "Toetsenbord"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "LCD Monitor (Liquid Crystal Display)"
+msgstr "LCD-monitor (vloeibaar-kristalscherm)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "LED Monitor (Light Emitting Diode)"
+msgstr "LED-monitor (lichtemitterende diode)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "LGPL (Lesser General Public License)"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Landline Phone"
+msgstr "Vaste telefoon"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Laptop"
+msgstr "Laptop"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Latitude"
+msgstr "Breedte"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Layer 1: Physical Layer"
+msgstr "Laag 1: Fysieke laag"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Layer 2: Data Link Layer"
+msgstr "Laag 2: Datalinklaag"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Layer 3: Network Layer"
+msgstr "Laag 3: netwerklaag"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Layer 3: Network Layer (Supernet)"
+msgstr "Laag 3: netwerklaag (Supernet)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Layer 4: Transport Layer"
+msgstr "Laag 4: Transportlaag"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Layer 5: Session Layer"
+msgstr "Laag 5: Sessielaag"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Layer 6: Presentation Layer"
+msgstr "Laag 6: Presentatielaag"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Layer 7: Application Layer"
+msgstr "Laag 7: Toepassingslaag"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Lease Agreement"
+msgstr "Huurovereenkomst"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "License Agreement"
+msgstr "Licentieovereenkomst"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "License Count"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "License Key"
+msgstr "Licentiesleutel"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "License Type"
+msgstr "Licentie Type"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "License period from"
+msgstr "Licentieperiode van"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "License period until"
+msgstr "Licentieperiode tot"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Lithium Iron Phosphate (LiFePO4) Battery"
+msgstr "Lithium-ijzerfosfaatbatterij (LiFePO4)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Lithium-Ion (Li-ion) Battery"
+msgstr "Lithium-Ion (Li-ion) batterij"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Loan Agreement"
+msgstr "Leningsovereenkomst"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Located in"
+msgstr "Gevestigd in"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Longitude"
+msgstr "Lengte"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+#, fuzzy
+#| msgid "License Key"
+msgid "MIT License"
+msgstr "Licentiesleutel"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "MPL (Mozilla Public License)"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Manufacturer"
+msgstr "Fabrikant"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Maximum Load Capacity (W)"
+msgstr "Maximaal draagvermogen (W)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Memory"
+msgstr "Geheugen"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Memory Type"
+msgstr "Type geheugen"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Micro SIM"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Mini-Rack"
+msgstr "Mini-Rack"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Mobile Number"
+msgstr "Mobiel nummer"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Mobile/Embedded"
+msgstr "Mobiel ingebed"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Model"
+msgstr "Model"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Model Description"
+msgstr "Model Beschrijving"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Monitor Resolution"
+msgstr "Monitorresolutie"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Monitor Size"
+msgstr "Afmeting monitor"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Mouse"
+msgstr "Muis"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Nano SIM"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Network"
+msgstr "Netwerk"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Network Info"
+msgstr "Netwerk informatie"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Network Information"
+msgstr "Netwerkinformatie"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Network Layer"
+msgstr "Netwerklaag"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Nickel-Cadmium (NiCd) Battery"
+msgstr "Nikkel-cadmiumbatterij (NiCd)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Nickel-Metal Hydride (NiMH) Battery"
+msgstr "Nikkelmetaalhydride (NiMH) batterij"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Non-Disclosure Agreement (NDA)"
+msgstr "Geheimhoudingsovereenkomst (NDA)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Notebook"
+msgstr "Notebook"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Number of CPUs"
+msgstr "Aantal CPU's"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Number of RAM modules"
+msgstr "Aantal RAM-modules"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Number of graphics cards"
+msgstr "Aantal grafische kaarten"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "OLED Monitor (Organic Light Emitting Diode)"
+msgstr "OLED-monitor (organische lichtemitterende diode)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Operating costs"
+msgstr "Bedrijfskosten"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Order Number"
+msgstr "Bestelnummer"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Other"
+msgstr "Overige"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Outputs"
+msgstr "Uitgangen"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "PIN"
@@ -2177,45 +2636,205 @@ msgid "PUK"
 msgstr "PUK"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Longitude"
-msgstr "Lengte"
+msgid "PUK 2"
+msgstr "PUK 2"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Latitude"
-msgstr "Breedte"
+msgid "Partnership Agreement"
+msgstr "Partnerschapsovereenkomst"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Battery Type"
-msgstr "Batterijtype"
+msgid "Perpetual licenses"
+msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Lithium-Ion (Li-ion) Battery"
-msgstr "Lithium-Ion (Li-ion) batterij"
+msgid "Phone / VoIP"
+msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Lithium Iron Phosphate (LiFePO4) Battery"
-msgstr "Lithium-ijzerfosfaatbatterij (LiFePO4)"
+msgid "Phone Number"
+msgstr "Telefoonnummer"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Nickel-Metal Hydride (NiMH) Battery"
-msgstr "Nikkelmetaalhydride (NiMH) batterij"
+msgid "Phone Type"
+msgstr "Telefoon Type"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Physical Cores"
+msgstr "Fysieke kernen"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Power Delivery"
+msgstr "Stroomvoorziening"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Public Domain"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Purchased at"
+msgstr "Gekocht bij"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Rack Depth"
+msgstr "Diepte rek"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Rack Units (U)"
+msgstr "Eenheden rek (U)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Room"
+msgstr "Kamer"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "SIM Card"
+msgstr "SIM-kaart"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "SSL/TLS Certificates"
+msgstr "SSL/TLS-certificaten"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Sales Contract"
+msgstr "Verkoopcontract"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Satellite Phone"
+msgstr "Satelliet telefoon"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Sealed Lead-Acid (SLA) Battery"
 msgstr "Verzegelde loodzuurbatterij (SLA)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Nickel-Cadmium (NiCd) Battery"
-msgstr "Nikkel-cadmiumbatterij (NiCd)"
+msgid "Seat licenses"
+msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Flywheel Energy Storage"
-msgstr "Vliegwiel Energieopslag"
+msgid "Serialnumber"
+msgstr "Serienummer"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Battery Capacity (Ah)"
-msgstr "Accucapaciteit (Ah)"
+msgid "Server Software"
+msgstr "Server Software"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
-msgid "Maximum Load Capacity (W)"
-msgstr "Maximaal draagvermogen (W)"
+msgid "Service Agreement"
+msgstr "Serviceovereenkomst"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Service Tag"
+msgstr "Servicetag"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Shareware"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Socket Type"
+msgstr "Type stopcontact"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Software"
+msgstr "Software"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Speakers"
+msgstr "Luidsprekers"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Standard SIM"
+msgstr "Standaard"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Start IP Address"
+msgstr "Start IP-adres"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Storage"
+msgstr "Opslag"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Storage Partition"
+msgstr "Opslagpartitie"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Subscription-based licenses"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Subsidiary"
+msgstr "Dochteronderneming"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Summary"
+msgstr "Samenvatting"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Thin Client"
+msgstr "Thin Client"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Threads"
+msgstr "Draden"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Thunderbolt"
+msgstr "Thunderbolt"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Total Graphics card RAM (GB)"
+msgstr "Totaal RAM-geheugen grafische kaart (GB)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Total RAM (GB)"
+msgstr "Totaal RAM-geheugen (GB)"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Touchscreen Monitor"
+msgstr "Touchscreen monitor"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Tower"
+msgstr "Toren"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "USB Hub"
+msgstr "USB-hub"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "USB-C"
+msgstr "USB-C"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "VGA"
+msgstr "VGA"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "VPN"
+msgstr "VPN"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "VR Headset"
+msgstr "VR-koptelefoon"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Virtual Client"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "VirtualLink"
+msgstr "VirtualLink"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "VoIP Phone"
+msgstr "VoIP-telefoon"
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Volume licenses"
+msgstr ""
+
+#. Ready to adopt classes: IT-Servicemanagement-11_0_3
+msgid "Webcam"
+msgstr "Webcam"
