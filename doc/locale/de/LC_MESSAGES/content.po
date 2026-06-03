@@ -5,7 +5,20 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
-msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:17+0100\nPO-Revision-Date: 2026-03-16 21:00+0000\nLast-Translator: Weblate <noreply-mt-weblate@weblate.org>\nLanguage-Team: German <http://translate.otobo.org/projects/manual-itsmconfigurationmanagement/master/de/>\nLanguage: de\nMIME-Version: 1.0\nContent-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 5.16\nGenerated-By: Babel 2.4.0\n"
+msgstr ""
+"Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-13 18:18+0100\n"
+"PO-Revision-Date: 2026-03-16 21:00+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: German <http://translate.otobo.org/projects/manual-itsmconfigurationmanagement/master/de/>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16\n"
+"Generated-By: Babel 2.4.0\n"
 
 #: ../../content/about.rst:13
 msgid "About"
@@ -32,30 +45,19 @@ msgid "Version"
 msgstr "Version"
 
 #: ../../content/about.rst:23
-msgid ""
-"Author: |doc-vendor| / Version: |doc-version| / Date of release: |doc-"
-"datestamp|"
-msgstr ""
-"Autor: |doc-vendor| / Version: |doc-version| / Datum der Veröffentlichung: "
-"|doc-datestamp|"
+msgid "Author: |doc-vendor| / Version: |doc-version| / Date of release: |doc-datestamp|"
+msgstr "Autor: |doc-vendor| / Version: |doc-version| / Datum der Veröffentlichung: |doc-datestamp|"
 
 #: ../../content/about.rst:27
 msgid "Terms and Conditions"
 msgstr "Allgemeine Geschäftsbedingungen"
 
 #: ../../content/about.rst:29
-msgid ""
-"Permission is granted to copy, distribute and/or modify this document "
-"under the terms of the GNU Free Documentation License, Version 1.3 or any"
-" later version published by the Free Software Foundation; with no "
-"Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A copy"
-" of the license is included in the section entitled \"COPYING\"."
+msgid "Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.3 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A copy of the license is included in the section entitled \"COPYING\"."
 msgstr "Die Genehmigung zum Kopieren, Verteilen und/oder Modifizieren dieses Dokuments wird gemäß den Bedingungen der GNU Free Documentation License, Version 1.3 oder einer späteren Version, veröffentlicht von der Free Software Foundation, erteilt; ohne unveränderliche Abschnitte, ohne Texte auf der Vorderseite und ohne Texte auf der Rückseite. Eine Kopie der Lizenz ist im Abschnitt „COPYING” enthalten."
 
 #: ../../content/about.rst:35
-msgid ""
-"Published by: Rother OSS GmbH, (https://otobo.io), Oberwalting 31, 94339 "
-"Leiblfing, Germany."
+msgid "Published by: Rother OSS GmbH, (https://otobo.io), Oberwalting 31, 94339 Leiblfing, Germany."
 msgstr "Herausgeber: Rother OSS GmbH, (https://otobo.io), Oberwalting 31, 94339 Leiblfing, Deutschland."
 
 #: ../../content/configuration.rst:13
@@ -71,10 +73,7 @@ msgid "Basic Configuration"
 msgstr "Grundkonfiguration"
 
 #: ../../content/configuration/basic_configuration.rst:13
-msgid ""
-"Following the basic configuration you will learn to assign permissions to"
-" agents and customer users and how to get started with the most usual "
-"CIs."
+msgid "Following the basic configuration you will learn to assign permissions to agents and customer users and how to get started with the most usual CIs."
 msgstr "Nach der Grundkonfiguration lernen Sie, wie Sie Agenten und Kundenbenutzern Berechtigungen zuweisen und wie Sie mit den gängigsten CIs beginnen."
 
 #: ../../content/configuration/basic_configuration.rst:16
@@ -82,9 +81,7 @@ msgid "Assign Permissions"
 msgstr "Berechtigungen zuweisen"
 
 #: ../../content/configuration/basic_configuration.rst:17
-msgid ""
-"Agents/customer users who need access to CIs of the CMDB have to be "
-"assigned to the group \"itsm-configitem\"."
+msgid "Agents/customer users who need access to CIs of the CMDB have to be assigned to the group \"itsm-configitem\"."
 msgstr "Agenten/Kundenbenutzer, die Zugriff auf die CIs der CMDB benötigen, müssen der Gruppe „itsm-configitem” zugewiesen werden."
 
 #: ../../content/configuration/basic_configuration.rst:20
@@ -92,9 +89,7 @@ msgid "Starting with the most usual CIs"
 msgstr "Beginnend mit den gängigsten CIs"
 
 #: ../../content/configuration/basic_configuration.rst:21
-msgid ""
-"OTOBO provides the option to import class bundles showcasing the most "
-"usual CIs. To start with them please perform the following actions:"
+msgid "OTOBO provides the option to import class bundles showcasing the most usual CIs. To start with them please perform the following actions:"
 msgstr "OTOBO bietet die Möglichkeit, Klassen mit den gängigsten CIs zu importieren. Um damit zu beginnen, führen Sie bitte die folgenden Schritte aus:"
 
 #: ../../content/configuration/basic_configuration.rst:24
@@ -105,17 +100,15 @@ msgstr "Öffnen Sie die Admin-Ansicht Ihrer OTOBO-Weboberfläche."
 msgid "Open \"Config Items\" in the section \"CMDB settings\"."
 msgstr "Öffnen Sie „Configuration Items“ im Abschnitt „CMDB-Einstellungen“."
 
-#: ../../content/configuration/basic_configuration.rst
-msgid ""
-"Locate the \"Ready2Import Class Bundles\" panel on the left side and "
-"select the class bundle you want to import."
+#: ../../content/configuration/basic_configuration.rst:0
+msgid "Locate the \"Ready2Import Class Bundles\" panel on the left side and select the class bundle you want to import."
 msgstr "Suchen Sie das Fenster „Ready2Import-Klassenbündel“ auf der linken Seite und wählen Sie das Klassenbündel aus, das Sie importieren möchten."
 
-#: ../../content/configuration/basic_configuration.rst
+#: ../../content/configuration/basic_configuration.rst:0
 msgid ".. figure:: images/ready2import_class_bundles.png"
 msgstr ""
 
-#: ../../content/configuration/basic_configuration.rst
+#: ../../content/configuration/basic_configuration.rst:0
 #, fuzzy
 msgid ":alt: Ready2Import Class Bundles panel"
 msgstr "Ready2Import-Klassenbündel"
@@ -194,28 +187,16 @@ msgid "*ColumnWidth* - basic css defining the column widths"
 msgstr "*ColumnWidth* – grundlegendes CSS zur Definition der Spaltenbreiten"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:104
-msgid ""
-"*Interfaces* (optional) - An array containing the interfaces on which "
-"this page is available (default: [Agent])"
-msgstr ""
-"*Interfaces* (optional) - Ein Array mit den Oberflächen, auf der dieses Tab "
-"verfügbar ist (Standard: [Agent])"
+msgid "*Interfaces* (optional) - An array containing the interfaces on which this page is available (default: [Agent])"
+msgstr "*Interfaces* (optional) - Ein Array mit den Oberflächen, auf der dieses Tab verfügbar ist (Standard: [Agent])"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:105
-msgid ""
-"*Groups* (optional) - If defined, an array containing groups which a user"
-" has to be member of, to be able to view this page"
-msgstr ""
-"*Groups* (optional) - Falls definiert, ein Array, das die Gruppen enthält, "
-"in denen ein Benutzer Mitglied sein muss, um diese Seite sehen zu können"
+msgid "*Groups* (optional) - If defined, an array containing groups which a user has to be member of, to be able to view this page"
+msgstr "*Groups* (optional) - Falls definiert, ein Array, das die Gruppen enthält, in denen ein Benutzer Mitglied sein muss, um diese Seite sehen zu können"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:106
-msgid ""
-"*Content* (required) - The content, i.e. an array of sections and their "
-"position on this page"
-msgstr ""
-"*Content* (benötigt) - Der Inhalt, d. h. eine Reihe von Abschnitten und ihre "
-"Position auf dieser Seite"
+msgid "*Content* (required) - The content, i.e. an array of sections and their position on this page"
+msgstr "*Content* (benötigt) - Der Inhalt, d. h. eine Reihe von Abschnitten und ihre Position auf dieser Seite"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:108
 msgid "*Section* (required) - The section name"
@@ -231,9 +212,7 @@ msgstr "*RowSpan* (optional) – Die Anzahl der Zeilen, über die sich diese Sec
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:111
 #, fuzzy
-msgid ""
-"*ColumnStart* (optional) - The starting column in the page grid of this "
-"section"
+msgid "*ColumnStart* (optional) - The starting column in the page grid of this section"
 msgstr "*RowStart* (optional) – Die Startzeile im Grid dieser Section"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:112
@@ -242,12 +221,7 @@ msgid "*ColumnSpan* (optional) - The number of columns this section should span"
 msgstr "*RowSpan* (optional) – Die Anzahl der Zeilen, über die sich diese Section erstrecken soll"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:114
-msgid ""
-"**Sections** The *Sections* section of the yaml contains a hash of the "
-"*Sections* which can be referenced in the *Pages*. Under each of those "
-"sections the following keys are valid: * *Type* (optional) - Defines the "
-"type of the section. Depending on the type other attributes might be "
-"available or not. Currently available are:"
+msgid "**Sections** The *Sections* section of the yaml contains a hash of the *Sections* which can be referenced in the *Pages*. Under each of those sections the following keys are valid: * *Type* (optional) - Defines the type of the section. Depending on the type other attributes might be available or not. Currently available are:"
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:118
@@ -255,29 +229,19 @@ msgid "DynamicFields (default) - A standard section containing dynamic fields"
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:119
-msgid ""
-"Description - A Richtext description possibly containing images etc., "
-"which can be defined on the CI edit masks"
+msgid "Description - A Richtext description possibly containing images etc., which can be defined on the CI edit masks"
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:120
-msgid ""
-"ConfigItemLinks - Show ConfigItems linked via dynamic fields (not used "
-"for edit masks)"
+msgid "ConfigItemLinks - Show ConfigItems linked via dynamic fields (not used for edit masks)"
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:121
-msgid ""
-"ReferencedSection - Show a section of a CI referenced in a reference "
-"dynamic field (not used for edit masks)"
+msgid "ReferencedSection - Show a section of a CI referenced in a reference dynamic field (not used for edit masks)"
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:123
-msgid ""
-"**Type: DynamicFields** An additional key *Content* is mandatory here. "
-"The *Content* is essentially the same as in ticket masks. Additionally a "
-"header for the section can be provided. * *Header* (optional) - A header "
-"for this section * *DF* - A dynamic field (the name)"
+msgid "**Type: DynamicFields** An additional key *Content* is mandatory here. The *Content* is essentially the same as in ticket masks. Additionally a header for the section can be provided. * *Header* (optional) - A header for this section * *DF* - A dynamic field (the name)"
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:128
@@ -285,9 +249,7 @@ msgid "*Mandatory* (optional) - 1 if in edit masks the field should be mandatory
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:129
-msgid ""
-"*Readonly* (optional) - 1 if in edit masks the field should be readonly "
-"(only for basic field types)"
+msgid "*Readonly* (optional) - 1 if in edit masks the field should be readonly (only for basic field types)"
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:130
@@ -304,15 +266,11 @@ msgid "*Columns* - Number of columns"
 msgstr "*Columns* - Anzahl Spalten"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:135
-msgid ""
-"*ColumnWidth* (optional) - Widths of the colums (e.g. \"1fr 40px 2fr\"; "
-"\"%\" cannot be used)"
+msgid "*ColumnWidth* (optional) - Widths of the colums (e.g. \"1fr 40px 2fr\"; \"%\" cannot be used)"
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:136
-msgid ""
-"*Rows* - The dynamic field matrix (i.e. an array of arrays [[DF: DF11,DF:"
-" DF12, DF: DF13], [DF: DF21, DF: DF22, DF: DF23], ...])"
+msgid "*Rows* - The dynamic field matrix (i.e. an array of arrays [[DF: DF11,DF: DF12, DF: DF13], [DF: DF21, DF: DF22, DF: DF23], ...])"
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:140
@@ -336,9 +294,7 @@ msgid "*ColumnSpan*"
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:148
-msgid ""
-"Example for a dynamic field section (the Type is implicit, if none is "
-"given):"
+msgid "Example for a dynamic field section (the Type is implicit, if none is given):"
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:173
@@ -346,30 +302,15 @@ msgid "**Type: Description** No further settings are available."
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:176
-msgid ""
-"**Type: ConfigItemLinks** Lists linked config items. * *Header* "
-"(optional) - A header for this section * *LinkedAs* (optional) - Source "
-"(default), Target, Both * *LinkTypes* (optional) - An array containing "
-"link types"
+msgid "**Type: ConfigItemLinks** Lists linked config items. * *Header* (optional) - A header for this section * *LinkedAs* (optional) - Source (default), Target, Both * *LinkTypes* (optional) - An array containing link types"
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:182
-msgid ""
-"**Type: ReferencedSection** * *ReferenceField* (required) - The reference"
-" field of this config item, containing the referenced config item * "
-"*SectionName* (required) - The name of the section of the referenced "
-"config item which should be shown * *FieldListPre* (optional) - only "
-"valid if the referenced section is of type DynamicField (or "
-"ReferencedSection, referencing a DynamicField section): Dynamic fields of"
-" this Config Item to be rendered in front of the dynamic fields of the "
-"referenced section * *FieldListPost* (optional) - see above, but after "
-"the referenced dynamic field section"
+msgid "**Type: ReferencedSection** * *ReferenceField* (required) - The reference field of this config item, containing the referenced config item * *SectionName* (required) - The name of the section of the referenced config item which should be shown * *FieldListPre* (optional) - only valid if the referenced section is of type DynamicField (or ReferencedSection, referencing a DynamicField section): Dynamic fields of this Config Item to be rendered in front of the dynamic fields of the referenced section * *FieldListPost* (optional) - see above, but after the referenced dynamic field section"
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:188
-msgid ""
-"**Type: Module** This is not yet implemented * *Module* (required) - A "
-"custom module returning custom HTML to be rendered in this section"
+msgid "**Type: Module** This is not yet implemented * *Module* (required) - A custom module returning custom HTML to be rendered in this section"
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:193
@@ -381,17 +322,11 @@ msgid "Dynamic Fields specifics"
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:198
-msgid ""
-"Fields for CI classes are defined as Dynamic Fields with a new Object "
-"Type ITSM ConfigItem. To use fields, you have to define them as a Dynamic"
-" Fields for the CI Object Type and then name them in your CI Class "
-"Definition."
+msgid "Fields for CI classes are defined as Dynamic Fields with a new Object Type ITSM ConfigItem. To use fields, you have to define them as a Dynamic Fields for the CI Object Type and then name them in your CI Class Definition."
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:200
-msgid ""
-"The following Dynamic Fields might be specifically interesting for your "
-"CMDB. * Reference"
+msgid "The following Dynamic Fields might be specifically interesting for your CMDB. * Reference"
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:203
@@ -404,9 +339,7 @@ msgid "With this field you can refer to an Agent in OTOBO."
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:206
-msgid ""
-"This might be valuable to define the responsible of a ConfigItem, e.g. "
-"the IT Administrator who is also an Agent."
+msgid "This might be valuable to define the responsible of a ConfigItem, e.g. the IT Administrator who is also an Agent."
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:208
@@ -425,9 +358,7 @@ msgid "This might be valuable to link multiple ConfigItems together."
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:212
-msgid ""
-"This might be valuable to define a hirarchy structure, e.g. Country <-> "
-"Subsidiary <-> Building <-> Room>"
+msgid "This might be valuable to define a hirarchy structure, e.g. Country <-> Subsidiary <-> Building <-> Room>"
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:214
@@ -436,9 +367,7 @@ msgid "ConfigItemVersion"
 msgstr "ConfigItem Version"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:216
-msgid ""
-"With this field you can refer to a specific Version of another ConfigItem"
-" in OTOBO."
+msgid "With this field you can refer to a specific Version of another ConfigItem in OTOBO."
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:218
@@ -451,15 +380,11 @@ msgid "With this field you can refer to another Customer in OTOBO."
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:221
-msgid ""
-"This might be valuable to define the Company or Department as connected "
-"to the ConfigItem."
+msgid "This might be valuable to define the Company or Department as connected to the ConfigItem."
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:222
-msgid ""
-"With this, you are able to see the ConfigItem in the Widget of the "
-"Customer Information Center."
+msgid "With this, you are able to see the ConfigItem in the Widget of the Customer Information Center."
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:224
@@ -472,15 +397,11 @@ msgid "With this field you can refer to another Customer User in OTOBO."
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:227
-msgid ""
-"This might be valuable to define the owner of a ConfigItem, e.g. if it is"
-" an internal Customer User (employee)."
+msgid "This might be valuable to define the owner of a ConfigItem, e.g. if it is an internal Customer User (employee)."
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:228
-msgid ""
-"With this, you are able to see the ConfigItem in the Widget of the "
-"Customer User Information Center."
+msgid "With this, you are able to see the ConfigItem in the Widget of the Customer User Information Center."
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:230
@@ -489,17 +410,11 @@ msgid "Dynamic Field Lens"
 msgstr "Dynamische Feld-Label"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:232
-msgid ""
-"The idea of this field is to have a referrenced object from which you "
-"want to see (like through the lens of a periscope?) specific values."
+msgid "The idea of this field is to have a referrenced object from which you want to see (like through the lens of a periscope?) specific values."
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:233
-msgid ""
-"In case you have a reference to a Configuration Item (via a DF Reference "
-"ConfigItem), you can look at or change values from that referenced Config"
-" Item via the Lens field. It might make sense to use the Readonly "
-"functionality to not be able to change those values."
+msgid "In case you have a reference to a Configuration Item (via a DF Reference ConfigItem), you can look at or change values from that referenced Config Item via the Lens field. It might make sense to use the Readonly functionality to not be able to change those values."
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:234
@@ -507,16 +422,11 @@ msgid "It is necessary to have referenced object."
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:235
-msgid ""
-"The referenced DF: This setting is to define, in which Dynamic Field the "
-"referred object is mentioned. This is the Config Item, of which I want to"
-" display the value."
+msgid "The referenced DF: This setting is to define, in which Dynamic Field the referred object is mentioned. This is the Config Item, of which I want to display the value."
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:236
-msgid ""
-"attribute DF of the referenced object: This is the (Dynamic) Field in "
-"this refered object, from which I want to see the value."
+msgid "attribute DF of the referenced object: This is the (Dynamic) Field in this refered object, from which I want to see the value."
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:237
@@ -524,9 +434,7 @@ msgid "I can make this field read only by using the \"Readonly: 1\""
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:238
-msgid ""
-"For example, you could refer to a Server ConfigItem and have a look at "
-"the IP Address and the Server Owner via the Lens fields."
+msgid "For example, you could refer to a Server ConfigItem and have a look at the IP Address and the Server Owner via the Lens fields."
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:240
@@ -539,29 +447,19 @@ msgid "The idea is to have a Dropdown field."
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:243
-msgid ""
-"You define the values for the General Catalog field in Admin > General "
-"Catalog."
+msgid "You define the values for the General Catalog field in Admin > General Catalog."
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:244
-msgid ""
-"As a differentiation to a Dynamic Field of type \"Dropdown\" is, that you"
-" don't define the values per Dynamic Field, but per General Catalog."
+msgid "As a differentiation to a Dynamic Field of type \"Dropdown\" is, that you don't define the values per Dynamic Field, but per General Catalog."
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:245
-msgid ""
-"So you can use multiple General Catalog Dynamic Fields which all take the"
-" same Catalog as a value base."
+msgid "So you can use multiple General Catalog Dynamic Fields which all take the same Catalog as a value base."
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:246
-msgid ""
-"For example, you could have a two fields with the same Dropdown values, "
-"but with a different Name/Label of the Dynamic Field. E.g. a field named "
-"\"INSERT EXAMPLE HERE\" and another field named \"INSERT EXAMPLE HERE\" "
-"in different CI Classes, both with the same values."
+msgid "For example, you could have a two fields with the same Dropdown values, but with a different Name/Label of the Dynamic Field. E.g. a field named \"INSERT EXAMPLE HERE\" and another field named \"INSERT EXAMPLE HERE\" in different CI Classes, both with the same values."
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:249
@@ -584,9 +482,7 @@ msgid "CSV"
 msgstr "CSV"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:256
-msgid ""
-"Automization possible via CronJob & bin/otobo.Console.pl "
-"Admin::ITSM::ImportExport::Import"
+msgid "Automization possible via CronJob & bin/otobo.Console.pl Admin::ITSM::ImportExport::Import"
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:257
@@ -599,22 +495,7 @@ msgid "Console Commands"
 msgstr "Kommandozeilenbefehl"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:261
-msgid ""
-"bin/otobo.Console.pl * Admin::ITSM::ConfigItem::ClassExport     - Export "
-"dynamic field classes and their respective dynamic fields. * "
-"Admin::ITSM::ConfigItem::ClassImport     - Import dynamic field classes "
-"and their respective dynamic fields. * Admin::ITSM::ConfigItem::Delete"
-"          - Delete config items (all, by class (and deployment state) or "
-"by number). * Admin::ITSM::ConfigItem::DumpGraph       - Dump the graph "
-"of config items as SVG to the file OTOBO_ITSM_Config_Items.svg. * "
-"Admin::ITSM::ConfigItem::ListDuplicates  - List ConfigItems which have a "
-"non-unique name. * Admin::ITSM::ConfigItem::UpgradeTo11     - Upgrade the"
-" complete CMDB from OTOBO 10 to OTOBO 11. All config item definitions "
-"will be changed, for each config item attribute a dynamic field will be "
-"prepared and the data will be migrated. * "
-"Maint::ITSM::ConfigItem::RebuildLinkTable - Rebuild the database table "
-"configitem_link from the dynamic fields of the type Reference. Only the "
-"fields linking config items are"
+msgid "bin/otobo.Console.pl * Admin::ITSM::ConfigItem::ClassExport     - Export dynamic field classes and their respective dynamic fields. * Admin::ITSM::ConfigItem::ClassImport     - Import dynamic field classes and their respective dynamic fields. * Admin::ITSM::ConfigItem::Delete          - Delete config items (all, by class (and deployment state) or by number). * Admin::ITSM::ConfigItem::DumpGraph       - Dump the graph of config items as SVG to the file OTOBO_ITSM_Config_Items.svg. * Admin::ITSM::ConfigItem::ListDuplicates  - List ConfigItems which have a non-unique name. * Admin::ITSM::ConfigItem::UpgradeTo11     - Upgrade the complete CMDB from OTOBO 10 to OTOBO 11. All config item definitions will be changed, for each config item attribute a dynamic field will be prepared and the data will be migrated. * Maint::ITSM::ConfigItem::RebuildLinkTable - Rebuild the database table configitem_link from the dynamic fields of the type Reference. Only the fields linking config items are"
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:271
@@ -660,11 +541,7 @@ msgid "Migration from OTOBO 10 / OTRS"
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:288
-msgid ""
-"bin/otobo.Console.pl Admin::ITSM::ConfigItem::UpgradeTo11     - Upgrade "
-"the complete CMDB from OTOBO 10 to OTOBO 11. All config item definitions "
-"will be changed, for each config item attribute a dynamic field will be "
-"prepared and the data will be migrated."
+msgid "bin/otobo.Console.pl Admin::ITSM::ConfigItem::UpgradeTo11     - Upgrade the complete CMDB from OTOBO 10 to OTOBO 11. All config item definitions will be changed, for each config item attribute a dynamic field will be prepared and the data will be migrated."
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:293
@@ -684,9 +561,7 @@ msgid "Custom Configuration: Web Services"
 msgstr ""
 
 #: ../../content/configuration/generic_interface/index.rst:13
-msgid ""
-"This page holds examples for Web Service invoker and operations included "
-"in the ITSMConfigurationManagement package."
+msgid "This page holds examples for Web Service invoker and operations included in the ITSMConfigurationManagement package."
 msgstr ""
 
 #: ../../content/configuration/generic_interface/index.rst:16
@@ -740,9 +615,7 @@ msgid "ConfigItemFetch"
 msgstr "ConfigItem"
 
 #: ../../content/configuration/generic_interface/index.rst:155
-msgid ""
-"Fetch data from remote endpoint and add or update one or more config "
-"items based on that data."
+msgid "Fetch data from remote endpoint and add or update one or more config items based on that data."
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:15
@@ -755,9 +628,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:19
 #, fuzzy
-msgid ""
-"Enables configuration item bulk action feature for the agent frontend to "
-"work on more than one configuration item at a time."
+msgid "Enables configuration item bulk action feature for the agent frontend to work on more than one configuration item at a time."
 msgstr "Aktiviert die Funktion \"Sammelaktion\" für das Agenten-Frontend, um zur gleichen Zeit an mehreren Configuration Items arbeiten zu können."
 
 #: ../../content/configuration/system_configuration_settings.rst:22
@@ -813,10 +684,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:48
 #, fuzzy
-msgid ""
-"ConfigItems of the following classes will not be stored on the "
-"Elasticsearch server. To apply this to existing CIs, the CI migration has"
-" to be run via console, after changing this option."
+msgid "ConfigItems of the following classes will not be stored on the Elasticsearch server. To apply this to existing CIs, the CI migration has to be run via console, after changing this option."
 msgstr "ConfigItems der folgenden Klassen werden nicht auf dem Elasticsearch-Server gespeichert. Um dies auf bestehende CIs anzuwenden, muss die CI-Migration über die Konsole ausgeführt werden, nachdem diese Option geändert wurde."
 
 #: ../../content/configuration/system_configuration_settings.rst:51
@@ -825,10 +693,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:52
 #, fuzzy
-msgid ""
-"ConfigItems with the following deployment states will not be stored on "
-"the Elasticsearch server. To apply this to existing CIs, the CI migration"
-" has to be run via console, after changing this option."
+msgid "ConfigItems with the following deployment states will not be stored on the Elasticsearch server. To apply this to existing CIs, the CI migration has to be run via console, after changing this option."
 msgstr "ConfigItems mit den folgenden Bereitstellungszuständen werden nicht auf dem Elasticsearch-Server gespeichert. Um dies auf bestehende CIs anzuwenden, muss die CI-Migration über die Konsole ausgeführt werden, nachdem diese Option geändert wurde."
 
 #: ../../content/configuration/system_configuration_settings.rst:55
@@ -837,10 +702,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:56
 #, fuzzy
-msgid ""
-"Fields stored in the configuration item index which are used for other "
-"things besides fulltext searches. For the complete functionality all "
-"fields are mandatory."
+msgid "Fields stored in the configuration item index which are used for other things besides fulltext searches. For the complete functionality all fields are mandatory."
 msgstr "Im Index der Konfigurationselemente gespeicherte Felder, die neben der Volltextsuche auch für andere Zwecke verwendet werden. Für die vollständige Funktionalität sind alle Felder obligatorisch."
 
 #: ../../content/configuration/system_configuration_settings.rst:59
@@ -849,11 +711,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:60
 #, fuzzy
-msgid ""
-"Fields of the configuration item index, used for the fulltext search. "
-"Fields are also stored, but are not mandatory for the overall "
-"functionality. Inclusion of attachments can be disabled by setting the "
-"entry to 0 or deleting it."
+msgid "Fields of the configuration item index, used for the fulltext search. Fields are also stored, but are not mandatory for the overall functionality. Inclusion of attachments can be disabled by setting the entry to 0 or deleting it."
 msgstr "Felder des Konfigurationselementindex, die für die Volltextsuche verwendet werden. Felder werden ebenfalls gespeichert, sind aber für die Gesamtfunktionalität nicht zwingend erforderlich. Die Aufnahme von Anhängen kann deaktiviert werden, indem der Eintrag auf 0 gesetzt oder gelöscht wird."
 
 #: ../../content/configuration/system_configuration_settings.rst:63
@@ -862,9 +720,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:64
 #, fuzzy
-msgid ""
-"Objects to search for, how many entries and which attributs to show. "
-"ConfigItem attributes have to explicitly be stored via Elasticsearch."
+msgid "Objects to search for, how many entries and which attributs to show. ConfigItem attributes have to explicitly be stored via Elasticsearch."
 msgstr "Objekte, nach denen gesucht werden soll, wie viele Einträge und welche Attribute angezeigt werden sollen. ConfigItem-Attribute müssen explizit über Elasticsearch gespeichert werden."
 
 #: ../../content/configuration/system_configuration_settings.rst:67
@@ -877,9 +733,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:71
 #, fuzzy
-msgid ""
-"Config item event module that enables logging to history in the agent "
-"interface."
+msgid "Config item event module that enables logging to history in the agent interface."
 msgstr "Configuration Item-Event-Modul, das die Protokollierung der Historie im Agenten-Interface ermöglicht."
 
 #: ../../content/configuration/system_configuration_settings.rst:74
@@ -888,9 +742,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:75
 #, fuzzy
-msgid ""
-"Config item event module that updates config items to their current "
-"definition."
+msgid "Config item event module that updates config items to their current definition."
 msgstr "Config-Element-Ereignismodul, das Config-Elemente auf ihre aktuelle Definition aktualisiert."
 
 #: ../../content/configuration/system_configuration_settings.rst:78
@@ -926,9 +778,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:91
 #, fuzzy
-msgid ""
-"Dynamic field event module that marks config item definitions as out of "
-"sync, if containing dynamic fields change."
+msgid "Dynamic field event module that marks config item definitions as out of sync, if containing dynamic fields change."
 msgstr "Dynamisches Feld-Ereignismodul, das Konfigurationsdefinitionen als nicht mehr synchron markiert, wenn sich die darin enthaltenen dynamischen Felder ändern."
 
 #: ../../content/configuration/system_configuration_settings.rst:94
@@ -937,9 +787,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:95
 #, fuzzy
-msgid ""
-"Performs the configured action for each event (as an Invoker) for each "
-"configured Webservice."
+msgid "Performs the configured action for each event (as an Invoker) for each configured Webservice."
 msgstr "Führt die konfigurierte Aktion für jedes Ereignis für jeden konfigurierten Webservice aus (als Invoker)."
 
 #: ../../content/configuration/system_configuration_settings.rst:98
@@ -972,9 +820,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:113
 #, fuzzy
-msgid ""
-"Parameters for the deployment states in the preferences view of the agent"
-" interface."
+msgid "Parameters for the deployment states in the preferences view of the agent interface."
 msgstr "Parameter für Verwendungsstatus in den persönlichen Einstellungen im Agenten-Interface."
 
 #: ../../content/configuration/system_configuration_settings.rst:116
@@ -983,9 +829,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:117
 #, fuzzy
-msgid ""
-"Parameters for the deployment states color in the preferences view of the"
-" agent interface."
+msgid "Parameters for the deployment states color in the preferences view of the agent interface."
 msgstr "Definition von Farben für Verwendungsstatus in den persönlichen Einstellungen im Agenten-Interface."
 
 #: ../../content/configuration/system_configuration_settings.rst:120
@@ -994,9 +838,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:121
 #, fuzzy
-msgid ""
-"Parameters for the name module for config item classes in the preferences"
-" view of the agent interface."
+msgid "Parameters for the name module for config item classes in the preferences view of the agent interface."
 msgstr "Parameter für das Namensmodul für Konfigurationsobjektklassen in der Einstellungsansicht der Agentenschnittstelle."
 
 #: ../../content/configuration/system_configuration_settings.rst:124
@@ -1005,9 +847,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:125
 #, fuzzy
-msgid ""
-"Parameters for the number module for config item classes in the "
-"preferences view of the agent interface."
+msgid "Parameters for the number module for config item classes in the preferences view of the agent interface."
 msgstr "Parameter für das Nummernmodul für Konfigurationsobjektklassen in der Einstellungsansicht der Agentenschnittstelle."
 
 #: ../../content/configuration/system_configuration_settings.rst:128
@@ -1016,9 +856,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:129
 #, fuzzy
-msgid ""
-"Parameters for the version string module for config item classes in the "
-"preferences view of the agent interface."
+msgid "Parameters for the version string module for config item classes in the preferences view of the agent interface."
 msgstr "Parameter für das Versionsstringmodul für Konfigurationsobjektklassen in der Einstellungsansicht der Agentenschnittstelle."
 
 #: ../../content/configuration/system_configuration_settings.rst:132
@@ -1027,9 +865,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:133
 #, fuzzy
-msgid ""
-"Parameters for the version string template toolkit module for config item"
-" classes in the preferences view of the agent interface."
+msgid "Parameters for the version string template toolkit module for config item classes in the preferences view of the agent interface."
 msgstr "Parameter für das Versionstring-Template-Toolkit-Modul für Config-Item-Klassen in der Einstellungsansicht der Agentenschnittstelle."
 
 #: ../../content/configuration/system_configuration_settings.rst:136
@@ -1038,9 +874,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:137
 #, fuzzy
-msgid ""
-"Parameters for the version trigger for config item classes in the "
-"preferences view of the agent interface."
+msgid "Parameters for the version trigger for config item classes in the preferences view of the agent interface."
 msgstr "Parameter für den Versions-Trigger für Config-Item-Klassen in der Einstellungsansicht der Agentenschnittstelle."
 
 #: ../../content/configuration/system_configuration_settings.rst:140
@@ -1049,9 +883,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:141
 #, fuzzy
-msgid ""
-"Parameters for the categories for config item classes in the preferences "
-"view of the agent interface."
+msgid "Parameters for the categories for config item classes in the preferences view of the agent interface."
 msgstr "Parameter für die Kategorien für Konfigurationsobjektklassen in der Einstellungsansicht der Agentenschnittstelle."
 
 #: ../../content/configuration/system_configuration_settings.rst:144
@@ -1060,9 +892,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:145
 #, fuzzy
-msgid ""
-"Parameters for the example permission groups of the general catalog "
-"attributes."
+msgid "Parameters for the example permission groups of the general catalog attributes."
 msgstr "Parameter für die zugriffsberechtigten Beispielgruppen der General Catalog-Attribute."
 
 #: ../../content/configuration/system_configuration_settings.rst:148
@@ -1076,9 +906,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:152
 #, fuzzy
-msgid ""
-"Defines regular expressions individually for each ConfigItem class to "
-"check the ConfigItem name and to show corresponding error messages."
+msgid "Defines regular expressions individually for each ConfigItem class to check the ConfigItem name and to show corresponding error messages."
 msgstr "Definiert reguläre Ausdrücke individuell für jedes Configuration Item, um den Namen des Configuration Item zu überprüfen und entsprechende Fehlermeldungen anzuzeigen."
 
 #: ../../content/configuration/system_configuration_settings.rst:155
@@ -1106,9 +934,7 @@ msgstr "ITSM ConfigElement"
 
 #: ../../content/configuration/system_configuration_settings.rst:164
 #, fuzzy
-msgid ""
-"The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#."
-" The default is ConfigItem#."
+msgid "The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. The default is ConfigItem#."
 msgstr "Der Identifikator für ein Configuration Item, bspw. \"ConfigItem#\" , \"MeinConfigItem#\". Der Standard ist \"ConfigItem#\"."
 
 #: ../../content/configuration/system_configuration_settings.rst:167
@@ -1117,11 +943,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:168
 #, fuzzy
-msgid ""
-"Enables/disables the functionality to check ITSM onfiguration items for "
-"unique names. Before enabling this option you should check your system "
-"for already existing config items with duplicate names. You can do this "
-"with the console command Admin::ITSM::ConfigItem::ListDuplicates."
+msgid "Enables/disables the functionality to check ITSM onfiguration items for unique names. Before enabling this option you should check your system for already existing config items with duplicate names. You can do this with the console command Admin::ITSM::ConfigItem::ListDuplicates."
 msgstr "Aktiviert/deaktiviert die Funktion, ITSM-Konfigurationselemente auf eindeutige Namen zu prüfen. Bevor Sie diese Option aktivieren, sollten Sie Ihr System auf bereits vorhandene Konfigurationselemente mit doppelten Namen überprüfen. Sie können dies mit dem Konsolenbefehl Admin::ITSM::ConfigItem::ListDuplicates tun."
 
 #: ../../content/configuration/system_configuration_settings.rst:171
@@ -1130,10 +952,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:172
 #, fuzzy
-msgid ""
-"Check for a unique name only within the same ConfigItem class ('class') "
-"or globally ('global'), which means every existing ConfigItem is taken "
-"into account when looking for duplicates."
+msgid "Check for a unique name only within the same ConfigItem class ('class') or globally ('global'), which means every existing ConfigItem is taken into account when looking for duplicates."
 msgstr "Prüft Namen auf Eindeutigkeit innerhalb der selben Configuration Item-Klasse oder global, d.h. es werden alle Configuration Items jeglicher Configuration Item-Klasse bei der Prüfung auf einen eindeutigen Namen berücksichtigt."
 
 #: ../../content/configuration/system_configuration_settings.rst:175
@@ -1146,11 +965,7 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:188
 #: ../../content/configuration/system_configuration_settings.rst:192
 #, fuzzy
-msgid ""
-"Define a set of conditions under which a customer is allowed to see a "
-"config item. Conditions can optionally be restricted to certain customer "
-"groups. Name is the only mandatory attribute. If no other options are "
-"given, all config items will be visible under that category."
+msgid "Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category."
 msgstr "Definieren Sie eine Reihe von Bedingungen, unter denen ein Kunde ein Konfigurationsobjekt sehen darf. Die Bedingungen können optional auf bestimmte Kundengruppen beschränkt werden. Der Name ist das einzige obligatorische Attribut. Wenn keine anderen Optionen angegeben werden, sind alle Konfigurationsobjekte unter dieser Kategorie sichtbar."
 
 #: ../../content/configuration/system_configuration_settings.rst:179
@@ -1222,9 +1037,7 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:231
 #: ../../content/configuration/system_configuration_settings.rst:235
 #, fuzzy
-msgid ""
-"Defines which items are available in first level of the ITSM Config Item "
-"ACL structure."
+msgid "Defines which items are available in first level of the ITSM Config Item ACL structure."
 msgstr "Legt fest, welche Elemente in der ersten Ebene der ITSM Config Item ACL-Struktur verfügbar sind."
 
 #: ../../content/configuration/system_configuration_settings.rst:234
@@ -1241,9 +1054,7 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:251
 #: ../../content/configuration/system_configuration_settings.rst:255
 #, fuzzy
-msgid ""
-"Defines which items are available in second level of the ITSM Config Item"
-" ACL structure."
+msgid "Defines which items are available in second level of the ITSM Config Item ACL structure."
 msgstr "Legt fest, welche Elemente in der zweiten Ebene der ITSM Config Item ACL-Struktur verfügbar sind."
 
 #: ../../content/configuration/system_configuration_settings.rst:242
@@ -1268,9 +1079,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:259
 #, fuzzy
-msgid ""
-"Defines which items are available for 'Action' in third level of the ITSM"
-" Config Item ACL structure."
+msgid "Defines which items are available for 'Action' in third level of the ITSM Config Item ACL structure."
 msgstr "Legt fest, welche Elemente in der dritten Ebene der ITSM Config Item ACL-Struktur für \"Action\" verfügbar sind."
 
 #: ../../content/configuration/system_configuration_settings.rst:262
@@ -1279,11 +1088,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:263
 #, fuzzy
-msgid ""
-"Whether the execution of ConfigItemACL can be avoided by checking cached "
-"field dependencies. This can improve loading times of formulars, but has "
-"to be disabled, if ACLModules are to be used for ITSMConfigItem- and "
-"Form-ReturnTypes."
+msgid "Whether the execution of ConfigItemACL can be avoided by checking cached field dependencies. This can improve loading times of formulars, but has to be disabled, if ACLModules are to be used for ITSMConfigItem- and Form-ReturnTypes."
 msgstr "Ob die Ausführung von ConfigItemACL durch Überprüfung von zwischengespeicherten Feldabhängigkeiten vermieden werden kann. Dies kann die Ladezeiten von Formularen verbessern, muss aber deaktiviert werden, wenn ACLModule für ITSMConfigItem- und Form-ReturnTypes verwendet werden sollen."
 
 #: ../../content/configuration/system_configuration_settings.rst:266
@@ -1292,9 +1097,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:267
 #, fuzzy
-msgid ""
-"Whether fields should be automatically filled (1), and in that case also "
-"be hidden from ticket formulars (2)."
+msgid "Whether fields should be automatically filled (1), and in that case also be hidden from ticket formulars (2)."
 msgstr "Definiert, ob Felder automatisch befüllt (1), und ob automatisch befüllte Felder in den Ticketformularen ausgeblendet werden sollen (2)."
 
 #: ../../content/configuration/system_configuration_settings.rst:270
@@ -1331,9 +1134,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:285
 #, fuzzy
-msgid ""
-"Defines the shown columns of CIs in the link table complex view for all "
-"CI classes. If there is no entry, then the default columns are shown."
+msgid "Defines the shown columns of CIs in the link table complex view for all CI classes. If there is no entry, then the default columns are shown."
 msgstr "Definiert die angezeigten Spalten in der Komplexansicht der Verknüpfungstabelle für alle Configuration Item-Klassen. Wenn es keinen Eintrag gibt, werden die Standardspalten angezeigt."
 
 #: ../../content/configuration/system_configuration_settings.rst:288
@@ -1342,17 +1143,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:289
 #, fuzzy
-msgid ""
-"Defines the shown columns of CIs in the link table complex view, "
-"depending on the CI class. Each entry must be prefixed with the class "
-"name and double colons (i.e. Computer::). There are a few CI-Attributes "
-"that common to all CIs (example for the class Computer: Computer::Name, "
-"Computer::CurDeplState, Computer::CreateTime). To show individual CI-"
-"Attributes as defined in the CI-Definition, the following scheme must be "
-"used (example for the class Computer): Computer::HardDisk::1, "
-"Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, "
-"Computer::HardDisk::2::Capacity::1. If there is no entry for a CI class, "
-"then the default columns are shown."
+msgid "Defines the shown columns of CIs in the link table complex view, depending on the CI class. Each entry must be prefixed with the class name and double colons (i.e. Computer::). There are a few CI-Attributes that common to all CIs (example for the class Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). To show individual CI-Attributes as defined in the CI-Definition, the following scheme must be used (example for the class Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If there is no entry for a CI class, then the default columns are shown."
 msgstr "Definiert die angezeigten Spalten von Configuration Items in der Komplexansicht der Verknüpfungstabelle abhängig von der Configuration Item-Klasse. Definiert die angezeigten Spalten von Configuration Items in der Configuration Item-Übersicht in Abhängigkeit von der Configuration Item-Klasse. Jedem Eintrag müssen der Klassenname und Doppelpunkte vorangestellt werden (z.B. Computer:::). Es gibt einige Configuration Item-Attribute, die allen Configuration Items gemeinsam sind (Beispiel für die Klasse Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). Um einzelne Configuration Item-Attribute, wie sie in der Configuration Item-Definition definiert sind, darzustellen, muss das folgende Schema verwendet werden (Beispiel für die Klasse Computer): Computer::HardDisk::1, Computer::HardDisk::1::Kapazität::1, Computer::HardDisk::2, Computer::HardDisk::2::Kapazität::1. Wenn es keinen Eintrag für eine Configuration Item-Klasse gibt, werden die Standardspalten angezeigt."
 
 #: ../../content/configuration/system_configuration_settings.rst:292
@@ -1365,9 +1156,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:296
 #, fuzzy
-msgid ""
-"Set the incident state of a CI automatically when a Ticket is Linked to a"
-" CI."
+msgid "Set the incident state of a CI automatically when a Ticket is Linked to a CI."
 msgstr "Settzt den Vorfallstatus eines Configuration Items automatisch, wenn ein Ticket mit einem Configuration Item verknüpft wird."
 
 #: ../../content/configuration/system_configuration_settings.rst:299
@@ -1385,9 +1174,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:304
 #, fuzzy
-msgid ""
-"Defines the relevant deployment states where linked tickets can affect "
-"the status of a CI."
+msgid "Defines the relevant deployment states where linked tickets can affect the status of a CI."
 msgstr "Definiert relevante Verwendungsstatus, in denen verknüpfte Tickets den Status eines Configuration Items beeinflussen."
 
 #: ../../content/configuration/system_configuration_settings.rst:307
@@ -1396,9 +1183,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:308
 #, fuzzy
-msgid ""
-"Defines the order of incident states from high (e.g. cricital) to low "
-"(e.g. functional)."
+msgid "Defines the order of incident states from high (e.g. cricital) to low (e.g. functional)."
 msgstr "Definiert die Reihenfolge der Vorfallstatus von hoch (bspw. kritisch) nach niedrig (bspw. funktional)."
 
 #: ../../content/configuration/system_configuration_settings.rst:311
@@ -1407,9 +1192,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:312
 #, fuzzy
-msgid ""
-"Defines which type of link (named from the ticket perspective) can affect"
-" the status of a linked CI."
+msgid "Defines which type of link (named from the ticket perspective) can affect the status of a linked CI."
 msgstr "Legt fest, welche Art von Link (aus der Ticketperspektive benannt) den Status eines verlinkten CI beeinflussen kann."
 
 #: ../../content/configuration/system_configuration_settings.rst:315
@@ -1564,9 +1347,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:384
 #, fuzzy
-msgid ""
-"Defines the number of rows for the CI definition editor in the admin "
-"interface."
+msgid "Defines the number of rows for the CI definition editor in the admin interface."
 msgstr "Definiert die Anzahl der Zeilen für den Editor der Configuration Item-Definition im Administrator-Interface."
 
 #: ../../content/configuration/system_configuration_settings.rst:387
@@ -1579,9 +1360,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:391
 #, fuzzy
-msgid ""
-"Shows a link in the menu to go back in the configuration item zoom view "
-"of the agent interface."
+msgid "Shows a link in the menu to go back in the configuration item zoom view of the agent interface."
 msgstr "Zeigt im Menü der Detailansicht eines Configuration Item eine Verknüpfung zum Zurückgehen auf die vorherige Ansicht."
 
 #: ../../content/configuration/system_configuration_settings.rst:394
@@ -1590,9 +1369,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:395
 #, fuzzy
-msgid ""
-"Shows a link in the menu to access the history of a configuration item in"
-" the its zoom view of the agent interface."
+msgid "Shows a link in the menu to access the history of a configuration item in the its zoom view of the agent interface."
 msgstr "Zeigt im Menü der Configuration Item-Detailansicht die Verknüpfung zur Historie eines Configuration Items."
 
 #: ../../content/configuration/system_configuration_settings.rst:398
@@ -1601,9 +1378,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:399
 #, fuzzy
-msgid ""
-"Shows a link in the menu to edit a configuration item in the its zoom "
-"view of the agent interface."
+msgid "Shows a link in the menu to edit a configuration item in the its zoom view of the agent interface."
 msgstr "Zeigt im Menü der Detailansicht eines Configuration Items die Verknüpfung zum Bearbeiten eines Configuration Items."
 
 #: ../../content/configuration/system_configuration_settings.rst:402
@@ -1612,9 +1387,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:403
 #, fuzzy
-msgid ""
-"Shows a link in the menu to print a configuration item in the its zoom "
-"view of the agent interface."
+msgid "Shows a link in the menu to print a configuration item in the its zoom view of the agent interface."
 msgstr "Zeigt im Menü der Detailansicht eines Configuration Items die Verknüpfung zum Drucken eines Configuration Items."
 
 #: ../../content/configuration/system_configuration_settings.rst:406
@@ -1623,9 +1396,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:407
 #, fuzzy
-msgid ""
-"Shows a link in the menu that allows linking a configuration item with "
-"another object in the config item zoom view of the agent interface."
+msgid "Shows a link in the menu that allows linking a configuration item with another object in the config item zoom view of the agent interface."
 msgstr "Zeigt eine Verknüpfung im Menü, die es erlaubt ein Configuration Item mit einem anderen Objekt in der Detailansicht des Configuration Items des Agenten-Interface zu verknüpfen."
 
 #: ../../content/configuration/system_configuration_settings.rst:410
@@ -1634,9 +1405,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:411
 #, fuzzy
-msgid ""
-"Shows a link in the menu to display the configuration item links as a "
-"Tree View."
+msgid "Shows a link in the menu to display the configuration item links as a Tree View."
 msgstr "Zeigt einen Link im Menü an, um die Links zu den Konfigurationselementen in einer Baumansicht anzuzeigen."
 
 #: ../../content/configuration/system_configuration_settings.rst:414
@@ -1645,9 +1414,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:415
 #, fuzzy
-msgid ""
-"Shows a link in the menu to duplicate a configuration item in the its "
-"zoom view of the agent interface."
+msgid "Shows a link in the menu to duplicate a configuration item in the its zoom view of the agent interface."
 msgstr "Zeigt im Menü der Detailansicht eines Configuration Items die Verknüpfung zum Duplizieren eines Configuration Items."
 
 #: ../../content/configuration/system_configuration_settings.rst:418
@@ -1656,9 +1423,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:419
 #, fuzzy
-msgid ""
-"Shows a link in the menu to delete a configuration item in its zoom view "
-"of the agent interface."
+msgid "Shows a link in the menu to delete a configuration item in its zoom view of the agent interface."
 msgstr "Zeigt im Menü der Detailansicht eines Configuration Items die Verknüpfung zum Löschen eines Configuration Items."
 
 #: ../../content/configuration/system_configuration_settings.rst:422
@@ -1671,9 +1436,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:426
 #, fuzzy
-msgid ""
-"Shows a link in the menu to zoom into a configuration item in the "
-"configuration item overview of the agent interface."
+msgid "Shows a link in the menu to zoom into a configuration item in the configuration item overview of the agent interface."
 msgstr "Zeigt eine Verknüpfung im Menü der Ansicht \"Configuration Item-Übersicht\", um zur Detailansicht des Configuration Items zu gelangen."
 
 #: ../../content/configuration/system_configuration_settings.rst:429
@@ -1682,9 +1445,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:430
 #, fuzzy
-msgid ""
-"Shows a link in the menu to access the history of a configuration item in"
-" the configuration item overview of the agent interface."
+msgid "Shows a link in the menu to access the history of a configuration item in the configuration item overview of the agent interface."
 msgstr "Zeigt im Menü der Configuration Item-Übersicht die Verknüpfung zur Historie eines Configuration Items."
 
 #: ../../content/configuration/system_configuration_settings.rst:433
@@ -1693,9 +1454,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:434
 #, fuzzy
-msgid ""
-"Shows a link in the menu to duplicate a configuration item in the "
-"configuration item overview of the agent interface."
+msgid "Shows a link in the menu to duplicate a configuration item in the configuration item overview of the agent interface."
 msgstr "Zeigt im Menü der Configuration Item-Übersicht die Verknüpfung zum Duplizieren eines Configuration Items."
 
 #: ../../content/configuration/system_configuration_settings.rst:437
@@ -1708,9 +1467,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:441
 #, fuzzy
-msgid ""
-"Required permissions to use the ITSM configuration item screen in the "
-"agent interface."
+msgid "Required permissions to use the ITSM configuration item screen in the agent interface."
 msgstr "Erforderliche Berechtigungen, um die Ansicht zur Konfiguration von Configuration Items im Agenten-Interface nutzen zu können."
 
 #: ../../content/configuration/system_configuration_settings.rst:444
@@ -1719,9 +1476,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:445
 #, fuzzy
-msgid ""
-"Required permissions to use the edit ITSM configuration item screen in "
-"the agent interface."
+msgid "Required permissions to use the edit ITSM configuration item screen in the agent interface."
 msgstr "Erforderliche Berechtigungen, um die Ansicht zum Bearbeiten von Configuration Items im Agenten-Interface nutzen zu können."
 
 #: ../../content/configuration/system_configuration_settings.rst:448
@@ -1730,9 +1485,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:449
 #, fuzzy
-msgid ""
-"Required permissions to use the add ITSM configuration item screen in the"
-" agent interface."
+msgid "Required permissions to use the add ITSM configuration item screen in the agent interface."
 msgstr "Erforderliche Berechtigungen, um die Ansicht zum Hinzufügen von Configuration Items im Agenten-Interface nutzen zu können."
 
 #: ../../content/configuration/system_configuration_settings.rst:452
@@ -1741,9 +1494,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:453
 #, fuzzy
-msgid ""
-"Required permissions to use the history ITSM configuration item screen in"
-" the agent interface."
+msgid "Required permissions to use the history ITSM configuration item screen in the agent interface."
 msgstr "Erforderliche Berechtigungen, um die Historien-Ansicht von Configuration Items im Agenten-Interface nutzen zu können."
 
 #: ../../content/configuration/system_configuration_settings.rst:456
@@ -1752,9 +1503,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:457
 #, fuzzy
-msgid ""
-"Required permissions to use the print ITSM configuration item screen in "
-"the agent interface."
+msgid "Required permissions to use the print ITSM configuration item screen in the agent interface."
 msgstr "Erforderliche Berechtigungen, um die Ansicht zum Drucken von Configuration Items im Agenten-Interface nutzen zu können."
 
 #: ../../content/configuration/system_configuration_settings.rst:460
@@ -1763,9 +1512,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:461
 #, fuzzy
-msgid ""
-"Required permissions to use the ITSM configuration item zoom screen in "
-"the agent interface."
+msgid "Required permissions to use the ITSM configuration item zoom screen in the agent interface."
 msgstr "Erforderliche Berechtigungen, um die Detailansicht von Configuration Items im Agenten-Interface nutzen zu können."
 
 #: ../../content/configuration/system_configuration_settings.rst:464
@@ -1774,9 +1521,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:465
 #, fuzzy
-msgid ""
-"Required permissions to use the ITSM configuration item search screen in "
-"the agent interface."
+msgid "Required permissions to use the ITSM configuration item search screen in the agent interface."
 msgstr "Erforderliche Berechtigungen, um die Ansicht zur Suche von Configuration Items im Agenten-Interface nutzen zu können."
 
 #: ../../content/configuration/system_configuration_settings.rst:468
@@ -1785,9 +1530,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:469
 #, fuzzy
-msgid ""
-"Required permissions to use the ITSM configuration item tree view screen "
-"in the agent interface."
+msgid "Required permissions to use the ITSM configuration item tree view screen in the agent interface."
 msgstr "Erforderliche Berechtigungen für die Verwendung der ITSM-Konfigurationsbaumansicht in der Agentenschnittstelle."
 
 #: ../../content/configuration/system_configuration_settings.rst:472
@@ -1796,9 +1539,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:473
 #, fuzzy
-msgid ""
-"Required permissions to use the bulk ITSM configuration item screen in "
-"the agent interface."
+msgid "Required permissions to use the bulk ITSM configuration item screen in the agent interface."
 msgstr "Erforderliche Berechtigungen zur Verwendung des ITSM-Konfigurationsbildschirms in der Agentenschnittstelle."
 
 #: ../../content/configuration/system_configuration_settings.rst:476
@@ -1811,9 +1552,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:480
 #, fuzzy
-msgid ""
-"Required permissions to use the ITSM configuration item attachment action"
-" in the agent interface."
+msgid "Required permissions to use the ITSM configuration item attachment action in the agent interface."
 msgstr "Erforderliche Berechtigungen für die Verwendung der ITSM-Konfigurationsobjekt-Anhängeaktion in der Agentenschnittstelle."
 
 #: ../../content/configuration/system_configuration_settings.rst:483
@@ -1827,9 +1566,7 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:487
 #: ../../content/configuration/system_configuration_settings.rst:832
 #, fuzzy
-msgid ""
-"Defines an overview module to show the small view of a configuration item"
-" list."
+msgid "Defines an overview module to show the small view of a configuration item list."
 msgstr "Definiert das Übersichtsmodul um die \"Klein\"-Ansicht einer Configuration Items-Liste anzuzeigen."
 
 #: ../../content/configuration/system_configuration_settings.rst:490
@@ -1842,13 +1579,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:494
 #, fuzzy
-msgid ""
-"Define Actions where a settings button is available in the linked objects"
-" widget (LinkObject::ViewMode = \"complex\"). Please note that these "
-"Actions must have registered the following JS and CSS files: "
-"Core.AllocationList.css, Core.UI.AllocationList.js, "
-"Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and "
-"Core.Agent.LinkObject.js."
+msgid "Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
 msgstr "Definieren Sie Actions, in denen im Verknüpfte-Objekte-Widget ein Einstellungen-Knopf verfügbar sein soll (LinkObject::ViewMode = \"complex\"). Bitte beachten Sie, dass für diese Actions die folgenden JS- und CSS-Dateien registriert sein müssen: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js und Core.Agent.LinkObject.js."
 
 #: ../../content/configuration/system_configuration_settings.rst:497
@@ -1990,9 +1721,7 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:623
 #: ../../content/configuration/system_configuration_settings.rst:630
 #, fuzzy
-msgid ""
-"Dynamic fields shown in the additional ITSM field screen of the agent "
-"interface."
+msgid "Dynamic fields shown in the additional ITSM field screen of the agent interface."
 msgstr "Die angezeigten Dynamischen Felder in der Ansicht \"zusätzliche ITSM-Felder\" im Agenten-Interface."
 
 #: ../../content/configuration/system_configuration_settings.rst:612
@@ -2029,11 +1758,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:637
 #, fuzzy
-msgid ""
-"Allows extended search conditions in config item search of the agent "
-"interface. With this feature you can search e. g. config item name with "
-"this kind of conditions like \"(*key1*&&*key2*)\" or "
-"\"(*key1*||*key2*)\"."
+msgid "Allows extended search conditions in config item search of the agent interface. With this feature you can search e. g. config item name with this kind of conditions like \"(*key1*&&*key2*)\" or \"(*key1*||*key2*)\"."
 msgstr "Ermöglicht erweiterte Suchbedingungen bei der Suche nach Konfigurationsobjekten in der Agentenschnittstelle. Mit dieser Funktion können Sie z. B. den Namen des Konfigurationseintrags mit solchen Bedingungen wie \"(*key1*&&*key2*)\" oder \"(*key1*||*key2*)\" suchen."
 
 #: ../../content/configuration/system_configuration_settings.rst:640
@@ -2042,9 +1767,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:641
 #, fuzzy
-msgid ""
-"Number of config items to be displayed in each page of a search result in"
-" the agent interface."
+msgid "Number of config items to be displayed in each page of a search result in the agent interface."
 msgstr "Anzahl der Konfigurationspunkte, die auf jeder Seite eines Suchergebnisses in der Agentenschnittstelle angezeigt werden sollen."
 
 #: ../../content/configuration/system_configuration_settings.rst:644
@@ -2053,9 +1776,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:645
 #, fuzzy
-msgid ""
-"Defines the default config item attribute for config item sorting of the "
-"config item search result of the agent interface."
+msgid "Defines the default config item attribute for config item sorting of the config item search result of the agent interface."
 msgstr "Definiert das Standard-Konfigurationsattribut für die Sortierung des Konfigurationsergebnisses der Agentenschnittstelle."
 
 #: ../../content/configuration/system_configuration_settings.rst:648
@@ -2064,9 +1785,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:649
 #, fuzzy
-msgid ""
-"Defines the default config item order in the config item search result of"
-" the agent interface. Up: oldest on top. Down: latest on top."
+msgid "Defines the default config item order in the config item search result of the agent interface. Up: oldest on top. Down: latest on top."
 msgstr "Legt die Standardreihenfolge der Konfigurationsobjekte in den Suchergebnissen der Agentenschnittstelle fest. Up: ältester Eintrag oben. Nach unten: das neueste oben."
 
 #: ../../content/configuration/system_configuration_settings.rst:652
@@ -2087,9 +1806,7 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:916
 #: ../../content/configuration/system_configuration_settings.rst:920
 #, fuzzy
-msgid ""
-"Defines the default shown config item search attribute for config item "
-"search screen."
+msgid "Defines the default shown config item search attribute for config item search screen."
 msgstr "Definiert das standardmäßig angezeigte Suchattribut für die Suche nach Konfigurationsobjekten."
 
 #: ../../content/configuration/system_configuration_settings.rst:656
@@ -2118,9 +1835,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:677
 #, fuzzy
-msgid ""
-"Default data to use on attribute for config item search screen. Example: "
-"\"ITSMConfigItemCreateTimePointFormat=year;ITSMConfigItemCreateTimePointStart=Last;ITSMConfigItemCreateTimePoint=2;\"."
+msgid "Default data to use on attribute for config item search screen. Example: \"ITSMConfigItemCreateTimePointFormat=year;ITSMConfigItemCreateTimePointStart=Last;ITSMConfigItemCreateTimePoint=2;\"."
 msgstr "Standarddaten, die auf dem Attribut für den Suchbildschirm für Konfigurationsobjekte verwendet werden sollen. Beispiel: \"ITSMConfigItemCreateTimePointFormat=year;ITSMConfigItemCreateTimePointStart=Last;ITSMConfigItemCreateTimePoint=2;\"."
 
 #: ../../content/configuration/system_configuration_settings.rst:680
@@ -2129,9 +1844,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:681
 #, fuzzy
-msgid ""
-"Default data to use on attribute for config item search screen. Example: "
-"\"ITSMConfigItemCreateTimeStartYear=2010;ITSMConfigItemCreateTimeStartMonth=10;ITSMConfigItemCreateTimeStartDay=4;ITSMConfigItemCreateTimeStopYear=2010;ITSMConfigItemCreateTimeStopMonth=11;ITSMConfigItemCreateTimeStopDay=3;\"."
+msgid "Default data to use on attribute for config item search screen. Example: \"ITSMConfigItemCreateTimeStartYear=2010;ITSMConfigItemCreateTimeStartMonth=10;ITSMConfigItemCreateTimeStartDay=4;ITSMConfigItemCreateTimeStopYear=2010;ITSMConfigItemCreateTimeStopMonth=11;ITSMConfigItemCreateTimeStopDay=3;\"."
 msgstr "Standarddaten, die für das Attribut für den Suchbildschirm für Konfigurationsobjekte verwendet werden sollen. Beispiel: \"ITSMConfigItemCreateTimeStartYear=2010;ITSMConfigItemCreateTimeStartMonth=10;ITSMConfigItemCreateTimeStartDay=4;ITSMConfigItemCreateTimeStopYear=2010;ITSMConfigItemCreateTimeStopMonth=11;ITSMConfigItemCreateTimeStopDay=3;\"."
 
 #: ../../content/configuration/system_configuration_settings.rst:684
@@ -2149,26 +1862,7 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:693
 #: ../../content/configuration/system_configuration_settings.rst:924
 #, fuzzy
-msgid ""
-"Defines the default shown config item search attribute for config item "
-"search screen. Example: \"Key\" must have the name of the Dynamic Field "
-"in this case 'X', \"Content\" must have the value of the Dynamic Field "
-"depending on the Dynamic Field type,  Text: 'a text', Dropdown: '1', "
-"Date/Time: 'Search_DynamicField_XTimeSlotStartYear=1974; "
-"Search_DynamicField_XTimeSlotStartMonth=01; "
-"Search_DynamicField_XTimeSlotStartDay=26; "
-"Search_DynamicField_XTimeSlotStartHour=00; "
-"Search_DynamicField_XTimeSlotStartMinute=00; "
-"Search_DynamicField_XTimeSlotStartSecond=00; "
-"Search_DynamicField_XTimeSlotStopYear=2013; "
-"Search_DynamicField_XTimeSlotStopMonth=01; "
-"Search_DynamicField_XTimeSlotStopDay=26; "
-"Search_DynamicField_XTimeSlotStopHour=23; "
-"Search_DynamicField_XTimeSlotStopMinute=59; "
-"Search_DynamicField_XTimeSlotStopSecond=59;' and or "
-"'Search_DynamicField_XTimePointFormat=week; "
-"Search_DynamicField_XTimePointStart=Before; "
-"Search_DynamicField_XTimePointValue=7';."
+msgid "Defines the default shown config item search attribute for config item search screen. Example: \"Key\" must have the name of the Dynamic Field in this case 'X', \"Content\" must have the value of the Dynamic Field depending on the Dynamic Field type,  Text: 'a text', Dropdown: '1', Date/Time: 'Search_DynamicField_XTimeSlotStartYear=1974; Search_DynamicField_XTimeSlotStartMonth=01; Search_DynamicField_XTimeSlotStartDay=26; Search_DynamicField_XTimeSlotStartHour=00; Search_DynamicField_XTimeSlotStartMinute=00; Search_DynamicField_XTimeSlotStartSecond=00; Search_DynamicField_XTimeSlotStopYear=2013; Search_DynamicField_XTimeSlotStopMonth=01; Search_DynamicField_XTimeSlotStopDay=26; Search_DynamicField_XTimeSlotStopHour=23; Search_DynamicField_XTimeSlotStopMinute=59; Search_DynamicField_XTimeSlotStopSecond=59;' and or 'Search_DynamicField_XTimePointFormat=week; Search_DynamicField_XTimePointStart=Before; Search_DynamicField_XTimePointValue=7';."
 msgstr "Definiert das standardmäßig angezeigte Suchattribut für die Suchmaske des Konfigurationsobjekts. Beispiel: \"Key\" muss den Namen des dynamischen Feldes enthalten, in diesem Fall 'X', \"Content\" muss den Wert des dynamischen Feldes enthalten, abhängig vom Typ des dynamischen Feldes, Text: 'a text', Dropdown: '1', Date/Time: 'Search_DynamicField_XTimeSlotStartYear=1974; Search_DynamicField_XTimeSlotStartMonth=01; Search_DynamicField_XTimeSlotStartDay=26; Search_DynamicField_XTimeSlotStartHour=00; Search_DynamicField_XTimeSlotStartMinute=00; Search_DynamicField_XTimeSlotStartSecond=00; Search_DynamicField_XTimeSlotStopYear=2013; Search_DynamicField_XTimeSlotStopMonth=01; Search_DynamicField_XTimeSlotStopDay=26; Search_DynamicField_XTimeSlotStopHour=23; Search_DynamicField_XTimeSlotStopMinute=59; Search_DynamicField_XTimeSlotStopSecond=59;' und oder 'Search_DynamicField_XTimePointFormat=week; Search_DynamicField_XTimePointStart=Before; Search_DynamicField_XTimePointValue=7';."
 
 #: ../../content/configuration/system_configuration_settings.rst:696
@@ -2176,21 +1870,13 @@ msgid "Frontend::Agent::View::CustomerInformationCenter"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:699
-msgid ""
-"AgentCustomerInformationCenter::Backend###0060-CIC-"
-"ITSMConfigItemCustomerCompany"
+msgid "AgentCustomerInformationCenter::Backend###0060-CIC-ITSMConfigItemCustomerCompany"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:700
 #: ../../content/configuration/system_configuration_settings.rst:707
 #, fuzzy
-msgid ""
-"Parameters for the dashboard backend of the customer company config item "
-"overview of the agent interface . \"Limit\" is the number of entries "
-"shown by default. \"Group\" is used to restrict the access to the plugin "
-"(e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin"
-" is enabled by default or if the user needs to enable it manually. "
-"\"CacheTTLLocal\" is the cache time in minutes for the plugin."
+msgid "Parameters for the dashboard backend of the customer company config item overview of the agent interface . \"Limit\" is the number of entries shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin."
 msgstr "Legt die Parameter für das Dashboard-Backend fest. \"Limit\" legt die Anzahl an Einträgen fest, die standardmäßig angezeigt werden. \"Group\" beschränkt den Zugang zum jeweiligen Dashlet (z. B. Group: admin;group1;group2). \"Default\" bestimmt, ob das Dashlet standardmäßig aktiv ist oder vom Nutzer manuell aktiviert werden muss. \"CacheTTLLocal\" bestimmt die Cachingdauer für das Dashlet in Minuten."
 
 #: ../../content/configuration/system_configuration_settings.rst:703
@@ -2198,9 +1884,7 @@ msgid "Frontend::Agent::View::CustomerUserInformationCenter"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:706
-msgid ""
-"AgentCustomerUserInformationCenter::Backend###0060-CUIC-"
-"ITSMConfigItemCustomerUser"
+msgid "AgentCustomerUserInformationCenter::Backend###0060-CUIC-ITSMConfigItemCustomerUser"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:710
@@ -2213,10 +1897,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:714
 #, fuzzy
-msgid ""
-"Columns that can be filtered in the config item overview of the agent "
-"interface. Note: Only Config Item attributes and Dynamic Fields "
-"(DynamicField_NameX) are allowed."
+msgid "Columns that can be filtered in the config item overview of the agent interface. Note: Only Config Item attributes and Dynamic Fields (DynamicField_NameX) are allowed."
 msgstr "Spalten, die in der Config Item Übersicht der Agentenschnittstelle gefiltert werden können. Hinweis: Nur Config Item Attribute und Dynamic Fields (DynamicField_NameX) sind erlaubt."
 
 #: ../../content/configuration/system_configuration_settings.rst:717
@@ -2244,11 +1925,7 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:726
 #: ../../content/configuration/system_configuration_settings.rst:939
 #, fuzzy
-msgid ""
-"Defines the available columns of CIs in the config item overview "
-"depending on the CI class. Each entry must consist of a class name and an"
-" array of available fields for the corresponding class. Dynamic field "
-"entries have to honor the scheme DynamicField_FieldName."
+msgid "Defines the available columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName."
 msgstr "Definiert die verfügbaren Spalten der CIs in der Konfigurationsübersicht in Abhängigkeit von der CI-Klasse. Jeder Eintrag muss aus einem Klassennamen und einem Array von verfügbaren Feldern für die entsprechende Klasse bestehen. Dynamische Feldeinträge müssen das Schema DynamicField_FieldName einhalten."
 
 #: ../../content/configuration/system_configuration_settings.rst:729
@@ -2258,11 +1935,7 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:730
 #: ../../content/configuration/system_configuration_settings.rst:943
 #, fuzzy
-msgid ""
-"Defines the default displayed columns of CIs in the config item overview "
-"depending on the CI class. Each entry must consist of a class name and an"
-" array of available fields for the corresponding class. Dynamic field "
-"entries have to honor the scheme DynamicField_FieldName."
+msgid "Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName."
 msgstr "Definiert die standardmäßig angezeigten Spalten der CIs in der Konfigurationsübersicht in Abhängigkeit von der CI-Klasse. Jeder Eintrag muss aus einem Klassennamen und einem Array von verfügbaren Feldern für die entsprechende Klasse bestehen. Dynamische Feldeinträge müssen das Schema DynamicField_FieldName einhalten."
 
 #: ../../content/configuration/system_configuration_settings.rst:733
@@ -2275,9 +1948,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:737
 #, fuzzy
-msgid ""
-"Sets the deployment state in the configuration item bulk screen of the "
-"agent interface."
+msgid "Sets the deployment state in the configuration item bulk screen of the agent interface."
 msgstr "Setzt den Verwendungsstatus in der Funktion \"Sammelaktion\" für Configuration Items im Agenten-Interface."
 
 #: ../../content/configuration/system_configuration_settings.rst:740
@@ -2286,9 +1957,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:741
 #, fuzzy
-msgid ""
-"Sets the incident state in the configuration item bulk screen of the "
-"agent interface."
+msgid "Sets the incident state in the configuration item bulk screen of the agent interface."
 msgstr "Setzt den Verwendungsstatus für die Funktion \"Sammelaktion\" für Configuration Items im Agenten-Interace."
 
 #: ../../content/configuration/system_configuration_settings.rst:744
@@ -2314,9 +1983,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:755
 #, fuzzy
-msgid ""
-"Defines the width for the rich text editor component for this screen. "
-"Enter number (pixels) or percent value (relative)."
+msgid "Defines the width for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
 msgstr "Definiert die Breite der RichText-Editor Komponente. Geben Sie einen Zahlen- (Pixel) oder Prozenwert (relativ) an."
 
 #: ../../content/configuration/system_configuration_settings.rst:758
@@ -2325,9 +1992,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:759
 #, fuzzy
-msgid ""
-"Defines the height for the rich text editor component for this screen. "
-"Enter number (pixels) or percent value (relative)."
+msgid "Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
 msgstr "Definiert die Höhe der RichText-Editor Komponente. Geben Sie einen Zahlen- (Pixel) oder Prozenwert (relativ) an."
 
 #: ../../content/configuration/system_configuration_settings.rst:762
@@ -2384,9 +2049,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:789
 #, fuzzy
-msgid ""
-"Dynamic fields shown in the config item search screen of the agent "
-"interface."
+msgid "Dynamic fields shown in the config item search screen of the agent interface."
 msgstr "Dynamische Felder, die in der Suchmaske der Agentenschnittstelle für Konfigurationsobjekte angezeigt werden."
 
 #: ../../content/configuration/system_configuration_settings.rst:792
@@ -2409,13 +2072,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:800
 #, fuzzy
-msgid ""
-"Parameters for the column filters of the small config item overview. "
-"Please note: setting 'Active' to 0 will only prevent agents from editing "
-"settings of this group in their personal preferences, but will still "
-"allow administrators to edit the settings of another user's behalf. Use "
-"'PreferenceGroup' to control in which area these settings should be shown"
-" in the user interface."
+msgid "Parameters for the column filters of the small config item overview. Please note: setting 'Active' to 0 will only prevent agents from editing settings of this group in their personal preferences, but will still allow administrators to edit the settings of another user's behalf. Use 'PreferenceGroup' to control in which area these settings should be shown in the user interface."
 msgstr "Parameter für die Spaltenfilter der kleinen Konfigurationsübersicht. Bitte beachten Sie: Wenn Sie 'Active' auf 0 setzen, können Agenten die Einstellungen dieser Gruppe nur in ihren persönlichen Präferenzen bearbeiten, Administratoren können jedoch weiterhin die Einstellungen eines anderen Benutzers bearbeiten. Verwenden Sie 'PreferenceGroup', um zu steuern, in welchem Bereich diese Einstellungen in der Benutzeroberfläche angezeigt werden sollen."
 
 #: ../../content/configuration/system_configuration_settings.rst:803
@@ -2429,9 +2086,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:807
 #, fuzzy
-msgid ""
-"This configuration defines all possible screens to enable or disable "
-"dynamic fields."
+msgid "This configuration defines all possible screens to enable or disable dynamic fields."
 msgstr "Diese Konfiguration definiert alle möglichen Oberflächen, auf denen dynamische Felder aktiviert oder deaktiviert werden."
 
 #: ../../content/configuration/system_configuration_settings.rst:810
@@ -2440,9 +2095,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:811
 #, fuzzy
-msgid ""
-"This configuration defines all possible screens to enable or disable "
-"default columns."
+msgid "This configuration defines all possible screens to enable or disable default columns."
 msgstr "Diese Konfigurationsoption definiert alle möglichen Oberflächen, auf denen Standard-Spalten aktiviert oder deaktiviert werden."
 
 #: ../../content/configuration/system_configuration_settings.rst:814
@@ -2552,9 +2205,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:880
 #, fuzzy
-msgid ""
-"Required permissions to use the ITSM configuration item search screen in "
-"the customer interface."
+msgid "Required permissions to use the ITSM configuration item search screen in the customer interface."
 msgstr "Erforderliche Berechtigungen zur Verwendung des ITSM-Suchbildschirms für Konfigurationselemente in der Kundenschnittstelle."
 
 #: ../../content/configuration/system_configuration_settings.rst:883
@@ -2563,9 +2214,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:884
 #, fuzzy
-msgid ""
-"Includes deployment states in the config item search of the customer "
-"interface."
+msgid "Includes deployment states in the config item search of the customer interface."
 msgstr "Schließt Bereitstellungszustände in die Suche nach Konfigurationselementen in der Kundenschnittstelle ein."
 
 #: ../../content/configuration/system_configuration_settings.rst:887
@@ -2574,9 +2223,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:888
 #, fuzzy
-msgid ""
-"Includes incident states in the config item search of the customer "
-"interface."
+msgid "Includes incident states in the config item search of the customer interface."
 msgstr "Schließt Vorfallszustände in die Konfigurationssuche der Kundenschnittstelle ein."
 
 #: ../../content/configuration/system_configuration_settings.rst:891
@@ -2585,11 +2232,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:892
 #, fuzzy
-msgid ""
-"Allows extended search conditions in config item search of the customer "
-"interface. With this feature you can search e. g. config item name with "
-"this kind of conditions like \"(*key1*&&*key2*)\" or "
-"\"(*key1*||*key2*)\"."
+msgid "Allows extended search conditions in config item search of the customer interface. With this feature you can search e. g. config item name with this kind of conditions like \"(*key1*&&*key2*)\" or \"(*key1*||*key2*)\"."
 msgstr "Ermöglicht erweiterte Suchbedingungen bei der Suche nach Konfigurationseinträgen in der Kundenschnittstelle. Mit dieser Funktion können Sie z. B. den Namen eines Konfigurationseintrags mit Bedingungen wie \"(*key1*&&*key2*)\" oder \"(*key1*||*key2*)\" suchen."
 
 #: ../../content/configuration/system_configuration_settings.rst:895
@@ -2598,9 +2241,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:896
 #, fuzzy
-msgid ""
-"Number of config items to be displayed in each page of a search result in"
-" the customer interface."
+msgid "Number of config items to be displayed in each page of a search result in the customer interface."
 msgstr "Anzahl der Konfigurationspunkte, die auf jeder Seite eines Suchergebnisses in der Kundenschnittstelle angezeigt werden sollen."
 
 #: ../../content/configuration/system_configuration_settings.rst:899
@@ -2609,9 +2250,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:900
 #, fuzzy
-msgid ""
-"Defines the default config item attribute for config item sorting of the "
-"config item search result of the customer interface."
+msgid "Defines the default config item attribute for config item sorting of the config item search result of the customer interface."
 msgstr "Definiert das Standard-Konfigurationsattribut für die Sortierung des Suchergebnisses der Kundenschnittstelle nach Konfig-Elementen."
 
 #: ../../content/configuration/system_configuration_settings.rst:903
@@ -2620,9 +2259,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:904
 #, fuzzy
-msgid ""
-"Defines the default config item order in the config item search result of"
-" the customer interface. Up: oldest on top. Down: latest on top."
+msgid "Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top."
 msgstr "Definiert die Standardreihenfolge der Konfigurationsobjekte in den Suchergebnissen der Kundenschnittstelle. Oben: ältester Eintrag ganz oben. Unten: neueste oben."
 
 #: ../../content/configuration/system_configuration_settings.rst:907
@@ -2655,10 +2292,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:931
 #, fuzzy
-msgid ""
-"Columns that can be filtered in the config item overview of the customer "
-"interface. Note: Only Config Item attributes and Dynamic Fields "
-"(DynamicField_NameX) are allowed."
+msgid "Columns that can be filtered in the config item overview of the customer interface. Note: Only Config Item attributes and Dynamic Fields (DynamicField_NameX) are allowed."
 msgstr "Spalten, die in der Config Item Übersicht der Kundenschnittstelle gefiltert werden können. Hinweis: Nur Config Item Attribute und Dynamic Fields (DynamicField_NameX) sind erlaubt."
 
 #: ../../content/configuration/system_configuration_settings.rst:934
@@ -2689,9 +2323,7 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:950
 #: ../../content/configuration/system_configuration_settings.rst:954
 #, fuzzy
-msgid ""
-"Dynamic fields shown in the config item overview screen of the customer "
-"interface."
+msgid "Dynamic fields shown in the config item overview screen of the customer interface."
 msgstr "Dynamische Felder, die in der Übersichtsmaske der Kundenschnittstelle angezeigt werden."
 
 #: ../../content/configuration/system_configuration_settings.rst:953
@@ -2730,9 +2362,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:972
 #, fuzzy
-msgid ""
-"Customers have the possibility to manually switch between historic CI "
-"versions."
+msgid "Customers have the possibility to manually switch between historic CI versions."
 msgstr "Kunden haben die Möglichkeit, manuell zwischen historischen CI-Versionen zu wechseln."
 
 #: ../../content/configuration/system_configuration_settings.rst:975
@@ -2755,11 +2385,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:983
 #, fuzzy
-msgid ""
-"For every webservice (key) an array of classes (value) can be defined on "
-"which the import is restricted. For all chosen classes, or all existing "
-"classes the identifying attributes will have to be chosen in the invoker "
-"config."
+msgid "For every webservice (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker config."
 msgstr "Für jeden Webservice (Schlüssel) kann ein Array von Klassen (Wert) definiert werden, auf die der Import beschränkt wird. Für alle gewählten Klassen oder alle vorhandenen Klassen müssen die identifizierenden Attribute in der Invokerkonfiguration ausgewählt werden."
 
 #: ../../content/configuration/system_configuration_settings.rst:986
@@ -2781,9 +2407,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:994
 #, fuzzy
-msgid ""
-"GenericInterface module registration for the ConfigItemFetch invoker "
-"layer."
+msgid "GenericInterface module registration for the ConfigItemFetch invoker layer."
 msgstr "GenericInterface-Modulregistrierung für die ConfigItemFetch-Aufruferschicht."
 
 #: ../../content/configuration/system_configuration_settings.rst:997
@@ -2796,9 +2420,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:1001
 #, fuzzy
-msgid ""
-"Defines Required permissions to create ITSM configuration items using the"
-" Generic Interface."
+msgid "Defines Required permissions to create ITSM configuration items using the Generic Interface."
 msgstr "Definiert die benötigten Berechtigungen zum Erstellen von ITSM Configuration Items durch das Generic Interface."
 
 #: ../../content/configuration/system_configuration_settings.rst:1004
@@ -2811,9 +2433,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:1008
 #, fuzzy
-msgid ""
-"Defines Required permissions to delete ITSM configuration items using the"
-" Generic Interface."
+msgid "Defines Required permissions to delete ITSM configuration items using the Generic Interface."
 msgstr "Definiert die benötigten Berechtigungen zum Löschen von ITSM Configuration Items durch das Generic Interface."
 
 #: ../../content/configuration/system_configuration_settings.rst:1011
@@ -2826,9 +2446,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:1015
 #, fuzzy
-msgid ""
-"Defines Required permissions to get ITSM configuration items using the "
-"Generic Interface."
+msgid "Defines Required permissions to get ITSM configuration items using the Generic Interface."
 msgstr "Definiert die benötigten Berechtigungen, um ITSM-Configuration Items über das Generic Interface abzurufen."
 
 #: ../../content/configuration/system_configuration_settings.rst:1018
@@ -2841,9 +2459,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:1022
 #, fuzzy
-msgid ""
-"Defines Required permissions to search ITSM configuration items using the"
-" Generic Interface."
+msgid "Defines Required permissions to search ITSM configuration items using the Generic Interface."
 msgstr "Definiert die benötigten Berechtigungen, um nach ITSM-Configuration Items mit dem Generic Interface zu suchen."
 
 #: ../../content/configuration/system_configuration_settings.rst:1025
@@ -2852,9 +2468,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:1026
 #, fuzzy
-msgid ""
-"Maximum number of config items to be displayed in the result of this "
-"operation."
+msgid "Maximum number of config items to be displayed in the result of this operation."
 msgstr "Maximale Anzahl der Konfigurationsobjekte, die im Ergebnis dieser Operation angezeigt werden sollen."
 
 #: ../../content/configuration/system_configuration_settings.rst:1029
@@ -2863,9 +2477,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:1030
 #, fuzzy
-msgid ""
-"Defines the default config item attribute for config item sorting of the "
-"config item search result of this operation."
+msgid "Defines the default config item attribute for config item sorting of the config item search result of this operation."
 msgstr "Definiert das Standard-Konfigurationsattribut für die Sortierung des Konfigurations-Suchergebnisses dieser Operation."
 
 #: ../../content/configuration/system_configuration_settings.rst:1033
@@ -2874,9 +2486,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:1034
 #, fuzzy
-msgid ""
-"Defines the default config item order in the config item search result of"
-" the this operation. Up: oldest on top. Down: latest on top."
+msgid "Defines the default config item order in the config item search result of the this operation. Up: oldest on top. Down: latest on top."
 msgstr "Legt die Standardreihenfolge der Konfigurationsobjekte im Suchergebnis dieser Operation fest. Up: ältester Eintrag oben. Nach unten: das Neueste oben."
 
 #: ../../content/configuration/system_configuration_settings.rst:1037
@@ -2889,9 +2499,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:1041
 #, fuzzy
-msgid ""
-"Defines Required permissions to update ITSM configuration items using the"
-" Generic Interface."
+msgid "Defines Required permissions to update ITSM configuration items using the Generic Interface."
 msgstr "Definiert die benötigten Berechtigungen, um ITSM-Generic Items mit dem Generic Interface zu aktualisieren."
 
 #: ../../content/configuration/system_configuration_settings.rst:1044
@@ -2978,12 +2586,7 @@ msgid "Summary"
 msgstr "Zusammenfassung"
 
 #: ../../content/overview.rst:18
-msgid ""
-"With this documentation you should gain a good overview about the OTOBO "
-"package \"ITSMConfigurationManagement\". We provide a basic configuration"
-" based on a selection of must usual CIs to get you up and running "
-"quickly. If you are interested in getting your own CIs configured you "
-"should be able to do this too with the adavanced configuraion."
+msgid "With this documentation you should gain a good overview about the OTOBO package \"ITSMConfigurationManagement\". We provide a basic configuration based on a selection of must usual CIs to get you up and running quickly. If you are interested in getting your own CIs configured you should be able to do this too with the adavanced configuraion."
 msgstr ""
 
 #: ../../content/overview.rst:23
@@ -2992,11 +2595,7 @@ msgid "Introduction"
 msgstr "Einleitung"
 
 #: ../../content/overview.rst:25
-msgid ""
-"With this package you can extend the functionality in OTOBO to manage "
-"assets and CIs and link them to tickets, customer users, etc. to keep "
-"track of thoose and have an combined solution for your tickets and "
-"assets."
+msgid "With this package you can extend the functionality in OTOBO to manage assets and CIs and link them to tickets, customer users, etc. to keep track of thoose and have an combined solution for your tickets and assets."
 msgstr ""
 
 #: ../../content/overview.rst:28
@@ -3004,37 +2603,23 @@ msgid "Common Usecases"
 msgstr ""
 
 #: ../../content/overview.rst:30
-msgid ""
-"When a support agent receives an incident ticket, the CMDB allows them to"
-" view relevant CIs directly associated with the affected systems or "
-"users. They can quickly check for recent changes, dependencies, and known"
-" issues."
+msgid "When a support agent receives an incident ticket, the CMDB allows them to view relevant CIs directly associated with the affected systems or users. They can quickly check for recent changes, dependencies, and known issues."
 msgstr ""
 
 #: ../../content/overview.rst:31
-msgid ""
-"When planning a system change, the CMDB integration can help teams "
-"analyze potential impacts by displaying dependencies between systems, "
-"applications, and infrastructure components."
+msgid "When planning a system change, the CMDB integration can help teams analyze potential impacts by displaying dependencies between systems, applications, and infrastructure components."
 msgstr ""
 
 #: ../../content/overview.rst:32
-msgid ""
-"The lifecycle of assets and CIs, such as computers, software, or network "
-"devices can be tracked within OTOBO’s CMDB."
+msgid "The lifecycle of assets and CIs, such as computers, software, or network devices can be tracked within OTOBO’s CMDB."
 msgstr ""
 
 #: ../../content/overview.rst:33
-msgid ""
-"For recurring or complex issues, support teams can use the CMDB to view "
-"the historical data and relationships between affected CIs, assisting in "
-"identifying root causes."
+msgid "For recurring or complex issues, support teams can use the CMDB to view the historical data and relationships between affected CIs, assisting in identifying root causes."
 msgstr ""
 
 #: ../../content/overview.rst:34
-msgid ""
-"For organizations with regulatory or compliance requirements, a CMDB "
-"provides a single source of truth for asset configurations and changes."
+msgid "For organizations with regulatory or compliance requirements, a CMDB provides a single source of truth for asset configurations and changes."
 msgstr ""
 
 #: ../../content/overview.rst:37
@@ -3042,82 +2627,57 @@ msgid "Further Reading"
 msgstr ""
 
 #: ../../content/overview.rst:39
-msgid ""
-"If you are unfamiliar with the concept of a CMDB you might want to check "
-"out the `article on wikipedia "
-"<https://en.wikipedia.org/wiki/Configuration_management_database>`."
+msgid "If you are unfamiliar with the concept of a CMDB you might want to check out the `article on wikipedia <https://en.wikipedia.org/wiki/Configuration_management_database>`."
 msgstr ""
 
-#~ msgid "Sacrifice to Sphinx"
-#~ msgstr ""
+#~ msgctxt "1"
+#~ msgid "About"
+#~ msgstr "Über"
 
-#~ msgid "The OTOBO::ITSM Configuration Management package."
-#~ msgstr ""
+#~ msgctxt "1"
+#~ msgid "Contact"
+#~ msgstr "Kontakt"
 
-#~ msgid "Usage"
-#~ msgstr ""
+#~ msgctxt "1"
+#~ msgid "Web: https://otobo.io"
+#~ msgstr "Web: https://otobo.io"
 
-#~ msgid "Setup"
-#~ msgstr ""
+#~ msgctxt "1"
+#~ msgid "Framework"
+#~ msgstr "Framework"
 
-#~ msgid "Email: hello@otobo.de"
-#~ msgstr ""
+#~ msgctxt "1"
+#~ msgid "Packages"
+#~ msgstr "Pakete"
 
-#~ msgid "Web: https://otobo.de"
-#~ msgstr ""
+#~ msgctxt "1"
+#~ msgid "OTOBO 11.0.x"
+#~ msgstr "OTOBO 11.0.x"
 
-msgctxt "1"
-msgid "About"
-msgstr "Über"
+#~ msgctxt "1"
+#~ msgid "System requirements"
+#~ msgstr "Systemanforderungen"
 
-msgctxt "1"
-msgid "Contact"
-msgstr "Kontakt"
+#~ msgctxt "1"
+#~ msgid "Rother OSS GmbH"
+#~ msgstr "Rother OSS GmbH"
 
-msgctxt "1"
-msgid "Web: https://otobo.io"
-msgstr "Web: https://otobo.io"
+#~ msgctxt "1"
+#~ msgid "\\-"
+#~ msgstr "\\-"
 
-msgctxt "1"
-msgid "Framework"
-msgstr "Framework"
+#~ msgctxt "1"
+#~ msgid "Author: |doc-vendor| / Version: |doc-version| / Date of release: |doc-datestamp|"
+#~ msgstr "Autor: |doc-vendor| / Version: |doc-version| / Datum der Veröffentlichung: |doc-datestamp|"
 
-msgctxt "1"
-msgid "Packages"
-msgstr "Pakete"
+#~ msgctxt "1"
+#~ msgid "Version"
+#~ msgstr "Version"
 
-msgctxt "1"
-msgid "OTOBO 11.0.x"
-msgstr "OTOBO 11.0.x"
+#~ msgctxt "1"
+#~ msgid "Third-party software"
+#~ msgstr "Drittanbieter-Software"
 
-msgctxt "1"
-msgid "System requirements"
-msgstr "Systemanforderungen"
-
-msgctxt "1"
-msgid "Rother OSS GmbH"
-msgstr "Rother OSS GmbH"
-
-msgctxt "1"
-msgid "\\-"
-msgstr "\\-"
-
-msgctxt "1"
-msgid ""
-"Author: |doc-vendor| / Version: |doc-version| / Date of release: |doc-"
-"datestamp|"
-msgstr ""
-"Autor: |doc-vendor| / Version: |doc-version| / Datum der Veröffentlichung: "
-"|doc-datestamp|"
-
-msgctxt "1"
-msgid "Version"
-msgstr "Version"
-
-msgctxt "1"
-msgid "Third-party software"
-msgstr "Drittanbieter-Software"
-
-msgctxt "1"
-msgid "Configuration Reference"
-msgstr "Konfigurationsreferenz"
+#~ msgctxt "1"
+#~ msgid "Configuration Reference"
+#~ msgstr "Konfigurationsreferenz"
