@@ -28,7 +28,6 @@
         <File Permission="660" Location="Kernel/Config/Files/XML/ITSMConfigItemACL.xml" />
         <File Permission="660" Location="Kernel/Config/Files/XML/ITSMConfigItemGenericInterface.xml" />
         <File Permission="660" Location="Kernel/Config/Files/XML/ITSMConfigItemTicketLink.xml" />
-        <File Permission="660" Location="Kernel/Config/Files/XML/PublicITSMConfigItem.xml" />
         <File Permission="660" Location="Kernel/GenericInterface/Event/ObjectType/ITSMConfigItem.pm" />
         <File Permission="660" Location="Kernel/GenericInterface/Invoker/ConfigItem/Common.pm" />
         <File Permission="660" Location="Kernel/GenericInterface/Invoker/ConfigItem/ConfigItemCreate.pm" />
