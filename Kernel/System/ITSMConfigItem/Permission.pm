@@ -272,13 +272,12 @@ sub CustomerPermission {
     return;
 }
 
-=head2 CustomerPermission()
+=head2 PublicPermission()
 
 returns whether the public non-logged user has permissions or not
 
-    my $Access = $ConfigItemObject->CustomerPermission(
+    my $Access = $ConfigItemObject->PublicPermission(
         ConfigItemID => 123,
-        UserID       => 123,
         LogNo        => 1,    # optional, do not log, default: 0
     );
 
