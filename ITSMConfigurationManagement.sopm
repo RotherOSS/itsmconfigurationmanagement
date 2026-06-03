@@ -14,17 +14,11 @@
     <Description Lang="hu">Az OTOBO::ITSM konfigurációmenedzsment csomag.</Description>
     <Filelist>
         <!-- TODO: move to Kernel? -->
-        <File Permission="660" Location="Custom/Kernel/Modules/AdminACL.pm" />
         <File Permission="660" Location="Custom/Kernel/Modules/AdminDynamicField.pm" />
-        <File Permission="660" Location="Custom/Kernel/Modules/AdminDynamicFieldReference.pm" />
         <File Permission="660" Location="Custom/Kernel/Modules/AdminDynamicFieldScreen.pm" />
         <File Permission="660" Location="Custom/Kernel/Modules/AgentDashboardCommon.pm" />
-        <File Permission="660" Location="Custom/Kernel/Output/HTML/Templates/Standard/AdminACL.tt" />
-        <File Permission="660" Location="Custom/Kernel/Output/HTML/Templates/Standard/AdminACLEdit.tt" />
-        <File Permission="660" Location="Custom/Kernel/Output/HTML/Templates/Standard/AdminACLNew.tt" />
         <File Permission="660" Location="Custom/Kernel/Output/HTML/Templates/Standard/AdminDynamicField.tt" />
         <File Permission="660" Location="Custom/Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldScreen.tt" />
-        <File Permission="660" Location="Custom/Kernel/System/ACL/DB/ACL.pm" />
 
         <!-- Just for migration of the legacy package CIAttributeCollection - not applicable on OTOBO 11.1 or higher -->
         <File Permission="660" Location="Custom/Kernel/System/CIAttachmentStorage/AttachmentStorageDB.pm" />
@@ -251,7 +245,6 @@
         <File Permission="660" Location="scripts/test/sample/ITSMConfigurationManagement/LegacyClasses.yml" />
         <File Permission="660" Location="scripts/test/sample/ITSMConfigurationManagement/Links/unittest.yml" />
         <File Permission="660" Location="scripts/webservices/GenericConfigItemConnectorSOAP.yml" />
-        <File Permission="660" Location="var/httpd/htdocs/js/Core.Agent.Admin.ACL.js" />
         <File Permission="660" Location="var/httpd/htdocs/js/Core.Agent.Admin.Znuny4OTOBODynamicFieldScreen.js" />
         <File Permission="660" Location="var/httpd/htdocs/js/Core.Agent.TreeView.js" />
         <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Admin.ITSMConfigItem.js" />
@@ -441,9 +434,6 @@
             <ForeignKey ForeignTable="link_type">          <Reference Local="link_type_id"                 Foreign="id" /> </ForeignKey>
             <ForeignKey ForeignTable="dynamic_field">      <Reference Local="dynamic_field_id"             Foreign="id" /> </ForeignKey>
         </TableCreate>
-        <TableAlter Name="acl">
-            <ColumnAdd Name="object_type" Required="true" Default="Ticket" Type="VARCHAR" Size="100" />
-        </TableAlter>
         <Insert Table="general_catalog">
             <Data Key="general_catalog_class" Type="Quote">ITSM::ConfigItem::DeploymentState</Data>
             <Data Key="name" Type="Quote" Translatable="1">Expired</Data>
@@ -731,9 +721,6 @@
             <ColumnAdd Name="change_time" Required="true" Type="DATE" />
             <ColumnAdd Name="change_by" Required="true" Type="INTEGER" />
         </TableAlter>
-        <TableAlter Name="acl" Version="11.0.1">
-            <ColumnAdd Name="object_type" Required="true" Default="Ticket" Type="VARCHAR" Size="100" />
-        </TableAlter>
         <Insert Table="configitem_history_type" Version="11.0.1">
             <Data Key="name" Type="Quote">VersionUpdate</Data>
             <Data Key="valid_id">1</Data>
@@ -761,9 +748,6 @@
         <TableDrop Name="configitem_history" />
         <TableDrop Name="configitem_history_type" />
         <TableDrop Name="configitem" />
-        <TableAlter Name="acl">
-            <ColumnDrop Name="object_type" />
-        </TableAlter>
     </DatabaseUninstall>
     <CodeInstall Type="post"><![CDATA[
 
