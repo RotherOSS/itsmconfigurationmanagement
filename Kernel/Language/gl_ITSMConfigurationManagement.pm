@@ -646,7 +646,7 @@ sub Data {
     $Self->{Translation}->{'Email Certificates (S/MIME Certificates)'} = '';
     $Self->{Translation}->{'Embedded SIM (eSIM)'} = '';
     $Self->{Translation}->{'Employment Contract'} = '';
-    $Self->{Translation}->{'End IP Address'} = '';
+    $Self->{Translation}->{'End IP Address'} = 'Enderezo IP';
     $Self->{Translation}->{'End of support'} = '';
     $Self->{Translation}->{'Expiry Date'} = '';
     $Self->{Translation}->{'External Hard Drive'} = '';
@@ -688,8 +688,8 @@ sub Data {
     $Self->{Translation}->{'Lease Agreement'} = '';
     $Self->{Translation}->{'License Agreement'} = '';
     $Self->{Translation}->{'License Count'} = '';
-    $Self->{Translation}->{'License Key'} = '';
-    $Self->{Translation}->{'License Type'} = '';
+    $Self->{Translation}->{'License Key'} = 'Chave Licenza';
+    $Self->{Translation}->{'License Type'} = 'Tipo Licenza';
     $Self->{Translation}->{'License period from'} = '';
     $Self->{Translation}->{'License period until'} = '';
     $Self->{Translation}->{'Lithium Iron Phosphate (LiFePO4) Battery'} = '';
@@ -751,7 +751,7 @@ sub Data {
     $Self->{Translation}->{'Satellite Phone'} = '';
     $Self->{Translation}->{'Sealed Lead-Acid (SLA) Battery'} = '';
     $Self->{Translation}->{'Seat licenses'} = '';
-    $Self->{Translation}->{'Serialnumber'} = '';
+    $Self->{Translation}->{'Serialnumber'} = 'Número de serie';
     $Self->{Translation}->{'Server Software'} = '';
     $Self->{Translation}->{'Service Agreement'} = 'Acordo de nivel de servizo';
     $Self->{Translation}->{'Service Tag'} = '';
