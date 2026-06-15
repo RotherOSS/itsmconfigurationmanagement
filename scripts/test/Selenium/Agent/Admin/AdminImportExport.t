@@ -358,6 +358,7 @@ $Selenium->RunTest(
         is(
             $ExportResultRef,
             {
+                ChunkingFinished   => undef,
                 DestinationContent => [
                     qq{"$ConfigItemNumber","$ConfigItemName","Production","Operational"},
                 ],
