@@ -88,7 +88,9 @@ sub new {
                         @ObjectTypesFilter = qw(Ticket Article);
                     }
                     else {
-                        @ObjectTypesFilter = $DFScreensObjectTypesConfig->{$ConfigKey}->@*;
+                        @ObjectTypesFilter = defined $DFScreensObjectTypesConfig->{$ConfigKey}
+                            ? $DFScreensObjectTypesConfig->{$ConfigKey}->@*
+                            : ();
                     }
                     last CONFIGKEY;
                 }
@@ -104,7 +106,9 @@ sub new {
                         @ObjectTypesFilter = qw(Ticket Article);
                     }
                     else {
-                        @ObjectTypesFilter = $DFScreensObjectTypesConfig->{$ConfigKey}->@*;
+                        @ObjectTypesFilter = defined $DFScreensObjectTypesConfig->{$ConfigKey}
+                            ? $DFScreensObjectTypesConfig->{$ConfigKey}->@*
+                            : ();
                     }
                     last CONFIGKEY;
                 }
