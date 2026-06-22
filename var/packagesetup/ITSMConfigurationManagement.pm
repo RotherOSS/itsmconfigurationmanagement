@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -23,7 +23,7 @@ use namespace::autoclean;
 use utf8;
 
 # core modules
-use List::Util qw(pairs);
+use List::Util qw(first pairs);
 
 # CPAN modules
 
@@ -44,6 +44,7 @@ our @ObjectDependencies = (
     'Kernel::System::LinkObject',
     'Kernel::System::Log',
     'Kernel::System::Service',
+    'Kernel::System::SysConfig',
     'Kernel::System::Stats',
     'Kernel::System::Valid',
 );
@@ -177,11 +178,28 @@ sub CodeReinstall {
     return 1;
 }
 
+=head2 CodeUpgradeFromLowerThan_11_0_15()
+
+This function is only executed if the installed module version is smaller than 11.0.14.
+
+    my $Result = $CodeObject->CodeUpgradeFromLowerThan_11_0_15();
+
+=cut
+
+sub CodeUpgradeFromLowerThan_11_0_15 {    ## no critic qw(OTOBO::RequireCamelCase)
+    my ( $Self, %Param ) = @_;
+
+    # update sysconfig settings of customer company and customer user information center widgets
+    $Self->_UpdateDashboardWidgetSysConfig();
+
+    return 1;
+}
+
 =head2 CodeUpgradeFromLowerThan_11_0_7()
 
 This function is only executed if the installed module version is smaller than 11.0.7.
 
-my $Result = $CodeObject->CodeUpgradeFromLowerThan_11_0_7();
+    my $Result = $CodeObject->CodeUpgradeFromLowerThan_11_0_7();
 
 =cut
 
@@ -780,6 +798,98 @@ sub _UpdateElasticsearchWebService {
     }
     return 1;
 
+}
+
+=head2 _UpdateDashboardWidgetSysConfig()
+
+Updates the sysconfig settings of the customer company and customer user information center widgets to the new structure.
+
+    my $Result = $CodeObject->_UpdateDashboardWidgetSysConfig();
+
+=cut
+
+sub _UpdateDashboardWidgetSysConfig {
+
+    my $LogObject       = $Kernel::OM->Get('Kernel::System::Log');
+    my $SysConfigObject = $Kernel::OM->Get('Kernel::System::SysConfig');
+
+    my @Settings = (
+        "AgentCustomerInformationCenter::Backend###0060-CIC-ITSMConfigItemCustomerCompany",
+        "AgentCustomerUserInformationCenter::Backend###0060-CUIC-ITSMConfigItemCustomerUser"
+    );
+
+    SETTING:
+    for my $SettingName (@Settings) {
+
+        my %Setting = $SysConfigObject->SettingGet(
+            Name => $SettingName,
+        );
+
+        # do nothing if setting is not modified
+        next SETTING unless $Setting{IsModified};
+
+        # fetch dynamic field from old structure
+        my $IdentifierDF = first { $Setting{EffectiveValue}{ConfigItemKey}{$_} } keys $Setting{EffectiveValue}{ConfigItemKey}->%*;
+
+        my $ExclusiveLockGUID = $SysConfigObject->SettingLock(
+            UserID    => 1,
+            Force     => 1,
+            DefaultID => $Setting{DefaultID},
+        );
+
+        # Update setting with modified data
+        my %Result = $SysConfigObject->SettingUpdate(
+            Name           => $SettingName,
+            IsValid        => 1,
+            EffectiveValue => {
+                $Setting{EffectiveValue}->%*,
+                ConfigItemKey => $IdentifierDF,
+            },
+            ExclusiveLockGUID => $ExclusiveLockGUID,
+            UserID            => 1,
+        );
+
+        if ( !$Result{Success} ) {
+            $LogObject->Log(
+                Priority => 'error',
+                Message  => "Could not update setting $SettingName.",
+            );
+
+            return;
+        }
+
+        my $Success = $SysConfigObject->SettingUnlock(
+            UserID    => 1,
+            DefaultID => $Setting{DefaultID},
+        );
+
+        if ( !$Success ) {
+            $LogObject->Log(
+                Priority => 'error',
+                Message  => "Could not unlock setting $SettingName.",
+            );
+
+            return;
+        }
+
+        my %DeploymentResult = $SysConfigObject->ConfigurationDeploy(
+            Comments      => "ITSMConfigurationManagement Upgrade - updated 'ConfigKey' in setting '$SettingName'.",
+            UserID        => 1,
+            Force         => 1,
+            DirtySettings => [$SettingName],
+        );
+
+        if ( !$DeploymentResult{Success} ) {
+            $LogObject->Log(
+                Priority => 'error',
+                Message  => "Deployment failed.",
+            );
+
+            return;
+        }
+    }
+
+    return 1;
 }
 
 =head2 _DynamicFieldsDelete()

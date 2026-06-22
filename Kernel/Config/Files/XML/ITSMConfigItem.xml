@@ -2301,7 +2301,7 @@
         </Value>
     </Setting>
     <Setting Name="DynamicFieldScreens::ObjectTypes###ITSMConfigurationManagement" Required="1" Valid="1">
-        <Description Translatable="1"></Description>
+        <Description Translatable="1">Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.</Description>
         <Navigation>Frontend::Base::DynamicFieldScreens</Navigation>
         <Value>
             <Array>
