@@ -780,6 +780,20 @@
 
     ]]></CodeReinstall>
     <!-- It is IMPORTANT that all CodeUpgrade parts with version numbers come BEFORE the regular CodeUpgrade block without any version number! -->
+    <CodeUpgrade Type="post" Version="11.0.15"><![CDATA[
+
+        # create the package name
+        my $CodeModule = 'var::packagesetup::' . $Param{Structure}->{Name}->{Content};
+
+        # discard internally stored object, so that the next access to object creates them newly
+        $Kernel::OM->ObjectsDiscard(
+            Objects            => [$CodeModule],
+            ForcePackageReload => 1,
+        );
+
+        $Kernel::OM->Get($CodeModule)->CodeUpgradeFromLowerThan_11_0_15();
+
+    ]]></CodeUpgrade>
     <CodeUpgrade Type="post" Version="11.0.7"><![CDATA[
 
         # create the package name
