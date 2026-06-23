@@ -818,6 +818,9 @@ sub _UpdateDashboardWidgetSysConfig {
         "AgentCustomerUserInformationCenter::Backend###0060-CUIC-ITSMConfigItemCustomerUser"
     );
 
+    my $AllDirty;
+    my @ChangedSettings;
+
     SETTING:
     for my $SettingName (@Settings) {
 
@@ -825,8 +828,22 @@ sub _UpdateDashboardWidgetSysConfig {
             Name => $SettingName,
         );
 
-        # do nothing if setting is not modified
-        next SETTING unless $Setting{IsModified};
+        # do nothing if setting is not modified and not dirty
+        next SETTING if !$Setting{IsModified} && !$Setting{IsDirty};
+
+        # as the SysConfig change breaks the old setting, during upgrade to 11.1 we have to use the formerly deployed setting
+        if ( !$Setting{IsModified} ) {
+            %Setting = $SysConfigObject->SettingGet(
+                Name     => $SettingName,
+                Deployed => 1,
+            );
+
+            $AllDirty = 1;
+        }
+
+        next SETTING if ref $Setting{EffectiveValue}{ConfigItemKey} ne 'HASH';
+
+        push @ChangedSettings, $SettingName;
 
         # fetch dynamic field from old structure
         my $IdentifierDF = first { $Setting{EffectiveValue}{ConfigItemKey}{$_} } keys $Setting{EffectiveValue}{ConfigItemKey}->%*;
@@ -872,11 +889,16 @@ sub _UpdateDashboardWidgetSysConfig {
             return;
         }
 
+    }
+
+    if ( @ChangedSettings ) {
+        my %DirtySettings = $AllDirty ? () : { DirtySettings => \@ChangedSettings };
+
         my %DeploymentResult = $SysConfigObject->ConfigurationDeploy(
-            Comments      => "ITSMConfigurationManagement Upgrade - updated 'ConfigKey' in setting '$SettingName'.",
-            UserID        => 1,
-            Force         => 1,
-            DirtySettings => [$SettingName],
+            Comments => "ITSMConfigurationManagement Upgrade (fixed CIC and CUIC ITSM Widget Config).",
+            UserID   => 1,
+            Force    => 1,
+            %DirtySettings,
         );
 
         if ( !$DeploymentResult{Success} ) {
