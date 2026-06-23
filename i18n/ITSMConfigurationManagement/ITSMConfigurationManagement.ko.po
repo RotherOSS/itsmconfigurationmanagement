@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2026-05-26 12:42+0000\n"
+"POT-Creation-Date: 2026-06-03 15:14+0000\n"
 "PO-Revision-Date: 2026-04-06 20:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Korean <http://translate.otobo.org/projects/opm-packages/itsm-"
@@ -223,18 +223,6 @@ msgstr "구성 항목"
 #. Template: CustomerITSMConfigItemSearch
 msgid "ConfigItem Search"
 msgstr "구성 항목 검색"
-
-#. Template: AdminACL
-msgid "Object Type"
-msgstr "개체 유형"
-
-#. Template: AdminDynamicFieldScreen
-msgid "Filter by object type"
-msgstr "유형별 필터링"
-
-#. Template: AdminDynamicFieldScreen
-msgid "Add DynamicField"
-msgstr ""
 
 #. JS Template: ClassImportConfirm
 msgid "The following classes will be imported"
@@ -520,6 +508,11 @@ msgstr ""
 msgid "Select the type of display"
 msgstr ""
 
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItemVersion.pm
+msgid ""
+"Activate this option to display values as a tree, grouped by config items."
+msgstr ""
+
 #. Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
 msgid ""
 "Base structure is not valid. Please provide a hash with data in YAML format."
@@ -556,10 +549,6 @@ msgstr ""
 #. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
 msgid "Maximum number of one element within a Set dynamic field element"
 msgstr ""
-
-#. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
-msgid "Import/Export attachments (as the last entries per line)"
-msgstr "첨부파일 가져오기/내보내기(한 줄의 마지막 항목으로)"
 
 #. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
 msgid "Version String"
@@ -740,6 +729,10 @@ msgid "Choose categories to assign to this config item class."
 msgstr "이 구성 항목 클래스에 할당할 카테고리를 선택합니다."
 
 #. SysConfig
+msgid "Color definitions for the public interface."
+msgstr ""
+
+#. SysConfig
 msgid "Column config item filters for ConfigItem Overview."
 msgstr "구성 항목 개요에 대한 열 구성 항목 필터."
 
@@ -913,6 +906,22 @@ msgstr ""
 "TemplateToolkit으로 설정된 경우에만 사용됩니다."
 
 #. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Define a set of conditions under which a customer is allowed to see a "
+#| "config item. Conditions can optionally be restricted to certain customer "
+#| "groups. Name is the only mandatory attribute. If no other options are "
+#| "given, all config items will be visible under that category."
+msgid ""
+"Define a set of conditions under which a config item can be publicly seen. "
+"Name is the only mandatory attribute. If no other options are given, all "
+"config items will be visible under that category."
+msgstr ""
+"고객이 구성 항목을 볼 수 있도록 허용되는 조건 집합을 정의합니다. 조건은 선택"
+"적으로 특정 고객 그룹으로 제한할 수 있습니다. 이름은 유일한 필수 속성입니다. "
+"다른 옵션을 지정하지 않으면 모든 구성 항목이 해당 카테고리 아래에 표시됩니다."
+
+#. SysConfig
 msgid ""
 "Define a set of conditions under which a customer is allowed to see a config "
 "item. Conditions can optionally be restricted to certain customer groups. "
@@ -1001,6 +1010,18 @@ msgstr ""
 "속성을 정의합니다."
 
 #. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Defines the default config item attribute for config item sorting of the "
+#| "config item search result of the agent interface."
+msgid ""
+"Defines the default config item attribute for config item sorting of the "
+"config item search result of the public interface."
+msgstr ""
+"상담원 인터페이스의 구성 항목 검색 결과의 구성 항목 정렬을 위한 기본 구성 항"
+"목 속성을 정의합니다."
+
+#. SysConfig
 msgid ""
 "Defines the default config item attribute for config item sorting of the "
 "config item search result of this operation."
@@ -1025,6 +1046,19 @@ msgstr ""
 "고객 인터페이스의 구성 항목 검색 결과에서 기본 구성 항목 순서를 정의합니다. "
 "위쪽: 가장 오래된 항목을 맨 위에 표시합니다. 아래로: 최신 항목을 맨 위에 배치"
 "합니다."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Defines the default config item order in the config item search result of "
+#| "the agent interface. Up: oldest on top. Down: latest on top."
+msgid ""
+"Defines the default config item order in the config item search result of "
+"the public interface. Up: oldest on top. Down: latest on top."
+msgstr ""
+"상담원 인터페이스의 구성 항목 검색 결과에서 기본 구성 항목 순서를 정의합니"
+"다. 위쪽: 가장 오래된 항목을 맨 위에 배치합니다. 아래로: 최신 항목이 맨 위에 "
+"있습니다."
 
 #. SysConfig
 msgid ""
@@ -1157,6 +1191,12 @@ msgid "Defines the search limit for the CustomerITSMConfigItemSearch screen."
 msgstr "CustomerITSMConfigItemSearch 화면의 검색 제한을 정의합니다."
 
 #. SysConfig
+#, fuzzy
+#| msgid "Defines the search limit for the AgentITSMConfigItemSearch screen."
+msgid "Defines the search limit for the PublicITSMConfigItemSearch screen."
+msgstr "AgentITSMConfigItemSearch 화면의 검색 제한을 정의합니다."
+
+#. SysConfig
 msgid ""
 "Defines the shown columns of CIs in the link table complex view for all CI "
 "classes. If there is no entry, then the default columns are shown."
@@ -1264,6 +1304,16 @@ msgid ""
 msgstr "고객 인터페이스의 구성 항목 개요 화면에 표시되는 동적 필드입니다."
 
 #. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Dynamic fields shown in the config item overview screen of the customer "
+#| "interface."
+msgid ""
+"Dynamic fields shown in the config item overview screen of the public "
+"interface."
+msgstr "고객 인터페이스의 구성 항목 개요 화면에 표시되는 동적 필드입니다."
+
+#. SysConfig
 msgid ""
 "Dynamic fields shown in the config item search screen of the agent interface."
 msgstr "상담원 인터페이스의 구성 항목 검색 화면에 표시되는 동적 필드입니다."
@@ -1362,9 +1412,26 @@ msgid "IncidentState"
 msgstr "인시던트 상태"
 
 #. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Includes incident states in the config item search of the customer "
+#| "interface."
+msgid "Includes classes in the config item search of the public interface."
+msgstr "고객 인터페이스의 구성 항목 검색에 인시던트 상태를 포함합니다."
+
+#. SysConfig
 msgid ""
 "Includes deployment states in the config item search of the customer "
 "interface."
+msgstr "고객 인터페이스의 구성 항목 검색에 배포 상태를 포함합니다."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Includes deployment states in the config item search of the customer "
+#| "interface."
+msgid ""
+"Includes deployment states in the config item search of the public interface."
 msgstr "고객 인터페이스의 구성 항목 검색에 배포 상태를 포함합니다."
 
 #. SysConfig
@@ -1373,8 +1440,41 @@ msgid ""
 msgstr "고객 인터페이스의 구성 항목 검색에 인시던트 상태를 포함합니다."
 
 #. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Includes incident states in the config item search of the customer "
+#| "interface."
+msgid ""
+"Includes incident states in the config item search of the public interface."
+msgstr "고객 인터페이스의 구성 항목 검색에 인시던트 상태를 포함합니다."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Includes incident states in the config item search of the customer "
+#| "interface."
+msgid "Includes the name in the config item search of the public interface."
+msgstr "고객 인터페이스의 구성 항목 검색에 인시던트 상태를 포함합니다."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Includes incident states in the config item search of the customer "
+#| "interface."
+msgid "Includes the number in the config item search of the public interface."
+msgstr "고객 인터페이스의 구성 항목 검색에 인시던트 상태를 포함합니다."
+
+#. SysConfig
 msgid "License accounting configuration item event module."
 msgstr ""
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "GenericInterface module registration for the ConfigItemFetch invoker "
+#| "layer."
+msgid "Loader module registration for the public interface."
+msgstr "ConfigItemFetch 인보커 레이어에 대한 GenericInterface 모듈 등록."
 
 #. SysConfig
 msgid ""
@@ -1414,6 +1514,16 @@ msgid ""
 "Number of config items to be displayed in each page of a search result in "
 "the customer interface."
 msgstr "고객 인터페이스에서 검색 결과의 각 페이지에 표시할 구성 항목 수입니다."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Number of config items to be displayed in each page of a search result in "
+#| "the agent interface."
+msgid ""
+"Number of config items to be displayed in each page of the public interface."
+msgstr ""
+"상담원 인터페이스에서 검색 결과의 각 페이지에 표시할 구성 항목의 수입니다."
 
 #. SysConfig
 msgid ""
@@ -1586,6 +1696,22 @@ msgstr ""
 #. SysConfig
 msgid "Permission Group"
 msgstr "권한 그룹"
+
+#. SysConfig
+#, fuzzy
+#| msgid "Customers can see historic CI versions."
+msgid "Public users can see historic CI versions."
+msgstr "고객은 과거 CI 버전을 볼 수 있습니다."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Customers have the possibility to manually switch between historic CI "
+#| "versions."
+msgid ""
+"Public users have the possibility to manually switch between historic CI "
+"versions."
+msgstr "고객은 이전 CI 버전 간에 수동으로 전환할 수 있습니다."
 
 #. SysConfig
 msgid ""
@@ -1801,6 +1927,14 @@ msgid ""
 msgstr ""
 "구성 항목의 식별자(예: ConfigItem#, MyConfigItem#)입니다. 기본값은 "
 "ConfigItem#입니다."
+
+#. SysConfig
+msgid "Title for the public interface overview."
+msgstr ""
+
+#. SysConfig
+msgid "Title for the public interface search."
+msgstr ""
 
 #. SysConfig
 msgid "Triggers ConfigItemFetch invoker automatically."
@@ -2776,3 +2910,12 @@ msgstr ""
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Webcam"
 msgstr "웹캠"
+
+#~ msgid "Object Type"
+#~ msgstr "개체 유형"
+
+#~ msgid "Filter by object type"
+#~ msgstr "유형별 필터링"
+
+#~ msgid "Import/Export attachments (as the last entries per line)"
+#~ msgstr "첨부파일 가져오기/내보내기(한 줄의 마지막 항목으로)"

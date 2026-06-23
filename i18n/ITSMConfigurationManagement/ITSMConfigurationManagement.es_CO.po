@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2026-05-26 12:42+0000\n"
+"POT-Creation-Date: 2026-06-03 15:14+0000\n"
 "PO-Revision-Date: 2026-04-06 18:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Spanish (Colombia) <http://translate.otobo.org/projects/opm-"
@@ -228,18 +228,6 @@ msgstr "Sus elementos de configuración"
 #. Template: CustomerITSMConfigItemSearch
 msgid "ConfigItem Search"
 msgstr "Búsqueda ConfigItem"
-
-#. Template: AdminACL
-msgid "Object Type"
-msgstr "Tipo de objeto"
-
-#. Template: AdminDynamicFieldScreen
-msgid "Filter by object type"
-msgstr "Filtrar por tipo"
-
-#. Template: AdminDynamicFieldScreen
-msgid "Add DynamicField"
-msgstr ""
 
 #. JS Template: ClassImportConfirm
 msgid "The following classes will be imported"
@@ -534,6 +522,11 @@ msgstr ""
 msgid "Select the type of display"
 msgstr ""
 
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItemVersion.pm
+msgid ""
+"Activate this option to display values as a tree, grouped by config items."
+msgstr ""
+
 #. Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
 msgid ""
 "Base structure is not valid. Please provide a hash with data in YAML format."
@@ -572,10 +565,6 @@ msgstr ""
 #. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
 msgid "Maximum number of one element within a Set dynamic field element"
 msgstr ""
-
-#. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
-msgid "Import/Export attachments (as the last entries per line)"
-msgstr "Importar/exportar archivos adjuntos (como últimas entradas por línea)"
 
 #. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
 msgid "Version String"
@@ -760,6 +749,10 @@ msgid "Choose categories to assign to this config item class."
 msgstr ""
 "Elija las categorías que desea asignar a esta clase de elemento de "
 "configuración."
+
+#. SysConfig
+msgid "Color definitions for the public interface."
+msgstr ""
 
 #. SysConfig
 msgid "Column config item filters for ConfigItem Overview."
@@ -948,6 +941,24 @@ msgstr ""
 "si Version String Module se establece en TemplateToolkit."
 
 #. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Define a set of conditions under which a customer is allowed to see a "
+#| "config item. Conditions can optionally be restricted to certain customer "
+#| "groups. Name is the only mandatory attribute. If no other options are "
+#| "given, all config items will be visible under that category."
+msgid ""
+"Define a set of conditions under which a config item can be publicly seen. "
+"Name is the only mandatory attribute. If no other options are given, all "
+"config items will be visible under that category."
+msgstr ""
+"Define un conjunto de condiciones bajo las cuales un cliente puede ver un "
+"elemento de configuración. Las condiciones pueden restringirse opcionalmente "
+"a determinados grupos de clientes. El nombre es el único atributo "
+"obligatorio. Si no se especifica ninguna otra opción, todos los elementos de "
+"configuración serán visibles en esa categoría."
+
+#. SysConfig
 msgid ""
 "Define a set of conditions under which a customer is allowed to see a config "
 "item. Conditions can optionally be restricted to certain customer groups. "
@@ -1045,6 +1056,19 @@ msgstr ""
 "elementos de configuración de la interfaz de cliente."
 
 #. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Defines the default config item attribute for config item sorting of the "
+#| "config item search result of the agent interface."
+msgid ""
+"Defines the default config item attribute for config item sorting of the "
+"config item search result of the public interface."
+msgstr ""
+"Define el atributo de elemento de configuración predeterminado para la "
+"clasificación de elementos de configuración del resultado de la búsqueda de "
+"elementos de configuración de la interfaz del agente."
+
+#. SysConfig
 msgid ""
 "Defines the default config item attribute for config item sorting of the "
 "config item search result of this operation."
@@ -1070,6 +1094,19 @@ msgstr ""
 "Define el orden predeterminado de los elementos de configuración en el "
 "resultado de la búsqueda de elementos de configuración de la interfaz de "
 "cliente. Arriba: el más antiguo arriba. Abajo: el más reciente arriba."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Defines the default config item order in the config item search result of "
+#| "the agent interface. Up: oldest on top. Down: latest on top."
+msgid ""
+"Defines the default config item order in the config item search result of "
+"the public interface. Up: oldest on top. Down: latest on top."
+msgstr ""
+"Define el orden predeterminado de los elementos de configuración en el "
+"resultado de la búsqueda de elementos de configuración de la interfaz del "
+"agente. Arriba: el más antiguo arriba. Abajo: el más reciente arriba."
 
 #. SysConfig
 msgid ""
@@ -1216,6 +1253,13 @@ msgstr ""
 "Define el límite de búsqueda para la pantalla CustomerITSMConfigItemSearch."
 
 #. SysConfig
+#, fuzzy
+#| msgid "Defines the search limit for the AgentITSMConfigItemSearch screen."
+msgid "Defines the search limit for the PublicITSMConfigItemSearch screen."
+msgstr ""
+"Define el límite de búsqueda para la pantalla AgentITSMConfigItemSearch."
+
+#. SysConfig
 msgid ""
 "Defines the shown columns of CIs in the link table complex view for all CI "
 "classes. If there is no entry, then the default columns are shown."
@@ -1334,6 +1378,18 @@ msgstr ""
 "configuración de la interfaz de cliente."
 
 #. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Dynamic fields shown in the config item overview screen of the customer "
+#| "interface."
+msgid ""
+"Dynamic fields shown in the config item overview screen of the public "
+"interface."
+msgstr ""
+"Campos dinámicos mostrados en la pantalla de resumen de elementos de "
+"configuración de la interfaz de cliente."
+
+#. SysConfig
 msgid ""
 "Dynamic fields shown in the config item search screen of the agent interface."
 msgstr ""
@@ -1444,9 +1500,30 @@ msgid "IncidentState"
 msgstr "EstadoIncidente"
 
 #. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Includes incident states in the config item search of the customer "
+#| "interface."
+msgid "Includes classes in the config item search of the public interface."
+msgstr ""
+"Incluye estados de incidencias en la búsqueda de elementos de configuración "
+"de la interfaz de cliente."
+
+#. SysConfig
 msgid ""
 "Includes deployment states in the config item search of the customer "
 "interface."
+msgstr ""
+"Incluye los estados de despliegue en la búsqueda de elementos de "
+"configuración de la interfaz de cliente."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Includes deployment states in the config item search of the customer "
+#| "interface."
+msgid ""
+"Includes deployment states in the config item search of the public interface."
 msgstr ""
 "Incluye los estados de despliegue en la búsqueda de elementos de "
 "configuración de la interfaz de cliente."
@@ -1459,8 +1536,48 @@ msgstr ""
 "de la interfaz de cliente."
 
 #. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Includes incident states in the config item search of the customer "
+#| "interface."
+msgid ""
+"Includes incident states in the config item search of the public interface."
+msgstr ""
+"Incluye estados de incidencias en la búsqueda de elementos de configuración "
+"de la interfaz de cliente."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Includes incident states in the config item search of the customer "
+#| "interface."
+msgid "Includes the name in the config item search of the public interface."
+msgstr ""
+"Incluye estados de incidencias en la búsqueda de elementos de configuración "
+"de la interfaz de cliente."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Includes incident states in the config item search of the customer "
+#| "interface."
+msgid "Includes the number in the config item search of the public interface."
+msgstr ""
+"Incluye estados de incidencias en la búsqueda de elementos de configuración "
+"de la interfaz de cliente."
+
+#. SysConfig
 msgid "License accounting configuration item event module."
 msgstr ""
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "GenericInterface module registration for the ConfigItemFetch invoker "
+#| "layer."
+msgid "Loader module registration for the public interface."
+msgstr ""
+"Registro del módulo GenericInterface para la capa invocadora ConfigItemFetch."
 
 #. SysConfig
 msgid ""
@@ -1506,6 +1623,17 @@ msgid ""
 msgstr ""
 "Número de elementos de configuración que deben mostrarse en cada página de "
 "un resultado de búsqueda en la interfaz del cliente."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Number of config items to be displayed in each page of a search result in "
+#| "the agent interface."
+msgid ""
+"Number of config items to be displayed in each page of the public interface."
+msgstr ""
+"Número de elementos de configuración que se mostrarán en cada página de un "
+"resultado de búsqueda en la interfaz del agente."
 
 #. SysConfig
 msgid ""
@@ -1656,6 +1784,24 @@ msgstr ""
 #. SysConfig
 msgid "Permission Group"
 msgstr "Grupo de permisos"
+
+#. SysConfig
+#, fuzzy
+#| msgid "Customers can see historic CI versions."
+msgid "Public users can see historic CI versions."
+msgstr "Los clientes pueden ver las versiones históricas de CI."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Customers have the possibility to manually switch between historic CI "
+#| "versions."
+msgid ""
+"Public users have the possibility to manually switch between historic CI "
+"versions."
+msgstr ""
+"Los clientes tienen la posibilidad de cambiar manualmente entre versiones "
+"históricas de CI."
 
 #. SysConfig
 msgid ""
@@ -1881,6 +2027,14 @@ msgid ""
 msgstr ""
 "El identificador de un elemento de configuración, por ejemplo ConfigItem#, "
 "MyConfigItem#. Por defecto es ConfigItem#."
+
+#. SysConfig
+msgid "Title for the public interface overview."
+msgstr ""
+
+#. SysConfig
+msgid "Title for the public interface search."
+msgstr ""
 
 #. SysConfig
 msgid "Triggers ConfigItemFetch invoker automatically."
@@ -2857,3 +3011,13 @@ msgstr ""
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Webcam"
 msgstr "Cámara web"
+
+#~ msgid "Object Type"
+#~ msgstr "Tipo de objeto"
+
+#~ msgid "Filter by object type"
+#~ msgstr "Filtrar por tipo"
+
+#~ msgid "Import/Export attachments (as the last entries per line)"
+#~ msgstr ""
+#~ "Importar/exportar archivos adjuntos (como últimas entradas por línea)"

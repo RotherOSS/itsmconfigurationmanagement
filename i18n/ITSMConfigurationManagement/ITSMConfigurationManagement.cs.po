@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2026-05-26 12:42+0000\n"
+"POT-Creation-Date: 2026-06-03 15:14+0000\n"
 "PO-Revision-Date: 2026-04-06 20:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Czech <http://translate.otobo.org/projects/opm-packages/itsm-"
@@ -228,18 +228,6 @@ msgstr "Vaše položky ConfigItems"
 #. Template: CustomerITSMConfigItemSearch
 msgid "ConfigItem Search"
 msgstr "Vyhledávání položek ConfigItem"
-
-#. Template: AdminACL
-msgid "Object Type"
-msgstr "Typ objektu"
-
-#. Template: AdminDynamicFieldScreen
-msgid "Filter by object type"
-msgstr "Filtrovat podle typu"
-
-#. Template: AdminDynamicFieldScreen
-msgid "Add DynamicField"
-msgstr ""
 
 #. JS Template: ClassImportConfirm
 msgid "The following classes will be imported"
@@ -526,6 +514,11 @@ msgstr ""
 msgid "Select the type of display"
 msgstr ""
 
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItemVersion.pm
+msgid ""
+"Activate this option to display values as a tree, grouped by config items."
+msgstr ""
+
 #. Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
 msgid ""
 "Base structure is not valid. Please provide a hash with data in YAML format."
@@ -563,10 +556,6 @@ msgstr ""
 #. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
 msgid "Maximum number of one element within a Set dynamic field element"
 msgstr ""
-
-#. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
-msgid "Import/Export attachments (as the last entries per line)"
-msgstr "Import/export příloh (jako poslední položky na řádku)"
 
 #. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
 msgid "Version String"
@@ -748,6 +737,10 @@ msgstr "Vyberte atributy, které spustí vytvoření nové verze."
 msgid "Choose categories to assign to this config item class."
 msgstr ""
 "Vyberte kategorie, které chcete přiřadit této třídě položek konfigurace."
+
+#. SysConfig
+msgid "Color definitions for the public interface."
+msgstr ""
 
 #. SysConfig
 msgid "Column config item filters for ConfigItem Overview."
@@ -932,6 +925,23 @@ msgstr ""
 "v případě, že je modul Version String nastaven na TemplateToolkit."
 
 #. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Define a set of conditions under which a customer is allowed to see a "
+#| "config item. Conditions can optionally be restricted to certain customer "
+#| "groups. Name is the only mandatory attribute. If no other options are "
+#| "given, all config items will be visible under that category."
+msgid ""
+"Define a set of conditions under which a config item can be publicly seen. "
+"Name is the only mandatory attribute. If no other options are given, all "
+"config items will be visible under that category."
+msgstr ""
+"Definujte sadu podmínek, za kterých je zákazníkovi povoleno zobrazit položku "
+"konfigurace. Podmínky lze volitelně omezit na určité skupiny zákazníků. "
+"Jediným povinným atributem je název. Pokud nejsou zadány žádné další "
+"možnosti, budou v dané kategorii viditelné všechny položky konfigurace."
+
+#. SysConfig
 msgid ""
 "Define a set of conditions under which a customer is allowed to see a config "
 "item. Conditions can optionally be restricted to certain customer groups. "
@@ -1025,6 +1035,18 @@ msgstr ""
 "ve výsledku vyhledávání položek konfigurace v zákaznickém rozhraní."
 
 #. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Defines the default config item attribute for config item sorting of the "
+#| "config item search result of the agent interface."
+msgid ""
+"Defines the default config item attribute for config item sorting of the "
+"config item search result of the public interface."
+msgstr ""
+"Definuje výchozí atribut položky konfigurace pro třídění položek konfigurace "
+"ve výsledku vyhledávání položek konfigurace v rozhraní agenta."
+
+#. SysConfig
 msgid ""
 "Defines the default config item attribute for config item sorting of the "
 "config item search result of this operation."
@@ -1049,6 +1071,19 @@ msgstr ""
 "Definuje výchozí pořadí položek konfigurace ve výsledku vyhledávání položek "
 "konfigurace v zákaznickém rozhraní. Nahoru: nejstarší nahoře. Dolů: "
 "nejnovější nahoře."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Defines the default config item order in the config item search result of "
+#| "the agent interface. Up: oldest on top. Down: latest on top."
+msgid ""
+"Defines the default config item order in the config item search result of "
+"the public interface. Up: oldest on top. Down: latest on top."
+msgstr ""
+"Definuje výchozí pořadí položek konfigurace ve výsledku vyhledávání položek "
+"konfigurace v rozhraní agenta. Nahoru: nejstarší nahoře. Dolů: nejnovější "
+"nahoře."
 
 #. SysConfig
 msgid ""
@@ -1187,6 +1222,12 @@ msgid "Defines the search limit for the CustomerITSMConfigItemSearch screen."
 msgstr "Definuje limit vyhledávání pro obrazovku CustomerITSMConfigItemSearch."
 
 #. SysConfig
+#, fuzzy
+#| msgid "Defines the search limit for the AgentITSMConfigItemSearch screen."
+msgid "Defines the search limit for the PublicITSMConfigItemSearch screen."
+msgstr "Definuje limit vyhledávání pro obrazovku AgentITSMConfigItemSearch."
+
+#. SysConfig
 msgid ""
 "Defines the shown columns of CIs in the link table complex view for all CI "
 "classes. If there is no entry, then the default columns are shown."
@@ -1287,6 +1328,18 @@ msgstr ""
 #. SysConfig
 msgid ""
 "Dynamic fields shown in the config item overview screen of the customer "
+"interface."
+msgstr ""
+"Dynamická pole zobrazená na obrazovce přehledu konfiguračních položek v "
+"zákaznickém rozhraní."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Dynamic fields shown in the config item overview screen of the customer "
+#| "interface."
+msgid ""
+"Dynamic fields shown in the config item overview screen of the public "
 "interface."
 msgstr ""
 "Dynamická pole zobrazená na obrazovce přehledu konfiguračních položek v "
@@ -1398,9 +1451,30 @@ msgid "IncidentState"
 msgstr "IncidentState"
 
 #. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Includes incident states in the config item search of the customer "
+#| "interface."
+msgid "Includes classes in the config item search of the public interface."
+msgstr ""
+"Zahrnuje stavy incidentů do vyhledávání položek konfigurace v zákaznickém "
+"rozhraní."
+
+#. SysConfig
 msgid ""
 "Includes deployment states in the config item search of the customer "
 "interface."
+msgstr ""
+"Zahrnuje stavy nasazení do vyhledávání položek konfigurace v zákaznickém "
+"rozhraní."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Includes deployment states in the config item search of the customer "
+#| "interface."
+msgid ""
+"Includes deployment states in the config item search of the public interface."
 msgstr ""
 "Zahrnuje stavy nasazení do vyhledávání položek konfigurace v zákaznickém "
 "rozhraní."
@@ -1413,8 +1487,48 @@ msgstr ""
 "rozhraní."
 
 #. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Includes incident states in the config item search of the customer "
+#| "interface."
+msgid ""
+"Includes incident states in the config item search of the public interface."
+msgstr ""
+"Zahrnuje stavy incidentů do vyhledávání položek konfigurace v zákaznickém "
+"rozhraní."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Includes incident states in the config item search of the customer "
+#| "interface."
+msgid "Includes the name in the config item search of the public interface."
+msgstr ""
+"Zahrnuje stavy incidentů do vyhledávání položek konfigurace v zákaznickém "
+"rozhraní."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Includes incident states in the config item search of the customer "
+#| "interface."
+msgid "Includes the number in the config item search of the public interface."
+msgstr ""
+"Zahrnuje stavy incidentů do vyhledávání položek konfigurace v zákaznickém "
+"rozhraní."
+
+#. SysConfig
 msgid "License accounting configuration item event module."
 msgstr ""
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "GenericInterface module registration for the ConfigItemFetch invoker "
+#| "layer."
+msgid "Loader module registration for the public interface."
+msgstr ""
+"Registrace modulu GenericInterface pro vrstvu vyvolávače ConfigItemFetch."
 
 #. SysConfig
 msgid ""
@@ -1459,6 +1573,17 @@ msgid ""
 msgstr ""
 "Počet konfiguračních položek, které se mají zobrazit na každé stránce "
 "výsledku vyhledávání v zákaznickém rozhraní."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Number of config items to be displayed in each page of a search result in "
+#| "the agent interface."
+msgid ""
+"Number of config items to be displayed in each page of the public interface."
+msgstr ""
+"Počet konfiguračních položek, které se mají zobrazit na každé stránce "
+"výsledku vyhledávání v rozhraní agenta."
 
 #. SysConfig
 msgid ""
@@ -1634,6 +1759,22 @@ msgstr ""
 #. SysConfig
 msgid "Permission Group"
 msgstr "Skupina oprávnění"
+
+#. SysConfig
+#, fuzzy
+#| msgid "Customers can see historic CI versions."
+msgid "Public users can see historic CI versions."
+msgstr "Zákazníci si mohou prohlédnout historické verze CI."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Customers have the possibility to manually switch between historic CI "
+#| "versions."
+msgid ""
+"Public users have the possibility to manually switch between historic CI "
+"versions."
+msgstr "Zákazníci mají možnost ručně přepínat mezi historickými verzemi CI."
 
 #. SysConfig
 msgid ""
@@ -1854,6 +1995,14 @@ msgid ""
 msgstr ""
 "Identifikátor konfigurační položky, např. ConfigItem#, MyConfigItem#. "
 "Výchozí je ConfigItem#."
+
+#. SysConfig
+msgid "Title for the public interface overview."
+msgstr ""
+
+#. SysConfig
+msgid "Title for the public interface search."
+msgstr ""
 
 #. SysConfig
 msgid "Triggers ConfigItemFetch invoker automatically."
@@ -2830,3 +2979,12 @@ msgstr ""
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Webcam"
 msgstr "Webová kamera"
+
+#~ msgid "Object Type"
+#~ msgstr "Typ objektu"
+
+#~ msgid "Filter by object type"
+#~ msgstr "Filtrovat podle typu"
+
+#~ msgid "Import/Export attachments (as the last entries per line)"
+#~ msgstr "Import/export příloh (jako poslední položky na řádku)"

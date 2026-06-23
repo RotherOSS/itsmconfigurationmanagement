@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2026-05-26 12:42+0000\n"
+"POT-Creation-Date: 2026-06-03 15:14+0000\n"
 "PO-Revision-Date: 2026-05-22 18:00+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/opm-packages/"
@@ -227,18 +227,6 @@ msgstr "Az Ön ConfigItems"
 #. Template: CustomerITSMConfigItemSearch
 msgid "ConfigItem Search"
 msgstr "ConfigItem keresés"
-
-#. Template: AdminACL
-msgid "Object Type"
-msgstr "Objektum típusa"
-
-#. Template: AdminDynamicFieldScreen
-msgid "Filter by object type"
-msgstr "Mező szűrése objektumtípus szerint"
-
-#. Template: AdminDynamicFieldScreen
-msgid "Add DynamicField"
-msgstr ""
 
 #. JS Template: ClassImportConfirm
 msgid "The following classes will be imported"
@@ -538,6 +526,11 @@ msgstr ""
 msgid "Select the type of display"
 msgstr ""
 
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItemVersion.pm
+msgid ""
+"Activate this option to display values as a tree, grouped by config items."
+msgstr ""
+
 #. Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
 msgid ""
 "Base structure is not valid. Please provide a hash with data in YAML format."
@@ -576,11 +569,6 @@ msgstr ""
 #. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
 msgid "Maximum number of one element within a Set dynamic field element"
 msgstr ""
-
-#. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
-msgid "Import/Export attachments (as the last entries per line)"
-msgstr ""
-"Mellékletek importálása/exportálása (soronként az utolsó bejegyzésként)"
 
 #. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
 msgid "Version String"
@@ -762,6 +750,10 @@ msgstr "Válassza ki az új verzió létrehozását kiváltó attribútumokat."
 #. SysConfig
 msgid "Choose categories to assign to this config item class."
 msgstr "Válassza ki a konfigurációs elemosztályhoz rendelendő kategóriákat."
+
+#. SysConfig
+msgid "Color definitions for the public interface."
+msgstr ""
 
 #. SysConfig
 msgid "Column config item filters for ConfigItem Overview."
@@ -949,6 +941,24 @@ msgstr ""
 "használatos, ha a Version String Module értéke TemplateToolkit."
 
 #. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Define a set of conditions under which a customer is allowed to see a "
+#| "config item. Conditions can optionally be restricted to certain customer "
+#| "groups. Name is the only mandatory attribute. If no other options are "
+#| "given, all config items will be visible under that category."
+msgid ""
+"Define a set of conditions under which a config item can be publicly seen. "
+"Name is the only mandatory attribute. If no other options are given, all "
+"config items will be visible under that category."
+msgstr ""
+"Határozza meg azon feltételek körét, amelyek mellett az ügyfél láthat egy "
+"konfigurációs elemet. A feltételek opcionálisan korlátozhatók bizonyos "
+"ügyfélcsoportokra. A név az egyetlen kötelező attribútum. Ha nincs más opció "
+"megadva, akkor az összes konfigurációs elem látható lesz az adott kategória "
+"alatt."
+
+#. SysConfig
 msgid ""
 "Define a set of conditions under which a customer is allowed to see a config "
 "item. Conditions can optionally be restricted to certain customer groups. "
@@ -1047,6 +1057,19 @@ msgstr ""
 "attribútumot."
 
 #. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Defines the default config item attribute for config item sorting of the "
+#| "config item search result of the agent interface."
+msgid ""
+"Defines the default config item attribute for config item sorting of the "
+"config item search result of the public interface."
+msgstr ""
+"Meghatározza az alapértelmezett konfigurációs elem attribútumot az ügynöki "
+"felület konfigurációs elem keresési eredményének konfigurációs elem "
+"rendezéséhez."
+
+#. SysConfig
 msgid ""
 "Defines the default config item attribute for config item sorting of the "
 "config item search result of this operation."
@@ -1071,6 +1094,19 @@ msgstr ""
 "Meghatározza a konfigurációs elemek alapértelmezett sorrendjét az "
 "ügyfélfelület konfigurációs elem keresési eredményében. Felfelé: a "
 "legrégebbi felül. Lefelé: a legfrissebb van felül."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Defines the default config item order in the config item search result of "
+#| "the agent interface. Up: oldest on top. Down: latest on top."
+msgid ""
+"Defines the default config item order in the config item search result of "
+"the public interface. Up: oldest on top. Down: latest on top."
+msgstr ""
+"Meghatározza a konfigurációs elemek alapértelmezett sorrendjét az ügynöki "
+"felület konfigurációs elemkeresési eredményében. Felfelé: a legrégebbi a "
+"tetején. Lefelé: a legfrissebb van felül."
 
 #. SysConfig
 msgid ""
@@ -1215,6 +1251,13 @@ msgstr ""
 "Meghatározza a CustomerITSMConfigItemSearch képernyő keresési korlátját."
 
 #. SysConfig
+#, fuzzy
+#| msgid "Defines the search limit for the AgentITSMConfigItemSearch screen."
+msgid "Defines the search limit for the PublicITSMConfigItemSearch screen."
+msgstr ""
+"Meghatározza a keresési korlátot az AgentITSMConfigItemSearch képernyőn."
+
+#. SysConfig
 msgid ""
 "Defines the shown columns of CIs in the link table complex view for all CI "
 "classes. If there is no entry, then the default columns are shown."
@@ -1334,6 +1377,18 @@ msgstr ""
 "dinamikus mezők."
 
 #. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Dynamic fields shown in the config item overview screen of the customer "
+#| "interface."
+msgid ""
+"Dynamic fields shown in the config item overview screen of the public "
+"interface."
+msgstr ""
+"Az ügyfélfelület konfigurációs elem áttekintő képernyőjén megjelenő "
+"dinamikus mezők."
+
+#. SysConfig
 msgid ""
 "Dynamic fields shown in the config item search screen of the agent interface."
 msgstr ""
@@ -1444,9 +1499,30 @@ msgid "IncidentState"
 msgstr "IncidentState"
 
 #. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Includes incident states in the config item search of the customer "
+#| "interface."
+msgid "Includes classes in the config item search of the public interface."
+msgstr ""
+"Beleértve az incidensállapotokat az ügyfélfelület konfigurációs "
+"elemkeresőjében."
+
+#. SysConfig
 msgid ""
 "Includes deployment states in the config item search of the customer "
 "interface."
+msgstr ""
+"A telepítési állapotokat tartalmazza az ügyfélfelület konfigurációs "
+"elemkeresőjében."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Includes deployment states in the config item search of the customer "
+#| "interface."
+msgid ""
+"Includes deployment states in the config item search of the public interface."
 msgstr ""
 "A telepítési állapotokat tartalmazza az ügyfélfelület konfigurációs "
 "elemkeresőjében."
@@ -1459,8 +1535,48 @@ msgstr ""
 "elemkeresőjében."
 
 #. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Includes incident states in the config item search of the customer "
+#| "interface."
+msgid ""
+"Includes incident states in the config item search of the public interface."
+msgstr ""
+"Beleértve az incidensállapotokat az ügyfélfelület konfigurációs "
+"elemkeresőjében."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Includes incident states in the config item search of the customer "
+#| "interface."
+msgid "Includes the name in the config item search of the public interface."
+msgstr ""
+"Beleértve az incidensállapotokat az ügyfélfelület konfigurációs "
+"elemkeresőjében."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Includes incident states in the config item search of the customer "
+#| "interface."
+msgid "Includes the number in the config item search of the public interface."
+msgstr ""
+"Beleértve az incidensállapotokat az ügyfélfelület konfigurációs "
+"elemkeresőjében."
+
+#. SysConfig
 msgid "License accounting configuration item event module."
 msgstr ""
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "GenericInterface module registration for the ConfigItemFetch invoker "
+#| "layer."
+msgid "Loader module registration for the public interface."
+msgstr ""
+"GenericInterface modul regisztráció a ConfigItemFetch invoker réteghez."
 
 #. SysConfig
 msgid ""
@@ -1503,6 +1619,17 @@ msgid ""
 "the customer interface."
 msgstr ""
 "Az ügyfélfelületen a keresési eredmények minden egyes oldalán megjelenítendő "
+"konfigurációs elemek száma."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Number of config items to be displayed in each page of a search result in "
+#| "the agent interface."
+msgid ""
+"Number of config items to be displayed in each page of the public interface."
+msgstr ""
+"Az ügynöki felületen a keresési eredmények egyes oldalain megjelenítendő "
 "konfigurációs elemek száma."
 
 #. SysConfig
@@ -1688,6 +1815,24 @@ msgstr ""
 #. SysConfig
 msgid "Permission Group"
 msgstr "Jogosultsági csoport"
+
+#. SysConfig
+#, fuzzy
+#| msgid "Customers can see historic CI versions."
+msgid "Public users can see historic CI versions."
+msgstr "Az ügyfelek láthatják a korábbi CI-verziókat."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Customers have the possibility to manually switch between historic CI "
+#| "versions."
+msgid ""
+"Public users have the possibility to manually switch between historic CI "
+"versions."
+msgstr ""
+"Az ügyfeleknek lehetőségük van manuálisan váltani a korábbi CI-verziók "
+"között."
 
 #. SysConfig
 msgid ""
@@ -1914,6 +2059,14 @@ msgid ""
 msgstr ""
 "Egy konfigurációelem azonosítója, például: ConfigItem#, MyConfigItem#. Az "
 "alapértelmezett: ConfigItem#."
+
+#. SysConfig
+msgid "Title for the public interface overview."
+msgstr ""
+
+#. SysConfig
+msgid "Title for the public interface search."
+msgstr ""
 
 #. SysConfig
 msgid "Triggers ConfigItemFetch invoker automatically."
@@ -2892,3 +3045,13 @@ msgstr ""
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Webcam"
 msgstr "Webkamera"
+
+#~ msgid "Object Type"
+#~ msgstr "Objektum típusa"
+
+#~ msgid "Filter by object type"
+#~ msgstr "Mező szűrése objektumtípus szerint"
+
+#~ msgid "Import/Export attachments (as the last entries per line)"
+#~ msgstr ""
+#~ "Mellékletek importálása/exportálása (soronként az utolsó bejegyzésként)"

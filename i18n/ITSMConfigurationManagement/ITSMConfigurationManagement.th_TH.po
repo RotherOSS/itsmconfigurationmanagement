@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2026-05-26 12:42+0000\n"
+"POT-Creation-Date: 2026-06-03 15:14+0000\n"
 "PO-Revision-Date: 2026-05-06 20:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Thai <http://translate.otobo.org/projects/opm-packages/itsm-"
@@ -220,18 +220,6 @@ msgstr ""
 
 #. Template: CustomerITSMConfigItemSearch
 msgid "ConfigItem Search"
-msgstr ""
-
-#. Template: AdminACL
-msgid "Object Type"
-msgstr "ประเภทของออบเจค"
-
-#. Template: AdminDynamicFieldScreen
-msgid "Filter by object type"
-msgstr "กรองตามประเภท"
-
-#. Template: AdminDynamicFieldScreen
-msgid "Add DynamicField"
 msgstr ""
 
 #. JS Template: ClassImportConfirm
@@ -512,6 +500,11 @@ msgstr ""
 msgid "Select the type of display"
 msgstr ""
 
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItemVersion.pm
+msgid ""
+"Activate this option to display values as a tree, grouped by config items."
+msgstr ""
+
 #. Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
 msgid ""
 "Base structure is not valid. Please provide a hash with data in YAML format."
@@ -547,10 +540,6 @@ msgstr ""
 
 #. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
 msgid "Maximum number of one element within a Set dynamic field element"
-msgstr ""
-
-#. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
-msgid "Import/Export attachments (as the last entries per line)"
 msgstr ""
 
 #. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
@@ -724,6 +713,10 @@ msgid "Choose categories to assign to this config item class."
 msgstr ""
 
 #. SysConfig
+msgid "Color definitions for the public interface."
+msgstr ""
+
+#. SysConfig
 msgid "Column config item filters for ConfigItem Overview."
 msgstr ""
 
@@ -883,6 +876,13 @@ msgstr ""
 
 #. SysConfig
 msgid ""
+"Define a set of conditions under which a config item can be publicly seen. "
+"Name is the only mandatory attribute. If no other options are given, all "
+"config items will be visible under that category."
+msgstr ""
+
+#. SysConfig
+msgid ""
 "Define a set of conditions under which a customer is allowed to see a config "
 "item. Conditions can optionally be restricted to certain customer groups. "
 "Name is the only mandatory attribute. If no other options are given, all "
@@ -952,6 +952,16 @@ msgid ""
 msgstr "กำหนดคแอตทริบิวต์เริ่มต้นของตั๋วสำหรับการเรียงลำดับตั๋วของผลลัพธ์ของการค้นหาตั๋วในอินเตอร์เฟซเอเย่นต์"
 
 #. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Defines the default config item attribute for config item sorting of the "
+#| "config item search result of the agent interface."
+msgid ""
+"Defines the default config item attribute for config item sorting of the "
+"config item search result of the public interface."
+msgstr "กำหนดคแอตทริบิวต์เริ่มต้นของตั๋วสำหรับการเรียงลำดับตั๋วของผลลัพธ์ของการค้นหาตั๋วในอินเตอร์เฟซเอเย่นต์"
+
+#. SysConfig
 msgid ""
 "Defines the default config item attribute for config item sorting of the "
 "config item search result of this operation."
@@ -972,6 +982,18 @@ msgid ""
 msgstr ""
 "กำหนดการจัดเรียงเริ่มต้นของตั๋วของผลลัพธ์ของการค้นหาในอินเตอร์เฟซลูกค้า ขึ้น: เก่าที่สุดด้านบน "
 "ลง: ล่าสุดด้านบน"
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Defines the default config item order in the config item search result of "
+#| "the agent interface. Up: oldest on top. Down: latest on top."
+msgid ""
+"Defines the default config item order in the config item search result of "
+"the public interface. Up: oldest on top. Down: latest on top."
+msgstr ""
+"กำหนดการจัดเรียงเริ่มต้นของตั๋วในผลลัพธ์ของการค้นหาตั๋วของอินเตอร์เฟซเอเย่นต์ ขึ้น: "
+"เก่าที่สุดด้านบน ลง: ล่าสุดด้านบน"
 
 #. SysConfig
 msgid ""
@@ -1095,6 +1117,12 @@ msgid "Defines the search limit for the CustomerITSMConfigItemSearch screen."
 msgstr "กำหนดขีดจำกัดของการค้นหาสำหรับหน้าจอ AgentITSMConfigItemSearch"
 
 #. SysConfig
+#, fuzzy
+#| msgid "Defines the search limit for the AgentITSMConfigItemSearch screen."
+msgid "Defines the search limit for the PublicITSMConfigItemSearch screen."
+msgstr "กำหนดขีดจำกัดของการค้นหาสำหรับหน้าจอ AgentITSMConfigItemSearch"
+
+#. SysConfig
 msgid ""
 "Defines the shown columns of CIs in the link table complex view for all CI "
 "classes. If there is no entry, then the default columns are shown."
@@ -1194,6 +1222,16 @@ msgid ""
 msgstr "แสดงหัวข้อฟิลด์ในหน้าจอฟิลด์เพิ่มเติมของ ITSMในอินเตอร์เฟซของเอเย่นต์"
 
 #. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Dynamic fields shown in the config item overview screen of the customer "
+#| "interface."
+msgid ""
+"Dynamic fields shown in the config item overview screen of the public "
+"interface."
+msgstr "แสดงหัวข้อฟิลด์ในหน้าจอฟิลด์เพิ่มเติมของ ITSMในอินเตอร์เฟซของเอเย่นต์"
+
+#. SysConfig
 msgid ""
 "Dynamic fields shown in the config item search screen of the agent interface."
 msgstr "แสดงหัวข้อฟิลด์ในหน้าจอฟิลด์เพิ่มเติมของ ITSMในอินเตอร์เฟซของเอเย่นต์"
@@ -1278,10 +1316,27 @@ msgid "IncidentState"
 msgstr "สถานภาพของเหต์การณ์"
 
 #. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Dynamic fields shown in the config item search screen of the agent "
+#| "interface."
+msgid "Includes classes in the config item search of the public interface."
+msgstr "แสดงหัวข้อฟิลด์ในหน้าจอฟิลด์เพิ่มเติมของ ITSMในอินเตอร์เฟซของเอเย่นต์"
+
+#. SysConfig
 msgid ""
 "Includes deployment states in the config item search of the customer "
 "interface."
 msgstr ""
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Sets the deployment state in the configuration item bulk screen of the "
+#| "agent interface."
+msgid ""
+"Includes deployment states in the config item search of the public interface."
+msgstr "ตั้งค่าสถานะการใช้งานในหน้าจอการตั้งค่ารายการเป็นกลุ่มของอินเตอร์เฟซเอเย่นต์"
 
 #. SysConfig
 msgid ""
@@ -1289,8 +1344,41 @@ msgid ""
 msgstr ""
 
 #. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Sets the incident state in the configuration item bulk screen of the "
+#| "agent interface."
+msgid ""
+"Includes incident states in the config item search of the public interface."
+msgstr "ตั้งค่าสถานะของเหตุการณ์ในหน้าจอการตั้งค่ารายการเป็นกลุ่มของอินเตอร์เฟซเอเย่นต์"
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Dynamic fields shown in the config item search screen of the agent "
+#| "interface."
+msgid "Includes the name in the config item search of the public interface."
+msgstr "แสดงหัวข้อฟิลด์ในหน้าจอฟิลด์เพิ่มเติมของ ITSMในอินเตอร์เฟซของเอเย่นต์"
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Dynamic fields shown in the config item search screen of the agent "
+#| "interface."
+msgid "Includes the number in the config item search of the public interface."
+msgstr "แสดงหัวข้อฟิลด์ในหน้าจอฟิลด์เพิ่มเติมของ ITSMในอินเตอร์เฟซของเอเย่นต์"
+
+#. SysConfig
 msgid "License accounting configuration item event module."
 msgstr ""
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "GenericInterface module registration for the ConfigItemFetch invoker "
+#| "layer."
+msgid "Loader module registration for the public interface."
+msgstr "การลงทะเบียนโมดูล GenericInterface สำหรับชั้นของผู้ร้องขอ"
 
 #. SysConfig
 msgid ""
@@ -1329,6 +1417,15 @@ msgid ""
 "Number of config items to be displayed in each page of a search result in "
 "the customer interface."
 msgstr "จำนวนบทความ FAQ ที่จะแสดงบนแต่ละหน้าของผลการค้นหาในอินเตอร์เฟซของลูกค้า"
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Number of config items to be displayed in each page of a search result in "
+#| "the agent interface."
+msgid ""
+"Number of config items to be displayed in each page of the public interface."
+msgstr "จำนวนบทความ FAQ ที่จะแสดงบนแต่ละหน้าของผลการค้นหาในอินเตอร์เฟซสาธารณะ"
 
 #. SysConfig
 msgid ""
@@ -1474,6 +1571,16 @@ msgstr ""
 
 #. SysConfig
 msgid "Permission Group"
+msgstr ""
+
+#. SysConfig
+msgid "Public users can see historic CI versions."
+msgstr ""
+
+#. SysConfig
+msgid ""
+"Public users have the possibility to manually switch between historic CI "
+"versions."
 msgstr ""
 
 #. SysConfig
@@ -1677,6 +1784,14 @@ msgid ""
 msgstr ""
 "ตัวบ่งชี้สำหรับ  Configuration Item เช่น ConfigItem#, MyConfigItem# ค่าเริ่มต้นคือ "
 "ConfigItem#"
+
+#. SysConfig
+msgid "Title for the public interface overview."
+msgstr ""
+
+#. SysConfig
+msgid "Title for the public interface search."
+msgstr ""
 
 #. SysConfig
 msgid "Triggers ConfigItemFetch invoker automatically."
@@ -2647,3 +2762,9 @@ msgstr ""
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Webcam"
 msgstr ""
+
+#~ msgid "Object Type"
+#~ msgstr "ประเภทของออบเจค"
+
+#~ msgid "Filter by object type"
+#~ msgstr "กรองตามประเภท"

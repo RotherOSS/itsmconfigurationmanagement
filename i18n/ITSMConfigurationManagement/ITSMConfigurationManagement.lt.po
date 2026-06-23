@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2026-05-26 12:42+0000\n"
+"POT-Creation-Date: 2026-06-03 15:14+0000\n"
 "PO-Revision-Date: 2026-04-06 18:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Lithuanian <http://translate.otobo.org/projects/opm-packages/"
@@ -230,18 +230,6 @@ msgstr "Jūsų ConfigItems"
 #. Template: CustomerITSMConfigItemSearch
 msgid "ConfigItem Search"
 msgstr "ConfigItem Paieška"
-
-#. Template: AdminACL
-msgid "Object Type"
-msgstr "Objekto tipas"
-
-#. Template: AdminDynamicFieldScreen
-msgid "Filter by object type"
-msgstr ""
-
-#. Template: AdminDynamicFieldScreen
-msgid "Add DynamicField"
-msgstr ""
 
 #. JS Template: ClassImportConfirm
 msgid "The following classes will be imported"
@@ -532,6 +520,11 @@ msgstr ""
 msgid "Select the type of display"
 msgstr ""
 
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItemVersion.pm
+msgid ""
+"Activate this option to display values as a tree, grouped by config items."
+msgstr ""
+
 #. Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
 msgid ""
 "Base structure is not valid. Please provide a hash with data in YAML format."
@@ -568,11 +561,6 @@ msgstr ""
 #. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
 msgid "Maximum number of one element within a Set dynamic field element"
 msgstr ""
-
-#. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
-msgid "Import/Export attachments (as the last entries per line)"
-msgstr ""
-"Importuoti ir (arba) eksportuoti priedus (kaip paskutinius įrašus eilutėje)"
 
 #. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
 msgid "Version String"
@@ -758,6 +746,10 @@ msgstr ""
 "elementų klasei."
 
 #. SysConfig
+msgid "Color definitions for the public interface."
+msgstr ""
+
+#. SysConfig
 msgid "Column config item filters for ConfigItem Overview."
 msgstr "Stulpelio konfigūracijos elementų filtrai ConfigItem Overview."
 
@@ -939,6 +931,23 @@ msgstr ""
 "tik tada, jei versijų eilučių modulis nustatytas į TemplateToolkit."
 
 #. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Define a set of conditions under which a customer is allowed to see a "
+#| "config item. Conditions can optionally be restricted to certain customer "
+#| "groups. Name is the only mandatory attribute. If no other options are "
+#| "given, all config items will be visible under that category."
+msgid ""
+"Define a set of conditions under which a config item can be publicly seen. "
+"Name is the only mandatory attribute. If no other options are given, all "
+"config items will be visible under that category."
+msgstr ""
+"Apibrėžkite sąlygų, kuriomis klientui leidžiama matyti konfigūracijos "
+"elementą, rinkinį. Sąlygas galima apriboti tam tikroms klientų grupėms. "
+"Pavadinimas yra vienintelis privalomas atributas. Jei kitų parinkčių "
+"nenurodyta, visi konfigūracijos elementai bus matomi toje kategorijoje."
+
+#. SysConfig
 msgid ""
 "Define a set of conditions under which a customer is allowed to see a config "
 "item. Conditions can optionally be restricted to certain customer groups. "
@@ -1032,6 +1041,18 @@ msgstr ""
 "rūšiavimui klientų sąsajos konfigūracijos elementų paieškos rezultatuose."
 
 #. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Defines the default config item attribute for config item sorting of the "
+#| "config item search result of the agent interface."
+msgid ""
+"Defines the default config item attribute for config item sorting of the "
+"config item search result of the public interface."
+msgstr ""
+"Nustato numatytojo konfigūracijos elemento atributą konfigūracijos elementų "
+"rūšiavimui agento sąsajos konfigūracijos elementų paieškos rezultatuose."
+
+#. SysConfig
 msgid ""
 "Defines the default config item attribute for config item sorting of the "
 "config item search result of this operation."
@@ -1054,6 +1075,19 @@ msgid ""
 "the customer interface. Up: oldest on top. Down: latest on top."
 msgstr ""
 "Nustato numatytoji konfigūracijos elementų tvarka kliento sąsajos "
+"konfigūracijos elementų paieškos rezultatuose. Aukštyn: seniausias viršuje. "
+"Žemyn: naujausias viršuje."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Defines the default config item order in the config item search result of "
+#| "the agent interface. Up: oldest on top. Down: latest on top."
+msgid ""
+"Defines the default config item order in the config item search result of "
+"the public interface. Up: oldest on top. Down: latest on top."
+msgstr ""
+"Nustato numatytąją konfigūracijos elementų tvarką agento sąsajos "
 "konfigūracijos elementų paieškos rezultatuose. Aukštyn: seniausias viršuje. "
 "Žemyn: naujausias viršuje."
 
@@ -1199,6 +1233,12 @@ msgid "Defines the search limit for the CustomerITSMConfigItemSearch screen."
 msgstr "Nustato CustomerITSMConfigItemSearch ekrano paieškos ribą."
 
 #. SysConfig
+#, fuzzy
+#| msgid "Defines the search limit for the AgentITSMConfigItemSearch screen."
+msgid "Defines the search limit for the PublicITSMConfigItemSearch screen."
+msgstr "Nustato AgentITSMConfigItemSearch ekrano paieškos ribą."
+
+#. SysConfig
 msgid ""
 "Defines the shown columns of CIs in the link table complex view for all CI "
 "classes. If there is no entry, then the default columns are shown."
@@ -1306,6 +1346,18 @@ msgstr "Dinaminiai laukai, rodomi agento sąsajos papildomo ITSM lauko ekrane."
 #. SysConfig
 msgid ""
 "Dynamic fields shown in the config item overview screen of the customer "
+"interface."
+msgstr ""
+"Dinaminiai laukai, rodomi kliento sąsajos konfigūracijos elemento apžvalgos "
+"ekrane."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Dynamic fields shown in the config item overview screen of the customer "
+#| "interface."
+msgid ""
+"Dynamic fields shown in the config item overview screen of the public "
 "interface."
 msgstr ""
 "Dinaminiai laukai, rodomi kliento sąsajos konfigūracijos elemento apžvalgos "
@@ -1424,9 +1476,29 @@ msgid "IncidentState"
 msgstr "IncidentState"
 
 #. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Includes incident states in the config item search of the customer "
+#| "interface."
+msgid "Includes classes in the config item search of the public interface."
+msgstr ""
+"Įtraukti incidento būsenas į konfigūracijos elementų paiešką klientų "
+"sąsajoje."
+
+#. SysConfig
 msgid ""
 "Includes deployment states in the config item search of the customer "
 "interface."
+msgstr ""
+"Įtraukti diegimo būsenas į konfigūracijos elementų paiešką kliento sąsajoje."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Includes deployment states in the config item search of the customer "
+#| "interface."
+msgid ""
+"Includes deployment states in the config item search of the public interface."
 msgstr ""
 "Įtraukti diegimo būsenas į konfigūracijos elementų paiešką kliento sąsajoje."
 
@@ -1438,8 +1510,49 @@ msgstr ""
 "sąsajoje."
 
 #. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Includes incident states in the config item search of the customer "
+#| "interface."
+msgid ""
+"Includes incident states in the config item search of the public interface."
+msgstr ""
+"Įtraukti incidento būsenas į konfigūracijos elementų paiešką klientų "
+"sąsajoje."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Includes incident states in the config item search of the customer "
+#| "interface."
+msgid "Includes the name in the config item search of the public interface."
+msgstr ""
+"Įtraukti incidento būsenas į konfigūracijos elementų paiešką klientų "
+"sąsajoje."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Includes incident states in the config item search of the customer "
+#| "interface."
+msgid "Includes the number in the config item search of the public interface."
+msgstr ""
+"Įtraukti incidento būsenas į konfigūracijos elementų paiešką klientų "
+"sąsajoje."
+
+#. SysConfig
 msgid "License accounting configuration item event module."
 msgstr ""
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "GenericInterface module registration for the ConfigItemFetch invoker "
+#| "layer."
+msgid "Loader module registration for the public interface."
+msgstr ""
+"\"GenericInterface\" modulio registracija \"ConfigItemFetch\" iškvietėjo "
+"sluoksniui."
 
 #. SysConfig
 msgid ""
@@ -1485,6 +1598,17 @@ msgid ""
 msgstr ""
 "Konfigūracijos elementų, kurie bus rodomi kiekviename paieškos rezultatų "
 "puslapyje kliento sąsajoje, skaičius."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Number of config items to be displayed in each page of a search result in "
+#| "the agent interface."
+msgid ""
+"Number of config items to be displayed in each page of the public interface."
+msgstr ""
+"Konfigūracijos elementų, rodomų kiekviename paieškos rezultatų puslapyje "
+"agento sąsajoje, skaičius."
 
 #. SysConfig
 msgid ""
@@ -1626,6 +1750,22 @@ msgstr ""
 #. SysConfig
 msgid "Permission Group"
 msgstr "Leidimų grupė"
+
+#. SysConfig
+#, fuzzy
+#| msgid "Customers can see historic CI versions."
+msgid "Public users can see historic CI versions."
+msgstr "Klientai gali matyti istorines CI versijas."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Customers have the possibility to manually switch between historic CI "
+#| "versions."
+msgid ""
+"Public users have the possibility to manually switch between historic CI "
+"versions."
+msgstr "Klientai turi galimybę rankiniu būdu perjungti istorines CI versijas."
 
 #. SysConfig
 msgid ""
@@ -1849,6 +1989,14 @@ msgid ""
 msgstr ""
 "Konfigūracijos elemento identifikatorius, pvz., ConfigItem#, MyConfigItem#. "
 "Numatytoji reikšmė yra ConfigItem#."
+
+#. SysConfig
+msgid "Title for the public interface overview."
+msgstr ""
+
+#. SysConfig
+msgid "Title for the public interface search."
+msgstr ""
 
 #. SysConfig
 msgid "Triggers ConfigItemFetch invoker automatically."
@@ -2825,3 +2973,11 @@ msgstr ""
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Webcam"
 msgstr "Interneto kamera"
+
+#~ msgid "Object Type"
+#~ msgstr "Objekto tipas"
+
+#~ msgid "Import/Export attachments (as the last entries per line)"
+#~ msgstr ""
+#~ "Importuoti ir (arba) eksportuoti priedus (kaip paskutinius įrašus "
+#~ "eilutėje)"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2026-05-26 12:42+0000\n"
+"POT-Creation-Date: 2026-06-03 15:14+0000\n"
 "PO-Revision-Date: 2026-05-06 18:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Croatian <http://translate.otobo.org/projects/opm-packages/"
@@ -221,18 +221,6 @@ msgstr ""
 
 #. Template: CustomerITSMConfigItemSearch
 msgid "ConfigItem Search"
-msgstr ""
-
-#. Template: AdminACL
-msgid "Object Type"
-msgstr ""
-
-#. Template: AdminDynamicFieldScreen
-msgid "Filter by object type"
-msgstr ""
-
-#. Template: AdminDynamicFieldScreen
-msgid "Add DynamicField"
 msgstr ""
 
 #. JS Template: ClassImportConfirm
@@ -513,6 +501,11 @@ msgstr ""
 msgid "Select the type of display"
 msgstr ""
 
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItemVersion.pm
+msgid ""
+"Activate this option to display values as a tree, grouped by config items."
+msgstr ""
+
 #. Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
 msgid ""
 "Base structure is not valid. Please provide a hash with data in YAML format."
@@ -548,10 +541,6 @@ msgstr ""
 
 #. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
 msgid "Maximum number of one element within a Set dynamic field element"
-msgstr ""
-
-#. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
-msgid "Import/Export attachments (as the last entries per line)"
 msgstr ""
 
 #. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
@@ -723,6 +712,10 @@ msgid "Choose categories to assign to this config item class."
 msgstr ""
 
 #. SysConfig
+msgid "Color definitions for the public interface."
+msgstr ""
+
+#. SysConfig
 msgid "Column config item filters for ConfigItem Overview."
 msgstr ""
 
@@ -878,6 +871,13 @@ msgstr ""
 
 #. SysConfig
 msgid ""
+"Define a set of conditions under which a config item can be publicly seen. "
+"Name is the only mandatory attribute. If no other options are given, all "
+"config items will be visible under that category."
+msgstr ""
+
+#. SysConfig
+msgid ""
 "Define a set of conditions under which a customer is allowed to see a config "
 "item. Conditions can optionally be restricted to certain customer groups. "
 "Name is the only mandatory attribute. If no other options are given, all "
@@ -951,6 +951,12 @@ msgstr ""
 #. SysConfig
 msgid ""
 "Defines the default config item attribute for config item sorting of the "
+"config item search result of the public interface."
+msgstr ""
+
+#. SysConfig
+msgid ""
+"Defines the default config item attribute for config item sorting of the "
 "config item search result of this operation."
 msgstr ""
 
@@ -964,6 +970,12 @@ msgstr ""
 msgid ""
 "Defines the default config item order in the config item search result of "
 "the customer interface. Up: oldest on top. Down: latest on top."
+msgstr ""
+
+#. SysConfig
+msgid ""
+"Defines the default config item order in the config item search result of "
+"the public interface. Up: oldest on top. Down: latest on top."
 msgstr ""
 
 #. SysConfig
@@ -1066,6 +1078,10 @@ msgid "Defines the search limit for the CustomerITSMConfigItemSearch screen."
 msgstr ""
 
 #. SysConfig
+msgid "Defines the search limit for the PublicITSMConfigItemSearch screen."
+msgstr ""
+
+#. SysConfig
 msgid ""
 "Defines the shown columns of CIs in the link table complex view for all CI "
 "classes. If there is no entry, then the default columns are shown."
@@ -1155,6 +1171,18 @@ msgid ""
 msgstr ""
 
 #. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Required permissions to use the ITSM configuration item tree view screen "
+#| "in the agent interface."
+msgid ""
+"Dynamic fields shown in the config item overview screen of the public "
+"interface."
+msgstr ""
+"Potrebne dozvole za upotrebu prozora slobodnog teksta kartice u sučelju "
+"operatera."
+
+#. SysConfig
 msgid ""
 "Dynamic fields shown in the config item search screen of the agent interface."
 msgstr ""
@@ -1237,9 +1265,18 @@ msgid "IncidentState"
 msgstr ""
 
 #. SysConfig
+msgid "Includes classes in the config item search of the public interface."
+msgstr ""
+
+#. SysConfig
 msgid ""
 "Includes deployment states in the config item search of the customer "
 "interface."
+msgstr ""
+
+#. SysConfig
+msgid ""
+"Includes deployment states in the config item search of the public interface."
 msgstr ""
 
 #. SysConfig
@@ -1248,7 +1285,29 @@ msgid ""
 msgstr ""
 
 #. SysConfig
+msgid ""
+"Includes incident states in the config item search of the public interface."
+msgstr ""
+
+#. SysConfig
+msgid "Includes the name in the config item search of the public interface."
+msgstr ""
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Required permissions to use the ITSM configuration item search screen in "
+#| "the customer interface."
+msgid "Includes the number in the config item search of the public interface."
+msgstr ""
+"Potrebne dozvole za upotrebu prozora za napomene kartice u sučelju operatera."
+
+#. SysConfig
 msgid "License accounting configuration item event module."
+msgstr ""
+
+#. SysConfig
+msgid "Loader module registration for the public interface."
 msgstr ""
 
 #. SysConfig
@@ -1287,6 +1346,11 @@ msgstr ""
 msgid ""
 "Number of config items to be displayed in each page of a search result in "
 "the customer interface."
+msgstr ""
+
+#. SysConfig
+msgid ""
+"Number of config items to be displayed in each page of the public interface."
 msgstr ""
 
 #. SysConfig
@@ -1406,6 +1470,16 @@ msgstr ""
 #. SysConfig
 msgid "Permission Group"
 msgstr "Grupa dozvola"
+
+#. SysConfig
+msgid "Public users can see historic CI versions."
+msgstr ""
+
+#. SysConfig
+msgid ""
+"Public users have the possibility to manually switch between historic CI "
+"versions."
+msgstr ""
 
 #. SysConfig
 msgid ""
@@ -1588,6 +1662,14 @@ msgstr ""
 msgid ""
 "The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. "
 "The default is ConfigItem#."
+msgstr ""
+
+#. SysConfig
+msgid "Title for the public interface overview."
+msgstr ""
+
+#. SysConfig
+msgid "Title for the public interface search."
 msgstr ""
 
 #. SysConfig
