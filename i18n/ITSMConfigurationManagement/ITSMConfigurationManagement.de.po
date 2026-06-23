@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-05-26 12:42+0000\n"
-"PO-Revision-Date: 2026-04-06 20:00+0000\n"
-"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
-"Language-Team: German <http://translate.otobo.org/projects/opm-packages/itsm-"
-"configurationmanagement/de/>\n"
+"PO-Revision-Date: 2026-06-23 12:52+0000\n"
+"Last-Translator: Stefan Abel <sta@rother-oss.com>\n"
+"Language-Team: German <http://translate.otobo.org/projects/otobo-11-1/addons/"
+"itsmconfigurationmanagement/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -233,11 +233,11 @@ msgstr "Config Item-Suche"
 
 #. Template: AdminACL
 msgid "Object Type"
-msgstr "Objekt-Typ"
+msgstr "Objekttyp"
 
 #. Template: AdminDynamicFieldScreen
 msgid "Filter by object type"
-msgstr "Feld nach Objekttyp filtern"
+msgstr "Nach Objekttyp filtern"
 
 #. Template: AdminDynamicFieldScreen
 msgid "Add DynamicField"
