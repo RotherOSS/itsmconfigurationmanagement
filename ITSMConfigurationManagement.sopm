@@ -850,10 +850,6 @@
         <br/>
         <strong>NOTE</strong>
         <br/>
-        <br/>
-        The ITSMConfigurationManagement 11 has undergone major changes.<br/>
-        It is necessary to migrate your existing ConfigItem classes to the new structure. This can be done via the Console script bin/otobo.Console.pl Admin::ITSM::ConfigItem::UpgradeTo11.
-        During its execution the definitions will be updated and dynamic fields for all custom (old xml) attributes will be created.<br/>
         Bundles of new default classes are available and can be imported in Admin->ConfigItems.<br/>
         <br/>
         <strong>REQUIRED OTOBO PACKAGES</strong>
