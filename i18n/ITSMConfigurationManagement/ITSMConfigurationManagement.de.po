@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-06-03 15:14+0000\n"
-"PO-Revision-Date: 2026-06-24 13:00+0000\n"
+"PO-Revision-Date: 2026-06-24 13:52+0000\n"
 "Last-Translator: Stefan Abel <sta@rother-oss.com>\n"
 "Language-Team: German <http://translate.otobo.org/projects/otobo-11-1/addons/"
 "itsmconfigurationmanagement/de/>\n"
@@ -727,6 +727,18 @@ msgid ""
 "number, available licenses, and minimum required available licenses, "
 "respectively."
 msgstr ""
+"Attribute für die Lizenzzählung, wobei „TotalLicensesDF“, „"
+"AvailableLicensesDF“ und „LicenseReferenceDF“ die Namen der dynamischen "
+"Felder sind, die zur Nachvollziehbarkeit der verbleibenden Lizenzen "
+"verwendet werden. Falls verwendet, werden nur die Verwendungsstatus in „"
+"ValidDeplStates“ berücksichtigt. Wenn ein Schwellwert in „MinimumLicenses“ "
+"definiert ist, wird automatisch ein Ticket erstellt, wenn weniger Lizenzen "
+"verfügbar sind. Dazu muss das Dynamische Feld vom Typ \"Kontrollkästchen\" „"
+"Ticket->DynamicField“ existieren. Die Tags \\\\<OTOBO_CONFIGITEM_X\\\\> "
+"(wobei X sowohl NAME, als auch NUMBER, LICENSES_AVAIL oder LICENSES_MIN sein "
+"kann) werden im „Ticket->Text“ durch die entsprechenden Werte ersetzt: den "
+"Config Item Namen, die Nummer, die verfügbaren Lizenzen und die minimale "
+"Anzahl an verfügbaren Lizenzen."
 
 #. SysConfig
 msgid "CIs assigned to customer company"
@@ -775,7 +787,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Color definitions for the public interface."
-msgstr ""
+msgstr "Farbdefinitionen für die öffentliche Oberfläche (/public.pl)."
 
 #. SysConfig
 msgid "Column config item filters for ConfigItem Overview."
@@ -808,6 +820,8 @@ msgid ""
 "Config item event module that enables accounting licenses for a given config "
 "item."
 msgstr ""
+"Ereignismodul von Config Items, das die Lizenzzählung für ein bestimmtes "
+"Config Item aktiviert."
 
 #. SysConfig
 msgid ""
@@ -893,12 +907,19 @@ msgid ""
 "Columns are not specifically configured. This setting is used as a fallback "
 "for the other Permission Condition Columns settings."
 msgstr ""
+"Konfiguriere die Spalten, die im Kundeninterface für die Anzeige von "
+"Zugriffsbedingungen verfügbar sind, wenn die entsprechenden Spalten für "
+"Zugriffsbedingungen nicht explizit konfiguriert sind. Diese Einstellung "
+"dient als Rückfalloption für die anderen Einstellungen zu den "
+"Spalteneinstellungen für Zugriffsbedingungen."
 
 #. SysConfig
 msgid ""
 "Configure the columns which are available when viewing the corresponding "
 "Permission Condition in the customer interface."
 msgstr ""
+"Konfiguriere die Spalten, die in der Kundenoberfläche in der Ansicht der "
+"entsprechenden Berechtigungsbedingung verfügbar sind."
 
 #. SysConfig
 msgid "Create and manage the definitions for Configuration Items."
@@ -962,22 +983,14 @@ msgstr ""
 "verwendet, wenn Version String Module auf TemplateToolkit eingestellt ist."
 
 #. SysConfig
-#, fuzzy
-#| msgid ""
-#| "Define a set of conditions under which a customer is allowed to see a "
-#| "config item. Conditions can optionally be restricted to certain customer "
-#| "groups. Name is the only mandatory attribute. If no other options are "
-#| "given, all config items will be visible under that category."
 msgid ""
 "Define a set of conditions under which a config item can be publicly seen. "
 "Name is the only mandatory attribute. If no other options are given, all "
 "config items will be visible under that category."
 msgstr ""
-"Definieren Sie eine Reihe von Bedingungen, unter denen ein Kunde ein "
-"Konfigurationsobjekt sehen darf. Die Bedingungen können optional auf "
-"bestimmte Kundengruppen beschränkt werden. Der Name ist das einzige "
-"obligatorische Attribut. Wenn keine anderen Optionen angegeben werden, sind "
-"alle Konfigurationsobjekte unter dieser Kategorie sichtbar."
+"Definiere eine Reihe von Bedingungen, unter denen ein Config Item öffentlich "
+"sichtbar ist. Der Name ist das einzige Pflichtattribut. Wenn keine weiteren "
+"Optionen angegeben sind, sind alle Config Items in dieser Kategorie sichtbar."
 
 #. SysConfig
 msgid ""
@@ -1589,7 +1602,7 @@ msgstr ""
 
 #. SysConfig
 msgid "License accounting configuration item event module."
-msgstr ""
+msgstr "Event-Modul zur Lizenzzählung von Config Item."
 
 #. SysConfig
 #, fuzzy
@@ -2088,11 +2101,11 @@ msgstr ""
 
 #. SysConfig
 msgid "Title for the public interface overview."
-msgstr ""
+msgstr "Titel der Übersicht der öffentlichen Oberfläche (/public.pl)."
 
 #. SysConfig
 msgid "Title for the public interface search."
-msgstr ""
+msgstr "Titel der Suche der öffentlichen Oberfläche (/public.pl)."
 
 #. SysConfig
 msgid "Triggers ConfigItemFetch invoker automatically."
@@ -2288,7 +2301,7 @@ msgstr "9U: 15,75 Zoll (40,01 cm)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "AGPL (Affero General Public License)"
-msgstr ""
+msgstr "AGPL (Affero General Public License)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Accounting"
@@ -2312,7 +2325,7 @@ msgstr "Analoges Telefon"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Apache License"
-msgstr ""
+msgstr "Apache-Lizenz"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Appliance Type"
@@ -2320,7 +2333,7 @@ msgstr "Gerätetyp"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "BSD License (Berkeley Software Distribution License)"
-msgstr ""
+msgstr "BSD-Lizenz (Berkeley Software Distribution License)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Battery Capacity (Ah)"
@@ -2340,7 +2353,7 @@ msgstr "Bus-Schnittstelle"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "CC0 (Creative Commons Zero)"
-msgstr ""
+msgstr "CC0 (Creative Commons Zero)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "CIDR"
@@ -2452,7 +2465,7 @@ msgstr "Erstellt"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Creative Commons"
-msgstr ""
+msgstr "Creative Commons"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Custom Rack"
@@ -2504,7 +2517,7 @@ msgstr "Dokumentensignatur-Zertifikate"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "EPL (Eclipse Public License)"
-msgstr ""
+msgstr "EPL (Eclipse Public License)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "ETSI Rack"
@@ -2516,7 +2529,7 @@ msgstr "E-Mail-Zertifikate (S/MIME-Zertifikate)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Embedded SIM (eSIM)"
-msgstr ""
+msgstr "Eingebettete SIM (eSIM)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Employment Contract"
@@ -2564,7 +2577,7 @@ msgstr "Freeware"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "GPL (General Public License)"
-msgstr ""
+msgstr "GPL (GNU General Public License)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "General Information"
@@ -2632,7 +2645,7 @@ msgstr "LED-Monitor (Licht emittierende Diode)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "LGPL (Lesser General Public License)"
-msgstr ""
+msgstr "LGPL (Lesser General Public License)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Landline Phone"
@@ -2734,7 +2747,7 @@ msgstr "Lizenzschlüssel"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "MPL (Mozilla Public License)"
-msgstr ""
+msgstr "MPL (Mozilla Public License)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Manufacturer"
@@ -2754,7 +2767,7 @@ msgstr "Speicher Typ"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Micro SIM"
-msgstr ""
+msgstr "Micro-SIM"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Mini-Rack"
@@ -2790,7 +2803,7 @@ msgstr "Maus"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Nano SIM"
-msgstr ""
+msgstr "Nano-SIM"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Network"
@@ -2882,7 +2895,7 @@ msgstr "Unbefristete Lizenzen"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Phone / VoIP"
-msgstr ""
+msgstr "Telefon / VoIP"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Phone Number"
@@ -2902,7 +2915,7 @@ msgstr "Stromlieferung"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Public Domain"
-msgstr ""
+msgstr "Public Domain"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Purchased at"
@@ -2962,7 +2975,7 @@ msgstr "Service-Tag"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Shareware"
-msgstr ""
+msgstr "Shareware"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Socket Type"
@@ -3054,7 +3067,7 @@ msgstr "VR-Headset"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Virtual Client"
-msgstr ""
+msgstr "Virtueller Client"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "VirtualLink"
