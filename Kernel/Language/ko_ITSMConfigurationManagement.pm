@@ -108,6 +108,10 @@ sub Data {
     # Template: AdminACL
     $Self->{Translation}->{'Object Type'} = '개체 유형';
 
+    # Template: AdminACLEdit
+    $Self->{Translation}->{'Set up what you want to change if the criteria match. Keep in mind that \'Possible\' is a white list, \'PossibleNot\' a black list.'} =
+        '';
+
     # Template: AdminDynamicFieldScreen
     $Self->{Translation}->{'Filter by object type'} = '유형별 필터링';
     $Self->{Translation}->{'Add DynamicField'} = '';
@@ -323,6 +327,8 @@ sub Data {
         '링크 객체 위젯에서 설정 버튼을 사용할 수있는 액션 정의 (LinkObject :: ViewMode = "complex"). 이러한 작업은 다음 JS 및 CSS 파일을 등록해야합니다. Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js.';
     $Self->{Translation}->{'Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit.'} =
         '버전 문자열에 대한 템플릿::툴킷 체계를 정의합니다. 버전 문자열 모듈이 TemplateToolkit으로 설정된 경우에만 사용됩니다.';
+    $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
+        '';
     $Self->{Translation}->{'Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
         '고객이 구성 항목을 볼 수 있도록 허용되는 조건 집합을 정의합니다. 조건은 선택적으로 특정 고객 그룹으로 제한할 수 있습니다. 이름은 유일한 필수 속성입니다. 다른 옵션을 지정하지 않으면 모든 구성 항목이 해당 카테고리 아래에 표시됩니다.';
     $Self->{Translation}->{'Defines Required permissions to delete ITSM configuration items using the Generic Interface.'} =

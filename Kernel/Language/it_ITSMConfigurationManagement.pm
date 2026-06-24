@@ -108,6 +108,10 @@ sub Data {
     # Template: AdminACL
     $Self->{Translation}->{'Object Type'} = 'Tipo di oggetto';
 
+    # Template: AdminACLEdit
+    $Self->{Translation}->{'Set up what you want to change if the criteria match. Keep in mind that \'Possible\' is a white list, \'PossibleNot\' a black list.'} =
+        '';
+
     # Template: AdminDynamicFieldScreen
     $Self->{Translation}->{'Filter by object type'} = 'Filtra campo per tipo di oggetto';
     $Self->{Translation}->{'Add DynamicField'} = '';
@@ -323,6 +327,8 @@ sub Data {
         'Definire le azioni in cui è disponibile un pulsante di impostazione nel widget degli oggetti collegati (LinkObject::ViewMode = "complex"). Si noti che queste azioni devono aver registrato i seguenti file JS e CSS: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js e Core.Agent.LinkObject.js.';
     $Self->{Translation}->{'Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit.'} =
         'Definisce uno schema Template::Toolkit per le stringhe di versione. Utilizzato solo se il modulo Stringa di versione è impostato su TemplateToolkit.';
+    $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
+        '';
     $Self->{Translation}->{'Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
         'Definire un insieme di condizioni in base alle quali un cliente può vedere un elemento della configurazione. Le condizioni possono essere facoltativamente limitate a determinati gruppi di clienti. Il nome è l\'unico attributo obbligatorio. Se non vengono fornite altre opzioni, tutti gli elementi di configurazione saranno visibili sotto quella categoria.';
     $Self->{Translation}->{'Defines Required permissions to delete ITSM configuration items using the Generic Interface.'} =

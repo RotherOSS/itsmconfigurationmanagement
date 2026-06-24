@@ -108,6 +108,10 @@ sub Data {
     # Template: AdminACL
     $Self->{Translation}->{'Object Type'} = '对象类型';
 
+    # Template: AdminACLEdit
+    $Self->{Translation}->{'Set up what you want to change if the criteria match. Keep in mind that \'Possible\' is a white list, \'PossibleNot\' a black list.'} =
+        '';
+
     # Template: AdminDynamicFieldScreen
     $Self->{Translation}->{'Filter by object type'} = '按类型过滤';
     $Self->{Translation}->{'Add DynamicField'} = '';
@@ -323,6 +327,8 @@ sub Data {
         '定义链接对象小部件(LinkObject::ViewMode = \"complex\")设置按钮中的操作。请注意，这些操作必须已经在以下JS和CSS文件中注册：Core.AllocationList.css、Core.UI.AllocationList.js、 Core.UI.Table.Sort.js、Core.Agent.TableFilters.js和Core.Agent.LinkObject.js。';
     $Self->{Translation}->{'Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit.'} =
         '为版本字符串定义一个 Template::Toolkit 方案。仅在版本字符串模块设置为 TemplateToolkit 时使用。';
+    $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
+        '';
     $Self->{Translation}->{'Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
         '定义一组允许客户查看配置项的条件。可选择将条件限制为某些客户组。名称是唯一的强制属性。如果没有给出其他选项，则该类别下的所有配置项都将可见。';
     $Self->{Translation}->{'Defines Required permissions to delete ITSM configuration items using the Generic Interface.'} =

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2026-05-26 12:42+0000\n"
+"POT-Creation-Date: 2026-06-24 13:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -216,6 +216,10 @@ msgstr ""
 
 #. Template: AdminACL
 msgid "Object Type"
+msgstr ""
+
+#. Template: AdminACLEdit
+msgid "Set up what you want to change if the criteria match. Keep in mind that 'Possible' is a white list, 'PossibleNot' a black list."
 msgstr ""
 
 #. Template: AdminDynamicFieldScreen
@@ -788,6 +792,10 @@ msgstr ""
 
 #. SysConfig
 msgid "Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit."
+msgstr ""
+
+#. SysConfig
+msgid "Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface."
 msgstr ""
 
 #. SysConfig

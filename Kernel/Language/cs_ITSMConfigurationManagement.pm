@@ -108,6 +108,10 @@ sub Data {
     # Template: AdminACL
     $Self->{Translation}->{'Object Type'} = 'Typ objektu';
 
+    # Template: AdminACLEdit
+    $Self->{Translation}->{'Set up what you want to change if the criteria match. Keep in mind that \'Possible\' is a white list, \'PossibleNot\' a black list.'} =
+        '';
+
     # Template: AdminDynamicFieldScreen
     $Self->{Translation}->{'Filter by object type'} = 'Filtrovat podle typu';
     $Self->{Translation}->{'Add DynamicField'} = '';
@@ -323,6 +327,8 @@ sub Data {
         'Definujte Akce, u kterých je ve widgetu propojených objektů k dispozici tlačítko nastavení (LinkObject::ViewMode = "complex"). Upozorňujeme, že tyto Akce musí mít zaregistrované následující soubory JS a CSS: UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js a Core.Agent.LinkObject.js.';
     $Self->{Translation}->{'Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit.'} =
         'Definice schématu sady Template::Toolkit pro řetězce verzí. Používá se pouze v případě, že je modul Version String nastaven na TemplateToolkit.';
+    $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
+        '';
     $Self->{Translation}->{'Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
         'Definujte sadu podmínek, za kterých je zákazníkovi povoleno zobrazit položku konfigurace. Podmínky lze volitelně omezit na určité skupiny zákazníků. Jediným povinným atributem je název. Pokud nejsou zadány žádné další možnosti, budou v dané kategorii viditelné všechny položky konfigurace.';
     $Self->{Translation}->{'Defines Required permissions to delete ITSM configuration items using the Generic Interface.'} =

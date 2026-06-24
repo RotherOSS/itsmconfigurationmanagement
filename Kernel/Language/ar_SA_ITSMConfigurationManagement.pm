@@ -108,6 +108,10 @@ sub Data {
     # Template: AdminACL
     $Self->{Translation}->{'Object Type'} = 'نوع الكائن';
 
+    # Template: AdminACLEdit
+    $Self->{Translation}->{'Set up what you want to change if the criteria match. Keep in mind that \'Possible\' is a white list, \'PossibleNot\' a black list.'} =
+        '';
+
     # Template: AdminDynamicFieldScreen
     $Self->{Translation}->{'Filter by object type'} = 'تصفية حسب النوع';
     $Self->{Translation}->{'Add DynamicField'} = '';
@@ -323,6 +327,8 @@ sub Data {
         'تعريف العمليات التي يجب أن يتوفر بها زر الإعدادات في ودجة كائن الرابط (LinkObject::ViewMode = "complex"). الرجاء ملاحظة أنه يجب تسجيل ملفات JS و CSS التالية لهذه الإجراءات: Core.CustomList.css، Core.UI.AllocationList.js، Core.UI.Table.Sort.js، Core.Agent.TableFilter.js.';
     $Self->{Translation}->{'Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit.'} =
         'تعريف مخطط قالب:::مجموعة أدوات لسلاسل الإصدار. يُستخدم فقط إذا تم تعيين وحدة سلسلة الإصدار إلى TemplateToolkit.';
+    $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
+        '';
     $Self->{Translation}->{'Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
         'تحديد مجموعة من الشروط التي يُسمح بموجبها للعميل برؤية عنصر تكوين. يمكن تقييد الشروط اختياريًا على مجموعات معينة من العملاء. الاسم هو السمة الإلزامية الوحيدة. إذا لم يتم إعطاء أي خيارات أخرى، ستكون جميع عناصر التكوين مرئية تحت تلك الفئة.';
     $Self->{Translation}->{'Defines Required permissions to delete ITSM configuration items using the Generic Interface.'} =

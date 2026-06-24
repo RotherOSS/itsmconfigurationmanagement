@@ -108,6 +108,10 @@ sub Data {
     # Template: AdminACL
     $Self->{Translation}->{'Object Type'} = 'Τύπος αντικειμένου';
 
+    # Template: AdminACLEdit
+    $Self->{Translation}->{'Set up what you want to change if the criteria match. Keep in mind that \'Possible\' is a white list, \'PossibleNot\' a black list.'} =
+        '';
+
     # Template: AdminDynamicFieldScreen
     $Self->{Translation}->{'Filter by object type'} = '';
     $Self->{Translation}->{'Add DynamicField'} = '';
@@ -323,6 +327,8 @@ sub Data {
         'Ορισμός Ενεργειών όπου ένα κουμπί ρυθμίσεων είναι διαθέσιμο στο widget των συνδεδεμένων αντικειμένων (LinkObject::ViewMode = "complex"). Σημειώστε ότι αυτές οι Ενέργειες πρέπει να έχουν καταχωρίσει τα ακόλουθα αρχεία JS και CSS: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js και Core.Agent.LinkObject.js.';
     $Self->{Translation}->{'Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit.'} =
         'Ορισμός ενός σχήματος Template::Toolkit για συμβολοσειρές έκδοσης. Χρησιμοποιείται μόνο αν η ενότητα Version String Module έχει οριστεί σε TemplateToolkit.';
+    $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
+        '';
     $Self->{Translation}->{'Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
         'Ορίστε ένα σύνολο συνθηκών υπό τις οποίες επιτρέπεται σε έναν πελάτη να δει ένα στοιχείο διαμόρφωσης. Οι συνθήκες μπορούν προαιρετικά να περιοριστούν σε ορισμένες ομάδες πελατών. Το όνομα είναι το μόνο υποχρεωτικό χαρακτηριστικό. Εάν δεν δοθούν άλλες επιλογές, όλα τα στοιχεία διαμόρφωσης θα είναι ορατά στο πλαίσιο αυτής της κατηγορίας.';
     $Self->{Translation}->{'Defines Required permissions to delete ITSM configuration items using the Generic Interface.'} =

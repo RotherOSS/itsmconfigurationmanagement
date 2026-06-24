@@ -108,6 +108,10 @@ sub Data {
     # Template: AdminACL
     $Self->{Translation}->{'Object Type'} = 'Objekttype';
 
+    # Template: AdminACLEdit
+    $Self->{Translation}->{'Set up what you want to change if the criteria match. Keep in mind that \'Possible\' is a white list, \'PossibleNot\' a black list.'} =
+        '';
+
     # Template: AdminDynamicFieldScreen
     $Self->{Translation}->{'Filter by object type'} = 'Filtrer ut fra type';
     $Self->{Translation}->{'Add DynamicField'} = '';
@@ -323,6 +327,8 @@ sub Data {
         'Definer handlinger der en innstillingsknapp er tilgjengelig i widgeten for koblede objekter (LinkObject::ViewMode = "complex"). Vær oppmerksom på at disse handlingene må ha registrert følgende JS- og CSS-filer: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js.';
     $Self->{Translation}->{'Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit.'} =
         'Definer et Template::Toolkit-skjema for versjonsstrenger. Brukes bare hvis Versjonsstrengmodul er satt til TemplateToolkit.';
+    $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
+        '';
     $Self->{Translation}->{'Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
         'Definer et sett med betingelser for at en kunde skal kunne se et konfigurasjonselement. Betingelsene kan eventuelt begrenses til bestemte kundegrupper. Navn er det eneste obligatoriske attributtet. Hvis ingen andre alternativer er angitt, vil alle konfigurasjonselementer være synlige under den aktuelle kategorien.';
     $Self->{Translation}->{'Defines Required permissions to delete ITSM configuration items using the Generic Interface.'} =
