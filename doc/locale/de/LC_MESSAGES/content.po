@@ -5,20 +5,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-13 18:18+0100\n"
-"PO-Revision-Date: 2026-03-16 21:00+0000\n"
-"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
-"Language-Team: German <http://translate.otobo.org/projects/manual-itsmconfigurationmanagement/master/de/>\n"
-"Language: de\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16\n"
-"Generated-By: Babel 2.4.0\n"
+msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:18+0100\nPO-Revision-Date: 2026-06-24 13:00+0000\nLast-Translator: Stefan Abel <sta@rother-oss.com>\nLanguage-Team: German <http://translate.otobo.org/projects/otobo-11-1/addons/manuals/itsmconfigurationmanagement-documentation/de/>\nLanguage: de\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 5.16\nGenerated-By: Babel 2.4.0\n"
 
 #: ../../content/about.rst:13
 msgid "About"
@@ -438,7 +425,6 @@ msgid "For example, you could refer to a Server ConfigItem and have a look at th
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:240
-#, fuzzy
 msgid "General Catalog"
 msgstr "General Katalog"
 
@@ -503,7 +489,6 @@ msgid "Permissions and Access Restrictions"
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:272
-#, fuzzy
 msgid "ACLs"
 msgstr "ACLs"
 
@@ -605,7 +590,6 @@ msgid "Delete a config item."
 msgstr ""
 
 #: ../../content/configuration/generic_interface/index.rst:151
-#, fuzzy
 msgid "Invoker"
 msgstr "Invoker"
 
@@ -1982,18 +1966,16 @@ msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemEdit###RichTextWidth"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:755
-#, fuzzy
 msgid "Defines the width for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
-msgstr "Definiert die Breite der RichText-Editor Komponente. Geben Sie einen Zahlen- (Pixel) oder Prozenwert (relativ) an."
+msgstr "Definiert die Breite der RichText-Editor Komponente in dieser Ansicht. Geben Sie einen Zahlen- (Pixel) oder Prozentwert (relativ) an."
 
 #: ../../content/configuration/system_configuration_settings.rst:758
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemEdit###RichTextHeight"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:759
-#, fuzzy
 msgid "Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
-msgstr "Definiert die Höhe der RichText-Editor Komponente. Geben Sie einen Zahlen- (Pixel) oder Prozenwert (relativ) an."
+msgstr "Definiert die Höhe der RichText-Editor Komponente. Geben Sie einen Zahlen- (Pixel) oder Prozentwert (relativ) an."
 
 #: ../../content/configuration/system_configuration_settings.rst:762
 msgid "Frontend::Agent::View::ITSMConfigItemHistory"
@@ -2576,12 +2558,10 @@ msgid "Package Documentation: ITSMConfigurationManagement"
 msgstr ""
 
 #: ../../content/overview.rst:13
-#, fuzzy
 msgid "Overview"
 msgstr "Übersicht"
 
 #: ../../content/overview.rst:16
-#, fuzzy
 msgid "Summary"
 msgstr "Zusammenfassung"
 
