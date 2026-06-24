@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-06-03 15:14+0000\n"
-"PO-Revision-Date: 2026-06-23 12:52+0000\n"
+"PO-Revision-Date: 2026-06-24 13:00+0000\n"
 "Last-Translator: Stefan Abel <sta@rother-oss.com>\n"
 "Language-Team: German <http://translate.otobo.org/projects/otobo-11-1/addons/"
 "itsmconfigurationmanagement/de/>\n"
@@ -354,11 +354,11 @@ msgstr "Version %s gelöscht"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
 msgid "File \"%s\" uploaded"
-msgstr ""
+msgstr "Datei \"%s\" hochgeladen"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
 msgid "File \"%s\" removed"
-msgstr ""
+msgstr "Datei \"%s\" entfernt"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
 msgid "No ConfigItemID or VersionID is given!"
@@ -519,16 +519,18 @@ msgstr ""
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
 msgid "External-source key"
-msgstr ""
+msgstr "Schlüssel der externen Quelle"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
 msgid "Select the type of display"
-msgstr ""
+msgstr "Wählen Sie die Anzeigeart aus"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItemVersion.pm
 msgid ""
 "Activate this option to display values as a tree, grouped by config items."
 msgstr ""
+"Aktivieren Sie diese Option, um Werte als Baum anzuzeigen, gruppiert nach "
+"ConfigItems."
 
 #. Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
 msgid ""
@@ -563,11 +565,13 @@ msgstr "Maximale Anzahl eines Elements"
 
 #. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
 msgid "Maximum number of one Set dynamic field element"
-msgstr ""
+msgstr "Maximale Anzahl von Elementen eines Dynamischen Felds vom Typ „Set“"
 
 #. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
 msgid "Maximum number of one element within a Set dynamic field element"
 msgstr ""
+"Maximale Anzahl eines Elements innerhalb eines Dynamischen Felds vom Typ "
+"\"Set\""
 
 #. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
 msgid "Version String"
@@ -646,6 +650,11 @@ msgid ""
 "create/update the CI, and the values are the names of the inner fields of "
 "the set with object type ITSMConfigItem."
 msgstr ""
+"Eine Zuordnung der internen Feldnamen, die in den Prozessmanagement "
+"Übergangsaktionen ConfigItemAdd und -Update verwendet werden. Die Schlüssel "
+"sind die Namen der Felder innerhalb der Sets mit dem Objekttyp „Ticket“, die "
+"zur Erstellung/Aktualisierung der CIs genutzt werden. Die Werte sind die "
+"Namen der Felder innerhalb der Sets mit dem Objekttyp „ITSMConfigItem“."
 
 #. SysConfig
 msgid ""
@@ -675,7 +684,7 @@ msgstr "Zugewiesene Configuration Items"
 
 #. SysConfig
 msgid "AssignedToEntity"
-msgstr ""
+msgstr "Zugewiesen an Entität"
 
 #. SysConfig
 msgid ""
@@ -689,10 +698,20 @@ msgid ""
 "where X can be NAME, NUMBER and DATE, will be substituted with the "
 "respective values in \"Ticket->Text\"."
 msgstr ""
+"Zu einem bestimmten Zeitpunkt ein Ticket für ConfigItems erstellen, wenn die "
+"konfigurierten Anforderungen erfüllt sind. Der Zeitpunkt wird durch den Wert "
+"des unter \"TimeCIKey\" des ConfigItems konfigurierten Dynamischen Felds vom "
+"Typ \"Datum\" bestimmt und durch \"TimeModifier\" modifiziert. Letzterer "
+"kann entweder nur eine Zahl sein, oder ein Vorzeichen (+/-), eine Zahl und "
+"eine Einheit (d/h/m): \"7\" entspricht \"+7d\". Das DynamicField \"Ticket->"
+"DynamicField\" wird verwendet, um erstellte Tickets zu markieren - es muss "
+"existieren. Die Flags \\\\<OTOBO_CONFIGITEM_X\\\\>, wobei X sowohl NAME, als "
+"auch NUMBER und DATE sein kann, werden durch die entsprechenden Werte in "
+"\"Ticket->Text\" ersetzt."
 
 #. SysConfig
 msgid "Attributes for license accounting."
-msgstr ""
+msgstr "Attribut für Lizenzverwaltung."
 
 #. SysConfig
 msgid ""
@@ -1209,7 +1228,7 @@ msgid ""
 "number (pixels) or percent value (relative)."
 msgstr ""
 "Definiert die Höhe der RichText-Editor Komponente. Geben Sie einen Zahlen- "
-"(Pixel) oder Prozenwert (relativ) an."
+"(Pixel) oder Prozentwert (relativ) an."
 
 #. SysConfig
 msgid ""
