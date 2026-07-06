@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-06-24 13:47+0000\n"
-"PO-Revision-Date: 2026-04-06 20:00+0000\n"
+"PO-Revision-Date: 2026-07-06 22:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <http://translate.otobo.org/"
-"projects/opm-packages/itsm-configurationmanagement/zh_Hans/>\n"
+"projects/otobo-11-0/addons/itsm-configurationmanagement/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -233,6 +233,8 @@ msgid ""
 "Set up what you want to change if the criteria match. Keep in mind that "
 "'Possible' is a white list, 'PossibleNot' a black list."
 msgstr ""
+"当匹配条件满足时执行规定的操作动作。记住：'Possible'表示允许(白名单)"
+"，'PossibleNot'表示禁止(黑名单)。"
 
 #. Template: AdminDynamicFieldScreen
 msgid "Filter by object type"
@@ -240,7 +242,7 @@ msgstr "按类型过滤"
 
 #. Template: AdminDynamicFieldScreen
 msgid "Add DynamicField"
-msgstr ""
+msgstr "添加动态字段"
 
 #. JS Template: ClassImportConfirm
 msgid "The following classes will be imported"
