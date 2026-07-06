@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-06-24 13:47+0000\n"
-"PO-Revision-Date: 2026-04-06 18:00+0000\n"
+"PO-Revision-Date: 2026-07-06 22:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
-"Language-Team: Italian <http://translate.otobo.org/projects/opm-packages/"
-"itsm-configurationmanagement/it/>\n"
+"Language-Team: Italian <http://translate.otobo.org/projects/otobo-11-0/"
+"addons/itsm-configurationmanagement/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -238,6 +238,8 @@ msgid ""
 "Set up what you want to change if the criteria match. Keep in mind that "
 "'Possible' is a white list, 'PossibleNot' a black list."
 msgstr ""
+"Imposta cosa cambiare nei criteri di corrispondenza. Considerare che "
+"'Possible' è una whitelist, 'PossibileNot' una blacklist."
 
 #. Template: AdminDynamicFieldScreen
 msgid "Filter by object type"
@@ -245,7 +247,7 @@ msgstr "Filtra campo per tipo di oggetto"
 
 #. Template: AdminDynamicFieldScreen
 msgid "Add DynamicField"
-msgstr ""
+msgstr "Aggiungi campo dinamico"
 
 #. JS Template: ClassImportConfirm
 msgid "The following classes will be imported"
