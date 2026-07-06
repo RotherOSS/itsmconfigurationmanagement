@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-03-09 13:29+0000\n"
-"PO-Revision-Date: 2026-04-06 20:00+0000\n"
+"PO-Revision-Date: 2026-07-06 20:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
-"Language-Team: German <http://translate.otobo.org/projects/opm-packages/itsm-"
-"configurationmanagement/de/>\n"
+"Language-Team: German <http://translate.otobo.org/projects/otobo-11-0/addons/"
+"itsm-configurationmanagement/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -343,11 +343,11 @@ msgstr "Version %s gelöscht"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
 msgid "File \"%s\" uploaded"
-msgstr ""
+msgstr "Datei \"%s\" hochgeladen"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
 msgid "File \"%s\" removed"
-msgstr ""
+msgstr "Datei \"%s\" entfernt"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
 msgid "No ConfigItemID or VersionID is given!"
@@ -519,11 +519,13 @@ msgstr "Maximale Anzahl eines Elements"
 
 #. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
 msgid "Maximum number of one Set dynamic field element"
-msgstr ""
+msgstr "Maximale Anzahl von Elementen eines Dynamischen Felds vom Typ „Set“"
 
 #. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
 msgid "Maximum number of one element within a Set dynamic field element"
 msgstr ""
+"Maximale Anzahl eines Elements innerhalb eines Dynamischen Felds vom Typ "
+"\"Set\""
 
 #. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
 msgid "Import/Export attachments (as the last entries per line)"
@@ -596,6 +598,11 @@ msgstr "1 - Abgebildet"
 #. SysConfig
 msgid "A mapping of inner field names used in the Process Management TransitionActions ConfigItemAdd and -Update. The keys are the names of the set inner fields of the set with object type ticket which will be used to create/update the CI, and the values are the names of the inner fields of the set with object type ITSMConfigItem."
 msgstr ""
+"Eine Zuordnung der internen Feldnamen, die in den Prozessmanagement "
+"Übergangsaktionen ConfigItemAdd und -Update verwendet werden. Die Schlüssel "
+"sind die Namen der Felder innerhalb der Sets mit dem Objekttyp „Ticket“, die "
+"zur Erstellung/Aktualisierung der CIs genutzt werden. Die Werte sind die "
+"Namen der Felder innerhalb der Sets mit dem Objekttyp „ITSMConfigItem“."
 
 #. SysConfig
 msgid "Allows extended search conditions in config item search of the agent interface. With this feature you can search e. g. config item name with this kind of conditions like \"(*key1*&&*key2*)\" or \"(*key1*||*key2*)\"."
@@ -612,14 +619,36 @@ msgstr "Zugewiesene Configuration Items"
 #. SysConfig
 msgid "At a specific time point create a ticket for config items, if the configured requirements are met. The time point is determined by the value of the dynamic field of type date configured under \"TimeCIKey\" of the ConfigItem, and modified by \"TimeModifier\". If the latter can be either just a number, or a sign (+/-), a number, and an unit (d/h/m): \"7\" is equivalent to \"+7d\". The DynamicField \"Ticket->DynamicField\" will be used to mark created tickets - it has to exist. The flags \\\\<OTOBO_CONFIGITEM_X\\\\> where X can be NAME, NUMBER and DATE, will be substituted with the respective values in \"Ticket->Text\"."
 msgstr ""
+"Zu einem bestimmten Zeitpunkt ein Ticket für ConfigItems erstellen, wenn die "
+"konfigurierten Anforderungen erfüllt sind. Der Zeitpunkt wird durch den Wert "
+"des unter \"TimeCIKey\" des ConfigItems konfigurierten Dynamischen Felds vom "
+"Typ \"Datum\" bestimmt und durch \"TimeModifier\" modifiziert. Letzterer "
+"kann entweder nur eine Zahl sein, oder ein Vorzeichen (+/-), eine Zahl und "
+"eine Einheit (d/h/m): \"7\" entspricht \"+7d\". Das DynamicField \"Ticket->"
+"DynamicField\" wird verwendet, um erstellte Tickets zu markieren - es muss "
+"existieren. Die Flags \\\\<OTOBO_CONFIGITEM_X\\\\>, wobei X sowohl NAME, als "
+"auch NUMBER und DATE sein kann, werden durch die entsprechenden Werte in "
+"\"Ticket->Text\" ersetzt."
 
 #. SysConfig
 msgid "Attributes for license accounting."
-msgstr ""
+msgstr "Attribut für Lizenzverwaltung."
 
 #. SysConfig
 msgid "Attributes for licenses counting, where \"TotalLicensesDF\", \"AvailableLicensesDF\" and \"LicenseReferenceDF\" are the names of the dynamic fields used to track the remaining licenses. If used, only deployment states in \"ValidDeplStates\" are considered. If a threshold is defined in \"MinimumLicenses\", a ticket will automatically be created if less licenses are available. For this, the checkbox dynamic field \"Ticket->DynamicField\" must exist. The tags \\\\<OTOBO_CONFIGITEM_X\\\\> where X can be NAME, NUMBER, LICENSES_AVAIL and LICENSES_MIN, will be substituted with the respective values in \"Ticket->Text\" by the config item name, number, available licenses, and minimum required available licenses, respectively."
 msgstr ""
+"Attribute für die Lizenzzählung, wobei „TotalLicensesDF“, „"
+"AvailableLicensesDF“ und „LicenseReferenceDF“ die Namen der dynamischen "
+"Felder sind, die zur Nachvollziehbarkeit der verbleibenden Lizenzen "
+"verwendet werden. Falls verwendet, werden nur die Verwendungsstatus in „"
+"ValidDeplStates“ berücksichtigt. Wenn ein Schwellwert in „MinimumLicenses“ "
+"definiert ist, wird automatisch ein Ticket erstellt, wenn weniger Lizenzen "
+"verfügbar sind. Dazu muss das Dynamische Feld vom Typ \"Kontrollkästchen\" „"
+"Ticket->DynamicField“ existieren. Die Tags \\\\<OTOBO_CONFIGITEM_X\\\\> "
+"(wobei X sowohl NAME, als auch NUMBER, LICENSES_AVAIL oder LICENSES_MIN sein "
+"kann) werden im „Ticket->Text“ durch die entsprechenden Werte ersetzt: den "
+"Config Item Namen, die Nummer, die verfügbaren Lizenzen und die minimale "
+"Anzahl an verfügbaren Lizenzen."
 
 #. SysConfig
 msgid "CIs assigned to customer company"
@@ -680,6 +709,8 @@ msgstr "Configuration Item bearbeiten."
 #. SysConfig
 msgid "Config item event module that enables accounting licenses for a given config item."
 msgstr ""
+"Ereignismodul von Config Items, das die Lizenzzählung für ein bestimmtes "
+"Config Item aktiviert."
 
 #. SysConfig
 msgid "Config item event module that enables logging to history in the agent interface."
@@ -740,10 +771,17 @@ msgstr "Configuration Item Such-Backend Navigation des Agenten-Interface."
 #. SysConfig
 msgid "Configure the columns which are available for viewing Permission Conditions in the customer interface, when the corresponding Permission Condition Columns are not specifically configured. This setting is used as a fallback for the other Permission Condition Columns settings."
 msgstr ""
+"Konfiguriere die Spalten, die im Kundeninterface für die Anzeige von "
+"Zugriffsbedingungen verfügbar sind, wenn die entsprechenden Spalten für "
+"Zugriffsbedingungen nicht explizit konfiguriert sind. Diese Einstellung "
+"dient als Rückfalloption für die anderen Einstellungen zu den "
+"Spalteneinstellungen für Zugriffsbedingungen."
 
 #. SysConfig
 msgid "Configure the columns which are available when viewing the corresponding Permission Condition in the customer interface."
 msgstr ""
+"Konfiguriere die Spalten, die in der Kundenoberfläche in der Ansicht der "
+"entsprechenden Berechtigungsbedingung verfügbar sind."
 
 #. SysConfig
 msgid "Create and manage the definitions for Configuration Items."
@@ -1034,7 +1072,7 @@ msgstr "Schließt Vorfallszustände in die Konfigurationssuche der Kundenschnitt
 
 #. SysConfig
 msgid "License accounting configuration item event module."
-msgstr ""
+msgstr "Event-Modul zur Lizenzzählung von Config Item."
 
 #. SysConfig
 msgid "Maximum number of config items to be displayed in the result of this operation."
@@ -1372,7 +1410,7 @@ msgstr "Gerätetyp"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Phone / VoIP"
-msgstr ""
+msgstr "Telefon / VoIP"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Firewall"
@@ -1500,7 +1538,7 @@ msgstr "Desktop"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Virtual Client"
-msgstr ""
+msgstr "Virtueller Client"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Thin Client"
@@ -1848,11 +1886,11 @@ msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "MPL (Mozilla Public License)"
-msgstr ""
+msgstr "MPL (Mozilla Public License)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Creative Commons"
-msgstr ""
+msgstr "Creative Commons"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Perpetual licenses"
@@ -1860,7 +1898,7 @@ msgstr "Unbefristete Lizenzen"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "EPL (Eclipse Public License)"
-msgstr ""
+msgstr "EPL (Eclipse Public License)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "BSD Lizenz (Berkeley Software Distribution License)"
@@ -1868,7 +1906,7 @@ msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "AGPL (Affero General Public License)"
-msgstr ""
+msgstr "AGPL (Affero General Public License)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Freeware"
@@ -1880,15 +1918,15 @@ msgstr "Abonnement-basierte Lizenzen"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "CC0 (Creative Commons Zero)"
-msgstr ""
+msgstr "CC0 (Creative Commons Zero)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "GPL (General Public License)"
-msgstr ""
+msgstr "GPL (GNU General Public License)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Public Domain"
-msgstr ""
+msgstr "Public Domain"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Volume licenses"
@@ -1900,11 +1938,11 @@ msgstr ""
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Shareware"
-msgstr ""
+msgstr "Shareware"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "LGPL (Lesser General Public License)"
-msgstr ""
+msgstr "LGPL (Lesser General Public License)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "License Key"
@@ -2156,7 +2194,7 @@ msgstr "Karte Typ"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Micro SIM"
-msgstr ""
+msgstr "Micro-SIM"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Standard SIM"
@@ -2164,11 +2202,11 @@ msgstr "Standard"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Nano SIM"
-msgstr ""
+msgstr "Nano-SIM"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Embedded SIM (eSIM)"
-msgstr ""
+msgstr "Eingebettete SIM (eSIM)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "PUK 2"
