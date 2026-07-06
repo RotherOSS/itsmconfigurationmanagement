@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-06-24 13:47+0000\n"
-"PO-Revision-Date: 2026-07-06 20:00+0000\n"
+"PO-Revision-Date: 2026-07-06 22:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: German <http://translate.otobo.org/projects/otobo-11-0/addons/"
 "itsm-configurationmanagement/de/>\n"
@@ -240,6 +240,9 @@ msgid ""
 "Set up what you want to change if the criteria match. Keep in mind that "
 "'Possible' is a white list, 'PossibleNot' a black list."
 msgstr ""
+"Stellt die Wertänderungen ein für den Fall, dass die Filterbedingungen "
+"zutreffen. Hierbei ist 'Possible' eine Positivliste und 'PossibleNot' eine "
+"Negativliste."
 
 #. Template: AdminDynamicFieldScreen
 msgid "Filter by object type"
@@ -247,7 +250,7 @@ msgstr "Feld nach Objekttyp filtern"
 
 #. Template: AdminDynamicFieldScreen
 msgid "Add DynamicField"
-msgstr ""
+msgstr "Dynamisches Feld hinzufügen"
 
 #. JS Template: ClassImportConfirm
 msgid "The following classes will be imported"
@@ -537,11 +540,11 @@ msgstr ""
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
 msgid "External-source key"
-msgstr ""
+msgstr "Schlüssel der externen Quelle"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
 msgid "Select the type of display"
-msgstr ""
+msgstr "Wählen Sie die Anzeigeart aus"
 
 #. Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
 msgid ""
@@ -699,7 +702,7 @@ msgstr "Zugewiesene Configuration Items"
 
 #. SysConfig
 msgid "AssignedToEntity"
-msgstr ""
+msgstr "Zugewiesen an Entität"
 
 #. SysConfig
 msgid ""
@@ -2191,7 +2194,7 @@ msgstr "Analoges Telefon"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Apache License"
-msgstr ""
+msgstr "Apache-Lizenz"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Appliance Type"
@@ -2199,7 +2202,7 @@ msgstr "Gerätetyp"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "BSD License (Berkeley Software Distribution License)"
-msgstr ""
+msgstr "BSD-Lizenz (Berkeley Software Distribution License)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Battery Capacity (Ah)"
