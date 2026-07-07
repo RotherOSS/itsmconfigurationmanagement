@@ -320,6 +320,8 @@ sub Data {
         'Задает Действия/Actions когда кнопка настройки доступна в связанном виджете (LinkObject::ViewMode = "complex"). Обратите внимание, что эти Действия/Actions должны иметь зарегистрированные JS или CSS файлы: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js и Core.Agent.LinkObject.js.';
     $Self->{Translation}->{'Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit.'} =
         'Определяет схему Template::Toolkit для строк версий. Используется только в том случае, если для Version String Module установлено значение TemplateToolkit.';
+    $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
+        '';
     $Self->{Translation}->{'Define a set of conditions under which a config item can be publicly seen. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
         '';
     $Self->{Translation}->{'Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =

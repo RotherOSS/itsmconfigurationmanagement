@@ -320,6 +320,8 @@ sub Data {
         'Definēt Darbības, kurās piesaistīto objektu logrīkā ir pieejama iestatījumu poga (LinkObject::ViewMode = "complex"). Lūdzu, ņemiet vērā, ka šīm darbībām ir jābūt reģistrētiem šādiem JS un CSS failiem: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js un Core.Agent.LinkObject.js.';
     $Self->{Translation}->{'Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit.'} =
         'Definēt Template::Toolkit shēmu versiju virknēm. Izmanto tikai tad, ja versijas virknes modulis ir iestatīts uz TemplateToolkit.';
+    $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
+        '';
     $Self->{Translation}->{'Define a set of conditions under which a config item can be publicly seen. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
         '';
     $Self->{Translation}->{'Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =

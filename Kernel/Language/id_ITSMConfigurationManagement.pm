@@ -320,6 +320,8 @@ sub Data {
         'Tentukan Tindakan adalah tombol pengaturan tersedia di objek widget terkait (LinkObject::ViewMode = "complex"). Harap dicatat bahwa Tindakan ini harus telah mendaftarkan berikut JS dan CSS file: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js.';
     $Self->{Translation}->{'Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit.'} =
         'Mendefinisikan skema Template::Toolkit untuk string versi. Hanya digunakan jika Modul String Versi diatur ke TemplateToolkit.';
+    $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
+        '';
     $Self->{Translation}->{'Define a set of conditions under which a config item can be publicly seen. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
         '';
     $Self->{Translation}->{'Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =

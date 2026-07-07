@@ -320,6 +320,8 @@ sub Data {
         '링크 객체 위젯에서 설정 버튼을 사용할 수있는 액션 정의 (LinkObject :: ViewMode = "complex"). 이러한 작업은 다음 JS 및 CSS 파일을 등록해야합니다. Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js.';
     $Self->{Translation}->{'Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit.'} =
         '버전 문자열에 대한 템플릿::툴킷 체계를 정의합니다. 버전 문자열 모듈이 TemplateToolkit으로 설정된 경우에만 사용됩니다.';
+    $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
+        '';
     $Self->{Translation}->{'Define a set of conditions under which a config item can be publicly seen. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
         '';
     $Self->{Translation}->{'Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =

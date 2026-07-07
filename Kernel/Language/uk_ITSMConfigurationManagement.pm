@@ -320,6 +320,8 @@ sub Data {
         'Визначте дії, для яких кнопка налаштувань доступна у віджеті пов\'язаних об\'єктів (LinkObject::ViewMode = "complex"). Зверніть увагу, що в цих діях повинні бути зареєстровані наступні JS і CSS файли: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js і Core.Agent.LinkObject.js.';
     $Self->{Translation}->{'Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit.'} =
         'Визначає схему Template::Toolkit для рядків версій. Використовується лише у випадку, якщо модуль рядків версій має значення TemplateToolkit.';
+    $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
+        '';
     $Self->{Translation}->{'Define a set of conditions under which a config item can be publicly seen. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
         '';
     $Self->{Translation}->{'Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =

@@ -320,6 +320,8 @@ sub Data {
         'Définir les actions pour lesquelles un bouton de configuration est disponible dans le widget des objets liés (LinkObject::ViewMode = "complex"). Veuillez noter que ces actions doivent avoir enregistré les fichiers JS et CSS suivants : Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js et Core.Agent.LinkObject.js.';
     $Self->{Translation}->{'Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit.'} =
         'Définir un schéma Template::Toolkit pour les chaînes de version. Utilisé uniquement si le module de chaîne de version est défini sur TemplateToolkit.';
+    $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
+        '';
     $Self->{Translation}->{'Define a set of conditions under which a config item can be publicly seen. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
         '';
     $Self->{Translation}->{'Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =

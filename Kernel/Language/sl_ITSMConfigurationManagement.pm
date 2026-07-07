@@ -320,6 +320,8 @@ sub Data {
         'Opredelite dejanja, pri katerih je v gradniku povezanih predmetov na voljo gumb za nastavitve (LinkObject::ViewMode = "complex"). Upoštevajte, da morajo te akcije registrirati naslednje datoteke JS in CSS: V tem primeru je treba za uporabo nastavitev in funkcij za povezovanje objektov in njihovih funkcij v sistemu nastaviti naslednje datoteke: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js in Core.Agent.LinkObject.js.';
     $Self->{Translation}->{'Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit.'} =
         'Opredelitev sheme Template::Toolkit za niza različic. Uporablja se samo, če je modul Version String Module nastavljen na TemplateToolkit.';
+    $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
+        '';
     $Self->{Translation}->{'Define a set of conditions under which a config item can be publicly seen. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
         '';
     $Self->{Translation}->{'Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =

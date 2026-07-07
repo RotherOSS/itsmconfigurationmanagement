@@ -320,6 +320,8 @@ sub Data {
         '定义可在链接对象 widget 中使用设置按钮的操作（LinkObject::ViewMode = "complex"）。请注意，这些操作必须已注册以下 JS 和 CSS 文件：Core.AllocationList.css、Core.UI.AllocationList.js、Core.UI.Table.Sort.js、Core.Agent.TableFilters.js 和 Core.Agent.LinkObject.js。';
     $Self->{Translation}->{'Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit.'} =
         '为版本字符串定义一个 Template::Toolkit 方案。仅在版本字符串模块设置为 TemplateToolkit 时使用。';
+    $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
+        '';
     $Self->{Translation}->{'Define a set of conditions under which a config item can be publicly seen. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
         '';
     $Self->{Translation}->{'Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =

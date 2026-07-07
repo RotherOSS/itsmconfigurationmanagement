@@ -320,6 +320,8 @@ sub Data {
         'リンクされたオブジェクト ウィジェット (LinkObject::ViewMode = "complex") で設定ボタンが使用できるアクションを定義します。これらのアクションには、Core.AllocationList.css、Core.UI.AllocationList.js、Core.UI.Table.Sort.js、Core.Agent.TableFilters.js、および Core.Agent.LinkObject.js の JS および CSS ファイルが登録されている必要があることに注意してください。';
     $Self->{Translation}->{'Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit.'} =
         'バージョン文字列用の Template::Toolkit スキームを定義します。バージョン文字列モジュールが TemplateToolkit に設定されている場合にのみ使用されます。';
+    $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
+        '';
     $Self->{Translation}->{'Define a set of conditions under which a config item can be publicly seen. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
         '';
     $Self->{Translation}->{'Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
