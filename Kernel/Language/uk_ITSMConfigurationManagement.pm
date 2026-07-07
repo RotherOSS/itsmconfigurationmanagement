@@ -110,7 +110,7 @@ sub Data {
 
     # Template: AdminACLEdit
     $Self->{Translation}->{'Set up what you want to change if the criteria match. Keep in mind that \'Possible\' is a white list, \'PossibleNot\' a black list.'} =
-        '';
+        'Установіть що Ви хочете змінити, якщо є відповідність критеріям. Майте на увазі, що «Можливо» — білий список, «Не можливо» — чорний список.';
 
     # Template: AdminDynamicFieldScreen
     $Self->{Translation}->{'Filter by object type'} = 'Фільтрувати за типом';

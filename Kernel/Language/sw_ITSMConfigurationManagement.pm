@@ -110,11 +110,11 @@ sub Data {
 
     # Template: AdminACLEdit
     $Self->{Translation}->{'Set up what you want to change if the criteria match. Keep in mind that \'Possible\' is a white list, \'PossibleNot\' a black list.'} =
-        '';
+        'Weka unachotaka kubadillisha kama vigezo vinafanana. Weka akilini kwamba \'Wezekana\' ni orodha nyeupe, \'Haiwezekani\' ni orodha nyeusi.';
 
     # Template: AdminDynamicFieldScreen
     $Self->{Translation}->{'Filter by object type'} = 'Chuja kwa aina';
-    $Self->{Translation}->{'Add DynamicField'} = '';
+    $Self->{Translation}->{'Add DynamicField'} = 'SehemuInayobadilika';
 
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = '';

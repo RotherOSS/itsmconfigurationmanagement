@@ -110,11 +110,11 @@ sub Data {
 
     # Template: AdminACLEdit
     $Self->{Translation}->{'Set up what you want to change if the criteria match. Keep in mind that \'Possible\' is a white list, \'PossibleNot\' a black list.'} =
-        '';
+        'Подесите оно што желите да мењате ако се критеријуми слажу. Имајте на уму да је \'Possible\' бела листа, \'PossibleNot\' црна листа.';
 
     # Template: AdminDynamicFieldScreen
     $Self->{Translation}->{'Filter by object type'} = 'Филтер по типу';
-    $Self->{Translation}->{'Add DynamicField'} = '';
+    $Self->{Translation}->{'Add DynamicField'} = 'Динамичко поље';
 
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = '';

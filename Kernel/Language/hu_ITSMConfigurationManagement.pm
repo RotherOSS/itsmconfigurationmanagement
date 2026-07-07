@@ -110,11 +110,11 @@ sub Data {
 
     # Template: AdminACLEdit
     $Self->{Translation}->{'Set up what you want to change if the criteria match. Keep in mind that \'Possible\' is a white list, \'PossibleNot\' a black list.'} =
-        '';
+        'Állítsa be, amit módosítani szeretne a feltétel egyezésekor. Ne feledkezzen meg arról, hogy a „Possible” a fehérlista, a „PossibleNot” a feketelista.';
 
     # Template: AdminDynamicFieldScreen
     $Self->{Translation}->{'Filter by object type'} = 'Mező szűrése objektumtípus szerint';
-    $Self->{Translation}->{'Add DynamicField'} = '';
+    $Self->{Translation}->{'Add DynamicField'} = 'Dinamikus mező hozzáadása';
 
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = 'A következő osztályok kerülnek importálásra';
@@ -215,8 +215,8 @@ sub Data {
     $Self->{Translation}->{'Whether this link applies to the ConfigItem or the static version of the referencing object. Current Incident State calculation only is performed on dynamic links.'} =
         'A hivatkozás a hivatkozó objektum ConfigItem vagy statikus változatára vonatkozik-e. Az aktuális incidensállapot számítása csak dinamikus hivatkozások esetén történik.';
     $Self->{Translation}->{'Select the attribute which config items will be searched by'} = 'Válassza ki azt az attribútumot, amely alapján a konfigurációs elemeket keresni fogják.';
-    $Self->{Translation}->{'External-source key'} = '';
-    $Self->{Translation}->{'Select the type of display'} = '';
+    $Self->{Translation}->{'External-source key'} = 'Külső forrás kulcsa';
+    $Self->{Translation}->{'Select the type of display'} = 'A megjelenítés típusának kiválasztása.';
 
     # Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
     $Self->{Translation}->{'Base structure is not valid. Please provide a hash with data in YAML format.'} =
