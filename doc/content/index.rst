@@ -12,6 +12,3 @@ Package Documentation: ITSMConfigurationManagement
    overview
    configuration
    about
-
-Sacrifice to Sphinx
-===================
