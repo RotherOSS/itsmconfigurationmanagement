@@ -5,7 +5,7 @@
 # Copyright (C) 2012-2020 Znuny GmbH, http://znuny.com/
 # Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
-# $origin: otobo - 7cc84ce13c8e6c3485605ade5585014abd911579 - Kernel/System/ZnunyHelper.pm
+# $origin: otobo - 6bb2bc72d6197581a6255a6968cd4ec4521f770c - Kernel/System/ZnunyHelper.pm
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -1822,6 +1822,44 @@ sub _DynamicFieldsCreate {
                 );
                 $Error = 1;
             }
+            else {
+
+                my $IsScriptField = $Kernel::OM->Get('Kernel::System::DynamicField::Backend')->HasBehavior(
+                    DynamicFieldConfig => \%OldDynamicFieldConfig,
+                    Behavior           => 'IsScriptField',
+                );
+
+                # set events for script fields
+                if ( $IsScriptField && IsArrayRefWithData( $OldDynamicFieldConfig{Config}{UpdateEvents} ) ) {
+                    my $Config = $OldDynamicFieldConfig{FieldType} ? $Kernel::OM->Get('Kernel::Config')->Get('DynamicFields::Driver')->{ $OldDynamicFieldConfig{FieldType} } : {};
+
+                    # Check module validity
+                    if ( !$Config->{Module} || !$Kernel::OM->Get('Kernel::System::Main')->Require( $Config->{Module} ) ) {
+                        next DYNAMICFIELD;
+                    }
+
+                    my $DriverObject = $Kernel::OM->Get( $Config->{Module} );
+
+                    # validate update events against possible events
+                    my $PossibleConditions = $DriverObject->GetPossibleExecutionConditions(
+                        ObjectType => $OldDynamicFieldConfig{ObjectType},
+                        FieldID    => $OldDynamicFieldConfig{ID},
+                    );
+
+                    my @FilteredUpdateEvents;
+                    if ( IsArrayRefWithData( $PossibleConditions->{PossibleUpdateEvents} ) ) {
+                        my %PossibleUpdateEvents = map { $_ => $_ } $PossibleConditions->{PossibleUpdateEvents}->@*;
+                        @FilteredUpdateEvents = grep { $PossibleUpdateEvents{$_} } $OldDynamicFieldConfig{Config}{UpdateEvents}->@*;
+                    }
+
+                    if (@FilteredUpdateEvents) {
+                        $DriverObject->SetUpdateEvents(
+                            FieldID => $OldDynamicFieldConfig{ID},
+                            Events  => \@FilteredUpdateEvents,
+                        );
+                    }
+                }
+            }
 
             $CreateDynamicField = 1;
         }
@@ -1848,6 +1886,47 @@ sub _DynamicFieldsCreate {
                     Message  => "Error while updating dynamic field $OldDynamicFieldConfig{Name}!",
                 );
                 $Error = 1;
+            }
+            else {
+
+                my $IsScriptField = $Kernel::OM->Get('Kernel::System::DynamicField::Backend')->HasBehavior(
+                    DynamicFieldConfig => {
+                        $NewDynamicField->%*,
+                        ID => $OldDynamicFieldConfig{ID},
+                    },
+                    Behavior => 'IsScriptField',
+                );
+
+                # set events for script fields
+                if ( $IsScriptField && IsArrayRefWithData( $NewDynamicField->{Config}{UpdateEvents} ) ) {
+                    my $Config = $NewDynamicField->{FieldType} ? $Kernel::OM->Get('Kernel::Config')->Get('DynamicFields::Driver')->{ $NewDynamicField->{FieldType} } : {};
+
+                    # Check module validity
+                    if ( !$Config->{Module} || !$Kernel::OM->Get('Kernel::System::Main')->Require( $Config->{Module} ) ) {
+                        next DYNAMICFIELD;
+                    }
+
+                    my $DriverObject = $Kernel::OM->Get( $Config->{Module} );
+
+                    # validate update events against possible events
+                    my $PossibleConditions = $DriverObject->GetPossibleExecutionConditions(
+                        ObjectType => $NewDynamicField->{ObjectType},
+                        FieldID    => $OldDynamicFieldConfig{ID},
+                    );
+
+                    my @FilteredUpdateEvents;
+                    if ( IsArrayRefWithData( $PossibleConditions->{PossibleUpdateEvents} ) ) {
+                        my %PossibleUpdateEvents = map { $_ => $_ } $PossibleConditions->{PossibleUpdateEvents}->@*;
+                        @FilteredUpdateEvents = grep { $PossibleUpdateEvents{$_} } $NewDynamicField->{Config}{UpdateEvents}->@*;
+                    }
+
+                    if (@FilteredUpdateEvents) {
+                        $DriverObject->SetUpdateEvents(
+                            FieldID => $OldDynamicFieldConfig{ID},
+                            Events  => \@FilteredUpdateEvents,
+                        );
+                    }
+                }
             }
         }
 
@@ -1877,7 +1956,47 @@ sub _DynamicFieldsCreate {
             );
             $Error = 1;
         }
+
         next DYNAMICFIELD if !$FieldID;
+
+        my $IsScriptField = $Kernel::OM->Get('Kernel::System::DynamicField::Backend')->HasBehavior(
+            DynamicFieldConfig => {
+                $NewDynamicField->%*,
+                ID => $FieldID,
+            },
+            Behavior => 'IsScriptField',
+        );
+
+        # set events for script fields
+        if ( $IsScriptField && IsArrayRefWithData( $NewDynamicField->{Config}{UpdateEvents} ) ) {
+            my $Config = $NewDynamicField->{FieldType} ? $Kernel::OM->Get('Kernel::Config')->Get('DynamicFields::Driver')->{ $NewDynamicField->{FieldType} } : {};
+
+            # Check module validity
+            if ( !$Config->{Module} || !$Kernel::OM->Get('Kernel::System::Main')->Require( $Config->{Module} ) ) {
+                next DYNAMICFIELD;
+            }
+
+            my $DriverObject = $Kernel::OM->Get( $Config->{Module} );
+
+            # validate update events against possible events
+            my $PossibleConditions = $DriverObject->GetPossibleExecutionConditions(
+                ObjectType => $NewDynamicField->{ObjectType},
+                FieldID    => $FieldID,
+            );
+
+            my @FilteredUpdateEvents;
+            if ( IsArrayRefWithData( $PossibleConditions->{PossibleUpdateEvents} ) ) {
+                my %PossibleUpdateEvents = map { $_ => $_ } $PossibleConditions->{PossibleUpdateEvents}->@*;
+                @FilteredUpdateEvents = grep { $PossibleUpdateEvents{$_} } $NewDynamicField->{Config}{UpdateEvents}->@*;
+            }
+
+            if (@FilteredUpdateEvents) {
+                $DriverObject->SetUpdateEvents(
+                    FieldID => $FieldID,
+                    Events  => \@FilteredUpdateEvents,
+                );
+            }
+        }
 
         # increase the order number
         $NextOrderNumber++;
