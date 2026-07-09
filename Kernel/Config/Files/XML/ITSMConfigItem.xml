@@ -3093,7 +3093,7 @@
         </Value>
     </Setting>
     <Setting Name="Public::ConfigItem::PermissionConditionColumns###Default" Required="0" Valid="1">
-        <Description Translatable="1"></Description>
+        <Description Translatable="1">Configure the columns which are available for viewing Permission Conditions in the public interface, when the corresponding Permission Condition Columns are not specifically configured. This setting is used as a fallback for the other Permission Condition Columns settings.</Description>
         <Navigation>Core::ITSMConfigItem</Navigation>
         <Value>
             <Array>
@@ -3107,7 +3107,7 @@
         </Value>
     </Setting>
     <Setting Name="Public::ConfigItem::PermissionConditionColumns###01" Required="0" Valid="0">
-        <Description Translatable="1"></Description>
+        <Description Translatable="1">Configure the columns which are available when viewing the corresponding Permission Condition in the public interface.</Description>
         <Navigation>Core::ITSMConfigItem</Navigation>
         <Value>
             <Array>
@@ -3121,7 +3121,7 @@
         </Value>
     </Setting>
     <Setting Name="Public::ConfigItem::PermissionConditionColumns###02" Required="0" Valid="0">
-        <Description Translatable="1"></Description>
+        <Description Translatable="1">Configure the columns which are available when viewing the corresponding Permission Condition in the public interface.</Description>
         <Navigation>Core::ITSMConfigItem</Navigation>
         <Value>
             <Array>
@@ -3135,7 +3135,7 @@
         </Value>
     </Setting>
     <Setting Name="Public::ConfigItem::PermissionConditionColumns###03" Required="0" Valid="0">
-        <Description Translatable="1"></Description>
+        <Description Translatable="1">Configure the columns which are available when viewing the corresponding Permission Condition in the public interface.</Description>
         <Navigation>Core::ITSMConfigItem</Navigation>
         <Value>
             <Array>
@@ -3149,7 +3149,7 @@
         </Value>
     </Setting>
     <Setting Name="Public::ConfigItem::PermissionConditionColumns###04" Required="0" Valid="0">
-        <Description Translatable="1"></Description>
+        <Description Translatable="1">Configure the columns which are available when viewing the corresponding Permission Condition in the public interface.</Description>
         <Navigation>Core::ITSMConfigItem</Navigation>
         <Value>
             <Array>
@@ -3163,7 +3163,7 @@
         </Value>
     </Setting>
     <Setting Name="Public::ConfigItem::PermissionConditionColumns###05" Required="0" Valid="0">
-        <Description Translatable="1"></Description>
+        <Description Translatable="1">Configure the columns which are available when viewing the corresponding Permission Condition in the public interface.</Description>
         <Navigation>Core::ITSMConfigItem</Navigation>
         <Value>
             <Array>
