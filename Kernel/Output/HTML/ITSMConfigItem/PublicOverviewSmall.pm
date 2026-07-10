@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -22,11 +22,12 @@ use utf8;
 use namespace::autoclean;
 
 # core modules
+use List::Util qw(none);
 
 # CPAN modules
 
 # OTOBO modules
-use Kernel::Language qw(Translatable);
+use Kernel::Language              qw(Translatable);
 use Kernel::System::VariableCheck qw(:all);
 
 our @ObjectDependencies = (
@@ -88,10 +89,10 @@ sub new {
     }
 
     # always set config item number
-    if ( !grep { $_ eq 'Number' } $Self->{ColumnsEnabled}->@* ) {
+    if ( none { $_ eq 'Number' } $Self->{ColumnsEnabled}->@* ) {
         unshift $Self->{ColumnsEnabled}->@*, 'Number';
     }
-    if ( !grep { $_ eq 'Number' } $Self->{ColumnsAvailable}->@* ) {
+    if ( none { $_ eq 'Number' } $Self->{ColumnsAvailable}->@* ) {
         unshift $Self->{ColumnsAvailable}->@*, 'Number';
     }
 
@@ -430,13 +431,11 @@ sub Run {
                     sort keys %Actions;
             }
 
-            my %AclAction = %PossibleActions;
-
             push @ConfigItemBox, \%ConfigItem;
         }
     }
 
-    # check if columnsenabled is a filled array referencd
+    # check if columnsenabled is a filled array referenced
     if ( IsArrayRefWithData( $Self->{ColumnsEnabled} ) ) {
 
         # check if column is really filterable
@@ -1398,8 +1397,6 @@ sub Run {
 sub _GetColumnValues {
     my ( $Self, %Param ) = @_;
 
-    my $HeaderColumn = $Param{HeaderColumn};
-
     return if !IsStringWithData( $Param{HeaderColumn} );
 
     my %ColumnFilterValues;
@@ -1478,14 +1475,14 @@ sub FilterContent {
     # apply restrictions for public permission conditions
     if ( $HeaderColumn eq 'Class' && $Param{Filters}->{ $Param{Filter} }{Search}{Classes}->@* ) {
         for my $FilterValue ( keys $ColumnValues->{$HeaderColumn}->%* ) {
-            if ( !grep { $ColumnValues->{$HeaderColumn}{$FilterValue} eq $_ } $Param{Filters}->{ $Param{Filter} }{Search}{Classes}->@* ) {
+            if ( none { $ColumnValues->{$HeaderColumn}{$FilterValue} eq $_ } $Param{Filters}->{ $Param{Filter} }{Search}{Classes}->@* ) {
                 delete $ColumnValues->{$HeaderColumn}{$FilterValue};
             }
         }
     }
     if ( $HeaderColumn eq 'DeplState' && $Param{Filters}->{ $Param{Filter} }{Search}{DeplStates}->@* ) {
         for my $FilterValue ( keys $ColumnValues->{$HeaderColumn}->%* ) {
-            if ( !grep { $ColumnValues->{$HeaderColumn}{$FilterValue} eq $_ } $Param{Filters}->{ $Param{Filter} }{Search}{DeplStates}->@* ) {
+            if ( none { $ColumnValues->{$HeaderColumn}{$FilterValue} eq $_ } $Param{Filters}->{ $Param{Filter} }{Search}{DeplStates}->@* ) {
                 delete $ColumnValues->{$HeaderColumn}{$FilterValue};
             }
         }

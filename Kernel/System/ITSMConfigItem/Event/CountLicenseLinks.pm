@@ -21,10 +21,10 @@ use warnings;
 use List::Util qw(any none);
 
 our @ObjectDependencies = (
+    'Kernel::Config',
     'Kernel::System::DynamicField',
     'Kernel::System::DynamicField::Backend',
     'Kernel::System::GeneralCatalog',
-    'Kernel::Config',
     'Kernel::System::ITSMConfigItem',
     'Kernel::System::LinkObject',
     'Kernel::System::Log',
@@ -280,14 +280,9 @@ sub Run {
 sub _LicensesAccountingUpdate {
     my ( $Self, %Param ) = @_;
 
-    my $DynamicFieldBackendObject = $Kernel::OM->Get('Kernel::System::DynamicField::Backend');
-    my $DynamicFieldObject        = $Kernel::OM->Get('Kernel::System::DynamicField');
-    my $LogObject                 = $Kernel::OM->Get('Kernel::System::Log');
-    my $ConfigItemObject          = $Kernel::OM->Get('Kernel::System::ITSMConfigItem');
+    my $LogObject        = $Kernel::OM->Get('Kernel::System::Log');
+    my $ConfigItemObject = $Kernel::OM->Get('Kernel::System::ITSMConfigItem');
 
-    my $DynamicFieldConfig = $DynamicFieldObject->DynamicFieldGet(
-        Name => $Param{LicenseSettings}{AvailableLicensesDF},
-    );
     my $ConfigItem = $ConfigItemObject->ConfigItemGet(
         ConfigItemID  => $Param{ObjectID},
         DynamicFields => 1,
@@ -309,7 +304,7 @@ sub _LicensesAccountingUpdate {
     }
 
     if ( $Param{Delta} < 0 ) {
-        my $MinimumLicenses                  = $Param{LicenseSettings}{MinimumLicenses};
+        my $MinimumLicenses = $Param{LicenseSettings}{MinimumLicenses};
         $ConfigItem->{$AvailableLicensesDF} += $Param{Delta};    # Synchronize CI snapshot
 
         if ( $MinimumLicenses && $ConfigItem->{$AvailableLicensesDF} < $MinimumLicenses ) {

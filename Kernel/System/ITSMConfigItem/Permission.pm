@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -204,13 +204,13 @@ sub CustomerPermission {
         if ( $ConditionSet->{Classes} ) {
             my @Classes = ref $ConditionSet->{Classes} ? $ConditionSet->{Classes}->@* : ( $ConditionSet->{Classes} );
 
-            next CONDITION if @Classes && !grep { $_ eq $ConfigItem->{Class} } @Classes;
+            next CONDITION if @Classes && none { $_ eq $ConfigItem->{Class} } @Classes;
         }
 
         if ( $ConditionSet->{DeploymentStates} ) {
             my @DeplStates = ref $ConditionSet->{DeploymentStates} ? $ConditionSet->{DeploymentStates}->@* : ( $ConditionSet->{DeploymentStates} );
 
-            next CONDITION if @DeplStates && !grep { $_ eq $ConfigItem->{DeplState} } @DeplStates;
+            next CONDITION if @DeplStates && none { $_ eq $ConfigItem->{DeplState} } @DeplStates;
         }
 
         if ( $ConditionSet->{DynamicFieldValues} ) {
@@ -308,19 +308,19 @@ sub PublicPermission {
         if ( $ConditionSet->{Classes} ) {
             my @Classes = ref $ConditionSet->{Classes} ? $ConditionSet->{Classes}->@* : ( $ConditionSet->{Classes} );
 
-            next CONDITION if @Classes && !grep { $_ eq $ConfigItem->{Class} } @Classes;
+            next CONDITION if @Classes && none { $_ eq $ConfigItem->{Class} } @Classes;
         }
 
         if ( $ConditionSet->{DeploymentStates} ) {
             my @DeplStates = ref $ConditionSet->{DeploymentStates} ? $ConditionSet->{DeploymentStates}->@* : ( $ConditionSet->{DeploymentStates} );
 
-            next CONDITION if @DeplStates && !grep { $_ eq $ConfigItem->{DeplState} } @DeplStates;
+            next CONDITION if @DeplStates && none { $_ eq $ConfigItem->{DeplState} } @DeplStates;
         }
 
         if ( $ConditionSet->{DynamicFieldValues} ) {
             for my $FieldName ( keys $ConditionSet->{DynamicFieldValues}->%* ) {
                 my $FieldValue = $ConditionSet->{DynamicFieldValues}{$FieldName};
-                next CONDITION if $FieldValue && !$ConfigItem->{"DynamicField_$FieldName"} eq $FieldValue;
+                next CONDITION if $FieldValue && $ConfigItem->{"DynamicField_$FieldName"} ne $FieldValue;
             }
         }
 

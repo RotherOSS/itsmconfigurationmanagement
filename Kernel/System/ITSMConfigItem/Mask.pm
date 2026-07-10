@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -19,7 +19,7 @@ package Kernel::System::ITSMConfigItem::Mask;
 use strict;
 use warnings;
 
-use List::Util qw(first);
+use List::Util qw(first none);
 
 use Kernel::System::VariableCheck qw(:all);
 
@@ -291,7 +291,7 @@ sub RenderInput {
             my $RowReadOnly    = ( first { $_->{ReadOnly} } $Row->@* ) ? 1 : 0;
 
             # hide complete row if no field is visible
-            if ( $Param{Visibility} && !grep { $Param{Visibility}{"DynamicField_$_->{Name}"} } @{$Row} ) {
+            if ( $Param{Visibility} && none { $Param{Visibility}{"DynamicField_$_->{Name}"} } @{$Row} ) {
                 $RowClassString .= ' oooACLHidden';
             }
 
@@ -342,7 +342,7 @@ sub RenderInput {
             # DynamicFieldHTML is assumed to be a hash with separate html for each value
             my @HTMLCountKeys = keys $GetParam{DynamicFieldHTML}->{$MultiValueField}{HTML}->%*;
             my $MaxValueCount = @HTMLCountKeys ? $#HTMLCountKeys : 0;
-            for ( my $RowIndex = 0; $RowIndex <= $MaxValueCount; $RowIndex++ ) {
+            for my $RowIndex ( 0 .. $MaxValueCount ) {
                 my $GridElementStart = 1;
                 ELEMENT:
                 for my $Element ( sort { ( $a->{Start} || 1 ) <=> ( $b->{Start} || 1 ) } @{$Row} ) {

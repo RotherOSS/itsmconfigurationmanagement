@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -28,8 +28,8 @@ use List::Util qw(any);
 # CPAN modules
 
 # OTOBO modules
-use Kernel::Language                qw(Translatable);
-use Kernel::System::VariableCheck   qw(IsArrayRefWithData);
+use Kernel::Language              qw(Translatable);
+use Kernel::System::VariableCheck qw(IsArrayRefWithData);
 
 our $ObjectManagerDisabled = 1;
 
@@ -761,8 +761,8 @@ sub _PDFOutputVersionInfos {
 
     if ( $Param{Description} && $Param{Version}{Description} ) {
         my $PlainDescription = $Kernel::OM->Get('Kernel::System::HTMLUtils')->ToAscii( String => $Param{Version}{Description} );
-        $PlainDescription    =~ s/^[\n\r]+//;
-        $PlainDescription    =~ s/[\n\r]+$//;
+        $PlainDescription =~ s/^[\n\r]+//;
+        $PlainDescription =~ s/[\n\r]+$//;
 
         push $Table->@*, (
             {
@@ -915,7 +915,7 @@ sub _PDFOutputBacklinks {
 
     my @BacklinkSections = @{ $Param{LinkSections} // [] };
 
-    return if !$Definition->{DefinitionRef};
+    return   if !$Definition->{DefinitionRef};
     return 1 if !@BacklinkSections;
 
     my $ConfigItemObject = $Kernel::OM->Get('Kernel::System::ITSMConfigItem');
@@ -925,11 +925,11 @@ sub _PDFOutputBacklinks {
     my $DefaultHeader = $LayoutObject->{LanguageObject}->Translate('Referenced by');
 
     SECTION:
-    for my $Section ( @BacklinkSections ) {
+    for my $Section (@BacklinkSections) {
 
         my $Direction = $Section->{LinkedAs} || 'Source';
-        my $Types     = IsArrayRefWithData( $Section->{LinkTypes} ) ? $Section->{LinkTypes} : undef;
-        my $Header    = $Section->{Header} ? $LayoutObject->{LanguageObject}->Translate( $Section->{Header} ) : $DefaultHeader;
+        my $Types     = IsArrayRefWithData( $Section->{LinkTypes} ) ? $Section->{LinkTypes}                                            : undef;
+        my $Header    = $Section->{Header}                          ? $LayoutObject->{LanguageObject}->Translate( $Section->{Header} ) : $DefaultHeader;
 
         my $LinkedConfigItems = $ConfigItemObject->LinkedConfigItems(
             ConfigItemID => $Param{ConfigItem}{ConfigItemID},
@@ -980,14 +980,14 @@ sub _PDFOutputBacklinks {
 
         for my $Class ( keys %LinkedClasses ) {
             push $Table->@*, {
-                Key   => $LayoutObject->{LanguageObject}->Translate( $Class ),
-                Value => $LinkedClasses{ $Class }[0]{Name},
+                Key   => $LayoutObject->{LanguageObject}->Translate($Class),
+                Value => $LinkedClasses{$Class}[0]{Name},
             };
 
-            for my $i ( 1 .. $#{ $LinkedClasses{ $Class } } ) {
+            for my $i ( 1 .. $#{ $LinkedClasses{$Class} } ) {
                 push $Table->@*, {
                     Key   => ' ',
-                    Value => $LinkedClasses{ $Class }[$i]{Name},
+                    Value => $LinkedClasses{$Class}[$i]{Name},
                 };
             }
         }

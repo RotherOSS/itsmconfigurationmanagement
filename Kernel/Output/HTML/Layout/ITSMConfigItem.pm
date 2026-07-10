@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -21,6 +21,7 @@ use warnings;
 use namespace::autoclean;
 
 # core modules
+use List::Util qw(none);
 
 # CPAN modules
 
@@ -621,7 +622,7 @@ sub ITSMConfigItemListShow {
                 @ColumnsEnabled = @ColumnsEnabledAux;
 
                 for my $ColumnName ( sort { $a cmp $b } @{ $Object->{ColumnsAvailable} } ) {
-                    if ( !grep { $_ eq $ColumnName } @ColumnsEnabled ) {
+                    if ( none { $_ eq $ColumnName } @ColumnsEnabled ) {
                         push @ColumnsAvailable, $ColumnName;
                     }
                 }
@@ -748,7 +749,7 @@ sub XMLData2Hash {
             }
 
             # skip not needed elements and sub elements
-            next COUNTER if !grep { $_ =~ m{\A$Prefix} } @{ $Param{Attributes} };
+            next COUNTER if none { $_ =~ m{\A$Prefix} } @{ $Param{Attributes} };
 
             # lookup value
             my $Value = $Kernel::OM->Get('Kernel::System::ITSMConfigItem')->XMLValueLookup(
