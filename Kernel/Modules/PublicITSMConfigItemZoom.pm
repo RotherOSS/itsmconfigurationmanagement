@@ -79,7 +79,7 @@ sub Run {
     );
 
     if ( !$HasAccess ) {
-        return $LayoutObject->PublicNoPermission( WithHeader => 'yes' );
+        return $LayoutObject->CustomerNoPermission( WithHeader => 'yes' );
     }
 
     my $Config = $ConfigObject->Get('ITSMConfigItem::Frontend::PublicITSMConfigItemZoom') // {};
@@ -369,7 +369,7 @@ sub Run {
                 StyleClasses  => $StyleClasses,
             },
         ),
-        $LayoutObject->PublicFooter;
+        $LayoutObject->CustomerFooter;
 }
 
 1;

@@ -303,7 +303,7 @@ in F<Kernel/Output/HTML/LayoutTicket.pm>.
         Env           => $Self,
         LinkPage      => $LinkPage,
         LinkSort      => $LinkSort,
-        Frontend      => 'Agent',                           # optional (Agent|Customer), default: Agent, indicates from which frontend this function was called
+        Frontend      => 'Agent',                           # optional (Agent|Customer|Public), default: Agent, indicates from which frontend this function was called
     );
 
 =cut
@@ -339,7 +339,7 @@ sub ITSMConfigItemListShow {
 
     # update preferences if needed
     my $Key = 'UserITSMConfigItemOverview' . $Env->{Action};
-    if ( $Param{Frontend} ne 'Customer' ) {
+    if ( $Param{Frontend} ne 'Customer' && $Param{Frontend} ne 'Public' ) {
         if ( !$ConfigObject->Get('DemoSystem') && ( $Self->{$Key} // '' ) ne $View ) {
             $Kernel::OM->Get('Kernel::System::User')->SetPreferences(
                 UserID => $Self->{UserID},

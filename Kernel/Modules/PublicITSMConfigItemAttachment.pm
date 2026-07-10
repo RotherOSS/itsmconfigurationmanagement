@@ -94,7 +94,7 @@ sub Run {
         ConfigItemID => $ConfigItem->{ConfigItemID},
     );
     if ( !$HasAccess ) {
-        return $LayoutObject->PublicNoPermission( WithHeader => 'yes' );
+        return $LayoutObject->CustomerNoPermission( WithHeader => 'yes' );
     }
 
     my $HTMLUtilsObject = $Kernel::OM->Get('Kernel::System::HTMLUtils');
