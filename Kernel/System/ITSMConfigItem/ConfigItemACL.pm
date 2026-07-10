@@ -21,6 +21,7 @@ use strict;
 use warnings;
 
 # core modules
+use List::Util qw(none);
 
 # CPAN modules
 
@@ -36,6 +37,7 @@ Kernel::System::ITSMConfigItem::ConfigItemACL - config item ACL lib
 =head1 DESCRIPTION
 
 All config item ACL functions.
+
 
 =head2 ConfigItemAcl()
 
@@ -172,7 +174,7 @@ sub ConfigItemAcl {
 
             # TODO: this looks broken. $Module->{ReturnSubType} is a hashref, yet the value is dereferenced as an array
             if ( ref( $Module->{ReturnSubType} ) eq 'HASH' ) {
-                next MODULENAME if !grep { $Param{ReturnSubType} eq $_ }
+                next MODULENAME if none { $Param{ReturnSubType} eq $_ }
                     @{ $Module->{ReturnSubType} };
             }
             else {
@@ -937,7 +939,7 @@ sub ConfigItemAclActionData {
 creates two check hashes (one for current data updatable via AJAX refreshes and another for
 static config item data stored in the DB) with the required data to use as a basis to match the ACLs
 
-    my $ChecskResult = $ConfigItemObject->_GetChecks(
+    my $CheckResult = $ConfigItemObject->_GetChecks(
         CheckAll => '1',                              # Optional
         RequiredChecks => $RequiredCheckHashRef,      # Optional a hash reference with the
                                                       #    attributes to gather:
@@ -1022,11 +1024,39 @@ sub _GetChecks {
         # keep database config item data separated since the reference is affected below
         $ChecksDatabase{ConfigItem} = \%{$ConfigItem};
     }
-    else {
+
+    # check if additional data for standard attributes needs to be fetched and if, do so
+    my $GeneralCatalogObject = $Kernel::OM->Get('Kernel::System::GeneralCatalog');
+    if ( $Param{Class} && $Param{ClassID} ) {
         $Checks{ConfigItem} = {
             Class   => $Param{Class},
             ClassID => $Param{ClassID},
         };
+    }
+    elsif ( $Param{ClassID} ) {
+        my $ClassData = $GeneralCatalogObject->ItemGet(
+            ItemID => $Param{ClassID},
+        );
+        $Checks{ConfigItem} = {
+            Class   => $ClassData->{Name},
+            ClassID => $Param{ClassID},
+        };
+    }
+
+    if ( $Param{DeplStateID} ) {
+        my $DeplStateData = $GeneralCatalogObject->ItemGet(
+            ItemID => $Param{DeplStateID},
+        );
+        $Checks{ConfigItem}{DeplState}   = $DeplStateData->{Name};
+        $Checks{ConfigItem}{DeplStateID} = $Param{DeplStateID};
+    }
+
+    if ( $Param{InciStateID} ) {
+        my $InciStateData = $GeneralCatalogObject->ItemGet(
+            ItemID => $Param{InciStateID},
+        );
+        $Checks{ConfigItem}{InciState}   = $InciStateData->{Name};
+        $Checks{ConfigItem}{InciStateID} = $Param{InciStateID};
     }
 
     # check for dynamic fields
