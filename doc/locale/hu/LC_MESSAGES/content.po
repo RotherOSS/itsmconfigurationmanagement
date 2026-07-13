@@ -5,37 +5,37 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
-msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:17+0100\nPO-Revision-Date: 2026-07-13 10:04+0000\nLast-Translator: Balázs Úr <balazs@urbalazs.hu>\nLanguage-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-0/addons/manuals/itsmconfigurationmanagement-documentation/hu/>\nLanguage: hu\nMIME-Version: 1.0\nContent-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 5.16\nGenerated-By: Babel 2.4.0\n"
+msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:17+0100\nPO-Revision-Date: 2026-07-13 12:00+0000\nLast-Translator: Balázs Úr <balazs@urbalazs.hu>\nLanguage-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-0/addons/manuals/itsmconfigurationmanagement-documentation/hu/>\nLanguage: hu\nMIME-Version: 1.0\nContent-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 5.16\nGenerated-By: Babel 2.4.0\n"
 
 #: ../../content/about.rst:13
 msgid "About"
-msgstr ""
+msgstr "Névjegy"
 
 #: ../../content/about.rst:16
 msgid "Contact"
-msgstr ""
+msgstr "Kapcsolat"
 
 #: ../../content/about.rst:17
 msgid "Rother OSS GmbH"
-msgstr ""
+msgstr "Rother OSS GmbH"
 
 #: ../../content/about.rst:18
 msgid "Email: hello@otobo.io"
-msgstr ""
+msgstr "E-mail: hello@otobo.io"
 
 #: ../../content/about.rst:19
 msgid "Web: https://otobo.io"
-msgstr ""
+msgstr "Web: https://otobo.io"
 
 #: ../../content/about.rst:22
 msgid "Version"
-msgstr ""
+msgstr "Verzió"
 
 #: ../../content/about.rst:23
 msgid ""
 "Author: |doc-vendor| / Version: |doc-version| / Date of release: |doc-"
 "datestamp|"
-msgstr ""
+msgstr "Szerző: |doc-vendor| / Verzió: |doc-version| / Kiadás dátuma: |doc-datestamp|"
 
 #: ../../content/about.rst:27
 msgid "Terms and Conditions"
@@ -124,7 +124,7 @@ msgstr ""
 #: ../../content/configuration/configuration_reference.rst:12
 #: ../../content/configuration/system_configuration_settings.rst:12
 msgid "Configuration Reference"
-msgstr ""
+msgstr "Beállítások hivatkozása"
 
 #: ../../content/configuration/configuration_reference.rst:15
 msgid "CMDB"
@@ -734,7 +734,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:26
 msgid "Core::DynamicFields::DriverRegistration"
-msgstr ""
+msgstr "Core::DynamicFields::DriverRegistration"
 
 #: ../../content/configuration/system_configuration_settings.rst:29
 msgid "DynamicFields::Driver###ConfigItem"
@@ -743,7 +743,7 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:30
 #: ../../content/configuration/system_configuration_settings.rst:34
 msgid "DynamicField backend registration."
-msgstr ""
+msgstr "Dinamikus mező háttérprogram regisztráció."
 
 #: ../../content/configuration/system_configuration_settings.rst:33
 msgid "DynamicFields::Driver###ConfigItemVersion"
@@ -907,7 +907,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:109
 msgid "Core::GeneralCatalog"
-msgstr ""
+msgstr "Core::GeneralCatalog"
 
 #: ../../content/configuration/system_configuration_settings.rst:112
 msgid "GeneralCatalogPreferences###DeploymentStates"
@@ -991,7 +991,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:144
 msgid "GeneralCatalogPreferences###Permissions"
-msgstr ""
+msgstr "GeneralCatalogPreferences###Permissions"
 
 #: ../../content/configuration/system_configuration_settings.rst:145
 msgid ""
@@ -1367,7 +1367,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:344
 msgid "Frontend::Admin::ModuleRegistration"
-msgstr ""
+msgstr "Frontend::Admin::ModuleRegistration"
 
 #: ../../content/configuration/system_configuration_settings.rst:347
 msgid "Frontend::Module###AdminITSMConfigItem"
@@ -1387,7 +1387,7 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:537
 #: ../../content/configuration/system_configuration_settings.rst:541
 msgid "Frontend module registration for the agent interface."
-msgstr ""
+msgstr "Előtétprogram-modul regisztráció az ügyintézői felülethez."
 
 #: ../../content/configuration/system_configuration_settings.rst:351
 msgid "Frontend::Module###AdminGenericInterfaceInvokerConfigItem"
@@ -1395,7 +1395,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:355
 msgid "Frontend::Admin::ModuleRegistration::AdminOverview"
-msgstr ""
+msgstr "Frontend::Admin::ModuleRegistration::AdminOverview"
 
 #: ../../content/configuration/system_configuration_settings.rst:358
 msgid "Frontend::NavigationModule###AdminITSMConfigItem"
@@ -1403,11 +1403,11 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:359
 msgid "Admin area navigation for the agent interface."
-msgstr ""
+msgstr "Adminisztrációs terület navigáció az ügyintézői felülethez."
 
 #: ../../content/configuration/system_configuration_settings.rst:362
 msgid "Frontend::Admin::ModuleRegistration::Loader"
-msgstr ""
+msgstr "Frontend::Admin::ModuleRegistration::Loader"
 
 #: ../../content/configuration/system_configuration_settings.rst:365
 msgid "Loader::Module::AdminITSMConfigItem###002-ITSMConfigItem"
@@ -1423,7 +1423,7 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:568
 #: ../../content/configuration/system_configuration_settings.rst:572
 msgid "Loader module registration for the agent interface."
-msgstr ""
+msgstr "Betöltőmodul regisztráció az ügyintézői felülethez."
 
 #: ../../content/configuration/system_configuration_settings.rst:369
 msgid "Loader::Module::AdminGenericInterfaceInvokerConfigItem###007-ITSMConfigurationManagement"
@@ -1431,7 +1431,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:373
 msgid "Frontend::Admin::ModuleRegistration::MainMenu"
-msgstr ""
+msgstr "Frontend::Admin::ModuleRegistration::MainMenu"
 
 #: ../../content/configuration/system_configuration_settings.rst:376
 msgid "Frontend::Navigation###AdminITSMConfigItem###003-ITSMConfigItem"
@@ -1444,7 +1444,7 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:591
 #: ../../content/configuration/system_configuration_settings.rst:873
 msgid "Main menu item registration."
-msgstr ""
+msgstr "Főmenü elem regisztráció."
 
 #: ../../content/configuration/system_configuration_settings.rst:380
 msgid "Frontend::Admin::View::ITSMConfigItemDefinition"
@@ -2278,7 +2278,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:814
 msgid "Frontend::Base::Loader"
-msgstr ""
+msgstr "Frontend::Base::Loader"
 
 #: ../../content/configuration/system_configuration_settings.rst:817
 msgid "Loader::Agent::CommonJS###100-ConfigurationManagement"
@@ -2286,7 +2286,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:818
 msgid "List of JS files to always be loaded for the agent interface."
-msgstr ""
+msgstr "JavaScript-fájlok listája, amelyek mindig betöltődnek az ügyintézői felületnél."
 
 #: ../../content/configuration/system_configuration_settings.rst:821
 msgid "Frontend::Base::NavBarModule"
@@ -2726,22 +2726,22 @@ msgstr ""
 #: ../../content/configuration/system_requirements.rst:13
 #: ../../content/system_requirements.rst:13
 msgid "System requirements"
-msgstr ""
+msgstr "Rendszerkövetelmények"
 
 #: ../../content/configuration/system_requirements.rst:16
 #: ../../content/system_requirements.rst:16
 msgid "Framework"
-msgstr ""
+msgstr "Keretrendszer"
 
 #: ../../content/configuration/system_requirements.rst:19
 #: ../../content/system_requirements.rst:19
 msgid "OTOBO 11.0.x"
-msgstr ""
+msgstr "OTOBO 11.0.x"
 
 #: ../../content/configuration/system_requirements.rst:22
 #: ../../content/system_requirements.rst:22
 msgid "Packages"
-msgstr ""
+msgstr "Csomagok"
 
 #: ../../content/configuration/system_requirements.rst:25
 #: ../../content/system_requirements.rst:25
@@ -2751,12 +2751,12 @@ msgstr ""
 #: ../../content/configuration/system_requirements.rst:28
 #: ../../content/system_requirements.rst:28
 msgid "Third-party software"
-msgstr ""
+msgstr "Harmadik féltől származó szoftverek"
 
 #: ../../content/configuration/system_requirements.rst:29
 #: ../../content/system_requirements.rst:29
 msgid "\\-"
-msgstr ""
+msgstr "\\-"
 
 #: ../../content/index.rst:13
 msgid "Package Documentation: ITSMConfigurationManagement"
