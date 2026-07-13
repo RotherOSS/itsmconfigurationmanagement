@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-07-07 14:10+0000\n"
-"PO-Revision-Date: 2026-07-13 12:00+0000\n"
+"PO-Revision-Date: 2026-07-13 16:00+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/"
 "addons/itsmconfigurationmanagement/hu/>\n"
@@ -520,11 +520,11 @@ msgstr ""
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
 msgid "External-source key"
-msgstr ""
+msgstr "Külső forrás kulcsa"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
 msgid "Select the type of display"
-msgstr ""
+msgstr "A megjelenítés típusának kiválasztása"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItemVersion.pm
 msgid ""
@@ -1576,13 +1576,8 @@ msgid "License accounting configuration item event module."
 msgstr ""
 
 #. SysConfig
-#, fuzzy
-#| msgid ""
-#| "GenericInterface module registration for the ConfigItemFetch invoker "
-#| "layer."
 msgid "Loader module registration for the public interface."
-msgstr ""
-"GenericInterface modul regisztráció a ConfigItemFetch invoker réteghez."
+msgstr "Betöltőmodul regisztráció a nyilvános felülethez."
 
 #. SysConfig
 msgid ""
