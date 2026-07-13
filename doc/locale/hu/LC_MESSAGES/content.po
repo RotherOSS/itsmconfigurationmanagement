@@ -5,7 +5,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
-msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:18+0100\nPO-Revision-Date: 2026-07-13 12:00+0000\nLast-Translator: Balázs Úr <balazs@urbalazs.hu>\nLanguage-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/addons/manuals/itsmconfigurationmanagement-documentation/hu/>\nLanguage: hu\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 5.16\nGenerated-By: Babel 2.4.0\n"
+msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:18+0100\nPO-Revision-Date: 2026-07-13 16:00+0000\nLast-Translator: Balázs Úr <balazs@urbalazs.hu>\nLanguage-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/addons/manuals/itsmconfigurationmanagement-documentation/hu/>\nLanguage: hu\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 5.16\nGenerated-By: Babel 2.4.0\n"
 
 #: ../../content/about.rst:13
 msgid "About"
@@ -648,20 +648,19 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:37
 msgid "Core::DynamicFields::ObjectTypeRegistration"
-msgstr ""
+msgstr "Core::DynamicFields::ObjectTypeRegistration"
 
 #: ../../content/configuration/system_configuration_settings.rst:40
 msgid "DynamicFields::ObjectType###ITSMConfigItem"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:41
-#, fuzzy
 msgid "DynamicField object registration."
 msgstr "Dinamikus mező objektum regisztráció."
 
 #: ../../content/configuration/system_configuration_settings.rst:44
 msgid "Core::Elasticsearch::Settings"
-msgstr ""
+msgstr "Core::Elasticsearch::Settings"
 
 #: ../../content/configuration/system_configuration_settings.rst:47
 msgid "Elasticsearch::ExcludedCIClasses"
@@ -769,7 +768,6 @@ msgid "ITSMConfigItem::EventModulePost###1000-GenericInterface"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:95
-#, fuzzy
 msgid "Performs the configured action for each event (as an Invoker) for each configured Webservice."
 msgstr "Végrehajtja a beállított műveletet minden eseménynél (mint egy meghívó) minden egyes beállított webszolgáltatáshoz."
 
@@ -1095,7 +1093,7 @@ msgstr "Objektum háttérprogram modul regisztráció az importálás/exportál�
 
 #: ../../content/configuration/system_configuration_settings.rst:277
 msgid "Core::LinkObject"
-msgstr ""
+msgstr "Core::LinkObject"
 
 #: ../../content/configuration/system_configuration_settings.rst:280
 msgid "LinkObject::DefaultSubObject###ITSMConfigItem"
@@ -1211,14 +1209,13 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:337
 msgid "Frontend::Admin"
-msgstr ""
+msgstr "Frontend::Admin"
 
 #: ../../content/configuration/system_configuration_settings.rst:340
 msgid "Events###ITSMConfigItem"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:341
-#, fuzzy
 msgid "List of all Package events to be displayed in the GUI."
 msgstr "Az összes csomagesemény listája, amelyek megjelennek a grafikus felületen."
 
@@ -1537,19 +1534,17 @@ msgstr "Egy áttekintő modult határoz meg egy konfigurációelem lista kis né
 
 #: ../../content/configuration/system_configuration_settings.rst:490
 msgid "Frontend::Agent::LinkObject"
-msgstr ""
+msgstr "Frontend::Agent::LinkObject"
 
 #: ../../content/configuration/system_configuration_settings.rst:493
 msgid "LinkObject::ComplexTable::SettingsVisibility###ITSMConfigItem"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:494
-#, fuzzy
 msgid "Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
 msgstr "Műveletek meghatározása, ahol egy beállítások gomb érhető el a kapcsolt objektumok felületi elemen (LinkObject::ViewMode = „összetett”). Ne feledje, hogy ezeknek a műveleteknek rendelkezniük kell a következő JS és CSS fájlok regisztrálásával: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js és Core.Agent.LinkObject.js."
 
 #: ../../content/configuration/system_configuration_settings.rst:497
-#, fuzzy
 msgid "Frontend::Agent::ModuleRegistration"
 msgstr "Frontend::Agent::ModuleRegistration"
 
@@ -1598,7 +1593,6 @@ msgid "Frontend::Module###AgentITSMConfigItemAttachment"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:544
-#, fuzzy
 msgid "Frontend::Agent::ModuleRegistration::Loader"
 msgstr "Frontend::Agent::ModuleRegistration::Loader"
 
@@ -1633,7 +1627,6 @@ msgid "Loader::Module::AgentITSMConfigItemHistory###003-ITSMConfigItem"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:575
-#, fuzzy
 msgid "Frontend::Agent::ModuleRegistration::MainMenu"
 msgstr "Frontend::Agent::ModuleRegistration::MainMenu"
 
@@ -1655,9 +1648,8 @@ msgid "Frontend::Navigation###AgentITSMConfigItemBulk###003-ITSMConfigItem"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:594
-#, fuzzy
 msgid "Frontend::Agent::ModuleRegistration::MainMenu::Search"
-msgstr "Frontend::Agent::ModuleRegistration::MainMenu"
+msgstr "Frontend::Agent::ModuleRegistration::MainMenu::Search"
 
 #: ../../content/configuration/system_configuration_settings.rst:597
 msgid "Frontend::Search###ConfigItem"
@@ -1951,7 +1943,6 @@ msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemEdit###RichTextWidth"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:755
-#, fuzzy
 msgid "Defines the width for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
 msgstr "Meghatározza a Rich Text szerkesztő-összetevő szélességét ennél a képernyőnél. Szám (képpont) vagy százalék (relatív) értéket adjon meg."
 
@@ -1960,9 +1951,8 @@ msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemEdit###RichTextHeight"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:759
-#, fuzzy
 msgid "Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
-msgstr "Meghatározza a RichText szerkesztő komponens magasságát ennél a képernyőnél. Szám (képpont) vagy százalék (relatív) értéket adjon meg."
+msgstr "Meghatározza a Rich Text szerkesztő-összetevő magasságát ennél a képernyőnél. Szám (képpont) vagy százalék (relatív) értéket adjon meg."
 
 #: ../../content/configuration/system_configuration_settings.rst:762
 msgid "Frontend::Agent::View::ITSMConfigItemHistory"
@@ -1995,7 +1985,6 @@ msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###SearchCSVDynamicFie
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:777
-#, fuzzy
 msgid "Dynamic Fields used to export the search result in CSV format."
 msgstr "Dinamikus mezők, amelyek a keresési eredmények CSV formátumba való exportálásához használhatók."
 
@@ -2023,7 +2012,7 @@ msgstr "Az ügynöki felület konfigurációs elemkereső képernyőjén megjele
 
 #: ../../content/configuration/system_configuration_settings.rst:792
 msgid "Frontend::Agent::View::Preferences"
-msgstr ""
+msgstr "Frontend::Agent::View::Preferences"
 
 #: ../../content/configuration/system_configuration_settings.rst:795
 msgid "PreferencesGroups###ConfigItemOverviewSmallPageShown"
@@ -2099,7 +2088,6 @@ msgid "ITSMConfigItem::Frontend::CustomerOverview###Small"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:835
-#, fuzzy
 msgid "Frontend::Customer::ModuleRegistration"
 msgstr "Frontend::Customer::ModuleRegistration"
 
@@ -2111,7 +2099,6 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:843
 #: ../../content/configuration/system_configuration_settings.rst:847
 #: ../../content/configuration/system_configuration_settings.rst:851
-#, fuzzy
 msgid "Frontend module registration for the customer interface."
 msgstr "Előtétprogram-modul regisztráció az ügyfélfelülethez."
 
@@ -2128,7 +2115,6 @@ msgid "CustomerFrontend::Module###CustomerITSMConfigItemAttachment"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:854
-#, fuzzy
 msgid "Frontend::Customer::ModuleRegistration::Loader"
 msgstr "Frontend::Customer::ModuleRegistration::Loader"
 
@@ -2152,7 +2138,6 @@ msgid "Loader::Module::CustomerITSMConfigItemZoom###003-ITSMConfigItem"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:869
-#, fuzzy
 msgid "Frontend::Customer::ModuleRegistration::MainMenu"
 msgstr "Frontend::Customer::ModuleRegistration::MainMenu"
 
@@ -2355,14 +2340,13 @@ msgstr "Minden egyes webszolgáltatáshoz (kulcs) megadható egy sor osztály (�
 
 #: ../../content/configuration/system_configuration_settings.rst:986
 msgid "GenericInterface::Invoker::ModuleRegistration"
-msgstr ""
+msgstr "GenericInterface::Invoker::ModuleRegistration"
 
 #: ../../content/configuration/system_configuration_settings.rst:989
 msgid "GenericInterface::Invoker::Module###Elasticsearch::ConfigItemManagement"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:990
-#, fuzzy
 msgid "GenericInterface module registration for the invoker layer."
 msgstr "Általános felület modul regisztráció a meghívó réteghez."
 
@@ -2469,7 +2453,7 @@ msgstr "Meghatározza a szükséges jogosultságokat az ITSM konfigurációeleme
 
 #: ../../content/configuration/system_configuration_settings.rst:1044
 msgid "GenericInterface::Operation::ModuleRegistration"
-msgstr ""
+msgstr "GenericInterface::Operation::ModuleRegistration"
 
 #: ../../content/configuration/system_configuration_settings.rst:1047
 msgid "GenericInterface::Operation::Module###ConfigItem::ConfigItemCreate"
@@ -2480,7 +2464,6 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:1056
 #: ../../content/configuration/system_configuration_settings.rst:1060
 #: ../../content/configuration/system_configuration_settings.rst:1064
-#, fuzzy
 msgid "GenericInterface module registration for the operation layer."
 msgstr "Általános felület modul regisztráció a műveleti réteghez."
 
