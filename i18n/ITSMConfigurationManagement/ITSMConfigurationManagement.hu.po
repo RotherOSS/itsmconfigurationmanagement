@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2026-06-03 15:14+0000\n"
+"POT-Creation-Date: 2026-07-07 14:10+0000\n"
 "PO-Revision-Date: 2026-07-13 12:00+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/"
@@ -939,6 +939,12 @@ msgid ""
 msgstr ""
 "Template::Toolkit séma definiálása a verziósztringekhez. Csak akkor "
 "használatos, ha a Version String Module értéke TemplateToolkit."
+
+#. SysConfig
+msgid ""
+"Define a list of dynamic field object types which are allowed to be assigned "
+"to actions of this package via the dynamic field screens interface."
+msgstr ""
 
 #. SysConfig
 #, fuzzy

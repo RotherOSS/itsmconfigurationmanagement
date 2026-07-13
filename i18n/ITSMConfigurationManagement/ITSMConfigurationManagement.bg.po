@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2026-06-03 15:14+0000\n"
+"POT-Creation-Date: 2026-07-07 14:10+0000\n"
 "PO-Revision-Date: 2026-04-06 18:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Bulgarian <http://translate.otobo.org/projects/opm-packages/"
@@ -935,6 +935,12 @@ msgid ""
 msgstr ""
 "Дефиниране на схема на Template::Toolkit за низове на версии. Използва се "
 "само ако модулът Version String Module е зададен на TemplateToolkit."
+
+#. SysConfig
+msgid ""
+"Define a list of dynamic field object types which are allowed to be assigned "
+"to actions of this package via the dynamic field screens interface."
+msgstr ""
 
 #. SysConfig
 #, fuzzy
