@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-06-24 13:47+0000\n"
-"PO-Revision-Date: 2026-07-13 17:00+0000\n"
+"PO-Revision-Date: 2026-07-14 10:21+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-0/"
 "addons/itsm-configurationmanagement/hu/>\n"
@@ -214,7 +214,7 @@ msgstr "Jelenlegi incidensállapot"
 
 #. Template: AgentITSMConfigItemZoom
 msgid "Last changed"
-msgstr "Utoljára módosítva"
+msgstr "Utolsó módosítás"
 
 #. Template: AgentITSMConfigItemZoom
 msgid "Last changed by"
