@@ -5,7 +5,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
-msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:18+0100\nPO-Revision-Date: 2026-07-13 16:00+0000\nLast-Translator: Balázs Úr <balazs@urbalazs.hu>\nLanguage-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/addons/manuals/itsmconfigurationmanagement-documentation/hu/>\nLanguage: hu\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 5.16\nGenerated-By: Babel 2.4.0\n"
+msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:18+0100\nPO-Revision-Date: 2026-07-14 12:21+0000\nLast-Translator: Balázs Úr <balazs@urbalazs.hu>\nLanguage-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/addons/manuals/itsmconfigurationmanagement-documentation/hu/>\nLanguage: hu\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 5.16\nGenerated-By: Babel 2.4.0\n"
 
 #: ../../content/about.rst:13
 msgid "About"
@@ -773,7 +773,7 @@ msgstr "Végrehajtja a beállított műveletet minden eseménynél (mint egy meg
 
 #: ../../content/configuration/system_configuration_settings.rst:98
 msgid "Core::Event::Ticket"
-msgstr ""
+msgstr "Core::Event::Ticket"
 
 #: ../../content/configuration/system_configuration_settings.rst:101
 msgid "ITSMConfigItem::EventModulePost###042-ITSMConfigItemTicketStatusLink"
@@ -2034,14 +2034,13 @@ msgstr "A kis konfigurációs elemek áttekintésének oszlopszűrőinek paramé
 
 #: ../../content/configuration/system_configuration_settings.rst:803
 msgid "Frontend::Base::DynamicFieldScreens"
-msgstr ""
+msgstr "Frontend::Base::DynamicFieldScreens"
 
 #: ../../content/configuration/system_configuration_settings.rst:806
 msgid "DynamicFieldScreens###ITSMConfigurationManagement"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:807
-#, fuzzy
 msgid "This configuration defines all possible screens to enable or disable dynamic fields."
 msgstr "Ez a beállítás határozza meg az összes lehetséges képernyőt a dinamikus mezők engedélyezéséhez vagy letiltásához."
 
@@ -2125,7 +2124,6 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:858
 #: ../../content/configuration/system_configuration_settings.rst:862
 #: ../../content/configuration/system_configuration_settings.rst:866
-#, fuzzy
 msgid "Loader module registration for the customer interface."
 msgstr "Betöltőmodul regisztráció az ügyfélfelülethez."
 
