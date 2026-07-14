@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-07-07 14:10+0000\n"
-"PO-Revision-Date: 2026-07-14 10:21+0000\n"
+"PO-Revision-Date: 2026-07-14 12:21+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/"
 "addons/itsmconfigurationmanagement/hu/>\n"
@@ -214,7 +214,7 @@ msgstr "Jelenlegi incidensállapot"
 
 #. Template: AgentITSMConfigItemZoom
 msgid "Last changed"
-msgstr "Utolsó módosítás"
+msgstr "Utoljára módosítva"
 
 #. Template: AgentITSMConfigItemZoom
 msgid "Last changed by"
@@ -945,6 +945,9 @@ msgid ""
 "Define a list of dynamic field object types which are allowed to be assigned "
 "to actions of this package via the dynamic field screens interface."
 msgstr ""
+"Azon dinamikus mező objektumtípusok listájának meghatározása, amelyek "
+"hozzárendelhetők a csomag műveleteihez a dinamikus mező képernyőinek "
+"felületén keresztül."
 
 #. SysConfig
 #, fuzzy
