@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-07-07 14:10+0000\n"
-"PO-Revision-Date: 2026-07-14 12:21+0000\n"
+"PO-Revision-Date: 2026-07-14 13:26+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/"
 "addons/itsmconfigurationmanagement/hu/>\n"
@@ -2980,7 +2980,7 @@ msgstr "Leányvállalat"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Summary"
-msgstr "Összefoglaló"
+msgstr "Összegzés"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Thin Client"
