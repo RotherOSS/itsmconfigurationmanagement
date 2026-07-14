@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2026-06-24 13:47+0000\n"
+"POT-Creation-Date: 2026-07-14 13:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -218,16 +218,8 @@ msgstr ""
 msgid "Object Type"
 msgstr ""
 
-#. Template: AdminACLEdit
-msgid "Set up what you want to change if the criteria match. Keep in mind that 'Possible' is a white list, 'PossibleNot' a black list."
-msgstr ""
-
 #. Template: AdminDynamicFieldScreen
 msgid "Filter by object type"
-msgstr ""
-
-#. Template: AdminDynamicFieldScreen
-msgid "Add DynamicField"
 msgstr ""
 
 #. JS Template: ClassImportConfirm

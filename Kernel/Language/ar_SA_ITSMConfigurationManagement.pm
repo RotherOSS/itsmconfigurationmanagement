@@ -108,13 +108,8 @@ sub Data {
     # Template: AdminACL
     $Self->{Translation}->{'Object Type'} = 'نوع الكائن';
 
-    # Template: AdminACLEdit
-    $Self->{Translation}->{'Set up what you want to change if the criteria match. Keep in mind that \'Possible\' is a white list, \'PossibleNot\' a black list.'} =
-        'يضبط القيمة المتغيرة عند استيفاء شروط التصفية. حيث تكون "Possible" قائمة بيضاء و "PossibleNot" هي قائمة سلبية.';
-
     # Template: AdminDynamicFieldScreen
     $Self->{Translation}->{'Filter by object type'} = 'تصفية حسب النوع';
-    $Self->{Translation}->{'Add DynamicField'} = 'إضافة حقل ديناميكي';
 
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = 'سيتم استيراد الفئات التالية';

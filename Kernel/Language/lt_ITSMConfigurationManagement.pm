@@ -108,13 +108,8 @@ sub Data {
     # Template: AdminACL
     $Self->{Translation}->{'Object Type'} = 'Objekto tipas';
 
-    # Template: AdminACLEdit
-    $Self->{Translation}->{'Set up what you want to change if the criteria match. Keep in mind that \'Possible\' is a white list, \'PossibleNot\' a black list.'} =
-        'Nustatykite, ką norite pakeisti, jei kriterijai atitinka. Atminkite, kad „Galimas“ yra baltasis sąrašas, „Negalimas“ - juodasis sąrašas.';
-
     # Template: AdminDynamicFieldScreen
     $Self->{Translation}->{'Filter by object type'} = '';
-    $Self->{Translation}->{'Add DynamicField'} = '';
 
     # JS Template: ClassImportConfirm
     $Self->{Translation}->{'The following classes will be imported'} = 'Importuojamos šios klasės';
