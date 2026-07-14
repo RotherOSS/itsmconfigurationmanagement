@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2026-07-07 14:10+0000\n"
+"POT-Creation-Date: 2026-07-14 13:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -615,10 +615,6 @@ msgid "At a specific time point create a ticket for config items, if the configu
 msgstr ""
 
 #. SysConfig
-msgid "Attributes for license accounting."
-msgstr ""
-
-#. SysConfig
 msgid "Attributes for licenses counting, where \"TotalLicensesDF\", \"AvailableLicensesDF\" and \"LicenseReferenceDF\" are the names of the dynamic fields used to track the remaining licenses. If used, only deployment states in \"ValidDeplStates\" are considered. If a threshold is defined in \"MinimumLicenses\", a ticket will automatically be created if less licenses are available. For this, the checkbox dynamic field \"Ticket->DynamicField\" must exist. The tags \\\\<OTOBO_CONFIGITEM_X\\\\> where X can be NAME, NUMBER, LICENSES_AVAIL and LICENSES_MIN, will be substituted with the respective values in \"Ticket->Text\" by the config item name, number, available licenses, and minimum required available licenses, respectively."
 msgstr ""
 
@@ -747,7 +743,15 @@ msgid "Configure the columns which are available for viewing Permission Conditio
 msgstr ""
 
 #. SysConfig
+msgid "Configure the columns which are available for viewing Permission Conditions in the public interface, when the corresponding Permission Condition Columns are not specifically configured. This setting is used as a fallback for the other Permission Condition Columns settings."
+msgstr ""
+
+#. SysConfig
 msgid "Configure the columns which are available when viewing the corresponding Permission Condition in the customer interface."
+msgstr ""
+
+#. SysConfig
+msgid "Configure the columns which are available when viewing the corresponding Permission Condition in the public interface."
 msgstr ""
 
 #. SysConfig

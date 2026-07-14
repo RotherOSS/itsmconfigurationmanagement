@@ -204,8 +204,8 @@ sub Data {
     $Self->{Translation}->{'Whether this link applies to the ConfigItem or the static version of the referencing object. Current Incident State calculation only is performed on dynamic links.'} =
         'A hivatkozás a hivatkozó objektum ConfigItem vagy statikus változatára vonatkozik-e. Az aktuális incidensállapot számítása csak dinamikus hivatkozások esetén történik.';
     $Self->{Translation}->{'Select the attribute which config items will be searched by'} = 'Válassza ki azt az attribútumot, amely alapján a konfigurációs elemeket keresni fogják.';
-    $Self->{Translation}->{'External-source key'} = '';
-    $Self->{Translation}->{'Select the type of display'} = '';
+    $Self->{Translation}->{'External-source key'} = 'Külső forrás kulcsa';
+    $Self->{Translation}->{'Select the type of display'} = 'A megjelenítés típusának kiválasztása';
 
     # Perl Module: Kernel/System/DynamicField/Driver/ConfigItemVersion.pm
     $Self->{Translation}->{'Activate this option to display values as a tree, grouped by config items.'} =
@@ -262,7 +262,6 @@ sub Data {
     $Self->{Translation}->{'AssignedToEntity'} = '';
     $Self->{Translation}->{'At a specific time point create a ticket for config items, if the configured requirements are met. The time point is determined by the value of the dynamic field of type date configured under "TimeCIKey" of the ConfigItem, and modified by "TimeModifier". If the latter can be either just a number, or a sign (+/-), a number, and an unit (d/h/m): "7" is equivalent to "+7d". The DynamicField "Ticket->DynamicField" will be used to mark created tickets - it has to exist. The flags \<OTOBO_CONFIGITEM_X\> where X can be NAME, NUMBER and DATE, will be substituted with the respective values in "Ticket->Text".'} =
         '';
-    $Self->{Translation}->{'Attributes for license accounting.'} = '';
     $Self->{Translation}->{'Attributes for licenses counting, where "TotalLicensesDF", "AvailableLicensesDF" and "LicenseReferenceDF" are the names of the dynamic fields used to track the remaining licenses. If used, only deployment states in "ValidDeplStates" are considered. If a threshold is defined in "MinimumLicenses", a ticket will automatically be created if less licenses are available. For this, the checkbox dynamic field "Ticket->DynamicField" must exist. The tags \<OTOBO_CONFIGITEM_X\> where X can be NAME, NUMBER, LICENSES_AVAIL and LICENSES_MIN, will be substituted with the respective values in "Ticket->Text" by the config item name, number, available licenses, and minimum required available licenses, respectively.'} =
         '';
     $Self->{Translation}->{'CIs assigned to customer company'} = 'Ügyfél-vállalathoz hozzárendelt konfigurációelemek';
@@ -305,7 +304,11 @@ sub Data {
         'Az ügyintézői felület konfigurációelem keresési háttérprogram útválasztója.';
     $Self->{Translation}->{'Configure the columns which are available for viewing Permission Conditions in the customer interface, when the corresponding Permission Condition Columns are not specifically configured. This setting is used as a fallback for the other Permission Condition Columns settings.'} =
         '';
+    $Self->{Translation}->{'Configure the columns which are available for viewing Permission Conditions in the public interface, when the corresponding Permission Condition Columns are not specifically configured. This setting is used as a fallback for the other Permission Condition Columns settings.'} =
+        '';
     $Self->{Translation}->{'Configure the columns which are available when viewing the corresponding Permission Condition in the customer interface.'} =
+        '';
+    $Self->{Translation}->{'Configure the columns which are available when viewing the corresponding Permission Condition in the public interface.'} =
         '';
     $Self->{Translation}->{'Create and manage the definitions for Configuration Items.'} = 'Meghatározások létrehozása és kezelése a konfigurációelemeknél.';
     $Self->{Translation}->{'Creates Tickets for ConfigItems at specific time points.'} = 'Bizonyos időpontokban jegyeket hoz létre a ConfigItems számára.';
@@ -321,7 +324,7 @@ sub Data {
     $Self->{Translation}->{'Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit.'} =
         'Template::Toolkit séma definiálása a verziósztringekhez. Csak akkor használatos, ha a Version String Module értéke TemplateToolkit.';
     $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
-        '';
+        'Azon dinamikus mező objektumtípusok listájának meghatározása, amelyek hozzárendelhetők a csomag műveleteihez a dinamikus mező képernyőinek felületén keresztül.';
     $Self->{Translation}->{'Define a set of conditions under which a config item can be publicly seen. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
         '';
     $Self->{Translation}->{'Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
@@ -456,7 +459,7 @@ sub Data {
     $Self->{Translation}->{'Includes the number in the config item search of the public interface.'} =
         '';
     $Self->{Translation}->{'License accounting configuration item event module.'} = '';
-    $Self->{Translation}->{'Loader module registration for the public interface.'} = '';
+    $Self->{Translation}->{'Loader module registration for the public interface.'} = 'Betöltőmodul regisztráció a nyilvános felülethez.';
     $Self->{Translation}->{'Maximum number of config items to be displayed in the result of this operation.'} =
         'A művelet eredményében megjelenítendő konfigurációs elemek maximális száma.';
     $Self->{Translation}->{'Module to check the group responsible for a class.'} = 'Egy modul egy osztályért felelős csoport ellenőrzéséhez.';
@@ -792,7 +795,7 @@ sub Data {
     $Self->{Translation}->{'Storage Partition'} = 'Tárolási partíció';
     $Self->{Translation}->{'Subscription-based licenses'} = '';
     $Self->{Translation}->{'Subsidiary'} = 'Leányvállalat';
-    $Self->{Translation}->{'Summary'} = 'Összefoglaló';
+    $Self->{Translation}->{'Summary'} = 'Összegzés';
     $Self->{Translation}->{'Thin Client'} = 'Thin Client';
     $Self->{Translation}->{'Threads'} = 'Szálak';
     $Self->{Translation}->{'Thunderbolt'} = 'Thunderbolt';

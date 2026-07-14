@@ -262,7 +262,6 @@ sub Data {
     $Self->{Translation}->{'AssignedToEntity'} = '';
     $Self->{Translation}->{'At a specific time point create a ticket for config items, if the configured requirements are met. The time point is determined by the value of the dynamic field of type date configured under "TimeCIKey" of the ConfigItem, and modified by "TimeModifier". If the latter can be either just a number, or a sign (+/-), a number, and an unit (d/h/m): "7" is equivalent to "+7d". The DynamicField "Ticket->DynamicField" will be used to mark created tickets - it has to exist. The flags \<OTOBO_CONFIGITEM_X\> where X can be NAME, NUMBER and DATE, will be substituted with the respective values in "Ticket->Text".'} =
         '';
-    $Self->{Translation}->{'Attributes for license accounting.'} = '';
     $Self->{Translation}->{'Attributes for licenses counting, where "TotalLicensesDF", "AvailableLicensesDF" and "LicenseReferenceDF" are the names of the dynamic fields used to track the remaining licenses. If used, only deployment states in "ValidDeplStates" are considered. If a threshold is defined in "MinimumLicenses", a ticket will automatically be created if less licenses are available. For this, the checkbox dynamic field "Ticket->DynamicField" must exist. The tags \<OTOBO_CONFIGITEM_X\> where X can be NAME, NUMBER, LICENSES_AVAIL and LICENSES_MIN, will be substituted with the respective values in "Ticket->Text" by the config item name, number, available licenses, and minimum required available licenses, respectively.'} =
         '';
     $Self->{Translation}->{'CIs assigned to customer company'} = 'CI přidělené společnosti zákazníka';
@@ -305,7 +304,11 @@ sub Data {
         'Konfigurační položka vyhledávání backendového směrovače rozhraní agenta.';
     $Self->{Translation}->{'Configure the columns which are available for viewing Permission Conditions in the customer interface, when the corresponding Permission Condition Columns are not specifically configured. This setting is used as a fallback for the other Permission Condition Columns settings.'} =
         '';
+    $Self->{Translation}->{'Configure the columns which are available for viewing Permission Conditions in the public interface, when the corresponding Permission Condition Columns are not specifically configured. This setting is used as a fallback for the other Permission Condition Columns settings.'} =
+        '';
     $Self->{Translation}->{'Configure the columns which are available when viewing the corresponding Permission Condition in the customer interface.'} =
+        '';
+    $Self->{Translation}->{'Configure the columns which are available when viewing the corresponding Permission Condition in the public interface.'} =
         '';
     $Self->{Translation}->{'Create and manage the definitions for Configuration Items.'} = 'Vytvářet a spravovat definice položek konfigurace.';
     $Self->{Translation}->{'Creates Tickets for ConfigItems at specific time points.'} = 'Vytváří tipy pro položky ConfigItems v určitých časových bodech.';
