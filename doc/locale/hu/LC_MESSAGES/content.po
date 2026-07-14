@@ -5,7 +5,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
-msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:18+0100\nPO-Revision-Date: 2026-07-14 12:21+0000\nLast-Translator: Balázs Úr <balazs@urbalazs.hu>\nLanguage-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/addons/manuals/itsmconfigurationmanagement-documentation/hu/>\nLanguage: hu\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 5.16\nGenerated-By: Babel 2.4.0\n"
+msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:18+0100\nPO-Revision-Date: 2026-07-14 13:26+0000\nLast-Translator: Balázs Úr <balazs@urbalazs.hu>\nLanguage-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/addons/manuals/itsmconfigurationmanagement-documentation/hu/>\nLanguage: hu\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 5.16\nGenerated-By: Babel 2.4.0\n"
 
 #: ../../content/about.rst:13
 msgid "About"
@@ -49,7 +49,6 @@ msgid "Published by: Rother OSS GmbH, (https://otobo.io), Oberwalting 31, 94339 
 msgstr ""
 
 #: ../../content/configuration.rst:13
-#, fuzzy
 msgid "Configuration"
 msgstr "Beállítás"
 
@@ -59,9 +58,8 @@ msgid "Table of Contents"
 msgstr "Tartalomjegyzék"
 
 #: ../../content/configuration/basic_configuration.rst:12
-#, fuzzy
 msgid "Basic Configuration"
-msgstr "Levelezési beállítások"
+msgstr "Alapvető beállítás"
 
 #: ../../content/configuration/basic_configuration.rst:13
 msgid "Following the basic configuration you will learn to assign permissions to agents and customer users and how to get started with the most usual CIs."
@@ -134,7 +132,7 @@ msgstr "Konfigurációelem"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:12
 msgid "Custom Configuration and Advanced Features"
-msgstr ""
+msgstr "Egyéni beállítások és speciális funkciók"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:16
 msgid "Classes and Roles in the General Catalog"
@@ -2521,21 +2519,18 @@ msgid "Package Documentation: ITSMConfigurationManagement"
 msgstr ""
 
 #: ../../content/overview.rst:13
-#, fuzzy
 msgid "Overview"
 msgstr "Áttekintés"
 
 #: ../../content/overview.rst:16
-#, fuzzy
 msgid "Summary"
-msgstr "Összefoglaló"
+msgstr "Összegzés"
 
 #: ../../content/overview.rst:18
 msgid "With this documentation you should gain a good overview about the OTOBO package \"ITSMConfigurationManagement\". We provide a basic configuration based on a selection of must usual CIs to get you up and running quickly. If you are interested in getting your own CIs configured you should be able to do this too with the adavanced configuraion."
 msgstr ""
 
 #: ../../content/overview.rst:23
-#, fuzzy
 msgid "Introduction"
 msgstr "Bevezetés"
 
