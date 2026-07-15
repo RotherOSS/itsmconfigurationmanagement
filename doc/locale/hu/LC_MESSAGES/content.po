@@ -5,7 +5,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
-msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:18+0100\nPO-Revision-Date: 2026-07-14 13:26+0000\nLast-Translator: Balázs Úr <balazs@urbalazs.hu>\nLanguage-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/addons/manuals/itsmconfigurationmanagement-documentation/hu/>\nLanguage: hu\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 5.16\nGenerated-By: Babel 2.4.0\n"
+msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:18+0100\nPO-Revision-Date: 2026-07-15 17:00+0000\nLast-Translator: Balázs Úr <balazs@urbalazs.hu>\nLanguage-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/addons/manuals/itsmconfigurationmanagement-documentation/hu/>\nLanguage: hu\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 5.16\nGenerated-By: Babel 2.4.0\n"
 
 #: ../../content/about.rst:13
 msgid "About"
@@ -53,7 +53,6 @@ msgid "Configuration"
 msgstr "Beállítás"
 
 #: ../../content/configuration.rst:15 ../../content/index.rst:15
-#, fuzzy
 msgid "Table of Contents"
 msgstr "Tartalomjegyzék"
 
@@ -319,7 +318,6 @@ msgid "The following Dynamic Fields might be specifically interesting for your C
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:203
-#, fuzzy
 msgid "Agent"
 msgstr "Ügyintéző"
 
@@ -360,7 +358,6 @@ msgid "With this field you can refer to a specific Version of another ConfigItem
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:218
-#, fuzzy
 msgid "Customer"
 msgstr "Ügyfél"
 
@@ -377,7 +374,6 @@ msgid "With this, you are able to see the ConfigItem in the Widget of the Custom
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:224
-#, fuzzy
 msgid "Customer User"
 msgstr "Ügyfél-felhasználó"
 
@@ -460,12 +456,10 @@ msgid "Backlinks Tree View"
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:254
-#, fuzzy
 msgid "Import/Export"
 msgstr "Importálás/exportálás"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:255
-#, fuzzy
 msgid "CSV"
 msgstr "CSV"
 
@@ -490,7 +484,6 @@ msgid "Permissions and Access Restrictions"
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:272
-#, fuzzy
 msgid "ACLs"
 msgstr "ACL-ek"
 
@@ -499,22 +492,18 @@ msgid "New Object Type \"ITSM ConfigItem\""
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:275
-#, fuzzy
 msgid "Match settings"
 msgstr "Illesztési beállítások"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:278
-#, fuzzy
 msgid "Frontend"
 msgstr "Előtétprogram"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:279
-#, fuzzy
 msgid "User"
 msgstr "Felhasználó"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:281
-#, fuzzy
 msgid "Change settings"
 msgstr "Változtatási beállítások"
 
@@ -552,7 +541,6 @@ msgid "This page holds examples for Web Service invoker and operations included 
 msgstr ""
 
 #: ../../content/configuration/generic_interface/index.rst:16
-#, fuzzy
 msgid "Operations"
 msgstr "Műveletek"
 
@@ -592,7 +580,6 @@ msgid "Delete a config item."
 msgstr ""
 
 #: ../../content/configuration/generic_interface/index.rst:151
-#, fuzzy
 msgid "Invoker"
 msgstr "Meghívó"
 
@@ -748,7 +735,6 @@ msgid "ITSMConfigItem::EventModulePost###4000-ScriptDynamicFields"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:87
-#, fuzzy
 msgid "Evaluate all script fields."
 msgstr "Az összes parancsfájlmező kiértékelése."
 
@@ -1085,7 +1071,6 @@ msgid "ImportExport::ObjectBackendRegistration###ITSMConfigItem"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:274
-#, fuzzy
 msgid "Object backend module registration for the import/export module."
 msgstr "Objektum háttérprogram modul regisztráció az importálás/exportálás modulhoz."
 
@@ -1663,7 +1648,6 @@ msgid "Frontend::Search::JavaScript###ConfigItem"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:602
-#, fuzzy
 msgid "JavaScript function for the search frontend."
 msgstr "JavaScript függvény a keresési előtétprogramhoz."
 
@@ -1974,7 +1958,6 @@ msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###SearchCSVData"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:773
-#, fuzzy
 msgid "Data used to export the search result in CSV format."
 msgstr "A keresési eredmény CSV formátumba való exportálásához használt adat."
 
@@ -2047,7 +2030,6 @@ msgid "DefaultColumnsScreens###ITSMConfigurationManagement"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:811
-#, fuzzy
 msgid "This configuration defines all possible screens to enable or disable default columns."
 msgstr "Ez a beállítás határozza meg az összes lehetséges képernyőt az alapértelmezett oszlopok engedélyezéséhez vagy letiltásához."
 
@@ -2072,7 +2054,6 @@ msgid "Frontend::AdminModuleGroups###200-ITSMConfigurationManagement"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:825
-#, fuzzy
 msgid "Defines available groups for the admin overview screen."
 msgstr "Meghatározza az elérhető csoportokat az adminisztrátori áttekintő képernyőhöz."
 
