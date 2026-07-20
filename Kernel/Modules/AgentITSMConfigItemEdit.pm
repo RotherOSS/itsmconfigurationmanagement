@@ -752,11 +752,16 @@ sub Run {
                 }
             }
             else {
-                $ConfigItemObject->ConfigItemUpdate(
+                my $UpdateSuccess = $ConfigItemObject->ConfigItemUpdate(
                     $ConfigItem->%*,
                     DefinitionID => $Definition->{DefinitionID},
                     UserID       => $Self->{UserID},
                 );
+
+                # check error
+                if ( !$UpdateSuccess ) {
+                    return $LayoutObject->FatalError();
+                }
             }
 
             # fetch updated config item data to secure version id being present
