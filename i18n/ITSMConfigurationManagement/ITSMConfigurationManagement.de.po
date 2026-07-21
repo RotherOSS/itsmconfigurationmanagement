@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-07-14 13:35+0000\n"
-"PO-Revision-Date: 2026-07-21 09:00+0000\n"
+"PO-Revision-Date: 2026-07-21 09:51+0000\n"
 "Last-Translator: Stefan Abel <sta@rother-oss.com>\n"
 "Language-Team: German <http://translate.otobo.org/projects/otobo-11-0/addons/"
 "itsm-configurationmanagement/de/>\n"
@@ -2855,7 +2855,7 @@ msgstr "Start-IP-Adresse"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Storage"
-msgstr "Lagerung"
+msgstr "Storage"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Storage Partition"
