@@ -641,7 +641,7 @@ sub Data {
     $Self->{Translation}->{'Card Type'} = 'Karte Typ';
     $Self->{Translation}->{'Client Certificates'} = 'Kunden-Zertifikate';
     $Self->{Translation}->{'Client Software'} = 'Kunden-Software';
-    $Self->{Translation}->{'Client category'} = 'Kundenkategorie';
+    $Self->{Translation}->{'Client category'} = 'Client-Kategorie';
     $Self->{Translation}->{'Clockrate'} = 'Taktrate';
     $Self->{Translation}->{'Clockspeed'} = 'Taktfrequenz';
     $Self->{Translation}->{'Code Signing Certificates'} = 'Code Signing-Zertifikate';
@@ -791,13 +791,13 @@ sub Data {
     $Self->{Translation}->{'Speakers'} = 'Redner';
     $Self->{Translation}->{'Standard SIM'} = 'Standard';
     $Self->{Translation}->{'Start IP Address'} = 'Start-IP-Adresse';
-    $Self->{Translation}->{'Storage'} = 'Lagerung';
+    $Self->{Translation}->{'Storage'} = 'Storage';
     $Self->{Translation}->{'Storage Partition'} = 'Speicher-Partition';
     $Self->{Translation}->{'Subscription-based licenses'} = 'Abonnement-basierte Lizenzen';
     $Self->{Translation}->{'Subsidiary'} = 'Tochtergesellschaft';
     $Self->{Translation}->{'Summary'} = 'Zusammenfassung';
     $Self->{Translation}->{'Thin Client'} = 'Thin Client';
-    $Self->{Translation}->{'Threads'} = 'Fäden';
+    $Self->{Translation}->{'Threads'} = 'Threads';
     $Self->{Translation}->{'Thunderbolt'} = 'Thunderbolt';
     $Self->{Translation}->{'Total Graphics card RAM (GB)'} = 'Grafikkarten-RAM insgesamt (GB)';
     $Self->{Translation}->{'Total RAM (GB)'} = 'RAM insgesamt (GB)';
