@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2026-06-24 13:47+0000\n"
+"POT-Creation-Date: 2026-07-14 13:35+0000\n"
 "PO-Revision-Date: 2026-07-06 22:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Macedonian <http://translate.otobo.org/projects/otobo-11-0/"
@@ -230,21 +230,9 @@ msgstr ""
 msgid "Object Type"
 msgstr "Тип на објект"
 
-#. Template: AdminACLEdit
-msgid ""
-"Set up what you want to change if the criteria match. Keep in mind that "
-"'Possible' is a white list, 'PossibleNot' a black list."
-msgstr ""
-"Поставете ги промените за совшаѓањата со овој критериум. Имајте на ум дека "
-"'Possible' е белата листа, 'PossibleNot' е црната листа."
-
 #. Template: AdminDynamicFieldScreen
 msgid "Filter by object type"
 msgstr "Филтер по тип"
-
-#. Template: AdminDynamicFieldScreen
-msgid "Add DynamicField"
-msgstr ""
 
 #. JS Template: ClassImportConfirm
 msgid "The following classes will be imported"
@@ -2656,3 +2644,10 @@ msgstr ""
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Webcam"
 msgstr ""
+
+#~ msgid ""
+#~ "Set up what you want to change if the criteria match. Keep in mind that "
+#~ "'Possible' is a white list, 'PossibleNot' a black list."
+#~ msgstr ""
+#~ "Поставете ги промените за совшаѓањата со овој критериум. Имајте на ум "
+#~ "дека 'Possible' е белата листа, 'PossibleNot' е црната листа."

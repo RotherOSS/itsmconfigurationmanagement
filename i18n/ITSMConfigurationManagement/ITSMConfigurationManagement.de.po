@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2026-06-24 13:47+0000\n"
+"POT-Creation-Date: 2026-07-14 13:35+0000\n"
 "PO-Revision-Date: 2026-07-21 09:00+0000\n"
 "Last-Translator: Stefan Abel <sta@rother-oss.com>\n"
 "Language-Team: German <http://translate.otobo.org/projects/otobo-11-0/addons/"
@@ -235,22 +235,9 @@ msgstr "Config Item-Suche"
 msgid "Object Type"
 msgstr "Objekt-Typ"
 
-#. Template: AdminACLEdit
-msgid ""
-"Set up what you want to change if the criteria match. Keep in mind that "
-"'Possible' is a white list, 'PossibleNot' a black list."
-msgstr ""
-"Stellt die Wertänderungen ein für den Fall, dass die Filterbedingungen "
-"zutreffen. Hierbei ist 'Possible' eine Positivliste und 'PossibleNot' eine "
-"Negativliste."
-
 #. Template: AdminDynamicFieldScreen
 msgid "Filter by object type"
 msgstr "Feld nach Objekttyp filtern"
-
-#. Template: AdminDynamicFieldScreen
-msgid "Add DynamicField"
-msgstr "Dynamisches Feld hinzufügen"
 
 #. JS Template: ClassImportConfirm
 msgid "The following classes will be imported"
@@ -2953,3 +2940,14 @@ msgstr "Volumenlizenzen"
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Webcam"
 msgstr "Webcam"
+
+#~ msgid ""
+#~ "Set up what you want to change if the criteria match. Keep in mind that "
+#~ "'Possible' is a white list, 'PossibleNot' a black list."
+#~ msgstr ""
+#~ "Stellt die Wertänderungen ein für den Fall, dass die Filterbedingungen "
+#~ "zutreffen. Hierbei ist 'Possible' eine Positivliste und 'PossibleNot' "
+#~ "eine Negativliste."
+
+#~ msgid "Add DynamicField"
+#~ msgstr "Dynamisches Feld hinzufügen"

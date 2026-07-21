@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2026-06-24 13:47+0000\n"
+"POT-Creation-Date: 2026-07-14 13:35+0000\n"
 "PO-Revision-Date: 2026-07-14 11:08+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-0/"
@@ -232,21 +232,9 @@ msgstr "ConfigItem keresés"
 msgid "Object Type"
 msgstr "Objektum típusa"
 
-#. Template: AdminACLEdit
-msgid ""
-"Set up what you want to change if the criteria match. Keep in mind that "
-"'Possible' is a white list, 'PossibleNot' a black list."
-msgstr ""
-"Állítsa be, amit módosítani szeretne a feltétel egyezésekor. Ne feledkezzen "
-"meg arról, hogy a „Possible” a fehérlista, a „PossibleNot” a feketelista."
-
 #. Template: AdminDynamicFieldScreen
 msgid "Filter by object type"
 msgstr "Mező szűrése objektumtípus szerint"
-
-#. Template: AdminDynamicFieldScreen
-msgid "Add DynamicField"
-msgstr "Dinamikus mező hozzáadása"
 
 #. JS Template: ClassImportConfirm
 msgid "The following classes will be imported"
@@ -2909,3 +2897,14 @@ msgstr ""
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Webcam"
 msgstr "Webkamera"
+
+#~ msgid ""
+#~ "Set up what you want to change if the criteria match. Keep in mind that "
+#~ "'Possible' is a white list, 'PossibleNot' a black list."
+#~ msgstr ""
+#~ "Állítsa be, amit módosítani szeretne a feltétel egyezésekor. Ne "
+#~ "feledkezzen meg arról, hogy a „Possible” a fehérlista, a „PossibleNot” a "
+#~ "feketelista."
+
+#~ msgid "Add DynamicField"
+#~ msgstr "Dinamikus mező hozzáadása"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2026-06-24 13:47+0000\n"
+"POT-Creation-Date: 2026-07-14 13:35+0000\n"
 "PO-Revision-Date: 2026-07-06 22:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Indonesian <http://translate.otobo.org/projects/otobo-11-0/"
@@ -232,21 +232,9 @@ msgstr "Pencarian Item Konfigurasi"
 msgid "Object Type"
 msgstr "Jenis Objek"
 
-#. Template: AdminACLEdit
-msgid ""
-"Set up what you want to change if the criteria match. Keep in mind that "
-"'Possible' is a white list, 'PossibleNot' a black list."
-msgstr ""
-"Tentukan apa yang anda ingin ubah jika kriterianya cocok. Mohon di ingat "
-"bahwa 'Mungkin' adalah daftar putih, 'TidakMungkin' adalah daftar hitam"
-
 #. Template: AdminDynamicFieldScreen
 msgid "Filter by object type"
 msgstr "Penyaringan menurut jenis"
-
-#. Template: AdminDynamicFieldScreen
-msgid "Add DynamicField"
-msgstr "DynamicField"
 
 #. JS Template: ClassImportConfirm
 msgid "The following classes will be imported"
@@ -2875,3 +2863,13 @@ msgstr ""
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Webcam"
 msgstr "Kamera web"
+
+#~ msgid ""
+#~ "Set up what you want to change if the criteria match. Keep in mind that "
+#~ "'Possible' is a white list, 'PossibleNot' a black list."
+#~ msgstr ""
+#~ "Tentukan apa yang anda ingin ubah jika kriterianya cocok. Mohon di ingat "
+#~ "bahwa 'Mungkin' adalah daftar putih, 'TidakMungkin' adalah daftar hitam"
+
+#~ msgid "Add DynamicField"
+#~ msgstr "DynamicField"

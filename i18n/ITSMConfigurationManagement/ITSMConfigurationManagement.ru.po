@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2026-06-24 13:47+0000\n"
+"POT-Creation-Date: 2026-07-14 13:35+0000\n"
 "PO-Revision-Date: 2026-07-06 22:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Russian <http://translate.otobo.org/projects/otobo-11-0/"
@@ -231,21 +231,9 @@ msgstr "Поиск ConfigItem"
 msgid "Object Type"
 msgstr "Тип объекта"
 
-#. Template: AdminACLEdit
-msgid ""
-"Set up what you want to change if the criteria match. Keep in mind that "
-"'Possible' is a white list, 'PossibleNot' a black list."
-msgstr ""
-"Задайте, что вы хотите изменить в случае выполнения условия. Имейте в виду, "
-"что 'Possible' это \"белый список\", а 'PossibleNot' - \"черный список\""
-
 #. Template: AdminDynamicFieldScreen
 msgid "Filter by object type"
 msgstr "Фильт по типу"
-
-#. Template: AdminDynamicFieldScreen
-msgid "Add DynamicField"
-msgstr "Добавить динамическое поле"
 
 #. JS Template: ClassImportConfirm
 msgid "The following classes will be imported"
@@ -2850,3 +2838,14 @@ msgstr ""
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Webcam"
 msgstr "Веб-камера"
+
+#~ msgid ""
+#~ "Set up what you want to change if the criteria match. Keep in mind that "
+#~ "'Possible' is a white list, 'PossibleNot' a black list."
+#~ msgstr ""
+#~ "Задайте, что вы хотите изменить в случае выполнения условия. Имейте в "
+#~ "виду, что 'Possible' это \"белый список\", а 'PossibleNot' - \"черный "
+#~ "список\""
+
+#~ msgid "Add DynamicField"
+#~ msgstr "Добавить динамическое поле"
