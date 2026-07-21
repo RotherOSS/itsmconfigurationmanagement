@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2026-07-07 14:10+0000\n"
+"POT-Creation-Date: 2026-07-14 13:45+0000\n"
 "PO-Revision-Date: 2026-07-21 10:00+0000\n"
 "Last-Translator: Stefan Abel <sta@rother-oss.com>\n"
 "Language-Team: German <http://translate.otobo.org/projects/otobo-11-1/addons/"
@@ -710,10 +710,6 @@ msgstr ""
 "\"Ticket->Text\" ersetzt."
 
 #. SysConfig
-msgid "Attributes for license accounting."
-msgstr "Attribut für Lizenzverwaltung."
-
-#. SysConfig
 msgid ""
 "Attributes for licenses counting, where \"TotalLicensesDF\", "
 "\"AvailableLicensesDF\" and \"LicenseReferenceDF\" are the names of the "
@@ -914,9 +910,40 @@ msgstr ""
 "Spalteneinstellungen für Zugriffsbedingungen."
 
 #. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Configure the columns which are available for viewing Permission "
+#| "Conditions in the customer interface, when the corresponding Permission "
+#| "Condition Columns are not specifically configured. This setting is used "
+#| "as a fallback for the other Permission Condition Columns settings."
+msgid ""
+"Configure the columns which are available for viewing Permission Conditions "
+"in the public interface, when the corresponding Permission Condition Columns "
+"are not specifically configured. This setting is used as a fallback for the "
+"other Permission Condition Columns settings."
+msgstr ""
+"Konfiguriere die Spalten, die im Kundeninterface für die Anzeige von "
+"Zugriffsbedingungen verfügbar sind, wenn die entsprechenden Spalten für "
+"Zugriffsbedingungen nicht explizit konfiguriert sind. Diese Einstellung "
+"dient als Rückfalloption für die anderen Einstellungen zu den "
+"Spalteneinstellungen für Zugriffsbedingungen."
+
+#. SysConfig
 msgid ""
 "Configure the columns which are available when viewing the corresponding "
 "Permission Condition in the customer interface."
+msgstr ""
+"Konfiguriere die Spalten, die in der Kundenoberfläche in der Ansicht der "
+"entsprechenden Berechtigungsbedingung verfügbar sind."
+
+#. SysConfig
+#, fuzzy
+#| msgid ""
+#| "Configure the columns which are available when viewing the corresponding "
+#| "Permission Condition in the customer interface."
+msgid ""
+"Configure the columns which are available when viewing the corresponding "
+"Permission Condition in the public interface."
 msgstr ""
 "Konfiguriere die Spalten, die in der Kundenoberfläche in der Ansicht der "
 "entsprechenden Berechtigungsbedingung verfügbar sind."
@@ -3090,6 +3117,9 @@ msgstr "Volumenlizenzen"
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Webcam"
 msgstr "Webcam"
+
+#~ msgid "Attributes for license accounting."
+#~ msgstr "Attribut für Lizenzverwaltung."
 
 #~ msgid "Object Type"
 #~ msgstr "Objekttyp"

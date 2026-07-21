@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2026-07-07 14:10+0000\n"
+"POT-Creation-Date: 2026-07-14 13:45+0000\n"
 "PO-Revision-Date: 2026-07-14 13:26+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/"
@@ -691,10 +691,6 @@ msgid ""
 msgstr ""
 
 #. SysConfig
-msgid "Attributes for license accounting."
-msgstr ""
-
-#. SysConfig
 msgid ""
 "Attributes for licenses counting, where \"TotalLicensesDF\", "
 "\"AvailableLicensesDF\" and \"LicenseReferenceDF\" are the names of the "
@@ -875,8 +871,22 @@ msgstr ""
 
 #. SysConfig
 msgid ""
+"Configure the columns which are available for viewing Permission Conditions "
+"in the public interface, when the corresponding Permission Condition Columns "
+"are not specifically configured. This setting is used as a fallback for the "
+"other Permission Condition Columns settings."
+msgstr ""
+
+#. SysConfig
+msgid ""
 "Configure the columns which are available when viewing the corresponding "
 "Permission Condition in the customer interface."
+msgstr ""
+
+#. SysConfig
+msgid ""
+"Configure the columns which are available when viewing the corresponding "
+"Permission Condition in the public interface."
 msgstr ""
 
 #. SysConfig
