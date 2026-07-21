@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-07-07 14:10+0000\n"
-"PO-Revision-Date: 2026-06-24 13:52+0000\n"
+"PO-Revision-Date: 2026-07-21 10:00+0000\n"
 "Last-Translator: Stefan Abel <sta@rother-oss.com>\n"
 "Language-Team: German <http://translate.otobo.org/projects/otobo-11-1/addons/"
 "itsmconfigurationmanagement/de/>\n"
@@ -2403,7 +2403,7 @@ msgstr "Kunden-Software"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Client category"
-msgstr "Kundenkategorie"
+msgstr "Client-Kategorie"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Clockrate"
@@ -3005,7 +3005,7 @@ msgstr "Start-IP-Adresse"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Storage"
-msgstr "Lagerung"
+msgstr "Storage"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Storage Partition"
@@ -3029,7 +3029,7 @@ msgstr "Thin Client"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Threads"
-msgstr "Fäden"
+msgstr "Threads"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Thunderbolt"
