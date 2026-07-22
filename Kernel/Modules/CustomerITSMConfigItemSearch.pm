@@ -496,7 +496,7 @@ sub Run {
         }
 
         my $PageShownPreferencesKey = 'UserConfigItemOverview' . $View . 'PageShown';
-        my $PageShown               = $Self->{$PageShownPreferencesKey} || 10;
+        my $PageShown               = $Backends->{$View} ? $Backends->{$View}->{PageShown} : 10;
 
         # do shown config item lookup
         my $Limit = 1_000;

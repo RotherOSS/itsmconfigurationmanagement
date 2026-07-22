@@ -420,7 +420,7 @@ sub Run {
 
     # get personal page shown count
     my $PageShownPreferencesKey = 'UserConfigItemOverview' . $View . 'PageShown';
-    my $PageShown               = $Self->{$PageShownPreferencesKey} || 10;
+    my $PageShown               = $Backends->{$View} ? $Backends->{$View}->{PageShown} : 10;
     my %PageNav;
 
     # do shown config item lookup
