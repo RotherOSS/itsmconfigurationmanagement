@@ -137,6 +137,36 @@ sub ValueSet {
 
     if ($Result) {
 
+        # perform search if necessary
+        if (
+            $Param{ExternalSource}
+            &&
+            $Param{DynamicFieldConfig}{Config}{ImportSearchAttribute} &&
+            $Self->can('SearchObjects')
+            )
+        {
+
+            if ( $Param{Set} ) {
+                my @Values;
+                for my $ValueItem ( $Param{Value}->@* ) {
+                    my $TransformedValue = $Self->_TransformExternalSource(
+                        DynamicFieldConfig => $Param{DynamicFieldConfig},
+                        ValueArray         => $ValueItem,
+                        UserID             => $Param{UserID},
+                    );
+                    push @Values, $TransformedValue;
+                }
+                $Param{Value} = \@Values;
+            }
+            else {
+                $Param{Value} = $Self->_TransformExternalSource(
+                    DynamicFieldConfig => $Param{DynamicFieldConfig},
+                    ValueArray         => $Param{Value},
+                    UserID             => $Param{UserID},
+                );
+            }
+        }
+
         # optional config item links
         my $DynamicFieldConfig = $Param{DynamicFieldConfig};
 
