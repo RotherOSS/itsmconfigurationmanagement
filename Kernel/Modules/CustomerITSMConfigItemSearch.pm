@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -495,8 +495,8 @@ sub Run {
             }
         }
 
-        my $PageShownPreferencesKey = 'UserConfigItemOverview' . $View . 'PageShown';
-        my $PageShown               = $Self->{$PageShownPreferencesKey} || 10;
+        # get customer page shown count
+        my $PageShown = $Backends->{$View} ? $Backends->{$View}->{PageShown} : 10;
 
         # do shown config item lookup
         my $Limit = 1_000;
