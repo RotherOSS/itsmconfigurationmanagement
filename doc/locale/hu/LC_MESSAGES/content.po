@@ -5,7 +5,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
-msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:17+0100\nPO-Revision-Date: 2026-09-03 13:25+0000\nLast-Translator: Balázs Úr <balazs@urbalazs.hu>\nLanguage-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-0/addons/manuals/itsmconfigurationmanagement-documentation/hu/>\nLanguage: hu\nMIME-Version: 1.0\nContent-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 5.16\nGenerated-By: Babel 2.4.0\n"
+msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:17+0100\nPO-Revision-Date: 2026-09-03 18:41+0000\nLast-Translator: Balázs Úr <balazs@urbalazs.hu>\nLanguage-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-0/addons/manuals/itsmconfigurationmanagement-documentation/hu/>\nLanguage: hu\nMIME-Version: 1.0\nContent-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 2026.9\nGenerated-By: Babel 2.4.0\n"
 
 #: ../../content/about.rst:13
 msgid "About"
@@ -39,7 +39,7 @@ msgstr "Szerző: |doc-vendor| / Verzió: |doc-version| / Kiadás dátuma: |doc-d
 
 #: ../../content/about.rst:27
 msgid "Terms and Conditions"
-msgstr ""
+msgstr "Használati feltételek"
 
 #: ../../content/about.rst:29
 msgid ""
@@ -54,19 +54,19 @@ msgstr ""
 msgid ""
 "Published by: Rother OSS GmbH, (https://otobo.io), Oberwalting 31, 94339 "
 "Leiblfing, Germany."
-msgstr ""
+msgstr "Közzétette: Rother OSS GmbH, (https://otobo.io), Oberwalting 31, 94339 Leiblfing, Németország."
 
 #: ../../content/configuration.rst:13
 msgid "Configuration"
-msgstr ""
+msgstr "Beállítás"
 
 #: ../../content/configuration.rst:15 ../../content/index.rst:15
 msgid "Table of Contents"
-msgstr ""
+msgstr "Tartalomjegyzék"
 
 #: ../../content/configuration/basic_configuration.rst:12
 msgid "Basic Configuration"
-msgstr ""
+msgstr "Alapvető beállítás"
 
 #: ../../content/configuration/basic_configuration.rst:13
 msgid ""
@@ -128,15 +128,15 @@ msgstr "Beállítások hivatkozása"
 
 #: ../../content/configuration/configuration_reference.rst:15
 msgid "CMDB"
-msgstr ""
+msgstr "CMDB"
 
 #: ../../content/configuration/configuration_reference.rst:15
 msgid "Configuration Management Database"
-msgstr ""
+msgstr "Konfigurációmenedzsment-adatbázis"
 
 #: ../../content/configuration/configuration_reference.rst:17
 msgid "CI"
-msgstr ""
+msgstr "Konfigurációelem"
 
 #: ../../content/configuration/configuration_reference.rst:18
 msgid "Configuration Item"
@@ -144,7 +144,7 @@ msgstr "Konfigurációelem"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:12
 msgid "Custom Configuration and Advanced Features"
-msgstr ""
+msgstr "Egyéni beállítások és speciális funkciók"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:16
 msgid "Classes and Roles in the General Catalog"
@@ -152,11 +152,11 @@ msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:20
 msgid "Config Item Definitions"
-msgstr ""
+msgstr "Konfigurációelem-meghatározások"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:24
 msgid "General Structure"
-msgstr ""
+msgstr "Általános szerkezet"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:25
 msgid "Example class \"Domain\":"
@@ -168,27 +168,27 @@ msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:112
 msgid "**Pages**"
-msgstr ""
+msgstr "**Oldalak**"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:97
 msgid "*Name* (required) - The name of the page"
-msgstr ""
+msgstr "*Name* (kötelező) – az oldal neve"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:98
 msgid "*Layout* (required) - The layout of the grid on this page"
-msgstr ""
+msgstr "*Layout* (kötelező) – a rács elrendezése ezen az oldalon"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:100
 msgid "*Columns* - number of columns"
-msgstr ""
+msgstr "*Columns* – oszlopok száma"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:101
 msgid "e.g. `Columns: 3` will display 3 columns"
-msgstr ""
+msgstr "például a „Columns: 3” három oszlopot fog megjeleníteni"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:102
 msgid "*ColumnWidth* - basic css defining the column widths"
-msgstr ""
+msgstr "*ColumnWidth* – az oszlopszélességeket meghatározó alapvető CSS"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:104
 msgid ""
@@ -555,11 +555,11 @@ msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:254
 msgid "Import/Export"
-msgstr ""
+msgstr "Importálás/exportálás"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:255
 msgid "CSV"
-msgstr ""
+msgstr "CSV"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:256
 msgid ""
@@ -569,11 +569,11 @@ msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:257
 msgid "Alternative: Web Service?"
-msgstr ""
+msgstr "Alternatíva: webszolgáltatás?"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:260
 msgid "Console Commands"
-msgstr ""
+msgstr "Konzolparancsok"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:261
 msgid ""
@@ -596,11 +596,11 @@ msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:271
 msgid "Permissions and Access Restrictions"
-msgstr ""
+msgstr "Jogosultságok és hozzáférés-korlátozások"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:272
 msgid "ACLs"
-msgstr ""
+msgstr "ACL-ek"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:274
 msgid "New Object Type \"ITSM ConfigItem\""
@@ -608,19 +608,19 @@ msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:275
 msgid "Match settings"
-msgstr ""
+msgstr "Illesztési beállítások"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:278
 msgid "Frontend"
-msgstr ""
+msgstr "Előtétprogram"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:279
 msgid "User"
-msgstr ""
+msgstr "Felhasználó"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:281
 msgid "Change settings"
-msgstr ""
+msgstr "Változtatási beállítások"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:284
 msgid "Form"
@@ -628,7 +628,7 @@ msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:287
 msgid "Migration from OTOBO 10 / OTRS"
-msgstr ""
+msgstr "Költöztetés OTOBO 10-ről vagy OTRS-ről"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:288
 msgid ""
@@ -644,7 +644,7 @@ msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:298
 msgid "Relations"
-msgstr ""
+msgstr "Kapcsolatok"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:299
 msgid "When to use which? Which impact has which relation?"
@@ -652,7 +652,7 @@ msgstr ""
 
 #: ../../content/configuration/generic_interface/index.rst:12
 msgid "Custom Configuration: Web Services"
-msgstr ""
+msgstr "Egyéni beállítás: webszolgáltatások"
 
 #: ../../content/configuration/generic_interface/index.rst:13
 msgid ""
@@ -662,11 +662,11 @@ msgstr ""
 
 #: ../../content/configuration/generic_interface/index.rst:16
 msgid "Operations"
-msgstr ""
+msgstr "Műveletek"
 
 #: ../../content/configuration/generic_interface/index.rst:19
 msgid "ConfigItemGet"
-msgstr ""
+msgstr "ConfigItemGet"
 
 #: ../../content/configuration/generic_interface/index.rst:20
 msgid "Provide the config item data for the requested config item."
@@ -674,15 +674,15 @@ msgstr ""
 
 #: ../../content/configuration/generic_interface/index.rst:52
 msgid "ConfigItemSearch"
-msgstr ""
+msgstr "ConfigItemSearch"
 
 #: ../../content/configuration/generic_interface/index.rst:53
 msgid "Search for one or more config items."
-msgstr ""
+msgstr "Egy vagy több konfigurációelem keresése."
 
 #: ../../content/configuration/generic_interface/index.rst:85
 msgid "ConfigItemUpsert"
-msgstr ""
+msgstr "ConfigItemUpsert"
 
 #: ../../content/configuration/generic_interface/index.rst:86
 msgid "Add or update one or more config items based on the sent data."
@@ -690,19 +690,19 @@ msgstr ""
 
 #: ../../content/configuration/generic_interface/index.rst:118
 msgid "ConfigItemDelete"
-msgstr ""
+msgstr "ConfigItemDelete"
 
 #: ../../content/configuration/generic_interface/index.rst:119
 msgid "Delete a config item."
-msgstr ""
+msgstr "Egy konfigurációelem törlése."
 
 #: ../../content/configuration/generic_interface/index.rst:151
 msgid "Invoker"
-msgstr ""
+msgstr "Meghívó"
 
 #: ../../content/configuration/generic_interface/index.rst:154
 msgid "ConfigItemFetch"
-msgstr ""
+msgstr "ConfigItemFetch"
 
 #: ../../content/configuration/generic_interface/index.rst:155
 msgid ""
@@ -712,11 +712,11 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:15
 msgid "Core::BulkAction"
-msgstr ""
+msgstr "Core::BulkAction"
 
 #: ../../content/configuration/system_configuration_settings.rst:18
 msgid "ITSMConfigItem::Frontend::BulkFeature"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::BulkFeature"
 
 #: ../../content/configuration/system_configuration_settings.rst:19
 msgid ""
@@ -726,7 +726,7 @@ msgstr "Engedélyezi a konfigurációelem tömeges művelet funkciót az ügyint
 
 #: ../../content/configuration/system_configuration_settings.rst:22
 msgid "ITSMConfigItem::Frontend::BulkFeatureGroup"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::BulkFeatureGroup"
 
 #: ../../content/configuration/system_configuration_settings.rst:23
 msgid "Enables configuration item bulk action feature only for the listed groups."
@@ -738,7 +738,7 @@ msgstr "Core::DynamicFields::DriverRegistration"
 
 #: ../../content/configuration/system_configuration_settings.rst:29
 msgid "DynamicFields::Driver###ConfigItem"
-msgstr ""
+msgstr "DynamicFields::Driver###ConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:30
 #: ../../content/configuration/system_configuration_settings.rst:34
@@ -747,7 +747,7 @@ msgstr "Dinamikus mező háttérprogram regisztráció."
 
 #: ../../content/configuration/system_configuration_settings.rst:33
 msgid "DynamicFields::Driver###ConfigItemVersion"
-msgstr ""
+msgstr "DynamicFields::Driver###ConfigItemVersion"
 
 #: ../../content/configuration/system_configuration_settings.rst:37
 msgid "Core::DynamicFields::ObjectTypeRegistration"
@@ -755,7 +755,7 @@ msgstr "Core::DynamicFields::ObjectTypeRegistration"
 
 #: ../../content/configuration/system_configuration_settings.rst:40
 msgid "DynamicFields::ObjectType###ITSMConfigItem"
-msgstr ""
+msgstr "DynamicFields::ObjectType###ITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:41
 msgid "DynamicField object registration."
@@ -763,11 +763,11 @@ msgstr "Dinamikus mező objektum regisztráció."
 
 #: ../../content/configuration/system_configuration_settings.rst:44
 msgid "Core::Elasticsearch::Settings"
-msgstr ""
+msgstr "Core::Elasticsearch::Settings"
 
 #: ../../content/configuration/system_configuration_settings.rst:47
 msgid "Elasticsearch::ExcludedCIClasses"
-msgstr ""
+msgstr "Elasticsearch::ExcludedCIClasses"
 
 #: ../../content/configuration/system_configuration_settings.rst:48
 msgid ""
@@ -778,7 +778,7 @@ msgstr "A következő osztályok konfigurációelemei nem kerülnek tárolásra 
 
 #: ../../content/configuration/system_configuration_settings.rst:51
 msgid "Elasticsearch::ExcludedCIDeploymentStates"
-msgstr ""
+msgstr "Elasticsearch::ExcludedCIDeploymentStates"
 
 #: ../../content/configuration/system_configuration_settings.rst:52
 msgid ""
@@ -789,7 +789,7 @@ msgstr "A következő üzembe állítási állapotokkal rendelkező konfiguráci
 
 #: ../../content/configuration/system_configuration_settings.rst:55
 msgid "Elasticsearch::ConfigItemStoreFields"
-msgstr ""
+msgstr "Elasticsearch::ConfigItemStoreFields"
 
 #: ../../content/configuration/system_configuration_settings.rst:56
 msgid ""
@@ -800,7 +800,7 @@ msgstr "A konfigurációelem indexében tárolt mezők, amelyek a szabad-szavas 
 
 #: ../../content/configuration/system_configuration_settings.rst:59
 msgid "Elasticsearch::ConfigItemSearchFields"
-msgstr ""
+msgstr "Elasticsearch::ConfigItemSearchFields"
 
 #: ../../content/configuration/system_configuration_settings.rst:60
 msgid ""
@@ -812,7 +812,7 @@ msgstr "A konfigurációelem indexének mezői, amely a szabad-szavas keresésé
 
 #: ../../content/configuration/system_configuration_settings.rst:63
 msgid "Elasticsearch::QuickSearchShow###ConfigItem"
-msgstr ""
+msgstr "Elasticsearch::QuickSearchShow###ConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:64
 msgid ""
@@ -822,11 +822,11 @@ msgstr "Keresendő objektumok, hány bejegyzés és mely attribútumok jelenjene
 
 #: ../../content/configuration/system_configuration_settings.rst:67
 msgid "Core::Event::ITSMConfigItem"
-msgstr ""
+msgstr "Core::Event::ITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:70
 msgid "ITSMConfigItem::EventModulePost###100-History"
-msgstr ""
+msgstr "ITSMConfigItem::EventModulePost###100-History"
 
 #: ../../content/configuration/system_configuration_settings.rst:71
 msgid ""
@@ -836,7 +836,7 @@ msgstr "Konfigurációelem-eseménymodul, amely engedélyezi a naplózást az el
 
 #: ../../content/configuration/system_configuration_settings.rst:74
 msgid "ITSMConfigItem::EventModulePost###300-DefinitionConfigItemUpdate"
-msgstr ""
+msgstr "ITSMConfigItem::EventModulePost###300-DefinitionConfigItemUpdate"
 
 #: ../../content/configuration/system_configuration_settings.rst:75
 msgid ""
@@ -846,7 +846,7 @@ msgstr "Konfigurációelem-eseménymodul, amely frissíti a konfigurációelemek
 
 #: ../../content/configuration/system_configuration_settings.rst:78
 msgid "ITSMConfigItem::EventModulePost###400-LinkSync"
-msgstr ""
+msgstr "ITSMConfigItem::EventModulePost###400-LinkSync"
 
 #: ../../content/configuration/system_configuration_settings.rst:79
 msgid "Config item event module that updates the table configitem_ĺink."
@@ -854,7 +854,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:82
 msgid "ITSMConfigItem::EventModulePost###500-RecalcCurInciState"
-msgstr ""
+msgstr "ITSMConfigItem::EventModulePost###500-RecalcCurInciState"
 
 #: ../../content/configuration/system_configuration_settings.rst:83
 msgid "Config item event module updates the current incident state."
@@ -862,15 +862,15 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:86
 msgid "ITSMConfigItem::EventModulePost###4000-ScriptDynamicFields"
-msgstr ""
+msgstr "ITSMConfigItem::EventModulePost###4000-ScriptDynamicFields"
 
 #: ../../content/configuration/system_configuration_settings.rst:87
 msgid "Evaluate all script fields."
-msgstr ""
+msgstr "Az összes parancsfájlmező kiértékelése."
 
 #: ../../content/configuration/system_configuration_settings.rst:90
 msgid "DynamicField::EventModulePost###200-DynamicFieldSync"
-msgstr ""
+msgstr "DynamicField::EventModulePost###200-DynamicFieldSync"
 
 #: ../../content/configuration/system_configuration_settings.rst:91
 msgid ""
@@ -880,13 +880,13 @@ msgstr "Dinamikus mező eseménymodul, amely szinkronizálatlanként jelöli meg
 
 #: ../../content/configuration/system_configuration_settings.rst:94
 msgid "ITSMConfigItem::EventModulePost###1000-GenericInterface"
-msgstr ""
+msgstr "ITSMConfigItem::EventModulePost###1000-GenericInterface"
 
 #: ../../content/configuration/system_configuration_settings.rst:95
 msgid ""
 "Performs the configured action for each event (as an Invoker) for each "
 "configured Webservice."
-msgstr ""
+msgstr "Végrehajtja a beállított műveletet minden egyes eseményhez (meghívóként) minden beállított webszolgáltatásnál."
 
 #: ../../content/configuration/system_configuration_settings.rst:98
 msgid "Core::Event::Ticket"
@@ -894,7 +894,7 @@ msgstr "Core::Event::Ticket"
 
 #: ../../content/configuration/system_configuration_settings.rst:101
 msgid "ITSMConfigItem::EventModulePost###042-ITSMConfigItemTicketStatusLink"
-msgstr ""
+msgstr "ITSMConfigItem::EventModulePost###042-ITSMConfigItemTicketStatusLink"
 
 #: ../../content/configuration/system_configuration_settings.rst:102
 #: ../../content/configuration/system_configuration_settings.rst:106
@@ -903,7 +903,7 @@ msgstr "Eseménymodul a konfigurációelem állapotának beállításához egy j
 
 #: ../../content/configuration/system_configuration_settings.rst:105
 msgid "Ticket::EventModulePost###042-ITSMConfigItemTicketStatusLink"
-msgstr ""
+msgstr "Ticket::EventModulePost###042-ITSMConfigItemTicketStatusLink"
 
 #: ../../content/configuration/system_configuration_settings.rst:109
 msgid "Core::GeneralCatalog"
@@ -911,7 +911,7 @@ msgstr "Core::GeneralCatalog"
 
 #: ../../content/configuration/system_configuration_settings.rst:112
 msgid "GeneralCatalogPreferences###DeploymentStates"
-msgstr ""
+msgstr "GeneralCatalogPreferences###DeploymentStates"
 
 #: ../../content/configuration/system_configuration_settings.rst:113
 msgid ""
@@ -921,7 +921,7 @@ msgstr "Paraméterek az üzembe állítási állapotokhoz az ügyintézői felü
 
 #: ../../content/configuration/system_configuration_settings.rst:116
 msgid "GeneralCatalogPreferences###DeploymentStatesColors"
-msgstr ""
+msgstr "GeneralCatalogPreferences###DeploymentStatesColors"
 
 #: ../../content/configuration/system_configuration_settings.rst:117
 msgid ""
@@ -931,7 +931,7 @@ msgstr "Paraméterek az üzembe állítási állapotok színeihez az ügyintéz�
 
 #: ../../content/configuration/system_configuration_settings.rst:120
 msgid "GeneralCatalogPreferences###NameModule"
-msgstr ""
+msgstr "GeneralCatalogPreferences###NameModule"
 
 #: ../../content/configuration/system_configuration_settings.rst:121
 msgid ""
@@ -941,7 +941,7 @@ msgstr "Paraméterek a konfigurációelem-osztályok névmoduljához az ügyint�
 
 #: ../../content/configuration/system_configuration_settings.rst:124
 msgid "GeneralCatalogPreferences###NumberModule"
-msgstr ""
+msgstr "GeneralCatalogPreferences###NumberModule"
 
 #: ../../content/configuration/system_configuration_settings.rst:125
 msgid ""
@@ -951,7 +951,7 @@ msgstr "Paraméterek a konfigurációelem-osztályok számmoduljához az ügyint
 
 #: ../../content/configuration/system_configuration_settings.rst:128
 msgid "GeneralCatalogPreferences###VersionStringModule"
-msgstr ""
+msgstr "GeneralCatalogPreferences###VersionStringModule"
 
 #: ../../content/configuration/system_configuration_settings.rst:129
 msgid ""
@@ -961,7 +961,7 @@ msgstr "Paraméterek a konfigurációelem-osztályok verziókarakterlánc-modulj
 
 #: ../../content/configuration/system_configuration_settings.rst:132
 msgid "GeneralCatalogPreferences###VersionStringExpression"
-msgstr ""
+msgstr "GeneralCatalogPreferences###VersionStringExpression"
 
 #: ../../content/configuration/system_configuration_settings.rst:133
 msgid ""
@@ -971,7 +971,7 @@ msgstr "Paraméterek a konfigurációelem-osztályok verzió-karakterláncának 
 
 #: ../../content/configuration/system_configuration_settings.rst:136
 msgid "GeneralCatalogPreferences###VersionTrigger"
-msgstr ""
+msgstr "GeneralCatalogPreferences###VersionTrigger"
 
 #: ../../content/configuration/system_configuration_settings.rst:137
 msgid ""
@@ -981,7 +981,7 @@ msgstr "Paraméterek a konfigurációelem-osztályok verzióaktiválójához az 
 
 #: ../../content/configuration/system_configuration_settings.rst:140
 msgid "GeneralCatalogPreferences###Categories"
-msgstr ""
+msgstr "GeneralCatalogPreferences###Categories"
 
 #: ../../content/configuration/system_configuration_settings.rst:141
 msgid ""
@@ -1001,11 +1001,11 @@ msgstr "Paraméterek az általános katalógus attribútumainak példa jogosults
 
 #: ../../content/configuration/system_configuration_settings.rst:148
 msgid "Core::ITSMConfigItem"
-msgstr ""
+msgstr "Core::ITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:151
 msgid "ITSMConfigItem::CINameRegex"
-msgstr ""
+msgstr "ITSMConfigItem::CINameRegex"
 
 #: ../../content/configuration/system_configuration_settings.rst:152
 msgid ""
@@ -1015,7 +1015,7 @@ msgstr "Reguláris kifejezéseket határoz meg egyénileg minden egyes konfigur�
 
 #: ../../content/configuration/system_configuration_settings.rst:155
 msgid "ITSMConfigItem::Permission::Class###010-ClassGroupCheck"
-msgstr ""
+msgstr "ITSMConfigItem::Permission::Class###010-ClassGroupCheck"
 
 #: ../../content/configuration/system_configuration_settings.rst:156
 msgid "Module to check the group responsible for a class."
@@ -1023,7 +1023,7 @@ msgstr "Egy modul egy osztályért felelős csoport ellenőrzéséhez."
 
 #: ../../content/configuration/system_configuration_settings.rst:159
 msgid "ITSMConfigItem::Permission::Item###010-ItemClassGroupCheck"
-msgstr ""
+msgstr "ITSMConfigItem::Permission::Item###010-ItemClassGroupCheck"
 
 #: ../../content/configuration/system_configuration_settings.rst:160
 msgid "Module to check the group responsible for a configuration item."
@@ -1031,7 +1031,7 @@ msgstr "Egy modul egy konfigurációelemért felelős csoport ellenőrzéséhez.
 
 #: ../../content/configuration/system_configuration_settings.rst:163
 msgid "ITSMConfigItem::Hook"
-msgstr ""
+msgstr "ITSMConfigItem::Hook"
 
 #: ../../content/configuration/system_configuration_settings.rst:164
 msgid ""
@@ -1041,7 +1041,7 @@ msgstr "Egy konfigurációelem azonosítója, például: ConfigItem#, MyConfigIt
 
 #: ../../content/configuration/system_configuration_settings.rst:167
 msgid "UniqueCIName::EnableUniquenessCheck"
-msgstr ""
+msgstr "UniqueCIName::EnableUniquenessCheck"
 
 #: ../../content/configuration/system_configuration_settings.rst:168
 msgid ""
@@ -1049,11 +1049,11 @@ msgid ""
 "unique names. Before enabling this option you should check your system "
 "for already existing config items with duplicate names. You can do this "
 "with the console command Admin::ITSM::ConfigItem::ListDuplicates."
-msgstr ""
+msgstr "Engedélyezi vagy letiltja azt a funkcionalitást, amely az ITSM-konfigurációelemek egyedi neveit ellenőrzi. A lehetőség engedélyezése előtt ellenőriznie kell a rendszerét, hogy vannak-e már létező konfigurációelemek kettőzött névvel. Ezt az „Admin::ITSM::ConfigItem::ListDuplicates” konzolparanccsal teheti meg."
 
 #: ../../content/configuration/system_configuration_settings.rst:171
 msgid "UniqueCIName::UniquenessCheckScope"
-msgstr ""
+msgstr "UniqueCIName::UniquenessCheckScope"
 
 #: ../../content/configuration/system_configuration_settings.rst:172
 msgid ""
@@ -1064,7 +1064,7 @@ msgstr "Egyedi név ellenőrzése kizárólag ugyanabban a konfigurációelem os
 
 #: ../../content/configuration/system_configuration_settings.rst:175
 msgid "Customer::ConfigItem::PermissionConditions###01"
-msgstr ""
+msgstr "Customer::ConfigItem::PermissionConditions###01"
 
 #: ../../content/configuration/system_configuration_settings.rst:176
 #: ../../content/configuration/system_configuration_settings.rst:180
@@ -1080,47 +1080,47 @@ msgstr "Feltételhalmaz meghatározása, amely teljesülésekor az ügyfél lát
 
 #: ../../content/configuration/system_configuration_settings.rst:179
 msgid "Customer::ConfigItem::PermissionConditions###02"
-msgstr ""
+msgstr "Customer::ConfigItem::PermissionConditions###02"
 
 #: ../../content/configuration/system_configuration_settings.rst:183
 msgid "Customer::ConfigItem::PermissionConditions###03"
-msgstr ""
+msgstr "Customer::ConfigItem::PermissionConditions###03"
 
 #: ../../content/configuration/system_configuration_settings.rst:187
 msgid "Customer::ConfigItem::PermissionConditions###04"
-msgstr ""
+msgstr "Customer::ConfigItem::PermissionConditions###04"
 
 #: ../../content/configuration/system_configuration_settings.rst:191
 msgid "Customer::ConfigItem::PermissionConditions###05"
-msgstr ""
+msgstr "Customer::ConfigItem::PermissionConditions###05"
 
 #: ../../content/configuration/system_configuration_settings.rst:195
 msgid "Customer::ConfigItem::PermissionConditionColumns###Default"
-msgstr ""
+msgstr "Customer::ConfigItem::PermissionConditionColumns###Default"
 
 #: ../../content/configuration/system_configuration_settings.rst:199
 msgid "Customer::ConfigItem::PermissionConditionColumns###01"
-msgstr ""
+msgstr "Customer::ConfigItem::PermissionConditionColumns###01"
 
 #: ../../content/configuration/system_configuration_settings.rst:203
 msgid "Customer::ConfigItem::PermissionConditionColumns###02"
-msgstr ""
+msgstr "Customer::ConfigItem::PermissionConditionColumns###02"
 
 #: ../../content/configuration/system_configuration_settings.rst:207
 msgid "Customer::ConfigItem::PermissionConditionColumns###03"
-msgstr ""
+msgstr "Customer::ConfigItem::PermissionConditionColumns###03"
 
 #: ../../content/configuration/system_configuration_settings.rst:211
 msgid "Customer::ConfigItem::PermissionConditionColumns###04"
-msgstr ""
+msgstr "Customer::ConfigItem::PermissionConditionColumns###04"
 
 #: ../../content/configuration/system_configuration_settings.rst:215
 msgid "Customer::ConfigItem::PermissionConditionColumns###05"
-msgstr ""
+msgstr "Customer::ConfigItem::PermissionConditionColumns###05"
 
 #: ../../content/configuration/system_configuration_settings.rst:219
 msgid "CMDBTreeView::DefaultDepth"
-msgstr ""
+msgstr "CMDBTreeView::DefaultDepth"
 
 #: ../../content/configuration/system_configuration_settings.rst:220
 msgid "Defines the default relations depth to be shown."
@@ -1128,7 +1128,7 @@ msgstr "Meghatározza a megjelenítendő alapértelmezett kapcsolatok mélység�
 
 #: ../../content/configuration/system_configuration_settings.rst:223
 msgid "CMDBTreeView::ShowLinkLabels"
-msgstr ""
+msgstr "CMDBTreeView::ShowLinkLabels"
 
 #: ../../content/configuration/system_configuration_settings.rst:224
 msgid "Defines if the link type labels must be shown in the node connections."
@@ -1136,11 +1136,11 @@ msgstr "Meghatározza, hogy a hivatkozástípus címkéinek meg kell-e jelenniü
 
 #: ../../content/configuration/system_configuration_settings.rst:227
 msgid "Core::ITSMConfigItem::ACL"
-msgstr ""
+msgstr "Core::ITSMConfigItem::ACL"
 
 #: ../../content/configuration/system_configuration_settings.rst:230
 msgid "ITSMConfigItemACLKeysLevel1Match"
-msgstr ""
+msgstr "ITSMConfigItemACLKeysLevel1Match"
 
 #: ../../content/configuration/system_configuration_settings.rst:231
 #: ../../content/configuration/system_configuration_settings.rst:235
@@ -1151,11 +1151,11 @@ msgstr "Meghatározza, hogy mely elemek érhetők el az ITSM-konfigurációelem 
 
 #: ../../content/configuration/system_configuration_settings.rst:234
 msgid "ITSMConfigItemACLKeysLevel1Change"
-msgstr ""
+msgstr "ITSMConfigItemACLKeysLevel1Change"
 
 #: ../../content/configuration/system_configuration_settings.rst:238
 msgid "ITSMConfigItemACLKeysLevel2::Possible"
-msgstr ""
+msgstr "ITSMConfigItemACLKeysLevel2::Possible"
 
 #: ../../content/configuration/system_configuration_settings.rst:239
 #: ../../content/configuration/system_configuration_settings.rst:243
@@ -1169,23 +1169,23 @@ msgstr "Meghatározza, hogy mely elemek érhetők el az ITSM-konfigurációelem 
 
 #: ../../content/configuration/system_configuration_settings.rst:242
 msgid "ITSMConfigItemACLKeysLevel2::PossibleAdd"
-msgstr ""
+msgstr "ITSMConfigItemACLKeysLevel2::PossibleAdd"
 
 #: ../../content/configuration/system_configuration_settings.rst:246
 msgid "ITSMConfigItemACLKeysLevel2::PossibleNot"
-msgstr ""
+msgstr "ITSMConfigItemACLKeysLevel2::PossibleNot"
 
 #: ../../content/configuration/system_configuration_settings.rst:250
 msgid "ITSMConfigItemACLKeysLevel2::Properties"
-msgstr ""
+msgstr "ITSMConfigItemACLKeysLevel2::Properties"
 
 #: ../../content/configuration/system_configuration_settings.rst:254
 msgid "ITSMConfigItemACLKeysLevel2::PropertiesDatabase"
-msgstr ""
+msgstr "ITSMConfigItemACLKeysLevel2::PropertiesDatabase"
 
 #: ../../content/configuration/system_configuration_settings.rst:258
 msgid "ITSMConfigItemACLKeysLevel3::Actions###100-Default"
-msgstr ""
+msgstr "ITSMConfigItemACLKeysLevel3::Actions###100-Default"
 
 #: ../../content/configuration/system_configuration_settings.rst:259
 msgid ""
@@ -1195,7 +1195,7 @@ msgstr "Meghatározza, hogy mely elemek érhetők el az „Action” szakasznál
 
 #: ../../content/configuration/system_configuration_settings.rst:262
 msgid "ConfigItemACL::ACLPreselection"
-msgstr ""
+msgstr "ConfigItemACL::ACLPreselection"
 
 #: ../../content/configuration/system_configuration_settings.rst:263
 msgid ""
@@ -1207,7 +1207,7 @@ msgstr "Elkerülhető legyen-e a konfigurációelem ACL végrehajtása a gyorsí
 
 #: ../../content/configuration/system_configuration_settings.rst:266
 msgid "ConfigItemACL::Autoselect"
-msgstr ""
+msgstr "ConfigItemACL::Autoselect"
 
 #: ../../content/configuration/system_configuration_settings.rst:267
 msgid ""
@@ -1217,15 +1217,15 @@ msgstr "A mezők automatikusan ki legyenek-e töltve (1), és ebben az esetben e
 
 #: ../../content/configuration/system_configuration_settings.rst:270
 msgid "Core::ImportExport::ObjectBackend::ModuleRegistration"
-msgstr ""
+msgstr "Core::ImportExport::ObjectBackend::ModuleRegistration"
 
 #: ../../content/configuration/system_configuration_settings.rst:273
 msgid "ImportExport::ObjectBackendRegistration###ITSMConfigItem"
-msgstr ""
+msgstr "ImportExport::ObjectBackendRegistration###ITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:274
 msgid "Object backend module registration for the import/export module."
-msgstr ""
+msgstr "Objektum háttérprogram modul regisztráció az importálás/exportálás modulhoz."
 
 #: ../../content/configuration/system_configuration_settings.rst:277
 msgid "Core::LinkObject"
@@ -1233,7 +1233,7 @@ msgstr "Core::LinkObject"
 
 #: ../../content/configuration/system_configuration_settings.rst:280
 msgid "LinkObject::DefaultSubObject###ITSMConfigItem"
-msgstr ""
+msgstr "LinkObject::DefaultSubObject###ITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:281
 msgid "Defines the default subobject of the class 'ITSMConfigItem'."
@@ -1241,7 +1241,7 @@ msgstr "Meghatározza az „ITSMConfigItem” osztály alapértelmezett alobjekt
 
 #: ../../content/configuration/system_configuration_settings.rst:284
 msgid "LinkObject::ITSMConfigItem::ShowColumns"
-msgstr ""
+msgstr "LinkObject::ITSMConfigItem::ShowColumns"
 
 #: ../../content/configuration/system_configuration_settings.rst:285
 msgid ""
@@ -1251,7 +1251,7 @@ msgstr "Meghatározza a konfigurációelemek megjelenített oszlopait a kapcsola
 
 #: ../../content/configuration/system_configuration_settings.rst:288
 msgid "LinkObject::ITSMConfigItem::ShowColumnsByClass"
-msgstr ""
+msgstr "LinkObject::ITSMConfigItem::ShowColumnsByClass"
 
 #: ../../content/configuration/system_configuration_settings.rst:289
 msgid ""
@@ -1269,11 +1269,11 @@ msgstr "Meghatározza a CI-k megjelenített oszlopait a kapcsolati tábla komple
 
 #: ../../content/configuration/system_configuration_settings.rst:292
 msgid "Core::LinkStatus"
-msgstr ""
+msgstr "Core::LinkStatus"
 
 #: ../../content/configuration/system_configuration_settings.rst:295
 msgid "ITSMConfigItem::SetIncidentStateOnLink"
-msgstr ""
+msgstr "ITSMConfigItem::SetIncidentStateOnLink"
 
 #: ../../content/configuration/system_configuration_settings.rst:296
 msgid ""
@@ -1283,7 +1283,7 @@ msgstr "Egy konfigurációelem incidensállapotának automatikus beállítása, 
 
 #: ../../content/configuration/system_configuration_settings.rst:299
 msgid "ITSMConfigItem::LinkStatus::TicketTypes"
-msgstr ""
+msgstr "ITSMConfigItem::LinkStatus::TicketTypes"
 
 #: ../../content/configuration/system_configuration_settings.rst:300
 msgid "Defines which type of ticket can affect the status of a linked CI."
@@ -1291,7 +1291,7 @@ msgstr "Meghatározza, hogy mely jegytípus befolyásolhatja egy kapcsolt konfig
 
 #: ../../content/configuration/system_configuration_settings.rst:303
 msgid "ITSMConfigItem::LinkStatus::DeploymentStates"
-msgstr ""
+msgstr "ITSMConfigItem::LinkStatus::DeploymentStates"
 
 #: ../../content/configuration/system_configuration_settings.rst:304
 msgid ""
@@ -1301,7 +1301,7 @@ msgstr "Meghatározza a kapcsolódó üzembe állítási állapotokat, ahol a ka
 
 #: ../../content/configuration/system_configuration_settings.rst:307
 msgid "ITSMConfigItem::LinkStatus::IncidentStates"
-msgstr ""
+msgstr "ITSMConfigItem::LinkStatus::IncidentStates"
 
 #: ../../content/configuration/system_configuration_settings.rst:308
 msgid ""
@@ -1311,7 +1311,7 @@ msgstr "Meghatározza az incidensállapotok sorrendjét a legmagasabbtól (péld
 
 #: ../../content/configuration/system_configuration_settings.rst:311
 msgid "ITSMConfigItem::LinkStatus::LinkTypes"
-msgstr ""
+msgstr "ITSMConfigItem::LinkStatus::LinkTypes"
 
 #: ../../content/configuration/system_configuration_settings.rst:312
 msgid ""
@@ -1321,11 +1321,11 @@ msgstr "Meghatározza, hogy mely kapcsolattípusok (a jegy nézőpontjából eln
 
 #: ../../content/configuration/system_configuration_settings.rst:315
 msgid "Core::Stats"
-msgstr ""
+msgstr "Core::Stats"
 
 #: ../../content/configuration/system_configuration_settings.rst:318
 msgid "Stats::DynamicObjectRegistration###ITSMConfigItem"
-msgstr ""
+msgstr "Stats::DynamicObjectRegistration###ITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:319
 msgid "Module to generate ITSM config item statistics."
@@ -1333,11 +1333,11 @@ msgstr "Egy modul ITSM-konfigurációelem statisztikák előállításához."
 
 #: ../../content/configuration/system_configuration_settings.rst:322
 msgid "Daemon::SchedulerCronTaskManager::Task"
-msgstr ""
+msgstr "Daemon::SchedulerCronTaskManager::Task"
 
 #: ../../content/configuration/system_configuration_settings.rst:325
 msgid "Daemon::SchedulerCronTaskManager::Task###TriggerConfigItemFetch-01"
-msgstr ""
+msgstr "Daemon::SchedulerCronTaskManager::Task###TriggerConfigItemFetch-01"
 
 #: ../../content/configuration/system_configuration_settings.rst:326
 #: ../../content/configuration/system_configuration_settings.rst:330
@@ -1347,23 +1347,23 @@ msgstr "Automatikusan aktiválja a konfigurációelem-lekérés meghívót."
 
 #: ../../content/configuration/system_configuration_settings.rst:329
 msgid "Daemon::SchedulerCronTaskManager::Task###TriggerConfigItemFetch-02"
-msgstr ""
+msgstr "Daemon::SchedulerCronTaskManager::Task###TriggerConfigItemFetch-02"
 
 #: ../../content/configuration/system_configuration_settings.rst:333
 msgid "Daemon::SchedulerCronTaskManager::Task###TriggerConfigItemFetch-03"
-msgstr ""
+msgstr "Daemon::SchedulerCronTaskManager::Task###TriggerConfigItemFetch-03"
 
 #: ../../content/configuration/system_configuration_settings.rst:337
 msgid "Frontend::Admin"
-msgstr ""
+msgstr "Frontend::Admin"
 
 #: ../../content/configuration/system_configuration_settings.rst:340
 msgid "Events###ITSMConfigItem"
-msgstr ""
+msgstr "Events###ITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:341
 msgid "List of all Package events to be displayed in the GUI."
-msgstr ""
+msgstr "Az összes csomagesemény listája, amelyek megjelennek a grafikus felületen."
 
 #: ../../content/configuration/system_configuration_settings.rst:344
 msgid "Frontend::Admin::ModuleRegistration"
@@ -1371,7 +1371,7 @@ msgstr "Frontend::Admin::ModuleRegistration"
 
 #: ../../content/configuration/system_configuration_settings.rst:347
 msgid "Frontend::Module###AdminITSMConfigItem"
-msgstr ""
+msgstr "Frontend::Module###AdminITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:348
 #: ../../content/configuration/system_configuration_settings.rst:352
@@ -1391,7 +1391,7 @@ msgstr "Előtétprogram-modul regisztráció az ügyintézői felülethez."
 
 #: ../../content/configuration/system_configuration_settings.rst:351
 msgid "Frontend::Module###AdminGenericInterfaceInvokerConfigItem"
-msgstr ""
+msgstr "Frontend::Module###AdminGenericInterfaceInvokerConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:355
 msgid "Frontend::Admin::ModuleRegistration::AdminOverview"
@@ -1399,7 +1399,7 @@ msgstr "Frontend::Admin::ModuleRegistration::AdminOverview"
 
 #: ../../content/configuration/system_configuration_settings.rst:358
 msgid "Frontend::NavigationModule###AdminITSMConfigItem"
-msgstr ""
+msgstr "Frontend::NavigationModule###AdminITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:359
 msgid "Admin area navigation for the agent interface."
@@ -1411,7 +1411,7 @@ msgstr "Frontend::Admin::ModuleRegistration::Loader"
 
 #: ../../content/configuration/system_configuration_settings.rst:365
 msgid "Loader::Module::AdminITSMConfigItem###002-ITSMConfigItem"
-msgstr ""
+msgstr "Loader::Module::AdminITSMConfigItem###002-ITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:366
 #: ../../content/configuration/system_configuration_settings.rst:370
@@ -1427,7 +1427,7 @@ msgstr "Betöltőmodul regisztráció az ügyintézői felülethez."
 
 #: ../../content/configuration/system_configuration_settings.rst:369
 msgid "Loader::Module::AdminGenericInterfaceInvokerConfigItem###007-ITSMConfigurationManagement"
-msgstr ""
+msgstr "Loader::Module::AdminGenericInterfaceInvokerConfigItem###007-ITSMConfigurationManagement"
 
 #: ../../content/configuration/system_configuration_settings.rst:373
 msgid "Frontend::Admin::ModuleRegistration::MainMenu"
@@ -1435,7 +1435,7 @@ msgstr "Frontend::Admin::ModuleRegistration::MainMenu"
 
 #: ../../content/configuration/system_configuration_settings.rst:376
 msgid "Frontend::Navigation###AdminITSMConfigItem###003-ITSMConfigItem"
-msgstr ""
+msgstr "Frontend::Navigation###AdminITSMConfigItem###003-ITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:377
 #: ../../content/configuration/system_configuration_settings.rst:579
@@ -1448,11 +1448,11 @@ msgstr "Főmenü elem regisztráció."
 
 #: ../../content/configuration/system_configuration_settings.rst:380
 msgid "Frontend::Admin::View::ITSMConfigItemDefinition"
-msgstr ""
+msgstr "Frontend::Admin::View::ITSMConfigItemDefinition"
 
 #: ../../content/configuration/system_configuration_settings.rst:383
 msgid "ITSMConfigItem::Frontend::AdminITSMConfigItem###EditorRows"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AdminITSMConfigItem###EditorRows"
 
 #: ../../content/configuration/system_configuration_settings.rst:384
 msgid ""
@@ -1462,11 +1462,11 @@ msgstr "Meghatározza a CI meghatározás-szerkesztő sorainak számát az admin
 
 #: ../../content/configuration/system_configuration_settings.rst:387
 msgid "Frontend::Agent::ITSMConfigItem::MenuModule"
-msgstr ""
+msgstr "Frontend::Agent::ITSMConfigItem::MenuModule"
 
 #: ../../content/configuration/system_configuration_settings.rst:390
 msgid "ITSMConfigItem::Frontend::MenuModule###000-Back"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::MenuModule###000-Back"
 
 #: ../../content/configuration/system_configuration_settings.rst:391
 msgid ""
@@ -1476,7 +1476,7 @@ msgstr "Egy hivatkozást jelenít meg a menüben az ügyintézői felület konfi
 
 #: ../../content/configuration/system_configuration_settings.rst:394
 msgid "ITSMConfigItem::Frontend::MenuModule###200-History"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::MenuModule###200-History"
 
 #: ../../content/configuration/system_configuration_settings.rst:395
 msgid ""
@@ -1486,7 +1486,7 @@ msgstr "Egy hivatkozást jelenít meg a menüben egy konfigurációelem előzmé
 
 #: ../../content/configuration/system_configuration_settings.rst:398
 msgid "ITSMConfigItem::Frontend::MenuModule###300-Edit"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::MenuModule###300-Edit"
 
 #: ../../content/configuration/system_configuration_settings.rst:399
 msgid ""
@@ -1496,7 +1496,7 @@ msgstr "Egy hivatkozást jelenít meg a menüben egy konfigurációelem szerkesz
 
 #: ../../content/configuration/system_configuration_settings.rst:402
 msgid "ITSMConfigItem::Frontend::MenuModule###400-Print"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::MenuModule###400-Print"
 
 #: ../../content/configuration/system_configuration_settings.rst:403
 msgid ""
@@ -1506,7 +1506,7 @@ msgstr "Egy hivatkozást jelenít meg a menüben egy konfigurációelem nyomtat�
 
 #: ../../content/configuration/system_configuration_settings.rst:406
 msgid "ITSMConfigItem::Frontend::MenuModule###500-Link"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::MenuModule###500-Link"
 
 #: ../../content/configuration/system_configuration_settings.rst:407
 msgid ""
@@ -1516,7 +1516,7 @@ msgstr "Egy hivatkozást jelenít meg a menüben, amely lehetővé teszi egy kon
 
 #: ../../content/configuration/system_configuration_settings.rst:410
 msgid "ITSMConfigItem::Frontend::MenuModule###550-TreeView"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::MenuModule###550-TreeView"
 
 #: ../../content/configuration/system_configuration_settings.rst:411
 msgid ""
@@ -1526,7 +1526,7 @@ msgstr "Egy hivatkozást jelenít meg a menüben a konfigurációelem hivatkozá
 
 #: ../../content/configuration/system_configuration_settings.rst:414
 msgid "ITSMConfigItem::Frontend::MenuModule###600-Duplicate"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::MenuModule###600-Duplicate"
 
 #: ../../content/configuration/system_configuration_settings.rst:415
 msgid ""
@@ -1536,7 +1536,7 @@ msgstr "Egy hivatkozást jelenít meg a menüben egy konfigurációelem kettőz�
 
 #: ../../content/configuration/system_configuration_settings.rst:418
 msgid "ITSMConfigItem::Frontend::MenuModule###700-ConfigItemDelete"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::MenuModule###700-ConfigItemDelete"
 
 #: ../../content/configuration/system_configuration_settings.rst:419
 msgid ""
@@ -1546,11 +1546,11 @@ msgstr "Egy hivatkozást jelenít meg a menüben egy konfigurációelem törlés
 
 #: ../../content/configuration/system_configuration_settings.rst:422
 msgid "Frontend::Agent::ITSMConfigItem::MenuModulePre"
-msgstr ""
+msgstr "Frontend::Agent::ITSMConfigItem::MenuModulePre"
 
 #: ../../content/configuration/system_configuration_settings.rst:425
 msgid "ITSMConfigItem::Frontend::PreMenuModule###100-Zoom"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::PreMenuModule###100-Zoom"
 
 #: ../../content/configuration/system_configuration_settings.rst:426
 msgid ""
@@ -1560,7 +1560,7 @@ msgstr "Egy hivatkozást jelenít meg a menüben egy konfigurációelembe tört�
 
 #: ../../content/configuration/system_configuration_settings.rst:429
 msgid "ITSMConfigItem::Frontend::PreMenuModule###200-History"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::PreMenuModule###200-History"
 
 #: ../../content/configuration/system_configuration_settings.rst:430
 msgid ""
@@ -1570,7 +1570,7 @@ msgstr "Egy hivatkozást jelenít meg a menüben egy konfigurációelem előzmé
 
 #: ../../content/configuration/system_configuration_settings.rst:433
 msgid "ITSMConfigItem::Frontend::PreMenuModule###300-Duplicate"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::PreMenuModule###300-Duplicate"
 
 #: ../../content/configuration/system_configuration_settings.rst:434
 msgid ""
@@ -1580,11 +1580,11 @@ msgstr "Egy hivatkozást jelenít meg a menüben egy konfigurációelem kettőz�
 
 #: ../../content/configuration/system_configuration_settings.rst:437
 msgid "Frontend::Agent::ITSMConfigItem::Permission"
-msgstr ""
+msgstr "Frontend::Agent::ITSMConfigItem::Permission"
 
 #: ../../content/configuration/system_configuration_settings.rst:440
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItem###Permission"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItem###Permission"
 
 #: ../../content/configuration/system_configuration_settings.rst:441
 msgid ""
@@ -1594,7 +1594,7 @@ msgstr "A szükséges jogosultságok az ITSM-konfigurációelem képernyőjének
 
 #: ../../content/configuration/system_configuration_settings.rst:444
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemEdit###Permission"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemEdit###Permission"
 
 #: ../../content/configuration/system_configuration_settings.rst:445
 msgid ""
@@ -1604,7 +1604,7 @@ msgstr "A szükséges jogosultságok az ITSM-konfigurációelem szerkesztése k�
 
 #: ../../content/configuration/system_configuration_settings.rst:448
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemAdd###Permission"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemAdd###Permission"
 
 #: ../../content/configuration/system_configuration_settings.rst:449
 msgid ""
@@ -1614,7 +1614,7 @@ msgstr "A szükséges jogosultságok az ITSM-konfigurációelem hozzáadása ké
 
 #: ../../content/configuration/system_configuration_settings.rst:452
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemHistory###Permission"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemHistory###Permission"
 
 #: ../../content/configuration/system_configuration_settings.rst:453
 msgid ""
@@ -1624,7 +1624,7 @@ msgstr "A szükséges jogosultságok az ITSM-konfigurációelem előzmények ké
 
 #: ../../content/configuration/system_configuration_settings.rst:456
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemPrint###Permission"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemPrint###Permission"
 
 #: ../../content/configuration/system_configuration_settings.rst:457
 msgid ""
@@ -1634,7 +1634,7 @@ msgstr "A szükséges jogosultságok az ITSM-konfigurációelem nyomtatása kép
 
 #: ../../content/configuration/system_configuration_settings.rst:460
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemZoom###Permission"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemZoom###Permission"
 
 #: ../../content/configuration/system_configuration_settings.rst:461
 msgid ""
@@ -1644,7 +1644,7 @@ msgstr "A szükséges jogosultságok az ITSM-konfigurációelem nagyítási kép
 
 #: ../../content/configuration/system_configuration_settings.rst:464
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Permission"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Permission"
 
 #: ../../content/configuration/system_configuration_settings.rst:465
 msgid ""
@@ -1654,7 +1654,7 @@ msgstr "A szükséges jogosultságok az ITSM-konfigurációelem keresési képer
 
 #: ../../content/configuration/system_configuration_settings.rst:468
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemTreeView###Permission"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemTreeView###Permission"
 
 #: ../../content/configuration/system_configuration_settings.rst:469
 msgid ""
@@ -1664,7 +1664,7 @@ msgstr "A szükséges jogosultságok az ITSM-konfigurációelem fanézet képern
 
 #: ../../content/configuration/system_configuration_settings.rst:472
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemBulk###Permission"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemBulk###Permission"
 
 #: ../../content/configuration/system_configuration_settings.rst:473
 msgid ""
@@ -1674,11 +1674,11 @@ msgstr "A szükséges jogosultságok az ITSM-konfigurációelem tömeges képern
 
 #: ../../content/configuration/system_configuration_settings.rst:476
 msgid "Frontend::Agent::ITSMConfigItemAttachment::Permission"
-msgstr ""
+msgstr "Frontend::Agent::ITSMConfigItemAttachment::Permission"
 
 #: ../../content/configuration/system_configuration_settings.rst:479
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemAttachment###Permission"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemAttachment###Permission"
 
 #: ../../content/configuration/system_configuration_settings.rst:480
 msgid ""
@@ -1688,11 +1688,11 @@ msgstr "A szükséges jogosultságok az ITSM-konfigurációelem mellékletművel
 
 #: ../../content/configuration/system_configuration_settings.rst:483
 msgid "Frontend::Agent::ITSMConfigItemOverview"
-msgstr ""
+msgstr "Frontend::Agent::ITSMConfigItemOverview"
 
 #: ../../content/configuration/system_configuration_settings.rst:486
 msgid "ITSMConfigItem::Frontend::Overview###Small"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::Overview###Small"
 
 #: ../../content/configuration/system_configuration_settings.rst:487
 #: ../../content/configuration/system_configuration_settings.rst:832
@@ -1707,7 +1707,7 @@ msgstr "Frontend::Agent::LinkObject"
 
 #: ../../content/configuration/system_configuration_settings.rst:493
 msgid "LinkObject::ComplexTable::SettingsVisibility###ITSMConfigItem"
-msgstr ""
+msgstr "LinkObject::ComplexTable::SettingsVisibility###ITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:494
 msgid ""
@@ -1725,47 +1725,47 @@ msgstr "Frontend::Agent::ModuleRegistration"
 
 #: ../../content/configuration/system_configuration_settings.rst:500
 msgid "Frontend::Module###AgentITSMConfigItem"
-msgstr ""
+msgstr "Frontend::Module###AgentITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:504
 msgid "Frontend::Module###AgentITSMConfigItemZoom"
-msgstr ""
+msgstr "Frontend::Module###AgentITSMConfigItemZoom"
 
 #: ../../content/configuration/system_configuration_settings.rst:508
 msgid "Frontend::Module###AgentITSMConfigItemEdit"
-msgstr ""
+msgstr "Frontend::Module###AgentITSMConfigItemEdit"
 
 #: ../../content/configuration/system_configuration_settings.rst:512
 msgid "Frontend::Module###AgentITSMConfigItemPrint"
-msgstr ""
+msgstr "Frontend::Module###AgentITSMConfigItemPrint"
 
 #: ../../content/configuration/system_configuration_settings.rst:516
 msgid "Frontend::Module###AgentITSMConfigItemDelete"
-msgstr ""
+msgstr "Frontend::Module###AgentITSMConfigItemDelete"
 
 #: ../../content/configuration/system_configuration_settings.rst:520
 msgid "Frontend::Module###AgentITSMConfigItemTreeView"
-msgstr ""
+msgstr "Frontend::Module###AgentITSMConfigItemTreeView"
 
 #: ../../content/configuration/system_configuration_settings.rst:524
 msgid "Frontend::Module###AgentITSMConfigItemAdd"
-msgstr ""
+msgstr "Frontend::Module###AgentITSMConfigItemAdd"
 
 #: ../../content/configuration/system_configuration_settings.rst:528
 msgid "Frontend::Module###AgentITSMConfigItemSearch"
-msgstr ""
+msgstr "Frontend::Module###AgentITSMConfigItemSearch"
 
 #: ../../content/configuration/system_configuration_settings.rst:532
 msgid "Frontend::Module###AgentITSMConfigItemHistory"
-msgstr ""
+msgstr "Frontend::Module###AgentITSMConfigItemHistory"
 
 #: ../../content/configuration/system_configuration_settings.rst:536
 msgid "Frontend::Module###AgentITSMConfigItemBulk"
-msgstr ""
+msgstr "Frontend::Module###AgentITSMConfigItemBulk"
 
 #: ../../content/configuration/system_configuration_settings.rst:540
 msgid "Frontend::Module###AgentITSMConfigItemAttachment"
-msgstr ""
+msgstr "Frontend::Module###AgentITSMConfigItemAttachment"
 
 #: ../../content/configuration/system_configuration_settings.rst:544
 msgid "Frontend::Agent::ModuleRegistration::Loader"
@@ -1773,31 +1773,31 @@ msgstr "Frontend::Agent::ModuleRegistration::Loader"
 
 #: ../../content/configuration/system_configuration_settings.rst:547
 msgid "Loader::Module::AgentITSMConfigItem###003-ITSMConfigItem"
-msgstr ""
+msgstr "Loader::Module::AgentITSMConfigItem###003-ITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:551
 msgid "Loader::Module::AgentITSMConfigItemZoom###003-ITSMConfigItem"
-msgstr ""
+msgstr "Loader::Module::AgentITSMConfigItemZoom###003-ITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:555
 msgid "Loader::Module::AgentITSMConfigItemEdit###003-ITSMConfigItem"
-msgstr ""
+msgstr "Loader::Module::AgentITSMConfigItemEdit###003-ITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:559
 msgid "Loader::Module::AgentITSMConfigItemTreeView###003-ITSMConfigItem"
-msgstr ""
+msgstr "Loader::Module::AgentITSMConfigItemTreeView###003-ITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:563
 msgid "Loader::Module::AgentITSMConfigItemAdd###003-ITSMConfigItem"
-msgstr ""
+msgstr "Loader::Module::AgentITSMConfigItemAdd###003-ITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:567
 msgid "Loader::Module::AgentITSMConfigItemSearch###003-ITSMConfigItem"
-msgstr ""
+msgstr "Loader::Module::AgentITSMConfigItemSearch###003-ITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:571
 msgid "Loader::Module::AgentITSMConfigItemHistory###003-ITSMConfigItem"
-msgstr ""
+msgstr "Loader::Module::AgentITSMConfigItemHistory###003-ITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:575
 msgid "Frontend::Agent::ModuleRegistration::MainMenu"
@@ -1805,19 +1805,19 @@ msgstr "Frontend::Agent::ModuleRegistration::MainMenu"
 
 #: ../../content/configuration/system_configuration_settings.rst:578
 msgid "Frontend::Navigation###AgentITSMConfigItem###003-ITSMConfigItem"
-msgstr ""
+msgstr "Frontend::Navigation###AgentITSMConfigItem###003-ITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:582
 msgid "Frontend::Navigation###AgentITSMConfigItemAdd###003-ITSMConfigItem"
-msgstr ""
+msgstr "Frontend::Navigation###AgentITSMConfigItemAdd###003-ITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:586
 msgid "Frontend::Navigation###AgentITSMConfigItemSearch###003-ITSMConfigItem"
-msgstr ""
+msgstr "Frontend::Navigation###AgentITSMConfigItemSearch###003-ITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:590
 msgid "Frontend::Navigation###AgentITSMConfigItemBulk###003-ITSMConfigItem"
-msgstr ""
+msgstr "Frontend::Navigation###AgentITSMConfigItemBulk###003-ITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:594
 msgid "Frontend::Agent::ModuleRegistration::MainMenu::Search"
@@ -1825,7 +1825,7 @@ msgstr "Frontend::Agent::ModuleRegistration::MainMenu::Search"
 
 #: ../../content/configuration/system_configuration_settings.rst:597
 msgid "Frontend::Search###ConfigItem"
-msgstr ""
+msgstr "Frontend::Search###ConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:598
 msgid "Configuration item search backend router of the agent interface."
@@ -1833,19 +1833,19 @@ msgstr "Az ügyintézői felület konfigurációelem keresési háttérprogram �
 
 #: ../../content/configuration/system_configuration_settings.rst:601
 msgid "Frontend::Search::JavaScript###ConfigItem"
-msgstr ""
+msgstr "Frontend::Search::JavaScript###ConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:602
 msgid "JavaScript function for the search frontend."
-msgstr ""
+msgstr "JavaScript függvény a keresési előtétprogramhoz."
 
 #: ../../content/configuration/system_configuration_settings.rst:605
 msgid "Frontend::Agent::View::AgentITSMConfigItemBulk"
-msgstr ""
+msgstr "Frontend::Agent::View::AgentITSMConfigItemBulk"
 
 #: ../../content/configuration/system_configuration_settings.rst:608
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemBulk###DynamicField"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemBulk###DynamicField"
 
 #: ../../content/configuration/system_configuration_settings.rst:609
 #: ../../content/configuration/system_configuration_settings.rst:616
@@ -1858,35 +1858,35 @@ msgstr "Az ügyintézői felület további ITSM mező képernyőjén megjelenít
 
 #: ../../content/configuration/system_configuration_settings.rst:612
 msgid "Frontend::Agent::View::AgentITSMConfigItemEdit"
-msgstr ""
+msgstr "Frontend::Agent::View::AgentITSMConfigItemEdit"
 
 #: ../../content/configuration/system_configuration_settings.rst:615
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemEdit###DynamicField"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemEdit###DynamicField"
 
 #: ../../content/configuration/system_configuration_settings.rst:619
 msgid "Frontend::Agent::View::AgentITSMConfigItemHistory"
-msgstr ""
+msgstr "Frontend::Agent::View::AgentITSMConfigItemHistory"
 
 #: ../../content/configuration/system_configuration_settings.rst:622
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemPrint###DynamicField"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemPrint###DynamicField"
 
 #: ../../content/configuration/system_configuration_settings.rst:626
 msgid "Frontend::Agent::View::AgentITSMConfigItemZoom"
-msgstr ""
+msgstr "Frontend::Agent::View::AgentITSMConfigItemZoom"
 
 #: ../../content/configuration/system_configuration_settings.rst:629
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemZoom###DynamicField"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemZoom###DynamicField"
 
 #: ../../content/configuration/system_configuration_settings.rst:633
 msgid "Frontend::Agent::View::ConfigItemSearch"
-msgstr ""
+msgstr "Frontend::Agent::View::ConfigItemSearch"
 
 #: ../../content/configuration/system_configuration_settings.rst:636
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###ExtendedSearchCondition"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###ExtendedSearchCondition"
 
 #: ../../content/configuration/system_configuration_settings.rst:637
 msgid ""
@@ -1898,7 +1898,7 @@ msgstr "Lehetővé teszi a kiterjesztett keresési feltételeket az ügyintéző
 
 #: ../../content/configuration/system_configuration_settings.rst:640
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###SearchPageShown"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###SearchPageShown"
 
 #: ../../content/configuration/system_configuration_settings.rst:641
 msgid ""
@@ -1908,7 +1908,7 @@ msgstr "Egy keresési eredmény minden egyes oldalán megjelenítendő konfigur�
 
 #: ../../content/configuration/system_configuration_settings.rst:644
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###SortBy::Default"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###SortBy::Default"
 
 #: ../../content/configuration/system_configuration_settings.rst:645
 msgid ""
@@ -1918,7 +1918,7 @@ msgstr "Meghatározza az alapértelmezett konfigurációelem-attribútumot az ü
 
 #: ../../content/configuration/system_configuration_settings.rst:648
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Order::Default"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Order::Default"
 
 #: ../../content/configuration/system_configuration_settings.rst:649
 msgid ""
@@ -1928,7 +1928,7 @@ msgstr "Meghatározza az alapértelmezett konfigurációelem-sorrendet az ügyin
 
 #: ../../content/configuration/system_configuration_settings.rst:652
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Number"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Number"
 
 #: ../../content/configuration/system_configuration_settings.rst:653
 #: ../../content/configuration/system_configuration_settings.rst:657
@@ -1950,27 +1950,27 @@ msgstr "Meghatározza az alapértelmezetten megjelenített konfigurációelem ke
 
 #: ../../content/configuration/system_configuration_settings.rst:656
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Name"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Name"
 
 #: ../../content/configuration/system_configuration_settings.rst:660
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###DeploymentStateIDs"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###DeploymentStateIDs"
 
 #: ../../content/configuration/system_configuration_settings.rst:664
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###IncidentStateIDs"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###IncidentStateIDs"
 
 #: ../../content/configuration/system_configuration_settings.rst:668
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###CustomerID"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###CustomerID"
 
 #: ../../content/configuration/system_configuration_settings.rst:672
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###CustomerUserLogin"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###CustomerUserLogin"
 
 #: ../../content/configuration/system_configuration_settings.rst:676
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###ITSMConfigItemCreateTimePoint"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###ITSMConfigItemCreateTimePoint"
 
 #: ../../content/configuration/system_configuration_settings.rst:677
 msgid ""
@@ -1980,7 +1980,7 @@ msgstr "Az attribútumon használandó alapértelmezett adatok a konfigurációe
 
 #: ../../content/configuration/system_configuration_settings.rst:680
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###ITSMConfigItemCreateTimeSlot"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###ITSMConfigItemCreateTimeSlot"
 
 #: ../../content/configuration/system_configuration_settings.rst:681
 msgid ""
@@ -1990,15 +1990,15 @@ msgstr "Az attribútumon használandó alapértelmezett adatok a konfigurációe
 
 #: ../../content/configuration/system_configuration_settings.rst:684
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###ITSMConfigItemChangeTimePoint"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###ITSMConfigItemChangeTimePoint"
 
 #: ../../content/configuration/system_configuration_settings.rst:688
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###ITSMConfigItemChangeTimeSlot"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###ITSMConfigItemChangeTimeSlot"
 
 #: ../../content/configuration/system_configuration_settings.rst:692
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###DynamicField"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###DynamicField"
 
 #: ../../content/configuration/system_configuration_settings.rst:693
 #: ../../content/configuration/system_configuration_settings.rst:924
@@ -2026,13 +2026,13 @@ msgstr "Meghatározza az alapértelmezetten megjelenített konfigurációelem ke
 
 #: ../../content/configuration/system_configuration_settings.rst:696
 msgid "Frontend::Agent::View::CustomerInformationCenter"
-msgstr ""
+msgstr "Frontend::Agent::View::CustomerInformationCenter"
 
 #: ../../content/configuration/system_configuration_settings.rst:699
 msgid ""
 "AgentCustomerInformationCenter::Backend###0060-CIC-"
 "ITSMConfigItemCustomerCompany"
-msgstr ""
+msgstr "AgentCustomerInformationCenter::Backend###0060-CIC-ITSMConfigItemCustomerCompany"
 
 #: ../../content/configuration/system_configuration_settings.rst:700
 #: ../../content/configuration/system_configuration_settings.rst:707
@@ -2043,25 +2043,25 @@ msgid ""
 "(e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin"
 " is enabled by default or if the user needs to enable it manually. "
 "\"CacheTTLLocal\" is the cache time in minutes for the plugin."
-msgstr ""
+msgstr "Paraméterek az ügyintézői felület ügyfél-vállalat konfigurációelem áttekintőjének vezérlőpult háttérprogramjához. A „Limit” az alapértelmezetten megjelenített bejegyzések száma. A „Group” használható a hozzáférés korlátozásához a bővítményre (például Group: admin;csoport1;csoport2;). A „Default” azt határozza meg, hogy a bővítmény alapértelmezetten engedélyezve van, vagy hogy a felhasználónak kézzel kell engedélyeznie azt. A „CacheTTLLocal” a bővítmény gyorsítótár ideje percben."
 
 #: ../../content/configuration/system_configuration_settings.rst:703
 msgid "Frontend::Agent::View::CustomerUserInformationCenter"
-msgstr ""
+msgstr "Frontend::Agent::View::CustomerUserInformationCenter"
 
 #: ../../content/configuration/system_configuration_settings.rst:706
 msgid ""
 "AgentCustomerUserInformationCenter::Backend###0060-CUIC-"
 "ITSMConfigItemCustomerUser"
-msgstr ""
+msgstr "AgentCustomerUserInformationCenter::Backend###0060-CUIC-ITSMConfigItemCustomerUser"
 
 #: ../../content/configuration/system_configuration_settings.rst:710
 msgid "Frontend::Agent::View::ITSMConfigItem"
-msgstr ""
+msgstr "Frontend::Agent::View::ITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:713
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItem###DefaultColumns"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItem###DefaultColumns"
 
 #: ../../content/configuration/system_configuration_settings.rst:714
 msgid ""
@@ -2072,7 +2072,7 @@ msgstr "Az ügyintézői felület konfigurációelem áttekintésében szűrhet�
 
 #: ../../content/configuration/system_configuration_settings.rst:717
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItem###SearchLimit"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItem###SearchLimit"
 
 #: ../../content/configuration/system_configuration_settings.rst:718
 msgid "Defines the search limit for the AgentITSMConfigItem screen."
@@ -2080,7 +2080,7 @@ msgstr "Meghatározza a keresési korlátot az AgentITSMConfigItem képernyőn."
 
 #: ../../content/configuration/system_configuration_settings.rst:721
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItem###DefaultCategory"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItem###DefaultCategory"
 
 #: ../../content/configuration/system_configuration_settings.rst:722
 msgid "The default category which is shown, if none is selected."
@@ -2088,7 +2088,7 @@ msgstr "Az alapértelmezett kategória, amely akkor jelenik meg, ha semmi sincs 
 
 #: ../../content/configuration/system_configuration_settings.rst:725
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItem###ClassColumnsAvailable"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItem###ClassColumnsAvailable"
 
 #: ../../content/configuration/system_configuration_settings.rst:726
 #: ../../content/configuration/system_configuration_settings.rst:939
@@ -2101,7 +2101,7 @@ msgstr "Meghatározza a konfigurációelemek elérhető oszlopait a konfiguráci
 
 #: ../../content/configuration/system_configuration_settings.rst:729
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItem###ClassColumnsDefault"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItem###ClassColumnsDefault"
 
 #: ../../content/configuration/system_configuration_settings.rst:730
 #: ../../content/configuration/system_configuration_settings.rst:943
@@ -2114,11 +2114,11 @@ msgstr "Meghatározza a konfigurációelemek alapértelmezetten megjelenített o
 
 #: ../../content/configuration/system_configuration_settings.rst:733
 msgid "Frontend::Agent::View::ITSMConfigItemBulk"
-msgstr ""
+msgstr "Frontend::Agent::View::ITSMConfigItemBulk"
 
 #: ../../content/configuration/system_configuration_settings.rst:736
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemBulk###DeplState"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemBulk###DeplState"
 
 #: ../../content/configuration/system_configuration_settings.rst:737
 msgid ""
@@ -2128,7 +2128,7 @@ msgstr "Beállítja az üzembe állítási állapotot az ügyintézői felület 
 
 #: ../../content/configuration/system_configuration_settings.rst:740
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemBulk###InciState"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemBulk###InciState"
 
 #: ../../content/configuration/system_configuration_settings.rst:741
 msgid ""
@@ -2138,11 +2138,11 @@ msgstr "Beállítja az incidensállapotot az ügyintézői felület konfiguráci
 
 #: ../../content/configuration/system_configuration_settings.rst:744
 msgid "Frontend::Agent::View::ITSMConfigItemDelete"
-msgstr ""
+msgstr "Frontend::Agent::View::ITSMConfigItemDelete"
 
 #: ../../content/configuration/system_configuration_settings.rst:747
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemDelete###Permission"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemDelete###Permission"
 
 #: ../../content/configuration/system_configuration_settings.rst:748
 msgid "Required privileges to delete config items."
@@ -2150,11 +2150,11 @@ msgstr "A szükséges jogosultságok a konfigurációelemek törléséhez."
 
 #: ../../content/configuration/system_configuration_settings.rst:751
 msgid "Frontend::Agent::View::ITSMConfigItemEdit"
-msgstr ""
+msgstr "Frontend::Agent::View::ITSMConfigItemEdit"
 
 #: ../../content/configuration/system_configuration_settings.rst:754
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemEdit###RichTextWidth"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemEdit###RichTextWidth"
 
 #: ../../content/configuration/system_configuration_settings.rst:755
 msgid ""
@@ -2164,7 +2164,7 @@ msgstr "Meghatározza a Rich Text szerkesztő-összetevő szélességét ennél 
 
 #: ../../content/configuration/system_configuration_settings.rst:758
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemEdit###RichTextHeight"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemEdit###RichTextHeight"
 
 #: ../../content/configuration/system_configuration_settings.rst:759
 msgid ""
@@ -2174,11 +2174,11 @@ msgstr "Meghatározza a Rich Text szerkesztő komponens magasságát ennél a k�
 
 #: ../../content/configuration/system_configuration_settings.rst:762
 msgid "Frontend::Agent::View::ITSMConfigItemHistory"
-msgstr ""
+msgstr "Frontend::Agent::View::ITSMConfigItemHistory"
 
 #: ../../content/configuration/system_configuration_settings.rst:765
 msgid "ITSMConfigItem::Frontend::HistoryOrder"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::HistoryOrder"
 
 #: ../../content/configuration/system_configuration_settings.rst:766
 msgid "Shows the config item history (reverse ordered) in the agent interface."
@@ -2186,19 +2186,19 @@ msgstr "Megjeleníti a konfigurációelem előzményeit (fordított sorrendben) 
 
 #: ../../content/configuration/system_configuration_settings.rst:769
 msgid "Frontend::Agent::View::ITSMConfigItemSearch"
-msgstr ""
+msgstr "Frontend::Agent::View::ITSMConfigItemSearch"
 
 #: ../../content/configuration/system_configuration_settings.rst:772
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###SearchCSVData"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###SearchCSVData"
 
 #: ../../content/configuration/system_configuration_settings.rst:773
 msgid "Data used to export the search result in CSV format."
-msgstr ""
+msgstr "A keresési eredmény CSV formátumba való exportálásához használt adat."
 
 #: ../../content/configuration/system_configuration_settings.rst:776
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###SearchCSVDynamicField"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###SearchCSVDynamicField"
 
 #: ../../content/configuration/system_configuration_settings.rst:777
 msgid "Dynamic Fields used to export the search result in CSV format."
@@ -2206,11 +2206,11 @@ msgstr "Dinamikus mezők, amelyek a keresési eredmények CSV formátumba való 
 
 #: ../../content/configuration/system_configuration_settings.rst:780
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###SearchPreviousVersions"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###SearchPreviousVersions"
 
 #: ../../content/configuration/system_configuration_settings.rst:784
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###SearchLimit"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###SearchLimit"
 
 #: ../../content/configuration/system_configuration_settings.rst:785
 msgid "Defines the search limit for the AgentITSMConfigItemSearch screen."
@@ -2218,7 +2218,7 @@ msgstr "Meghatározza a keresési korlátot az AgentITSMConfigItemSearch képern
 
 #: ../../content/configuration/system_configuration_settings.rst:788
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###DynamicField"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###DynamicField"
 
 #: ../../content/configuration/system_configuration_settings.rst:789
 msgid ""
@@ -2232,7 +2232,7 @@ msgstr "Frontend::Agent::View::Preferences"
 
 #: ../../content/configuration/system_configuration_settings.rst:795
 msgid "PreferencesGroups###ConfigItemOverviewSmallPageShown"
-msgstr ""
+msgstr "PreferencesGroups###ConfigItemOverviewSmallPageShown"
 
 #: ../../content/configuration/system_configuration_settings.rst:796
 msgid "Parameters for the pages (in which the configuration items are shown)."
@@ -2240,7 +2240,7 @@ msgstr "Paraméterek az oldalakhoz (amelyeken a konfigurációelemek megjelennek
 
 #: ../../content/configuration/system_configuration_settings.rst:799
 msgid "PreferencesGroups###ConfigItemOverviewFilterSettings"
-msgstr ""
+msgstr "PreferencesGroups###ConfigItemOverviewFilterSettings"
 
 #: ../../content/configuration/system_configuration_settings.rst:800
 msgid ""
@@ -2258,7 +2258,7 @@ msgstr "Frontend::Base::DynamicFieldScreens"
 
 #: ../../content/configuration/system_configuration_settings.rst:806
 msgid "DynamicFieldScreens###ITSMConfigurationManagement"
-msgstr ""
+msgstr "DynamicFieldScreens###ITSMConfigurationManagement"
 
 #: ../../content/configuration/system_configuration_settings.rst:807
 msgid ""
@@ -2268,13 +2268,13 @@ msgstr "Ez a beállítás határozza meg az összes lehetséges képernyőt a di
 
 #: ../../content/configuration/system_configuration_settings.rst:810
 msgid "DefaultColumnsScreens###ITSMConfigurationManagement"
-msgstr ""
+msgstr "DefaultColumnsScreens###ITSMConfigurationManagement"
 
 #: ../../content/configuration/system_configuration_settings.rst:811
 msgid ""
 "This configuration defines all possible screens to enable or disable "
 "default columns."
-msgstr ""
+msgstr "Ez a beállítás határozza meg az összes lehetséges képernyőt az alapértelmezett oszlopok engedélyezéséhez vagy letiltásához."
 
 #: ../../content/configuration/system_configuration_settings.rst:814
 msgid "Frontend::Base::Loader"
@@ -2282,7 +2282,7 @@ msgstr "Frontend::Base::Loader"
 
 #: ../../content/configuration/system_configuration_settings.rst:817
 msgid "Loader::Agent::CommonJS###100-ConfigurationManagement"
-msgstr ""
+msgstr "Loader::Agent::CommonJS###100-ConfigurationManagement"
 
 #: ../../content/configuration/system_configuration_settings.rst:818
 msgid "List of JS files to always be loaded for the agent interface."
@@ -2290,23 +2290,23 @@ msgstr "JavaScript-fájlok listája, amelyek mindig betöltődnek az ügyintéz�
 
 #: ../../content/configuration/system_configuration_settings.rst:821
 msgid "Frontend::Base::NavBarModule"
-msgstr ""
+msgstr "Frontend::Base::NavBarModule"
 
 #: ../../content/configuration/system_configuration_settings.rst:824
 msgid "Frontend::AdminModuleGroups###200-ITSMConfigurationManagement"
-msgstr ""
+msgstr "Frontend::AdminModuleGroups###200-ITSMConfigurationManagement"
 
 #: ../../content/configuration/system_configuration_settings.rst:825
 msgid "Defines available groups for the admin overview screen."
-msgstr ""
+msgstr "Meghatározza az elérhető csoportokat az adminisztrátori áttekintő képernyőhöz."
 
 #: ../../content/configuration/system_configuration_settings.rst:828
 msgid "Frontend::Customer::ITSMConfigItemOverview"
-msgstr ""
+msgstr "Frontend::Customer::ITSMConfigItemOverview"
 
 #: ../../content/configuration/system_configuration_settings.rst:831
 msgid "ITSMConfigItem::Frontend::CustomerOverview###Small"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::CustomerOverview###Small"
 
 #: ../../content/configuration/system_configuration_settings.rst:835
 msgid "Frontend::Customer::ModuleRegistration"
@@ -2314,7 +2314,7 @@ msgstr "Frontend::Customer::ModuleRegistration"
 
 #: ../../content/configuration/system_configuration_settings.rst:838
 msgid "CustomerFrontend::Module###CustomerITSMConfigItem"
-msgstr ""
+msgstr "CustomerFrontend::Module###CustomerITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:839
 #: ../../content/configuration/system_configuration_settings.rst:843
@@ -2325,15 +2325,15 @@ msgstr "Előtétprogram-modul regisztráció az ügyfélfelülethez."
 
 #: ../../content/configuration/system_configuration_settings.rst:842
 msgid "CustomerFrontend::Module###CustomerITSMConfigItemSearch"
-msgstr ""
+msgstr "CustomerFrontend::Module###CustomerITSMConfigItemSearch"
 
 #: ../../content/configuration/system_configuration_settings.rst:846
 msgid "CustomerFrontend::Module###CustomerITSMConfigItemZoom"
-msgstr ""
+msgstr "CustomerFrontend::Module###CustomerITSMConfigItemZoom"
 
 #: ../../content/configuration/system_configuration_settings.rst:850
 msgid "CustomerFrontend::Module###CustomerITSMConfigItemAttachment"
-msgstr ""
+msgstr "CustomerFrontend::Module###CustomerITSMConfigItemAttachment"
 
 #: ../../content/configuration/system_configuration_settings.rst:854
 msgid "Frontend::Customer::ModuleRegistration::Loader"
@@ -2341,7 +2341,7 @@ msgstr "Frontend::Customer::ModuleRegistration::Loader"
 
 #: ../../content/configuration/system_configuration_settings.rst:857
 msgid "Loader::Module::CustomerITSMConfigItem###003-ITSMConfigItem"
-msgstr ""
+msgstr "Loader::Module::CustomerITSMConfigItem###003-ITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:858
 #: ../../content/configuration/system_configuration_settings.rst:862
@@ -2351,11 +2351,11 @@ msgstr "Betöltőmodul regisztráció az ügyfélfelülethez."
 
 #: ../../content/configuration/system_configuration_settings.rst:861
 msgid "Loader::Module::CustomerITSMConfigItemSearch###003-ITSMConfigItem"
-msgstr ""
+msgstr "Loader::Module::CustomerITSMConfigItemSearch###003-ITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:865
 msgid "Loader::Module::CustomerITSMConfigItemZoom###003-ITSMConfigItem"
-msgstr ""
+msgstr "Loader::Module::CustomerITSMConfigItemZoom###003-ITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:869
 msgid "Frontend::Customer::ModuleRegistration::MainMenu"
@@ -2363,15 +2363,15 @@ msgstr "Frontend::Customer::ModuleRegistration::MainMenu"
 
 #: ../../content/configuration/system_configuration_settings.rst:872
 msgid "CustomerFrontend::Navigation###CustomerITSMConfigItem###003-ITSMConfigItem"
-msgstr ""
+msgstr "CustomerFrontend::Navigation###CustomerITSMConfigItem###003-ITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:876
 msgid "Frontend::Customer::View::ConfigItemSearch"
-msgstr ""
+msgstr "Frontend::Customer::View::ConfigItemSearch"
 
 #: ../../content/configuration/system_configuration_settings.rst:879
 msgid "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###Permission"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###Permission"
 
 #: ../../content/configuration/system_configuration_settings.rst:880
 msgid ""
@@ -2381,7 +2381,7 @@ msgstr "A szükséges jogosultságok az ITSM-konfigurációelem keresési képer
 
 #: ../../content/configuration/system_configuration_settings.rst:883
 msgid "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###DeploymentState"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###DeploymentState"
 
 #: ../../content/configuration/system_configuration_settings.rst:884
 msgid ""
@@ -2391,7 +2391,7 @@ msgstr "Felveszi az üzembe állítási állapotokat az ügyfélfelület konfigu
 
 #: ../../content/configuration/system_configuration_settings.rst:887
 msgid "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###IncidentState"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###IncidentState"
 
 #: ../../content/configuration/system_configuration_settings.rst:888
 msgid ""
@@ -2401,7 +2401,7 @@ msgstr "Felveszi az incidensállapotokat az ügyfélfelület konfigurációelem-
 
 #: ../../content/configuration/system_configuration_settings.rst:891
 msgid "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###ExtendedSearchCondition"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###ExtendedSearchCondition"
 
 #: ../../content/configuration/system_configuration_settings.rst:892
 msgid ""
@@ -2413,7 +2413,7 @@ msgstr "Lehetővé teszi a kiterjesztett keresési feltételeket az ügyfélfel�
 
 #: ../../content/configuration/system_configuration_settings.rst:895
 msgid "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###SearchPageShown"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###SearchPageShown"
 
 #: ../../content/configuration/system_configuration_settings.rst:896
 msgid ""
@@ -2423,7 +2423,7 @@ msgstr "Egy keresési eredmény minden egyes oldalán megjelenítendő konfigur�
 
 #: ../../content/configuration/system_configuration_settings.rst:899
 msgid "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###SortBy::Default"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###SortBy::Default"
 
 #: ../../content/configuration/system_configuration_settings.rst:900
 msgid ""
@@ -2433,7 +2433,7 @@ msgstr "Meghatározza az alapértelmezett konfigurációelem-attribútumot az ü
 
 #: ../../content/configuration/system_configuration_settings.rst:903
 msgid "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###Order::Default"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###Order::Default"
 
 #: ../../content/configuration/system_configuration_settings.rst:904
 msgid ""
@@ -2443,31 +2443,31 @@ msgstr "Meghatározza az alapértelmezett konfigurációelem-sorrendet az ügyf�
 
 #: ../../content/configuration/system_configuration_settings.rst:907
 msgid "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###Defaults###Number"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###Defaults###Number"
 
 #: ../../content/configuration/system_configuration_settings.rst:911
 msgid "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###Defaults###Name"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###Defaults###Name"
 
 #: ../../content/configuration/system_configuration_settings.rst:915
 msgid "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###Defaults###DeploymentStateIDs"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###Defaults###DeploymentStateIDs"
 
 #: ../../content/configuration/system_configuration_settings.rst:919
 msgid "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###Defaults###IncidentStateIDs"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###Defaults###IncidentStateIDs"
 
 #: ../../content/configuration/system_configuration_settings.rst:923
 msgid "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###Defaults###DynamicField"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###Defaults###DynamicField"
 
 #: ../../content/configuration/system_configuration_settings.rst:927
 msgid "Frontend::Customer::View::ITSMConfigItem"
-msgstr ""
+msgstr "Frontend::Customer::View::ITSMConfigItem"
 
 #: ../../content/configuration/system_configuration_settings.rst:930
 msgid "ITSMConfigItem::Frontend::CustomerITSMConfigItem###DefaultColumns"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::CustomerITSMConfigItem###DefaultColumns"
 
 #: ../../content/configuration/system_configuration_settings.rst:931
 msgid ""
@@ -2478,7 +2478,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:934
 msgid "ITSMConfigItem::Frontend::CustomerITSMConfigItem###SearchLimit"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::CustomerITSMConfigItem###SearchLimit"
 
 #: ../../content/configuration/system_configuration_settings.rst:935
 msgid "Defines the search limit for the CustomerITSMConfigItem screen."
@@ -2486,19 +2486,19 @@ msgstr "Meghatározza a keresési korlátot a CustomerITSMConfigItem képernyőn
 
 #: ../../content/configuration/system_configuration_settings.rst:938
 msgid "ITSMConfigItem::Frontend::CustomerITSMConfigItem###ClassColumnsAvailable"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::CustomerITSMConfigItem###ClassColumnsAvailable"
 
 #: ../../content/configuration/system_configuration_settings.rst:942
 msgid "ITSMConfigItem::Frontend::CustomerITSMConfigItem###ClassColumnsDefault"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::CustomerITSMConfigItem###ClassColumnsDefault"
 
 #: ../../content/configuration/system_configuration_settings.rst:946
 msgid "Frontend::Customer::View::ITSMConfigItemOverview"
-msgstr ""
+msgstr "Frontend::Customer::View::ITSMConfigItemOverview"
 
 #: ../../content/configuration/system_configuration_settings.rst:949
 msgid "ITSMConfigItem::Frontend::CustomerITSMConfigItem###DynamicField"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::CustomerITSMConfigItem###DynamicField"
 
 #: ../../content/configuration/system_configuration_settings.rst:950
 #: ../../content/configuration/system_configuration_settings.rst:954
@@ -2509,15 +2509,15 @@ msgstr "Az ügyfélfelület konfigurációelem áttekintő képernyőjén megjel
 
 #: ../../content/configuration/system_configuration_settings.rst:953
 msgid "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###DynamicField"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###DynamicField"
 
 #: ../../content/configuration/system_configuration_settings.rst:957
 msgid "Frontend::Customer::View::ITSMConfigItemSearch"
-msgstr ""
+msgstr "Frontend::Customer::View::ITSMConfigItemSearch"
 
 #: ../../content/configuration/system_configuration_settings.rst:960
 msgid "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###SearchLimit"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::CustomerITSMConfigItemSearch###SearchLimit"
 
 #: ../../content/configuration/system_configuration_settings.rst:961
 msgid "Defines the search limit for the CustomerITSMConfigItemSearch screen."
@@ -2525,11 +2525,11 @@ msgstr "Meghatározza a keresési korlátot a CustomerITSMConfigItemSearch képe
 
 #: ../../content/configuration/system_configuration_settings.rst:964
 msgid "Frontend::Customer::View::ITSMConfigItemZoom"
-msgstr ""
+msgstr "Frontend::Customer::View::ITSMConfigItemZoom"
 
 #: ../../content/configuration/system_configuration_settings.rst:967
 msgid "ITSMConfigItem::Frontend::CustomerITSMConfigItemZoom###VersionsEnabled"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::CustomerITSMConfigItemZoom###VersionsEnabled"
 
 #: ../../content/configuration/system_configuration_settings.rst:968
 msgid "Customers can see historic CI versions."
@@ -2537,7 +2537,7 @@ msgstr "Az ügyfelek láthatják a korábbi konfigurációelem-verziókat."
 
 #: ../../content/configuration/system_configuration_settings.rst:971
 msgid "ITSMConfigItem::Frontend::CustomerITSMConfigItemZoom###VersionsSelectable"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::CustomerITSMConfigItemZoom###VersionsSelectable"
 
 #: ../../content/configuration/system_configuration_settings.rst:972
 msgid ""
@@ -2547,7 +2547,7 @@ msgstr "Az ügyfeleknek lehetőségük van kézileg váltani a korábbi konfigur
 
 #: ../../content/configuration/system_configuration_settings.rst:975
 msgid "ITSMConfigItem::Frontend::CustomerITSMConfigItemZoom###GeneralInfo"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::CustomerITSMConfigItemZoom###GeneralInfo"
 
 #: ../../content/configuration/system_configuration_settings.rst:976
 msgid "Which general information is shown in the header."
@@ -2555,11 +2555,11 @@ msgstr "Melyik általános információ jelenjen meg a fejlécben."
 
 #: ../../content/configuration/system_configuration_settings.rst:979
 msgid "GenericInterface::Invoker"
-msgstr ""
+msgstr "GenericInterface::Invoker"
 
 #: ../../content/configuration/system_configuration_settings.rst:982
 msgid "GenericInterface::Invoker::ConfigItemFetch::Classes"
-msgstr ""
+msgstr "GenericInterface::Invoker::ConfigItemFetch::Classes"
 
 #: ../../content/configuration/system_configuration_settings.rst:983
 msgid ""
@@ -2567,23 +2567,23 @@ msgid ""
 "which the import is restricted. For all chosen classes, or all existing "
 "classes the identifying attributes will have to be chosen in the invoker "
 "config."
-msgstr ""
+msgstr "Minden webszolgáltatáshoz (kulcs) osztályok tömbje (érték) határozható meg, amelyre az importálás korlátozva van. Az összes kiválasztott osztálynál vagy az összes meglévő osztálynál az azonosító attribútumokat ki kell majd választani a meghívó beállításában."
 
 #: ../../content/configuration/system_configuration_settings.rst:986
 msgid "GenericInterface::Invoker::ModuleRegistration"
-msgstr ""
+msgstr "GenericInterface::Invoker::ModuleRegistration"
 
 #: ../../content/configuration/system_configuration_settings.rst:989
 msgid "GenericInterface::Invoker::Module###Elasticsearch::ConfigItemManagement"
-msgstr ""
+msgstr "GenericInterface::Invoker::Module###Elasticsearch::ConfigItemManagement"
 
 #: ../../content/configuration/system_configuration_settings.rst:990
 msgid "GenericInterface module registration for the invoker layer."
-msgstr ""
+msgstr "Általános felület modul regisztráció a meghívó réteghez."
 
 #: ../../content/configuration/system_configuration_settings.rst:993
 msgid "GenericInterface::Invoker::Module###ConfigItem::ConfigItemFetch"
-msgstr ""
+msgstr "GenericInterface::Invoker::Module###ConfigItem::ConfigItemFetch"
 
 #: ../../content/configuration/system_configuration_settings.rst:994
 msgid ""
@@ -2593,25 +2593,25 @@ msgstr "Általános felület modul regisztráció a konfigurációelem-lekérés
 
 #: ../../content/configuration/system_configuration_settings.rst:997
 msgid "GenericInterface::Operation::ConfigItemCreate"
-msgstr ""
+msgstr "GenericInterface::Operation::ConfigItemCreate"
 
 #: ../../content/configuration/system_configuration_settings.rst:1000
 msgid "GenericInterface::Operation::ConfigItemCreate###Permission"
-msgstr ""
+msgstr "GenericInterface::Operation::ConfigItemCreate###Permission"
 
 #: ../../content/configuration/system_configuration_settings.rst:1001
 msgid ""
 "Defines Required permissions to create ITSM configuration items using the"
 " Generic Interface."
-msgstr ""
+msgstr "Meghatározza a szükséges jogosultságokat az ITSM konfigurációelemek létrehozásához az általános felület használatával."
 
 #: ../../content/configuration/system_configuration_settings.rst:1004
 msgid "GenericInterface::Operation::ConfigItemDelete"
-msgstr ""
+msgstr "GenericInterface::Operation::ConfigItemDelete"
 
 #: ../../content/configuration/system_configuration_settings.rst:1007
 msgid "GenericInterface::Operation::ConfigItemDelete###Permission"
-msgstr ""
+msgstr "GenericInterface::Operation::ConfigItemDelete###Permission"
 
 #: ../../content/configuration/system_configuration_settings.rst:1008
 msgid ""
@@ -2621,11 +2621,11 @@ msgstr "Meghatározza a szükséges jogosultságokat az ITSM-konfigurációeleme
 
 #: ../../content/configuration/system_configuration_settings.rst:1011
 msgid "GenericInterface::Operation::ConfigItemGet"
-msgstr ""
+msgstr "GenericInterface::Operation::ConfigItemGet"
 
 #: ../../content/configuration/system_configuration_settings.rst:1014
 msgid "GenericInterface::Operation::ConfigItemGet###Permission"
-msgstr ""
+msgstr "GenericInterface::Operation::ConfigItemGet###Permission"
 
 #: ../../content/configuration/system_configuration_settings.rst:1015
 msgid ""
@@ -2635,11 +2635,11 @@ msgstr "Meghatározza a szükséges jogosultságokat az ITSM-konfigurációeleme
 
 #: ../../content/configuration/system_configuration_settings.rst:1018
 msgid "GenericInterface::Operation::ConfigItemSearch"
-msgstr ""
+msgstr "GenericInterface::Operation::ConfigItemSearch"
 
 #: ../../content/configuration/system_configuration_settings.rst:1021
 msgid "GenericInterface::Operation::ConfigItemSearch###Permission"
-msgstr ""
+msgstr "GenericInterface::Operation::ConfigItemSearch###Permission"
 
 #: ../../content/configuration/system_configuration_settings.rst:1022
 msgid ""
@@ -2649,7 +2649,7 @@ msgstr "Meghatározza a szükséges jogosultságokat az ITSM-konfigurációeleme
 
 #: ../../content/configuration/system_configuration_settings.rst:1025
 msgid "GenericInterface::Operation::ConfigItemSearch###SearchLimit"
-msgstr ""
+msgstr "GenericInterface::Operation::ConfigItemSearch###SearchLimit"
 
 #: ../../content/configuration/system_configuration_settings.rst:1026
 msgid ""
@@ -2659,7 +2659,7 @@ msgstr "Ennek a műveletnek az eredményében megjelenítendő konfigurációele
 
 #: ../../content/configuration/system_configuration_settings.rst:1029
 msgid "GenericInterface::Operation::ConfigItemSearch###SortBy::Default"
-msgstr ""
+msgstr "GenericInterface::Operation::ConfigItemSearch###SortBy::Default"
 
 #: ../../content/configuration/system_configuration_settings.rst:1030
 msgid ""
@@ -2669,27 +2669,27 @@ msgstr "Meghatározza az alapértelmezett konfigurációelem-attribútumot ezen 
 
 #: ../../content/configuration/system_configuration_settings.rst:1033
 msgid "GenericInterface::Operation::ConfigItemSearch###Order::Default"
-msgstr ""
+msgstr "GenericInterface::Operation::ConfigItemSearch###Order::Default"
 
 #: ../../content/configuration/system_configuration_settings.rst:1034
 msgid ""
 "Defines the default config item order in the config item search result of"
 " the this operation. Up: oldest on top. Down: latest on top."
-msgstr ""
+msgstr "Meghatározza az alapértelmezett konfigurációelem-sorrendet ezen művelet konfigurációelem-keresési eredményében. Fel: legrégebbi felülre. Le: legutolsó felülre."
 
 #: ../../content/configuration/system_configuration_settings.rst:1037
 msgid "GenericInterface::Operation::ConfigItemUpdate"
-msgstr ""
+msgstr "GenericInterface::Operation::ConfigItemUpdate"
 
 #: ../../content/configuration/system_configuration_settings.rst:1040
 msgid "GenericInterface::Operation::ConfigItemUpdate###Permission"
-msgstr ""
+msgstr "GenericInterface::Operation::ConfigItemUpdate###Permission"
 
 #: ../../content/configuration/system_configuration_settings.rst:1041
 msgid ""
 "Defines Required permissions to update ITSM configuration items using the"
 " Generic Interface."
-msgstr ""
+msgstr "Meghatározza a szükséges jogosultságokat az ITSM konfigurációelemek frissítéséhez az általános felület használatával."
 
 #: ../../content/configuration/system_configuration_settings.rst:1044
 msgid "GenericInterface::Operation::ModuleRegistration"
@@ -2697,7 +2697,7 @@ msgstr "GenericInterface::Operation::ModuleRegistration"
 
 #: ../../content/configuration/system_configuration_settings.rst:1047
 msgid "GenericInterface::Operation::Module###ConfigItem::ConfigItemCreate"
-msgstr ""
+msgstr "GenericInterface::Operation::Module###ConfigItem::ConfigItemCreate"
 
 #: ../../content/configuration/system_configuration_settings.rst:1048
 #: ../../content/configuration/system_configuration_settings.rst:1052
@@ -2709,19 +2709,19 @@ msgstr "Általános felület modul regisztráció a műveleti réteghez."
 
 #: ../../content/configuration/system_configuration_settings.rst:1051
 msgid "GenericInterface::Operation::Module###ConfigItem::ConfigItemGet"
-msgstr ""
+msgstr "GenericInterface::Operation::Module###ConfigItem::ConfigItemGet"
 
 #: ../../content/configuration/system_configuration_settings.rst:1055
 msgid "GenericInterface::Operation::Module###ConfigItem::ConfigItemUpdate"
-msgstr ""
+msgstr "GenericInterface::Operation::Module###ConfigItem::ConfigItemUpdate"
 
 #: ../../content/configuration/system_configuration_settings.rst:1059
 msgid "GenericInterface::Operation::Module###ConfigItem::ConfigItemSearch"
-msgstr ""
+msgstr "GenericInterface::Operation::Module###ConfigItem::ConfigItemSearch"
 
 #: ../../content/configuration/system_configuration_settings.rst:1063
 msgid "GenericInterface::Operation::Module###ConfigItem::ConfigItemDelete"
-msgstr ""
+msgstr "GenericInterface::Operation::Module###ConfigItem::ConfigItemDelete"
 
 #: ../../content/configuration/system_requirements.rst:13
 #: ../../content/system_requirements.rst:13
@@ -2746,7 +2746,7 @@ msgstr "Csomagok"
 #: ../../content/configuration/system_requirements.rst:25
 #: ../../content/system_requirements.rst:25
 msgid "ITSMCore 11.0.1"
-msgstr ""
+msgstr "ITSMCore 11.0.1"
 
 #: ../../content/configuration/system_requirements.rst:28
 #: ../../content/system_requirements.rst:28
@@ -2760,11 +2760,11 @@ msgstr "\\-"
 
 #: ../../content/index.rst:13
 msgid "Package Documentation: ITSMConfigurationManagement"
-msgstr ""
+msgstr "Csomag dokumentációja: ITSMConfigurationManagement"
 
 #: ../../content/overview.rst:13
 msgid "Overview"
-msgstr ""
+msgstr "Áttekintés"
 
 #: ../../content/overview.rst:16
 msgid "Summary"
@@ -2781,7 +2781,7 @@ msgstr ""
 
 #: ../../content/overview.rst:23
 msgid "Introduction"
-msgstr ""
+msgstr "Bevezetés"
 
 #: ../../content/overview.rst:25
 msgid ""
@@ -2793,7 +2793,7 @@ msgstr ""
 
 #: ../../content/overview.rst:28
 msgid "Common Usecases"
-msgstr ""
+msgstr "Gyakori használati esetek"
 
 #: ../../content/overview.rst:30
 msgid ""
