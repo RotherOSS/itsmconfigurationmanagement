@@ -34,7 +34,7 @@ ITSM.Agent.ConfigItem.Edit = (function (TargetNS) {
     * @memberof ITSM.Agent.ConfigItem.Edit
     * @function
     * @description
-    *      This function initializes the form submittion.
+    *      This function initializes the form submit button.
     */
     TargetNS.Init = function () {
         $('#CancelButton').on('click', function () {
@@ -44,9 +44,9 @@ ITSM.Agent.ConfigItem.Edit = (function (TargetNS) {
             }
         });
 
-        HideShowCompletePageSection( $('#ClassItem > .Content > fieldset') );
+        HideShowCompletePageSection( $('#ClassItem .Content > fieldset') );
         Core.App.Subscribe('Event.AJAX.FormUpdate.Callback', function() {
-            HideShowCompletePageSection( $('#ClassItem > .Content > fieldset') )
+            HideShowCompletePageSection( $('#ClassItem .Content > fieldset') )
         });
 
         OpenRelevantPages();
