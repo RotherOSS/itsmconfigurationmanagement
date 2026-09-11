@@ -2,7 +2,7 @@
 // OTOBO is a web-based ticketing system for service organisations.
 // --
 // Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-// Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+// Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 // --
 // This program is free software: you can redistribute it and/or modify it under
 // the terms of the GNU General Public License as published by the Free Software
@@ -34,19 +34,19 @@ ITSM.Agent.ConfigItem.Edit = (function (TargetNS) {
     * @memberof ITSM.Agent.ConfigItem.Edit
     * @function
     * @description
-    *      This function initializes the form submittion.
+    *      This function initializes the form submit button.
     */
     TargetNS.Init = function () {
         $('#CancelButton').on('click', function () {
-            if (Core.UI.Popup.CurrentIsPopupWindow()) {
-                Core.UI.Popup.ClosePopup();
+            if (Core.UI.Popup.CurrentIsPopupWindow()) { // eslint-disable-line no-undef
+                Core.UI.Popup.ClosePopup(); // eslint-disable-line no-undef
                 return false;
             }
         });
 
-        HideShowCompletePageSection( $('#ClassItem > .Content > fieldset') );
-        Core.App.Subscribe('Event.AJAX.FormUpdate.Callback', function() {
-            HideShowCompletePageSection( $('#ClassItem > .Content > fieldset') )
+        HideShowCompletePageSection( $('#ClassItem .Content > fieldset') );
+        Core.App.Subscribe('Event.AJAX.FormUpdate.Callback', function() { // eslint-disable-line no-undef
+            HideShowCompletePageSection( $('#ClassItem .Content > fieldset') )
         });
 
         OpenRelevantPages();
@@ -124,7 +124,7 @@ ITSM.Agent.ConfigItem.Edit = (function (TargetNS) {
         }
     }
 
-    Core.Init.RegisterNamespace(TargetNS, 'APP_MODULE');
+    Core.Init.RegisterNamespace(TargetNS, 'APP_MODULE'); // eslint-disable-line no-undef
 
     return TargetNS;
 }(ITSM.Agent.ConfigItem.Edit || {}));
