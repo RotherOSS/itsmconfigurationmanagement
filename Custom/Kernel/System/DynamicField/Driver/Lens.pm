@@ -738,6 +738,42 @@ sub GetFieldState {
                 return;
             }
 
+# Rother OSS / ITSMConfigurationManagement
+            # use value from GetParam for determining the referenced object id
+            my $ReferencedObjectID = $Param{GetParam}{DynamicField}{ $DynamicFieldConfig->{Config}{ReferenceDFName} }[0];
+
+            # for config item reference fields, GetParam contains the config item id
+            #   this has to be transitioned to the latest version id of the respective config item
+            my $ReferenceDFConfig = $Self->_GetReferenceDFConfig(
+                LensDynamicFieldConfig => $DynamicFieldConfig,
+            );
+            if ( $ReferenceDFConfig->{FieldType} eq 'ConfigItem' ) {
+
+                # BackendObject has all the ObjectType Handlers loaded as properties
+                my $BackendObject = $Kernel::OM->Get('Kernel::System::DynamicField::Backend');
+
+                # determine the property name for our typename
+                my $BackendTypeObjectKey = 'DynamicFieldConfigItemObject';
+
+                # if there is a TypeObject handler object ...
+                if ( exists $BackendObject->{$BackendTypeObjectKey} ) {
+
+                    my $BackendTypeObject = $BackendObject->{$BackendTypeObjectKey};
+
+                    if ($BackendTypeObject->can('ValueForLens')) {
+                        my $ValueForLens = $BackendTypeObject->ValueForLens(
+                            Value => $ReferencedObjectID,
+                        );
+
+                        # expected is either one item or none
+                        if ( IsArrayRefWithData($ValueForLens) ) {
+                            $ReferencedObjectID = $ValueForLens->[0];
+                        }
+                    }
+                }
+            }
+# EO ITSMConfigurationManagement
+
             $AttributeFieldValue = $Self->ValueGet(
                 DynamicFieldConfig => $DynamicFieldConfig,
 
@@ -746,7 +782,10 @@ sub GetFieldState {
                 # TODO: Validate the Reference ObjectID here, or earlier, to prevent data leaks!
                 ObjectID              => 1,                                                                                     # will not be used;
                 UseReferenceEditField => 1,
-                ReferencedObjectID    => $Param{GetParam}{DynamicField}{ $DynamicFieldConfig->{Config}{ReferenceDFName} }[0],
+# Rother OSS / ITSMConfigurationManagement
+#                 ReferencedObjectID    => $Param{GetParam}{DynamicField}{ $DynamicFieldConfig->{Config}{ReferenceDFName} }[0],
+                ReferencedObjectID    => $ReferencedObjectID,
+# EO ITSMConfigurationManagement
             ) // '';
         }
         else {
