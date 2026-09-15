@@ -351,7 +351,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top.'} =
         'Definuje predvolené poradie položiek konfigurácie vo výsledku vyhľadávania položiek konfigurácie v rozhraní zákazníka. Nahor: najstaršie na vrchu. Nadol: najnovšie na vrchu.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of this operation. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'Definuje predvolené poradie konfiguračných položiek vo výsledku vyhľadávania konfiguračných položiek tejto operácie. Nahor: najstaršie na vrchu. Nadol: najnovšie na vrchu.';
     $Self->{Translation}->{'Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         'Definuje predvolené zobrazené stĺpce CI v prehľade konfiguračných položiek v závislosti od triedy CI. Každá položka musí pozostávať z názvu triedy a poľa dostupných polí pre príslušnú triedu. Položky dynamických polí musia rešpektovať schému DynamicField_FieldName.';
     $Self->{Translation}->{'Defines the default relations depth to be shown.'} = 'Definuje predvolenú hĺbku vzťahov, ktoré sa majú zobrazovať.';
@@ -412,7 +412,7 @@ sub Data {
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
         'Stav nasadenia tejto položky konfigurácie';
     $Self->{Translation}->{'Enables/disables the functionality to check ITSM configuration items for unique names. Before enabling this option you should check your system for already existing configuration items with duplicate names. You can do this with the console command Admin::ITSM::ConfigItem::ListDuplicates.'} =
-        '';
+        'Povolí/vypne funkciu kontroly jedinečných názvov položiek konfigurácie ITSM. Pred zapnutím tejto možnosti by ste mali skontrolovať systém, či už neexistujú konfiguračné položky s duplicitnými názvami. Môžete to urobiť pomocou konzolového príkazu Admin::ITSM::ConfigItem::ListDuplicates.';
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
         'Modul udalosti na nastavenie configitem-status na ticket-configitem-link.';
     $Self->{Translation}->{'Fields of the configuration item index, used for the fulltext search. Fields are also stored, but are not mandatory for the overall functionality. Inclusion of attachments can be disabled by setting the entry to 0 or deleting it.'} =
@@ -420,7 +420,7 @@ sub Data {
     $Self->{Translation}->{'Fields stored in the configuration item index which are used for other things besides fulltext searches. For the complete functionality all fields are mandatory.'} =
         'Polia uložené v indexe konfiguračnej položky, ktoré sa okrem fulltextového vyhľadávania používajú aj na iné účely. Pre úplnú funkčnosť sú všetky polia povinné.';
     $Self->{Translation}->{'For every web service (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker configuration.'} =
-        '';
+        'Pre každú webovú službu (kľúč) možno definovať pole tried (hodnota), na ktoré je import obmedzený. Pre všetky vybrané triedy alebo všetky existujúce triedy sa budú musieť v konfigurácii invokera zvoliť identifikačné atribúty.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
         'Registrácia modulu GenericInterface pre vrstvu vyvolávača ConfigItemFetch.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
@@ -478,7 +478,7 @@ sub Data {
     $Self->{Translation}->{'Parameters for the version trigger for config item classes in the preferences view of the agent interface.'} =
         'Parametre pre spúšťač verzie pre triedy konfiguračných položiek v zobrazení preferencií rozhrania agenta.';
     $Self->{Translation}->{'Performs the configured action for each event (as an invoker) for each configured web service.'} =
-        '';
+        'Vykoná nakonfigurovanú akciu pre každú udalosť (ako Invoker) pre každú nakonfigurovanú webovú službu.';
     $Self->{Translation}->{'Permission Group'} = 'Skupina oprávnení';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item attachment action in the agent interface.'} =
         'Požadované oprávnenia na použitie akcie pripojenia konfiguračnej položky ITSM v rozhraní agenta.';
@@ -667,7 +667,7 @@ sub Data {
     $Self->{Translation}->{'IP Protocol'} = 'Protokol IP';
     $Self->{Translation}->{'Identity and Access Management (IAM)'} = 'Správa identít a prístupu (IAM)';
     $Self->{Translation}->{'Inventory Number'} = 'Inventárne číslo';
-    $Self->{Translation}->{'Investment costs'} = '';
+    $Self->{Translation}->{'Investment costs'} = 'Náklady na inverstráciu';
     $Self->{Translation}->{'Invoice Number'} = 'Číslo faktúry';
     $Self->{Translation}->{'Keyboard'} = 'Klávesnica';
     $Self->{Translation}->{'LCD Monitor (Liquid Crystal Display)'} = 'LCD monitor (displej z tekutých kryštálov)';

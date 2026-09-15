@@ -351,7 +351,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top.'} =
         'Müşteri arayüzünün yapılandırma öğesi arama sonucundaki varsayılan yapılandırma öğesi sırasını tanımlar. Yukarı: en eski en üstte. Aşağı: en son üstte.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of this operation. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'Bu işlemin yapılandırma öğesi arama sonucundaki varsayılan yapılandırma öğesi sırasını tanımlar. Yukarı: en eski en üstte. Aşağı: en son üstte.';
     $Self->{Translation}->{'Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         'CI sınıfına bağlı olarak yapılandırma öğesi genel görünümünde CI\'ların varsayılan görüntülenen sütunlarını tanımlar. Her giriş bir sınıf adı ve ilgili sınıf için kullanılabilir alanların bir dizisinden oluşmalıdır. Dinamik alan girişleri DynamicField_FieldName şemasına uymak zorundadır.';
     $Self->{Translation}->{'Defines the default relations depth to be shown.'} = 'Gösterilecek varsayılan ilişki derinliğini tanımlar.';
@@ -412,7 +412,7 @@ sub Data {
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
         'Yapılandırma öğesi toplu eylem özelliğini yalnızca listelenen gruplar için etkinleştirir.';
     $Self->{Translation}->{'Enables/disables the functionality to check ITSM configuration items for unique names. Before enabling this option you should check your system for already existing configuration items with duplicate names. You can do this with the console command Admin::ITSM::ConfigItem::ListDuplicates.'} =
-        '';
+        'ITSM yapılandırma öğelerini benzersiz adlar için kontrol etme işlevini etkinleştirir/devre dışı bırakır. Bu seçeneği etkinleştirmeden önce sisteminizde yinelenen adlara sahip yapılandırma öğeleri olup olmadığını kontrol etmelisiniz. Bunu Admin::ITSM::ConfigItem::ListDuplicates konsol komutu ile yapabilirsiniz.';
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
         'Bilet-configitem-link üzerinde configitem-status ayarlamak için olay modülü.';
     $Self->{Translation}->{'Fields of the configuration item index, used for the fulltext search. Fields are also stored, but are not mandatory for the overall functionality. Inclusion of attachments can be disabled by setting the entry to 0 or deleting it.'} =
@@ -420,7 +420,7 @@ sub Data {
     $Self->{Translation}->{'Fields stored in the configuration item index which are used for other things besides fulltext searches. For the complete functionality all fields are mandatory.'} =
         'Yapılandırma öğesi dizininde depolanan ve tam metin aramalarının yanı sıra başka şeyler için de kullanılan alanlar. Tam işlevsellik için tüm alanlar zorunludur.';
     $Self->{Translation}->{'For every web service (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker configuration.'} =
-        '';
+        'Her web hizmeti (anahtar) için, içe aktarmanın kısıtlandığı bir dizi sınıf (değer) tanımlanabilir. Seçilen tüm sınıflar veya mevcut tüm sınıflar için tanımlayıcı niteliklerin invoker yapılandırmasında seçilmesi gerekecektir.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
         'ConfigItemFetch çağırıcı katmanı için GenericInterface modül kaydı.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
@@ -478,7 +478,7 @@ sub Data {
     $Self->{Translation}->{'Parameters for the version trigger for config item classes in the preferences view of the agent interface.'} =
         'Temsilci arayüzünün tercihler görünümünde yapılandırma öğesi sınıfları için sürüm tetikleyicisi parametreleri.';
     $Self->{Translation}->{'Performs the configured action for each event (as an invoker) for each configured web service.'} =
-        '';
+        'Yapılandırılmış her Webservice için her olay için (Invoker olarak) yapılandırılmış eylemi gerçekleştirir.';
     $Self->{Translation}->{'Permission Group'} = 'İzin grubu';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item attachment action in the agent interface.'} =
         'Temsilci arayüzünde ITSM yapılandırma öğesi ekleme eylemini kullanmak için gerekli izinler.';
@@ -667,7 +667,7 @@ sub Data {
     $Self->{Translation}->{'IP Protocol'} = 'IP Protokolü';
     $Self->{Translation}->{'Identity and Access Management (IAM)'} = 'Kimlik ve Erişim Yönetimi (IAM)';
     $Self->{Translation}->{'Inventory Number'} = 'Envanter Numarası';
-    $Self->{Translation}->{'Investment costs'} = '';
+    $Self->{Translation}->{'Investment costs'} = 'Yatırım maliyetleri';
     $Self->{Translation}->{'Invoice Number'} = 'Fatura Numarası';
     $Self->{Translation}->{'Keyboard'} = 'Klavye';
     $Self->{Translation}->{'LCD Monitor (Liquid Crystal Display)'} = 'LCD Monitör (Sıvı Kristal Ekran)';

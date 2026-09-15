@@ -351,7 +351,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top.'} =
         '定义客户界面配置项搜索结果中的默认配置项顺序。上：最旧的在最前面。下：最新的在上。';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of this operation. Up: oldest on top. Down: latest on top.'} =
-        '';
+        '定义此操作的配置项搜索结果中的默认配置项顺序。上：最旧的在最前面。下：最新的在上。';
     $Self->{Translation}->{'Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         '根据 CI 类定义配置项概览中默认显示的 CI 列。每个条目必须包含一个类名和相应类的可用字段数组。动态字段条目必须遵守 DynamicField_FieldName 方案。';
     $Self->{Translation}->{'Defines the default relations depth to be shown.'} = '定义默认显示的关系深度。';
@@ -412,7 +412,7 @@ sub Data {
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
         '只有列表中的组才有权限使用配置项批量操作功能。';
     $Self->{Translation}->{'Enables/disables the functionality to check ITSM configuration items for unique names. Before enabling this option you should check your system for already existing configuration items with duplicate names. You can do this with the console command Admin::ITSM::ConfigItem::ListDuplicates.'} =
-        '';
+        '启用/禁用检查 ITSM 配置项是否具有唯一名称的功能。启用此选项前，应检查系统中是否存在名称重复的配置项。您可以使用控制台命令 Admin::ITSM::ConfigItem::ListDuplicates 进行检查。';
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
         '在工单-配置项的链接中设置配置项-状态的事件模块。';
     $Self->{Translation}->{'Fields of the configuration item index, used for the fulltext search. Fields are also stored, but are not mandatory for the overall functionality. Inclusion of attachments can be disabled by setting the entry to 0 or deleting it.'} =
@@ -420,7 +420,7 @@ sub Data {
     $Self->{Translation}->{'Fields stored in the configuration item index which are used for other things besides fulltext searches. For the complete functionality all fields are mandatory.'} =
         '存储在配置项索引中的字段，除用于全文检索外，还可用于其他用途。为了实现完整的功能，所有字段都是必填字段。';
     $Self->{Translation}->{'For every web service (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker configuration.'} =
-        '';
+        '可以为每个 webservice（键）定义一个类（值）数组，在此基础上限制导入。对于所有选定的类或所有现有的类，必须在调用者配置中选择识别属性。';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
         '用于 ConfigItemFetch 调用层的 GenericInterface 模块注册。';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
@@ -478,7 +478,7 @@ sub Data {
     $Self->{Translation}->{'Parameters for the version trigger for config item classes in the preferences view of the agent interface.'} =
         '代理界面首选项视图中配置项类的版本触发器参数。';
     $Self->{Translation}->{'Performs the configured action for each event (as an invoker) for each configured web service.'} =
-        '';
+        '对每个已配置的Web服务的每个事件（作为调用程序）执行配置的操作。';
     $Self->{Translation}->{'Permission Group'} = '权限组';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item attachment action in the agent interface.'} =
         '在代理界面中使用 ITSM 配置项目附件操作所需的权限。';
@@ -667,7 +667,7 @@ sub Data {
     $Self->{Translation}->{'IP Protocol'} = 'IP 协议';
     $Self->{Translation}->{'Identity and Access Management (IAM)'} = '身份和访问管理（IAM）';
     $Self->{Translation}->{'Inventory Number'} = '库存编号';
-    $Self->{Translation}->{'Investment costs'} = '';
+    $Self->{Translation}->{'Investment costs'} = '转换成本';
     $Self->{Translation}->{'Invoice Number'} = '发票号码';
     $Self->{Translation}->{'Keyboard'} = '键盘';
     $Self->{Translation}->{'LCD Monitor (Liquid Crystal Display)'} = 'LCD 显示器（液晶显示器）';

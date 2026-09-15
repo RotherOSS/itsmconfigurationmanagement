@@ -351,7 +351,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top.'} =
         'Menentukan urutan item konfigurasi default dalam hasil pencarian item konfigurasi pada antarmuka pelanggan. Atas: tertua di atas. Turun: terbaru di atas.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of this operation. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'Menentukan urutan item konfigurasi default dalam hasil pencarian item konfigurasi dari operasi ini. Atas: tertua di atas. Turun: terbaru di atas.';
     $Self->{Translation}->{'Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         'Menentukan kolom CI yang ditampilkan secara default dalam ikhtisar item konfigurasi tergantung pada kelas CI. Setiap entri harus terdiri dari nama kelas dan larik bidang yang tersedia untuk kelas yang sesuai. Entri bidang dinamis harus sesuai dengan skema DynamicField_FieldName.';
     $Self->{Translation}->{'Defines the default relations depth to be shown.'} = 'Menentukan kedalaman relasi default yang akan ditampilkan.';
@@ -412,7 +412,7 @@ sub Data {
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
         'Memungkinkan fitur tindakan massal item konfigurasi hanya untuk kelompok terdaftar.';
     $Self->{Translation}->{'Enables/disables the functionality to check ITSM configuration items for unique names. Before enabling this option you should check your system for already existing configuration items with duplicate names. You can do this with the console command Admin::ITSM::ConfigItem::ListDuplicates.'} =
-        '';
+        'Mengaktifkan/menonaktifkan fungsionalitas untuk memeriksa item konfigurasi ITSM untuk nama yang unik. Sebelum mengaktifkan opsi ini, Anda harus memeriksa sistem Anda untuk item konfigurasi yang sudah ada dengan nama ganda. Anda dapat melakukan ini dengan perintah konsol Admin::ITSM::ConfigItem::ListDuplicates.';
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
         'Modul peristiwa untuk mengatur status konfigurasi pada tautan konfigurasi tiket.';
     $Self->{Translation}->{'Fields of the configuration item index, used for the fulltext search. Fields are also stored, but are not mandatory for the overall functionality. Inclusion of attachments can be disabled by setting the entry to 0 or deleting it.'} =
@@ -420,7 +420,7 @@ sub Data {
     $Self->{Translation}->{'Fields stored in the configuration item index which are used for other things besides fulltext searches. For the complete functionality all fields are mandatory.'} =
         'Bidang yang disimpan dalam indeks item konfigurasi yang digunakan untuk hal-hal lain selain pencarian teks lengkap. Untuk fungsionalitas yang lengkap, semua bidang wajib diisi.';
     $Self->{Translation}->{'For every web service (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker configuration.'} =
-        '';
+        'Untuk setiap layanan web (key), sebuah larik kelas (value) dapat didefinisikan di mana impor dibatasi. Untuk semua kelas yang dipilih, atau semua kelas yang ada, atribut pengenal harus dipilih dalam konfigurasi pemanggil.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
         'Registrasi modul GenericInterface untuk lapisan pemanggil ConfigItemFetch.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
@@ -478,7 +478,7 @@ sub Data {
     $Self->{Translation}->{'Parameters for the version trigger for config item classes in the preferences view of the agent interface.'} =
         'Parameter untuk pemicu versi untuk kelas item konfigurasi dalam tampilan preferensi antarmuka agen.';
     $Self->{Translation}->{'Performs the configured action for each event (as an invoker) for each configured web service.'} =
-        '';
+        'Melakukan tindakan dikonfigurasi untuk setiap acara (sebagai Invoker) untuk setiap Layanan Web dikonfigurasi.';
     $Self->{Translation}->{'Permission Group'} = 'Grup Izin';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item attachment action in the agent interface.'} =
         'Izin yang diperlukan untuk menggunakan tindakan lampiran item konfigurasi ITSM di antarmuka agen.';
@@ -667,7 +667,7 @@ sub Data {
     $Self->{Translation}->{'IP Protocol'} = 'Protokol IP';
     $Self->{Translation}->{'Identity and Access Management (IAM)'} = 'Manajemen Identitas dan Akses (IAM)';
     $Self->{Translation}->{'Inventory Number'} = 'Nomor Persediaan';
-    $Self->{Translation}->{'Investment costs'} = '';
+    $Self->{Translation}->{'Investment costs'} = 'Biaya pembalikan';
     $Self->{Translation}->{'Invoice Number'} = 'Nomor Faktur';
     $Self->{Translation}->{'Keyboard'} = 'Keyboard';
     $Self->{Translation}->{'LCD Monitor (Liquid Crystal Display)'} = 'Monitor LCD (Layar Kristal Cair)';

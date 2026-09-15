@@ -351,7 +351,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top.'} =
         '고객 인터페이스의 구성 항목 검색 결과에서 기본 구성 항목 순서를 정의합니다. 위쪽: 가장 오래된 항목을 맨 위에 표시합니다. 아래로: 최신 항목을 맨 위에 배치합니다.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of this operation. Up: oldest on top. Down: latest on top.'} =
-        '';
+        '이 작업의 구성 항목 검색 결과에서 기본 구성 항목 순서를 정의합니다. 위로: 가장 오래된 항목을 위에 표시합니다. 아래로: 최신 항목을 맨 위에 배치합니다.';
     $Self->{Translation}->{'Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         'CI 클래스에 따라 구성 항목 개요에 표시되는 CI의 기본 열을 정의합니다. 각 항목은 클래스 이름과 해당 클래스에 사용 가능한 필드 배열로 구성되어야 합니다. 동적 필드 항목은 DynamicField_FieldName 스키마를 따라야 합니다.';
     $Self->{Translation}->{'Defines the default relations depth to be shown.'} = '표시할 기본 관계 깊이를 정의합니다.';
@@ -412,7 +412,7 @@ sub Data {
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
         '나열된 그룹에 대해서만 구성 항목 일괄 작업 기능을 활성화합니다.';
     $Self->{Translation}->{'Enables/disables the functionality to check ITSM configuration items for unique names. Before enabling this option you should check your system for already existing configuration items with duplicate names. You can do this with the console command Admin::ITSM::ConfigItem::ListDuplicates.'} =
-        '';
+        '고유한 이름이 있는지 ITSM 구성 항목을 확인하는 기능을 사용/사용 안 함으로 설정합니다. 이 옵션을 사용 설정하기 전에 시스템에 이미 존재하는 구성 항목에 중복된 이름이 있는지 확인해야 합니다. 이 작업은 콘솔 명령인 Admin::ITSM::ConfigItem::ListDuplicates를 사용하여 수행할 수 있습니다.';
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
         '이벤트 모듈을 사용하여 티켓-configitem-link에서 configitem-status를 설정합니다.';
     $Self->{Translation}->{'Fields of the configuration item index, used for the fulltext search. Fields are also stored, but are not mandatory for the overall functionality. Inclusion of attachments can be disabled by setting the entry to 0 or deleting it.'} =
@@ -420,7 +420,7 @@ sub Data {
     $Self->{Translation}->{'Fields stored in the configuration item index which are used for other things besides fulltext searches. For the complete functionality all fields are mandatory.'} =
         '전체 텍스트 검색 외에 다른 용도로 사용되는 구성 항목 인덱스에 저장된 필드입니다. 전체 기능을 사용하려면 모든 필드가 필수입니다.';
     $Self->{Translation}->{'For every web service (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker configuration.'} =
-        '';
+        '모든 웹서비스(키)에 대해 가져오기가 제한되는 클래스(값)의 배열을 정의할 수 있습니다. 선택한 모든 클래스 또는 모든 기존 클래스에 대해 식별 속성을 인보커 구성에서 선택해야 합니다.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
         'ConfigItemFetch 인보커 레이어에 대한 GenericInterface 모듈 등록.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
@@ -478,7 +478,7 @@ sub Data {
     $Self->{Translation}->{'Parameters for the version trigger for config item classes in the preferences view of the agent interface.'} =
         '상담원 인터페이스의 기본 설정 보기에서 구성 항목 클래스에 대한 버전 트리거의 매개 변수입니다.';
     $Self->{Translation}->{'Performs the configured action for each event (as an invoker) for each configured web service.'} =
-        '';
+        '구성된 각 웹 서비스의 각 이벤트 (Invoker)에 대해 구성된 작업을 수행합니다.';
     $Self->{Translation}->{'Permission Group'} = '권한 그룹';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item attachment action in the agent interface.'} =
         '상담원 인터페이스에서 ITSM 구성 항목 첨부 작업을 사용하기 위해 필요한 권한입니다.';
@@ -667,7 +667,7 @@ sub Data {
     $Self->{Translation}->{'IP Protocol'} = 'IP 프로토콜';
     $Self->{Translation}->{'Identity and Access Management (IAM)'} = 'ID 및 액세스 관리(IAM)';
     $Self->{Translation}->{'Inventory Number'} = '재고 번호';
-    $Self->{Translation}->{'Investment costs'} = '';
+    $Self->{Translation}->{'Investment costs'} = '투자 비용';
     $Self->{Translation}->{'Invoice Number'} = '송장 번호';
     $Self->{Translation}->{'Keyboard'} = '키보드';
     $Self->{Translation}->{'LCD Monitor (Liquid Crystal Display)'} = 'LCD 모니터(액정 디스플레이)';

@@ -351,7 +351,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top.'} =
         'Визначає порядок елементів конфігурації за замовчуванням у результатах пошуку елементів конфігурації у клієнтському інтерфейсі. Вгору: найстаріші зверху. Вниз: найновіші зверху.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of this operation. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'Визначає порядок елементів конфігурації за замовчуванням у результатах пошуку елементів конфігурації для цієї операції. Вгору: найстаріший зверху. Вниз: найновіший зверху.';
     $Self->{Translation}->{'Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         'Визначає стовпці CI, що відображаються за замовчуванням в огляді елементів конфігурації залежно від класу CI. Кожен запис має складатися з назви класу та масиву доступних полів для відповідного класу. Записи динамічних полів мають відповідати схемі DynamicField_FieldName.';
     $Self->{Translation}->{'Defines the default relations depth to be shown.'} = 'Визначає глибину зв\'язків за замовчуванням, яку буде показано.';
@@ -412,7 +412,7 @@ sub Data {
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
         'Вмикає функцію масових дій для елементів конфігурації лише для перелічених груп.';
     $Self->{Translation}->{'Enables/disables the functionality to check ITSM configuration items for unique names. Before enabling this option you should check your system for already existing configuration items with duplicate names. You can do this with the console command Admin::ITSM::ConfigItem::ListDuplicates.'} =
-        '';
+        'Дозволяє ввімкнути/вимкнути функцію перевірки елементів конфігурації ITSM на наявність унікальних імен. Перш ніж увімкнути цю опцію, вам слід перевірити систему на наявність елементів конфігурації з повторюваними іменами. Це можна зробити за допомогою консольної команди Admin::ITSM::ConfigItem::ListDuplicates.';
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
         'Модуль подій для встановлення configitem-status за посиланням ticket-configitem-link.';
     $Self->{Translation}->{'Fields of the configuration item index, used for the fulltext search. Fields are also stored, but are not mandatory for the overall functionality. Inclusion of attachments can be disabled by setting the entry to 0 or deleting it.'} =
@@ -420,7 +420,7 @@ sub Data {
     $Self->{Translation}->{'Fields stored in the configuration item index which are used for other things besides fulltext searches. For the complete functionality all fields are mandatory.'} =
         'Поля, що зберігаються в індексі елементів конфігурації, які використовуються для інших цілей, окрім повнотекстового пошуку. Для повної функціональності всі поля є обов\'язковими.';
     $Self->{Translation}->{'For every web service (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker configuration.'} =
-        '';
+        'Для кожного веб-сервісу (ключ) можна визначити масив класів (значення), для яких імпорт обмежено. Для всіх вибраних класів або всіх існуючих класів потрібно буде вибрати ідентифікаційні атрибути у конфігурації інвокера.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
         'Реєстрація модуля GenericInterface для шару виклику ConfigItemFetch.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
@@ -478,7 +478,7 @@ sub Data {
     $Self->{Translation}->{'Parameters for the version trigger for config item classes in the preferences view of the agent interface.'} =
         'Параметри для тригера версії для класів елементів конфігурації у вікні налаштувань інтерфейсу агента.';
     $Self->{Translation}->{'Performs the configured action for each event (as an invoker) for each configured web service.'} =
-        '';
+        'Виконує налаштовану дію для кожної події (як інвокер) для кожного налаштованого вебсервісу.';
     $Self->{Translation}->{'Permission Group'} = 'Група дозволів';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item attachment action in the agent interface.'} =
         'Необхідні дозволи для використання дії прикріплення елемента конфігурації ITSM в інтерфейсі агента.';
@@ -667,7 +667,7 @@ sub Data {
     $Self->{Translation}->{'IP Protocol'} = 'Протокол IP';
     $Self->{Translation}->{'Identity and Access Management (IAM)'} = 'Управління ідентифікацією та доступом (IAM)';
     $Self->{Translation}->{'Inventory Number'} = 'Інвентарний номер';
-    $Self->{Translation}->{'Investment costs'} = '';
+    $Self->{Translation}->{'Investment costs'} = 'Інвестиційні витрати';
     $Self->{Translation}->{'Invoice Number'} = 'Номер рахунку-фактури';
     $Self->{Translation}->{'Keyboard'} = 'Клавіатура';
     $Self->{Translation}->{'LCD Monitor (Liquid Crystal Display)'} = 'РК-монітор (рідкокристалічний дисплей)';

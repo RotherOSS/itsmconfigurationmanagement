@@ -351,7 +351,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top.'} =
         'カスタマインタフェースの設定項目検索結果のデフォルトの設定項目順序を定義します。上: 古い順に表示されます。下：最新が上。';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of this operation. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'この操作のコンフィグ項目検索結果のデフォルトのコンフィグ項目順序を定義します。Up:古い順。Down：最新が上。';
     $Self->{Translation}->{'Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         'CIクラスに応じて、設定項目の概要に表示されるCIのデフォルトの列を定義します。各項目は、クラス名と、対応するクラスで利用可能なフィールドの配列から構成されなければなりません。動的フィールドのエントリは、DynamicField_FieldNameスキームに従わなければなりません。';
     $Self->{Translation}->{'Defines the default relations depth to be shown.'} = '表示されるデフォルトの関係の深さを定義する。';
@@ -412,7 +412,7 @@ sub Data {
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
         'リストされたグループの構成アイテム一括処理機能のみを有効にします。';
     $Self->{Translation}->{'Enables/disables the functionality to check ITSM configuration items for unique names. Before enabling this option you should check your system for already existing configuration items with duplicate names. You can do this with the console command Admin::ITSM::ConfigItem::ListDuplicates.'} =
-        '';
+        'ITSMの設定項目が一意な名前であるかどうかをチェックする機能の有効/無効を設定します。このオプションを有効にする前に、重複した名前を持つ既存の設定項目がないかシステムをチェックする必要があります。これは、コンソールコマンド Admin::ITSM::ConfigItem::ListDuplicates で実行できます。';
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
         'チケット構成アイテムのリンクに構成アイテムのステータスを設定するイベントモジュール';
     $Self->{Translation}->{'Fields of the configuration item index, used for the fulltext search. Fields are also stored, but are not mandatory for the overall functionality. Inclusion of attachments can be disabled by setting the entry to 0 or deleting it.'} =
@@ -420,7 +420,7 @@ sub Data {
     $Self->{Translation}->{'Fields stored in the configuration item index which are used for other things besides fulltext searches. For the complete functionality all fields are mandatory.'} =
         '設定項目インデックスに格納されるフィールドで、全文検索以外に使用される。完全な機能のために、すべてのフィールドは必須です。';
     $Self->{Translation}->{'For every web service (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker configuration.'} =
-        '';
+        '各Webサービス(キー)に対して、インポートを制限するクラスの配列(値)を定義することができます。選択されたすべてのクラス、あるいは既存のすべてのクラスについて、インボーカの設定で識別属性を選択する必要があります。';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
         'ConfigItemFetch invokerレイヤーのGenericInterfaceモジュール登録。';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
@@ -478,7 +478,7 @@ sub Data {
     $Self->{Translation}->{'Parameters for the version trigger for config item classes in the preferences view of the agent interface.'} =
         'エージェントインタフェースの環境設定ビューの設定項目クラスのバージョントリガーのパラメータ。';
     $Self->{Translation}->{'Performs the configured action for each event (as an invoker) for each configured web service.'} =
-        '';
+        '設定された各Webサービスの各イベントに対して（Invokerとして）設定されたアクションを実行します。';
     $Self->{Translation}->{'Permission Group'} = '権限グループ';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item attachment action in the agent interface.'} =
         'エージェントインターフェイスでITSM構成項目添付アクションを使用するために必要な権限。';
@@ -667,7 +667,7 @@ sub Data {
     $Self->{Translation}->{'IP Protocol'} = 'IPプロトコル';
     $Self->{Translation}->{'Identity and Access Management (IAM)'} = 'アイデンティティとアクセス管理（IAM）';
     $Self->{Translation}->{'Inventory Number'} = '在庫番号';
-    $Self->{Translation}->{'Investment costs'} = '';
+    $Self->{Translation}->{'Investment costs'} = '投資コスト';
     $Self->{Translation}->{'Invoice Number'} = 'インボイス番号';
     $Self->{Translation}->{'Keyboard'} = 'キーボード';
     $Self->{Translation}->{'LCD Monitor (Liquid Crystal Display)'} = 'LCDモニター（液晶ディスプレイ）';

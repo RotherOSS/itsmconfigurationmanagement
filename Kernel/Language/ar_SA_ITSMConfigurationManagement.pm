@@ -351,7 +351,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top.'} =
         'يحدد ترتيب عنصر التكوين الافتراضي في نتيجة البحث عن عنصر التكوين في واجهة العميل. لأعلى: الأقدم في الأعلى. لأسفل: الأحدث في الأعلى.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of this operation. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'يحدد ترتيب عنصر التكوين الافتراضي في نتيجة البحث عن عنصر التكوين لهذه العملية. لأعلى: الأقدم في الأعلى. لأسفل: الأحدث في الأعلى.';
     $Self->{Translation}->{'Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         'يحدد الأعمدة الافتراضية المعروضة من CIs في النظرة العامة لعنصر التكوين اعتمادًا على فئة CI. يجب أن يتكون كل إدخال من اسم الفئة ومصفوفة من الحقول المتاحة للفئة المقابلة. يجب أن تحترم إدخالات الحقول الديناميكية المخطط DynamicField_FieldName.';
     $Self->{Translation}->{'Defines the default relations depth to be shown.'} = 'يحدد عمق العلاقات الافتراضي الذي سيتم عرضه.';
@@ -412,7 +412,7 @@ sub Data {
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
         'تمكين ميزة الإجراء المجمع لعنصر التكوين فقط للمجموعات المدرجة.';
     $Self->{Translation}->{'Enables/disables the functionality to check ITSM configuration items for unique names. Before enabling this option you should check your system for already existing configuration items with duplicate names. You can do this with the console command Admin::ITSM::ConfigItem::ListDuplicates.'} =
-        '';
+        'تمكين/تعطيل وظيفة التحقق من عناصر تكوين ITSM بحثاً عن أسماء فريدة. قبل تمكين هذا الخيار، يجب عليك التحقق من النظام الخاص بك بحثًا عن عناصر التكوين الموجودة بالفعل ذات الأسماء المكررة. يمكنك القيام بذلك باستخدام أمر وحدة التحكم Admin::ITSM::ConfigItem::ListDuplicates.';
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
         'وحدة الحدث النمطية لتعيين حالة العنصر التكويني على رابط تذكرة-تكوين-عنصر-تكوين-رابط.';
     $Self->{Translation}->{'Fields of the configuration item index, used for the fulltext search. Fields are also stored, but are not mandatory for the overall functionality. Inclusion of attachments can be disabled by setting the entry to 0 or deleting it.'} =
@@ -478,7 +478,7 @@ sub Data {
     $Self->{Translation}->{'Parameters for the version trigger for config item classes in the preferences view of the agent interface.'} =
         'معلمات مشغل الإصدار لفئات عناصر التكوين في عرض التفضيلات لواجهة الوكيل.';
     $Self->{Translation}->{'Performs the configured action for each event (as an invoker) for each configured web service.'} =
-        '';
+        'تنفّذ الإجراء المكون لكل حدث (كمُستَدعٍ "as an Invoker") لكل خدمة وِب مُكوّنة.';
     $Self->{Translation}->{'Permission Group'} = 'مجموعة الإذن';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item attachment action in the agent interface.'} =
         'الأذونات المطلوبة لاستخدام إجراء إرفاق عنصر تكوين ITSM في واجهة الوكيل.';
@@ -667,7 +667,7 @@ sub Data {
     $Self->{Translation}->{'IP Protocol'} = 'بروتوكول IP';
     $Self->{Translation}->{'Identity and Access Management (IAM)'} = 'إدارة الهوية والوصول (IAM)';
     $Self->{Translation}->{'Inventory Number'} = 'رقم المخزون';
-    $Self->{Translation}->{'Investment costs'} = '';
+    $Self->{Translation}->{'Investment costs'} = 'تكاليف العاكس';
     $Self->{Translation}->{'Invoice Number'} = 'رقم الفاتورة';
     $Self->{Translation}->{'Keyboard'} = 'لوحة المفاتيح';
     $Self->{Translation}->{'LCD Monitor (Liquid Crystal Display)'} = 'شاشة LCD (شاشة العرض البلورية السائلة)';

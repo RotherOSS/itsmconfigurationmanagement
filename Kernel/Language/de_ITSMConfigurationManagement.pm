@@ -351,7 +351,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top.'} =
         'Definiert die Standardreihenfolge der Konfigurationsobjekte in den Suchergebnissen der Kundenschnittstelle. Oben: ältester Eintrag ganz oben. Unten: neueste oben.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of this operation. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'Legt die Standardreihenfolge der Konfigurationsobjekte im Suchergebnis dieser Operation fest. Up: ältester Eintrag oben. Nach unten: das Neueste oben.';
     $Self->{Translation}->{'Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         'Definiert die standardmäßig angezeigten Spalten der CIs in der Konfigurationsübersicht in Abhängigkeit von der CI-Klasse. Jeder Eintrag muss aus einem Klassennamen und einem Array von verfügbaren Feldern für die entsprechende Klasse bestehen. Dynamische Feldeinträge müssen das Schema DynamicField_FieldName einhalten.';
     $Self->{Translation}->{'Defines the default relations depth to be shown.'} = 'Legt die Standardtiefe der Beziehungen fest, die angezeigt werden sollen.';
@@ -412,7 +412,7 @@ sub Data {
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
         'Aktiviert die Funktion "Sammelaktion" nur für die gelisteten Gruppen.';
     $Self->{Translation}->{'Enables/disables the functionality to check ITSM configuration items for unique names. Before enabling this option you should check your system for already existing configuration items with duplicate names. You can do this with the console command Admin::ITSM::ConfigItem::ListDuplicates.'} =
-        '';
+        'Aktiviert/deaktiviert die Funktion, ITSM-Konfigurationselemente auf eindeutige Namen zu prüfen. Bevor Sie diese Option aktivieren, sollten Sie Ihr System auf bereits vorhandene Konfigurationselemente mit doppelten Namen überprüfen. Sie können dies mit dem Konsolenbefehl Admin::ITSM::ConfigItem::ListDuplicates tun.';
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
         'Ein Ereignismodul das beim Verknüpfen von Tickets mit Configuration Items den Status des Configuration Items verändert.';
     $Self->{Translation}->{'Fields of the configuration item index, used for the fulltext search. Fields are also stored, but are not mandatory for the overall functionality. Inclusion of attachments can be disabled by setting the entry to 0 or deleting it.'} =
@@ -420,7 +420,7 @@ sub Data {
     $Self->{Translation}->{'Fields stored in the configuration item index which are used for other things besides fulltext searches. For the complete functionality all fields are mandatory.'} =
         'Im Index der Konfigurationselemente gespeicherte Felder, die neben der Volltextsuche auch für andere Zwecke verwendet werden. Für die vollständige Funktionalität sind alle Felder obligatorisch.';
     $Self->{Translation}->{'For every web service (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker configuration.'} =
-        '';
+        'Für jeden Webservice (Schlüssel) kann ein Array von Klassen (Wert) definiert werden, auf die der Import beschränkt wird. Für alle gewählten Klassen oder alle vorhandenen Klassen müssen die identifizierenden Attribute in der Invokerkonfiguration ausgewählt werden.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
         'GenericInterface-Modulregistrierung für die ConfigItemFetch-Aufruferschicht.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
@@ -478,7 +478,7 @@ sub Data {
     $Self->{Translation}->{'Parameters for the version trigger for config item classes in the preferences view of the agent interface.'} =
         'Parameter für den Versions-Trigger für Config-Item-Klassen in der Einstellungsansicht der Agentenschnittstelle.';
     $Self->{Translation}->{'Performs the configured action for each event (as an invoker) for each configured web service.'} =
-        '';
+        'Führt die konfigurierte Aktion für jedes Ereignis für jeden konfigurierten Webservice aus (als Invoker).';
     $Self->{Translation}->{'Permission Group'} = 'Berechtigungsgruppe';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item attachment action in the agent interface.'} =
         'Erforderliche Berechtigungen für die Verwendung der ITSM-Konfigurationsobjekt-Anhängeaktion in der Agentenschnittstelle.';
@@ -667,7 +667,7 @@ sub Data {
     $Self->{Translation}->{'IP Protocol'} = 'IP-Protokoll';
     $Self->{Translation}->{'Identity and Access Management (IAM)'} = 'Identitäts- und Zugriffsmanagement (IAM)';
     $Self->{Translation}->{'Inventory Number'} = 'Inventarnummer';
-    $Self->{Translation}->{'Investment costs'} = '';
+    $Self->{Translation}->{'Investment costs'} = 'Inverstmentkosten';
     $Self->{Translation}->{'Invoice Number'} = 'Rechnungsnummer';
     $Self->{Translation}->{'Keyboard'} = 'Tastatur';
     $Self->{Translation}->{'LCD Monitor (Liquid Crystal Display)'} = 'LCD-Monitor (Flüssigkristallanzeige)';
@@ -763,7 +763,7 @@ sub Data {
     $Self->{Translation}->{'Storage'} = 'Storage';
     $Self->{Translation}->{'Storage Partition'} = 'Speicher-Partition';
     $Self->{Translation}->{'Subscription-based licenses'} = 'Abonnement-basierte Lizenzen';
-    $Self->{Translation}->{'Subsidiary'} = 'Tochtergesellschaft';
+    $Self->{Translation}->{'Subsidiary'} = 'Niederlassung';
     $Self->{Translation}->{'Summary'} = 'Zusammenfassung';
     $Self->{Translation}->{'Thin Client'} = 'Thin Client';
     $Self->{Translation}->{'Threads'} = 'Threads';

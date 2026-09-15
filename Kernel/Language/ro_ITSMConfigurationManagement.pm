@@ -351,7 +351,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top.'} =
         'Definește ordinea implicită a elementelor de configurare în rezultatul căutării elementelor de configurare din interfața cu clienții. Sus: cel mai vechi în partea de sus. Jos: cel mai recent în partea de sus.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of this operation. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'Definește ordinea implicită a elementelor de configurare în rezultatul căutării elementelor de configurare din această operațiune. În sus: cel mai vechi în sus. Jos: cel mai recent în partea de sus.';
     $Self->{Translation}->{'Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         'Definește coloanele afișate în mod implicit ale IC în prezentarea generală a elementelor de configurare în funcție de clasa IC. Fiecare intrare trebuie să fie compusă dintr-un nume de clasă și o matrice de câmpuri disponibile pentru clasa corespunzătoare. Intrările de câmpuri dinamice trebuie să respecte schema DynamicField_FieldName.';
     $Self->{Translation}->{'Defines the default relations depth to be shown.'} = 'Definește adâncimea implicită a relațiilor care urmează să fie afișate.';
@@ -412,7 +412,7 @@ sub Data {
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
         'Activează funcția de acțiune în bloc a elementelor de configurare numai pentru grupurile enumerate.';
     $Self->{Translation}->{'Enables/disables the functionality to check ITSM configuration items for unique names. Before enabling this option you should check your system for already existing configuration items with duplicate names. You can do this with the console command Admin::ITSM::ConfigItem::ListDuplicates.'} =
-        '';
+        'Activează/dezactivează funcționalitatea de verificare a elementelor de onfigurare ITSM pentru nume unice. Înainte de a activa această opțiune, ar trebui să verificați dacă există deja elemente de configurare cu nume duplicate în sistem. Puteți face acest lucru cu ajutorul comenzii de consolă Admin::ITSM::ConfigItem::ListDuplicates.';
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
         'Modulul de eveniment pentru a seta starea articolului de configurare pe biletul-configitem-link.';
     $Self->{Translation}->{'Fields of the configuration item index, used for the fulltext search. Fields are also stored, but are not mandatory for the overall functionality. Inclusion of attachments can be disabled by setting the entry to 0 or deleting it.'} =
@@ -420,7 +420,7 @@ sub Data {
     $Self->{Translation}->{'Fields stored in the configuration item index which are used for other things besides fulltext searches. For the complete functionality all fields are mandatory.'} =
         'Câmpuri stocate în indexul elementului de configurare care sunt utilizate pentru alte scopuri în afară de căutările fulltext. Pentru o funcționalitate completă, toate câmpurile sunt obligatorii.';
     $Self->{Translation}->{'For every web service (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker configuration.'} =
-        '';
+        'Pentru fiecare serviciu web (cheie) se poate defini o serie de clase (valoare) pentru care se limitează importul. Pentru toate clasele alese sau pentru toate clasele existente, atributele de identificare vor trebui să fie alese în configurația invocatorului.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
         'Înregistrarea modulului GenericInterface pentru stratul de invocare ConfigItemFetch.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
@@ -478,7 +478,7 @@ sub Data {
     $Self->{Translation}->{'Parameters for the version trigger for config item classes in the preferences view of the agent interface.'} =
         'Parametrii pentru declanșarea versiunii pentru clasele de elemente de configurare în vizualizarea preferințelor din interfața agentului.';
     $Self->{Translation}->{'Performs the configured action for each event (as an invoker) for each configured web service.'} =
-        '';
+        'Efectuează acțiunea configurată pentru fiecare eveniment (ca Invoker) pentru fiecare serviciu web configurat.';
     $Self->{Translation}->{'Permission Group'} = 'Drepturi Grup';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item attachment action in the agent interface.'} =
         'Permisiuni necesare pentru a utiliza acțiunea de atașare a elementului de configurare ITSM în interfața agentului.';

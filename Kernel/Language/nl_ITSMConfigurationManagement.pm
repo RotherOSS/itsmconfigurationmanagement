@@ -351,7 +351,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top.'} =
         'Definieert de standaard volgorde van config items in het zoekresultaat van de klanteninterface. Omhoog: oudste bovenaan. Omlaag: nieuwste bovenaan.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of this operation. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'Definieert de standaard volgorde van configuratie-items in het zoekresultaat van deze bewerking. Omhoog: oudste bovenaan. Omlaag: nieuwste bovenaan.';
     $Self->{Translation}->{'Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         'Definieert de standaard getoonde kolommen van CIs in het configuratie-item overzicht, afhankelijk van de CI klasse. Elk item moet bestaan uit een classnaam en een array van beschikbare velden voor de overeenstemmende class. Dynamische veldregels moeten voldoen aan het schema DynamicField_FieldName.';
     $Self->{Translation}->{'Defines the default relations depth to be shown.'} = 'Bepaalt de standaard te tonen relatiediepte.';
@@ -412,7 +412,7 @@ sub Data {
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
         'Schakelt de functie bulkactie voor configuratie-items alleen in voor de vermelde groepen.';
     $Self->{Translation}->{'Enables/disables the functionality to check ITSM configuration items for unique names. Before enabling this option you should check your system for already existing configuration items with duplicate names. You can do this with the console command Admin::ITSM::ConfigItem::ListDuplicates.'} =
-        '';
+        'Schakelt de functionaliteit in of uit om ITSM onfiguratie items te controleren op unieke namen. Voordat je deze optie inschakelt, moet je je systeem controleren op bestaande configuratie-items met dubbele namen. Je kunt dit doen met het console commando Admin::ITSM::ConfigItem::ListDuplicates.';
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
         'Gebeurtenismodule om configitem-status in te stellen op ticket-configitem-link.';
     $Self->{Translation}->{'Fields of the configuration item index, used for the fulltext search. Fields are also stored, but are not mandatory for the overall functionality. Inclusion of attachments can be disabled by setting the entry to 0 or deleting it.'} =
@@ -420,7 +420,7 @@ sub Data {
     $Self->{Translation}->{'Fields stored in the configuration item index which are used for other things besides fulltext searches. For the complete functionality all fields are mandatory.'} =
         'Velden die zijn opgeslagen in de index van het configuratie-item en die worden gebruikt voor andere dingen dan zoeken in de volledige tekst. Voor de volledige functionaliteit zijn alle velden verplicht.';
     $Self->{Translation}->{'For every web service (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker configuration.'} =
-        '';
+        'Voor elke webservice (key) kan een array van klassen (value) worden gedefinieerd waarop de import wordt beperkt. Voor alle gekozen klassen, of alle bestaande klassen moeten de identificerende attributen worden gekozen in de config van de invoker.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
         'GenericInterface moduleregistratie voor de ConfigItemFetch invoker laag.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
@@ -478,7 +478,7 @@ sub Data {
     $Self->{Translation}->{'Parameters for the version trigger for config item classes in the preferences view of the agent interface.'} =
         'Parameters voor de versieactivering voor config itemklassen in de voorkeurenweergave van de agentinterface.';
     $Self->{Translation}->{'Performs the configured action for each event (as an invoker) for each configured web service.'} =
-        '';
+        'Voert de geconfigureerde actie uit voor elke gebeurtenis (als Invoker) voor elke geconfigureerde webservice.';
     $Self->{Translation}->{'Permission Group'} = 'Permissie groep';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item attachment action in the agent interface.'} =
         'Vereiste machtigingen om de ITSM configuratie item attachment actie te gebruiken in de agent interface.';
@@ -667,7 +667,7 @@ sub Data {
     $Self->{Translation}->{'IP Protocol'} = 'IP-protocol';
     $Self->{Translation}->{'Identity and Access Management (IAM)'} = 'Identiteits- en toegangsbeheer (IAM)';
     $Self->{Translation}->{'Inventory Number'} = 'Inventarisnummer';
-    $Self->{Translation}->{'Investment costs'} = '';
+    $Self->{Translation}->{'Investment costs'} = 'Inversteringskosten';
     $Self->{Translation}->{'Invoice Number'} = 'Factuurnummer';
     $Self->{Translation}->{'Keyboard'} = 'Toetsenbord';
     $Self->{Translation}->{'LCD Monitor (Liquid Crystal Display)'} = 'LCD-monitor (vloeibaar-kristalscherm)';

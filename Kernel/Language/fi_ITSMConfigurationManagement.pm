@@ -351,7 +351,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top.'} =
         'Määrittää konfiguraatiokohteiden oletusjärjestyksen asiakkaan käyttöliittymän konfiguraatiokohteiden hakutuloksissa. Ylös: vanhin päällimmäisenä. Alas: uusin on ylhäällä.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of this operation. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'Määrittää konfiguraatiokohteiden oletusjärjestyksen tämän toiminnon konfiguraatiokohteiden hakutuloksessa. Ylös: Vanhin on ylhäällä. Alas: uusin on ylhäällä.';
     $Self->{Translation}->{'Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         'Määrittää CI:iden oletussarakkeet, jotka näkyvät konfigurointikohteen yleiskatsauksessa CI-luokasta riippuen. Jokaisen merkinnän on koostuttava luokan nimestä ja kyseisen luokan käytettävissä olevien kenttien joukosta. Dynaamisten kenttien merkintöjen on noudatettava kaavaa DynamicField_FieldName.';
     $Self->{Translation}->{'Defines the default relations depth to be shown.'} = 'Määrittää näytettävien suhteiden oletussyvyyden.';
@@ -412,7 +412,7 @@ sub Data {
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
         'Ottaa käyttöön määrityskohteiden massatoimintatoiminnon vain luetelluille ryhmille.';
     $Self->{Translation}->{'Enables/disables the functionality to check ITSM configuration items for unique names. Before enabling this option you should check your system for already existing configuration items with duplicate names. You can do this with the console command Admin::ITSM::ConfigItem::ListDuplicates.'} =
-        '';
+        'Ottaa käyttöön tai poistaa käytöstä toiminnon, jolla tarkistetaan ITSM onfiguration -kohteiden yksilölliset nimet. Ennen tämän vaihtoehdon ottamista käyttöön sinun tulisi tarkistaa järjestelmäsi jo olemassa olevien konfigurointielementtien kaksoiskappaleiden nimet. Voit tehdä tämän konsolin komennolla Admin::ITSM::ConfigItem::ListDuplicates.';
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
         'Tapahtumamoduuli, joka asettaa konfigitem-tilan ticket-configitem-linkille.';
     $Self->{Translation}->{'Fields of the configuration item index, used for the fulltext search. Fields are also stored, but are not mandatory for the overall functionality. Inclusion of attachments can be disabled by setting the entry to 0 or deleting it.'} =
@@ -420,7 +420,7 @@ sub Data {
     $Self->{Translation}->{'Fields stored in the configuration item index which are used for other things besides fulltext searches. For the complete functionality all fields are mandatory.'} =
         'Määrityskohdeindeksiin tallennetut kentät, joita käytetään muuhun kuin kokotekstihakuun. Täydellisen toiminnallisuuden kannalta kaikki kentät ovat pakollisia.';
     $Self->{Translation}->{'For every web service (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker configuration.'} =
-        '';
+        'Jokaiselle verkkopalvelulle (avain) voidaan määritellä joukko luokkia (arvo), joihin tuonti on rajoitettu. Kaikille valituille luokille tai kaikille olemassa oleville luokille on valittava tunnistavat attribuutit kutsujan konfiguraatiossa.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
         'GenericInterface-moduulin rekisteröinti ConfigItemFetch-kutsukerrosta varten.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
@@ -478,7 +478,7 @@ sub Data {
     $Self->{Translation}->{'Parameters for the version trigger for config item classes in the preferences view of the agent interface.'} =
         'Agenttikäyttöliittymän preferences-näkymässä olevien konfigurointiluokkien versiolaukaisimen parametrit.';
     $Self->{Translation}->{'Performs the configured action for each event (as an invoker) for each configured web service.'} =
-        '';
+        'Suorittaa määritetyn toiminnon kullekin tapahtumalle (kutsujana) kunkin määritetyn verkkopalvelun osalta.';
     $Self->{Translation}->{'Permission Group'} = 'Luparyhmä';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item attachment action in the agent interface.'} =
         'Tarvittavat käyttöoikeudet ITSM-kokoonpanokohteen kiinnitystoiminnon käyttämiseen agentin käyttöliittymässä.';
@@ -667,7 +667,7 @@ sub Data {
     $Self->{Translation}->{'IP Protocol'} = 'IP-protokolla';
     $Self->{Translation}->{'Identity and Access Management (IAM)'} = 'Identiteetin- ja pääsynhallinta (IAM)';
     $Self->{Translation}->{'Inventory Number'} = 'Varastonumero';
-    $Self->{Translation}->{'Investment costs'} = '';
+    $Self->{Translation}->{'Investment costs'} = 'Inverstointikustannukset';
     $Self->{Translation}->{'Invoice Number'} = 'Laskun numero';
     $Self->{Translation}->{'Keyboard'} = 'Näppäimistö';
     $Self->{Translation}->{'LCD Monitor (Liquid Crystal Display)'} = 'LCD-näyttö (nestekidenäyttö)';

@@ -351,7 +351,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top.'} =
         'Određuje podrazumevani redosled tiketa u pregledu pretrage rezultata u interfejsu klijenta. Gore: Najstariji na vrhu. Dole: Najnovije na vrhu.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of this operation. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'Definiše podrazumevani redosled tiketa u pregledu pretrage tiketa u ovoj operaciji. Gore: Najstariji na vrhu. Dole: Najnovije na vrhu.';
     $Self->{Translation}->{'Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         '';
     $Self->{Translation}->{'Defines the default relations depth to be shown.'} = '';
@@ -478,7 +478,7 @@ sub Data {
     $Self->{Translation}->{'Parameters for the version trigger for config item classes in the preferences view of the agent interface.'} =
         'Parametri za statuse primene na prikazu postavki u interfejsu operatera.';
     $Self->{Translation}->{'Performs the configured action for each event (as an invoker) for each configured web service.'} =
-        '';
+        'Izvršava podešenu akciju za svaki događaj (kao pozivalac) za svaki konfigurisan veb servis.';
     $Self->{Translation}->{'Permission Group'} = 'Grupa pristupa';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item attachment action in the agent interface.'} =
         'Potrebne dozvole za upotrebu ekrana pretrage ITSM konfiguracione stavke u interfejsu operatera.';

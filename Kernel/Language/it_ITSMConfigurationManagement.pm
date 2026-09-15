@@ -351,7 +351,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top.'} =
         'Definisce l\'ordine predefinito degli elementi di configurazione nel risultato della ricerca degli elementi di configurazione dell\'interfaccia cliente. Su: il più vecchio in cima. Giù: il più recente in cima.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of this operation. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'Definisce l\'ordine predefinito degli elementi di configurazione nel risultato della ricerca degli elementi di configurazione di questa operazione. Su: il più vecchio in cima. Giù: l\'ultimo in cima.';
     $Self->{Translation}->{'Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         'Definisce le colonne predefinite dei CI nella panoramica degli elementi di configurazione, a seconda della classe del CI. Ogni voce deve essere composta da un nome di classe e da un array di campi disponibili per la classe corrispondente. Le voci dei campi dinamici devono rispettare lo schema DynamicField_FieldName.';
     $Self->{Translation}->{'Defines the default relations depth to be shown.'} = 'Definisce la profondità predefinita delle relazioni da mostrare.';
@@ -412,7 +412,7 @@ sub Data {
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
         'Abilita la funzione di azione in blocco dell\'elemento di configurazione solo per i gruppi elencati.';
     $Self->{Translation}->{'Enables/disables the functionality to check ITSM configuration items for unique names. Before enabling this option you should check your system for already existing configuration items with duplicate names. You can do this with the console command Admin::ITSM::ConfigItem::ListDuplicates.'} =
-        '';
+        'Abilita/disabilita la funzionalità di controllo delle voci di configurazione ITSM per i nomi univoci. Prima di abilitare questa opzione, è necessario controllare il sistema per verificare che non vi siano elementi di configurazione già esistenti con nomi duplicati. È possibile farlo con il comando della console Admin::ITSM::ConfigItem::ListDuplicates.';
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
         'Modulo evento per impostare lo stato di configurazione su ticket-configitem-link.';
     $Self->{Translation}->{'Fields of the configuration item index, used for the fulltext search. Fields are also stored, but are not mandatory for the overall functionality. Inclusion of attachments can be disabled by setting the entry to 0 or deleting it.'} =
@@ -420,7 +420,7 @@ sub Data {
     $Self->{Translation}->{'Fields stored in the configuration item index which are used for other things besides fulltext searches. For the complete functionality all fields are mandatory.'} =
         'Campi memorizzati nell\'indice degli elementi di configurazione, utilizzati per altri scopi oltre alla ricerca full-text. Per la funzionalità completa, tutti i campi sono obbligatori.';
     $Self->{Translation}->{'For every web service (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker configuration.'} =
-        '';
+        'Per ogni webservice (chiave) è possibile definire un array di classi (valore) su cui limitare l\'importazione. Per tutte le classi scelte, o per tutte le classi esistenti, gli attributi identificativi dovranno essere scelti nella configurazione dell\'invocatore.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
         'Registrazione del modulo GenericInterface per il livello di invocazione ConfigItemFetch.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
@@ -478,7 +478,7 @@ sub Data {
     $Self->{Translation}->{'Parameters for the version trigger for config item classes in the preferences view of the agent interface.'} =
         'Parametri per l\'attivazione della versione per le classi di elementi di configurazione nella vista preferenze dell\'interfaccia dell\'agente.';
     $Self->{Translation}->{'Performs the configured action for each event (as an invoker) for each configured web service.'} =
-        '';
+        'Esegue l\'azione configurata per ogni evento (come Invoker) per ogni Webservice configurato.';
     $Self->{Translation}->{'Permission Group'} = 'Gruppo di autorizzazioni';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item attachment action in the agent interface.'} =
         'Autorizzazioni necessarie per utilizzare l\'azione di collegamento dell\'elemento di configurazione ITSM nell\'interfaccia dell\'agente.';
@@ -667,7 +667,7 @@ sub Data {
     $Self->{Translation}->{'IP Protocol'} = 'Protocollo IP';
     $Self->{Translation}->{'Identity and Access Management (IAM)'} = 'Gestione dell\'identità e dell\'accesso (IAM)';
     $Self->{Translation}->{'Inventory Number'} = 'Numero di inventario';
-    $Self->{Translation}->{'Investment costs'} = '';
+    $Self->{Translation}->{'Investment costs'} = 'Costi di investimento';
     $Self->{Translation}->{'Invoice Number'} = 'Numero di fattura';
     $Self->{Translation}->{'Keyboard'} = 'Tastiera';
     $Self->{Translation}->{'LCD Monitor (Liquid Crystal Display)'} = 'Monitor LCD (display a cristalli liquidi)';

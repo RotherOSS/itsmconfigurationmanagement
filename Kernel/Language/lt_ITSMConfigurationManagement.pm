@@ -351,7 +351,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top.'} =
         'Nustato numatytoji konfigūracijos elementų tvarka kliento sąsajos konfigūracijos elementų paieškos rezultatuose. Aukštyn: seniausias viršuje. Žemyn: naujausias viršuje.';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of this operation. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'Nustato numatytoji konfigūracijos elementų tvarka šios operacijos konfigūracijos elementų paieškos rezultate. Į viršų: seniausia viršuje. Žemyn: naujausias viršuje.';
     $Self->{Translation}->{'Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         'Nustato pagal nutylėjimą rodomus KI stulpelius konfigūracijos elementų apžvalgoje, priklausomai nuo KI klasės. Kiekvieną įrašą turi sudaryti klasės pavadinimas ir atitinkamos klasės galimų laukų masyvas. Dinaminių laukų įrašai turi atitikti schemą DynamicField_FieldName.';
     $Self->{Translation}->{'Defines the default relations depth to be shown.'} = 'Apibrėžiamas numatytasis rodomų santykių gylis.';
@@ -412,7 +412,7 @@ sub Data {
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
         'Įjungiama konfigūracijos elemento masinio veiksmo funkcija tik išvardytoms grupėms.';
     $Self->{Translation}->{'Enables/disables the functionality to check ITSM configuration items for unique names. Before enabling this option you should check your system for already existing configuration items with duplicate names. You can do this with the console command Admin::ITSM::ConfigItem::ListDuplicates.'} =
-        '';
+        'Įjungiama / išjungiama funkcija, skirta patikrinti ITSM konfigūracijos elementų unikalius pavadinimus. Prieš įjungdami šią parinktį, turėtumėte patikrinti, ar jūsų sistemoje nėra jau esamų konfigūracijos elementų su pasikartojančiais pavadinimais. Tai galite padaryti naudodami konsolės komandą Admin::ITSM::ConfigItem::ListDuplicates.';
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
         'Įvykių modulis, skirtas nustatyti "ticket-configitem-link" konfigūracijos elemento būseną.';
     $Self->{Translation}->{'Fields of the configuration item index, used for the fulltext search. Fields are also stored, but are not mandatory for the overall functionality. Inclusion of attachments can be disabled by setting the entry to 0 or deleting it.'} =
@@ -420,7 +420,7 @@ sub Data {
     $Self->{Translation}->{'Fields stored in the configuration item index which are used for other things besides fulltext searches. For the complete functionality all fields are mandatory.'} =
         'Konfigūracijos elemento indekse saugomi laukai, kurie naudojami ne tik viso teksto paieškai, bet ir kitiems dalykams. Kad funkcijos būtų pilnai išnaudotos, visi laukai yra privalomi.';
     $Self->{Translation}->{'For every web service (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker configuration.'} =
-        '';
+        'Kiekvienai žiniatinklio paslaugai (raktas) galima apibrėžti klasių masyvą (reikšmė), kurio importas yra ribojamas. Visoms pasirinktoms klasėms arba visoms esamoms klasėms identifikuojantys atributai turės būti pasirinkti invokerio konfigūracijoje.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
         '"GenericInterface" modulio registracija "ConfigItemFetch" iškvietėjo sluoksniui.';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
@@ -478,7 +478,7 @@ sub Data {
     $Self->{Translation}->{'Parameters for the version trigger for config item classes in the preferences view of the agent interface.'} =
         'Agento sąsajos nuostatų rodinyje esančių konfigūracijos elementų klasių versijos trigerio parametrai.';
     $Self->{Translation}->{'Performs the configured action for each event (as an invoker) for each configured web service.'} =
-        '';
+        'Atlieka sukonfigūruotą veiksmą kiekvienam įvykiui (kaip Invoker) kiekvienai sukonfigūruotai žiniatinklio paslaugai.';
     $Self->{Translation}->{'Permission Group'} = 'Leidimų grupė';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item attachment action in the agent interface.'} =
         'Reikalingi leidimai naudoti ITSM konfigūracijos elemento prijungimo veiksmą agento sąsajoje.';
@@ -667,7 +667,7 @@ sub Data {
     $Self->{Translation}->{'IP Protocol'} = 'IP protokolas';
     $Self->{Translation}->{'Identity and Access Management (IAM)'} = 'Tapatybės ir prieigos valdymas (IAM)';
     $Self->{Translation}->{'Inventory Number'} = 'Inventorinis numeris';
-    $Self->{Translation}->{'Investment costs'} = '';
+    $Self->{Translation}->{'Investment costs'} = 'Inverstravimo išlaidos';
     $Self->{Translation}->{'Invoice Number'} = 'Sąskaitos faktūros numeris';
     $Self->{Translation}->{'Keyboard'} = 'Klaviatūra';
     $Self->{Translation}->{'LCD Monitor (Liquid Crystal Display)'} = 'LCD monitorius (skystųjų kristalų ekranas)';
