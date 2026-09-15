@@ -794,7 +794,7 @@ sub Data {
     $Self->{Translation}->{'Storage'} = 'Storage';
     $Self->{Translation}->{'Storage Partition'} = 'Speicher-Partition';
     $Self->{Translation}->{'Subscription-based licenses'} = 'Abonnement-basierte Lizenzen';
-    $Self->{Translation}->{'Subsidiary'} = 'Tochtergesellschaft';
+    $Self->{Translation}->{'Subsidiary'} = 'Niederlassung';
     $Self->{Translation}->{'Summary'} = 'Zusammenfassung';
     $Self->{Translation}->{'Thin Client'} = 'Thin Client';
     $Self->{Translation}->{'Threads'} = 'Threads';
