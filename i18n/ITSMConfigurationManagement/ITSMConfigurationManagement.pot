@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2024-05-25 04:47+0000\n"
+"POT-Creation-Date: 2026-09-15 14:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -967,7 +967,7 @@ msgid "Object backend module registration for the import/export module."
 msgstr ""
 
 #. SysConfig
-msgid "Objects to search for, how many entries and which attributs to show. ConfigItem attributes have to explicitly be stored via Elasticsearch."
+msgid "Objects to search for, how many entries and which attributes to show. Configuration item attributes have to explicitly be stored via Elasticsearch."
 msgstr ""
 
 #. SysConfig
@@ -995,7 +995,7 @@ msgid "Parameters for the pages (in which the configuration items are shown)."
 msgstr ""
 
 #. SysConfig
-msgid "Performs the configured action for each event (as an Invoker) for each configured Webservice."
+msgid "Performs the configured action for each event (as an invoker) for each configured web service."
 msgstr ""
 
 #. SysConfig

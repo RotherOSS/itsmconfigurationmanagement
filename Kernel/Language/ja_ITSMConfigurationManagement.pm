@@ -358,7 +358,7 @@ CIクラスのエントリがない場合は、ITSMConfigItem :: Frontend :: Age
     $Self->{Translation}->{'Module to generate ITSM config item statistics.'} = '構成タイテムのレポートを生成するためのモジュール';
     $Self->{Translation}->{'Object backend module registration for the import/export module.'} =
         'インポート/エクスポートモジュールのオブジェクトバックエンドモジュール登録';
-    $Self->{Translation}->{'Objects to search for, how many entries and which attributs to show. ConfigItem attributes have to explicitly be stored via Elasticsearch.'} =
+    $Self->{Translation}->{'Objects to search for, how many entries and which attributes to show. Configuration item attributes have to explicitly be stored via Elasticsearch.'} =
         '';
     $Self->{Translation}->{'Overview.'} = '概要';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin.'} =
@@ -371,7 +371,7 @@ CIクラスのエントリがない場合は、ITSMConfigItem :: Frontend :: Age
         'ジェネラルカタログ属性のパーミッショングループ　の設定値';
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         'ページのパラメータ（構成アイテムが表示されます）';
-    $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =
+    $Self->{Translation}->{'Performs the configured action for each event (as an invoker) for each configured web service.'} =
         '';
     $Self->{Translation}->{'Permission Group'} = '権限グループ';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =

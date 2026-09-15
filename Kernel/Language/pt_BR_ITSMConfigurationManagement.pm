@@ -352,7 +352,7 @@ sub Data {
     $Self->{Translation}->{'Module to generate ITSM config item statistics.'} = 'Módulo para gerar estatísticas do item de configuração ITSM.';
     $Self->{Translation}->{'Object backend module registration for the import/export module.'} =
         'Modulo de registro de objeto para o módulo de importação/exportação.';
-    $Self->{Translation}->{'Objects to search for, how many entries and which attributs to show. ConfigItem attributes have to explicitly be stored via Elasticsearch.'} =
+    $Self->{Translation}->{'Objects to search for, how many entries and which attributes to show. Configuration item attributes have to explicitly be stored via Elasticsearch.'} =
         '';
     $Self->{Translation}->{'Overview.'} = 'Visão Geral.';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin.'} =
@@ -365,7 +365,7 @@ sub Data {
         'Parâmetros do grupos de permissão de exemplo dos atributos do catálogo geral.';
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         'Parâmetros das páginas (nas quais os itens de configuração são mostrados).';
-    $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =
+    $Self->{Translation}->{'Performs the configured action for each event (as an invoker) for each configured web service.'} =
         '';
     $Self->{Translation}->{'Permission Group'} = '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =

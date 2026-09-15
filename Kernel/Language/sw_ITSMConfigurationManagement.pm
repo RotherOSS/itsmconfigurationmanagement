@@ -354,7 +354,7 @@ ITSMConfigItem::Frontend::AgentITSMConfigItem###ShowColumns';
     $Self->{Translation}->{'Module to generate ITSM config item statistics.'} = 'Moduli ya kutengeneza takwimu za kipengele cha usanidi cha ITSM>';
     $Self->{Translation}->{'Object backend module registration for the import/export module.'} =
         'Usajili wa moduli ya mazingira ya nyuma ya kipengee kwa moduli ya Kuingiza/kuhamisha.';
-    $Self->{Translation}->{'Objects to search for, how many entries and which attributs to show. ConfigItem attributes have to explicitly be stored via Elasticsearch.'} =
+    $Self->{Translation}->{'Objects to search for, how many entries and which attributes to show. Configuration item attributes have to explicitly be stored via Elasticsearch.'} =
         '';
     $Self->{Translation}->{'Overview.'} = '';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview of the agent interface . "Limit" is the number of entries shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin.'} =
@@ -367,7 +367,7 @@ ITSMConfigItem::Frontend::AgentITSMConfigItem###ShowColumns';
         'Vigezo kwa mfano ruhusa za vikundi kwa sifa za katalogi za ujumla.';
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         'Vigezo kwa ajili ya ukurasa (ambavyo vipengele vya usanidi vimeonyeshwa).';
-    $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =
+    $Self->{Translation}->{'Performs the configured action for each event (as an invoker) for each configured web service.'} =
         '';
     $Self->{Translation}->{'Permission Group'} = '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
