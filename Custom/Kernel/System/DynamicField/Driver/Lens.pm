@@ -3,7 +3,7 @@
 # --
 # Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
-# $origin: otobo - 6e72833f979230189fd04a7f5bf045b381032ee8 - Kernel/System/DynamicField/Driver/Lens.pm
+# $origin: otobo - 73c21522a8f71ff94e0d3f3eff3800eb4b57868b - Kernel/System/DynamicField/Driver/Lens.pm
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -36,9 +36,7 @@ use List::Util qw(any);
 use Kernel::System::VariableCheck qw(:all);
 
 our @ObjectDependencies = (
-    'Kernel::Config',
     'Kernel::Output::HTML::Layout',
-    'Kernel::System::DB',
     'Kernel::System::DynamicField',
     'Kernel::System::DynamicField::Backend',
     'Kernel::System::DynamicFieldValue',
@@ -46,7 +44,9 @@ our @ObjectDependencies = (
     'Kernel::System::Web::FormCache',
     'Kernel::System::Web::Request',
 # Rother OSS / ITSMConfigurationManagement
+    'Kernel::System::Cache',
     'Kernel::System::ITSMConfigItem',
+    'Kernel::System::Ticket',
 # EO ITSMConfigurationManagement
 );
 
@@ -231,7 +231,13 @@ sub ValueSet {
         ReferencedObjectID     => $ReferencedObjectID,
     );
 
+    # delete cache of referenced object
+    $Self->_DeleteReferencedObjectCache(
+        ObjectType => $AttributeDFConfig->{ObjectType},
+        ObjectID   => $ReferencedObjectID,
+    );
 # EO ITSMConfigurationManagement
+
     return $Kernel::OM->Get('Kernel::System::DynamicField::Backend')->ValueSet(
         %Param,
         ConfigItemHandled  => 0,
@@ -465,40 +471,14 @@ sub StatsSearchFieldParameterBuild {
 sub ReadableValueRender {
     my ( $Self, %Param ) = @_;
 
-    my $Value = '';
+    my $AttributeDFConfig = $Self->_GetAttributeDFConfig(
+        LensDynamicFieldConfig => $Param{DynamicFieldConfig},
+    );
 
-    # check value
-    my @Values;
-    if ( ref $Param{Value} eq 'ARRAY' ) {
-        @Values = @{ $Param{Value} };
-    }
-    else {
-        @Values = ( $Param{Value} );
-    }
-
-    # prevent joining undefined values
-    @Values = map { $_ // '' } @Values;
-
-    # set new line separator
-    my $ItemSeparator = ', ';
-
-    # Output transformations
-    $Value = join( $ItemSeparator, @Values );
-    my $Title = $Value;
-
-    # cut strings if needed
-    if ( $Param{ValueMaxChars} && length($Value) > $Param{ValueMaxChars} ) {
-        $Value = substr( $Value, 0, $Param{ValueMaxChars} ) . '...';
-    }
-    if ( $Param{TitleMaxChars} && length($Title) > $Param{TitleMaxChars} ) {
-        $Title = substr( $Title, 0, $Param{TitleMaxChars} ) . '...';
-    }
-
-    # return a data structure
-    return {
-        Value => $Value,
-        Title => $Title,
-    };
+    return $Kernel::OM->Get('Kernel::System::DynamicField::Backend')->ReadableValueRender(
+        %Param,
+        DynamicFieldConfig => $AttributeDFConfig,
+    );
 }
 
 sub TemplateValueTypeGet {
@@ -1126,5 +1106,36 @@ sub _GetIncludedDynamicFields {
 
     return \%DynamicField;
 }
+
+# Rother OSS / ITSMConfigurationManagement
+sub _DeleteReferencedObjectCache {
+    my ($Self, %Param) = @_;
+
+    return unless $Param{ObjectID};
+
+    if ( $Param{ObjectType} eq 'Ticket' ) {
+        $Kernel::OM->Get('Kernel::System::Ticket')->_TicketCacheClear(
+            TicketID => $Param{ObjectID},
+        );
+    }
+    elsif ( $Param{ObjectType} eq 'ITSMConfigItem' ) {
+        my $CacheObject = $Kernel::OM->Get('Kernel::System::Cache');
+
+        # delete the cache
+        for my $DFData ( 0, 1 ) {
+            $CacheObject->Delete(
+                Type => 'ITSMConfigurationManagement',
+                Key  => join(
+                    '::', 'ConfigItemGet',
+                    ConfigItemID => $Param{ObjectID},
+                    DFData       => $DFData
+                ),
+            );
+        }
+    }
+
+    return 1;
+}
+# EO ITSMConfigurationManagement
 
 1;
