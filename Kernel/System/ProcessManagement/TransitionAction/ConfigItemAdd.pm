@@ -78,6 +78,10 @@ sub Params {
 
     my @Params = (
         {
+            Key   => 'Class',
+            Value => 'A class (required)',
+        },
+        {
             Key      => 'Number',
             Value    => 'The number (required if no number module is configured)',
             Optional => 1,
@@ -91,10 +95,6 @@ sub Params {
             Key      => 'VersionString',
             Value    => 'The version string (required if no version string module is configured)',
             Optional => 1,
-        },
-        {
-            Key   => 'Class',
-            Value => 'A class (required)',
         },
         {
             Key   => 'DeplState',
