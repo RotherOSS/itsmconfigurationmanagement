@@ -33,7 +33,7 @@
         <Value>
             <Hash>
                 <Item Key="Module">Kernel::System::ITSMConfigItem::Event::LinkedTicketUpdate</Item>
-                <Item Key="Event">ConfigItemUpdate</Item>
+                <Item Key="Event">(ConfigItemUpdate|ConfigItemDynamicFieldUpdate)</Item>
                 <Item Key="Transaction">1</Item>
                 <Item Key="Classes">
                     <Array></Array>
