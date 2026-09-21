@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -224,6 +224,9 @@ sub Run {
 
     # get permissions
     my $Permission = 'rw';
+    if ( $Config->{ViewAllPossibleConfigItems} ) {
+        $Permission = 'ro';
+    }
 
     # sort on default by using both (Priority, Age) else use only one sort argument
     my %Sort;
@@ -276,7 +279,7 @@ sub Run {
         }
     }
 
-    # order the category filters and - if not yet set - select the categpry shown
+    # order the category filters and - if not yet set - select the category shown
     my %CategoryFilters;
     {
         my @SortedCategories = sort { $TranslatedCategoryList{$a} cmp $TranslatedCategoryList{$b} } keys %Category2ClassID;
