@@ -723,6 +723,15 @@ sub GetFieldState {
             my $ReferenceDFConfig = $Self->_GetReferenceDFConfig(
                 LensDynamicFieldConfig => $DynamicFieldConfig,
             );
+
+            # this can also be nested in a lens - we have to check its attribute DF then
+            #   if a lens is used as reference df, we have to check if its attribute is a CI
+            until ( $ReferenceDFConfig->{FieldType} ne 'Lens' ) {
+                $ReferenceDFConfig = $Self->_GetAttributeDFConfig(
+                    LensDynamicFieldConfig => $ReferenceDFConfig,
+                );
+            }
+
             if ( $ReferenceDFConfig->{FieldType} eq 'ConfigItem' ) {
 
                 # BackendObject has all the ObjectType Handlers loaded as properties
@@ -938,7 +947,7 @@ sub _GetAttributeDFConfig {
             else {
                 $Kernel::OM->Get('Kernel::System::Log')->Log(
                     'Priority' => 'error',
-                    'Message'  => "No ConfigItem with ID '$Param{ReferencedObjectID}'.",
+                    'Message'  => "No ConfigItem with VersionID '$Param{ReferencedObjectID}'.",
                 );
             }
         }
