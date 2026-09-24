@@ -27,6 +27,23 @@
             </Hash>
         </Value>
     </Setting>
+    <Setting Name="ITSMConfigItem::EventModulePost###400-LinkedTicketUpdate" Required="0" Valid="0">
+        <Description Translatable="1">Update linked tickets, for example for processes checking lenses. With "Classes" and "LinkTypes", the execution can be restricted to certain config item classes and link types. Please put in the exact class names into "Classes" as well as the exact link type names in "LinkTypes", respectively. Currently available LinkTypes are: Normal, ParentChild, LocationOf, AlternativeTo, ConnectedTo, DependsOn, Includes, RelevantTo. Please note that the actual usable link types may be further restricted by the settings grouped under LinkObject::PossibleLink.</Description>
+        <Navigation>Core::Event::ITSMConfigItem</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::System::ITSMConfigItem::Event::LinkedTicketUpdate</Item>
+                <Item Key="Event">(ConfigItemUpdate|ConfigItemDynamicFieldUpdate)</Item>
+                <Item Key="Transaction">1</Item>
+                <Item Key="Classes">
+                    <Array></Array>
+                </Item>
+                <Item Key="LinkTypes">
+                    <Array></Array>
+                </Item>
+            </Hash>
+        </Value>
+    </Setting>
     <Setting Name="ITSMConfigItem::LinkStatus::TicketTypes" Required="0" Valid="0">
         <Description Translatable="1">Defines which type of ticket can affect the status of a linked CI.</Description>
         <Navigation>Core::LinkStatus</Navigation>
