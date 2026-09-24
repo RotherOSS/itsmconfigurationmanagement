@@ -2351,7 +2351,7 @@
         <Value>
             <Hash>
                 <Item Key="Module">Kernel::System::DynamicField::Event::ITSMConfigItemDefinitionSync</Item>
-                <Item Key="Event">DynamicFieldUpdate</Item>
+                <Item Key="Event">DynamicFieldAdd|DynamicFieldUpdate|DynamicFieldDelete</Item>
                 <Item Key="Transaction">1</Item>
             </Hash>
         </Value>
