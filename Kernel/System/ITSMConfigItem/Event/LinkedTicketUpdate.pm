@@ -95,9 +95,7 @@ sub Run {
         Object2 => 'Ticket',
         Key     => $Param{Data}{ConfigItemID},
         State   => 'Valid',
-
-        # TODO check if this actually is a good idea
-        UserID => 1,
+        UserID  => 1,
     );
 
     if ( !IsHashRefWithData($LinkList) ) {
