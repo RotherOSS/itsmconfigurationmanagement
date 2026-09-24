@@ -136,6 +136,56 @@ sub _DynamicFieldDelete {
         );
     }
 
+# Rother OSS / ITSMConfigurationManagement
+    # prevent dynamic field deletion if the field is used in a config item definition
+    {
+        my $ConfigItemObject = $Kernel::OM->Get('Kernel::System::ITSMConfigItem');
+
+        my $ClassList = $Kernel::OM->Get('Kernel::System::GeneralCatalog')->ItemList(
+            Class => 'ITSM::ConfigItem::Class',
+        );
+
+        # standard case: the field is directly integrated
+        my %LocalizedDFConfig = $DynamicFieldConfig->%*;
+        my $LocalizedDFConfigRef = { %LocalizedDFConfig };
+
+        # if the dynamic field is part of a set, any change to it will affect the existing set
+        # and thus the CI
+        if ( $LocalizedDFConfigRef->{Config}{PartOfSet} ) {
+            $LocalizedDFConfigRef = $Kernel::OM->Get('Kernel::System::DynamicField')->DynamicFieldGet(
+                ID => $LocalizedDFConfigRef->{Config}{PartOfSet},
+            );
+        }
+
+        # loop over all classes and check whether they include the changed dynamic field
+        my @AffectedCIClasses;
+        for my $ClassID ( keys $ClassList->%* ) {
+            my $DefinitionRef = $ConfigItemObject->DefinitionGet(
+                ClassID => $ClassID,
+            );
+
+            # use name of field itself
+            if ( $DefinitionRef->{DynamicFieldRef}{ $DynamicFieldConfig->{Name} } ) {
+                push @AffectedCIClasses, $ClassList->{$ClassID};
+            }
+
+            # set-inner fields are not stored in definition dynamic field ref
+            elsif ( $DefinitionRef->{DynamicFieldRef}{ $LocalizedDFConfigRef->{Name} } ) {
+                push @AffectedCIClasses, $ClassList->{$ClassID};
+            }
+        }
+
+        # send error message to frontend to be displayed in modal dialog
+        if ( @AffectedCIClasses ) {
+            my $JoinedClasses = join('<br/>', @AffectedCIClasses);
+
+            return $Self->_TriggerErrorDialog(
+                ErrorMessage => $LayoutObject->{LanguageObject}->Translate("The dynamic field '%s' can not be deleted because the field (or a Set field it is part of) is in use in the definition of the following configuration item classes:</br></br>%s</br></br>Please remove it from all configuration item class and role definitions before deleting it to avoid errors.", $LocalizedDFConfigRef->{Name}, $JoinedClasses),
+            );
+        }
+    }
+# EO ITSMConfigurationManagement
+
     my $ValuesDeleteSuccess = $Kernel::OM->Get('Kernel::System::DynamicField::Backend')->AllValuesDelete(
         DynamicFieldConfig => $DynamicFieldConfig,
         UserID             => $Self->{UserID},
