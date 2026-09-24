@@ -2319,6 +2319,13 @@
                 <Item Key="DisplayName" Translatable="1">ConfigItem</Item>
                 <Item Key="Module">Kernel::System::DynamicField::Driver::ConfigItem</Item>
                 <Item Key="ConfigDialog">AdminDynamicFieldReference</Item>
+                <Item Key="ObjectTypes">
+                    <Array>
+                        <Item>Article</Item>
+                        <Item>ITSMConfigItem</Item>
+                        <Item>Ticket</Item>
+                    </Array>
+                </Item>
             </Hash>
         </Value>
     </Setting>
@@ -2333,6 +2340,13 @@
                 <Item Key="DisplayName" Translatable="1">ConfigItem Version</Item>
                 <Item Key="Module">Kernel::System::DynamicField::Driver::ConfigItemVersion</Item>
                 <Item Key="ConfigDialog">AdminDynamicFieldReference</Item>
+                <Item Key="ObjectTypes">
+                    <Array>
+                        <Item>Article</Item>
+                        <Item>ITSMConfigItem</Item>
+                        <Item>Ticket</Item>
+                    </Array>
+                </Item>
             </Hash>
         </Value>
     </Setting>
