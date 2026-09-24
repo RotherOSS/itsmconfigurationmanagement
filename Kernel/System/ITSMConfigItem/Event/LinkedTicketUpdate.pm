@@ -123,7 +123,7 @@ sub Run {
 
                 # trigger event
                 $TicketObject->EventHandler(
-                    Event => 'TicketLinkedCIUpdate',
+                    Event => 'TicketLinkedObjectUpdate',
                     Data  => {
                         TicketID => $LinkedTicketID,
                     },
