@@ -121,7 +121,7 @@ sub Run {
 
                 # trigger event
                 $TicketObject->EventHandler(
-                    Event => 'TicketLinkedObjectUpdate',
+                    Event => 'LinkedObjectEventTrigger',
                     Data  => {
                         TicketID => $LinkedTicketID,
                     },
