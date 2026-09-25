@@ -44,9 +44,7 @@ our @ObjectDependencies = (
     'Kernel::System::Web::FormCache',
     'Kernel::System::Web::Request',
 # Rother OSS / ITSMConfigurationManagement
-    'Kernel::System::Cache',
     'Kernel::System::ITSMConfigItem',
-    'Kernel::System::Ticket',
 # EO ITSMConfigurationManagement
 );
 
@@ -231,13 +229,7 @@ sub ValueSet {
         ReferencedObjectID     => $ReferencedObjectID,
     );
 
-    # delete cache of referenced object
-    $Self->_DeleteReferencedObjectCache(
-        ObjectType => $AttributeDFConfig->{ObjectType},
-        ObjectID   => $ReferencedObjectID,
-    );
 # EO ITSMConfigurationManagement
-
     return $Kernel::OM->Get('Kernel::System::DynamicField::Backend')->ValueSet(
         %Param,
         ConfigItemHandled  => 0,
@@ -1108,36 +1100,5 @@ sub _GetIncludedDynamicFields {
 
     return \%DynamicField;
 }
-
-# Rother OSS / ITSMConfigurationManagement
-sub _DeleteReferencedObjectCache {
-    my ($Self, %Param) = @_;
-
-    return unless $Param{ObjectID};
-
-    if ( $Param{ObjectType} eq 'Ticket' ) {
-        $Kernel::OM->Get('Kernel::System::Ticket')->_TicketCacheClear(
-            TicketID => $Param{ObjectID},
-        );
-    }
-    elsif ( $Param{ObjectType} eq 'ITSMConfigItem' ) {
-        my $CacheObject = $Kernel::OM->Get('Kernel::System::Cache');
-
-        # delete the cache
-        for my $DFData ( 0, 1 ) {
-            $CacheObject->Delete(
-                Type => 'ITSMConfigurationManagement',
-                Key  => join(
-                    '::', 'ConfigItemGet',
-                    ConfigItemID => $Param{ObjectID},
-                    DFData       => $DFData
-                ),
-            );
-        }
-    }
-
-    return 1;
-}
-# EO ITSMConfigurationManagement
 
 1;
