@@ -187,7 +187,7 @@ sub ConfigItemSearch {
     KEY:
     for my $Key (
         qw(
-            ConfigItemID ClassIDs DeplStateIDs CurDeplStateIDs InciStateIDs CurInciStateIDs CreateBy ChangeBy
+            ClassIDs DeplStateIDs CurDeplStateIDs InciStateIDs CurInciStateIDs CreateBy ChangeBy
         )
         )
     {
@@ -521,7 +521,7 @@ sub ConfigItemSearch {
             $Param{$Key} = [ $Param{$Key} ];
         }
 
-        # proccess array ref
+        # process array ref
         my $Used = 0;
 
         VALUE:
