@@ -187,7 +187,7 @@ sub ConfigItemSearch {
     KEY:
     for my $Key (
         qw(
-            ConfigItemID ClassIDs DeplStateIDs CurDeplStateIDs InciStateIDs CurInciStateIDs CreateBy ChangeBy
+            ClassIDs DeplStateIDs CurDeplStateIDs InciStateIDs CurInciStateIDs CreateBy ChangeBy
         )
         )
     {
