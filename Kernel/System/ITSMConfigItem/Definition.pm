@@ -1765,22 +1765,47 @@ sub ClassImport {
     }
 
     # split dynamic fields in three separate groups
-    my @NormalFieldNames = grep { $AllFields{$_}{FieldType} ne 'Lens' && $AllFields{$_}{FieldType} ne 'Set' } keys %AllFields;
-    my @LensFieldNames   = grep { $AllFields{$_}{FieldType} eq 'Lens' } keys %AllFields;
-    my @SetFieldNames    = grep { $AllFields{$_}{FieldType} eq 'Set' } keys %AllFields;
+    my @NormalFields     = grep { $_->{FieldType} ne 'Lens' && $_->{FieldType} ne 'Set' } values %AllFields;
+    my @DependencyFields = grep { $_->{FieldType} eq 'Lens' || $_->{FieldType} eq 'Set' } values %AllFields;
+    my $DynamicFieldList = $DynamicFieldObject->DynamicFieldListGet();
 
-    # sort lens fields in case a lens has another lens as attribute dynamic field
-    my @LensFieldNamesSorted = sort {
-        ( $AllFields{$b}{Name} eq $AllFields{$a}{Config}{AttributeDF} ) <=> ( $AllFields{$a}{Name} eq $AllFields{$b}{Config}{AttributeDF} )
-    } @LensFieldNames;
+    my @SortedDependencyFields;
+    my @LeftoverFields    = @DependencyFields;
+    my %AvailableFields   = map { $_->{Name} => 1 } ( $DynamicFieldList->@*, @NormalFields );
+    my $PreviousArraySize = -1;
+    while ( @LeftoverFields && ( $PreviousArraySize < scalar @SortedDependencyFields ) ) {
+        my @CurrentLeftoverFields = ();
+        $PreviousArraySize = scalar @SortedDependencyFields;
+        DYNAMICFIELDCONFIG:
+        for my $DynamicFieldConfig (@LeftoverFields) {
+            my $DependenciesFulfilled = $Self->_CheckDFDependencies(
+                DynamicFieldConfig => $DynamicFieldConfig,
+                AvailableDFs       => \%AvailableFields,
+            );
+            if ($DependenciesFulfilled) {
+                push @SortedDependencyFields, $DynamicFieldConfig;
+                $AvailableFields{ $DynamicFieldConfig->{Name} } = 1;
+            }
+            else {
+                push @CurrentLeftoverFields, $DynamicFieldConfig;
+            }
+        }
+        @LeftoverFields = @CurrentLeftoverFields;
+    }
+    if (@LeftoverFields) {
+        return {
+            Success      => 0,
+            ErrorMessage =>
+                'The dependencies for the following dynamic fields could not be resolved: %s. Please make sure all field dependencies are present in the import or on the system and that they do not contain circular references to each other.',
+            PlaceholderData => [ join( ', ', @LeftoverFields ) ],
+        };
+    }
 
     # 3. create dynamic fields
     my $Order = scalar( keys %DynamicFieldLookup );
     FIELD:
-    for my $FieldName ( @NormalFieldNames, @LensFieldNamesSorted, @SetFieldNames ) {
-        next FIELD if $DynamicFieldLookup{$FieldName};
-
-        my $FieldConfig = $AllFields{$FieldName};
+    for my $FieldConfig ( @NormalFields, @SortedDependencyFields ) {
+        next FIELD if $DynamicFieldLookup{ $FieldConfig->{Name} };
 
         my %SetConfig;
         if ( $FieldConfig->{FieldType} eq 'Set' ) {
@@ -2557,6 +2582,41 @@ sub _DefinitionCreateAfterRoleCreate {
             UserID     => 1,
             Force      => 1,
         );
+    }
+
+    return 1;
+}
+
+sub _CheckDFDependencies {
+    my ( $Self, %Param ) = @_;
+
+    if ( $Param{DynamicFieldConfig}{FieldType} eq 'Set' ) {
+        for my $IncludeItem ( $Param{DynamicFieldConfig}{Config}{Include}->@* ) {
+            if ( $IncludeItem->{DF} && !$Param{AvailableDFs}{ $IncludeItem->{DF} } ) {
+                return 0;
+            }
+            elsif ( $IncludeItem->{Grid} ) {
+                for my $Row ( $IncludeItem->{Grid}{Rows}->@* ) {
+                    for my $RowItem ( $Row->@* ) {
+                        if ( $RowItem->{DF} && !$Param{AvailableDFs}{ $RowItem->{DF} } ) {
+                            return 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    elsif ( $Param{DynamicFieldConfig}{FieldType} eq 'Lens' ) {
+        if (
+            !$Param{AvailableDFs}{ $Param{DynamicFieldConfig}{Config}{AttributeDF} }
+            || !$Param{AvailableDFs}{ $Param{DynamicFieldConfig}{Config}{ReferenceDF} }
+            )
+        {
+            return 0;
+        }
+    }
+    else {
+        return 1;
     }
 
     return 1;
