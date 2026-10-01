@@ -93,7 +93,7 @@ ITSM.Admin.ITSMConfigItem = (function (TargetNS) {
                                         if (!Response || !Response.Success) {
                                             Core.UI.Dialog.ShowAlert(
                                                 Core.Language.Translate('An error occurred during class import.'),
-                                                Core.Language.Translate( Response.ErrorMessage || 'Class import failed.' ),
+                                                Response.ErrorMessage || Core.Language.Translate('Class import failed.'),
                                             );
                                             return false;
                                         }
