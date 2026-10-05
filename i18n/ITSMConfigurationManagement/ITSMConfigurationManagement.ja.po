@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-08-31 12:58+0000\n"
-"PO-Revision-Date: 2026-10-05 04:58+0000\n"
+"PO-Revision-Date: 2026-10-05 06:41+0000\n"
 "Last-Translator: Kozo Sakurai <sakurai@io-architect.com>\n"
 "Language-Team: Japanese <http://translate.otobo.org/projects/otobo-11-0/"
 "addons/itsm-configurationmanagement/ja/>\n"
@@ -2136,6 +2136,7 @@ msgid "Consulting Agreement"
 msgstr "コンサルティング契約"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
+#, fuzzy
 msgid "Contact"
 msgstr "連絡先"
 
