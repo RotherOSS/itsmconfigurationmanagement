@@ -5,20 +5,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-13 18:18+0100\n"
-"PO-Revision-Date: 2026-03-16 23:00+0000\n"
-"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
-"Language-Team: Japanese <http://translate.otobo.org/projects/manual-itsmconfigurationmanagement/master/ja/>\n"
-"Language: ja\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.16\n"
-"Generated-By: Babel 2.4.0\n"
+msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:18+0100\nPO-Revision-Date: 2026-10-05 03:41+0000\nLast-Translator: Kozo Sakurai <sakurai@io-architect.com>\nLanguage-Team: Japanese <http://translate.otobo.org/projects/otobo-11-1/addons/manuals/itsmconfigurationmanagement-documentation/ja/>\nLanguage: ja\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\nX-Generator: Weblate 2026.9\nGenerated-By: Babel 2.4.0\n"
 
 #: ../../content/about.rst:13
 #, fuzzy
@@ -769,8 +756,9 @@ msgid "ITSMConfigItem::EventModulePost###4000-ScriptDynamicFields"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:87
+#, fuzzy
 msgid "Evaluate all script fields."
-msgstr ""
+msgstr "すべてのスクリプトフィールドを評価します。"
 
 #: ../../content/configuration/system_configuration_settings.rst:90
 msgid "DynamicField::EventModulePost###200-DynamicFieldSync"
@@ -1109,7 +1097,7 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:274
 #, fuzzy
 msgid "Object backend module registration for the import/export module."
-msgstr "import/exportモジュールのバックエンドモジュールを登録。"
+msgstr "インポート／エクスポート・モジュール用のオブジェクト・バックエンド・モジュールの登録。"
 
 #: ../../content/configuration/system_configuration_settings.rst:277
 msgid "Core::LinkObject"
@@ -1236,8 +1224,9 @@ msgid "Events###ITSMConfigItem"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:341
+#, fuzzy
 msgid "List of all Package events to be displayed in the GUI."
-msgstr ""
+msgstr "GUI に表示するすべての Package イベントの一覧。"
 
 #: ../../content/configuration/system_configuration_settings.rst:344
 msgid "Frontend::Admin::ModuleRegistration"
@@ -1320,8 +1309,9 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:587
 #: ../../content/configuration/system_configuration_settings.rst:591
 #: ../../content/configuration/system_configuration_settings.rst:873
+#, fuzzy
 msgid "Main menu item registration."
-msgstr ""
+msgstr "メインメニュー項目の登録。"
 
 #: ../../content/configuration/system_configuration_settings.rst:380
 msgid "Frontend::Admin::View::ITSMConfigItemDefinition"
@@ -1686,8 +1676,9 @@ msgid "Frontend::Search::JavaScript###ConfigItem"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:602
+#, fuzzy
 msgid "JavaScript function for the search frontend."
-msgstr ""
+msgstr "検索フロントエンド用の JavaScript 関数。"
 
 #: ../../content/configuration/system_configuration_settings.rst:605
 msgid "Frontend::Agent::View::AgentITSMConfigItemBulk"
@@ -1965,7 +1956,7 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:755
 #, fuzzy
 msgid "Defines the width for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
-msgstr "この画面のリッチ テキスト エディター コンポーネントの高さを定義します。数値 (ピクセル) またはパーセント値 (相対) を入力します。"
+msgstr "この画面のリッチテキストエディターの幅を定義します。数値（ピクセル）またはパーセント値（相対値）を入力してください。"
 
 #: ../../content/configuration/system_configuration_settings.rst:758
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemEdit###RichTextHeight"
@@ -2075,7 +2066,7 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:811
 #, fuzzy
 msgid "This configuration defines all possible screens to enable or disable default columns."
-msgstr "この構成では、デフォルトの列を有効または無効にするためのすべての可能な画面を定義します。"
+msgstr "この設定は、デフォルト列を有効または無効にできるすべての画面を定義します。"
 
 #: ../../content/configuration/system_configuration_settings.rst:814
 msgid "Frontend::Base::Loader"
@@ -2099,8 +2090,9 @@ msgid "Frontend::AdminModuleGroups###200-ITSMConfigurationManagement"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:825
+#, fuzzy
 msgid "Defines available groups for the admin overview screen."
-msgstr ""
+msgstr "管理者一覧画面で利用可能なグループを定義します。"
 
 #: ../../content/configuration/system_configuration_settings.rst:828
 msgid "Frontend::Customer::ITSMConfigItemOverview"
@@ -2151,7 +2143,7 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:866
 #, fuzzy
 msgid "Loader module registration for the customer interface."
-msgstr "担当者インタフェースに関するフロントエンド・モジュールの登録です。"
+msgstr "顧客インタフェース用のローダーモジュールの登録。"
 
 #: ../../content/configuration/system_configuration_settings.rst:861
 msgid "Loader::Module::CustomerITSMConfigItemSearch###003-ITSMConfigItem"
@@ -2373,7 +2365,7 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:990
 #, fuzzy
 msgid "GenericInterface module registration for the invoker layer."
-msgstr "ConfigItemFetch invokerレイヤーのGenericInterfaceモジュール登録。"
+msgstr "Invoker レイヤー用の GenericInterface モジュール登録。"
 
 #: ../../content/configuration/system_configuration_settings.rst:993
 msgid "GenericInterface::Invoker::Module###ConfigItem::ConfigItemFetch"
@@ -2491,7 +2483,7 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:1064
 #, fuzzy
 msgid "GenericInterface module registration for the operation layer."
-msgstr "ConfigItemFetch invokerレイヤーのGenericInterfaceモジュール登録。"
+msgstr "オペレーションレイヤー用の GenericInterface モジュール登録。"
 
 #: ../../content/configuration/system_configuration_settings.rst:1051
 msgid "GenericInterface::Operation::Module###ConfigItem::ConfigItemGet"
