@@ -5,38 +5,35 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
-msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:18+0100\nPO-Revision-Date: 2026-10-05 03:41+0000\nLast-Translator: Kozo Sakurai <sakurai@io-architect.com>\nLanguage-Team: Japanese <http://translate.otobo.org/projects/otobo-11-1/addons/manuals/itsmconfigurationmanagement-documentation/ja/>\nLanguage: ja\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\nX-Generator: Weblate 2026.9\nGenerated-By: Babel 2.4.0\n"
+msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:18+0100\nPO-Revision-Date: 2026-10-05 05:41+0000\nLast-Translator: Kozo Sakurai <sakurai@io-architect.com>\nLanguage-Team: Japanese <http://translate.otobo.org/projects/otobo-11-1/addons/manuals/itsmconfigurationmanagement-documentation/ja/>\nLanguage: ja\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\nX-Generator: Weblate 2026.9\nGenerated-By: Babel 2.4.0\n"
 
 #: ../../content/about.rst:13
-#, fuzzy
 msgid "About"
-msgstr "アバウト"
+msgstr "概要"
 
 #: ../../content/about.rst:16
-#, fuzzy
 msgid "Contact"
 msgstr "連絡先"
 
 #: ../../content/about.rst:17
 msgid "Rother OSS GmbH"
-msgstr ""
+msgstr "Rother OSS GmbH"
 
 #: ../../content/about.rst:18
 msgid "Email: hello@otobo.io"
-msgstr ""
+msgstr "メール: hello@otobo.io"
 
 #: ../../content/about.rst:19
 msgid "Web: https://otobo.io"
-msgstr ""
+msgstr "Web: https://otobo.io"
 
 #: ../../content/about.rst:22
-#, fuzzy
 msgid "Version"
 msgstr "バージョン"
 
 #: ../../content/about.rst:23
 msgid "Author: |doc-vendor| / Version: |doc-version| / Date of release: |doc-datestamp|"
-msgstr ""
+msgstr "作成者: |doc-vendor| / バージョン: |doc-version| / リリース日: |doc-datestamp|"
 
 #: ../../content/about.rst:27
 msgid "Terms and Conditions"
@@ -51,7 +48,6 @@ msgid "Published by: Rother OSS GmbH, (https://otobo.io), Oberwalting 31, 94339 
 msgstr ""
 
 #: ../../content/configuration.rst:13
-#, fuzzy
 msgid "Configuration"
 msgstr "設定"
 
@@ -112,9 +108,8 @@ msgstr ""
 
 #: ../../content/configuration/configuration_reference.rst:12
 #: ../../content/configuration/system_configuration_settings.rst:12
-#, fuzzy
 msgid "Configuration Reference"
-msgstr "構成オプションリファレンス"
+msgstr "設定リファレンス"
 
 #: ../../content/configuration/configuration_reference.rst:15
 #, fuzzy
@@ -432,9 +427,8 @@ msgid "For example, you could refer to a Server ConfigItem and have a look at th
 msgstr ""
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:240
-#, fuzzy
 msgid "General Catalog"
-msgstr "ジェネラル・カタログ"
+msgstr "一般カタログ"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:242
 msgid "The idea is to have a Dropdown field."
@@ -510,7 +504,6 @@ msgid "Match settings"
 msgstr "条件設定"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:278
-#, fuzzy
 msgid "Frontend"
 msgstr "フロントエンド"
 
@@ -635,7 +628,7 @@ msgstr "リストされたグループの構成アイテム一括処理機能の
 
 #: ../../content/configuration/system_configuration_settings.rst:26
 msgid "Core::DynamicFields::DriverRegistration"
-msgstr ""
+msgstr "Core::DynamicFields::DriverRegistration"
 
 #: ../../content/configuration/system_configuration_settings.rst:29
 msgid "DynamicFields::Driver###ConfigItem"
@@ -643,9 +636,8 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:30
 #: ../../content/configuration/system_configuration_settings.rst:34
-#, fuzzy
 msgid "DynamicField backend registration."
-msgstr "ダイナミック・フィールドのバックエンド登録"
+msgstr "ダイナミックフィールドのバックエンドの登録。"
 
 #: ../../content/configuration/system_configuration_settings.rst:33
 msgid "DynamicFields::Driver###ConfigItemVersion"
@@ -653,16 +645,15 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:37
 msgid "Core::DynamicFields::ObjectTypeRegistration"
-msgstr ""
+msgstr "Core::DynamicFields::ObjectTypeRegistration"
 
 #: ../../content/configuration/system_configuration_settings.rst:40
 msgid "DynamicFields::ObjectType###ITSMConfigItem"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:41
-#, fuzzy
 msgid "DynamicField object registration."
-msgstr "ダイナミックフィールドのオブジェクト登録"
+msgstr "ダイナミックフィールドのオブジェクトの登録。"
 
 #: ../../content/configuration/system_configuration_settings.rst:44
 msgid "Core::Elasticsearch::Settings"
@@ -756,7 +747,6 @@ msgid "ITSMConfigItem::EventModulePost###4000-ScriptDynamicFields"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:87
-#, fuzzy
 msgid "Evaluate all script fields."
 msgstr "すべてのスクリプトフィールドを評価します。"
 
@@ -780,7 +770,7 @@ msgstr "設定された各Webサービスの各イベントに対して（Invoke
 
 #: ../../content/configuration/system_configuration_settings.rst:98
 msgid "Core::Event::Ticket"
-msgstr ""
+msgstr "Core::Event::Ticket"
 
 #: ../../content/configuration/system_configuration_settings.rst:101
 msgid "ITSMConfigItem::EventModulePost###042-ITSMConfigItemTicketStatusLink"
@@ -797,9 +787,8 @@ msgid "Ticket::EventModulePost###042-ITSMConfigItemTicketStatusLink"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:109
-#, fuzzy
 msgid "Core::GeneralCatalog"
-msgstr "ジェネラル・カタログ"
+msgstr "Core::GeneralCatalog"
 
 #: ../../content/configuration/system_configuration_settings.rst:112
 msgid "GeneralCatalogPreferences###DeploymentStates"
@@ -875,12 +864,11 @@ msgstr "エージェントインタフェースの環境設定ビューの設定
 
 #: ../../content/configuration/system_configuration_settings.rst:144
 msgid "GeneralCatalogPreferences###Permissions"
-msgstr ""
+msgstr "GeneralCatalogPreferences###Permissions"
 
 #: ../../content/configuration/system_configuration_settings.rst:145
-#, fuzzy
 msgid "Parameters for the example permission groups of the general catalog attributes."
-msgstr "ジェネラル・カタログの属性の権限グループの設定値例です。"
+msgstr "一般カタログ属性の権限グループ例のパラメータ。"
 
 #: ../../content/configuration/system_configuration_settings.rst:148
 #, fuzzy
@@ -1095,13 +1083,12 @@ msgid "ImportExport::ObjectBackendRegistration###ITSMConfigItem"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:274
-#, fuzzy
 msgid "Object backend module registration for the import/export module."
 msgstr "インポート／エクスポート・モジュール用のオブジェクト・バックエンド・モジュールの登録。"
 
 #: ../../content/configuration/system_configuration_settings.rst:277
 msgid "Core::LinkObject"
-msgstr ""
+msgstr "Core::LinkObject"
 
 #: ../../content/configuration/system_configuration_settings.rst:280
 msgid "LinkObject::DefaultSubObject###ITSMConfigItem"
@@ -1224,13 +1211,12 @@ msgid "Events###ITSMConfigItem"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:341
-#, fuzzy
 msgid "List of all Package events to be displayed in the GUI."
 msgstr "GUI に表示するすべての Package イベントの一覧。"
 
 #: ../../content/configuration/system_configuration_settings.rst:344
 msgid "Frontend::Admin::ModuleRegistration"
-msgstr ""
+msgstr "Frontend::Admin::ModuleRegistration"
 
 #: ../../content/configuration/system_configuration_settings.rst:347
 msgid "Frontend::Module###AdminITSMConfigItem"
@@ -1249,9 +1235,8 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:533
 #: ../../content/configuration/system_configuration_settings.rst:537
 #: ../../content/configuration/system_configuration_settings.rst:541
-#, fuzzy
 msgid "Frontend module registration for the agent interface."
-msgstr "担当者インタフェースに関するフロントエンド・モジュールの登録です。"
+msgstr "担当者インタフェース用のフロントエンドモジュールの登録。"
 
 #: ../../content/configuration/system_configuration_settings.rst:351
 msgid "Frontend::Module###AdminGenericInterfaceInvokerConfigItem"
@@ -1259,20 +1244,19 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:355
 msgid "Frontend::Admin::ModuleRegistration::AdminOverview"
-msgstr ""
+msgstr "Frontend::Admin::ModuleRegistration::AdminOverview"
 
 #: ../../content/configuration/system_configuration_settings.rst:358
 msgid "Frontend::NavigationModule###AdminITSMConfigItem"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:359
-#, fuzzy
 msgid "Admin area navigation for the agent interface."
-msgstr "担当者Webインタフェースの管理ナビゲーション"
+msgstr "担当者インタフェースの管理画面のナビゲーション。"
 
 #: ../../content/configuration/system_configuration_settings.rst:362
 msgid "Frontend::Admin::ModuleRegistration::Loader"
-msgstr ""
+msgstr "Frontend::Admin::ModuleRegistration::Loader"
 
 #: ../../content/configuration/system_configuration_settings.rst:365
 msgid "Loader::Module::AdminITSMConfigItem###002-ITSMConfigItem"
@@ -1287,9 +1271,8 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:564
 #: ../../content/configuration/system_configuration_settings.rst:568
 #: ../../content/configuration/system_configuration_settings.rst:572
-#, fuzzy
 msgid "Loader module registration for the agent interface."
-msgstr "担当者Webインタフェースのローダーモジュール登録"
+msgstr "担当者インタフェース用のローダーモジュールの登録。"
 
 #: ../../content/configuration/system_configuration_settings.rst:369
 msgid "Loader::Module::AdminGenericInterfaceInvokerConfigItem###007-ITSMConfigurationManagement"
@@ -1297,7 +1280,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:373
 msgid "Frontend::Admin::ModuleRegistration::MainMenu"
-msgstr ""
+msgstr "Frontend::Admin::ModuleRegistration::MainMenu"
 
 #: ../../content/configuration/system_configuration_settings.rst:376
 msgid "Frontend::Navigation###AdminITSMConfigItem###003-ITSMConfigItem"
@@ -1309,7 +1292,6 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:587
 #: ../../content/configuration/system_configuration_settings.rst:591
 #: ../../content/configuration/system_configuration_settings.rst:873
-#, fuzzy
 msgid "Main menu item registration."
 msgstr "メインメニュー項目の登録。"
 
@@ -1547,20 +1529,19 @@ msgstr "構成アイテムを定義して、構成アイテムのリストの小
 
 #: ../../content/configuration/system_configuration_settings.rst:490
 msgid "Frontend::Agent::LinkObject"
-msgstr ""
+msgstr "Frontend::Agent::LinkObject"
 
 #: ../../content/configuration/system_configuration_settings.rst:493
 msgid "LinkObject::ComplexTable::SettingsVisibility###ITSMConfigItem"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:494
-#, fuzzy
 msgid "Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
-msgstr "リンクオブジェクトウィジェット（LinkObject :: ViewMode = \"complex\"）で設定ボタンを使用できるアクションを定義します。 これらのアクションは、次のJSおよびCSSファイルを登録している必要があります。Core.AllocationList.css、Core.UI.AllocationList.js、Core.UI.Table.Sort.js、Core.Agent.TableFilters.js、及びCore.Agent .LinkObject.js"
+msgstr "リンクオブジェクト・ウィジェット（LinkObject::ViewMode = \"complex\"）で設定ボタンを使用できるアクションを定義します。これらのアクションには、次の JS および CSS ファイルが登録されている必要があります: Core.AllocationList.css、Core.UI.AllocationList.js、Core.UI.Table.Sort.js、Core.Agent.TableFilters.js、Core.Agent.LinkObject.js。"
 
 #: ../../content/configuration/system_configuration_settings.rst:497
 msgid "Frontend::Agent::ModuleRegistration"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration"
 
 #: ../../content/configuration/system_configuration_settings.rst:500
 msgid "Frontend::Module###AgentITSMConfigItem"
@@ -1608,7 +1589,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:544
 msgid "Frontend::Agent::ModuleRegistration::Loader"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration::Loader"
 
 #: ../../content/configuration/system_configuration_settings.rst:547
 msgid "Loader::Module::AgentITSMConfigItem###003-ITSMConfigItem"
@@ -1640,7 +1621,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:575
 msgid "Frontend::Agent::ModuleRegistration::MainMenu"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration::MainMenu"
 
 #: ../../content/configuration/system_configuration_settings.rst:578
 msgid "Frontend::Navigation###AgentITSMConfigItem###003-ITSMConfigItem"
@@ -1676,7 +1657,6 @@ msgid "Frontend::Search::JavaScript###ConfigItem"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:602
-#, fuzzy
 msgid "JavaScript function for the search frontend."
 msgstr "検索フロントエンド用の JavaScript 関数。"
 
@@ -1954,7 +1934,6 @@ msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemEdit###RichTextWidth"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:755
-#, fuzzy
 msgid "Defines the width for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
 msgstr "この画面のリッチテキストエディターの幅を定義します。数値（ピクセル）またはパーセント値（相対値）を入力してください。"
 
@@ -1963,9 +1942,8 @@ msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemEdit###RichTextHeight"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:759
-#, fuzzy
 msgid "Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
-msgstr "この画面のリッチ テキスト エディター コンポーネントの高さを定義します。数値 (ピクセル) またはパーセント値 (相対) を入力します。"
+msgstr "この画面のリッチテキストエディターの高さを定義します。数値（ピクセル）またはパーセント値（相対値）を入力してください。"
 
 #: ../../content/configuration/system_configuration_settings.rst:762
 msgid "Frontend::Agent::View::ITSMConfigItemHistory"
@@ -2026,7 +2004,7 @@ msgstr "エージェントインターフェースの設定項目検索画面に
 
 #: ../../content/configuration/system_configuration_settings.rst:792
 msgid "Frontend::Agent::View::Preferences"
-msgstr ""
+msgstr "Frontend::Agent::View::Preferences"
 
 #: ../../content/configuration/system_configuration_settings.rst:795
 msgid "PreferencesGroups###ConfigItemOverviewSmallPageShown"
@@ -2048,38 +2026,35 @@ msgstr "小設定項目概要の列フィルタ用のパラメータです。注
 
 #: ../../content/configuration/system_configuration_settings.rst:803
 msgid "Frontend::Base::DynamicFieldScreens"
-msgstr ""
+msgstr "Frontend::Base::DynamicFieldScreens"
 
 #: ../../content/configuration/system_configuration_settings.rst:806
 msgid "DynamicFieldScreens###ITSMConfigurationManagement"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:807
-#, fuzzy
 msgid "This configuration defines all possible screens to enable or disable dynamic fields."
-msgstr "ダイナミック・フィールド管理画面でダイナミック・フィールドを表示・非表示にする画面を指定します。"
+msgstr "この設定は、ダイナミックフィールドを有効または無効にできるすべての画面を定義します。"
 
 #: ../../content/configuration/system_configuration_settings.rst:810
 msgid "DefaultColumnsScreens###ITSMConfigurationManagement"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:811
-#, fuzzy
 msgid "This configuration defines all possible screens to enable or disable default columns."
 msgstr "この設定は、デフォルト列を有効または無効にできるすべての画面を定義します。"
 
 #: ../../content/configuration/system_configuration_settings.rst:814
 msgid "Frontend::Base::Loader"
-msgstr ""
+msgstr "Frontend::Base::Loader"
 
 #: ../../content/configuration/system_configuration_settings.rst:817
 msgid "Loader::Agent::CommonJS###100-ConfigurationManagement"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:818
-#, fuzzy
 msgid "List of JS files to always be loaded for the agent interface."
-msgstr "担当者インタフェースに対して、常にロードされるJSファイルのリストです。"
+msgstr "担当者インタフェースで常に読み込む JS ファイルの一覧。"
 
 #: ../../content/configuration/system_configuration_settings.rst:821
 msgid "Frontend::Base::NavBarModule"
@@ -2090,7 +2065,6 @@ msgid "Frontend::AdminModuleGroups###200-ITSMConfigurationManagement"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:825
-#, fuzzy
 msgid "Defines available groups for the admin overview screen."
 msgstr "管理者一覧画面で利用可能なグループを定義します。"
 
@@ -2104,7 +2078,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:835
 msgid "Frontend::Customer::ModuleRegistration"
-msgstr ""
+msgstr "Frontend::Customer::ModuleRegistration"
 
 #: ../../content/configuration/system_configuration_settings.rst:838
 msgid "CustomerFrontend::Module###CustomerITSMConfigItem"
@@ -2114,9 +2088,8 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:843
 #: ../../content/configuration/system_configuration_settings.rst:847
 #: ../../content/configuration/system_configuration_settings.rst:851
-#, fuzzy
 msgid "Frontend module registration for the customer interface."
-msgstr "担当者インタフェースに関するフロントエンド・モジュールの登録です。"
+msgstr "顧客インタフェース用のフロントエンドモジュールの登録。"
 
 #: ../../content/configuration/system_configuration_settings.rst:842
 msgid "CustomerFrontend::Module###CustomerITSMConfigItemSearch"
@@ -2132,7 +2105,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:854
 msgid "Frontend::Customer::ModuleRegistration::Loader"
-msgstr ""
+msgstr "Frontend::Customer::ModuleRegistration::Loader"
 
 #: ../../content/configuration/system_configuration_settings.rst:857
 msgid "Loader::Module::CustomerITSMConfigItem###003-ITSMConfigItem"
@@ -2141,7 +2114,6 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:858
 #: ../../content/configuration/system_configuration_settings.rst:862
 #: ../../content/configuration/system_configuration_settings.rst:866
-#, fuzzy
 msgid "Loader module registration for the customer interface."
 msgstr "顧客インタフェース用のローダーモジュールの登録。"
 
@@ -2155,7 +2127,7 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:869
 msgid "Frontend::Customer::ModuleRegistration::MainMenu"
-msgstr ""
+msgstr "Frontend::Customer::ModuleRegistration::MainMenu"
 
 #: ../../content/configuration/system_configuration_settings.rst:872
 msgid "CustomerFrontend::Navigation###CustomerITSMConfigItem###003-ITSMConfigItem"
@@ -2363,7 +2335,6 @@ msgid "GenericInterface::Invoker::Module###Elasticsearch::ConfigItemManagement"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:990
-#, fuzzy
 msgid "GenericInterface module registration for the invoker layer."
 msgstr "Invoker レイヤー用の GenericInterface モジュール登録。"
 
@@ -2481,7 +2452,6 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:1056
 #: ../../content/configuration/system_configuration_settings.rst:1060
 #: ../../content/configuration/system_configuration_settings.rst:1064
-#, fuzzy
 msgid "GenericInterface module registration for the operation layer."
 msgstr "オペレーションレイヤー用の GenericInterface モジュール登録。"
 
@@ -2504,21 +2474,20 @@ msgstr ""
 #: ../../content/configuration/system_requirements.rst:13
 #: ../../content/system_requirements.rst:13
 msgid "System requirements"
-msgstr ""
+msgstr "システム要件"
 
 #: ../../content/configuration/system_requirements.rst:16
 #: ../../content/system_requirements.rst:16
 msgid "Framework"
-msgstr ""
+msgstr "フレームワーク"
 
 #: ../../content/configuration/system_requirements.rst:19
 #: ../../content/system_requirements.rst:19
 msgid "OTOBO 11.0.x"
-msgstr ""
+msgstr "OTOBO 11.0.x"
 
 #: ../../content/configuration/system_requirements.rst:22
 #: ../../content/system_requirements.rst:22
-#, fuzzy
 msgid "Packages"
 msgstr "パッケージ"
 
@@ -2530,19 +2499,18 @@ msgstr ""
 #: ../../content/configuration/system_requirements.rst:28
 #: ../../content/system_requirements.rst:28
 msgid "Third-party software"
-msgstr ""
+msgstr "サードパーティ製ソフトウェア"
 
 #: ../../content/configuration/system_requirements.rst:29
 #: ../../content/system_requirements.rst:29
 msgid "\\-"
-msgstr ""
+msgstr "\\-"
 
 #: ../../content/index.rst:13
 msgid "Package Documentation: ITSMConfigurationManagement"
 msgstr ""
 
 #: ../../content/overview.rst:13
-#, fuzzy
 msgid "Overview"
 msgstr "一覧"
 
