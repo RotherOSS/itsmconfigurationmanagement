@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-08-31 12:58+0000\n"
 "PO-Revision-Date: 2026-10-05 06:41+0000\n"
-"Last-Translator: Kozo Sakurai <sakurai@io-architect.com>\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Japanese <http://translate.otobo.org/projects/otobo-11-0/"
 "addons/itsm-configurationmanagement/ja/>\n"
 "Language: ja\n"
@@ -912,7 +912,6 @@ msgstr ""
 "\"ITSMConfigItemCreateTimeStartYear=2010;ITSMConfigItemCreateTimeStartMonth=10;ITSMConfigItemCreateTimeStartDay=4;ITSMConfigItemCreateTimeStopYear=2010;ITSMConfigItemCreateTimeStopMonth=11;ITSMConfigItemCreateTimeStopDay=3;\"。"
 
 #. SysConfig
-#, fuzzy
 msgid ""
 "Define Actions where a settings button is available in the linked objects "
 "widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions "
@@ -920,11 +919,11 @@ msgid ""
 "Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, "
 "Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
 msgstr ""
-"リンクオブジェクト・ウィジェット（LinkObject::ViewMode = \"complex\"）で設定"
-"ボタンを使用できるアクションを定義します。これらのアクションには、次の JS お"
-"よび CSS ファイルが登録されている必要があります: Core.AllocationList.css、"
-"Core.UI.AllocationList.js、Core.UI.Table.Sort.js、Core.Agent.TableFilters.js"
-"、Core.Agent.LinkObject.js。"
+"リンクされたオブジェクト ウィジェット (LinkObject::ViewMode = \"complex\") で"
+"設定ボタンが使用できるアクションを定義します。これらのアクションには、"
+"Core.AllocationList.css、Core.UI.AllocationList.js、Core.UI.Table.Sort.js、"
+"Core.Agent.TableFilters.js、および Core.Agent.LinkObject.js の JS および CSS "
+"ファイルが登録されている必要があることに注意してください。"
 
 #. SysConfig
 msgid ""
@@ -1553,11 +1552,10 @@ msgid ""
 msgstr "担当者Webインタフェースの環境設定ビューでデプロイ状態のパラメータ"
 
 #. SysConfig
-#, fuzzy
 msgid ""
 "Parameters for the example permission groups of the general catalog "
 "attributes."
-msgstr "一般カタログ属性の権限グループ例のパラメータ。"
+msgstr "ジェネラル・カタログの属性の権限グループの設定値例です。"
 
 #. SysConfig
 msgid ""
