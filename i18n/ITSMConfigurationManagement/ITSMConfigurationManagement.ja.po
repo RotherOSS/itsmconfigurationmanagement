@@ -1145,12 +1145,13 @@ msgstr ""
 "ればなりません。"
 
 #. SysConfig
+#, fuzzy
 msgid ""
 "Defines the height for the rich text editor component for this screen. Enter "
 "number (pixels) or percent value (relative)."
 msgstr ""
-"この画面のリッチ テキスト エディター コンポーネントの高さを定義します。数値 "
-"(ピクセル) またはパーセント値 (相対) を入力します。"
+"この画面のリッチテキストエディターの高さを定義します。数値（ピクセル）または"
+"パーセント値（相対値）を入力してください。"
 
 #. SysConfig
 msgid ""
@@ -1552,10 +1553,11 @@ msgid ""
 msgstr "担当者Webインタフェースの環境設定ビューでデプロイ状態のパラメータ"
 
 #. SysConfig
+#, fuzzy
 msgid ""
 "Parameters for the example permission groups of the general catalog "
 "attributes."
-msgstr "ジェネラル・カタログの属性の権限グループの設定値例です。"
+msgstr "一般カタログ属性の権限グループ例のパラメータ。"
 
 #. SysConfig
 msgid ""
