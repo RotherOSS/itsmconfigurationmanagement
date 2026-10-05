@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-08-31 12:58+0000\n"
-"PO-Revision-Date: 2026-09-02 11:53+0000\n"
-"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"PO-Revision-Date: 2026-10-05 04:58+0000\n"
+"Last-Translator: Kozo Sakurai <sakurai@io-architect.com>\n"
 "Language-Team: Japanese <http://translate.otobo.org/projects/otobo-11-0/"
 "addons/itsm-configurationmanagement/ja/>\n"
 "Language: ja\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.16\n"
+"X-Generator: Weblate 2026.9\n"
 
 #. Template: AdminGenericInterfaceOperationConfigItem
 msgid "General operation data"
@@ -350,12 +350,14 @@ msgid "Version %s deleted"
 msgstr "バージョン%sが削除されました"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
+#, fuzzy
 msgid "File \"%s\" uploaded"
-msgstr ""
+msgstr "ファイル \"%s\" をアップロードしました"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
+#, fuzzy
 msgid "File \"%s\" removed"
-msgstr ""
+msgstr "ファイル \"%s\" を削除しました"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
 msgid "No ConfigItemID or VersionID is given!"
@@ -506,12 +508,14 @@ msgid "Select the attribute which config items will be searched by"
 msgstr "設定項目を検索する属性を選択します。"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
+#, fuzzy
 msgid "External-source key"
-msgstr ""
+msgstr "外部ソースのキー"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
+#, fuzzy
 msgid "Select the type of display"
-msgstr ""
+msgstr "表示のタイプを選択してください"
 
 #. Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
 msgid ""
@@ -544,12 +548,14 @@ msgid "Maximum number of one element"
 msgstr "一エレメントあたりの最大数"
 
 #. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
+#, fuzzy
 msgid "Maximum number of one Set dynamic field element"
-msgstr ""
+msgstr "1つのセット・ダイナミックフィールド要素の最大数"
 
 #. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
+#, fuzzy
 msgid "Maximum number of one element within a Set dynamic field element"
-msgstr ""
+msgstr "セット・ダイナミックフィールド要素内の1つの要素の最大数"
 
 #. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
 msgid "Import/Export attachments (as the last entries per line)"
@@ -624,6 +630,7 @@ msgid "1 - Shown"
 msgstr "1 - 表示"
 
 #. SysConfig
+#, fuzzy
 msgid ""
 "A mapping of inner field names used in the Process Management "
 "TransitionActions ConfigItemAdd and -Update. The keys are the names of the "
@@ -631,6 +638,10 @@ msgid ""
 "create/update the CI, and the values are the names of the inner fields of "
 "the set with object type ITSMConfigItem."
 msgstr ""
+"プロセス管理の遷移アクション ConfigItemAdd および ConfigItemUpdate で使用され"
+"る内部フィールド名の対応付け。キーは、CI の作成／更新に使用される、"
+"オブジェクトタイプがチケットのセットの内部フィールド名で、値は"
+"オブジェクトタイプが ITSMConfigItem のセットの内部フィールド名です。"
 
 #. SysConfig
 msgid ""
@@ -657,6 +668,7 @@ msgid "Assigned CIs"
 msgstr "割り当てられたCI"
 
 #. SysConfig
+#, fuzzy
 msgid ""
 "At a specific time point create a ticket for config items, if the configured "
 "requirements are met. The time point is determined by the value of the "
@@ -668,12 +680,22 @@ msgid ""
 "where X can be NAME, NUMBER and DATE, will be substituted with the "
 "respective values in \"Ticket->Text\"."
 msgstr ""
+"設定した条件を満たす場合に、特定の時点で構成アイテムに対するチケットを作成し"
+"ます。時点は、構成アイテムの \"TimeCIKey\" で設定した日付タイプの"
+"ダイナミックフィールドの値で決まり、\"TimeModifier\" で調整されます"
+"。\"TimeModifier\" には数値のみ、または符号（+/-）、数値、単位（d/h/m）を指定"
+"できます。\"7\" は \"+7d\" と同じです。作成されたチケットの識別には、"
+"ダイナミックフィールド \"Ticket->DynamicField\" が使用されます（存在している"
+"必要があります）。\"Ticket->Text\" 内のフラグ \\\\<OTOBO_CONFIGITEM_X\\\\> （"
+"X は NAME、NUMBER、DATE）は、それぞれの値に置換されます。"
 
 #. SysConfig
+#, fuzzy
 msgid "Attributes for license accounting."
-msgstr ""
+msgstr "ライセンス計上用の属性。"
 
 #. SysConfig
+#, fuzzy
 msgid ""
 "Attributes for licenses counting, where \"TotalLicensesDF\", "
 "\"AvailableLicensesDF\" and \"LicenseReferenceDF\" are the names of the "
@@ -687,6 +709,16 @@ msgid ""
 "number, available licenses, and minimum required available licenses, "
 "respectively."
 msgstr ""
+"ライセンス数の管理用の属性"
+"。\"TotalLicensesDF\"、\"AvailableLicensesDF\"、\"LicenseReferenceDF\" は、残"
+"りのライセンス数を追跡するためのダイナミックフィールドの名前です。使用する場"
+"合は、\"ValidDeplStates\" のデプロイ・ステータスのみが対象になります"
+"。\"MinimumLicenses\" にしきい値を定義すると、利用可能なライセンス数がそれを"
+"下回った場合に自動的にチケットが作成されます。このためには、チェックボックス"
+"・ダイナミックフィールド \"Ticket->DynamicField\" が存在している必要がありま"
+"す。\"Ticket->Text\" 内のタグ \\\\<OTOBO_CONFIGITEM_X\\\\> （X は NAME、"
+"NUMBER、LICENSES_AVAIL、LICENSES_MIN）は、それぞれ構成アイテム名、番号、利用"
+"可能なライセンス数、必要な最小ライセンス数に置換されます。"
 
 #. SysConfig
 msgid "CIs assigned to customer company"
@@ -756,10 +788,13 @@ msgid "Config item edit."
 msgstr "構成アイテムを修正します。"
 
 #. SysConfig
+#, fuzzy
 msgid ""
 "Config item event module that enables accounting licenses for a given config "
 "item."
 msgstr ""
+"指定した構成アイテムのライセンス計上を可能にする構成アイテムの"
+"イベントモジュール。"
 
 #. SysConfig
 msgid ""
@@ -835,18 +870,25 @@ msgid "Configuration item search backend router of the agent interface."
 msgstr "担当者インターフェースの構成アイテムの検索バックエンドルーター"
 
 #. SysConfig
+#, fuzzy
 msgid ""
 "Configure the columns which are available for viewing Permission Conditions "
 "in the customer interface, when the corresponding Permission Condition "
 "Columns are not specifically configured. This setting is used as a fallback "
 "for the other Permission Condition Columns settings."
 msgstr ""
+"対応する権限条件の列が個別に設定されていない場合に、顧客インタフェースで権限"
+"条件の表示に使用できる列を設定します。この設定は、他の権限条件の列設定の"
+"フォールバックとして使用されます。"
 
 #. SysConfig
+#, fuzzy
 msgid ""
 "Configure the columns which are available when viewing the corresponding "
 "Permission Condition in the customer interface."
 msgstr ""
+"顧客インタフェースで、対応する権限条件を表示する際に使用できる列を設定します"
+"。"
 
 #. SysConfig
 msgid "Create and manage the definitions for Configuration Items."
@@ -905,10 +947,14 @@ msgstr ""
 "モジュールが TemplateToolkit に設定されている場合にのみ使用されます。"
 
 #. SysConfig
+#, fuzzy
 msgid ""
 "Define a list of dynamic field object types which are allowed to be assigned "
 "to actions of this package via the dynamic field screens interface."
 msgstr ""
+"ダイナミックフィールド画面インタフェースを介して、このパッケージのアクション"
+"に割り当てることができるダイナミックフィールドのオブジェクトタイプの一覧を定"
+"義します。"
 
 #. SysConfig
 msgid ""
@@ -1376,8 +1422,9 @@ msgid ""
 msgstr "カスタマーインターフェースの設定項目検索にインシデント状態を含める。"
 
 #. SysConfig
+#, fuzzy
 msgid "License accounting configuration item event module."
-msgstr ""
+msgstr "ライセンス計上用の構成アイテムのイベントモジュール。"
 
 #. SysConfig
 msgid ""
@@ -1477,12 +1524,17 @@ msgid ""
 "config items. Leaving this list empty defaults to all classes which match "
 "the customer user in the dynamic field configured in \"ConfigItemKey\"."
 msgstr ""
-"担当者インターフェイスのスレーブ チケット概要のダッシュボード バックエンドの"
-"パラメーター。 「制限」は、デフォルトで表示されるエントリの数です。 「グルー"
-"プ」はプラグインへのアクセスを制限するために使用されます (例: グループ: "
-"admin;group1;group2;)。 「デフォルト」は、プラグインがデフォルトで有効になっ"
-"ているか、ユーザーが手動で有効にする必要があるかを決定します。 "
-"「CacheTTLLocal」は、プラグインのキャッシュ時間 (分単位) です。"
+"担当者インタフェースに表示される顧客ユーザーの構成アイテム一覧の"
+"ダッシュボード・バックエンドのパラメータ。\"Limit\" はデフォルトで表示する構"
+"成アイテムクラスごとのエントリー数です。\"Group\" はプラグインへのアクセスを"
+"制限するために使用します（例: Group: admin;group1;group2;）。\"Default\" は、"
+"プラグインをデフォルトで有効にするか、ユーザーが手動で有効にする必要があるか"
+"を決定します。\"CacheTTLLocal\" はプラグインのキャッシュ時間（分）です"
+"。\"ConfigItemKey\" では、選択した顧客ユーザーでの絞り込みに使用する顧客"
+"ユーザー参照ダイナミックフィールドを指定します。\"ShownClasses\" は、表示する"
+"構成アイテムのクラスを任意で制限するための一覧です。空欄の場合は"
+"、\"ConfigItemKey\" で設定したダイナミックフィールド内の顧客ユーザーに一致す"
+"るすべてのクラスが対象になります。"
 
 #. SysConfig
 #, fuzzy
@@ -1508,12 +1560,16 @@ msgid ""
 "this list empty defaults to all classes which match the customer company in "
 "the dynamic field configured in \"ConfigItemKey\"."
 msgstr ""
-"担当者インターフェイスのスレーブ チケット概要のダッシュボード バックエンドの"
-"パラメーター。 「制限」は、デフォルトで表示されるエントリの数です。 「グルー"
-"プ」はプラグインへのアクセスを制限するために使用されます (例: グループ: "
-"admin;group1;group2;)。 「デフォルト」は、プラグインがデフォルトで有効になっ"
-"ているか、ユーザーが手動で有効にする必要があるかを決定します。 "
-"「CacheTTLLocal」は、プラグインのキャッシュ時間 (分単位) です。"
+"担当者インタフェースに表示される顧客企業の構成アイテム一覧のダッシュボード・"
+"バックエンドのパラメータ。\"Limit\" はデフォルトで表示するエントリー数です"
+"。\"Group\" はプラグインへのアクセスを制限するために使用します（例: Group: "
+"admin;group1;group2;）。\"Default\" は、プラグインをデフォルトで有効にするか"
+"、ユーザーが手動で有効にする必要があるかを決定します。\"CacheTTLLocal\" は"
+"プラグインのキャッシュ時間（分）です。\"ConfigItemKey\" では、選択した顧客企"
+"業での絞り込みに使用する顧客企業参照ダイナミックフィールドを指定します"
+"。\"ShownClasses\" は、表示する構成アイテムのクラスを任意で制限するための一覧"
+"です。空欄の場合は、\"ConfigItemKey\" で設定したダイナミックフィールド内の顧"
+"客企業に一致するすべてのクラスが対象になります。"
 
 #. SysConfig
 msgid ""
@@ -1819,10 +1875,13 @@ msgid "Version Trigger"
 msgstr "バージョン・トリガー"
 
 #. SysConfig
+#, fuzzy
 msgid ""
 "Whether fields should be automatically filled (1), and in that case also be "
 "hidden from ticket formulars (2)."
 msgstr ""
+"フィールドを自動的に入力する（1）か、その場合にチケットのフォームから非表示に"
+"もする（2）か。"
 
 #. SysConfig
 msgid ""
@@ -1993,16 +2052,18 @@ msgid "9U: 15.75 inches (40.01 cm)"
 msgstr "9U：15.75インチ（40.01cm）"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
+#, fuzzy
 msgid "AGPL (Affero General Public License)"
-msgstr ""
+msgstr "AGPL（Affero General Public License）"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Accounting"
 msgstr "会計"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
+#, fuzzy
 msgid "Accounting Information"
-msgstr ""
+msgstr "計上情報"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Address Allocation"
@@ -2017,16 +2078,18 @@ msgid "Analog Phone"
 msgstr "アナログ電話"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
+#, fuzzy
 msgid "Apache License"
-msgstr ""
+msgstr "Apache License"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Appliance Type"
 msgstr "アプライアンス・タイプ"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
+#, fuzzy
 msgid "BSD License (Berkeley Software Distribution License)"
-msgstr ""
+msgstr "BSD License（Berkeley Software Distribution License）"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Battery Capacity (Ah)"
@@ -2045,8 +2108,9 @@ msgid "Bus Interface"
 msgstr "バス・インターフェース"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
+#, fuzzy
 msgid "CC0 (Creative Commons Zero)"
-msgstr ""
+msgstr "CC0（Creative Commons Zero）"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "CIDR"
@@ -2157,8 +2221,9 @@ msgid "Creation Date"
 msgstr "作成日"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
+#, fuzzy
 msgid "Creative Commons"
-msgstr ""
+msgstr "クリエイティブ・コモンズ"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Custom Rack"
@@ -2209,8 +2274,9 @@ msgid "Document Signing Certificates"
 msgstr "文書署名証明書"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
+#, fuzzy
 msgid "EPL (Eclipse Public License)"
-msgstr ""
+msgstr "EPL（Eclipse Public License）"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "ETSI Rack"
@@ -2221,8 +2287,9 @@ msgid "Email Certificates (S/MIME Certificates)"
 msgstr "電子メール証明書（S/MIME 証明書）"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
+#, fuzzy
 msgid "Embedded SIM (eSIM)"
-msgstr ""
+msgstr "組み込み SIM（eSIM）"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Employment Contract"
@@ -2269,8 +2336,9 @@ msgid "Freeware"
 msgstr "フリーウェア"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
+#, fuzzy
 msgid "GPL (General Public License)"
-msgstr ""
+msgstr "GPL（General Public License）"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "General Information"
@@ -2337,8 +2405,9 @@ msgid "LED Monitor (Light Emitting Diode)"
 msgstr "LEDモニター（発光ダイオード）"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
+#, fuzzy
 msgid "LGPL (Lesser General Public License)"
-msgstr ""
+msgstr "LGPL（Lesser General Public License）"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Landline Phone"
@@ -2393,8 +2462,9 @@ msgid "License Agreement"
 msgstr "ライセンス契約"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
+#, fuzzy
 msgid "License Count"
-msgstr ""
+msgstr "ライセンス数"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "License Key"
@@ -2425,8 +2495,9 @@ msgid "Loan Agreement"
 msgstr "ローン契約"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
+#, fuzzy
 msgid "Located in"
-msgstr "所在地"
+msgstr "設置場所"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Longitude"
@@ -2436,11 +2507,12 @@ msgstr "経度"
 #, fuzzy
 #| msgid "License Key"
 msgid "MIT License"
-msgstr "ライセンスキー"
+msgstr "MIT License"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
+#, fuzzy
 msgid "MPL (Mozilla Public License)"
-msgstr ""
+msgstr "MPL（Mozilla Public License）"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Manufacturer"
@@ -2459,8 +2531,9 @@ msgid "Memory Type"
 msgstr "メモリータイプ"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
+#, fuzzy
 msgid "Micro SIM"
-msgstr ""
+msgstr "Micro SIM"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Mini-Rack"
@@ -2495,8 +2568,9 @@ msgid "Mouse"
 msgstr "マウス"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
+#, fuzzy
 msgid "Nano SIM"
-msgstr ""
+msgstr "Nano SIM"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Network"
@@ -2583,12 +2657,14 @@ msgid "Partnership Agreement"
 msgstr "パートナーシップ契約"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
+#, fuzzy
 msgid "Perpetual licenses"
-msgstr ""
+msgstr "永続ライセンス"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
+#, fuzzy
 msgid "Phone / VoIP"
-msgstr ""
+msgstr "電話／VoIP"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Phone Number"
@@ -2607,8 +2683,9 @@ msgid "Power Delivery"
 msgstr "パワー・デリバリー"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
+#, fuzzy
 msgid "Public Domain"
-msgstr ""
+msgstr "パブリックドメイン"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Purchased at"
@@ -2647,8 +2724,9 @@ msgid "Sealed Lead-Acid (SLA) Battery"
 msgstr "密閉型鉛蓄電池 (SLA)"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
+#, fuzzy
 msgid "Seat licenses"
-msgstr ""
+msgstr "シートライセンス"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Serialnumber"
@@ -2667,8 +2745,9 @@ msgid "Service Tag"
 msgstr "サービスタグ"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
+#, fuzzy
 msgid "Shareware"
-msgstr ""
+msgstr "シェアウェア"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Socket Type"
@@ -2699,8 +2778,9 @@ msgid "Storage Partition"
 msgstr "ストレージ・パーティション"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
+#, fuzzy
 msgid "Subscription-based licenses"
-msgstr ""
+msgstr "サブスクリプション型ライセンス"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Subsidiary"
@@ -2759,8 +2839,9 @@ msgid "VR Headset"
 msgstr "VRヘッドセット"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
+#, fuzzy
 msgid "Virtual Client"
-msgstr ""
+msgstr "仮想クライアント"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "VirtualLink"
@@ -2771,8 +2852,9 @@ msgid "VoIP Phone"
 msgstr "VoIPフォン"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
+#, fuzzy
 msgid "Volume licenses"
-msgstr ""
+msgstr "ボリュームライセンス"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Webcam"
