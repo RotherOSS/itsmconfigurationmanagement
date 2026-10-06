@@ -3,7 +3,7 @@
 # --
 # Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
-# $origin: otobo - b782e6b602f201757bc72640ee607e7387eabef5 - Kernel/System/DynamicField/Driver/Lens.pm
+# $origin: otobo - 9ad5b55069607ecb23f06b075ee9293e213db69f - Kernel/System/DynamicField/Driver/Lens.pm
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -202,8 +202,11 @@ sub ValueSet {
                 ConfigItemHandled  => 0,
                 EditFieldValue     => 0,
                 Set                => 0,
-                DynamicFieldConfig => $AttributeDFConfig,
-                $ObjectIDOrName    => $ReferencedObjectID,
+                DynamicFieldConfig => {
+                    $AttributeDFConfig->%*,
+                    Name => $Param{DynamicFieldConfig}{Name},
+                },
+                $ObjectIDOrName => $ReferencedObjectID,
             );
         }
         return 1;
@@ -234,8 +237,11 @@ sub ValueSet {
         %Param,
         ConfigItemHandled  => 0,
         EditFieldValue     => 0,
-        DynamicFieldConfig => $AttributeDFConfig,
-        $ObjectIDOrName    => $ReferencedObjectID,
+        DynamicFieldConfig => {
+            $AttributeDFConfig->%*,
+            Name => $Param{DynamicFieldConfig}{Name},
+        },
+        $ObjectIDOrName => $ReferencedObjectID,
     );
 }
 
