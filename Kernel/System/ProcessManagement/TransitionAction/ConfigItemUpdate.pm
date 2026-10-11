@@ -243,12 +243,9 @@ sub Run {
         return;
     }
 
-    for my $OptionalAttribute (qw/Name Number VersionString/) {
-        if ( $Param{Config}{$OptionalAttribute} ) {
-            $ConfigItemParam{Name} = $Param{Config}{$OptionalAttribute};
-        }
+    if ( $Param{Config}{Name} ) {
+        $ConfigItemParam{Name} = $Param{Config}{Name};
     }
-
     if ( $Param{Config}{DeplState} && $DeplState2IDMap{ $Param{Config}{DeplState} } ) {
         $ConfigItemParam{DeplStateID} = $DeplState2IDMap{ $Param{Config}{DeplState} };
     }
@@ -262,7 +259,7 @@ sub Run {
     # add dynamic fields
     CONFIGPARAM:
     for my $ConfigParam ( keys $Param{Config}->%* ) {
-        if ( $ConfigParam !~ /^DynamicField_(.+)/ ) {
+        if ( $ConfigParam =~ /^DynamicField_(.+)/ ) {
             my $FieldName    = $1;
             my $DynamicField = $DynamicFieldObject->DynamicFieldGet(
                 Name => $FieldName,
