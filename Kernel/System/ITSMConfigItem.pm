@@ -328,10 +328,8 @@ sub ConfigItemGet {
 
     # check if result is already cached, considering the DynamicFields parameter
     my @CacheKeyID = $Param{VersionID}
-        ?
-        ( VersionID    => $Param{VersionID} )
-        :
-        ( ConfigItemID => $Param{ConfigItemID} );
+        ? ( VersionID => $Param{VersionID} )
+        : ( ConfigItemID => $Param{ConfigItemID} );
 
     my $CacheKey        = join '::', 'ConfigItemGet', @CacheKeyID, DFData => 0;
     my $CacheKeyCurrent = join '::', 'ConfigItemGet', @CacheKeyID, DFData => 1;
