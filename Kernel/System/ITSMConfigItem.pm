@@ -331,22 +331,51 @@ sub ConfigItemGet {
         join(
             '::', 'ConfigItemGet',
             VersionID => $Param{VersionID},
-            DFData    => $DFData
+            DFData    => 0
         )
         :
         join(
             '::', 'ConfigItemGet',
             ConfigItemID => $Param{ConfigItemID},
-            DFData       => $DFData
+            DFData       => 0
+        );
+
+    my $CacheKeyDynamicFields = $Param{VersionID}
+        ?
+        join(
+            '::', 'ConfigItemGet',
+            VersionID => $Param{VersionID},
+            DFData    => 1
+        )
+        :
+        join(
+            '::', 'ConfigItemGet',
+            ConfigItemID => $Param{ConfigItemID},
+            DFData       => 1
         );
 
     my $CacheObject = $Kernel::OM->Get('Kernel::System::Cache');
-    my $Cache       = $CacheObject->Get(
+
+    my $CacheDynamicFields = $CacheObject->Get(
+        Type           => $Self->{CacheType},
+        Key            => $CacheKeyDynamicFields,
+        CacheInMemory  => 1,
+        CacheInBackend => 0,
+    );
+
+    # check if result is cached
+    if ( ref $CacheDynamicFields eq 'HASH' ) {
+        return %{$CacheDynamicFields};
+    }
+
+    my %ConfigItem;
+
+    my $Cache = $CacheObject->Get(
         Type => $Self->{CacheType},
         Key  => $CacheKey,
     );
 
-    if ($Cache) {
+    if ( ref $Cache eq 'HASH' ) {
         if ( $Param{VersionID} && $Param{ConfigItemID} && $Param{ConfigItemID} ne $Cache->{ConfigItemID} ) {
             if ( !$Silent ) {
                 $Kernel::OM->Get('Kernel::System::Log')->Log(
@@ -358,9 +387,9 @@ sub ConfigItemGet {
             return;
         }
 
-        return dclone($Cache) if $Cache;
+        %ConfigItem = %{$Cache};
     }
-
+    else {
     # get specific ConfigItemVersion
     # The parameter VersionID takes precedence over ConfigItemID
     my @Row;
@@ -402,7 +431,6 @@ END_SQL
     }
 
     # fetch the result
-    my %ConfigItem;
     $ConfigItem{ConfigItemID}   = $Row[0];
     $ConfigItem{Number}         = $Row[1];
     $ConfigItem{ClassID}        = $Row[2];
@@ -432,6 +460,19 @@ END_SQL
 
         return;
     }
+
+    # Cache the result only when a ticket ID was found as otherwise a non-existent ticket
+    # would be cached. That can cause errors when the cache isn't expired and postmaster
+    # creates that ticket.
+    $Kernel::OM->Get('Kernel::System::Cache')->Set(
+        Type => $Self->{CacheType},
+        TTL  => $Self->{CacheTTL},
+        Key  => $CacheKey,
+
+        # make a local copy of the ticket data to avoid it being altered in-memory later
+        Value => {%Ticket},
+    );
+
     if ( $Param{VersionID} && $Param{ConfigItemID} && $Param{ConfigItemID} ne $ConfigItem{ConfigItemID} ) {
         if ( !$Silent ) {
             $Kernel::OM->Get('Kernel::System::Log')->Log(
@@ -441,6 +482,7 @@ END_SQL
         }
 
         return;
+    }
     }
 
     # check if need to return DynamicFields
@@ -497,12 +539,14 @@ END_SQL
         $ConfigItem{ $State . 'Type' } = $Item->{Functionality}[0] // '';
     }
 
-    # cache the result
+    # cache the full result in memory only
     $CacheObject->Set(
-        Type  => $Self->{CacheType},
-        TTL   => $Self->{CacheTTL},
-        Key   => $CacheKey,
-        Value => dclone( \%ConfigItem ),
+        Type           => $Self->{CacheType},
+        TTL            => $Self->{CacheTTL},
+        Key            => $CacheKeyDynamicFields,
+        Value          => dclone( \%ConfigItem ),
+        CacheInMemory  => 1,
+        CacheInBackend => 0,
     );
 
     return \%ConfigItem;
@@ -906,7 +950,7 @@ sub ConfigItemDelete {
         $Kernel::OM->Get('Kernel::System::Cache')->Delete(
             Type => $Self->{CacheType},
             Key  => join(
-                'ConfigItemGet',
+                '::', 'ConfigItemGet',
                 ConfigItemID => $Param{ConfigItemID},
                 DFData       => $DFData
             ),
