@@ -380,13 +380,13 @@ sub ConfigItemGet {
         %ConfigItem = %{$Cache};
     }
     else {
-    # get specific ConfigItemVersion
-    # The parameter VersionID takes precedence over ConfigItemID
-    my @Row;
-    if ( $Param{VersionID} ) {
+        # get specific ConfigItemVersion
+        # The parameter VersionID takes precedence over ConfigItemID
+        my @Row;
+        if ( $Param{VersionID} ) {
 
-        @Row = $Kernel::OM->Get('Kernel::System::DB')->SelectRowArray(
-            SQL => <<'END_SQL',
+            @Row = $Kernel::OM->Get('Kernel::System::DB')->SelectRowArray(
+                SQL => <<'END_SQL',
 SELECT ci.id, ci.configitem_number, ci.class_id, ci.last_version_id,
     ci.cur_depl_state_id, ci.cur_inci_state_id,
     v.id, v.name, v.version_string, v.definition_id, v.depl_state_id, v.inci_state_id, v.description,
@@ -396,16 +396,16 @@ SELECT ci.id, ci.configitem_number, ci.class_id, ci.last_version_id,
     ON v.configitem_id = ci.id
   WHERE v.id = ?
 END_SQL
-            Bind  => [ \$Param{VersionID} ],
-            Limit => 1,
-        );
-    }
+                Bind  => [ \$Param{VersionID} ],
+                Limit => 1,
+            );
+        }
 
-    # get latest ConfigItemVersion
-    else {
+        # get latest ConfigItemVersion
+        else {
 
-        @Row = $Kernel::OM->Get('Kernel::System::DB')->SelectRowArray(
-            SQL => <<'END_SQL',
+            @Row = $Kernel::OM->Get('Kernel::System::DB')->SelectRowArray(
+                SQL => <<'END_SQL',
 SELECT ci.id, ci.configitem_number, ci.class_id, ci.last_version_id,
     ci.cur_depl_state_id, ci.cur_inci_state_id,
     v.id, v.name, v.version_string, v.definition_id, v.depl_state_id, v.inci_state_id, v.description,
@@ -415,85 +415,85 @@ SELECT ci.id, ci.configitem_number, ci.class_id, ci.last_version_id,
     ON ci.last_version_id = v.id
   WHERE ci.id = ?
 END_SQL
-            Bind  => [ \$Param{ConfigItemID} ],
-            Limit => 1,
-        );
-    }
-
-    # fetch the result
-    $ConfigItem{ConfigItemID}   = $Row[0];
-    $ConfigItem{Number}         = $Row[1];
-    $ConfigItem{ClassID}        = $Row[2];
-    $ConfigItem{LastVersionID}  = $Row[3];
-    $ConfigItem{CurDeplStateID} = $Row[4];
-    $ConfigItem{CurInciStateID} = $Row[5];
-    $ConfigItem{VersionID}      = $Row[6];
-    $ConfigItem{Name}           = $Row[7];
-    $ConfigItem{VersionString}  = $Row[8];
-    $ConfigItem{DefinitionID}   = $Row[9];
-    $ConfigItem{DeplStateID}    = $Row[10];
-    $ConfigItem{InciStateID}    = $Row[11];
-    $ConfigItem{Description}    = $Row[12];
-    $ConfigItem{CreateTime}     = $Row[13];
-    $ConfigItem{CreateBy}       = $Row[14];
-    $ConfigItem{ChangeTime}     = $Row[15];
-    $ConfigItem{ChangeBy}       = $Row[16];
-
-    # check config item
-    if ( !$ConfigItem{ConfigItemID} ) {
-        if ( !$Silent ) {
-            $Kernel::OM->Get('Kernel::System::Log')->Log(
-                Priority => 'error',
-                Message  => "No such ConfigItemID ($Param{ConfigItemID})!",
+                Bind  => [ \$Param{ConfigItemID} ],
+                Limit => 1,
             );
         }
 
-        return;
-    }
-    if ( $Param{VersionID} && $Param{ConfigItemID} && $Param{ConfigItemID} ne $ConfigItem{ConfigItemID} ) {
-        if ( !$Silent ) {
-            $Kernel::OM->Get('Kernel::System::Log')->Log(
-                Priority => 'error',
-                Message  => "VersionID $Param{VersionID} is not a version of ConfigItemID $Param{ConfigItemID}!",
-            );
+        # fetch the result
+        $ConfigItem{ConfigItemID}   = $Row[0];
+        $ConfigItem{Number}         = $Row[1];
+        $ConfigItem{ClassID}        = $Row[2];
+        $ConfigItem{LastVersionID}  = $Row[3];
+        $ConfigItem{CurDeplStateID} = $Row[4];
+        $ConfigItem{CurInciStateID} = $Row[5];
+        $ConfigItem{VersionID}      = $Row[6];
+        $ConfigItem{Name}           = $Row[7];
+        $ConfigItem{VersionString}  = $Row[8];
+        $ConfigItem{DefinitionID}   = $Row[9];
+        $ConfigItem{DeplStateID}    = $Row[10];
+        $ConfigItem{InciStateID}    = $Row[11];
+        $ConfigItem{Description}    = $Row[12];
+        $ConfigItem{CreateTime}     = $Row[13];
+        $ConfigItem{CreateBy}       = $Row[14];
+        $ConfigItem{ChangeTime}     = $Row[15];
+        $ConfigItem{ChangeBy}       = $Row[16];
+
+        # check config item
+        if ( !$ConfigItem{ConfigItemID} ) {
+            if ( !$Silent ) {
+                $Kernel::OM->Get('Kernel::System::Log')->Log(
+                    Priority => 'error',
+                    Message  => "No such ConfigItemID ($Param{ConfigItemID})!",
+                );
+            }
+
+            return;
+        }
+        if ( $Param{VersionID} && $Param{ConfigItemID} && $Param{ConfigItemID} ne $ConfigItem{ConfigItemID} ) {
+            if ( !$Silent ) {
+                $Kernel::OM->Get('Kernel::System::Log')->Log(
+                    Priority => 'error',
+                    Message  => "VersionID $Param{VersionID} is not a version of ConfigItemID $Param{ConfigItemID}!",
+                );
+            }
+
+            return;
         }
 
-        return;
-    }
+        # retrieve additional base attributes from general cataog
+        my $GeneralCatalogObject = $Kernel::OM->Get('Kernel::System::GeneralCatalog');
 
-    # retrieve additional base attributes from general cataog
-    my $GeneralCatalogObject = $Kernel::OM->Get('Kernel::System::GeneralCatalog');
+        # add the Class, based on the ClassID
+        {
+            my $ClassList = $GeneralCatalogObject->ItemList(
+                Class => 'ITSM::ConfigItem::Class',
+            );
 
-    # add the Class, based on the ClassID
-    {
-        my $ClassList = $GeneralCatalogObject->ItemList(
-            Class => 'ITSM::ConfigItem::Class',
+            $ConfigItem{Class} = $ClassList->{ $ConfigItem{ClassID} };
+        }
+
+        # Add more readable names for the various states.
+        # Add the state types.
+        STATE:
+        for my $State (qw/DeplState CurDeplState InciState CurInciState/) {
+            next STATE unless $ConfigItem{ $State . 'ID' };
+
+            my $Item = $GeneralCatalogObject->ItemGet(
+                ItemID => $ConfigItem{ $State . 'ID' },
+            );
+
+            $ConfigItem{$State} = $Item->{Name};
+            $ConfigItem{ $State . 'Type' } = $Item->{Functionality}[0] // '';
+        }
+
+        # cache
+        $Kernel::OM->Get('Kernel::System::Cache')->Set(
+            Type  => $Self->{CacheType},
+            TTL   => $Self->{CacheTTL},
+            Key   => $CacheKey,
+            Value => dclone( \%ConfigItem ),
         );
-
-        $ConfigItem{Class} = $ClassList->{ $ConfigItem{ClassID} };
-    }
-
-    # Add more readable names for the various states.
-    # Add the state types.
-    STATE:
-    for my $State (qw/DeplState CurDeplState InciState CurInciState/) {
-        next STATE unless $ConfigItem{ $State . 'ID' };
-
-        my $Item = $GeneralCatalogObject->ItemGet(
-            ItemID => $ConfigItem{ $State . 'ID' },
-        );
-
-        $ConfigItem{$State} = $Item->{Name};
-        $ConfigItem{ $State . 'Type' } = $Item->{Functionality}[0] // '';
-    }
-
-    # cache 
-    $Kernel::OM->Get('Kernel::System::Cache')->Set(
-        Type => $Self->{CacheType},
-        TTL  => $Self->{CacheTTL},
-        Key  => $CacheKey,
-        Value => dclone( \%ConfigItem ),
-    );
     }
 
     # check if need to return DynamicFields
