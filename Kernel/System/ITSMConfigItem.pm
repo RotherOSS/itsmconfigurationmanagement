@@ -300,6 +300,7 @@ A hashref with the following keys is returned:
 Caching can't be turned off.
 
 When the parameter C<DynamicFields> is passed then the dynamic fields are returned additionally.
+DynamicFields are not cached in the backend to prevent stale lens values for referenced items.
 
 =cut
 
@@ -326,7 +327,6 @@ sub ConfigItemGet {
     my $DFData = $Param{DynamicFields} ? 1 : 0;
 
     # check if result is already cached, considering the DynamicFields parameter
-
     my $BaseKey = $Param{VersionID}
         ?
         join(
@@ -355,7 +355,18 @@ sub ConfigItemGet {
 
     # check if result is cached
     if ( ref $CacheCurrent eq 'HASH' ) {
-        return $CacheCurrent;
+        if ( $Param{VersionID} && $Param{ConfigItemID} && $Param{ConfigItemID} ne $Cache->{ConfigItemID} ) {
+            if ( !$Silent ) {
+                $Kernel::OM->Get('Kernel::System::Log')->Log(
+                    Priority => 'error',
+                    Message  => "VersionID $Param{VersionID} is not a version of ConfigItemID $Param{ConfigItemID}!",
+                );
+            }
+
+            return;
+        }
+
+        return dclone($CacheCurrent);
     }
 
     my %ConfigItem;
@@ -461,7 +472,7 @@ END_SQL
             return;
         }
 
-        # retrieve additional base attributes from general cataog
+        # retrieve additional base attributes from general catalog
         my $GeneralCatalogObject = $Kernel::OM->Get('Kernel::System::GeneralCatalog');
 
         # add the Class, based on the ClassID
@@ -488,7 +499,7 @@ END_SQL
         }
 
         # cache
-        $Kernel::OM->Get('Kernel::System::Cache')->Set(
+        $CacheObject->Set(
             Type  => $Self->{CacheType},
             TTL   => $Self->{CacheTTL},
             Key   => $CacheKey,
