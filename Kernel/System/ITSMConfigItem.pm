@@ -355,7 +355,7 @@ sub ConfigItemGet {
 
     # check if result is cached
     if ( ref $CacheCurrent eq 'HASH' ) {
-        if ( $Param{VersionID} && $Param{ConfigItemID} && $Param{ConfigItemID} ne $Cache->{ConfigItemID} ) {
+        if ( $Param{VersionID} && $Param{ConfigItemID} && $Param{ConfigItemID} ne $CacheCurrent->{ConfigItemID} ) {
             if ( !$Silent ) {
                 $Kernel::OM->Get('Kernel::System::Log')->Log(
                     Priority => 'error',
