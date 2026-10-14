@@ -327,22 +327,14 @@ sub ConfigItemGet {
     my $DFData = $Param{DynamicFields} ? 1 : 0;
 
     # check if result is already cached, considering the DynamicFields parameter
-    my $BaseKey = $Param{VersionID}
+    my @CacheKeyID = $Param{VersionID}
         ?
-        join(
-            '::', 'ConfigItemGet',
-            VersionID => $Param{VersionID},
-            'DFData'
-        )
+        ( VersionID    => $Param{VersionID} )
         :
-        join(
-            '::', 'ConfigItemGet',
-            ConfigItemID => $Param{ConfigItemID},
-            'DFData'
-        );
+        ( ConfigItemID => $Param{ConfigItemID} );
 
-    my $CacheKey        = $BaseKey . '::' . '0';
-    my $CacheKeyCurrent = $BaseKey . '::' . $DFData;
+    my $CacheKey        = join '::', 'ConfigItemGet', @CacheKeyID, DFData => 0;
+    my $CacheKeyCurrent = join '::', 'ConfigItemGet', @CacheKeyID, DFData => 1;
 
     my $CacheObject = $Kernel::OM->Get('Kernel::System::Cache');
 
@@ -534,17 +526,17 @@ END_SQL
             # set the dynamic field name and value into the ticket hash
             $ConfigItem{ 'DynamicField_' . $DynamicFieldConfig->{Name} } = $Value;
         }
-    }
 
-    # cache the full result in memory only
-    $CacheObject->Set(
-        Type           => $Self->{CacheType},
-        TTL            => $Self->{CacheTTL},
-        Key            => $CacheKeyCurrent,
-        Value          => dclone( \%ConfigItem ),
-        CacheInMemory  => 1,
-        CacheInBackend => 0,
-    );
+        # cache the full result in memory only
+        $CacheObject->Set(
+            Type           => $Self->{CacheType},
+            TTL            => $Self->{CacheTTL},
+            Key            => $CacheKeyCurrent,
+            Value          => dclone( \%ConfigItem ),
+            CacheInMemory  => 1,
+            CacheInBackend => 0,
+        );
+    }
 
     return \%ConfigItem;
 }
