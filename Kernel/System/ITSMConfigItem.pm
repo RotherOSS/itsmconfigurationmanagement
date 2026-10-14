@@ -323,10 +323,9 @@ sub ConfigItemGet {
     }
 
     # ignore DynamicFields per default,
-    # make sure that the variable is either 0 or 1, as it is used for the cache key
     my $DFData = $Param{DynamicFields} ? 1 : 0;
 
-    # check if result is already cached, considering the DynamicFields parameter
+    # check cache
     my @CacheKeyID = $Param{VersionID}
         ? ( VersionID => $Param{VersionID} )
         : ( ConfigItemID => $Param{ConfigItemID} );
@@ -521,7 +520,7 @@ END_SQL
                 ObjectID           => $ConfigItem{VersionID},
             );
 
-            # set the dynamic field name and value into the ticket hash
+            # set the dynamic field name and value into the config item hash
             $ConfigItem{ 'DynamicField_' . $DynamicFieldConfig->{Name} } = $Value;
         }
 
