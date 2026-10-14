@@ -341,8 +341,8 @@ sub ConfigItemGet {
             'DFData'
         );
 
-    $CacheKey        = $BaseKey . '::' . '0';
-    $CacheKeyCurrent = $BaseKey . '::' . $DFData;
+    my $CacheKey        = $BaseKey . '::' . '0';
+    my $CacheKeyCurrent = $BaseKey . '::' . $DFData;
 
     my $CacheObject = $Kernel::OM->Get('Kernel::System::Cache');
 
@@ -461,6 +461,32 @@ END_SQL
         return;
     }
 
+    # retrieve additional base attributes from general cataog
+    my $GeneralCatalogObject = $Kernel::OM->Get('Kernel::System::GeneralCatalog');
+
+    # add the Class, based on the ClassID
+    {
+        my $ClassList = $GeneralCatalogObject->ItemList(
+            Class => 'ITSM::ConfigItem::Class',
+        );
+
+        $ConfigItem{Class} = $ClassList->{ $ConfigItem{ClassID} };
+    }
+
+    # Add more readable names for the various states.
+    # Add the state types.
+    STATE:
+    for my $State (qw/DeplState CurDeplState InciState CurInciState/) {
+        next STATE unless $ConfigItem{ $State . 'ID' };
+
+        my $Item = $GeneralCatalogObject->ItemGet(
+            ItemID => $ConfigItem{ $State . 'ID' },
+        );
+
+        $ConfigItem{$State} = $Item->{Name};
+        $ConfigItem{ $State . 'Type' } = $Item->{Functionality}[0] // '';
+    }
+
     # cache 
     $Kernel::OM->Get('Kernel::System::Cache')->Set(
         Type => $Self->{CacheType},
@@ -497,31 +523,6 @@ END_SQL
             # set the dynamic field name and value into the ticket hash
             $ConfigItem{ 'DynamicField_' . $DynamicFieldConfig->{Name} } = $Value;
         }
-    }
-
-    my $GeneralCatalogObject = $Kernel::OM->Get('Kernel::System::GeneralCatalog');
-
-    # add the Class, based on the ClassID
-    {
-        my $ClassList = $GeneralCatalogObject->ItemList(
-            Class => 'ITSM::ConfigItem::Class',
-        );
-
-        $ConfigItem{Class} = $ClassList->{ $ConfigItem{ClassID} };
-    }
-
-    # Add more readable names for the various states.
-    # Add the state types.
-    STATE:
-    for my $State (qw/DeplState CurDeplState InciState CurInciState/) {
-        next STATE unless $ConfigItem{ $State . 'ID' };
-
-        my $Item = $GeneralCatalogObject->ItemGet(
-            ItemID => $ConfigItem{ $State . 'ID' },
-        );
-
-        $ConfigItem{$State} = $Item->{Name};
-        $ConfigItem{ $State . 'Type' } = $Item->{Functionality}[0] // '';
     }
 
     # cache the full result in memory only
