@@ -326,46 +326,36 @@ sub ConfigItemGet {
     my $DFData = $Param{DynamicFields} ? 1 : 0;
 
     # check if result is already cached, considering the DynamicFields parameter
-    my $CacheKey = $Param{VersionID}
+
+    my $BaseKey = $Param{VersionID}
         ?
         join(
             '::', 'ConfigItemGet',
             VersionID => $Param{VersionID},
-            DFData    => 0
+            'DFData'
         )
         :
         join(
             '::', 'ConfigItemGet',
             ConfigItemID => $Param{ConfigItemID},
-            DFData       => 0
+            'DFData'
         );
 
-    my $CacheKeyDynamicFields = $Param{VersionID}
-        ?
-        join(
-            '::', 'ConfigItemGet',
-            VersionID => $Param{VersionID},
-            DFData    => 1
-        )
-        :
-        join(
-            '::', 'ConfigItemGet',
-            ConfigItemID => $Param{ConfigItemID},
-            DFData       => 1
-        );
+    $CacheKey        = $BaseKey . '::' . '0';
+    $CacheKeyCurrent = $BaseKey . '::' . $DFData;
 
     my $CacheObject = $Kernel::OM->Get('Kernel::System::Cache');
 
-    my $CacheDynamicFields = $CacheObject->Get(
+    my $CacheCurrent = $CacheObject->Get(
         Type           => $Self->{CacheType},
-        Key            => $CacheKeyDynamicFields,
+        Key            => $CacheKeyCurrent,
         CacheInMemory  => 1,
         CacheInBackend => 0,
     );
 
     # check if result is cached
-    if ( ref $CacheDynamicFields eq 'HASH' ) {
-        return %{$CacheDynamicFields};
+    if ( ref $CacheCurrent eq 'HASH' ) {
+        return $CacheCurrent;
     }
 
     my %ConfigItem;
@@ -460,19 +450,6 @@ END_SQL
 
         return;
     }
-
-    # Cache the result only when a ticket ID was found as otherwise a non-existent ticket
-    # would be cached. That can cause errors when the cache isn't expired and postmaster
-    # creates that ticket.
-    $Kernel::OM->Get('Kernel::System::Cache')->Set(
-        Type => $Self->{CacheType},
-        TTL  => $Self->{CacheTTL},
-        Key  => $CacheKey,
-
-        # make a local copy of the ticket data to avoid it being altered in-memory later
-        Value => {%Ticket},
-    );
-
     if ( $Param{VersionID} && $Param{ConfigItemID} && $Param{ConfigItemID} ne $ConfigItem{ConfigItemID} ) {
         if ( !$Silent ) {
             $Kernel::OM->Get('Kernel::System::Log')->Log(
@@ -483,6 +460,14 @@ END_SQL
 
         return;
     }
+
+    # cache 
+    $Kernel::OM->Get('Kernel::System::Cache')->Set(
+        Type => $Self->{CacheType},
+        TTL  => $Self->{CacheTTL},
+        Key  => $CacheKey,
+        Value => dclone( \%ConfigItem ),
+    );
     }
 
     # check if need to return DynamicFields
@@ -543,7 +528,7 @@ END_SQL
     $CacheObject->Set(
         Type           => $Self->{CacheType},
         TTL            => $Self->{CacheTTL},
-        Key            => $CacheKeyDynamicFields,
+        Key            => $CacheKeyCurrent,
         Value          => dclone( \%ConfigItem ),
         CacheInMemory  => 1,
         CacheInBackend => 0,
