@@ -95,6 +95,8 @@ Returns possible values, selected values, and visibility of fields
         ACLPreselection           => 0|1,                           # optional
         PossibleValuesOnly        => 1,                             # optional; assume all fields are visible e.g. for sets
         CachedVisibility          => \%CachedVisibility,            # optional; use the provided visibility and do not store the cache at the end
+        DynamicFieldDataDB        => \%DynamicFieldDataDB,          # optional; used to set values for reappearing dynamic fields to stored data
+                                                                    #   will also be passed on to GetFieldState()
     );
 
 Returns:
@@ -156,6 +158,14 @@ sub GetFieldStates {
         );
 
         return;
+    }
+
+    my %DynamicFieldDataDB = IsHashRefWithData( $Param{DynamicFieldDataDB} ) ? $Param{DynamicFieldDataDB}->%* : ();
+    if ( ( !exists $Param{DynamicFieldDataDB} ) && $Param{ConfigItemID} ) {
+        %DynamicFieldDataDB = $Kernel::OM->Get('Kernel::System::ITSMConfigItem')->ConfigItemGet(
+            ConfigItemID  => $Param{ConfigItemID},
+            DynamicFields => 1,
+        );
     }
 
     # get the current visibility
@@ -266,82 +276,20 @@ sub GetFieldStates {
         next DYNAMICFIELD unless IsHashRefWithData($DynamicFieldConfig);
         next DYNAMICFIELD if !IsHashRefWithData($DynamicFieldConfig);
 
-        my $DFName         = $DynamicFieldConfig->{Name};
-        my $IsACLReducible = $Param{DynamicFieldBackendObject}->HasBehavior(
-            DynamicFieldConfig => $DynamicFieldConfig,
-            Behavior           => 'IsACLReducible',
-        );
+        my $DFName = $DynamicFieldConfig->{Name};
 
-        # 1. handle hidden fields
-        if ( %Visibility && $Visibility{"DynamicField_$DFName"} == 0 ) {
-
-            next DYNAMICFIELD if ( $CachedVisibility && $CachedVisibility->{"DynamicField_$DFName"} == 0 );
-
-            # values of visible fields turning invisible are deleted or set to values of config item data if present
-            my $UpdateRequired = !defined $DFParam->{"DynamicField_$DFName"} ? 0 :
-                ref( $DFParam->{"DynamicField_$DFName"} )
-                ?
-                ( IsArrayRefWithData( $DFParam->{"DynamicField_$DFName"} ) ? 1 : 0 )
-                :
-                $DFParam->{"DynamicField_$DFName"} =~ m/^-?$/ ? 0 : 1;
-
-            my $ConfigItemData;
-            if ( !$Param{NoDefaultValue} ) {
-
-                if ( $Param{ConfigItemID} ) {
-                    $ConfigItemData = $Kernel::OM->Get('Kernel::System::ITSMConfigItem')->ConfigItemGet(
-                        ConfigItemID  => $Param{ConfigItemID},
-                        UserID        => $Param{UserID},
-                        DynamicFields => 1,
-                    );
-
-                    if ( defined $ConfigItemData->{"DynamicField_$DFName"} ) {
-
-                        my $ValueIsDifferent = $Kernel::OM->Get('Kernel::System::DynamicField::Backend')->ValueIsDifferent(
-                            DynamicFieldConfig => $DynamicFieldConfig,
-                            Value1             => $DFParam->{"DynamicField_$DFName"},
-                            Value2             => $ConfigItemData->{"DynamicField_$DFName"},
-                        );
-
-                        if ($ValueIsDifferent) {
-                            $UpdateRequired = 1;
-                        }
-                        else {
-                            $UpdateRequired = 0;
-                        }
-                    }
-                }
-            }
-
-            # if values are present, FieldRestrictions have to be checked again for the newly changed elements
-            if ($UpdateRequired) {
-
-                # delete entry and remember change
-                $NewValues{"DynamicField_$DFName"} = ref( $DFParam->{"DynamicField_$DFName"} ) ? [] : '';
-
-                # check if we have a config item data value and use them, if so
-                if ( defined $ConfigItemData->{"DynamicField_$DFName"} && !$Param{NoDefaultValue} ) {
-                    $NewValues{"DynamicField_$DFName"} = $ConfigItemData->{"DynamicField_$DFName"};
-                }
-
-                # fields have to be added to correctly remove all content
-                if ( !$IsACLReducible ) {
-                    $Fields{$DFName} = {
-                        PossibleValues  => undef,
-                        NotACLReducible => 1,
-                    };
-                }
-                else {
-                    $Fields{$DFName} = {
-                        PossibleValues => {},
-                    };
-                }
-            }
-
+        # skip if field has been hidden (CachedVisibility) and is also hidden now (Visibility)
+        if (
+            %Visibility
+            && $Visibility{"DynamicField_$DFName"} == 0
+            && $CachedVisibility
+            && $CachedVisibility->{"DynamicField_$DFName"} == 0
+            )
+        {
             next DYNAMICFIELD;
         }
 
-        # 2. handle fields which set their dynamic content themselves
+        # 1. handle fields which set their dynamic content themselves
         if (
             $Param{DynamicFieldBackendObject}->HasBehavior(
                 DynamicFieldConfig => $DynamicFieldConfig,
@@ -349,15 +297,17 @@ sub GetFieldStates {
             )
             )
         {
-            # pass a uniform ObjectID to GetFieldState() call
-            # there are supposed to be more cases in the future, and having
-            # a uniform ObjectID should reduce conditional complexity
-            # in the DF drivers where not needed
-            my $ObjectID = $Param{ConfigItemID} // $Param{TicketID};
+
+            # changes in visibility need to be passed explicitly to the drivers
+            #   the drivers only get passed the CachedVisibility and therefor can't determine changes themselves
+            my $Disappears = ( %Visibility && $Visibility{"DynamicField_$DFName"} == 0 );
+            my $Reappears  = ( %Visibility && $Visibility{"DynamicField_$DFName"} == 1 && $CachedVisibility && $CachedVisibility->{"DynamicField_$DFName"} == 0 );
 
             my %Content = $Param{DynamicFieldBackendObject}->GetFieldState(
                 %Param,
-                ObjectID                => $ObjectID,
+                Disappears              => $Disappears,
+                Reappears               => $Reappears,
+                DynamicFieldDataDB      => \%DynamicFieldDataDB,
                 CachedVisibility        => $CachedVisibility,
                 DynamicFieldConfig      => $DynamicFieldConfig,
                 FieldRestrictionsObject => $Self,
@@ -402,11 +352,73 @@ sub GetFieldStates {
                 };
             }
 
+            # the visibility of Set-inner fields is handled by the Set itself in the GetFieldState() sub
             if ( $Content{Visibility} ) {
                 %Visibility = (
                     %Visibility,
                     $Content{Visibility}->%*,
                 );
+            }
+
+            next DYNAMICFIELD;
+        }
+
+        my $IsACLReducible = $Param{DynamicFieldBackendObject}->HasBehavior(
+            DynamicFieldConfig => $DynamicFieldConfig,
+            Behavior           => 'IsACLReducible',
+        );
+
+        # 2. handle disappearing fields
+        if ( %Visibility && $Visibility{"DynamicField_$DFName"} == 0 ) {
+
+            # values of visible fields turning invisible are deleted
+            my $UpdateRequired = !defined $DFParam->{"DynamicField_$DFName"} ? 0 :
+                ref( $DFParam->{"DynamicField_$DFName"} )
+                ?
+                ( IsArrayRefWithData( $DFParam->{"DynamicField_$DFName"} ) ? 1 : 0 )
+                :
+                $DFParam->{"DynamicField_$DFName"} =~ m/^-?$/ ? 0 : 1;
+
+            # setting config item values for hidden fields is necessary for ACL calculation
+            if ( defined $DynamicFieldDataDB{"DynamicField_$DFName"} ) {
+
+                my $ValueIsDifferent = $Kernel::OM->Get('Kernel::System::DynamicField::Backend')->ValueIsDifferent(
+                    DynamicFieldConfig => $DynamicFieldConfig,
+                    Value1             => $DFParam->{"DynamicField_$DFName"},
+                    Value2             => $DynamicFieldDataDB{"DynamicField_$DFName"},
+                );
+
+                if ($ValueIsDifferent) {
+                    $UpdateRequired = 1;
+                }
+                else {
+                    $UpdateRequired = 0;
+                }
+            }
+
+            # if values are present, FieldRestrictions have to be checked again for the newly changed elements
+            if ($UpdateRequired) {
+
+                # delete entry and remember change
+                $NewValues{"DynamicField_$DFName"} = ref( $DFParam->{"DynamicField_$DFName"} ) ? [] : '';
+
+                # check if we have a config item data value and use them, if so
+                if ( defined $DynamicFieldDataDB{"DynamicField_$DFName"} ) {
+                    $NewValues{"DynamicField_$DFName"} = $DynamicFieldDataDB{"DynamicField_$DFName"};
+                }
+
+                # fields have to be added to correctly remove all content
+                if ( !$IsACLReducible ) {
+                    $Fields{$DFName} = {
+                        PossibleValues  => undef,
+                        NotACLReducible => 1,
+                    };
+                }
+                else {
+                    $Fields{$DFName} = {
+                        PossibleValues => {},
+                    };
+                }
             }
 
             next DYNAMICFIELD;
@@ -420,34 +432,14 @@ sub GetFieldStates {
             # ...but set actual or default values of reappearing fields first
             if ( $CachedVisibility && $CachedVisibility->{"DynamicField_$DFName"} == 0 ) {
 
-                if ( $Param{ConfigItemID} ) {
-                    my $ConfigItemData = $Kernel::OM->Get('Kernel::System::ITSMConfigItem')->ConfigItemGet(
-                        ConfigItemID  => $Param{ConfigItemID},
-                        UserID        => $Param{UserID},
-                        DynamicFields => 1,
-                    );
-
-                    if ( $Param{NoDefaultValue} ) {
-
-                        $Fields{"$DFName"} = {
-                            PossibleValues  => undef,
-                            NotACLReducible => 1,
-                        };
-
-                        next DYNAMICFIELD;
-                    }
-                    elsif ( defined $ConfigItemData->{"DynamicField_$DFName"} ) {
-
-                        $NewValues{"DynamicField_$DFName"} = $ConfigItemData->{"DynamicField_$DFName"};
-                        $Fields{$DFName} = {
-                            PossibleValues  => undef,
-                            NotACLReducible => 1,
-                        };
-                        next DYNAMICFIELD;
-                    }
+                if ( defined $DynamicFieldDataDB{"DynamicField_$DFName"} ) {
+                    $NewValues{"DynamicField_$DFName"} = $DynamicFieldDataDB{"DynamicField_$DFName"};
+                    $Fields{$DFName} = {
+                        PossibleValues  => undef,
+                        NotACLReducible => 1,
+                    };
                 }
-
-                if ( defined $UserPreferences{"UserDynamicField_$DFName"} ) {
+                elsif ( defined $UserPreferences{"UserDynamicField_$DFName"} ) {
                     $NewValues{"DynamicField_$DFName"} = $UserPreferences{"UserDynamicField_$DFName"};
                     $Fields{$DFName} = {
                         PossibleValues  => undef,
@@ -487,20 +479,11 @@ sub GetFieldStates {
                 if ( $CachedVisibility && $CachedVisibility->{"DynamicField_$DFName"} == 0 ) {
                     $CheckACLs = 1;
 
-                    my $ConfigItemData;
-                    if ( $Param{ConfigItemID} ) {
-                        $ConfigItemData = $Kernel::OM->Get('Kernel::System::ITSMConfigItem')->ConfigItemGet(
-                            ConfigItemID  => $Param{ConfigItemID},
-                            UserID        => $Param{UserID},
-                            DynamicFields => 1,
-                        );
-                    }
-
                     # take the config item or default value and put it also into NewValues
                     # in the unlikely case that they will be deleted again, this will just cause a redundant second run
-                    if ( defined $ConfigItemData->{"DynamicField_$DFName"} ) {
-                        $DFParam->{"DynamicField_$DFName"} = $ConfigItemData->{"DynamicField_$DFName"};
-                        $NewValues{"DynamicField_$DFName"} = $ConfigItemData->{"DynamicField_$DFName"};
+                    if ( defined $DynamicFieldDataDB{"DynamicField_$DFName"} ) {
+                        $DFParam->{"DynamicField_$DFName"} = $DynamicFieldDataDB{"DynamicField_$DFName"};
+                        $NewValues{"DynamicField_$DFName"} = $DynamicFieldDataDB{"DynamicField_$DFName"};
                     }
                     elsif ( defined $UserPreferences{"UserDynamicField_$DFName"} ) {
                         $DFParam->{"DynamicField_$DFName"} = $UserPreferences{"UserDynamicField_$DFName"};
@@ -651,7 +634,7 @@ sub GetFieldStates {
             Type  => 'HiddenFields',
             Key   => $Param{FormID},
             Value => {%Visibility},
-            TTL   => 60 * 20,          # 20 min
+            TTL   => $Kernel::OM->Get('Kernel::Config')->Get('SessionMaxTime') || 60 * 60 * 12,
         );
     }
 
