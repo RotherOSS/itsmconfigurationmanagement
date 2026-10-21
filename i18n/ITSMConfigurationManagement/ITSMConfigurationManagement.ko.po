@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2026-08-31 13:03+0000\n"
+"POT-Creation-Date: 2026-10-21 15:16+0000\n"
 "PO-Revision-Date: 2026-04-06 20:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Korean <http://translate.otobo.org/projects/opm-packages/itsm-"
@@ -605,6 +605,10 @@ msgstr "클래스/역할 및 관련 필드 가져오기"
 #. JS File: ITSM.Admin.ITSMConfigItem
 msgid "An error occurred during class import."
 msgstr "클래스 가져오기 중에 오류가 발생했습니다."
+
+#. JS File: ITSM.Admin.ITSMConfigItem
+msgid "Class import failed."
+msgstr ""
 
 #. SysConfig
 msgid "0 - Hidden"
@@ -1947,6 +1951,12 @@ msgstr ""
 "메뉴에 표시합니다."
 
 #. SysConfig
+#, fuzzy
+#| msgid "Column config item filters for ConfigItem Overview."
+msgid "Shows all both ro and rw config items in the config item view."
+msgstr "구성 항목 개요에 대한 열 구성 항목 필터."
+
+#. SysConfig
 msgid "Shows the config item history (reverse ordered) in the agent interface."
 msgstr "상담원 인터페이스에 구성 항목 기록을 표시합니다(역순)."
 
@@ -1973,6 +1983,18 @@ msgstr ""
 #. SysConfig
 msgid "Triggers ConfigItemFetch invoker automatically."
 msgstr "ConfigItemFetch 인보커를 자동으로 트리거합니다."
+
+#. SysConfig
+msgid ""
+"Update linked tickets, for example for processes checking lenses. With "
+"\"Classes\" and \"LinkTypes\", the execution can be restricted to certain "
+"config item classes and link types. Please put in the exact class names into "
+"\"Classes\" as well as the exact link type names in \"LinkTypes\", "
+"respectively. Currently available LinkTypes are: Normal, ParentChild, "
+"LocationOf, AlternativeTo, ConnectedTo, DependsOn, Includes, RelevantTo. "
+"Please note that the actual usable link types may be further restricted by "
+"the settings grouped under LinkObject::PossibleLink."
+msgstr ""
 
 #. SysConfig
 msgid "Version String Expression"

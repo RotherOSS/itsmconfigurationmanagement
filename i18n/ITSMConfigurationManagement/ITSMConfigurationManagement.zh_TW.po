@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2026-08-31 13:03+0000\n"
+"POT-Creation-Date: 2026-10-21 15:16+0000\n"
 "PO-Revision-Date: 2026-04-06 20:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Chinese (Traditional Han script) <http://translate.otobo.org/"
@@ -600,6 +600,10 @@ msgstr "导入类/角色及其相关字段"
 #. JS File: ITSM.Admin.ITSMConfigItem
 msgid "An error occurred during class import."
 msgstr "类导入时发生错误。"
+
+#. JS File: ITSM.Admin.ITSMConfigItem
+msgid "Class import failed."
+msgstr ""
 
 #. SysConfig
 msgid "0 - Hidden"
@@ -1803,6 +1807,12 @@ msgid ""
 msgstr "在菜单中显示一个链接，用于放大代理界面配置项概览中的配置项。"
 
 #. SysConfig
+#, fuzzy
+#| msgid "Column config item filters for ConfigItem Overview."
+msgid "Shows all both ro and rw config items in the config item view."
+msgstr "配置项概览的列配置项过滤器。"
+
+#. SysConfig
 msgid "Shows the config item history (reverse ordered) in the agent interface."
 msgstr "显示代理界面中的配置项目历史记录（逆序）。"
 
@@ -1827,6 +1837,18 @@ msgstr ""
 #. SysConfig
 msgid "Triggers ConfigItemFetch invoker automatically."
 msgstr "自动触发 ConfigItemFetch 调用器。"
+
+#. SysConfig
+msgid ""
+"Update linked tickets, for example for processes checking lenses. With "
+"\"Classes\" and \"LinkTypes\", the execution can be restricted to certain "
+"config item classes and link types. Please put in the exact class names into "
+"\"Classes\" as well as the exact link type names in \"LinkTypes\", "
+"respectively. Currently available LinkTypes are: Normal, ParentChild, "
+"LocationOf, AlternativeTo, ConnectedTo, DependsOn, Includes, RelevantTo. "
+"Please note that the actual usable link types may be further restricted by "
+"the settings grouped under LinkObject::PossibleLink."
+msgstr ""
 
 #. SysConfig
 msgid "Version String Expression"

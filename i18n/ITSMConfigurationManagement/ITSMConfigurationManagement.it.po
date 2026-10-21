@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2026-08-31 13:03+0000\n"
+"POT-Creation-Date: 2026-10-21 15:16+0000\n"
 "PO-Revision-Date: 2026-04-06 18:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Italian <http://translate.otobo.org/projects/opm-packages/"
@@ -623,6 +623,10 @@ msgstr "Importazione di classi/ruoli e dei relativi campi"
 #. JS File: ITSM.Admin.ITSMConfigItem
 msgid "An error occurred during class import."
 msgstr "Si è verificato un errore durante l'importazione della classe."
+
+#. JS File: ITSM.Admin.ITSMConfigItem
+msgid "Class import failed."
+msgstr ""
 
 #. SysConfig
 msgid "0 - Hidden"
@@ -2099,6 +2103,14 @@ msgstr ""
 "nella panoramica delle voci di configurazione dell'interfaccia agenti."
 
 #. SysConfig
+#, fuzzy
+#| msgid "Column config item filters for ConfigItem Overview."
+msgid "Shows all both ro and rw config items in the config item view."
+msgstr ""
+"Filtri per gli elementi di configurazione della colonna per la panoramica di "
+"ConfigItem."
+
+#. SysConfig
 msgid "Shows the config item history (reverse ordered) in the agent interface."
 msgstr ""
 "Mostra la cronologia degli articoli di configurazione (ordine inverso) "
@@ -2128,6 +2140,18 @@ msgstr ""
 #. SysConfig
 msgid "Triggers ConfigItemFetch invoker automatically."
 msgstr "Attiva automaticamente l'invocatore di ConfigItemFetch."
+
+#. SysConfig
+msgid ""
+"Update linked tickets, for example for processes checking lenses. With "
+"\"Classes\" and \"LinkTypes\", the execution can be restricted to certain "
+"config item classes and link types. Please put in the exact class names into "
+"\"Classes\" as well as the exact link type names in \"LinkTypes\", "
+"respectively. Currently available LinkTypes are: Normal, ParentChild, "
+"LocationOf, AlternativeTo, ConnectedTo, DependsOn, Includes, RelevantTo. "
+"Please note that the actual usable link types may be further restricted by "
+"the settings grouped under LinkObject::PossibleLink."
+msgstr ""
 
 #. SysConfig
 msgid "Version String Expression"
