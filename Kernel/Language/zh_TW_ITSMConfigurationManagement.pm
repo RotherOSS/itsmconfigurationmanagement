@@ -247,6 +247,7 @@ sub Data {
     $Self->{Translation}->{'Overview and Confirmation'} = '概述和确认';
     $Self->{Translation}->{'Importing classes/roles and their related fields'} = '导入类/角色及其相关字段';
     $Self->{Translation}->{'An error occurred during class import.'} = '类导入时发生错误。';
+    $Self->{Translation}->{'Class import failed.'} = '';
 
     # SysConfig
     $Self->{Translation}->{'0 - Hidden'} = '0 - 隐藏';
@@ -561,6 +562,8 @@ sub Data {
         '在代理界面的缩放视图中显示菜单链接，以打印配置项。';
     $Self->{Translation}->{'Shows a link in the menu to zoom into a configuration item in the configuration item overview of the agent interface.'} =
         '在菜单中显示一个链接，用于放大代理界面配置项概览中的配置项。';
+    $Self->{Translation}->{'Shows all both ro and rw config items in the config item view.'} =
+        '';
     $Self->{Translation}->{'Shows the config item history (reverse ordered) in the agent interface.'} =
         '显示代理界面中的配置项目历史记录（逆序）。';
     $Self->{Translation}->{'The default category which is shown, if none is selected.'} = '如果未选择任何类别，则显示默认类别。';
@@ -569,6 +572,8 @@ sub Data {
     $Self->{Translation}->{'Title for the public interface overview.'} = '';
     $Self->{Translation}->{'Title for the public interface search.'} = '';
     $Self->{Translation}->{'Triggers ConfigItemFetch invoker automatically.'} = '自动触发 ConfigItemFetch 调用器。';
+    $Self->{Translation}->{'Update linked tickets, for example for processes checking lenses. With "Classes" and "LinkTypes", the execution can be restricted to certain config item classes and link types. Please put in the exact class names into "Classes" as well as the exact link type names in "LinkTypes", respectively. Currently available LinkTypes are: Normal, ParentChild, LocationOf, AlternativeTo, ConnectedTo, DependsOn, Includes, RelevantTo. Please note that the actual usable link types may be further restricted by the settings grouped under LinkObject::PossibleLink.'} =
+        '';
     $Self->{Translation}->{'Version String Expression'} = '版本字符串表达式';
     $Self->{Translation}->{'Version String Module'} = '版本字符串模块';
     $Self->{Translation}->{'Version Trigger'} = '版本触发器';
@@ -818,6 +823,7 @@ sub Data {
     push @{ $Self->{JavaScriptStrings} // [] }, (
     'An error occurred during class import.',
     'An error occurred during communication.',
+    'Class import failed.',
     'Confirm',
     'Dismiss',
     'Do you want to proceed?',

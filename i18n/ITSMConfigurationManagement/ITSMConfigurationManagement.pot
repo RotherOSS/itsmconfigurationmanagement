@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2026-08-31 13:03+0000\n"
+"POT-Creation-Date: 2026-10-21 15:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -576,6 +576,10 @@ msgstr ""
 
 #. JS File: ITSM.Admin.ITSMConfigItem
 msgid "An error occurred during class import."
+msgstr ""
+
+#. JS File: ITSM.Admin.ITSMConfigItem
+msgid "Class import failed."
 msgstr ""
 
 #. SysConfig
@@ -1303,6 +1307,10 @@ msgid "Shows a link in the menu to zoom into a configuration item in the configu
 msgstr ""
 
 #. SysConfig
+msgid "Shows all both ro and rw config items in the config item view."
+msgstr ""
+
+#. SysConfig
 msgid "Shows the config item history (reverse ordered) in the agent interface."
 msgstr ""
 
@@ -1324,6 +1332,10 @@ msgstr ""
 
 #. SysConfig
 msgid "Triggers ConfigItemFetch invoker automatically."
+msgstr ""
+
+#. SysConfig
+msgid "Update linked tickets, for example for processes checking lenses. With \"Classes\" and \"LinkTypes\", the execution can be restricted to certain config item classes and link types. Please put in the exact class names into \"Classes\" as well as the exact link type names in \"LinkTypes\", respectively. Currently available LinkTypes are: Normal, ParentChild, LocationOf, AlternativeTo, ConnectedTo, DependsOn, Includes, RelevantTo. Please note that the actual usable link types may be further restricted by the settings grouped under LinkObject::PossibleLink."
 msgstr ""
 
 #. SysConfig

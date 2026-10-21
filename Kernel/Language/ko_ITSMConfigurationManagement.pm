@@ -247,6 +247,7 @@ sub Data {
     $Self->{Translation}->{'Overview and Confirmation'} = '개요 및 확인';
     $Self->{Translation}->{'Importing classes/roles and their related fields'} = '클래스/역할 및 관련 필드 가져오기';
     $Self->{Translation}->{'An error occurred during class import.'} = '클래스 가져오기 중에 오류가 발생했습니다.';
+    $Self->{Translation}->{'Class import failed.'} = '';
 
     # SysConfig
     $Self->{Translation}->{'0 - Hidden'} = '0 - 숨김';
@@ -561,6 +562,8 @@ sub Data {
         '메뉴에 링크를 표시하여 상담원 인터페이스의 확대 보기에서 구성 항목을 인쇄할 수 있습니다.';
     $Self->{Translation}->{'Shows a link in the menu to zoom into a configuration item in the configuration item overview of the agent interface.'} =
         '상담원 인터페이스의 구성 항목 개요에 있는 구성 항목을 확대할 수 있는 링크를 메뉴에 표시합니다.';
+    $Self->{Translation}->{'Shows all both ro and rw config items in the config item view.'} =
+        '';
     $Self->{Translation}->{'Shows the config item history (reverse ordered) in the agent interface.'} =
         '상담원 인터페이스에 구성 항목 기록을 표시합니다(역순).';
     $Self->{Translation}->{'The default category which is shown, if none is selected.'} = '선택되지 않은 경우 표시되는 기본 카테고리입니다.';
@@ -569,6 +572,8 @@ sub Data {
     $Self->{Translation}->{'Title for the public interface overview.'} = '';
     $Self->{Translation}->{'Title for the public interface search.'} = '';
     $Self->{Translation}->{'Triggers ConfigItemFetch invoker automatically.'} = 'ConfigItemFetch 인보커를 자동으로 트리거합니다.';
+    $Self->{Translation}->{'Update linked tickets, for example for processes checking lenses. With "Classes" and "LinkTypes", the execution can be restricted to certain config item classes and link types. Please put in the exact class names into "Classes" as well as the exact link type names in "LinkTypes", respectively. Currently available LinkTypes are: Normal, ParentChild, LocationOf, AlternativeTo, ConnectedTo, DependsOn, Includes, RelevantTo. Please note that the actual usable link types may be further restricted by the settings grouped under LinkObject::PossibleLink.'} =
+        '';
     $Self->{Translation}->{'Version String Expression'} = '버전 문자열 표현식';
     $Self->{Translation}->{'Version String Module'} = '버전 문자열 모듈';
     $Self->{Translation}->{'Version Trigger'} = '버전 트리거';
@@ -818,6 +823,7 @@ sub Data {
     push @{ $Self->{JavaScriptStrings} // [] }, (
     'An error occurred during class import.',
     'An error occurred during communication.',
+    'Class import failed.',
     'Confirm',
     'Dismiss',
     'Do you want to proceed?',

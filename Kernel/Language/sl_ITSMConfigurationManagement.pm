@@ -247,6 +247,7 @@ sub Data {
     $Self->{Translation}->{'Overview and Confirmation'} = 'Pregled in potrditev';
     $Self->{Translation}->{'Importing classes/roles and their related fields'} = 'Uvoz razredov/vlog in z njimi povezanih polj';
     $Self->{Translation}->{'An error occurred during class import.'} = 'Pri uvozu razreda je prišlo do napake.';
+    $Self->{Translation}->{'Class import failed.'} = '';
 
     # SysConfig
     $Self->{Translation}->{'0 - Hidden'} = '0 - Skrito';
@@ -561,6 +562,8 @@ sub Data {
         'Prikaže povezavo v meniju za tiskanje elementa konfiguracije v pogledu povečave vmesnika agenta.';
     $Self->{Translation}->{'Shows a link in the menu to zoom into a configuration item in the configuration item overview of the agent interface.'} =
         'Prikaže povezavo v meniju za povečavo elementa konfiguracije v pregledu elementov konfiguracije v vmesniku agenta.';
+    $Self->{Translation}->{'Shows all both ro and rw config items in the config item view.'} =
+        '';
     $Self->{Translation}->{'Shows the config item history (reverse ordered) in the agent interface.'} =
         'Prikaže zgodovino elementov konfiguracije (v obratnem vrstnem redu) v vmesniku agenta.';
     $Self->{Translation}->{'The default category which is shown, if none is selected.'} = 'Privzeta kategorija, ki se prikaže, če ni izbrana nobena.';
@@ -569,6 +572,8 @@ sub Data {
     $Self->{Translation}->{'Title for the public interface overview.'} = '';
     $Self->{Translation}->{'Title for the public interface search.'} = '';
     $Self->{Translation}->{'Triggers ConfigItemFetch invoker automatically.'} = 'Samodejno sproži sprožilca ConfigItemFetch.';
+    $Self->{Translation}->{'Update linked tickets, for example for processes checking lenses. With "Classes" and "LinkTypes", the execution can be restricted to certain config item classes and link types. Please put in the exact class names into "Classes" as well as the exact link type names in "LinkTypes", respectively. Currently available LinkTypes are: Normal, ParentChild, LocationOf, AlternativeTo, ConnectedTo, DependsOn, Includes, RelevantTo. Please note that the actual usable link types may be further restricted by the settings grouped under LinkObject::PossibleLink.'} =
+        '';
     $Self->{Translation}->{'Version String Expression'} = 'Različica String Izraz';
     $Self->{Translation}->{'Version String Module'} = 'Različica String Modul';
     $Self->{Translation}->{'Version Trigger'} = 'Sprožilnik različice';
@@ -818,6 +823,7 @@ sub Data {
     push @{ $Self->{JavaScriptStrings} // [] }, (
     'An error occurred during class import.',
     'An error occurred during communication.',
+    'Class import failed.',
     'Confirm',
     'Dismiss',
     'Do you want to proceed?',

@@ -91,7 +91,7 @@ sub Data {
     $Self->{Translation}->{'Max links level reached for ConfigItem!'} = 'ConfigItemの最大リンクレベルに達した！';
 
     # Template: AgentITSMConfigItemZoom
-    $Self->{Translation}->{'Configuration Item'} = '構成アイテム';
+    $Self->{Translation}->{'Configuration Item'} = '構成アイテム（Configuration Item）';
     $Self->{Translation}->{'Configuration Item Information'} = '構成アイテム情報';
     $Self->{Translation}->{'Current Deployment State'} = '現在のデプロイ・ステータス';
     $Self->{Translation}->{'Current Incident State'} = '現在のインシデントのステータス';
@@ -148,14 +148,14 @@ sub Data {
     $Self->{Translation}->{'Name updated (new=%s, old=%s)'} = '名前が更新されました（新規=%s、古い=%s）';
     $Self->{Translation}->{'Attribute %s updated from "%s" to "%s"'} = '属性%sが "%s"から "%s"に更新されました';
     $Self->{Translation}->{'Version %s deleted'} = 'バージョン%sが削除されました';
-    $Self->{Translation}->{'File "%s" uploaded'} = '';
-    $Self->{Translation}->{'File "%s" removed'} = '';
+    $Self->{Translation}->{'File "%s" uploaded'} = 'ファイル "%s" をアップロードしました';
+    $Self->{Translation}->{'File "%s" removed'} = 'ファイル "%s" を削除しました';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
     $Self->{Translation}->{'No ConfigItemID or VersionID is given!'} = 'ConfigItemIDまたはVersionIDは指定されていません！';
     $Self->{Translation}->{'Can\'t show config item, no access rights given!'} = '構成アイテムを表示できません。アクセス権はありません！';
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = 'ConfigItemID%sはデータベースに見つかりません！';
-    $Self->{Translation}->{'ConfigItem'} = '構成アイテム';
+    $Self->{Translation}->{'ConfigItem'} = 'ConfigItem';
     $Self->{Translation}->{'printed by %s at %s'} = '%sで%sで印刷されました';
     $Self->{Translation}->{'Referenced by'} = '用例';
 
@@ -171,7 +171,7 @@ sub Data {
         '構成アイテムを表示できません。構成アイテムのアクセス権は与えられていません！';
     $Self->{Translation}->{'ConfigItem not found!'} = 'ConfigItemが見つかりません！';
     $Self->{Translation}->{'No versions found!'} = 'バージョンは見つかりませんでした！';
-    $Self->{Translation}->{'operational'} = '通常運用';
+    $Self->{Translation}->{'operational'} = '稼働中';
     $Self->{Translation}->{'warning'} = '警告';
     $Self->{Translation}->{'incident'} = 'インシデント';
     $Self->{Translation}->{'The deployment state of this config item'} = 'この構成アイテムのデプロイ・ステータス';
@@ -203,12 +203,12 @@ sub Data {
     $Self->{Translation}->{'Whether this link applies to the ConfigItem or the static version of the referencing object. Current Incident State calculation only is performed on dynamic links.'} =
         'このリンクが参照オブジェクトの ConfigItem と静的バージョンのどちらに適用されるか。現在のインシデント・ステートの計算は、ダイナミック・リンクに対してのみ実行されます。';
     $Self->{Translation}->{'Select the attribute which config items will be searched by'} = '設定項目を検索する属性を選択します。';
-    $Self->{Translation}->{'External-source key'} = '';
-    $Self->{Translation}->{'Select the type of display'} = '';
+    $Self->{Translation}->{'External-source key'} = '外部ソースのキー';
+    $Self->{Translation}->{'Select the type of display'} = '表示のタイプを選択してください';
 
     # Perl Module: Kernel/System/DynamicField/Driver/ConfigItemVersion.pm
     $Self->{Translation}->{'Activate this option to display values as a tree, grouped by config items.'} =
-        '';
+        '構成アイテムごとにグループ化して、値をツリー表示するには、このオプションを有効にしてください。';
 
     # Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
     $Self->{Translation}->{'Base structure is not valid. Please provide a hash with data in YAML format.'} =
@@ -223,9 +223,9 @@ sub Data {
 
     # Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
     $Self->{Translation}->{'Maximum number of one element'} = '一エレメントあたりの最大数';
-    $Self->{Translation}->{'Maximum number of one Set dynamic field element'} = '';
+    $Self->{Translation}->{'Maximum number of one Set dynamic field element'} = '1つのセット・ダイナミックフィールド要素の最大数';
     $Self->{Translation}->{'Maximum number of one element within a Set dynamic field element'} =
-        '';
+        'セット・ダイナミックフィールド要素内の1つの要素の最大数';
     $Self->{Translation}->{'Version String'} = 'バージョン文字列';
 
     # Perl Module: Kernel/Modules/AdminDynamicField.pm
@@ -247,163 +247,164 @@ sub Data {
     $Self->{Translation}->{'Overview and Confirmation'} = '概要と確認';
     $Self->{Translation}->{'Importing classes/roles and their related fields'} = 'クラス/役割とその関連フィールドのインポート';
     $Self->{Translation}->{'An error occurred during class import.'} = 'クラスのインポート中にエラーが発生しました。';
+    $Self->{Translation}->{'Class import failed.'} = '';
 
     # SysConfig
     $Self->{Translation}->{'0 - Hidden'} = '0 - 非表示';
     $Self->{Translation}->{'1 - Shown'} = '1 - 表示';
     $Self->{Translation}->{'A mapping of inner field names used in the Process Management TransitionActions ConfigItemAdd and -Update. The keys are the names of the set inner fields of the set with object type ticket which will be used to create/update the CI, and the values are the names of the inner fields of the set with object type ITSMConfigItem.'} =
-        '';
+        'プロセス管理の遷移アクション ConfigItemAdd および ConfigItemUpdate で使用される内部フィールド名の対応付け。キーは、CI の作成／更新に使用される、オブジェクトタイプがチケットのセットの内部フィールド名で、値はオブジェクトタイプが ITSMConfigItem のセットの内部フィールド名です。';
     $Self->{Translation}->{'Allows extended search conditions in config item search of the agent interface. With this feature you can search e. g. config item name with this kind of conditions like "(*key1*&&*key2*)" or "(*key1*||*key2*)".'} =
-        'エージェントインタフェースの設定項目検索において、拡張検索条件を許可します。この機能により、"(*key1*&*key2*) "や"(*key1*|*key2*) "のような条件で設定項目名を検索することができます。';
+        '担当者インタフェースの構成アイテム検索で、拡張検索条件を使用できるようにします。この機能により、例えば "(*key1*&&*key2*)" や "(*key1*||*key2*)" のような条件で構成アイテム名を検索できます。';
     $Self->{Translation}->{'Allows extended search conditions in config item search of the customer interface. With this feature you can search e. g. config item name with this kind of conditions like "(*key1*&&*key2*)" or "(*key1*||*key2*)".'} =
-        'カスタマーインターフェイスの設定項目検索において、検索条件を拡張することができます。この機能を使用すると、"(*key1*&*key2*) "または"(*key1*|*key2*) "のような条件で設定項目名を検索できます。';
+        '顧客インタフェースの構成アイテム検索で、拡張検索条件を使用できるようにします。この機能により、例えば "(*key1*&&*key2*)" や "(*key1*||*key2*)" のような条件で構成アイテム名を検索できます。';
     $Self->{Translation}->{'Assigned CIs'} = '割り当てられたCI';
     $Self->{Translation}->{'At a specific time point create a ticket for config items, if the configured requirements are met. The time point is determined by the value of the dynamic field of type date configured under "TimeCIKey" of the ConfigItem, and modified by "TimeModifier". If the latter can be either just a number, or a sign (+/-), a number, and an unit (d/h/m): "7" is equivalent to "+7d". The DynamicField "Ticket->DynamicField" will be used to mark created tickets - it has to exist. The flags \<OTOBO_CONFIGITEM_X\> where X can be NAME, NUMBER and DATE, will be substituted with the respective values in "Ticket->Text".'} =
-        '';
+        '設定した条件を満たす場合に、特定の時点で構成アイテムに対するチケットを作成します。時点は、構成アイテムの "TimeCIKey" で設定した日付タイプのダイナミックフィールドの値で決まり、"TimeModifier" で調整されます。"TimeModifier" には数値のみ、または符号（+/-）、数値、単位（d/h/m）を指定できます。"7" は "+7d" と同じです。作成されたチケットの識別には、ダイナミックフィールド "Ticket->DynamicField" が使用されます（存在している必要があります）。"Ticket->Text" 内のフラグ \<OTOBO_CONFIGITEM_X\> （X は NAME、NUMBER、DATE）は、それぞれの値に置換されます。';
     $Self->{Translation}->{'Attributes for licenses counting, where "TotalLicensesDF", "AvailableLicensesDF" and "LicenseReferenceDF" are the names of the dynamic fields used to track the remaining licenses. If used, only deployment states in "ValidDeplStates" are considered. If a threshold is defined in "MinimumLicenses", a ticket will automatically be created if less licenses are available. For this, the checkbox dynamic field "Ticket->DynamicField" must exist. The tags \<OTOBO_CONFIGITEM_X\> where X can be NAME, NUMBER, LICENSES_AVAIL and LICENSES_MIN, will be substituted with the respective values in "Ticket->Text" by the config item name, number, available licenses, and minimum required available licenses, respectively.'} =
-        '';
+        'ライセンス数の管理用の属性。"TotalLicensesDF"、"AvailableLicensesDF"、"LicenseReferenceDF" は、残りのライセンス数を追跡するためのダイナミックフィールドの名前です。使用する場合は、"ValidDeplStates" のデプロイ・ステータスのみが対象になります。"MinimumLicenses" にしきい値を定義すると、利用可能なライセンス数がそれを下回った場合に自動的にチケットが作成されます。このためには、チェックボックス・ダイナミックフィールド "Ticket->DynamicField" が存在している必要があります。"Ticket->Text" 内のタグ \<OTOBO_CONFIGITEM_X\> （X は NAME、NUMBER、LICENSES_AVAIL、LICENSES_MIN）は、それぞれ構成アイテム名、番号、利用可能なライセンス数、必要な最小ライセンス数に置換されます。';
     $Self->{Translation}->{'CIs assigned to customer company'} = '顧客企業に割り当てられたCI';
     $Self->{Translation}->{'CIs assigned to customer user'} = '顧客ユーザーに割り当てられたCI';
     $Self->{Translation}->{'CMDB Settings'} = 'CMDBの設定';
     $Self->{Translation}->{'Check for a unique name only within the same ConfigItem class (\'class\') or globally (\'global\'), which means every existing ConfigItem is taken into account when looking for duplicates.'} =
-        '同じConfigItemクラス（ \'class\'）内またはグローバル（ \'global\'）内でのみ一意の名前を確認します。これは、重複を検索するときに既存のConfigItemがすべて考慮されることを意味します。';
+        '名前の一意性を同じ構成アイテムクラス内（\'class\'）でのみチェックするか、全体（\'global\'）でチェックするか。\'global\' の場合、重複の確認時に既存のすべての構成アイテムが対象になります。';
     $Self->{Translation}->{'Choose a module to enforce a naming scheme.'} = '命名スキームを強制するモジュールを選択する。';
     $Self->{Translation}->{'Choose a module to enforce a number scheme.'} = '番号スキームを強制するモジュールを選択する。';
     $Self->{Translation}->{'Choose a module to enforce a version string scheme.'} = 'バージョン文字列スキームを強制するモジュールを選択する。';
     $Self->{Translation}->{'Choose attributes to trigger the creation of a new version.'} = '新しいバージョンを作成するトリガーとなる属性を選択する。';
     $Self->{Translation}->{'Choose categories to assign to this config item class.'} = 'この設定項目クラスに割り当てるカテゴリを選択します。';
-    $Self->{Translation}->{'Color definitions for the public interface.'} = '';
+    $Self->{Translation}->{'Color definitions for the public interface.'} = '公開インタフェースの色の定義。';
     $Self->{Translation}->{'Column config item filters for ConfigItem Overview.'} = 'ConfigItem概要のカラム設定項目フィルタ。';
     $Self->{Translation}->{'Columns that can be filtered in the config item overview of the agent interface. Note: Only Config Item attributes and Dynamic Fields (DynamicField_NameX) are allowed.'} =
-        'エージェントインタフェースの設定項目概要でフィルタリングできる列。注意: コンフィグ項目属性と動的フィールド (DynamicField_NameX) のみ許可されます。';
+        '担当者インタフェースの構成アイテム一覧でフィルター可能な列。注意: 構成アイテムの属性とダイナミックフィールド（DynamicField_NameX）のみ使用できます。';
     $Self->{Translation}->{'Config Items'} = '構成アイテム';
     $Self->{Translation}->{'Config item add.'} = '構成アイテムを追加します。';
     $Self->{Translation}->{'Config item edit.'} = '構成アイテムを修正します。';
     $Self->{Translation}->{'Config item event module that enables accounting licenses for a given config item.'} =
-        '';
+        '指定した構成アイテムのライセンス計上を可能にする構成アイテムのイベントモジュール。';
     $Self->{Translation}->{'Config item event module that enables logging to history in the agent interface.'} =
-        '担当者Webインタフェースの履歴を記録する構成アイテムのイベントモジュール';
+        '担当者インタフェースで履歴への記録を可能にする構成アイテムのイベントモジュール。';
     $Self->{Translation}->{'Config item event module that updates config items to their current definition.'} =
-        'コンフィグ項目を現在の定義に更新するコンフィグ項目イベントモジュール。';
+        '構成アイテムを現在の定義に合わせて更新する構成アイテムのイベントモジュール。';
     $Self->{Translation}->{'Config item history.'} = '構成アイテムの履歴';
     $Self->{Translation}->{'Config item print.'} = '構成アイテムを印刷';
     $Self->{Translation}->{'Config item zoom.'} = '構成アイテムのズーム';
     $Self->{Translation}->{'ConfigItem Tree View'} = '設定項目ツリービュー';
     $Self->{Translation}->{'ConfigItem Version'} = '設定項目バージョン';
     $Self->{Translation}->{'ConfigItems of the following classes will not be stored on the Elasticsearch server. To apply this to existing CIs, the CI migration has to be run via console, after changing this option.'} =
-        '以下のクラスのConfigItemsはElasticsearchサーバに保存されません。既存のCIに適用するには、このオプションを変更した後に、コンソール経由でCIマイグレーションを実行する必要があります。';
+        '以下のクラスの構成アイテムは Elasticsearch サーバーに保存されません。既存の CI に適用するには、このオプションを変更した後、コンソールから CI の移行を実行する必要があります。';
     $Self->{Translation}->{'ConfigItems with the following deployment states will not be stored on the Elasticsearch server. To apply this to existing CIs, the CI migration has to be run via console, after changing this option.'} =
-        '以下のデプロイ状態のConfigItemsは、Elasticsearchサーバに保存されません。既存のCIに適用するには、このオプションを変更した後に、コンソール経由でCIマイグレーションを実行する必要があります。';
+        '以下のデプロイ・ステータスの構成アイテムは Elasticsearch サーバーに保存されません。既存の CI に適用するには、このオプションを変更した後、コンソールから CI の移行を実行する必要があります。';
     $Self->{Translation}->{'Configuration Item Limit'} = '構成アイテムの制限';
     $Self->{Translation}->{'Configuration Item limit per page.'} = 'ページあたりの構成アイテムの表示制限';
     $Self->{Translation}->{'Configuration Management Database.'} = '構成管理データベース';
     $Self->{Translation}->{'Configuration item bulk module.'} = '構成アイテムの一括モジュール';
     $Self->{Translation}->{'Configuration item search backend router of the agent interface.'} =
-        '担当者インターフェースの構成アイテムの検索バックエンドルーター';
+        '担当者インタフェースの構成アイテム検索バックエンド・ルーター。';
     $Self->{Translation}->{'Configure the columns which are available for viewing Permission Conditions in the customer interface, when the corresponding Permission Condition Columns are not specifically configured. This setting is used as a fallback for the other Permission Condition Columns settings.'} =
-        '';
+        '対応する権限条件の列が個別に設定されていない場合に、顧客インタフェースで権限条件の表示に使用できる列を設定します。この設定は、他の権限条件の列設定のフォールバックとして使用されます。';
     $Self->{Translation}->{'Configure the columns which are available for viewing Permission Conditions in the public interface, when the corresponding Permission Condition Columns are not specifically configured. This setting is used as a fallback for the other Permission Condition Columns settings.'} =
-        '';
+        '対応する権限条件の列が個別に設定されていない場合に、公開インタフェースで権限条件の表示に使用できる列を設定します。この設定は、他の権限条件の列設定のフォールバックとして使用されます。';
     $Self->{Translation}->{'Configure the columns which are available when viewing the corresponding Permission Condition in the customer interface.'} =
-        '';
+        '顧客インタフェースで、対応する権限条件を表示する際に使用できる列を設定します。';
     $Self->{Translation}->{'Configure the columns which are available when viewing the corresponding Permission Condition in the public interface.'} =
-        '';
+        '公開インタフェースで、対応する権限条件を表示する際に使用できる列を設定します。';
     $Self->{Translation}->{'Create and manage the definitions for Configuration Items.'} = '構成アイテムの作成と管理します。';
     $Self->{Translation}->{'Creates Tickets for ConfigItems at specific time points.'} = '特定の時点でConfigItemsのチケットを作成します。';
-    $Self->{Translation}->{'Customers can see historic CI versions.'} = '顧客は過去のCIバージョンを見ることができる。';
+    $Self->{Translation}->{'Customers can see historic CI versions.'} = '顧客は過去の CI バージョンを閲覧できます。';
     $Self->{Translation}->{'Customers have the possibility to manually switch between historic CI versions.'} =
-        '顧客は、過去のCIバージョンを手動で切り替えることができる。';
+        '顧客は過去の CI バージョンを手動で切り替えることができます。';
     $Self->{Translation}->{'Default data to use on attribute for config item search screen. Example: "ITSMConfigItemCreateTimePointFormat=year;ITSMConfigItemCreateTimePointStart=Last;ITSMConfigItemCreateTimePoint=2;".'} =
-        '設定項目検索画面の属性で使用するデフォルトデータ。例："ITSMConfigItemCreateTimePointFormat=year;ITSMConfigItemCreateTimePointStart=Last;ITSMConfigItemCreateTimePoint=2;"。';
+        '構成アイテム検索画面の属性で使用するデフォルトデータ。例: "ITSMConfigItemCreateTimePointFormat=year;ITSMConfigItemCreateTimePointStart=Last;ITSMConfigItemCreateTimePoint=2;"。';
     $Self->{Translation}->{'Default data to use on attribute for config item search screen. Example: "ITSMConfigItemCreateTimeStartYear=2010;ITSMConfigItemCreateTimeStartMonth=10;ITSMConfigItemCreateTimeStartDay=4;ITSMConfigItemCreateTimeStopYear=2010;ITSMConfigItemCreateTimeStopMonth=11;ITSMConfigItemCreateTimeStopDay=3;".'} =
-        'コンフィグ項目検索画面の属性で使用するデフォルトデータ。例："ITSMConfigItemCreateTimeStartYear=2010;ITSMConfigItemCreateTimeStartMonth=10;ITSMConfigItemCreateTimeStartDay=4;ITSMConfigItemCreateTimeStopYear=2010;ITSMConfigItemCreateTimeStopMonth=11;ITSMConfigItemCreateTimeStopDay=3;"。';
+        '構成アイテム検索画面の属性で使用するデフォルトデータ。例: "ITSMConfigItemCreateTimeStartYear=2010;ITSMConfigItemCreateTimeStartMonth=10;ITSMConfigItemCreateTimeStartDay=4;ITSMConfigItemCreateTimeStopYear=2010;ITSMConfigItemCreateTimeStopMonth=11;ITSMConfigItemCreateTimeStopDay=3;"。';
     $Self->{Translation}->{'Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = "complex"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.'} =
-        'リンクされたオブジェクト ウィジェット (LinkObject::ViewMode = "complex") で設定ボタンが使用できるアクションを定義します。これらのアクションには、Core.AllocationList.css、Core.UI.AllocationList.js、Core.UI.Table.Sort.js、Core.Agent.TableFilters.js、および Core.Agent.LinkObject.js の JS および CSS ファイルが登録されている必要があることに注意してください。';
+        'リンクオブジェクト・ウィジェット（LinkObject::ViewMode = "complex"）で設定ボタンを使用できるアクションを定義します。これらのアクションには、次の JS および CSS ファイルが登録されている必要があります: Core.AllocationList.css、Core.UI.AllocationList.js、Core.UI.Table.Sort.js、Core.Agent.TableFilters.js、Core.Agent.LinkObject.js。';
     $Self->{Translation}->{'Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit.'} =
         'バージョン文字列用の Template::Toolkit スキームを定義します。バージョン文字列モジュールが TemplateToolkit に設定されている場合にのみ使用されます。';
     $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
-        '';
+        'ダイナミックフィールド画面インタフェースを介して、このパッケージのアクションに割り当てることができるダイナミックフィールドのオブジェクトタイプの一覧を定義します。';
     $Self->{Translation}->{'Define a set of conditions under which a config item can be publicly seen. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
-        '';
+        '構成アイテムを公開で表示できる条件のセットを定義します。必須の属性は Name のみです。他のオプションを指定しない場合、すべての構成アイテムがそのカテゴリーに表示されます。';
     $Self->{Translation}->{'Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
-        '顧客が設定項目を見ることを許可される一連の条件を定義します。条件は、オプションで特定の顧客グループに制限することができます。名前は唯一の必須属性です。他のオプションが指定されていない場合、すべての設定項目がそのカテゴリの下に表示されます。';
+        '顧客が構成アイテムを閲覧できる条件のセットを定義します。条件は、必要に応じて特定の顧客グループに限定できます。必須の属性は Name のみです。他のオプションを指定しない場合、すべての構成アイテムがそのカテゴリーに表示されます。';
     $Self->{Translation}->{'Defines Required permissions to delete ITSM configuration items using the Generic Interface.'} =
-        'ジェネリック・インターフェースを活用して構成アイテムを削除するために必要な権限を定義します。';
+        '汎用インタフェース（Generic Interface）を使用して ITSM 構成アイテムを削除するために必要な権限を定義します。';
     $Self->{Translation}->{'Defines Required permissions to get ITSM configuration items using the Generic Interface.'} =
-        'ジェネリックインターフェイスを活用して構成アイテムを取得する権限を定義する。';
+        '汎用インタフェース（Generic Interface）を使用して ITSM 構成アイテムを取得するために必要な権限を定義します。';
     $Self->{Translation}->{'Defines Required permissions to search ITSM configuration items using the Generic Interface.'} =
-        'ジェネリックインターフェイスを活用して構成アイテムを検索する権限を定義する。';
+        '汎用インタフェース（Generic Interface）を使用して ITSM 構成アイテムを検索するために必要な権限を定義します。';
     $Self->{Translation}->{'Defines Required permissions to set ITSM configuration items using the Generic Interface.'} =
         'Generic Interfaceを使用してITSM構成項目を設定するために必要な権限を定義します。';
     $Self->{Translation}->{'Defines an overview module to show the small view of a configuration item list.'} =
-        '構成アイテムを定義して、構成アイテムのリストの小さなビューを表示します。';
+        '構成アイテム一覧を小サイズで表示する一覧モジュールを定義します。';
     $Self->{Translation}->{'Defines if the link type labels must be shown in the node connections.'} =
         'ノードの接続にリンクタイプのラベルを表示するかどうかを定義します。';
     $Self->{Translation}->{'Defines regular expressions individually for each ConfigItem class to check the ConfigItem name and to show corresponding error messages.'} =
-        '各ConfigItemクラスの正規表現を個別に定義して、ConfigItem名を確認し、対応するエラーメッセージを表示します。';
+        '構成アイテムの名前をチェックし、対応するエラーメッセージを表示するための正規表現を、構成アイテムクラスごとに定義します。';
     $Self->{Translation}->{'Defines the available columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
-        'CIクラスに応じて、設定項目の概要で利用可能なCIの列を定義します。各項目は、クラス名と、対応するクラスで利用可能なフィールドの配列から構成されなければなりません。動的フィールドのエントリは、DynamicField_FieldName スキームに従わなければなりません。';
+        'CI クラスごとに、構成アイテム一覧で利用可能な CI の列を定義します。各エントリーは、クラス名と、そのクラスで利用可能なフィールドの配列で構成する必要があります。ダイナミックフィールドのエントリーは DynamicField_FieldName の形式に従う必要があります。';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the agent interface.'} =
-        'エージェントインタフェースの設定項目検索結果の設定項目ソートのデフォルトの設定項目属性を定義します。';
+        '担当者インタフェースの構成アイテム検索結果で、ソートに使用するデフォルトの構成アイテム属性を定義します。';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the customer interface.'} =
-        '顧客インタフェースの設定項目検索結果の設定項目ソートのデフォルトの設定項目属性を定義します。';
+        '顧客インタフェースの構成アイテム検索結果で、ソートに使用するデフォルトの構成アイテム属性を定義します。';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of the public interface.'} =
-        '';
+        '公開インタフェースの構成アイテム検索結果で、ソートに使用するデフォルトの構成アイテム属性を定義します。';
     $Self->{Translation}->{'Defines the default config item attribute for config item sorting of the config item search result of this operation.'} =
-        'この操作のコンフィグ項目検索結果のコンフィグ項目ソートのデフォルトのコンフィグ項目属性を定義します。';
+        'このオペレーションの構成アイテム検索結果で、ソートに使用するデフォルトの構成アイテム属性を定義します。';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the agent interface. Up: oldest on top. Down: latest on top.'} =
-        'エージェントインタフェースの設定項目検索結果のデフォルトの設定項目順序を定義します。上: 最も古いものが上。Down: 最新が上。';
+        '担当者インタフェースの構成アイテム検索結果における、デフォルトの構成アイテムの並び順を定義します。Up: 古いものが上。Down: 新しいものが上。';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top.'} =
-        'カスタマインタフェースの設定項目検索結果のデフォルトの設定項目順序を定義します。上: 古い順に表示されます。下：最新が上。';
+        '顧客インタフェースの構成アイテム検索結果における、デフォルトの構成アイテムの並び順を定義します。Up: 古いものが上。Down: 新しいものが上。';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of the public interface. Up: oldest on top. Down: latest on top.'} =
-        '';
+        '公開インタフェースの構成アイテム検索結果における、デフォルトの構成アイテムの並び順を定義します。Up: 古いものが上。Down: 新しいものが上。';
     $Self->{Translation}->{'Defines the default config item order in the config item search result of this operation. Up: oldest on top. Down: latest on top.'} =
-        '';
+        'このオペレーションの構成アイテム検索結果における、デフォルトの構成アイテムの並び順を定義します。Up: 古いものが上。Down: 新しいものが上。';
     $Self->{Translation}->{'Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
-        'CIクラスに応じて、設定項目の概要に表示されるCIのデフォルトの列を定義します。各項目は、クラス名と、対応するクラスで利用可能なフィールドの配列から構成されなければなりません。動的フィールドのエントリは、DynamicField_FieldNameスキームに従わなければなりません。';
-    $Self->{Translation}->{'Defines the default relations depth to be shown.'} = '表示されるデフォルトの関係の深さを定義する。';
+        'CI クラスごとに、構成アイテム一覧でデフォルトで表示する CI の列を定義します。各エントリーは、クラス名と、そのクラスで利用可能なフィールドの配列で構成する必要があります。ダイナミックフィールドのエントリーは DynamicField_FieldName の形式に従う必要があります。';
+    $Self->{Translation}->{'Defines the default relations depth to be shown.'} = 'デフォルトで表示する関連の深さを定義します。';
     $Self->{Translation}->{'Defines the default shown config item search attribute for config item search screen.'} =
-        '設定項目検索画面のデフォルトの表示設定項目検索属性を定義します。';
+        '構成アイテム検索画面で、デフォルトで表示する構成アイテム検索属性を定義します。';
     $Self->{Translation}->{'Defines the default shown config item search attribute for config item search screen. Example: "Key" must have the name of the Dynamic Field in this case \'X\', "Content" must have the value of the Dynamic Field depending on the Dynamic Field type,  Text: \'a text\', Dropdown: \'1\', Date/Time: \'Search_DynamicField_XTimeSlotStartYear=1974; Search_DynamicField_XTimeSlotStartMonth=01; Search_DynamicField_XTimeSlotStartDay=26; Search_DynamicField_XTimeSlotStartHour=00; Search_DynamicField_XTimeSlotStartMinute=00; Search_DynamicField_XTimeSlotStartSecond=00; Search_DynamicField_XTimeSlotStopYear=2013; Search_DynamicField_XTimeSlotStopMonth=01; Search_DynamicField_XTimeSlotStopDay=26; Search_DynamicField_XTimeSlotStopHour=23; Search_DynamicField_XTimeSlotStopMinute=59; Search_DynamicField_XTimeSlotStopSecond=59;\' and or \'Search_DynamicField_XTimePointFormat=week; Search_DynamicField_XTimePointStart=Before; Search_DynamicField_XTimePointValue=7\';.'} =
-        'コンフィグ項目検索画面にデフォルトで表示されるコンフィグ項目検索属性を定義します。例: "Key "にはダイナミック・フィールドの名前 (この場合は \'X\')、"Content" にはダイナミック・フィールドのタイプに応じてダイナミック・フィールドの値、Text: \'a text\'、Dropdown: \'1\'、Date/Time：\'Search_DynamicField_XTimeSlotStartYear=1974; Search_DynamicField_XTimeSlotStartMonth=01; Search_DynamicField_XTimeSlotStartDay=26; Search_DynamicField_XTimeSlotStartHour=00；Search_DynamicField_XTimeSlotStartMinute=00; Search_DynamicField_XTimeSlotStartSecond=00; Search_DynamicField_XTimeSlotStopYear=2013; Search_DynamicField_XTimeSlotStopMonth=01；Search_DynamicField_XTimeSlotStopDay=26; Search_DynamicField_XTimeSlotStopHour=23; Search_DynamicField_XTimeSlotStopMinute=59; Search_DynamicField_XTimeSlotStopSecond=59；\'、または \'Search_DynamicField_XTimePointFormat=week; Search_DynamicField_XTimePointStart=Before; Search_DynamicField_XTimePointValue=7\';.';
+        '構成アイテム検索画面で、デフォルトで表示する構成アイテム検索属性を定義します。例: "Key" にはダイナミックフィールドの名前（この場合は \'X\'）を、"Content" にはダイナミックフィールドのタイプに応じた値を指定します。テキスト: \'a text\'、ドロップダウン: \'1\'、日付／日時: \'Search_DynamicField_XTimeSlotStartYear=1974; Search_DynamicField_XTimeSlotStartMonth=01; Search_DynamicField_XTimeSlotStartDay=26; Search_DynamicField_XTimeSlotStartHour=00; Search_DynamicField_XTimeSlotStartMinute=00; Search_DynamicField_XTimeSlotStartSecond=00; Search_DynamicField_XTimeSlotStopYear=2013; Search_DynamicField_XTimeSlotStopMonth=01; Search_DynamicField_XTimeSlotStopDay=26; Search_DynamicField_XTimeSlotStopHour=23; Search_DynamicField_XTimeSlotStopMinute=59; Search_DynamicField_XTimeSlotStopSecond=59;\' および／または \'Search_DynamicField_XTimePointFormat=week; Search_DynamicField_XTimePointStart=Before; Search_DynamicField_XTimePointValue=7\';。';
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
-        '構成アイテムのクラスのデフォルトのサブオブジェクトを定義する。';
+        'クラス \'ITSMConfigItem\' のデフォルトのサブオブジェクトを定義します。';
     $Self->{Translation}->{'Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         'CIクラスに応じて、設定項目の概要で利用可能なCIの列を定義します。各項目は、クラス名と、対応するクラスで利用可能なフィールドの配列から構成されなければなりません。動的フィールドのエントリは、DynamicField_FieldName スキームに従わなければなりません。';
     $Self->{Translation}->{'Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).'} =
-        'この画面のリッチ テキスト エディター コンポーネントの高さを定義します。数値 (ピクセル) またはパーセント値 (相対) を入力します。';
+        'この画面のリッチテキストエディターの高さを定義します。数値（ピクセル）またはパーセント値（相対値）を入力してください。';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =
-        '管理インターフェイス Cl 定義エディタの行数を定義する。';
+        '管理者インタフェースの CI 定義エディターの行数を定義します。';
     $Self->{Translation}->{'Defines the order of incident states from high (e.g. cricital) to low (e.g. functional).'} =
-        'インシデント状態の高（例: 危険）から低（例: 情報）へのインシデント状態の順序を定義する。';
+        'インシデント状況の順序を、高い（例: critical）ものから低い（例: functional）ものへと定義します。';
     $Self->{Translation}->{'Defines the parameters for the elasticsearch widget backend.'} =
-        '';
+        'Elasticsearch ウィジェット・バックエンドのパラメータを定義します。';
     $Self->{Translation}->{'Defines the relevant deployment states where linked tickets can affect the status of a CI.'} =
-        'リンクされたチケットがCIのステータスに影響を与える可能性がある、関連するデプロイ・ステータスを定義します。';
+        'リンクされたチケットが CI のステータスに影響を与えることができる、対象のデプロイ・ステータスを定義します。';
     $Self->{Translation}->{'Defines the search limit for the AgentITSMConfigItem screen.'} =
-        '構成アイテムの画面の検索制限を定義します。';
+        'AgentITSMConfigItem 画面の検索上限を定義します。';
     $Self->{Translation}->{'Defines the search limit for the AgentITSMConfigItemSearch screen.'} =
-        '構成アイテムの検索画面の検索制限を定義します。';
+        'AgentITSMConfigItemSearch 画面の検索上限を定義します。';
     $Self->{Translation}->{'Defines the search limit for the CustomerITSMConfigItem screen.'} =
-        'CustomerITSMConfigItem 画面の検索制限を定義します。';
+        'CustomerITSMConfigItem 画面の検索上限を定義します。';
     $Self->{Translation}->{'Defines the search limit for the CustomerITSMConfigItemSearch screen.'} =
-        'CustomerITSMConfigItemSearch 画面の検索制限を定義します。';
+        'CustomerITSMConfigItemSearch 画面の検索上限を定義します。';
     $Self->{Translation}->{'Defines the search limit for the PublicITSMConfigItemSearch screen.'} =
-        '';
+        'PublicITSMConfigItemSearch 画面の検索上限を定義します。';
     $Self->{Translation}->{'Defines the shown columns of CIs in the link table complex view for all CI classes. If there is no entry, then the default columns are shown.'} =
-        '全ての CI クラスのリンク テーブル複合ビューに表示される CI の列を定義します。 エントリがない場合は、デフォルトの列が表示されます。';
+        'すべての CI クラスについて、リンクテーブルの詳細表示で表示する CI の列を定義します。エントリーがない場合は、デフォルトの列が表示されます。';
     $Self->{Translation}->{'Defines the shown columns of CIs in the link table complex view, depending on the CI class. Each entry must be prefixed with the class name and double colons (i.e. Computer::). There are a few CI-Attributes that common to all CIs (example for the class Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). To show individual CI-Attributes as defined in the CI-Definition, the following scheme must be used (example for the class Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If there is no entry for a CI class, then the default columns are shown.'} =
-        'CI クラスに応じて、リンク テーブル複合ビューに表示される CI の列を定義します。 各エントリには、クラス名と二重コロンを接頭辞として付ける必要があります (例: Computer::)。全ての CI に共通する CI 属性がいくつかあります。 (クラス Computer の例: Computer::Name、Computer::CurDeplState、Computer::CreateTime)　 CI 定義で定義されている個々の CI 属性を表示するには、次のスキームを使用する必要があります (クラス Computer の例): Computer::HardDisk::1、Computer::HardDisk::1::Capacity::1　 CI クラスのエントリがない場合は、デフォルトの列が表示されます。';
+        'CI クラスごとに、リンクテーブルの詳細表示で表示する CI の列を定義します。各エントリーには、クラス名とダブルコロンを接頭辞として付ける必要があります（例: Computer::）。すべての CI に共通する CI 属性がいくつかあります（クラス Computer の例: Computer::Name、Computer::CurDeplState、Computer::CreateTime）。CI の定義で定義した個々の CI 属性を表示するには、次の形式を使用する必要があります（クラス Computer の例）: Computer::HardDisk::1、Computer::HardDisk::1::Capacity::1、Computer::HardDisk::2、Computer::HardDisk::2::Capacity::1。CI クラスのエントリーがない場合は、デフォルトの列が表示されます。';
     $Self->{Translation}->{'Defines which items are available for \'Action\' in third level of the ITSM Config Item ACL structure.'} =
-        'ITSM 構成項目 ACL 構造の第 3 レベルで、「アクション」に使用できる項目を定義します。';
+        'ITSM 構成アイテムの ACL 構造の第3階層で \'Action\' に使用できる項目を定義します。';
     $Self->{Translation}->{'Defines which items are available in first level of the ITSM Config Item ACL structure.'} =
-        'ITSM 構成項目 ACL 構造の第 1 レベルで利用可能な項目を定義します。';
+        'ITSM 構成アイテムの ACL 構造の第1階層で使用できる項目を定義します。';
     $Self->{Translation}->{'Defines which items are available in second level of the ITSM Config Item ACL structure.'} =
-        'ITSM 構成項目 ACL 構造の第 2 レベルで利用可能な項目を定義します。';
+        'ITSM 構成アイテムの ACL 構造の第2階層で使用できる項目を定義します。';
     $Self->{Translation}->{'Defines which type of link (named from the ticket perspective) can affect the status of a linked CI.'} =
-        'リンクされたCIのステータスに影響するリンクのタイプ（チケットの観点から名前が付けられます）を定義します。';
+        'リンクされた CI のステータスに影響を与えることができるリンクのタイプ（チケット側から見た名前）を定義します。';
     $Self->{Translation}->{'Defines which type of ticket can affect the status of a linked CI.'} =
-        'リンクされたCIのステータスに影響するチケットのタイプを定義します。';
+        'リンクされた CI のステータスに影響を与えることができるチケットのタイプを定義します。';
     $Self->{Translation}->{'Definition Update'} = '定義の更新';
     $Self->{Translation}->{'Delete Configuration Item'} = '構成アイテムを削除';
     $Self->{Translation}->{'DeplState'} = 'デプルステート';
@@ -411,33 +412,33 @@ sub Data {
     $Self->{Translation}->{'DeploymentState'} = '展開状態';
     $Self->{Translation}->{'Duplicate'} = 'コピー';
     $Self->{Translation}->{'Dynamic field event module that marks config item definitions as out of sync, if containing dynamic fields change.'} =
-        'ダイナミック・フィールド・イベント・モジュールは、ダイナミック・フィールドが変更された場合、コンフィグ・アイテムの定義が同期されていないとマークします。';
+        '含まれるダイナミックフィールドが変更された場合に、構成アイテムの定義を非同期としてマークするダイナミックフィールドのイベントモジュール。';
     $Self->{Translation}->{'Dynamic fields shown in the additional ITSM field screen of the agent interface.'} =
-        '担当者インターフェイスの ITSMフィールド画面に表示するダイナミック・フィールド';
+        '担当者インタフェースの追加 ITSM フィールド画面に表示するダイナミックフィールド。';
     $Self->{Translation}->{'Dynamic fields shown in the config item overview screen of the customer interface.'} =
-        '顧客インターフェースの設定項目概要画面に表示される動的フィールド。';
+        '顧客インタフェースの構成アイテム一覧画面に表示するダイナミックフィールド。';
     $Self->{Translation}->{'Dynamic fields shown in the config item overview screen of the public interface.'} =
-        '';
+        '公開インタフェースの構成アイテム一覧画面に表示するダイナミックフィールド。';
     $Self->{Translation}->{'Dynamic fields shown in the config item search screen of the agent interface.'} =
-        'エージェントインターフェースの設定項目検索画面に表示される動的フィールド。';
+        '担当者インタフェースの構成アイテム検索画面に表示するダイナミックフィールド。';
     $Self->{Translation}->{'Enables configuration item bulk action feature for the agent frontend to work on more than one configuration item at a time.'} =
-        '担当者フロントエンドが一度に複数の設定項目で機能するように設定項目一括操作機能を有効にします。';
+        '担当者フロントエンドで構成アイテムの一括処理機能を有効にし、複数の構成アイテムを同時に処理できるようにします。';
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
-        'リストされたグループの構成アイテム一括処理機能のみを有効にします。';
+        '一覧に記載したグループに対してのみ、構成アイテムの一括処理機能を有効にします。';
     $Self->{Translation}->{'Enables/disables the functionality to check ITSM configuration items for unique names. Before enabling this option you should check your system for already existing configuration items with duplicate names. You can do this with the console command Admin::ITSM::ConfigItem::ListDuplicates.'} =
-        '';
+        'ITSM 構成アイテムの名前の一意性をチェックする機能を有効／無効にします。このオプションを有効にする前に、名前が重複している既存の構成アイテムがないか確認してください。確認にはコンソールコマンド Admin::ITSM::ConfigItem::ListDuplicates を使用できます。';
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
-        'チケット構成アイテムのリンクに構成アイテムのステータスを設定するイベントモジュール';
+        'チケットと構成アイテムのリンクに、構成アイテムのステータスを設定するイベントモジュール。';
     $Self->{Translation}->{'Fields of the configuration item index, used for the fulltext search. Fields are also stored, but are not mandatory for the overall functionality. Inclusion of attachments can be disabled by setting the entry to 0 or deleting it.'} =
-        '全文検索に使用される設定項目インデックスのフィールド。フィールドも保存されますが、全体的な機能には必須ではありません。エントリを 0 に設定するか、削除することで、添付ファイルのインクルードを無効にすることができます。';
+        '全文検索に使用される構成アイテムインデックスのフィールド。フィールドは保存もされますが、全体の機能には必須ではありません。添付ファイルを含めないようにするには、エントリーを 0 に設定するか削除してください。';
     $Self->{Translation}->{'Fields stored in the configuration item index which are used for other things besides fulltext searches. For the complete functionality all fields are mandatory.'} =
-        '設定項目インデックスに格納されるフィールドで、全文検索以外に使用される。完全な機能のために、すべてのフィールドは必須です。';
+        '全文検索以外の用途にも使用される、構成アイテムインデックスに保存されるフィールド。すべての機能を利用するには、すべてのフィールドが必須です。';
     $Self->{Translation}->{'For every web service (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker configuration.'} =
-        '';
+        'Web サービス（キー）ごとに、インポートを制限するクラスの配列（値）を定義できます。選択したすべてのクラス、または既存のすべてのクラスについて、Invoker の設定で識別用の属性を選択する必要があります。';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemCreate invoker layer.'} =
         'ConfigItemFetch invokerレイヤーのGenericInterfaceモジュール登録。';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemFetch invoker layer.'} =
-        'ConfigItemFetch invokerレイヤーのGenericInterfaceモジュール登録。';
+        'ConfigItemFetch Invoker レイヤー用の GenericInterface モジュール登録。';
     $Self->{Translation}->{'GenericInterface module registration for the ConfigItemUpdate invoker layer.'} =
         'ConfigItemFetch invokerレイヤーのGenericInterfaceモジュール登録。';
     $Self->{Translation}->{'ITSM ConfigItem'} = 'ITSM 設定項目';
@@ -445,138 +446,142 @@ sub Data {
     $Self->{Translation}->{'InciState'} = 'インシステート';
     $Self->{Translation}->{'IncidentState'} = 'インシデントステート';
     $Self->{Translation}->{'Includes classes in the config item search of the public interface.'} =
-        '';
+        '公開インタフェースの構成アイテム検索にクラスを含めます。';
     $Self->{Translation}->{'Includes deployment states in the config item search of the customer interface.'} =
-        'カスタマーインターフェースの設定項目検索にデプロイメントステートが含まれるようになりました。';
+        '顧客インタフェースの構成アイテム検索にデプロイ・ステータスを含めます。';
     $Self->{Translation}->{'Includes deployment states in the config item search of the public interface.'} =
-        '';
+        '公開インタフェースの構成アイテム検索にデプロイ・ステータスを含めます。';
     $Self->{Translation}->{'Includes incident states in the config item search of the customer interface.'} =
-        'カスタマーインターフェースの設定項目検索にインシデント状態を含める。';
+        '顧客インタフェースの構成アイテム検索にインシデント状況を含めます。';
     $Self->{Translation}->{'Includes incident states in the config item search of the public interface.'} =
-        '';
+        '公開インタフェースの構成アイテム検索にインシデント状況を含めます。';
     $Self->{Translation}->{'Includes the name in the config item search of the public interface.'} =
-        '';
+        '公開インタフェースの構成アイテム検索に名前を含めます。';
     $Self->{Translation}->{'Includes the number in the config item search of the public interface.'} =
-        '';
-    $Self->{Translation}->{'License accounting configuration item event module.'} = '';
-    $Self->{Translation}->{'Loader module registration for the public interface.'} = '';
+        '公開インタフェースの構成アイテム検索に番号を含めます。';
+    $Self->{Translation}->{'License accounting configuration item event module.'} = 'ライセンス計上用の構成アイテムのイベントモジュール。';
+    $Self->{Translation}->{'Loader module registration for the public interface.'} = '公開インタフェース用のローダーモジュールの登録。';
     $Self->{Translation}->{'Maximum number of config items to be displayed in the result of this operation.'} =
-        'この操作の結果に表示されるコンフィグ項目の最大数。';
-    $Self->{Translation}->{'Module to check the group responsible for a class.'} = 'クラスを担当するグループをチェックするモジュール';
+        'このオペレーションの結果に表示する構成アイテムの最大数。';
+    $Self->{Translation}->{'Module to check the group responsible for a class.'} = 'クラスの責任グループをチェックするモジュール。';
     $Self->{Translation}->{'Module to check the group responsible for a configuration item.'} =
-        '構成アイテムを担当するグループをチェックするモジュール';
-    $Self->{Translation}->{'Module to generate ITSM config item statistics.'} = '構成タイテムのレポートを生成するためのモジュール';
+        '構成アイテムの責任グループをチェックするモジュール。';
+    $Self->{Translation}->{'Module to generate ITSM config item statistics.'} = 'ITSM 構成アイテムの統計を生成するモジュール。';
     $Self->{Translation}->{'Name Module'} = '名前モジュール';
     $Self->{Translation}->{'Number Module'} = 'ナンバー・モジュール';
     $Self->{Translation}->{'Number of config items to be displayed in each page of a search result in the agent interface.'} =
-        'エージェントインターフェースの検索結果の各ページに表示される設定項目の数。';
+        '担当者インタフェースの検索結果の各ページに表示する構成アイテムの数。';
     $Self->{Translation}->{'Number of config items to be displayed in each page of a search result in the customer interface.'} =
-        'カスタマーインターフェースの検索結果の各ページに表示される設定項目の数。';
+        '顧客インタフェースの検索結果の各ページに表示する構成アイテムの数。';
     $Self->{Translation}->{'Number of config items to be displayed in each page of the public interface.'} =
-        '';
+        '公開インタフェースの各ページに表示する構成アイテムの数。';
     $Self->{Translation}->{'Objects to search for, how many entries and which attributs to show. ConfigItem attributes have to explicitly be stored via Elasticsearch.'} =
-        '検索するオブジェクト、エントリ数、表示する属性。ConfigItem の属性は、明示的に Elasticsearch 経由で保存する必要があります。';
+        '検索対象のオブジェクト、エントリー数、表示する属性。構成アイテムの属性は、Elasticsearch に明示的に保存する必要があります。';
     $Self->{Translation}->{'Overview.'} = '概要';
     $Self->{Translation}->{'Parameters for the categories for config item classes in the preferences view of the agent interface.'} =
-        'エージェントインタフェースの環境設定ビューの設定項目クラスのカテゴリのパラメータ。';
+        '担当者インタフェースの個人設定ビューにおける、構成アイテムクラスのカテゴリーのパラメータ。';
     $Self->{Translation}->{'Parameters for the column filters of the small config item overview. Please note: setting \'Active\' to 0 will only prevent agents from editing settings of this group in their personal preferences, but will still allow administrators to edit the settings of another user\'s behalf. Use \'PreferenceGroup\' to control in which area these settings should be shown in the user interface.'} =
-        '小設定項目概要の列フィルタ用のパラメータです。注意: \'Active\' を 0 に設定すると、エージェントは個人設定でこのグループの設定を編集できなくなりますが、管理者は他のユーザの設定を編集することができます。PreferenceGroup\' を使用して、これらの設定をユーザインターフェイスのどのエリアに表示するかを制御します。';
+        '構成アイテム一覧（小サイズ表示）の列フィルターのパラメータ。注意: \'Active\' を 0 に設定しても、担当者が自分の個人設定でこのグループの設定を編集できなくなるだけで、管理者は引き続き他のユーザーに代わって設定を編集できます。\'PreferenceGroup\' を使用して、これらの設定をユーザーインタフェースのどの領域に表示するかを制御します。';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview shown in the agent interface. "Limit" is the number of entries per config item class shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is to specify which customer user reference dynamic field is used to filter for the selected customer user. "ShownClasses" is a list to optionally restrict classes of the shown config items. Leaving this list empty defaults to all classes which match the customer user in the dynamic field configured in "ConfigItemKey".'} =
-        '';
+        '担当者インタフェースに表示される顧客ユーザーの構成アイテム一覧のダッシュボード・バックエンドのパラメータ。"Limit" はデフォルトで表示する構成アイテムクラスごとのエントリー数です。"Group" はプラグインへのアクセスを制限するために使用します（例: Group: admin;group1;group2;）。"Default" は、プラグインをデフォルトで有効にするか、ユーザーが手動で有効にする必要があるかを決定します。"CacheTTLLocal" はプラグインのキャッシュ時間（分）です。"ConfigItemKey" では、選択した顧客ユーザーでの絞り込みに使用する顧客ユーザー参照ダイナミックフィールドを指定します。"ShownClasses" は、表示する構成アイテムのクラスを任意で制限するための一覧です。空欄の場合は、"ConfigItemKey" で設定したダイナミックフィールド内の顧客ユーザーに一致するすべてのクラスが対象になります。';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview shown in the agent interface. "Limit" is the number of entries shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is to specify which customer company reference dynamic field is used to filter for the selected customer company. "ShownClasses" is a list to optionally restrict classes of the shown config items. Leaving this list empty defaults to all classes which match the customer company in the dynamic field configured in "ConfigItemKey".'} =
-        '';
+        '担当者インタフェースに表示される顧客企業の構成アイテム一覧のダッシュボード・バックエンドのパラメータ。"Limit" はデフォルトで表示するエントリー数です。"Group" はプラグインへのアクセスを制限するために使用します（例: Group: admin;group1;group2;）。"Default" は、プラグインをデフォルトで有効にするか、ユーザーが手動で有効にする必要があるかを決定します。"CacheTTLLocal" はプラグインのキャッシュ時間（分）です。"ConfigItemKey" では、選択した顧客企業での絞り込みに使用する顧客企業参照ダイナミックフィールドを指定します。"ShownClasses" は、表示する構成アイテムのクラスを任意で制限するための一覧です。空欄の場合は、"ConfigItemKey" で設定したダイナミックフィールド内の顧客企業に一致するすべてのクラスが対象になります。';
     $Self->{Translation}->{'Parameters for the deployment states color in the preferences view of the agent interface.'} =
-        'デプロイメントのパラメータは、担当者Webインタフェースの環境設定ビューで色を示します。';
+        '担当者インタフェースの個人設定ビューにおける、デプロイ・ステータスの色のパラメータ。';
     $Self->{Translation}->{'Parameters for the deployment states in the preferences view of the agent interface.'} =
-        '担当者Webインタフェースの環境設定ビューでデプロイ状態のパラメータ';
+        '担当者インタフェースの個人設定ビューにおける、デプロイ・ステータスのパラメータ。';
     $Self->{Translation}->{'Parameters for the example permission groups of the general catalog attributes.'} =
-        'ジェネラル・カタログの属性の権限グループの設定値例です。';
+        '一般カタログ属性の権限グループ例のパラメータ。';
     $Self->{Translation}->{'Parameters for the name module for config item classes in the preferences view of the agent interface.'} =
-        'エージェントインタフェースの環境設定ビューの設定項目クラスの名前モジュールのパラメータ。';
+        '担当者インタフェースの個人設定ビューにおける、構成アイテムクラスの名前モジュールのパラメータ。';
     $Self->{Translation}->{'Parameters for the number module for config item classes in the preferences view of the agent interface.'} =
-        'エージェントインタフェースの環境設定ビューの設定項目クラスの番号モジュールのパラメータ。';
+        '担当者インタフェースの個人設定ビューにおける、構成アイテムクラスの番号モジュールのパラメータ。';
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
-        'ページのパラメータ（構成アイテムが表示されます）。';
+        '（構成アイテムを表示する）ページのパラメータ。';
     $Self->{Translation}->{'Parameters for the version string module for config item classes in the preferences view of the agent interface.'} =
-        'エージェントインタフェースの環境設定ビューの設定項目クラスのバージョン文字列モジュールのパラメータ。';
+        '担当者インタフェースの個人設定ビューにおける、構成アイテムクラスのバージョン文字列モジュールのパラメータ。';
     $Self->{Translation}->{'Parameters for the version string template toolkit module for config item classes in the preferences view of the agent interface.'} =
-        'エージェントインターフェイスの環境設定ビューの設定項目クラス用のバージョン文字列テンプレートツールキットモジュールのパラメータ。';
+        '担当者インタフェースの個人設定ビューにおける、構成アイテムクラスのバージョン文字列 Template Toolkit モジュールのパラメータ。';
     $Self->{Translation}->{'Parameters for the version trigger for config item classes in the preferences view of the agent interface.'} =
-        'エージェントインタフェースの環境設定ビューの設定項目クラスのバージョントリガーのパラメータ。';
+        '担当者インタフェースの個人設定ビューにおける、構成アイテムクラスのバージョントリガーのパラメータ。';
     $Self->{Translation}->{'Performs the configured action for each event (as an invoker) for each configured web service.'} =
-        '';
+        '設定された各 Web サービスについて、イベントごとに設定されたアクションを（Invoker として）実行します。';
     $Self->{Translation}->{'Permission Group'} = '権限グループ';
-    $Self->{Translation}->{'Public users can see historic CI versions.'} = '';
+    $Self->{Translation}->{'Public users can see historic CI versions.'} = '公開ユーザーは過去の CI バージョンを閲覧できます。';
     $Self->{Translation}->{'Public users have the possibility to manually switch between historic CI versions.'} =
-        '';
+        '公開ユーザーは過去の CI バージョンを手動で切り替えることができます。';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item attachment action in the agent interface.'} =
-        'エージェントインターフェイスでITSM構成項目添付アクションを使用するために必要な権限。';
+        '担当者インタフェースでITSM 構成アイテムの添付ファイル操作を使用するために必要な権限。';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
-        '担当者Webインターフェイスで構成アイテム画面を使用するために必要な権限';
+        '担当者インタフェースでITSM 構成アイテム画面を使用するために必要な権限。';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the agent interface.'} =
-        '担当者Webインターフェイスの構成アイテムの検索画面を使用するために必要な権限';
+        '担当者インタフェースでITSM 構成アイテムの検索画面を使用するために必要な権限。';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the customer interface.'} =
-        'カスタマーインターフェースのITSM構成項目検索画面を使用するために必要な権限。';
+        '顧客インタフェースで ITSM 構成アイテムの検索画面を使用するために必要な権限。';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item tree view screen in the agent interface.'} =
-        'エージェントインターフェイスでITSM構成項目ツリービュー画面を使用するために必要な権限。';
+        '担当者インタフェースでITSM 構成アイテムのツリービュー画面を使用するために必要な権限。';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item zoom screen in the agent interface.'} =
-        '担当者Webインターフェイス構成アイテムのズーム画面を使用するために必要な権限';
+        '担当者インタフェースでITSM 構成アイテムのズーム画面を使用するために必要な権限。';
     $Self->{Translation}->{'Required permissions to use the add ITSM configuration item screen in the agent interface.'} =
-        '担当者Webインターフェイスで構成アイテムの追加画面を使用するために必要な権限';
+        '担当者インタフェースでITSM 構成アイテムの追加画面を使用するために必要な権限。';
     $Self->{Translation}->{'Required permissions to use the bulk ITSM configuration item screen in the agent interface.'} =
-        'エージェントインターフェイスの一括ITSM設定項目画面を使用するために必要な権限。';
+        '担当者インタフェースでITSM 構成アイテムの一括処理画面を使用するために必要な権限。';
     $Self->{Translation}->{'Required permissions to use the edit ITSM configuration item screen in the agent interface.'} =
-        '担当者Webインターフェイスで構成アイテムの編集画面を使用するために必要な権限';
+        '担当者インタフェースでITSM 構成アイテムの編集画面を使用するために必要な権限。';
     $Self->{Translation}->{'Required permissions to use the history ITSM configuration item screen in the agent interface.'} =
-        '担当者Webインターフェイスで構成アイテムの履歴画面を使用するために必要な権限';
+        '担当者インタフェースでITSM 構成アイテムの履歴画面を使用するために必要な権限。';
     $Self->{Translation}->{'Required permissions to use the print ITSM configuration item screen in the agent interface.'} =
-        '担当者Webインタフェースで構成アイテムの印刷画面を使用するために必要な権限';
-    $Self->{Translation}->{'Required privileges to delete config items.'} = '構成アイテムを削除するために必要な特権';
+        '担当者インタフェースで ITSM 構成アイテムの印刷画面を使用するために必要な権限。';
+    $Self->{Translation}->{'Required privileges to delete config items.'} = '構成アイテムを削除するために必要な権限。';
     $Self->{Translation}->{'Search config items.'} = '構成アイテムを検索';
     $Self->{Translation}->{'Set the incident state of a CI automatically when a Ticket is Linked to a CI.'} =
-        'チケットがCIにリンクされている場合、CIのインシデントのステータスを自動的に設定します。';
+        'チケットが CI にリンクされたときに、CI のインシデント状況を自動的に設定します。';
     $Self->{Translation}->{'Sets the deployment state in the configuration item bulk screen of the agent interface.'} =
-        '担当者インターフェイスの構成アイテムの一括画面でデプロイ状態を設定します。';
+        '担当者インタフェースの構成アイテム一括処理画面で、デプロイ・ステータスを設定します。';
     $Self->{Translation}->{'Sets the incident state in the configuration item bulk screen of the agent interface.'} =
-        '担当者インターフェイスの構成アイテムの一括画面でインシデントのステータスを設定します。';
+        '担当者インタフェースの構成アイテム一括処理画面で、インシデント状況を設定します。';
     $Self->{Translation}->{'Shows a link in the menu that allows linking a configuration item with another object in the config item zoom view of the agent interface.'} =
-        '担当者インターフェイスの構成アイテムのズーム ビューで、構成アイテムを別のオブジェクトにリンクできるようにするメニュー内のリンクを表示します。';
+        '担当者インタフェースの構成アイテムズームビューで、構成アイテムを他のオブジェクトとリンクするためのリンクをメニューに表示します。';
     $Self->{Translation}->{'Shows a link in the menu to access the history of a configuration item in the configuration item overview of the agent interface.'} =
-        '担当者インターフェイスの構成アイテムの概要にある構成アイテムの履歴にアクセスするためのリンクをメニューに表示します。';
+        '担当者インタフェースの構成アイテム一覧で、構成アイテムの履歴を表示するためのリンクをメニューに表示します。';
     $Self->{Translation}->{'Shows a link in the menu to access the history of a configuration item in the its zoom view of the agent interface.'} =
-        '担当者インターフェイスのズーム ビューで構成アイテムの履歴にアクセスするためのリンクをメニューに表示します。';
+        '担当者インタフェースの構成アイテムズームビューで、構成アイテムの履歴を表示するためのリンクをメニューに表示します。';
     $Self->{Translation}->{'Shows a link in the menu to delete a configuration item in its zoom view of the agent interface.'} =
-        'メニューにリンクを表示して、担当者Webインターフェイスのズーム表示で設定項目を削除します。';
+        '担当者インタフェースの構成アイテムズームビューで、構成アイテムを削除するためのリンクをメニューに表示します。';
     $Self->{Translation}->{'Shows a link in the menu to display the configuration item links as a Tree View.'} =
-        '設定項目のリンクをツリー表示するためのリンクをメニューに表示します。';
+        '構成アイテムのリンクをツリービューで表示するためのリンクをメニューに表示します。';
     $Self->{Translation}->{'Shows a link in the menu to duplicate a configuration item in the configuration item overview of the agent interface.'} =
-        '担当者インターフェイスの構成アイテムの概要で構成アイテムを複製するためのメニューのリンクを表示します。';
+        '担当者インタフェースの構成アイテム一覧で、構成アイテムを複製するためのリンクをメニューに表示します。';
     $Self->{Translation}->{'Shows a link in the menu to duplicate a configuration item in the its zoom view of the agent interface.'} =
-        '担当者インターフェイスのズーム ビューで構成アイテムを複製するためのリンクをメニューに表示します。';
+        '担当者インタフェースの構成アイテムズームビューで、構成アイテムを複製するためのリンクをメニューに表示します。';
     $Self->{Translation}->{'Shows a link in the menu to edit a configuration item in the its zoom view of the agent interface.'} =
-        '担当者インターフェイスのズーム ビューで構成アイテムを編集するためのメニューのリンクを表示します。';
+        '担当者インタフェースの構成アイテムズームビューで、構成アイテムを編集するためのリンクをメニューに表示します。';
     $Self->{Translation}->{'Shows a link in the menu to go back in the configuration item zoom view of the agent interface.'} =
-        '担当者インターフェイスの構成アイテムのズーム ビューに戻るためのリンクをメニューに表示します。';
+        '担当者インタフェースの構成アイテムズームビューで、前の画面に戻るためのリンクをメニューに表示します。';
     $Self->{Translation}->{'Shows a link in the menu to print a configuration item in the its zoom view of the agent interface.'} =
-        '担当者インターフェイスのズーム ビューで構成アイテムを印刷するためのメニューのリンクを表示します。';
+        '担当者インタフェースの構成アイテムズームビューで、構成アイテムを印刷するためのリンクをメニューに表示します。';
     $Self->{Translation}->{'Shows a link in the menu to zoom into a configuration item in the configuration item overview of the agent interface.'} =
-        '担当者インターフェイスの構成アイテムの概要で構成アイテムを拡大するためのメニューのリンクを表示します。';
+        '担当者インタフェースの構成アイテム一覧で、構成アイテムの詳細を表示するためのリンクをメニューに表示します。';
+    $Self->{Translation}->{'Shows all both ro and rw config items in the config item view.'} =
+        '';
     $Self->{Translation}->{'Shows the config item history (reverse ordered) in the agent interface.'} =
-        '担当者Webインターフェイスで構成アイテムの履歴（逆順）を表示します。';
+        '担当者インタフェースで構成アイテムの履歴を（新しい順に）表示します。';
     $Self->{Translation}->{'The default category which is shown, if none is selected.'} = '何も選択されていない場合に表示されるデフォルトのカテゴリー。';
     $Self->{Translation}->{'The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. The default is ConfigItem#.'} =
-        '構成アイテムの識別子。 ConfigItem＃、MyConfigItem＃、 デフォルトはConfigItem＃です。';
-    $Self->{Translation}->{'Title for the public interface overview.'} = '';
-    $Self->{Translation}->{'Title for the public interface search.'} = '';
-    $Self->{Translation}->{'Triggers ConfigItemFetch invoker automatically.'} = 'ConfigItemFetch invokerを自動的に起動する。';
+        '構成アイテムの識別子（例: ConfigItem#、MyConfigItem#）。デフォルトは ConfigItem# です。';
+    $Self->{Translation}->{'Title for the public interface overview.'} = '公開インタフェースの一覧のタイトル。';
+    $Self->{Translation}->{'Title for the public interface search.'} = '公開インタフェースの検索のタイトル。';
+    $Self->{Translation}->{'Triggers ConfigItemFetch invoker automatically.'} = 'ConfigItemFetch Invoker を自動的にトリガーします。';
+    $Self->{Translation}->{'Update linked tickets, for example for processes checking lenses. With "Classes" and "LinkTypes", the execution can be restricted to certain config item classes and link types. Please put in the exact class names into "Classes" as well as the exact link type names in "LinkTypes", respectively. Currently available LinkTypes are: Normal, ParentChild, LocationOf, AlternativeTo, ConnectedTo, DependsOn, Includes, RelevantTo. Please note that the actual usable link types may be further restricted by the settings grouped under LinkObject::PossibleLink.'} =
+        '';
     $Self->{Translation}->{'Version String Expression'} = 'バージョン文字列式';
     $Self->{Translation}->{'Version String Module'} = 'バージョン文字列モジュール';
     $Self->{Translation}->{'Version Trigger'} = 'バージョン・トリガー';
     $Self->{Translation}->{'Whether fields should be automatically filled (1), and in that case also be hidden from ticket formulars (2).'} =
-        '';
+        'フィールドを自動的に入力する（1）か、その場合にチケットのフォームから非表示にもする（2）か。';
     $Self->{Translation}->{'Whether the execution of ConfigItemACL can be avoided by checking cached field dependencies. This can improve loading times of formulars, but has to be disabled, if ACLModules are to be used for ITSMConfigItem- and Form-ReturnTypes.'} =
-        'キャッシュされたフィールドの依存関係をチェックすることで、ConfigItemACLの実行を回避できるかどうか。これはフォームのロード時間を改善することができるが、ACLModule を ITSMConfigItem- と Form-ReturnType で使用する場合は無効にしなければならない。';
-    $Self->{Translation}->{'Which general information is shown in the header.'} = 'どの一般的な情報がヘッダーに表示されているか。';
+        'キャッシュされたフィールドの依存関係を確認することで、ConfigItemACL の実行を省略できるかどうか。フォームの読み込み時間を改善できますが、ACLModules を ITSMConfigItem および Form の ReturnType に使用する場合は無効にする必要があります。';
+    $Self->{Translation}->{'Which general information is shown in the header.'} = 'ヘッダーに表示する全般情報。';
     $Self->{Translation}->{'class'} = 'クラス';
     $Self->{Translation}->{'global'} = 'グローバル';
     $Self->{Translation}->{'postproductive'} = '次の生産';
@@ -617,20 +622,20 @@ sub Data {
     $Self->{Translation}->{'7U: 12.25 inches (31.12 cm)'} = '7U：12.25インチ（31.12cm）';
     $Self->{Translation}->{'8U: 14 inches (35.56 cm)'} = '8U：14インチ（35.56cm）';
     $Self->{Translation}->{'9U: 15.75 inches (40.01 cm)'} = '9U：15.75インチ（40.01cm）';
-    $Self->{Translation}->{'AGPL (Affero General Public License)'} = '';
+    $Self->{Translation}->{'AGPL (Affero General Public License)'} = 'AGPL（Affero General Public License）';
     $Self->{Translation}->{'Accounting'} = '会計';
-    $Self->{Translation}->{'Accounting Information'} = '';
+    $Self->{Translation}->{'Accounting Information'} = '計上情報';
     $Self->{Translation}->{'Address Allocation'} = 'アドレス割り当て';
     $Self->{Translation}->{'Administrator'} = '管理者';
     $Self->{Translation}->{'Analog Phone'} = 'アナログ電話';
-    $Self->{Translation}->{'Apache License'} = '';
+    $Self->{Translation}->{'Apache License'} = 'Apache License';
     $Self->{Translation}->{'Appliance Type'} = 'アプライアンス・タイプ';
-    $Self->{Translation}->{'BSD License (Berkeley Software Distribution License)'} = '';
+    $Self->{Translation}->{'BSD License (Berkeley Software Distribution License)'} = 'BSD License（Berkeley Software Distribution License）';
     $Self->{Translation}->{'Battery Capacity (Ah)'} = 'バッテリー容量（Ah）';
     $Self->{Translation}->{'Battery Type'} = 'バッテリータイプ';
     $Self->{Translation}->{'Building'} = '構築';
     $Self->{Translation}->{'Bus Interface'} = 'バス・インターフェース';
-    $Self->{Translation}->{'CC0 (Creative Commons Zero)'} = '';
+    $Self->{Translation}->{'CC0 (Creative Commons Zero)'} = 'CC0（Creative Commons Zero）';
     $Self->{Translation}->{'CIDR'} = 'CIDR';
     $Self->{Translation}->{'CPU'} = 'CPU';
     $Self->{Translation}->{'CPU Class'} = 'CPUクラス';
@@ -658,7 +663,7 @@ sub Data {
     $Self->{Translation}->{'Cost unit'} = 'コスト単位';
     $Self->{Translation}->{'Count of licenses'} = 'ライセンス数';
     $Self->{Translation}->{'Creation Date'} = '作成日';
-    $Self->{Translation}->{'Creative Commons'} = '';
+    $Self->{Translation}->{'Creative Commons'} = 'クリエイティブ・コモンズ';
     $Self->{Translation}->{'Custom Rack'} = 'カスタムラック';
     $Self->{Translation}->{'DHCP'} = 'ディーエイチシーピー';
     $Self->{Translation}->{'DHCP Reserved'} = 'DHCP予約';
@@ -671,10 +676,10 @@ sub Data {
     $Self->{Translation}->{'Desktop'} = 'デスクトップ';
     $Self->{Translation}->{'DisplayPort'} = 'ディスプレイポート';
     $Self->{Translation}->{'Document Signing Certificates'} = '文書署名証明書';
-    $Self->{Translation}->{'EPL (Eclipse Public License)'} = '';
+    $Self->{Translation}->{'EPL (Eclipse Public License)'} = 'EPL（Eclipse Public License）';
     $Self->{Translation}->{'ETSI Rack'} = 'ETSIラック';
     $Self->{Translation}->{'Email Certificates (S/MIME Certificates)'} = '電子メール証明書（S/MIME 証明書）';
-    $Self->{Translation}->{'Embedded SIM (eSIM)'} = '';
+    $Self->{Translation}->{'Embedded SIM (eSIM)'} = '組み込み SIM（eSIM）';
     $Self->{Translation}->{'Employment Contract'} = '雇用契約';
     $Self->{Translation}->{'End IP Address'} = '終了IPアドレス';
     $Self->{Translation}->{'End of support'} = 'サポート終了';
@@ -686,7 +691,7 @@ sub Data {
     $Self->{Translation}->{'Form Factor'} = 'フォームファクター';
     $Self->{Translation}->{'Franchise Agreement'} = 'フランチャイズ契約';
     $Self->{Translation}->{'Freeware'} = 'フリーウェア';
-    $Self->{Translation}->{'GPL (General Public License)'} = '';
+    $Self->{Translation}->{'GPL (General Public License)'} = 'GPL（General Public License）';
     $Self->{Translation}->{'General Information'} = '一般情報';
     $Self->{Translation}->{'Graphics Cards'} = 'グラフィックスカード';
     $Self->{Translation}->{'Graphics card'} = 'グラフィックスカード';
@@ -698,12 +703,12 @@ sub Data {
     $Self->{Translation}->{'IP Protocol'} = 'IPプロトコル';
     $Self->{Translation}->{'Identity and Access Management (IAM)'} = 'アイデンティティとアクセス管理（IAM）';
     $Self->{Translation}->{'Inventory Number'} = '在庫番号';
-    $Self->{Translation}->{'Investment costs'} = '';
+    $Self->{Translation}->{'Investment costs'} = '投資コスト';
     $Self->{Translation}->{'Invoice Number'} = 'インボイス番号';
     $Self->{Translation}->{'Keyboard'} = 'キーボード';
     $Self->{Translation}->{'LCD Monitor (Liquid Crystal Display)'} = 'LCDモニター（液晶ディスプレイ）';
     $Self->{Translation}->{'LED Monitor (Light Emitting Diode)'} = 'LEDモニター（発光ダイオード）';
-    $Self->{Translation}->{'LGPL (Lesser General Public License)'} = '';
+    $Self->{Translation}->{'LGPL (Lesser General Public License)'} = 'LGPL（Lesser General Public License）';
     $Self->{Translation}->{'Landline Phone'} = '固定電話';
     $Self->{Translation}->{'Laptop'} = 'ノートPC';
     $Self->{Translation}->{'Latitude'} = '緯度';
@@ -717,7 +722,7 @@ sub Data {
     $Self->{Translation}->{'Layer 7: Application Layer'} = 'レイヤー7：アプリケーション・レイヤー';
     $Self->{Translation}->{'Lease Agreement'} = 'リース契約';
     $Self->{Translation}->{'License Agreement'} = 'ライセンス契約';
-    $Self->{Translation}->{'License Count'} = '';
+    $Self->{Translation}->{'License Count'} = 'ライセンス数';
     $Self->{Translation}->{'License Key'} = 'ライセンスキー';
     $Self->{Translation}->{'License Type'} = 'ライセンスの種類';
     $Self->{Translation}->{'License period from'} = 'ライセンス期間';
@@ -725,15 +730,15 @@ sub Data {
     $Self->{Translation}->{'Lithium Iron Phosphate (LiFePO4) Battery'} = 'リン酸鉄リチウム（LiFePO4）電池';
     $Self->{Translation}->{'Lithium-Ion (Li-ion) Battery'} = 'リチウムイオン（Li-ion）バッテリー';
     $Self->{Translation}->{'Loan Agreement'} = 'ローン契約';
-    $Self->{Translation}->{'Located in'} = '所在地';
+    $Self->{Translation}->{'Located in'} = '設置場所';
     $Self->{Translation}->{'Longitude'} = '経度';
-    $Self->{Translation}->{'MIT License'} = '';
-    $Self->{Translation}->{'MPL (Mozilla Public License)'} = '';
+    $Self->{Translation}->{'MIT License'} = 'MIT License';
+    $Self->{Translation}->{'MPL (Mozilla Public License)'} = 'MPL（Mozilla Public License）';
     $Self->{Translation}->{'Manufacturer'} = 'メーカー';
     $Self->{Translation}->{'Maximum Load Capacity (W)'} = '最大負荷容量 (W)';
     $Self->{Translation}->{'Memory'} = 'メモリー';
     $Self->{Translation}->{'Memory Type'} = 'メモリータイプ';
-    $Self->{Translation}->{'Micro SIM'} = '';
+    $Self->{Translation}->{'Micro SIM'} = 'Micro SIM';
     $Self->{Translation}->{'Mini-Rack'} = 'ミニラック';
     $Self->{Translation}->{'Mobile Number'} = '携帯電話番号';
     $Self->{Translation}->{'Mobile/Embedded'} = 'モバイル/組み込み';
@@ -742,7 +747,7 @@ sub Data {
     $Self->{Translation}->{'Monitor Resolution'} = 'モニター解像度';
     $Self->{Translation}->{'Monitor Size'} = 'モニターサイズ';
     $Self->{Translation}->{'Mouse'} = 'マウス';
-    $Self->{Translation}->{'Nano SIM'} = '';
+    $Self->{Translation}->{'Nano SIM'} = 'Nano SIM';
     $Self->{Translation}->{'Network'} = 'ネットワーク';
     $Self->{Translation}->{'Network Info'} = 'ネットワーク情報';
     $Self->{Translation}->{'Network Information'} = 'ネットワーク情報';
@@ -764,13 +769,13 @@ sub Data {
     $Self->{Translation}->{'PUK'} = 'PUK';
     $Self->{Translation}->{'PUK 2'} = 'PUK 2';
     $Self->{Translation}->{'Partnership Agreement'} = 'パートナーシップ契約';
-    $Self->{Translation}->{'Perpetual licenses'} = '';
-    $Self->{Translation}->{'Phone / VoIP'} = '';
+    $Self->{Translation}->{'Perpetual licenses'} = '永続ライセンス';
+    $Self->{Translation}->{'Phone / VoIP'} = '電話／VoIP';
     $Self->{Translation}->{'Phone Number'} = '電話番号';
     $Self->{Translation}->{'Phone Type'} = '電話タイプ';
     $Self->{Translation}->{'Physical Cores'} = 'フィジカル・コア';
     $Self->{Translation}->{'Power Delivery'} = 'パワー・デリバリー';
-    $Self->{Translation}->{'Public Domain'} = '';
+    $Self->{Translation}->{'Public Domain'} = 'パブリックドメイン';
     $Self->{Translation}->{'Purchased at'} = 'で購入。';
     $Self->{Translation}->{'Rack Depth'} = 'ラックの奥行き';
     $Self->{Translation}->{'Rack Units (U)'} = 'ラックユニット (U)';
@@ -780,12 +785,12 @@ sub Data {
     $Self->{Translation}->{'Sales Contract'} = '売買契約';
     $Self->{Translation}->{'Satellite Phone'} = '衛星電話';
     $Self->{Translation}->{'Sealed Lead-Acid (SLA) Battery'} = '密閉型鉛蓄電池 (SLA)';
-    $Self->{Translation}->{'Seat licenses'} = '';
+    $Self->{Translation}->{'Seat licenses'} = 'シートライセンス';
     $Self->{Translation}->{'Serialnumber'} = 'シリアル番号';
     $Self->{Translation}->{'Server Software'} = 'サーバー・ソフトウェア';
     $Self->{Translation}->{'Service Agreement'} = 'サービス契約';
     $Self->{Translation}->{'Service Tag'} = 'サービスタグ';
-    $Self->{Translation}->{'Shareware'} = '';
+    $Self->{Translation}->{'Shareware'} = 'シェアウェア';
     $Self->{Translation}->{'Socket Type'} = 'ソケットタイプ';
     $Self->{Translation}->{'Software'} = 'ソフトウェア';
     $Self->{Translation}->{'Speakers'} = 'スピーカー';
@@ -793,7 +798,7 @@ sub Data {
     $Self->{Translation}->{'Start IP Address'} = '開始IPアドレス';
     $Self->{Translation}->{'Storage'} = 'ストレージ';
     $Self->{Translation}->{'Storage Partition'} = 'ストレージ・パーティション';
-    $Self->{Translation}->{'Subscription-based licenses'} = '';
+    $Self->{Translation}->{'Subscription-based licenses'} = 'サブスクリプション型ライセンス';
     $Self->{Translation}->{'Subsidiary'} = '子会社';
     $Self->{Translation}->{'Summary'} = '概要';
     $Self->{Translation}->{'Thin Client'} = 'シンクライアント';
@@ -808,16 +813,17 @@ sub Data {
     $Self->{Translation}->{'VGA'} = 'ブイジーエー';
     $Self->{Translation}->{'VPN'} = 'かそうへいいきもう';
     $Self->{Translation}->{'VR Headset'} = 'VRヘッドセット';
-    $Self->{Translation}->{'Virtual Client'} = '';
+    $Self->{Translation}->{'Virtual Client'} = '仮想クライアント';
     $Self->{Translation}->{'VirtualLink'} = 'バーチャルリンク';
     $Self->{Translation}->{'VoIP Phone'} = 'VoIPフォン';
-    $Self->{Translation}->{'Volume licenses'} = '';
+    $Self->{Translation}->{'Volume licenses'} = 'ボリュームライセンス';
     $Self->{Translation}->{'Webcam'} = 'ウェブカメラ';
 
 
     push @{ $Self->{JavaScriptStrings} // [] }, (
     'An error occurred during class import.',
     'An error occurred during communication.',
+    'Class import failed.',
     'Confirm',
     'Dismiss',
     'Do you want to proceed?',

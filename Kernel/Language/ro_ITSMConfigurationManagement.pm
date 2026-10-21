@@ -247,6 +247,7 @@ sub Data {
     $Self->{Translation}->{'Overview and Confirmation'} = 'Prezentare generală și confirmare';
     $Self->{Translation}->{'Importing classes/roles and their related fields'} = 'Importul claselor/rolurilor și al câmpurilor aferente acestora';
     $Self->{Translation}->{'An error occurred during class import.'} = 'S-a produs o eroare în timpul importului clasei.';
+    $Self->{Translation}->{'Class import failed.'} = '';
 
     # SysConfig
     $Self->{Translation}->{'0 - Hidden'} = '0 - Ascuns';
@@ -561,6 +562,8 @@ sub Data {
         'Afișează o legătură în meniu pentru a imprima un element de configurare în vizualizarea cu zoom a interfeței agentului.';
     $Self->{Translation}->{'Shows a link in the menu to zoom into a configuration item in the configuration item overview of the agent interface.'} =
         'Afișează o legătură în meniu pentru a mări un element de configurare în prezentarea generală a elementelor de configurare din interfața agentului.';
+    $Self->{Translation}->{'Shows all both ro and rw config items in the config item view.'} =
+        '';
     $Self->{Translation}->{'Shows the config item history (reverse ordered) in the agent interface.'} =
         'Afișează istoricul elementelor de configurare (în ordine inversă) în interfața agentului.';
     $Self->{Translation}->{'The default category which is shown, if none is selected.'} = 'Categoria implicită care este afișată dacă nu este selectată niciuna.';
@@ -569,6 +572,8 @@ sub Data {
     $Self->{Translation}->{'Title for the public interface overview.'} = '';
     $Self->{Translation}->{'Title for the public interface search.'} = '';
     $Self->{Translation}->{'Triggers ConfigItemFetch invoker automatically.'} = 'Declanșează automat invocatorul ConfigItemFetch.';
+    $Self->{Translation}->{'Update linked tickets, for example for processes checking lenses. With "Classes" and "LinkTypes", the execution can be restricted to certain config item classes and link types. Please put in the exact class names into "Classes" as well as the exact link type names in "LinkTypes", respectively. Currently available LinkTypes are: Normal, ParentChild, LocationOf, AlternativeTo, ConnectedTo, DependsOn, Includes, RelevantTo. Please note that the actual usable link types may be further restricted by the settings grouped under LinkObject::PossibleLink.'} =
+        '';
     $Self->{Translation}->{'Version String Expression'} = 'Versiune Expresie șir de caractere';
     $Self->{Translation}->{'Version String Module'} = 'Versiune Șir de caractere Modul';
     $Self->{Translation}->{'Version Trigger'} = 'Versiune Trigger';
@@ -818,6 +823,7 @@ sub Data {
     push @{ $Self->{JavaScriptStrings} // [] }, (
     'An error occurred during class import.',
     'An error occurred during communication.',
+    'Class import failed.',
     'Confirm',
     'Dismiss',
     'Do you want to proceed?',

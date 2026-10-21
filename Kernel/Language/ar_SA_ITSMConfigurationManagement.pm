@@ -247,6 +247,7 @@ sub Data {
     $Self->{Translation}->{'Overview and Confirmation'} = 'نظرة عامة وتأكيد';
     $Self->{Translation}->{'Importing classes/roles and their related fields'} = 'استيراد الفئات/الأدوار والحقول المرتبطة بها';
     $Self->{Translation}->{'An error occurred during class import.'} = 'حدث خطأ أثناء استيراد الفئة.';
+    $Self->{Translation}->{'Class import failed.'} = '';
 
     # SysConfig
     $Self->{Translation}->{'0 - Hidden'} = '0 - مخفي';
@@ -561,6 +562,8 @@ sub Data {
         'يعرض رابطًا في القائمة لطباعة عنصر تكوين في عرض التكبير/التصغير الخاص به لواجهة الوكيل.';
     $Self->{Translation}->{'Shows a link in the menu to zoom into a configuration item in the configuration item overview of the agent interface.'} =
         'يعرض رابطاً في القائمة لتكبير عنصر تكوين في نظرة عامة على عنصر التكوين في واجهة الوكيل.';
+    $Self->{Translation}->{'Shows all both ro and rw config items in the config item view.'} =
+        '';
     $Self->{Translation}->{'Shows the config item history (reverse ordered) in the agent interface.'} =
         'يعرض محفوظات عناصر التكوين (ترتيب عكسي) في واجهة الوكيل.';
     $Self->{Translation}->{'The default category which is shown, if none is selected.'} = 'الفئة الافتراضية التي تظهر، إذا لم يتم تحديد أي فئة.';
@@ -569,6 +572,8 @@ sub Data {
     $Self->{Translation}->{'Title for the public interface overview.'} = '';
     $Self->{Translation}->{'Title for the public interface search.'} = '';
     $Self->{Translation}->{'Triggers ConfigItemFetch invoker automatically.'} = 'يقوم بتشغيل مستدعي ConfigItemFetch تلقائيًا.';
+    $Self->{Translation}->{'Update linked tickets, for example for processes checking lenses. With "Classes" and "LinkTypes", the execution can be restricted to certain config item classes and link types. Please put in the exact class names into "Classes" as well as the exact link type names in "LinkTypes", respectively. Currently available LinkTypes are: Normal, ParentChild, LocationOf, AlternativeTo, ConnectedTo, DependsOn, Includes, RelevantTo. Please note that the actual usable link types may be further restricted by the settings grouped under LinkObject::PossibleLink.'} =
+        '';
     $Self->{Translation}->{'Version String Expression'} = 'تعبير سلسلة الإصدار';
     $Self->{Translation}->{'Version String Module'} = 'وحدة سلسلة الإصدار';
     $Self->{Translation}->{'Version Trigger'} = 'مشغل الإصدار';
@@ -818,6 +823,7 @@ sub Data {
     push @{ $Self->{JavaScriptStrings} // [] }, (
     'An error occurred during class import.',
     'An error occurred during communication.',
+    'Class import failed.',
     'Confirm',
     'Dismiss',
     'Do you want to proceed?',
