@@ -1840,6 +1840,45 @@ sub ClassImport {
                 Message  => "Could not add dynamic field $FieldConfig->{Name}.",
             );
         }
+
+        my $IsScriptField = $Kernel::OM->Get('Kernel::System::DynamicField::Backend')->HasBehavior(
+            DynamicFieldConfig => {
+                $FieldConfig->%*,
+                ID => $FieldID,
+            },
+            Behavior => 'IsScriptField',
+        );
+
+        # set events for script fields
+        if ( $IsScriptField && IsArrayRefWithData( $FieldConfig->{Config}{UpdateEvents} ) ) {
+            my $Config = $FieldConfig->{FieldType} ? $Kernel::OM->Get('Kernel::Config')->Get('DynamicFields::Driver')->{ $FieldConfig->{FieldType} } : {};
+
+            # Check module validity
+            if ( !$Config->{Module} || !$Kernel::OM->Get('Kernel::System::Main')->Require( $Config->{Module} ) ) {
+                next DYNAMICFIELD;
+            }
+
+            my $DriverObject = $Kernel::OM->Get( $Config->{Module} );
+
+            # validate update events against possible events
+            my $PossibleConditions = $DriverObject->GetPossibleExecutionConditions(
+                ObjectType => $FieldConfig->{ObjectType},
+                FieldID    => $FieldID,
+            );
+
+            my @FilteredUpdateEvents;
+            if ( IsArrayRefWithData( $PossibleConditions->{PossibleUpdateEvents} ) ) {
+                my %PossibleUpdateEvents = map { $_ => $_ } $PossibleConditions->{PossibleUpdateEvents}->@*;
+                @FilteredUpdateEvents = grep { $PossibleUpdateEvents{$_} } $FieldConfig->{Config}{UpdateEvents}->@*;
+            }
+
+            if (@FilteredUpdateEvents) {
+                $DriverObject->SetUpdateEvents(
+                    FieldID => $FieldID,
+                    Events  => \@FilteredUpdateEvents,
+                );
+            }
+        }
     }
 
     # trigger dynamic field events

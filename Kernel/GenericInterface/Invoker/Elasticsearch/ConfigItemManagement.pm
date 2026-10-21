@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -26,7 +26,8 @@ use MIME::Base64 qw(encode_base64);
 # CPAN modules
 
 # OTOBO modules
-use Kernel::System::VariableCheck qw(:all);
+use Kernel::System::VariableCheck                                      qw(:all);
+use Kernel::GenericInterface::Invoker::Elasticsearch::ManagementCommon qw(RemoveESWeightedSearchBoostSuffix);
 
 our $ObjectManagerDisabled = 1;
 
@@ -416,8 +417,10 @@ sub PrepareRequest {
     }
 
     # gather all fields which have to be stored
-    my $Store              = $ConfigObject->Get('Elasticsearch::ConfigItemStoreFields');
-    my $Search             = $ConfigObject->Get('Elasticsearch::ConfigItemSearchFields');
+    my $Store  = $ConfigObject->Get('Elasticsearch::ConfigItemStoreFields');
+    my $Search = RemoveESWeightedSearchBoostSuffix(
+        Data => $ConfigObject->Get('Elasticsearch::ConfigItemSearchFields')
+    );
     my $DynamicFieldObject = $Kernel::OM->Get('Kernel::System::DynamicField');
     my %DataToStore;
     for my $Field ( @{ $Store->{Basic} }, @{ $Search->{Basic} } ) {
