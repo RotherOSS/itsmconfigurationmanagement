@@ -154,8 +154,8 @@ sub Data {
     $Self->{Translation}->{'Name updated (new=%s, old=%s)'} = '名前が更新されました（新規=%s、古い=%s）';
     $Self->{Translation}->{'Attribute %s updated from "%s" to "%s"'} = '属性%sが "%s"から "%s"に更新されました';
     $Self->{Translation}->{'Version %s deleted'} = 'バージョン%sが削除されました';
-    $Self->{Translation}->{'File "%s" uploaded'} = '';
-    $Self->{Translation}->{'File "%s" removed'} = '';
+    $Self->{Translation}->{'File "%s" uploaded'} = 'ファイル "%s" をアップロードしました';
+    $Self->{Translation}->{'File "%s" removed'} = 'ファイル "%s" を削除しました';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
     $Self->{Translation}->{'No ConfigItemID or VersionID is given!'} = 'ConfigItemIDまたはVersionIDは指定されていません！';
@@ -177,7 +177,7 @@ sub Data {
         '構成アイテムを表示できません。構成アイテムのアクセス権は与えられていません！';
     $Self->{Translation}->{'ConfigItem not found!'} = 'ConfigItemが見つかりません！';
     $Self->{Translation}->{'No versions found!'} = 'バージョンは見つかりませんでした！';
-    $Self->{Translation}->{'operational'} = '通常運用';
+    $Self->{Translation}->{'operational'} = '稼働中';
     $Self->{Translation}->{'warning'} = '警告';
     $Self->{Translation}->{'incident'} = 'インシデント';
     $Self->{Translation}->{'The deployment state of this config item'} = 'この構成アイテムのデプロイ・ステータス';
@@ -209,8 +209,8 @@ sub Data {
     $Self->{Translation}->{'Whether this link applies to the ConfigItem or the static version of the referencing object. Current Incident State calculation only is performed on dynamic links.'} =
         'このリンクが参照オブジェクトの ConfigItem と静的バージョンのどちらに適用されるか。現在のインシデント・ステートの計算は、ダイナミック・リンクに対してのみ実行されます。';
     $Self->{Translation}->{'Select the attribute which config items will be searched by'} = '設定項目を検索する属性を選択します。';
-    $Self->{Translation}->{'External-source key'} = '';
-    $Self->{Translation}->{'Select the type of display'} = '';
+    $Self->{Translation}->{'External-source key'} = '外部ソースのキー';
+    $Self->{Translation}->{'Select the type of display'} = '表示のタイプを選択してください';
 
     # Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
     $Self->{Translation}->{'Base structure is not valid. Please provide a hash with data in YAML format.'} =
@@ -225,9 +225,9 @@ sub Data {
 
     # Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
     $Self->{Translation}->{'Maximum number of one element'} = '一エレメントあたりの最大数';
-    $Self->{Translation}->{'Maximum number of one Set dynamic field element'} = '';
+    $Self->{Translation}->{'Maximum number of one Set dynamic field element'} = '1つのセット・ダイナミックフィールド要素の最大数';
     $Self->{Translation}->{'Maximum number of one element within a Set dynamic field element'} =
-        '';
+        'セット・ダイナミックフィールド要素内の1つの要素の最大数';
     $Self->{Translation}->{'Import/Export attachments (as the last entries per line)'} = '添付ファイルのインポート/エクスポート（行ごとの最後のエントリとして）';
     $Self->{Translation}->{'Version String'} = 'バージョン文字列';
 
@@ -255,17 +255,17 @@ sub Data {
     $Self->{Translation}->{'0 - Hidden'} = '0 - 非表示';
     $Self->{Translation}->{'1 - Shown'} = '1 - 表示';
     $Self->{Translation}->{'A mapping of inner field names used in the Process Management TransitionActions ConfigItemAdd and -Update. The keys are the names of the set inner fields of the set with object type ticket which will be used to create/update the CI, and the values are the names of the inner fields of the set with object type ITSMConfigItem.'} =
-        '';
+        'プロセス管理の遷移アクション ConfigItemAdd および ConfigItemUpdate で使用される内部フィールド名の対応付け。キーは、CI の作成／更新に使用される、オブジェクトタイプがチケットのセットの内部フィールド名で、値はオブジェクトタイプが ITSMConfigItem のセットの内部フィールド名です。';
     $Self->{Translation}->{'Allows extended search conditions in config item search of the agent interface. With this feature you can search e. g. config item name with this kind of conditions like "(*key1*&&*key2*)" or "(*key1*||*key2*)".'} =
         'エージェントインタフェースの設定項目検索において、拡張検索条件を許可します。この機能により、"(*key1*&*key2*) "や"(*key1*|*key2*) "のような条件で設定項目名を検索することができます。';
     $Self->{Translation}->{'Allows extended search conditions in config item search of the customer interface. With this feature you can search e. g. config item name with this kind of conditions like "(*key1*&&*key2*)" or "(*key1*||*key2*)".'} =
         'カスタマーインターフェイスの設定項目検索において、検索条件を拡張することができます。この機能を使用すると、"(*key1*&*key2*) "または"(*key1*|*key2*) "のような条件で設定項目名を検索できます。';
     $Self->{Translation}->{'Assigned CIs'} = '割り当てられたCI';
     $Self->{Translation}->{'At a specific time point create a ticket for config items, if the configured requirements are met. The time point is determined by the value of the dynamic field of type date configured under "TimeCIKey" of the ConfigItem, and modified by "TimeModifier". If the latter can be either just a number, or a sign (+/-), a number, and an unit (d/h/m): "7" is equivalent to "+7d". The DynamicField "Ticket->DynamicField" will be used to mark created tickets - it has to exist. The flags \<OTOBO_CONFIGITEM_X\> where X can be NAME, NUMBER and DATE, will be substituted with the respective values in "Ticket->Text".'} =
-        '';
-    $Self->{Translation}->{'Attributes for license accounting.'} = '';
+        '設定した条件を満たす場合に、特定の時点で構成アイテムに対するチケットを作成します。時点は、構成アイテムの "TimeCIKey" で設定した日付タイプのダイナミックフィールドの値で決まり、"TimeModifier" で調整されます。"TimeModifier" には数値のみ、または符号（+/-）、数値、単位（d/h/m）を指定できます。"7" は "+7d" と同じです。作成されたチケットの識別には、ダイナミックフィールド "Ticket->DynamicField" が使用されます（存在している必要があります）。"Ticket->Text" 内のフラグ \<OTOBO_CONFIGITEM_X\> （X は NAME、NUMBER、DATE）は、それぞれの値に置換されます。';
+    $Self->{Translation}->{'Attributes for license accounting.'} = 'ライセンス計上用の属性。';
     $Self->{Translation}->{'Attributes for licenses counting, where "TotalLicensesDF", "AvailableLicensesDF" and "LicenseReferenceDF" are the names of the dynamic fields used to track the remaining licenses. If used, only deployment states in "ValidDeplStates" are considered. If a threshold is defined in "MinimumLicenses", a ticket will automatically be created if less licenses are available. For this, the checkbox dynamic field "Ticket->DynamicField" must exist. The tags \<OTOBO_CONFIGITEM_X\> where X can be NAME, NUMBER, LICENSES_AVAIL and LICENSES_MIN, will be substituted with the respective values in "Ticket->Text" by the config item name, number, available licenses, and minimum required available licenses, respectively.'} =
-        '';
+        'ライセンス数の管理用の属性。"TotalLicensesDF"、"AvailableLicensesDF"、"LicenseReferenceDF" は、残りのライセンス数を追跡するためのダイナミックフィールドの名前です。使用する場合は、"ValidDeplStates" のデプロイ・ステータスのみが対象になります。"MinimumLicenses" にしきい値を定義すると、利用可能なライセンス数がそれを下回った場合に自動的にチケットが作成されます。このためには、チェックボックス・ダイナミックフィールド "Ticket->DynamicField" が存在している必要があります。"Ticket->Text" 内のタグ \<OTOBO_CONFIGITEM_X\> （X は NAME、NUMBER、LICENSES_AVAIL、LICENSES_MIN）は、それぞれ構成アイテム名、番号、利用可能なライセンス数、必要な最小ライセンス数に置換されます。';
     $Self->{Translation}->{'CIs assigned to customer company'} = '顧客企業に割り当てられたCI';
     $Self->{Translation}->{'CIs assigned to customer user'} = '顧客ユーザーに割り当てられたCI';
     $Self->{Translation}->{'CMDB Settings'} = 'CMDBの設定';
@@ -283,7 +283,7 @@ sub Data {
     $Self->{Translation}->{'Config item add.'} = '構成アイテムを追加します。';
     $Self->{Translation}->{'Config item edit.'} = '構成アイテムを修正します。';
     $Self->{Translation}->{'Config item event module that enables accounting licenses for a given config item.'} =
-        '';
+        '指定した構成アイテムのライセンス計上を可能にする構成アイテムのイベントモジュール。';
     $Self->{Translation}->{'Config item event module that enables logging to history in the agent interface.'} =
         '担当者Webインタフェースの履歴を記録する構成アイテムのイベントモジュール';
     $Self->{Translation}->{'Config item event module that updates config items to their current definition.'} =
@@ -304,9 +304,9 @@ sub Data {
     $Self->{Translation}->{'Configuration item search backend router of the agent interface.'} =
         '担当者インターフェースの構成アイテムの検索バックエンドルーター';
     $Self->{Translation}->{'Configure the columns which are available for viewing Permission Conditions in the customer interface, when the corresponding Permission Condition Columns are not specifically configured. This setting is used as a fallback for the other Permission Condition Columns settings.'} =
-        '';
+        '対応する権限条件の列が個別に設定されていない場合に、顧客インタフェースで権限条件の表示に使用できる列を設定します。この設定は、他の権限条件の列設定のフォールバックとして使用されます。';
     $Self->{Translation}->{'Configure the columns which are available when viewing the corresponding Permission Condition in the customer interface.'} =
-        '';
+        '顧客インタフェースで、対応する権限条件を表示する際に使用できる列を設定します。';
     $Self->{Translation}->{'Create and manage the definitions for Configuration Items.'} = '構成アイテムの作成と管理します。';
     $Self->{Translation}->{'Creates Tickets for ConfigItems at specific time points.'} = '特定の時点でConfigItemsのチケットを作成します。';
     $Self->{Translation}->{'Customers can see historic CI versions.'} = '顧客は過去のCIバージョンを見ることができる。';
@@ -317,11 +317,11 @@ sub Data {
     $Self->{Translation}->{'Default data to use on attribute for config item search screen. Example: "ITSMConfigItemCreateTimeStartYear=2010;ITSMConfigItemCreateTimeStartMonth=10;ITSMConfigItemCreateTimeStartDay=4;ITSMConfigItemCreateTimeStopYear=2010;ITSMConfigItemCreateTimeStopMonth=11;ITSMConfigItemCreateTimeStopDay=3;".'} =
         'コンフィグ項目検索画面の属性で使用するデフォルトデータ。例："ITSMConfigItemCreateTimeStartYear=2010;ITSMConfigItemCreateTimeStartMonth=10;ITSMConfigItemCreateTimeStartDay=4;ITSMConfigItemCreateTimeStopYear=2010;ITSMConfigItemCreateTimeStopMonth=11;ITSMConfigItemCreateTimeStopDay=3;"。';
     $Self->{Translation}->{'Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = "complex"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.'} =
-        'リンクされたオブジェクト ウィジェット (LinkObject::ViewMode = "complex") で設定ボタンが使用できるアクションを定義します。これらのアクションには、Core.AllocationList.css、Core.UI.AllocationList.js、Core.UI.Table.Sort.js、Core.Agent.TableFilters.js、および Core.Agent.LinkObject.js の JS および CSS ファイルが登録されている必要があることに注意してください。';
+        'リンクオブジェクト・ウィジェット（LinkObject::ViewMode = "complex"）で設定ボタンを使用できるアクションを定義します。これらのアクションには、次の JS および CSS ファイルが登録されている必要があります: Core.AllocationList.css、Core.UI.AllocationList.js、Core.UI.Table.Sort.js、Core.Agent.TableFilters.js、Core.Agent.LinkObject.js。';
     $Self->{Translation}->{'Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit.'} =
         'バージョン文字列用の Template::Toolkit スキームを定義します。バージョン文字列モジュールが TemplateToolkit に設定されている場合にのみ使用されます。';
     $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
-        '';
+        'ダイナミックフィールド画面インタフェースを介して、このパッケージのアクションに割り当てることができるダイナミックフィールドのオブジェクトタイプの一覧を定義します。';
     $Self->{Translation}->{'Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
         '顧客が設定項目を見ることを許可される一連の条件を定義します。条件は、オプションで特定の顧客グループに制限することができます。名前は唯一の必須属性です。他のオプションが指定されていない場合、すべての設定項目がそのカテゴリの下に表示されます。';
     $Self->{Translation}->{'Defines Required permissions to delete ITSM configuration items using the Generic Interface.'} =
@@ -364,7 +364,7 @@ sub Data {
     $Self->{Translation}->{'Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         'CIクラスに応じて、設定項目の概要で利用可能なCIの列を定義します。各項目は、クラス名と、対応するクラスで利用可能なフィールドの配列から構成されなければなりません。動的フィールドのエントリは、DynamicField_FieldName スキームに従わなければなりません。';
     $Self->{Translation}->{'Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).'} =
-        'この画面のリッチ テキスト エディター コンポーネントの高さを定義します。数値 (ピクセル) またはパーセント値 (相対) を入力します。';
+        'この画面のリッチテキストエディターの高さを定義します。数値（ピクセル）またはパーセント値（相対値）を入力してください。';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =
         '管理インターフェイス Cl 定義エディタの行数を定義する。';
     $Self->{Translation}->{'Defines the order of incident states from high (e.g. cricital) to low (e.g. functional).'} =
@@ -435,7 +435,7 @@ sub Data {
         'カスタマーインターフェースの設定項目検索にデプロイメントステートが含まれるようになりました。';
     $Self->{Translation}->{'Includes incident states in the config item search of the customer interface.'} =
         'カスタマーインターフェースの設定項目検索にインシデント状態を含める。';
-    $Self->{Translation}->{'License accounting configuration item event module.'} = '';
+    $Self->{Translation}->{'License accounting configuration item event module.'} = 'ライセンス計上用の構成アイテムのイベントモジュール。';
     $Self->{Translation}->{'Maximum number of config items to be displayed in the result of this operation.'} =
         'この操作の結果に表示されるコンフィグ項目の最大数。';
     $Self->{Translation}->{'Module to check the group responsible for a class.'} = 'クラスを担当するグループをチェックするモジュール';
@@ -456,15 +456,15 @@ sub Data {
     $Self->{Translation}->{'Parameters for the column filters of the small config item overview. Please note: setting \'Active\' to 0 will only prevent agents from editing settings of this group in their personal preferences, but will still allow administrators to edit the settings of another user\'s behalf. Use \'PreferenceGroup\' to control in which area these settings should be shown in the user interface.'} =
         '小設定項目概要の列フィルタ用のパラメータです。注意: \'Active\' を 0 に設定すると、エージェントは個人設定でこのグループの設定を編集できなくなりますが、管理者は他のユーザの設定を編集することができます。PreferenceGroup\' を使用して、これらの設定をユーザインターフェイスのどのエリアに表示するかを制御します。';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview shown in the agent interface. "Limit" is the number of entries per config item class shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is to specify which customer user reference dynamic field is used to filter for the selected customer user. "ShownClasses" is a list to optionally restrict classes of the shown config items. Leaving this list empty defaults to all classes which match the customer user in the dynamic field configured in "ConfigItemKey".'} =
-        '';
+        '担当者インタフェースに表示される顧客ユーザーの構成アイテム一覧のダッシュボード・バックエンドのパラメータ。"Limit" はデフォルトで表示する構成アイテムクラスごとのエントリー数です。"Group" はプラグインへのアクセスを制限するために使用します（例: Group: admin;group1;group2;）。"Default" は、プラグインをデフォルトで有効にするか、ユーザーが手動で有効にする必要があるかを決定します。"CacheTTLLocal" はプラグインのキャッシュ時間（分）です。"ConfigItemKey" では、選択した顧客ユーザーでの絞り込みに使用する顧客ユーザー参照ダイナミックフィールドを指定します。"ShownClasses" は、表示する構成アイテムのクラスを任意で制限するための一覧です。空欄の場合は、"ConfigItemKey" で設定したダイナミックフィールド内の顧客ユーザーに一致するすべてのクラスが対象になります。';
     $Self->{Translation}->{'Parameters for the dashboard backend of the customer company config item overview shown in the agent interface. "Limit" is the number of entries shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin. "ConfigItemKey" is to specify which customer company reference dynamic field is used to filter for the selected customer company. "ShownClasses" is a list to optionally restrict classes of the shown config items. Leaving this list empty defaults to all classes which match the customer company in the dynamic field configured in "ConfigItemKey".'} =
-        '';
+        '担当者インタフェースに表示される顧客企業の構成アイテム一覧のダッシュボード・バックエンドのパラメータ。"Limit" はデフォルトで表示するエントリー数です。"Group" はプラグインへのアクセスを制限するために使用します（例: Group: admin;group1;group2;）。"Default" は、プラグインをデフォルトで有効にするか、ユーザーが手動で有効にする必要があるかを決定します。"CacheTTLLocal" はプラグインのキャッシュ時間（分）です。"ConfigItemKey" では、選択した顧客企業での絞り込みに使用する顧客企業参照ダイナミックフィールドを指定します。"ShownClasses" は、表示する構成アイテムのクラスを任意で制限するための一覧です。空欄の場合は、"ConfigItemKey" で設定したダイナミックフィールド内の顧客企業に一致するすべてのクラスが対象になります。';
     $Self->{Translation}->{'Parameters for the deployment states color in the preferences view of the agent interface.'} =
         'デプロイメントのパラメータは、担当者Webインタフェースの環境設定ビューで色を示します。';
     $Self->{Translation}->{'Parameters for the deployment states in the preferences view of the agent interface.'} =
         '担当者Webインタフェースの環境設定ビューでデプロイ状態のパラメータ';
     $Self->{Translation}->{'Parameters for the example permission groups of the general catalog attributes.'} =
-        'ジェネラル・カタログの属性の権限グループの設定値例です。';
+        '一般カタログ属性の権限グループ例のパラメータ。';
     $Self->{Translation}->{'Parameters for the name module for config item classes in the preferences view of the agent interface.'} =
         'エージェントインタフェースの環境設定ビューの設定項目クラスの名前モジュールのパラメータ。';
     $Self->{Translation}->{'Parameters for the number module for config item classes in the preferences view of the agent interface.'} =
@@ -542,7 +542,7 @@ sub Data {
     $Self->{Translation}->{'Version String Module'} = 'バージョン文字列モジュール';
     $Self->{Translation}->{'Version Trigger'} = 'バージョン・トリガー';
     $Self->{Translation}->{'Whether fields should be automatically filled (1), and in that case also be hidden from ticket formulars (2).'} =
-        '';
+        'フィールドを自動的に入力する（1）か、その場合にチケットのフォームから非表示にもする（2）か。';
     $Self->{Translation}->{'Whether the execution of ConfigItemACL can be avoided by checking cached field dependencies. This can improve loading times of formulars, but has to be disabled, if ACLModules are to be used for ITSMConfigItem- and Form-ReturnTypes.'} =
         'キャッシュされたフィールドの依存関係をチェックすることで、ConfigItemACLの実行を回避できるかどうか。これはフォームのロード時間を改善することができるが、ACLModule を ITSMConfigItem- と Form-ReturnType で使用する場合は無効にしなければならない。';
     $Self->{Translation}->{'Which general information is shown in the header.'} = 'どの一般的な情報がヘッダーに表示されているか。';
@@ -586,20 +586,20 @@ sub Data {
     $Self->{Translation}->{'7U: 12.25 inches (31.12 cm)'} = '7U：12.25インチ（31.12cm）';
     $Self->{Translation}->{'8U: 14 inches (35.56 cm)'} = '8U：14インチ（35.56cm）';
     $Self->{Translation}->{'9U: 15.75 inches (40.01 cm)'} = '9U：15.75インチ（40.01cm）';
-    $Self->{Translation}->{'AGPL (Affero General Public License)'} = '';
+    $Self->{Translation}->{'AGPL (Affero General Public License)'} = 'AGPL（Affero General Public License）';
     $Self->{Translation}->{'Accounting'} = '会計';
-    $Self->{Translation}->{'Accounting Information'} = '';
+    $Self->{Translation}->{'Accounting Information'} = '計上情報';
     $Self->{Translation}->{'Address Allocation'} = 'アドレス割り当て';
     $Self->{Translation}->{'Administrator'} = '管理者';
     $Self->{Translation}->{'Analog Phone'} = 'アナログ電話';
-    $Self->{Translation}->{'Apache License'} = '';
+    $Self->{Translation}->{'Apache License'} = 'Apache License';
     $Self->{Translation}->{'Appliance Type'} = 'アプライアンス・タイプ';
-    $Self->{Translation}->{'BSD License (Berkeley Software Distribution License)'} = '';
+    $Self->{Translation}->{'BSD License (Berkeley Software Distribution License)'} = 'BSD License（Berkeley Software Distribution License）';
     $Self->{Translation}->{'Battery Capacity (Ah)'} = 'バッテリー容量（Ah）';
     $Self->{Translation}->{'Battery Type'} = 'バッテリータイプ';
     $Self->{Translation}->{'Building'} = '構築';
     $Self->{Translation}->{'Bus Interface'} = 'バス・インターフェース';
-    $Self->{Translation}->{'CC0 (Creative Commons Zero)'} = '';
+    $Self->{Translation}->{'CC0 (Creative Commons Zero)'} = 'CC0（Creative Commons Zero）';
     $Self->{Translation}->{'CIDR'} = 'CIDR';
     $Self->{Translation}->{'CPU'} = 'CPU';
     $Self->{Translation}->{'CPU Class'} = 'CPUクラス';
@@ -627,7 +627,7 @@ sub Data {
     $Self->{Translation}->{'Cost unit'} = 'コスト単位';
     $Self->{Translation}->{'Count of licenses'} = 'ライセンス数';
     $Self->{Translation}->{'Creation Date'} = '作成日';
-    $Self->{Translation}->{'Creative Commons'} = '';
+    $Self->{Translation}->{'Creative Commons'} = 'クリエイティブ・コモンズ';
     $Self->{Translation}->{'Custom Rack'} = 'カスタムラック';
     $Self->{Translation}->{'DHCP'} = 'ディーエイチシーピー';
     $Self->{Translation}->{'DHCP Reserved'} = 'DHCP予約';
@@ -640,10 +640,10 @@ sub Data {
     $Self->{Translation}->{'Desktop'} = 'デスクトップ';
     $Self->{Translation}->{'DisplayPort'} = 'ディスプレイポート';
     $Self->{Translation}->{'Document Signing Certificates'} = '文書署名証明書';
-    $Self->{Translation}->{'EPL (Eclipse Public License)'} = '';
+    $Self->{Translation}->{'EPL (Eclipse Public License)'} = 'EPL（Eclipse Public License）';
     $Self->{Translation}->{'ETSI Rack'} = 'ETSIラック';
     $Self->{Translation}->{'Email Certificates (S/MIME Certificates)'} = '電子メール証明書（S/MIME 証明書）';
-    $Self->{Translation}->{'Embedded SIM (eSIM)'} = '';
+    $Self->{Translation}->{'Embedded SIM (eSIM)'} = '組み込み SIM（eSIM）';
     $Self->{Translation}->{'Employment Contract'} = '雇用契約';
     $Self->{Translation}->{'End IP Address'} = '終了IPアドレス';
     $Self->{Translation}->{'End of support'} = 'サポート終了';
@@ -655,7 +655,7 @@ sub Data {
     $Self->{Translation}->{'Form Factor'} = 'フォームファクター';
     $Self->{Translation}->{'Franchise Agreement'} = 'フランチャイズ契約';
     $Self->{Translation}->{'Freeware'} = 'フリーウェア';
-    $Self->{Translation}->{'GPL (General Public License)'} = '';
+    $Self->{Translation}->{'GPL (General Public License)'} = 'GPL（General Public License）';
     $Self->{Translation}->{'General Information'} = '一般情報';
     $Self->{Translation}->{'Graphics Cards'} = 'グラフィックスカード';
     $Self->{Translation}->{'Graphics card'} = 'グラフィックスカード';
@@ -672,7 +672,7 @@ sub Data {
     $Self->{Translation}->{'Keyboard'} = 'キーボード';
     $Self->{Translation}->{'LCD Monitor (Liquid Crystal Display)'} = 'LCDモニター（液晶ディスプレイ）';
     $Self->{Translation}->{'LED Monitor (Light Emitting Diode)'} = 'LEDモニター（発光ダイオード）';
-    $Self->{Translation}->{'LGPL (Lesser General Public License)'} = '';
+    $Self->{Translation}->{'LGPL (Lesser General Public License)'} = 'LGPL（Lesser General Public License）';
     $Self->{Translation}->{'Landline Phone'} = '固定電話';
     $Self->{Translation}->{'Laptop'} = 'ノートPC';
     $Self->{Translation}->{'Latitude'} = '緯度';
@@ -686,7 +686,7 @@ sub Data {
     $Self->{Translation}->{'Layer 7: Application Layer'} = 'レイヤー7：アプリケーション・レイヤー';
     $Self->{Translation}->{'Lease Agreement'} = 'リース契約';
     $Self->{Translation}->{'License Agreement'} = 'ライセンス契約';
-    $Self->{Translation}->{'License Count'} = '';
+    $Self->{Translation}->{'License Count'} = 'ライセンス数';
     $Self->{Translation}->{'License Key'} = 'ライセンスキー';
     $Self->{Translation}->{'License Type'} = 'ライセンスの種類';
     $Self->{Translation}->{'License period from'} = 'ライセンス期間';
@@ -694,15 +694,15 @@ sub Data {
     $Self->{Translation}->{'Lithium Iron Phosphate (LiFePO4) Battery'} = 'リン酸鉄リチウム（LiFePO4）電池';
     $Self->{Translation}->{'Lithium-Ion (Li-ion) Battery'} = 'リチウムイオン（Li-ion）バッテリー';
     $Self->{Translation}->{'Loan Agreement'} = 'ローン契約';
-    $Self->{Translation}->{'Located in'} = '所在地';
+    $Self->{Translation}->{'Located in'} = '設置場所';
     $Self->{Translation}->{'Longitude'} = '経度';
-    $Self->{Translation}->{'MIT License'} = '';
-    $Self->{Translation}->{'MPL (Mozilla Public License)'} = '';
+    $Self->{Translation}->{'MIT License'} = 'MIT License';
+    $Self->{Translation}->{'MPL (Mozilla Public License)'} = 'MPL（Mozilla Public License）';
     $Self->{Translation}->{'Manufacturer'} = 'メーカー';
     $Self->{Translation}->{'Maximum Load Capacity (W)'} = '最大負荷容量 (W)';
     $Self->{Translation}->{'Memory'} = 'メモリー';
     $Self->{Translation}->{'Memory Type'} = 'メモリータイプ';
-    $Self->{Translation}->{'Micro SIM'} = '';
+    $Self->{Translation}->{'Micro SIM'} = 'Micro SIM';
     $Self->{Translation}->{'Mini-Rack'} = 'ミニラック';
     $Self->{Translation}->{'Mobile Number'} = '携帯電話番号';
     $Self->{Translation}->{'Mobile/Embedded'} = 'モバイル/組み込み';
@@ -711,7 +711,7 @@ sub Data {
     $Self->{Translation}->{'Monitor Resolution'} = 'モニター解像度';
     $Self->{Translation}->{'Monitor Size'} = 'モニターサイズ';
     $Self->{Translation}->{'Mouse'} = 'マウス';
-    $Self->{Translation}->{'Nano SIM'} = '';
+    $Self->{Translation}->{'Nano SIM'} = 'Nano SIM';
     $Self->{Translation}->{'Network'} = 'ネットワーク';
     $Self->{Translation}->{'Network Info'} = 'ネットワーク情報';
     $Self->{Translation}->{'Network Information'} = 'ネットワーク情報';
@@ -733,13 +733,13 @@ sub Data {
     $Self->{Translation}->{'PUK'} = 'PUK';
     $Self->{Translation}->{'PUK 2'} = 'PUK 2';
     $Self->{Translation}->{'Partnership Agreement'} = 'パートナーシップ契約';
-    $Self->{Translation}->{'Perpetual licenses'} = '';
-    $Self->{Translation}->{'Phone / VoIP'} = '';
+    $Self->{Translation}->{'Perpetual licenses'} = '永続ライセンス';
+    $Self->{Translation}->{'Phone / VoIP'} = '電話／VoIP';
     $Self->{Translation}->{'Phone Number'} = '電話番号';
     $Self->{Translation}->{'Phone Type'} = '電話タイプ';
     $Self->{Translation}->{'Physical Cores'} = 'フィジカル・コア';
     $Self->{Translation}->{'Power Delivery'} = 'パワー・デリバリー';
-    $Self->{Translation}->{'Public Domain'} = '';
+    $Self->{Translation}->{'Public Domain'} = 'パブリックドメイン';
     $Self->{Translation}->{'Purchased at'} = 'で購入。';
     $Self->{Translation}->{'Rack Depth'} = 'ラックの奥行き';
     $Self->{Translation}->{'Rack Units (U)'} = 'ラックユニット (U)';
@@ -749,12 +749,12 @@ sub Data {
     $Self->{Translation}->{'Sales Contract'} = '売買契約';
     $Self->{Translation}->{'Satellite Phone'} = '衛星電話';
     $Self->{Translation}->{'Sealed Lead-Acid (SLA) Battery'} = '密閉型鉛蓄電池 (SLA)';
-    $Self->{Translation}->{'Seat licenses'} = '';
+    $Self->{Translation}->{'Seat licenses'} = 'シートライセンス';
     $Self->{Translation}->{'Serialnumber'} = 'シリアル番号';
     $Self->{Translation}->{'Server Software'} = 'サーバー・ソフトウェア';
     $Self->{Translation}->{'Service Agreement'} = 'サービス契約';
     $Self->{Translation}->{'Service Tag'} = 'サービスタグ';
-    $Self->{Translation}->{'Shareware'} = '';
+    $Self->{Translation}->{'Shareware'} = 'シェアウェア';
     $Self->{Translation}->{'Socket Type'} = 'ソケットタイプ';
     $Self->{Translation}->{'Software'} = 'ソフトウェア';
     $Self->{Translation}->{'Speakers'} = 'スピーカー';
@@ -762,7 +762,7 @@ sub Data {
     $Self->{Translation}->{'Start IP Address'} = '開始IPアドレス';
     $Self->{Translation}->{'Storage'} = 'ストレージ';
     $Self->{Translation}->{'Storage Partition'} = 'ストレージ・パーティション';
-    $Self->{Translation}->{'Subscription-based licenses'} = '';
+    $Self->{Translation}->{'Subscription-based licenses'} = 'サブスクリプション型ライセンス';
     $Self->{Translation}->{'Subsidiary'} = '子会社';
     $Self->{Translation}->{'Summary'} = '概要';
     $Self->{Translation}->{'Thin Client'} = 'シンクライアント';
@@ -777,10 +777,10 @@ sub Data {
     $Self->{Translation}->{'VGA'} = 'ブイジーエー';
     $Self->{Translation}->{'VPN'} = 'かそうへいいきもう';
     $Self->{Translation}->{'VR Headset'} = 'VRヘッドセット';
-    $Self->{Translation}->{'Virtual Client'} = '';
+    $Self->{Translation}->{'Virtual Client'} = '仮想クライアント';
     $Self->{Translation}->{'VirtualLink'} = 'バーチャルリンク';
     $Self->{Translation}->{'VoIP Phone'} = 'VoIPフォン';
-    $Self->{Translation}->{'Volume licenses'} = '';
+    $Self->{Translation}->{'Volume licenses'} = 'ボリュームライセンス';
     $Self->{Translation}->{'Webcam'} = 'ウェブカメラ';
 
 

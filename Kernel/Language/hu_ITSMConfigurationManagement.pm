@@ -95,7 +95,7 @@ sub Data {
     $Self->{Translation}->{'Configuration Item Information'} = 'Konfigurációelem-információk';
     $Self->{Translation}->{'Current Deployment State'} = 'Jelenlegi üzembe állítási állapot';
     $Self->{Translation}->{'Current Incident State'} = 'Jelenlegi incidensállapot';
-    $Self->{Translation}->{'Last changed'} = 'Utolsó módosítás';
+    $Self->{Translation}->{'Last changed'} = 'Utoljára módosítva';
     $Self->{Translation}->{'Last changed by'} = 'Utoljára módosította';
 
     # Template: CustomerITSMConfigItem
