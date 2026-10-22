@@ -36,14 +36,12 @@ use Kernel::Language              qw(Translatable);
 use Kernel::System::VariableCheck qw(IsArrayRefWithData IsHashRefWithData);
 
 our @ObjectDependencies = (
-    'Kernel::Config',
-    'Kernel::Language',
     'Kernel::System::CustomerUser',
     'Kernel::System::DynamicField',
     'Kernel::System::DynamicField::Backend',
-    'Kernel::System::Log',
     'Kernel::System::GeneralCatalog',
     'Kernel::System::ITSMConfigItem',
+    'Kernel::System::Log',
 );
 
 =head1 NAME
@@ -890,6 +888,79 @@ sub ValueForLens {
     }
 
     return \@LastVersionIDs;
+}
+
+=head2 ImportExportPrepareConfig()
+
+This sub performs translation between Name and ID for attributes which are stored with ID in the field config. For export, the Name is needed because IDs of objects may differ between systems. During import, the Name needs to be translated back into the ID for the field to work properly.
+
+    my @ObjectIDs = $BackendObject->ImportExportPrepareConfig(
+        DynamicFieldConfig => $DynamicFieldConfig,  # required
+        Direction          => 'Import',             # required; Import or Export
+    );
+
+=cut
+
+sub ImportExportPrepareConfig {
+    my ( $Self, %Param ) = @_;
+
+    # check needed stuff
+    for my $Needed (qw(DynamicFieldConfig Direction)) {
+        if ( !$Param{$Needed} ) {
+            $Kernel::OM->Get('Kernel::System::Log')->Log(
+                Priority => 'error',
+                Message  => "Need $Needed!"
+            );
+
+            return;
+        }
+    }
+
+    my $GeneralCatalogObject = $Kernel::OM->Get('Kernel::System::GeneralCatalog');
+    my $CIClassID2Name       = $GeneralCatalogObject->ItemList(
+        Class => 'ITSM::ConfigItem::Class',
+    );
+    my $DeplStateID2Name = $GeneralCatalogObject->ItemList(
+        Class => 'ITSM::ConfigItem::DeploymentState',
+    );
+
+    my %AttributeLookup = (
+        ClassIDs => {
+            Import => $CIClassID2Name,
+            Export => { reverse $CIClassID2Name->%* },
+        },
+        DeplStateIDs => {
+            Import => $DeplStateID2Name,
+            Export => { reverse $DeplStateID2Name->%* },
+        },
+    );
+
+    my %Return;
+    ATTRIBUTENAME:
+    for my $AttributeName ( keys %AttributeLookup ) {
+        next ATTRIBUTENAME unless $Param{DynamicFieldConfig}{Config}{$AttributeName};
+
+        my @TransformedConfigValue;
+        for my $ConfigSettingValue ( $Param{DynamicFieldConfig}{Config}{$AttributeName}->@* ) {
+            my $TransformedValue = $AttributeLookup{$AttributeName}{ $Param{Direction} }{$ConfigSettingValue};
+
+            if ($TransformedValue) {
+                push @TransformedConfigValue, $TransformedValue;
+            }
+            else {
+                $Kernel::OM->Get('Kernel::System::Log')->Log(
+                    Priority => 'notice',
+                    Message  =>
+                        "Dynamic field $Param{DynamicFieldConfig}{Name} $Param{Direction}: No matching $AttributeName for $ConfigSettingValue could be found on the system.",
+                );
+
+                push @TransformedConfigValue, $ConfigSettingValue;
+            }
+        }
+        $Return{$AttributeName} = \@TransformedConfigValue;
+    }
+
+    return %Return;
 }
 
 1;
