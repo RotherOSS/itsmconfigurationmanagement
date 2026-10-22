@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -19,10 +19,14 @@ package Kernel::System::DynamicField::Event::ITSMConfigItemDefinitionSync;
 use strict;
 use warnings;
 
-use Kernel::System::VariableCheck qw(:all);
+# core modules
+use List::Util qw(any);
+
+# CPAN modules
+
+# OTOBO modules
 
 our @ObjectDependencies = (
-    'Kernel::System::DB',
     'Kernel::System::DynamicField',
     'Kernel::System::GeneralCatalog',
     'Kernel::System::ITSMConfigItem',
@@ -56,9 +60,7 @@ sub Run {
     }
 
     return 1 if $Param{Data}{NewData}{ObjectType} ne 'ITSMConfigItem';
-    return   if $Param{Event} ne 'DynamicFieldUpdate';
-
-    # TODO: DynamicFieldDelete
+    return unless any { $_ eq $Param{Event} } qw(DynamicFieldAdd DynamicFieldUpdate DynamicFieldDelete);
 
     my $ConfigItemObject = $Kernel::OM->Get('Kernel::System::ITSMConfigItem');
 
@@ -93,7 +95,8 @@ sub Run {
         );
 
         # use OldData to account for name changes
-        if ( $DefinitionRef->{DynamicFieldRef}{ $Param{Data}{OldData}{Name} } ) {
+        #   in case of DynamicFieldAdd, old data is not present - use new data as fallback
+        if ( $DefinitionRef->{DynamicFieldRef}{ $Param{Data}{OldData}{Name} // $Param{Data}{NewData}{Name} } ) {
             push @{ $OutOfSyncDefinitions{$ClassID} }, $DynamicField->{ID};
         }
 
