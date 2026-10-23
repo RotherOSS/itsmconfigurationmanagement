@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -21,7 +21,7 @@ use strict;
 use warnings;
 
 # core modules
-use List::Util qw(first);
+use List::Util qw(any first);
 
 # CPAN modules
 
@@ -222,7 +222,7 @@ sub _SectionRender {
     my $DynamicFieldBackendObject = $Kernel::OM->Get('Kernel::System::DynamicField::Backend');
 
     my $RowHasValue = sub {
-        return 1 if grep { defined $Param{ConfigItem}{ 'DynamicField_' . $_->{DF} } } $_[0]->@*;
+        return 1 if any { defined $Param{ConfigItem}{ 'DynamicField_' . $_->{DF} } } $_[0]->@*;
         return 0;
     };
     my $GridHasValue = sub {
@@ -270,6 +270,7 @@ sub _SectionRender {
                 Value              => $Param{ConfigItem}{ 'DynamicField_' . $Row->{DF} },
                 LayoutObject       => $Param{LayoutObject},
                 HTMLOutput         => 1,
+                MultiLink          => 1,
             );
 
             $Param{LayoutObject}->Block(
@@ -291,19 +292,57 @@ sub _SectionRender {
                 );
             }
             elsif ( $DisplayValue->{Link} ) {
-                $Param{LayoutObject}->Block(
-                    Name => 'FieldDisplayCell',
-                    Data => {
-                        $DynamicField->{Name} => $DisplayValue->{Title},
-                        $Param{ConfigItem}->%*,
-                        $DisplayValue->%*,
+                if ( IsArrayRefWithData( $DisplayValue->{Link} ) ) {
+                    $Param{LayoutObject}->Block(
+                        Name => 'FieldDisplayCell',
+                        Data => {
+                            Type => 'ValueLink',
+                        },
+                    );
+                    for my $Index ( 0 .. $#{ $DisplayValue->{Link} } ) {
+                        $Param{LayoutObject}->Block(
+                            Name => 'ValueItemLink',
+                            Data => {
+                                $DynamicField->{Name} => $DisplayValue->{Title},
+                                $Param{ConfigItem}->%*,
+                                Title       => $DisplayValue->{Title}[$Index],
+                                Value       => $DisplayValue->{Value}[$Index],
+                                Link        => $DisplayValue->{Link}[$Index],
+                                LinkPreview => $DisplayValue->{LinkPreview}[$Index],
 
-                        # Include unique parameter with dynamic field name in case of collision with others.
-                        #   Please see bug#13362 for more information.
-                        "DynamicField_$DynamicField->{Name}" => $DisplayValue->{Title},
-                        Type                                 => 'ValueLink',
-                    },
-                );
+                                # Include unique parameter with dynamic field name in case of collision with others.
+                                #   Please see bug#13362 for more information.
+                                "DynamicField_$DynamicField->{Name}" => $DisplayValue->{Title}[$Index],
+                            },
+                        );
+
+                        if ( $Index != $#{ $DisplayValue->{Link} } ) {
+                            $Param{LayoutObject}->Block(
+                                Name => 'MultivalueSeparatorLink',
+                            );
+                        }
+                    }
+                }
+                else {
+                    $Param{LayoutObject}->Block(
+                        Name => 'FieldDisplayCell',
+                        Data => {
+                            Type => 'ValueLink',
+                        },
+                    );
+                    $Param{LayoutObject}->Block(
+                        Name => 'ValueItemLink',
+                        Data => {
+                            $DynamicField->{Name} => $DisplayValue->{Title},
+                            $Param{ConfigItem}->%*,
+                            $DisplayValue->%*,
+
+                            # Include unique parameter with dynamic field name in case of collision with others.
+                            #   Please see bug#13362 for more information.
+                            "DynamicField_$DynamicField->{Name}" => $DisplayValue->{Title},
+                        },
+                    );
+                }
             }
             elsif ( $DynamicField->{FieldType} eq 'Attachment' ) {
                 $Param{LayoutObject}->Block(
@@ -637,6 +676,7 @@ sub _RenderDF {
         Value              => $Param{ConfigItem}{ 'DynamicField_' . $Param{Row}{DF} },
         LayoutObject       => $Param{LayoutObject},
         HTMLOutput         => 1,
+        MultiLink          => 1,
     );
 
     $Param{LayoutObject}->Block(
@@ -657,19 +697,57 @@ sub _RenderDF {
         );
     }
     elsif ( $DisplayValue->{Link} ) {
-        $Param{LayoutObject}->Block(
-            Name => 'FieldDisplayCell',
-            Data => {
-                $DynamicField->{Name} => $DisplayValue->{Title},
-                $Param{ConfigItem}->%*,
-                $DisplayValue->%*,
+        if ( IsArrayRefWithData( $DisplayValue->{Link} ) ) {
+            $Param{LayoutObject}->Block(
+                Name => 'FieldDisplayCell',
+                Data => {
+                    Type => 'ValueLink',
+                },
+            );
+            for my $Index ( 0 .. $#{ $DisplayValue->{Link} } ) {
+                $Param{LayoutObject}->Block(
+                    Name => 'ValueItemLink',
+                    Data => {
+                        $DynamicField->{Name} => $DisplayValue->{Title},
+                        $Param{ConfigItem}->%*,
+                        Title       => $DisplayValue->{Title}[$Index],
+                        Value       => $DisplayValue->{Value}[$Index],
+                        Link        => $DisplayValue->{Link}[$Index],
+                        LinkPreview => $DisplayValue->{LinkPreview}[$Index],
 
-                # Include unique parameter with dynamic field name in case of collision with others.
-                #   Please see bug#13362 for more information.
-                "DynamicField_$DynamicField->{Name}" => $DisplayValue->{Title},
-                Type                                 => 'ValueLink',
-            },
-        );
+                        # Include unique parameter with dynamic field name in case of collision with others.
+                        #   Please see bug#13362 for more information.
+                        "DynamicField_$DynamicField->{Name}" => $DisplayValue->{Title},
+                    },
+                );
+
+                if ( $Index != $#{ $DisplayValue->{Link} } ) {
+                    $Param{LayoutObject}->Block(
+                        Name => 'MultivalueSeparatorLink',
+                    );
+                }
+            }
+        }
+        else {
+            $Param{LayoutObject}->Block(
+                Name => 'FieldDisplayCell',
+                Data => {
+                    Type => 'ValueLink',
+                },
+            );
+            $Param{LayoutObject}->Block(
+                Name => 'ValueItemLink',
+                Data => {
+                    $DynamicField->{Name} => $DisplayValue->{Title},
+                    $Param{ConfigItem}->%*,
+                    $DisplayValue->%*,
+
+                    # Include unique parameter with dynamic field name in case of collision with others.
+                    #   Please see bug#13362 for more information.
+                    "DynamicField_$DynamicField->{Name}" => $DisplayValue->{Title},
+                },
+            );
+        }
     }
     elsif ( $DynamicField->{FieldType} eq 'Attachment' ) {
         $Param{LayoutObject}->Block(

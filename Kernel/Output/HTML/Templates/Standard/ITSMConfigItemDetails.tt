@@ -1,7 +1,7 @@
 # --
 # OTOBO is a web-based ticketing system for service organisations.
 # --
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -28,7 +28,12 @@
 [% ELSIF Data.Type == 'Value' %]
                 <p title="[% Data.Title %]" style="[% Data.GridColumn | html %]">[% Data.Value %]</p>
 [% ELSIF Data.Type == 'ValueLink' %]
+[% RenderBlockStart("ValueItemLink") %]
                 <p title="[% Data.Title %]" style="[% Data.GridColumn | html %]"><a href="[% Data.Link | Interpolate %]"[% IF Data.LinkPreview %] data-trigger="floater" data-floater-url="[% Data.LinkPreview | Interpolate %]"[% END %] class="DynamicFieldLink">[% Data.Value %]</a></p>
+[% RenderBlockStart("MultivalueSeparatorLink") %]
+                <br/>
+[% RenderBlockEnd("MultivalueSeparatorLink") %]
+[% RenderBlockEnd("ValueItemLink") %]
 [% ELSIF Data.Type == 'ValueRaw' %]
                 <div style="[% Data.GridColumn | html %]">[% Data.Value %]</div>
 [% ELSIF Data.Type == 'FullRow' %]
