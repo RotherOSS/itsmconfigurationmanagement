@@ -24,7 +24,7 @@ use utf8;
 
 # core modules
 use Encode;
-use List::AllUtils qw(first pairwise);
+use List::AllUtils qw(first);
 use MIME::Base64   qw(decode_base64 encode_base64);
 
 # CPAN modules
