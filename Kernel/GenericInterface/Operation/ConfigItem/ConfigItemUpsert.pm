@@ -304,10 +304,12 @@ sub Run {
 
                 # check if field is in class definition
                 if ( !$Definition->{DynamicFieldRef}{$PlainFieldName} ) {
-                    return {
+                    return $Self->ReturnError(
                         ErrorCode    => "$Self->{OperationName}.InvalidParameter",
-                        ErrorMessage => "$Self->{OperationName}: DynamicField->Name parameter is invalid!",
-                    };
+                        ErrorMessage => "$Self->{OperationName}: DynamicField '$PlainFieldName' is not part of the "
+                            . "definition of class '$RemoteCIData->{Class}' (ConfigItem '"
+                            . ( $RemoteCIData->{Name} // '' ) . "')!",
+                    );
                 }
 
                 # get dynamic field config
@@ -317,7 +319,12 @@ sub Run {
                 {
                     # possible structures are string and array, no data inside is needed
                     if ( !IsString($Value) && ref $Value ne 'ARRAY' ) {
-                        return;
+                        return $Self->ReturnError(
+                            ErrorCode    => "$Self->{OperationName}.InvalidParameter",
+                            ErrorMessage => "$Self->{OperationName}: Value of DynamicField '$PlainFieldName' "
+                                . "must be a string or an array (ConfigItem '"
+                                . ( $RemoteCIData->{Name} // '' ) . "')!",
+                        );
                     }
 
                     my $ValidateValue = $Kernel::OM->Get('Kernel::System::DynamicField::Backend')->FieldValueValidate(
@@ -328,10 +335,11 @@ sub Run {
                     );
 
                     if ( !$ValidateValue ) {
-                        return {
+                        return $Self->ReturnError(
                             ErrorCode    => "$Self->{OperationName}.InvalidParameter",
-                            ErrorMessage => "$Self->{OperationName}: DynamicField->Value parameter is invalid!",
-                        };
+                            ErrorMessage => "$Self->{OperationName}: Value of DynamicField '$PlainFieldName' is invalid "
+                                . "(ConfigItem '" . ( $RemoteCIData->{Name} // '' ) . "')!",
+                        );
                     }
                 }
             }
@@ -672,3 +680,4 @@ sub Run {
 }
 
 1;
+
