@@ -3,7 +3,7 @@
 # --
 # Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
-# $origin: otobo - 1b3d6349f2cc2dc7ec06e68991cd880df62bbf51 - Kernel/System/DynamicField/Driver/Lens.pm
+# $origin: otobo - 0609161ac2f87b3ffb39a6925a39743c5dadec7f - Kernel/System/DynamicField/Driver/Lens.pm
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -805,7 +805,11 @@ sub GetFieldState {
 
     # prevent autovivification
     if ( exists $FieldStates{Fields}{ $DynamicFieldConfig->{Name} } && exists $FieldStates{Fields}{ $DynamicFieldConfig->{Name} }{PossibleValues} ) {
-        $FieldStates{PossibleValues}->%* = $FieldStates{Fields}{ $DynamicFieldConfig->{Name} }{PossibleValues}->%*;
+        $FieldStates{PossibleValues} = $FieldStates{Fields}{ $DynamicFieldConfig->{Name} }{PossibleValues};
+
+        if ( exists $FieldStates{Fields}{ $DynamicFieldConfig->{Name} }{NotACLReducible} ) {
+            $FieldStates{NotACLReducible} = $FieldStates{Fields}{ $DynamicFieldConfig->{Name} }{NotACLReducible};
+        }
     }
 
     # necessary clean-up to avoid interference with GetFieldState mechanism in FieldRestrictions modules
