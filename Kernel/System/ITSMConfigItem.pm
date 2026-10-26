@@ -358,10 +358,10 @@ sub ConfigItemGet {
 
     my %ConfigItem;
 
-    my $Cache = $CacheObject->Get(
+    my $Cache = $DFData == 1 ? $CacheObject->Get(
         Type => $Self->{CacheType},
         Key  => $CacheKeyBase . 'DFData::0',
-    );
+    ) : undef;
 
     if ( ref $Cache eq 'HASH' ) {
         if ( $Param{VersionID} && $Param{ConfigItemID} && $Param{ConfigItemID} ne $Cache->{ConfigItemID} ) {
