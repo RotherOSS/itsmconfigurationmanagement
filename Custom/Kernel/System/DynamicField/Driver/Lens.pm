@@ -3,7 +3,7 @@
 # --
 # Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
-# $origin: otobo - 0609161ac2f87b3ffb39a6925a39743c5dadec7f - Kernel/System/DynamicField/Driver/Lens.pm
+# $origin: otobo - 90fc7e3d1cbff1bf02bdcb50eb8eeda036102cfe - Kernel/System/DynamicField/Driver/Lens.pm
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -912,15 +912,17 @@ sub ImportExportPrepareConfig {
         }
     }
 
+    my $DynamicFieldObject = $Kernel::OM->Get('Kernel::System::DynamicField');
+
     my %Return;
     if ( $Param{Direction} eq 'Import' ) {
 
         # needed transformation: Name -> ID
-        my $AttributeDF = $Self->DynamicFieldGet(
+        my $AttributeDF = $DynamicFieldObject->DynamicFieldGet(
             Name => $Param{DynamicFieldConfig}{Config}{AttributeDF},
         );
         $Return{AttributeDF} = $AttributeDF->{ID};
-        my $ReferenceDF = $Self->DynamicFieldGet(
+        my $ReferenceDF = $DynamicFieldObject->DynamicFieldGet(
             Name => $Param{DynamicFieldConfig}{Config}{ReferenceDF},
         );
         $Return{ReferenceDF} = $ReferenceDF->{ID};
@@ -928,11 +930,11 @@ sub ImportExportPrepareConfig {
     elsif ( $Param{Direction} eq 'Export' ) {
 
         # needed transformation: ID -> Name
-        my $AttributeDF = $Self->DynamicFieldGet(
+        my $AttributeDF = $DynamicFieldObject->DynamicFieldGet(
             ID => $Param{DynamicFieldConfig}{Config}{AttributeDF},
         );
         $Return{AttributeDF} = $AttributeDF->{Name};
-        my $ReferenceDF = $Self->DynamicFieldGet(
+        my $ReferenceDF = $DynamicFieldObject->DynamicFieldGet(
             ID => $Param{DynamicFieldConfig}{Config}{ReferenceDF},
         );
         $Return{ReferenceDF} = $ReferenceDF->{Name};
