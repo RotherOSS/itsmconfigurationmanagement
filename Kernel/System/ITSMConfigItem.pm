@@ -330,16 +330,14 @@ sub ConfigItemGet {
         ? ( VersionID => $Param{VersionID} )
         : ( ConfigItemID => $Param{ConfigItemID} );
 
-    my $CacheKey        = join '::', 'ConfigItemGet', @CacheKeyID, DFData => 0;
-    my $CacheKeyCurrent = join '::', 'ConfigItemGet', @CacheKeyID, DFData => 1;
+    my $CacheKeyBase    = join '::', 'ConfigItemGet', @CacheKeyID;
+    my $CacheKeyCurrent = join '::', $CacheKeyBase, DFData => $DFData;
 
     my $CacheObject = $Kernel::OM->Get('Kernel::System::Cache');
 
     my $CacheCurrent = $CacheObject->Get(
-        Type           => $Self->{CacheType},
-        Key            => $CacheKeyCurrent,
-        CacheInMemory  => 1,
-        CacheInBackend => 0,
+        Type => $Self->{CacheType},
+        Key  => $CacheKeyCurrent,
     );
 
     # check if result is cached
@@ -362,7 +360,7 @@ sub ConfigItemGet {
 
     my $Cache = $CacheObject->Get(
         Type => $Self->{CacheType},
-        Key  => $CacheKey,
+        Key  => $CacheKeyBase . 'DFData::0',
     );
 
     if ( ref $Cache eq 'HASH' ) {
@@ -491,7 +489,7 @@ END_SQL
         $CacheObject->Set(
             Type  => $Self->{CacheType},
             TTL   => $Self->{CacheTTL},
-            Key   => $CacheKey,
+            Key   => $CacheKeyBase . 'DFData::0',
             Value => dclone( \%ConfigItem ),
         );
     }
@@ -528,7 +526,7 @@ END_SQL
         $CacheObject->Set(
             Type           => $Self->{CacheType},
             TTL            => $Self->{CacheTTL},
-            Key            => $CacheKeyCurrent,
+            Key            => $CacheKeyBase . 'DFData::1',
             Value          => dclone( \%ConfigItem ),
             CacheInMemory  => 1,
             CacheInBackend => 0,
