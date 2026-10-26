@@ -230,6 +230,8 @@ sub Data {
 
     # Perl Module: Kernel/Modules/AdminDynamicField.pm
     $Self->{Translation}->{'Error synchronizing the definitions. Please check the log.'} = 'Eroare de sincronizare a definițiilor. Vă rugăm să verificați jurnalul.';
+    $Self->{Translation}->{'The dynamic field \'%s\' can not be deleted because the field (or a Set field it is part of) is in use in the definition of the following configuration item classes:</br></br>%s</br></br>Please remove it from all configuration item class and role definitions before deleting it to avoid errors.'} =
+        '';
     $Self->{Translation}->{'You have ITSMConfigItem definitions which are not synchronized. Please deploy your ITSMConfigItem dynamic field changes.'} =
         'Aveți definiții ITSMConfigItem care nu sunt sincronizate. Vă rugăm să implementați modificările câmpurilor dinamice ale ITSMConfigItem.';
 
