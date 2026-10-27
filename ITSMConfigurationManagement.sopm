@@ -223,6 +223,7 @@
         <File Permission="660" Location="scripts/test/ITSMConfigItem/Definition/DefinitionGet.t" />
         <File Permission="660" Location="scripts/test/ITSMConfigItem/Definition/DefinitionList.t" />
         <File Permission="660" Location="scripts/test/ITSMConfigItem/Definition/Role.t" />
+        <File Permission="660" Location="scripts/test/ITSMConfigItem/DynamicFieldImportExport.t" />
         <File Permission="660" Location="scripts/test/ITSMConfigItem/StaticLink.t" />
         <File Permission="660" Location="scripts/test/ITSMConfigItem/TicketAutoLink.t" />
         <File Permission="660" Location="scripts/test/ITSMConfigItem/TicketLink.t" />

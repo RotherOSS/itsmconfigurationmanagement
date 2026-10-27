@@ -932,12 +932,12 @@ sub ImportExportPrepareConfig {
 
     my %AttributeLookup = (
         ClassIDs => {
-            Import => $CIClassID2Name,
-            Export => { reverse $CIClassID2Name->%* },
+            Export => $CIClassID2Name,
+            Import => { reverse $CIClassID2Name->%* },
         },
         DeplStateIDs => {
-            Import => $DeplStateID2Name,
-            Export => { reverse $DeplStateID2Name->%* },
+            Export => $DeplStateID2Name,
+            Import => { reverse $DeplStateID2Name->%* },
         },
     );
 
