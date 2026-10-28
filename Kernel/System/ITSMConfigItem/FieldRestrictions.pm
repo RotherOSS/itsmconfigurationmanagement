@@ -162,10 +162,13 @@ sub GetFieldStates {
 
     my %DynamicFieldDataDB = IsHashRefWithData( $Param{DynamicFieldDataDB} ) ? $Param{DynamicFieldDataDB}->%* : ();
     if ( ( !exists $Param{DynamicFieldDataDB} ) && $Param{ConfigItemID} ) {
-        %DynamicFieldDataDB = $Kernel::OM->Get('Kernel::System::ITSMConfigItem')->ConfigItemGet(
+        my $DynamicFieldDataDBRef = $Kernel::OM->Get('Kernel::System::ITSMConfigItem')->ConfigItemGet(
             ConfigItemID  => $Param{ConfigItemID},
             DynamicFields => 1,
         );
+        if ( defined $DynamicFieldDataDBRef ) {
+            %DynamicFieldDataDB = $DynamicFieldDataDBRef->%*;
+        }
     }
 
     # get the current visibility
