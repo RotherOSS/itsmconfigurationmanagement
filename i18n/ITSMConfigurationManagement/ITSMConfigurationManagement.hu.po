@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-08-31 12:58+0000\n"
-"PO-Revision-Date: 2026-10-13 14:41+0000\n"
+"PO-Revision-Date: 2026-10-29 19:41+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-0/"
 "addons/itsm-configurationmanagement/hu/>\n"
@@ -1205,7 +1205,7 @@ msgid ""
 "Defines the height for the rich text editor component for this screen. Enter "
 "number (pixels) or percent value (relative)."
 msgstr ""
-"Meghatározza a Rich Text szerkesztő komponens magasságát ennél a "
+"Meghatározza a Rich Text szerkesztő-összetevő magasságát ennél a "
 "képernyőnél. Szám (képpont) vagy százalék (relatív) értéket adjon meg."
 
 #. SysConfig
@@ -2854,7 +2854,7 @@ msgstr "Leányvállalat"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Summary"
-msgstr "Összefoglaló"
+msgstr "Összegzés"
 
 #. Ready to adopt classes: IT-Servicemanagement-11_0_3
 msgid "Thin Client"
