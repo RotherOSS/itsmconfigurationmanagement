@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-10-21 15:16+0000\n"
-"PO-Revision-Date: 2026-10-21 17:41+0000\n"
+"PO-Revision-Date: 2026-10-30 02:41+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/"
 "addons/itsmconfigurationmanagement/hu/>\n"
@@ -630,7 +630,7 @@ msgstr "Hiba történt az osztály importálása során."
 
 #. JS File: ITSM.Admin.ITSMConfigItem
 msgid "Class import failed."
-msgstr ""
+msgstr "Az osztály importálása nem sikerült."
 
 #. SysConfig
 msgid "0 - Hidden"
@@ -2046,10 +2046,10 @@ msgstr ""
 "nagyításhoz az ügyintézői felület konfigurációelem áttekintőjében."
 
 #. SysConfig
-#, fuzzy
-#| msgid "Column config item filters for ConfigItem Overview."
 msgid "Shows all both ro and rw config items in the config item view."
-msgstr "Oszlop konfigurációelem-szűrők a konfigurációelem áttekintőjéhez."
+msgstr ""
+"Megjeleníti a csak olvasható és az írható, olvasható konfigurációelemeket is "
+"a konfigurációelem nézetben."
 
 #. SysConfig
 msgid "Shows the config item history (reverse ordered) in the agent interface."
@@ -2094,6 +2094,16 @@ msgid ""
 "Please note that the actual usable link types may be further restricted by "
 "the settings grouped under LinkObject::PossibleLink."
 msgstr ""
+"Kapcsolt jegyek frissítése, például a folyamatoknál a lencsék ellenőrzése. A "
+"„Classes” és a „LinkTypes” használatával a végrehajtás korlátozható bizonyos "
+"konfigurációelem-osztályokra és kapcsolattípusokra. A „Classes” kulcsba a "
+"pontos osztályneveket, a „LinkTypes” kulcsba pedig a pontos kapcsolattípus-"
+"neveket írja be. A jelenleg elérhető kapcsolattípusok: „Normal” (normál), „"
+"ParentChild” (szülő-gyermek), „LocationOf” (ennek helye), „AlternativeTo” "
+"(alternatíva erre), „ConnectedTo” (csatlakoztatva ide), „DependsOn” (Függ "
+"ettől), „Includes” (tartalmazza), „RelevantTo” (releváns ezzel). Ne feledje, "
+"hogy a ténylegesen használható kapcsolattípusokat a „LinkObject::PossibleLink"
+"” alatt csoportosított beállítások tovább korlátozhatják."
 
 #. SysConfig
 msgid "Version String Expression"
