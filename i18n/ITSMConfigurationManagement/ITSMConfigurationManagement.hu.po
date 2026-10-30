@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2026-10-21 15:16+0000\n"
+"POT-Creation-Date: 2026-10-26 10:25+0000\n"
 "PO-Revision-Date: 2026-10-30 02:41+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/"
@@ -574,6 +574,14 @@ msgstr "Verzió-karakterlánc"
 #. Perl Module: Kernel/Modules/AdminDynamicField.pm
 msgid "Error synchronizing the definitions. Please check the log."
 msgstr "Hiba a meghatározások szinkronizálásakor. Nézze meg a naplót."
+
+#. Perl Module: Kernel/Modules/AdminDynamicField.pm
+msgid ""
+"The dynamic field '%s' can not be deleted because the field (or a Set field "
+"it is part of) is in use in the definition of the following configuration "
+"item classes:</br></br>%s</br></br>Please remove it from all configuration "
+"item class and role definitions before deleting it to avoid errors."
+msgstr ""
 
 #. Perl Module: Kernel/Modules/AdminDynamicField.pm
 msgid ""
@@ -2098,12 +2106,13 @@ msgstr ""
 "„Classes” és a „LinkTypes” használatával a végrehajtás korlátozható bizonyos "
 "konfigurációelem-osztályokra és kapcsolattípusokra. A „Classes” kulcsba a "
 "pontos osztályneveket, a „LinkTypes” kulcsba pedig a pontos kapcsolattípus-"
-"neveket írja be. A jelenleg elérhető kapcsolattípusok: „Normal” (normál), „"
-"ParentChild” (szülő-gyermek), „LocationOf” (ennek helye), „AlternativeTo” "
+"neveket írja be. A jelenleg elérhető kapcsolattípusok: „Normal” (normál), "
+"„ParentChild” (szülő-gyermek), „LocationOf” (ennek helye), „AlternativeTo” "
 "(alternatíva erre), „ConnectedTo” (csatlakoztatva ide), „DependsOn” (Függ "
 "ettől), „Includes” (tartalmazza), „RelevantTo” (releváns ezzel). Ne feledje, "
-"hogy a ténylegesen használható kapcsolattípusokat a „LinkObject::PossibleLink"
-"” alatt csoportosított beállítások tovább korlátozhatják."
+"hogy a ténylegesen használható kapcsolattípusokat a "
+"„LinkObject::PossibleLink” alatt csoportosított beállítások tovább "
+"korlátozhatják."
 
 #. SysConfig
 msgid "Version String Expression"

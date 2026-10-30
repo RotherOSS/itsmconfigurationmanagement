@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2026-10-21 15:16+0000\n"
+"POT-Creation-Date: 2026-10-26 10:25+0000\n"
 "PO-Revision-Date: 2026-09-02 11:14+0000\n"
 "Last-Translator: Sven Oesterling <svo@rother-oss.com>\n"
 "Language-Team: German <http://translate.otobo.org/projects/otobo-11-1/addons/"
@@ -577,6 +577,14 @@ msgstr "Version String"
 msgid "Error synchronizing the definitions. Please check the log."
 msgstr ""
 "Fehler beim Synchronisieren der Definitionen. Bitte prüfen Sie das Protokoll."
+
+#. Perl Module: Kernel/Modules/AdminDynamicField.pm
+msgid ""
+"The dynamic field '%s' can not be deleted because the field (or a Set field "
+"it is part of) is in use in the definition of the following configuration "
+"item classes:</br></br>%s</br></br>Please remove it from all configuration "
+"item class and role definitions before deleting it to avoid errors."
+msgstr ""
 
 #. Perl Module: Kernel/Modules/AdminDynamicField.pm
 msgid ""

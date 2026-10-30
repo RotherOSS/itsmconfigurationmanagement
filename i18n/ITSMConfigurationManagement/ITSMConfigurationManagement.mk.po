@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2026-10-21 15:16+0000\n"
+"POT-Creation-Date: 2026-10-26 10:25+0000\n"
 "PO-Revision-Date: 2026-05-06 18:00+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Macedonian <http://translate.otobo.org/projects/opm-packages/"
@@ -548,6 +548,14 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AdminDynamicField.pm
 msgid "Error synchronizing the definitions. Please check the log."
+msgstr ""
+
+#. Perl Module: Kernel/Modules/AdminDynamicField.pm
+msgid ""
+"The dynamic field '%s' can not be deleted because the field (or a Set field "
+"it is part of) is in use in the definition of the following configuration "
+"item classes:</br></br>%s</br></br>Please remove it from all configuration "
+"item class and role definitions before deleting it to avoid errors."
 msgstr ""
 
 #. Perl Module: Kernel/Modules/AdminDynamicField.pm
