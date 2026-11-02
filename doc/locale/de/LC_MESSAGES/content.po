@@ -5,7 +5,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
-msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:18+0100\nPO-Revision-Date: 2026-11-02 09:41+0000\nLast-Translator: Stefan Abel <sta@rother-oss.com>\nLanguage-Team: German <http://translate.otobo.org/projects/otobo-11-1/addons/manuals/itsmconfigurationmanagement-documentation/de/>\nLanguage: de\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 2026.9\nGenerated-By: Babel 2.4.0\n"
+msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:18+0100\nPO-Revision-Date: 2026-11-02 17:41+0000\nLast-Translator: Stefan Abel <sta@rother-oss.com>\nLanguage-Team: German <http://translate.otobo.org/projects/otobo-11-1/addons/manuals/itsmconfigurationmanagement-documentation/de/>\nLanguage: de\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 2026.9\nGenerated-By: Babel 2.4.0\n"
 
 #: ../../content/about.rst:13
 msgid "About"
@@ -107,7 +107,7 @@ msgstr "Klicken Sie auf die Schaltfläche, um die Ready2Adopt-Klassenbündel zu 
 #: ../../content/configuration/configuration_reference.rst:12
 #: ../../content/configuration/system_configuration_settings.rst:12
 msgid "Configuration Reference"
-msgstr "Konfigurationsreferenz"
+msgstr "Konfigurations-Referenz"
 
 #: ../../content/configuration/configuration_reference.rst:15
 msgid "CMDB"
