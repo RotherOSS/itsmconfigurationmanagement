@@ -5,7 +5,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
-msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:18+0100\nPO-Revision-Date: 2026-11-02 17:41+0000\nLast-Translator: Stefan Abel <sta@rother-oss.com>\nLanguage-Team: German <http://translate.otobo.org/projects/otobo-11-1/addons/manuals/itsmconfigurationmanagement-documentation/de/>\nLanguage: de\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 2026.9\nGenerated-By: Babel 2.4.0\n"
+msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:18+0100\nPO-Revision-Date: 2026-11-03 16:59+0000\nLast-Translator: Stefan Abel <sta@rother-oss.com>\nLanguage-Team: German <http://translate.otobo.org/projects/otobo-11-1/addons/manuals/itsmconfigurationmanagement-documentation/de/>\nLanguage: de\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 2026.9\nGenerated-By: Babel 2.4.0\n"
 
 #: ../../content/about.rst:13
 msgid "About"
@@ -93,7 +93,7 @@ msgstr "Suchen Sie das Fenster „Ready2Import-Klassenbündel“ auf der linken 
 
 #: ../../content/configuration/basic_configuration.rst:0
 msgid ".. figure:: images/ready2import_class_bundles.png"
-msgstr ""
+msgstr ".. figure:: images/ready2import_class_bundles.png"
 
 #: ../../content/configuration/basic_configuration.rst:0
 #, fuzzy
@@ -135,7 +135,7 @@ msgstr "Klassen und Rollen im General Katalog"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:20
 msgid "Config Item Definitions"
-msgstr "Config Item Definitions"
+msgstr "Config Item Definitionen"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:24
 msgid "General Structure"
@@ -209,7 +209,7 @@ msgstr "*RowSpan* (optional) – Die Anzahl der Zeilen, über die sich diese Sec
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:114
 msgid "**Sections** The *Sections* section of the yaml contains a hash of the *Sections* which can be referenced in the *Pages*. Under each of those sections the following keys are valid: * *Type* (optional) - Defines the type of the section. Depending on the type other attributes might be available or not. Currently available are:"
-msgstr ""
+msgstr "**Sections** Der *Sections*-Abschnitt der YAML beinhaltet einen Hash der *Sections* , welcher in den *Pages* referenziert werden kann. In jeder dieser Abschnitte (Sections) sind folgende Schlüssel (Keys) gültig: * *Type* (optional) - Definiert den Typen dieses Abschnitts. Abhängig vom Typen könnten andere Attribute verfügbar sein oder nicht. Gegenwärtig verfügbar sind:"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:118
 msgid "DynamicFields (default) - A standard section containing dynamic fields"
@@ -1561,9 +1561,8 @@ msgid "LinkObject::ComplexTable::SettingsVisibility###ITSMConfigItem"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:494
-#, fuzzy
 msgid "Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
-msgstr "Definieren Sie Actions, in denen im Verknüpfte-Objekte-Widget ein Einstellungen-Knopf verfügbar sein soll (LinkObject::ViewMode = \"complex\"). Bitte beachten Sie, dass für diese Actions die folgenden JS- und CSS-Dateien registriert sein müssen: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js und Core.Agent.LinkObject.js."
+msgstr "Definieren Sie Aktionen, in denen im Verknüpfte-Objekte-Widget (LinkObject::ViewMode = \"complex\") eine Einstellungen-Schaltfläche verfügbar sein soll. Bitte beachten Sie, dass für diese Aktionen die folgenden JS- und CSS-Dateien registriert sein müssen: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js und Core.Agent.LinkObject.js."
 
 #: ../../content/configuration/system_configuration_settings.rst:497
 #, fuzzy
