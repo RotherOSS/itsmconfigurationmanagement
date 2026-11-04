@@ -364,7 +364,7 @@ sub Data {
     $Self->{Translation}->{'Defines the disabled columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName.'} =
         'Meghatározza a konfigurációelemek letiltott oszlopait a konfigurációelem áttekintőjében a konfigurációelem osztályától függően. Minden bejegyzésnek egy osztálynévből és a megfelelő osztályhoz elérhető mezők tömbjéből kell állnia. A dinamikus mező bejegyzéseinek a DynamicField_Mezőnév sémát kell követniük.';
     $Self->{Translation}->{'Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).'} =
-        'Meghatározza a Rich Text szerkesztő komponens magasságát ennél a képernyőnél. Szám (képpont) vagy százalék (relatív) értéket adjon meg.';
+        'Meghatározza a Rich Text szerkesztő-összetevő magasságát ennél a képernyőnél. Szám (képpont) vagy százalék (relatív) értéket adjon meg.';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =
         'Meghatározza a CI meghatározás-szerkesztő sorainak számát az adminisztrációs felületen.';
     $Self->{Translation}->{'Defines the order of incident states from high (e.g. cricital) to low (e.g. functional).'} =
@@ -764,7 +764,7 @@ sub Data {
     $Self->{Translation}->{'Storage Partition'} = 'Tároló partíciója';
     $Self->{Translation}->{'Subscription-based licenses'} = 'Előfizetés alapú licencek';
     $Self->{Translation}->{'Subsidiary'} = 'Leányvállalat';
-    $Self->{Translation}->{'Summary'} = 'Összefoglaló';
+    $Self->{Translation}->{'Summary'} = 'Összegzés';
     $Self->{Translation}->{'Thin Client'} = 'Vékony kliens';
     $Self->{Translation}->{'Threads'} = 'Szálak';
     $Self->{Translation}->{'Thunderbolt'} = 'Thunderbolt';
