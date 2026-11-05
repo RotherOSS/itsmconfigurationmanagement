@@ -1059,8 +1059,6 @@ sub ConfigItemUpdate {
         ClassID => $ConfigItem->{ClassID},
     );
 
-    my %SkipForUpdateDFs;
-
     # check for changed dynamic fields to trigger versions and filter history entries
     if (@DynamicFieldNames) {
         my $DynamicFieldObject        = $Kernel::OM->Get('Kernel::System::DynamicField');
@@ -1076,7 +1074,7 @@ sub ConfigItemUpdate {
             );
 
             if (
-                !$DynamicFieldBackendObject->ValueIsDifferent(
+                $DynamicFieldBackendObject->ValueIsDifferent(
                     DynamicFieldConfig => $DynamicField,
                     Value1             => $Param{"DynamicField_$Name"},
                     Value2             => $ConfigItem->{"DynamicField_$Name"},
@@ -1084,17 +1082,11 @@ sub ConfigItemUpdate {
                 )
                 )
             {
-                # do not pass unchanged dynamic fields to VersionUpdate()
-                # store them for VersionAdd() because of potential difference from ExternalSource
-                $SkipForUpdateDFs{"DynamicField_$Name"} = delete $Param{"DynamicField_$Name"};
+                $UpdateVersion = 1;
 
-                next NAME;
-            }
-
-            $UpdateVersion = 1;
-
-            if ( $VersionTrigger{"DynamicField_$Name"} ) {
-                $AddVersion = 1;
+                if ( $VersionTrigger{"DynamicField_$Name"} ) {
+                    $AddVersion = 1;
+                }
             }
         }
     }
@@ -1103,7 +1095,6 @@ sub ConfigItemUpdate {
         my $Success = $Self->VersionAdd(
             Description => $ConfigItem->{Description} // '',
             %Param,
-            %SkipForUpdateDFs,
             LastVersion => $ConfigItem,
         );
         return unless $Success;
