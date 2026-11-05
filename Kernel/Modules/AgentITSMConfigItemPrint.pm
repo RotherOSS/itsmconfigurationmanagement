@@ -872,15 +872,10 @@ sub _PDFOutputDFOutput {
             DynamicFieldConfig => $DynamicField,
             Value              => $Param{ConfigItem}{ 'DynamicField_' . $DFName },
             LayoutObject       => $LayoutObject,
+            HTMLOutput         => 0
         );
 
         my $Value = $DisplayValue->{Value};
-
-        # replace newlines with <br/> (fix for bug# 5928)
-        $Value =~ s{ \n }{<br/>}gxms;
-
-        # convert value to ascii
-        $Value = $Kernel::OM->Get('Kernel::System::HTMLUtils')->ToAscii( String => $Value );
 
         # new row
         my $NewRow = {
