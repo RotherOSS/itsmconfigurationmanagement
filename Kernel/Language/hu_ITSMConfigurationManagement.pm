@@ -231,7 +231,7 @@ sub Data {
     # Perl Module: Kernel/Modules/AdminDynamicField.pm
     $Self->{Translation}->{'Error synchronizing the definitions. Please check the log.'} = 'Hiba a meghatározások szinkronizálásakor. Nézze meg a naplót.';
     $Self->{Translation}->{'The dynamic field \'%s\' can not be deleted because the field (or a Set field it is part of) is in use in the definition of the following configuration item classes:</br></br>%s</br></br>Please remove it from all configuration item class and role definitions before deleting it to avoid errors.'} =
-        '';
+        'A(z) „%s” dinamikus mezőt nem lehet törölni, mert a mező (vagy egy halmazmező, amelynek része) használatban van a következő konfigurációelem-osztályok meghatározásában:</br></br>%s</br></br>Távolítsa el az összes konfigurációelem-osztály- és szerep-meghatározásából a törlése előtt a hibák elkerülése érdekében.';
     $Self->{Translation}->{'You have ITSMConfigItem definitions which are not synchronized. Please deploy your ITSMConfigItem dynamic field changes.'} =
         'Olyan ITSM-konfigurációelem meghatározásai vannak, amelyek nincsenek szinkronizálva. Állítsa üzembe az ITSM-konfigurációelem dinamikus mezőjének változtatásait.';
 
@@ -249,7 +249,7 @@ sub Data {
     $Self->{Translation}->{'Overview and Confirmation'} = 'Áttekintés és megerősítés';
     $Self->{Translation}->{'Importing classes/roles and their related fields'} = 'Osztályok, szerepek és a kapcsolódó mezőik importálása';
     $Self->{Translation}->{'An error occurred during class import.'} = 'Hiba történt az osztály importálása során.';
-    $Self->{Translation}->{'Class import failed.'} = '';
+    $Self->{Translation}->{'Class import failed.'} = 'Az osztály importálása nem sikerült.';
 
     # SysConfig
     $Self->{Translation}->{'0 - Hidden'} = '0 – rejtett';
@@ -565,7 +565,7 @@ sub Data {
     $Self->{Translation}->{'Shows a link in the menu to zoom into a configuration item in the configuration item overview of the agent interface.'} =
         'Egy hivatkozást jelenít meg a menüben egy konfigurációelembe történő nagyításhoz az ügyintézői felület konfigurációelem áttekintőjében.';
     $Self->{Translation}->{'Shows all both ro and rw config items in the config item view.'} =
-        '';
+        'Megjeleníti a csak olvasható és az írható, olvasható konfigurációelemeket is a konfigurációelem nézetben.';
     $Self->{Translation}->{'Shows the config item history (reverse ordered) in the agent interface.'} =
         'Megjeleníti a konfigurációelem előzményeit (fordított sorrendben) az ügyintézői felületen.';
     $Self->{Translation}->{'The default category which is shown, if none is selected.'} = 'Az alapértelmezett kategória, amely akkor jelenik meg, ha semmi sincs kiválasztva.';
@@ -575,7 +575,7 @@ sub Data {
     $Self->{Translation}->{'Title for the public interface search.'} = 'A nyilvános felület keresésének címe.';
     $Self->{Translation}->{'Triggers ConfigItemFetch invoker automatically.'} = 'Automatikusan aktiválja a konfigurációelem-lekérés meghívót.';
     $Self->{Translation}->{'Update linked tickets, for example for processes checking lenses. With "Classes" and "LinkTypes", the execution can be restricted to certain config item classes and link types. Please put in the exact class names into "Classes" as well as the exact link type names in "LinkTypes", respectively. Currently available LinkTypes are: Normal, ParentChild, LocationOf, AlternativeTo, ConnectedTo, DependsOn, Includes, RelevantTo. Please note that the actual usable link types may be further restricted by the settings grouped under LinkObject::PossibleLink.'} =
-        '';
+        'Kapcsolt jegyek frissítése, például a folyamatoknál a lencsék ellenőrzése. A „Classes” és a „LinkTypes” használatával a végrehajtás korlátozható bizonyos konfigurációelem-osztályokra és kapcsolattípusokra. A „Classes” kulcsba a pontos osztályneveket, a „LinkTypes” kulcsba pedig a pontos kapcsolattípus-neveket írja be. A jelenleg elérhető kapcsolattípusok: „Normal” (normál), „ParentChild” (szülő-gyermek), „LocationOf” (ennek helye), „AlternativeTo” (alternatíva erre), „ConnectedTo” (csatlakoztatva ide), „DependsOn” (Függ ettől), „Includes” (tartalmazza), „RelevantTo” (releváns ezzel). Ne feledje, hogy a ténylegesen használható kapcsolattípusokat a „LinkObject::PossibleLink” alatt csoportosított beállítások tovább korlátozhatják.';
     $Self->{Translation}->{'Version String Expression'} = 'Verzió-karakterlánc kifejezése';
     $Self->{Translation}->{'Version String Module'} = 'Verzió-karakterlánc modulja';
     $Self->{Translation}->{'Version Trigger'} = 'Verzióaktiváló';
