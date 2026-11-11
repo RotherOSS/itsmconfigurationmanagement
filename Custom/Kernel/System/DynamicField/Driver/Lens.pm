@@ -3,7 +3,7 @@
 # --
 # Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
-# $origin: otobo - 90fc7e3d1cbff1bf02bdcb50eb8eeda036102cfe - Kernel/System/DynamicField/Driver/Lens.pm
+# $origin: otobo - d61e880cad74b32aef119769eda0b572a252ed52 - Kernel/System/DynamicField/Driver/Lens.pm
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -79,8 +79,8 @@ sub new {
     $Self->{FieldCSSClass} = 'DynamicFieldLens';
 
     # set field behaviors
-    #   NOTE behaviors IsACLReducible, IsCustomerInterfaceCapable, IsReferenceField and
-    #   IsSetField get overridden with the attribute fields behaviors in sub HasBehavior
+    #   NOTE behaviors IsACLReducible, IsCustomerInterfaceCapable, IsReferenceField, IsSetField, and IsNotificationEventCondition
+    #   get overridden with the attribute fields behaviors in the sub HasBehavior()
     $Self->{Behaviors} = {
         'IsACLReducible'               => 0,
         'IsNotificationEventCondition' => 1,
@@ -572,7 +572,7 @@ sub HasBehavior {
 
     # TODO: Think about additional behaviors we can just adopt from the attribute field
     # for certain behaviors instead use the attribute field behaviors
-    if ( any { $Param{Behavior} eq $_ } qw/IsACLReducible IsCustomerInterfaceCapable IsSetField IsReferenceField/ ) {
+    if ( any { $Param{Behavior} eq $_ } qw/IsACLReducible IsCustomerInterfaceCapable IsSetField IsReferenceField IsNotificationEventCondition/ ) {
         my $AttributeDFConfig = $Self->_GetAttributeDFConfig(
             LensDynamicFieldConfig => $Param{DynamicFieldConfig},
         );
