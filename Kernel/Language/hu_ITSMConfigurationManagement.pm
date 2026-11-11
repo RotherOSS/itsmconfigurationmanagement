@@ -802,7 +802,7 @@ sub Data {
     $Self->{Translation}->{'Storage Partition'} = 'Tároló partíciója';
     $Self->{Translation}->{'Subscription-based licenses'} = 'Előfizetés alapú licencek';
     $Self->{Translation}->{'Subsidiary'} = 'Leányvállalat';
-    $Self->{Translation}->{'Summary'} = 'Összefoglaló';
+    $Self->{Translation}->{'Summary'} = 'Összegzés';
     $Self->{Translation}->{'Thin Client'} = 'Vékony kliens';
     $Self->{Translation}->{'Threads'} = 'Szálak';
     $Self->{Translation}->{'Thunderbolt'} = 'Thunderbolt';

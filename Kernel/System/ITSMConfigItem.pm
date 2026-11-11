@@ -839,7 +839,7 @@ sub ConfigItemDelete {
         ConfigItemID => $Param{ConfigItemID},
     );
 
-    for my $VersionID (@$VersionListRef) {
+    for my $VersionID ( $VersionListRef->@* ) {
         $DBObject->Do(
             SQL  => 'DELETE FROM configitem_link WHERE source_configitem_version_id = ?',
             Bind => [ \$VersionID ],
@@ -1017,7 +1017,7 @@ sub ConfigItemUpdate {
     if ($NameModule) {
 
         # check if name module exists
-        if ( !$Kernel::OM->Get('Kernel::System::Main')->Require($NameModule) ) {
+        if ( !$Kernel::OM->Get('Kernel::System::Main')->Require("Kernel::System::ITSMConfigItem::Name::$NameModule") ) {
             $Kernel::OM->Get('Kernel::System::Log')->Log(
                 Priority => 'error',
                 Message  => "Can't load name module for class $ClassList->{ $Param{ClassID} }!",
@@ -2184,7 +2184,7 @@ sub _FindWarnConfigItems {
 
     # Infinite loop protection.
     # Ignore already scanned ids.
-    # It is ok that a config item is investigated as many times as there are configured link types * number of incident config iteems
+    # It is ok that a config item is investigated as many times as there are configured link types * number of incident config items
     my $IncidentCount = true { ( $Param{ScannedConfigItemIDs}{$_}{Type} || '' ) eq 'incident' }
     keys $Param{ScannedConfigItemIDs}->%*;
     if (
