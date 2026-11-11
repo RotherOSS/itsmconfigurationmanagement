@@ -989,7 +989,7 @@ sub ConfigItemUpdate {
     if ($NameModule) {
 
         # check if name module exists
-        if ( !$Kernel::OM->Get('Kernel::System::Main')->Require($NameModule) ) {
+        if ( !$Kernel::OM->Get('Kernel::System::Main')->Require("Kernel::System::ITSMConfigItem::Name::$NameModule") ) {
             $Kernel::OM->Get('Kernel::System::Log')->Log(
                 Priority => 'error',
                 Message  => "Can't load name module for class $ClassList->{ $Param{ClassID} }!",
