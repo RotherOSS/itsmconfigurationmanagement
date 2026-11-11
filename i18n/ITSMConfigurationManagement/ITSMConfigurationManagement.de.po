@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2026-10-26 10:25+0000\n"
-"PO-Revision-Date: 2026-11-11 09:00+0000\n"
+"PO-Revision-Date: 2026-11-11 12:00+0000\n"
 "Last-Translator: Jasmin Hammes <jasmin.hammes@rother-oss.com>\n"
 "Language-Team: German <http://translate.otobo.org/projects/otobo-11-1/addons/"
 "itsmconfigurationmanagement/de/>\n"
@@ -1303,10 +1303,8 @@ msgstr ""
 "niedrig (bspw. funktional)."
 
 #. SysConfig
-#, fuzzy
-#| msgid "Defines the search limit for the AgentITSMConfigItemSearch screen."
 msgid "Defines the parameters for the elasticsearch widget backend."
-msgstr "Definiert das Suchlimit für die Configuration Items-Suche."
+msgstr "Definiert die Parameter für das Elasticsearch-Widget-Backend."
 
 #. SysConfig
 msgid ""
