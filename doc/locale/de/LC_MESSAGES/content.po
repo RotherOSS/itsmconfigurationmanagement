@@ -5,7 +5,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
-msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:18+0100\nPO-Revision-Date: 2026-11-05 13:59+0000\nLast-Translator: Jasmin Hammes <jasmin.hammes@rother-oss.com>\nLanguage-Team: German <http://translate.otobo.org/projects/otobo-11-1/addons/manuals/itsmconfigurationmanagement-documentation/de/>\nLanguage: de\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 2026.9\nGenerated-By: Babel 2.4.0\n"
+msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:18+0100\nPO-Revision-Date: 2026-11-11 09:00+0000\nLast-Translator: Jasmin Hammes <jasmin.hammes@rother-oss.com>\nLanguage-Team: German <http://translate.otobo.org/projects/otobo-11-1/addons/manuals/itsmconfigurationmanagement-documentation/de/>\nLanguage: de\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 2026.9\nGenerated-By: Babel 2.4.0\n"
 
 #: ../../content/about.rst:13
 msgid "About"
@@ -2064,9 +2064,8 @@ msgid "DynamicFieldScreens###ITSMConfigurationManagement"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:807
-#, fuzzy
 msgid "This configuration defines all possible screens to enable or disable dynamic fields."
-msgstr "Diese Konfiguration definiert alle möglichen Oberflächen, auf denen dynamische Felder aktiviert oder deaktiviert werden."
+msgstr "Diese Konfiguration definiert alle möglichen Bildschirme, in denen dynamische Felder aktiviert oder deaktiviert werden können."
 
 #: ../../content/configuration/system_configuration_settings.rst:810
 msgid "DefaultColumnsScreens###ITSMConfigurationManagement"
