@@ -5,7 +5,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
-msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:18+0100\nPO-Revision-Date: 2026-11-11 09:00+0000\nLast-Translator: Jasmin Hammes <jasmin.hammes@rother-oss.com>\nLanguage-Team: German <http://translate.otobo.org/projects/otobo-11-1/addons/manuals/itsmconfigurationmanagement-documentation/de/>\nLanguage: de\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 2026.9\nGenerated-By: Babel 2.4.0\n"
+msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:18+0100\nPO-Revision-Date: 2026-11-11 11:00+0000\nLast-Translator: Jasmin Hammes <jasmin.hammes@rother-oss.com>\nLanguage-Team: German <http://translate.otobo.org/projects/otobo-11-1/addons/manuals/itsmconfigurationmanagement-documentation/de/>\nLanguage: de\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 2026.9\nGenerated-By: Babel 2.4.0\n"
 
 #: ../../content/about.rst:13
 msgid "About"
@@ -501,9 +501,8 @@ msgid "Match settings"
 msgstr "Filterbedingungen"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:278
-#, fuzzy
 msgid "Frontend"
-msgstr "Oberfläche"
+msgstr "Frontend"
 
 #: ../../content/configuration/custom_configuration_and_advanced_features.rst:279
 #, fuzzy
@@ -623,9 +622,8 @@ msgid "Enables configuration item bulk action feature only for the listed groups
 msgstr "Aktiviert die Funktion \"Sammelaktion\" nur für die gelisteten Gruppen."
 
 #: ../../content/configuration/system_configuration_settings.rst:26
-#, fuzzy
 msgid "Core::DynamicFields::DriverRegistration"
-msgstr "Core::DynamicFields::ObjectTypeRegistration"
+msgstr "Core::DynamicFields::DriverRegistration"
 
 #: ../../content/configuration/system_configuration_settings.rst:29
 msgid "DynamicFields::Driver###ConfigItem"
@@ -633,16 +631,14 @@ msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:30
 #: ../../content/configuration/system_configuration_settings.rst:34
-#, fuzzy
 msgid "DynamicField backend registration."
-msgstr "Backend-Registrierung für Dynamische Felder."
+msgstr "Backend-Registrierung der dynamischen Felder."
 
 #: ../../content/configuration/system_configuration_settings.rst:33
 msgid "DynamicFields::Driver###ConfigItemVersion"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:37
-#, fuzzy
 msgid "Core::DynamicFields::ObjectTypeRegistration"
 msgstr "Core::DynamicFields::ObjectTypeRegistration"
 
@@ -658,7 +654,7 @@ msgstr "DynamischesFeld Objektregistrierung."
 
 #: ../../content/configuration/system_configuration_settings.rst:44
 msgid "Core::Elasticsearch::Settings"
-msgstr ""
+msgstr "Core::Elasticsearch::Settings"
 
 #: ../../content/configuration/system_configuration_settings.rst:47
 msgid "Elasticsearch::ExcludedCIClasses"
@@ -1230,7 +1226,6 @@ msgid "List of all Package events to be displayed in the GUI."
 msgstr "Liste aller Paket-Ereignisse, welche in der grafischen Benutzeroberfläche angezeigt werden sollen."
 
 #: ../../content/configuration/system_configuration_settings.rst:344
-#, fuzzy
 msgid "Frontend::Admin::ModuleRegistration"
 msgstr "Frontend::Admin::ModuleRegistration"
 
@@ -1251,9 +1246,8 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:533
 #: ../../content/configuration/system_configuration_settings.rst:537
 #: ../../content/configuration/system_configuration_settings.rst:541
-#, fuzzy
 msgid "Frontend module registration for the agent interface."
-msgstr "Frontend-Modulregistrierung im Agent-Interface."
+msgstr "Registrierung des Frontend-Moduls für die Agentenoberfläche."
 
 #: ../../content/configuration/system_configuration_settings.rst:351
 msgid "Frontend::Module###AdminGenericInterfaceInvokerConfigItem"
@@ -1275,7 +1269,6 @@ msgid "Admin area navigation for the agent interface."
 msgstr "Navigation der Adminoberfläche für das Agenten-Interface."
 
 #: ../../content/configuration/system_configuration_settings.rst:362
-#, fuzzy
 msgid "Frontend::Admin::ModuleRegistration::Loader"
 msgstr "Frontend::Admin::ModuleRegistration::Loader"
 
@@ -1292,9 +1285,8 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:564
 #: ../../content/configuration/system_configuration_settings.rst:568
 #: ../../content/configuration/system_configuration_settings.rst:572
-#, fuzzy
 msgid "Loader module registration for the agent interface."
-msgstr "Loader-Modulregistrierung für die Agentenoberfläche."
+msgstr "Registrierung des Loader-Moduls für die Agentenoberfläche."
 
 #: ../../content/configuration/system_configuration_settings.rst:369
 msgid "Loader::Module::AdminGenericInterfaceInvokerConfigItem###007-ITSMConfigurationManagement"
@@ -1564,7 +1556,6 @@ msgid "Define Actions where a settings button is available in the linked objects
 msgstr "Definieren Sie Aktionen, in denen im Verknüpfte-Objekte-Widget (LinkObject::ViewMode = \"complex\") eine Einstellungen-Schaltfläche verfügbar sein soll. Bitte beachten Sie, dass für diese Aktionen die folgenden JS- und CSS-Dateien registriert sein müssen: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js und Core.Agent.LinkObject.js."
 
 #: ../../content/configuration/system_configuration_settings.rst:497
-#, fuzzy
 msgid "Frontend::Agent::ModuleRegistration"
 msgstr "Frontend::Agent::ModuleRegistration"
 
@@ -1613,7 +1604,6 @@ msgid "Frontend::Module###AgentITSMConfigItemAttachment"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:544
-#, fuzzy
 msgid "Frontend::Agent::ModuleRegistration::Loader"
 msgstr "Frontend::Agent::ModuleRegistration::Loader"
 
@@ -2077,7 +2067,6 @@ msgid "This configuration defines all possible screens to enable or disable defa
 msgstr "Diese Konfigurationsoption definiert alle möglichen Oberflächen, auf denen Standard-Spalten aktiviert oder deaktiviert werden."
 
 #: ../../content/configuration/system_configuration_settings.rst:814
-#, fuzzy
 msgid "Frontend::Base::Loader"
 msgstr "Frontend::Base::Loader"
 
@@ -2086,9 +2075,8 @@ msgid "Loader::Agent::CommonJS###100-ConfigurationManagement"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:818
-#, fuzzy
 msgid "List of JS files to always be loaded for the agent interface."
-msgstr "Liste der JavaScript-Dateien, die immer im Agenten-Interface geladen werden sollen."
+msgstr "Liste der JS-Dateien, die für die Agentenoberfläche immer geladen werden sollen."
 
 #: ../../content/configuration/system_configuration_settings.rst:821
 msgid "Frontend::Base::NavBarModule"
@@ -2112,7 +2100,6 @@ msgid "ITSMConfigItem::Frontend::CustomerOverview###Small"
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:835
-#, fuzzy
 msgid "Frontend::Customer::ModuleRegistration"
 msgstr "Frontend::Customer::ModuleRegistration"
 
@@ -2124,9 +2111,8 @@ msgstr ""
 #: ../../content/configuration/system_configuration_settings.rst:843
 #: ../../content/configuration/system_configuration_settings.rst:847
 #: ../../content/configuration/system_configuration_settings.rst:851
-#, fuzzy
 msgid "Frontend module registration for the customer interface."
-msgstr "Frontend-Modulregistrierung für den Kundenbereich."
+msgstr "Registrierung des Frontend-Moduls für die Kundenoberfläche."
 
 #: ../../content/configuration/system_configuration_settings.rst:842
 msgid "CustomerFrontend::Module###CustomerITSMConfigItemSearch"
