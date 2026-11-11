@@ -5,7 +5,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
-msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:18+0100\nPO-Revision-Date: 2026-11-11 11:00+0000\nLast-Translator: Jasmin Hammes <jasmin.hammes@rother-oss.com>\nLanguage-Team: German <http://translate.otobo.org/projects/otobo-11-1/addons/manuals/itsmconfigurationmanagement-documentation/de/>\nLanguage: de\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 2026.9\nGenerated-By: Babel 2.4.0\n"
+msgstr "Project-Id-Version: OTOBO Installation Guide rel-11.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2024-11-13 18:18+0100\nPO-Revision-Date: 2026-11-11 14:00+0000\nLast-Translator: Jasmin Hammes <jasmin.hammes@rother-oss.com>\nLanguage-Team: German <http://translate.otobo.org/projects/otobo-11-1/addons/manuals/itsmconfigurationmanagement-documentation/de/>\nLanguage: de\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 2026.9\nGenerated-By: Babel 2.4.0\n"
 
 #: ../../content/about.rst:13
 msgid "About"
@@ -1995,9 +1995,8 @@ msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###SearchCSVDynamicFie
 msgstr ""
 
 #: ../../content/configuration/system_configuration_settings.rst:777
-#, fuzzy
 msgid "Dynamic Fields used to export the search result in CSV format."
-msgstr "Dynamic Fields welche beim Export des Suchergebnisses im CSV-Format auszugeben sind."
+msgstr "Dynamische Felder, die zum Exportieren des Suchergebnisses im CSV-Format verwendet werden."
 
 #: ../../content/configuration/system_configuration_settings.rst:780
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###SearchPreviousVersions"
@@ -2022,7 +2021,6 @@ msgid "Dynamic fields shown in the config item search screen of the agent interf
 msgstr "Dynamische Felder, die in der Suchmaske der Agentenschnittstelle für Konfigurationsobjekte angezeigt werden."
 
 #: ../../content/configuration/system_configuration_settings.rst:792
-#, fuzzy
 msgid "Frontend::Agent::View::Preferences"
 msgstr "Frontend::Agent::View::Preferences"
 
