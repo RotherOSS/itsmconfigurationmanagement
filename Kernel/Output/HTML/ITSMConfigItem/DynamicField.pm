@@ -508,10 +508,15 @@ sub _RenderCILinks {
             $Param{LayoutObject}->Block(
                 Name => 'FieldDisplayCell',
                 Data => {
+                    Type => 'ValueLink',
+                },
+            );
+            $Param{LayoutObject}->Block(
+                Name => 'ValueItemLink',
+                Data => {
                     Title      => $CI->{Name},
                     Value      => $CI->{Name},
                     Link       => $Param{LayoutObject}{Baselink} . "Action=$Action;ConfigItemID=$CI->{ConfigItemID}",
-                    Type       => 'ValueLink',
                     GridColumn => 'grid-column-start:2',
                 },
             );
