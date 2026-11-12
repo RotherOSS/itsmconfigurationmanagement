@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -19,15 +19,19 @@ package Kernel::System::ITSMConfigItem::Event::EvaluateScriptFields;
 use strict;
 use warnings;
 
-use Kernel::System::VariableCheck qw(:all);
+# core modules
+
+# CPAN modules
+
+# OTOBO modules
+use Kernel::System::VariableCheck qw(IsArrayRefWithData IsHashRefWithData);
 
 our @ObjectDependencies = (
-    'Kernel::System::Cache',
-    'Kernel::System::Log',
     'Kernel::System::DynamicField',
     'Kernel::System::DynamicField::Backend',
     'Kernel::System::DynamicField::Driver::BaseScript',
     'Kernel::System::ITSMConfigItem',
+    'Kernel::System::Log',
 );
 
 sub new {
@@ -56,12 +60,12 @@ sub Run {
         }
     }
 
-    return if !$Param{Data}{ConfigItemID};
+    return unless $Param{Data}{ConfigItemID};
 
     my $Events = $Kernel::OM->Get('Kernel::System::DynamicField::Driver::BaseScript')->GetUpdateEvents();
 
-    return 1 if !IsHashRefWithData($Events);
-    return 1 if !$Events->{ $Param{Event} };
+    return 1 unless IsHashRefWithData($Events);
+    return 1 unless $Events->{ $Param{Event} };
 
     my $DynamicFieldObject        = $Kernel::OM->Get('Kernel::System::DynamicField');
     my $DynamicFieldBackendObject = $Kernel::OM->Get('Kernel::System::DynamicField::Backend');
@@ -71,6 +75,7 @@ sub Run {
         DynamicFields => 1,
     );
 
+    FIELDID:
     for my $FieldID ( $Events->{ $Param{Event} }->@* ) {
 
         my $DynamicField = $DynamicFieldObject->DynamicFieldGet(
@@ -85,8 +90,28 @@ sub Run {
                 ID => $DynamicField->{Config}{PartOfSet},
             );
 
+            my $ValueEvaluated = 0;
+
+            SETVALUE:
             for my $SetValue ( $ConfigItem->{"DynamicField_$SetConfig->{Name}"}->@* ) {
                 my %SetValuesMapped = map { ( "DynamicField_$_" => $SetValue->{$_} ) } keys $SetValue->%*;
+
+                # the required args have to be present
+                for my $Required ( @{ $DynamicField->{Config}{RequiredArgs} // [] } ) {
+                    my $RequirementValue = exists $SetValuesMapped{$Required} ? $SetValuesMapped{$Required} : $ConfigItem->{$Required};
+
+                    if (
+                        ( !ref $RequirementValue && ( !defined $RequirementValue || !length $RequirementValue ) )
+                        || ( ref $RequirementValue && !IsArrayRefWithData($RequirementValue) )
+                        )
+                    {
+                        # keep old value in case that requirements are not fulfilled
+                        push @Values, $SetValuesMapped{"DynamicField_$DynamicField->{Name}"};
+
+                        next SETVALUE;
+                    }
+                }
+
                 push @Values, $DynamicFieldBackendObject->Evaluate(
                     DynamicFieldConfig => $DynamicField,
                     Object             => {
@@ -94,10 +119,23 @@ sub Run {
                         %SetValuesMapped,
                     },
                 );
+                $ValueEvaluated = 1;
             }
+
+            next FIELDID unless $ValueEvaluated;
+
             $Value = \@Values;
         }
         else {
+
+            # the required args have to be present
+            for my $Required ( @{ $DynamicField->{Config}{RequiredArgs} // [] } ) {
+                my $RequirementValue = $ConfigItem->{$Required};
+
+                next FIELDID if ( !ref $RequirementValue && ( !defined $RequirementValue || !length $RequirementValue ) );
+                next FIELDID if ( ref $RequirementValue  && !IsArrayRefWithData($RequirementValue) );
+            }
+
             $Value = $DynamicFieldBackendObject->Evaluate(
                 DynamicFieldConfig => $DynamicField,
                 Object             => $ConfigItem,
