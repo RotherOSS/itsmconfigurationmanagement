@@ -22,29 +22,29 @@ use utf8;
 use namespace::autoclean;
 
 # core modules
+use List::Util qw(none);
 
 # CPAN modules
 
 # OTOBO modules
 use Kernel::Language              qw(Translatable);
-use Kernel::System::VariableCheck qw(:all);
+use Kernel::System::VariableCheck qw(IsArrayRefWithData IsHashRefWithData IsStringWithData);
 
 our @ObjectDependencies = (
     'Kernel::Config',
+    'Kernel::Language',
+    'Kernel::Output::HTML::Layout',
     'Kernel::System::CustomerGroup',
     'Kernel::System::CustomerUser',
-    'Kernel::System::GeneralCatalog',
-    'Kernel::Language',
-    'Kernel::System::Log',
-    'Kernel::Output::HTML::Layout',
-    'Kernel::System::Group',
-    'Kernel::System::User',
-    'Kernel::System::JSON',
     'Kernel::System::DynamicField',
-    'Kernel::System::ITSMConfigItem::ColumnFilter',
     'Kernel::System::DynamicField::Backend',
+    'Kernel::System::GeneralCatalog',
+    'Kernel::System::Group',
     'Kernel::System::ITSMConfigItem',
-    'Kernel::System::Main',
+    'Kernel::System::ITSMConfigItem::ColumnFilter',
+    'Kernel::System::JSON',
+    'Kernel::System::Log',
+    'Kernel::System::User',
 );
 
 sub new {
