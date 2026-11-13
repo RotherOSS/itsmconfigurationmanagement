@@ -227,6 +227,7 @@ sub Run {
         PERMCONF:
         for my $ConfigIdentifier ( sort keys $PermissionConditionsConfig->%* ) {
             my $PermissionConditionConfig = $PermissionConditionsConfig->{$ConfigIdentifier};
+
             next PERMCONF unless IsHashRefWithData($PermissionConditionConfig);
 
             # check for group permission

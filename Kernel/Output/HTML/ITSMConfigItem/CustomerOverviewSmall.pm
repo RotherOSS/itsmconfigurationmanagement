@@ -1485,7 +1485,9 @@ sub _GetColumnValues {
         DYNAMICFIELD:
         for my $DynamicFieldConfig ( @{ $Self->{DynamicField} } ) {
             next DYNAMICFIELD if !IsHashRefWithData($DynamicFieldConfig);
+
             my $FieldName = 'DynamicField_' . $DynamicFieldConfig->{Name};
+
             next DYNAMICFIELD if $FieldName ne $HeaderColumn;
 
             # get dynamic field backend object
@@ -1494,7 +1496,9 @@ sub _GetColumnValues {
                 DynamicFieldConfig => $DynamicFieldConfig,
                 Behavior           => 'IsFiltrable',
             );
+
             next DYNAMICFIELD if !$IsFiltrable;
+
             $Self->{ValidFiltrableColumns}->{$HeaderColumn} = $IsFiltrable;
             if ( IsArrayRefWithData($ConfigItemIDs) ) {
 
