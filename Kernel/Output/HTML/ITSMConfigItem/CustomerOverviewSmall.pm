@@ -139,10 +139,10 @@ sub new {
     }
 
     # always set config item number
-    if ( !grep { $_ eq 'Number' } $Self->{ColumnsEnabled}->@* ) {
+    if ( none { $_ eq 'Number' } $Self->{ColumnsEnabled}->@* ) {
         unshift $Self->{ColumnsEnabled}->@*, 'Number';
     }
-    if ( !grep { $_ eq 'Number' } $Self->{ColumnsAvailable}->@* ) {
+    if ( none { $_ eq 'Number' } $Self->{ColumnsAvailable}->@* ) {
         unshift $Self->{ColumnsAvailable}->@*, 'Number';
     }
 
@@ -1589,14 +1589,14 @@ sub FilterContent {
     # apply restrictions for customer permission conditions
     if ( $HeaderColumn eq 'Class' && $Param{Filters}->{ $Param{Filter} }{Search}{Classes}->@* ) {
         for my $FilterValue ( keys $ColumnValues->{$HeaderColumn}->%* ) {
-            if ( !grep { $ColumnValues->{$HeaderColumn}{$FilterValue} eq $_ } $Param{Filters}->{ $Param{Filter} }{Search}{Classes}->@* ) {
+            if ( none { $ColumnValues->{$HeaderColumn}{$FilterValue} eq $_ } $Param{Filters}->{ $Param{Filter} }{Search}{Classes}->@* ) {
                 delete $ColumnValues->{$HeaderColumn}{$FilterValue};
             }
         }
     }
     if ( $HeaderColumn eq 'DeplState' && $Param{Filters}->{ $Param{Filter} }{Search}{DeplStates}->@* ) {
         for my $FilterValue ( keys $ColumnValues->{$HeaderColumn}->%* ) {
-            if ( !grep { $ColumnValues->{$HeaderColumn}{$FilterValue} eq $_ } $Param{Filters}->{ $Param{Filter} }{Search}{DeplStates}->@* ) {
+            if ( none { $ColumnValues->{$HeaderColumn}{$FilterValue} eq $_ } $Param{Filters}->{ $Param{Filter} }{Search}{DeplStates}->@* ) {
                 delete $ColumnValues->{$HeaderColumn}{$FilterValue};
             }
         }
