@@ -24,9 +24,8 @@ use Kernel::System::VariableCheck qw(IsArrayRefWithData);
 our @ObjectDependencies = (
     'Kernel::System::DB',
     'Kernel::System::GeneralCatalog',
+    'Kernel::System::ITSMConfigItem',
     'Kernel::System::Log',
-    'Kernel::System::Main',
-    'Kernel::System::User',
 );
 
 =head1 NAME
@@ -78,10 +77,47 @@ get a list of all config item classes
 sub ClassFilterValuesGet {
     my ( $Self, %Param ) = @_;
 
-    return $Kernel::OM->Get('Kernel::System::GeneralCatalog')->ItemList(
-        Class => 'ITSM::ConfigItem::Class',
-        Valid => 1,
+    # check needed stuff
+    if ( !$Param{ITSMConfigItemIDs} ) {
+
+        return $Kernel::OM->Get('Kernel::System::GeneralCatalog')->ItemList(
+            Class => 'ITSM::ConfigItem::Class',
+            Valid => 1,
+        );
+    }
+
+    if ( !IsArrayRefWithData( $Param{ITSMConfigItemIDs} ) ) {
+        $Kernel::OM->Get('Kernel::System::Log')->Log(
+            Priority => 'error',
+            Message  => 'ITSMConfigItemIDs must be an array ref!',
+        );
+        return;
+    }
+
+    my $ConfigItemIDString = $Self->_ConfigItemIDStringGet(
+        ITSMConfigItemIDs => $Param{ITSMConfigItemIDs},
+        ColumnName        => 'ci.id',
     );
+
+    # get database object
+    my $DBObject = $Kernel::OM->Get('Kernel::System::DB');
+
+    return if !$DBObject->Prepare(
+        SQL => "SELECT DISTINCT(ci.class_id), gc.name"
+            . " FROM configitem ci, general_catalog gc"
+            . " WHERE ci.class_id = gc.id"
+            . $ConfigItemIDString
+            . " ORDER BY ci.class_id DESC",
+    );
+
+    my %Data;
+    while ( my @Row = $DBObject->FetchrowArray() ) {
+        if ( $Row[0] ) {
+            $Data{ $Row[0] } = $Row[1];
+        }
+    }
+
+    return \%Data;
 }
 
 =head2 DeplStateFilterValuesGet()
@@ -110,10 +146,47 @@ get a list of all deployment states
 sub DeplStateFilterValuesGet {
     my ( $Self, %Param ) = @_;
 
-    return $Kernel::OM->Get('Kernel::System::GeneralCatalog')->ItemList(
-        Class => 'ITSM::ConfigItem::DeploymentState',
-        Valid => 1,
+    # check needed stuff
+    if ( !$Param{ITSMConfigItemIDs} ) {
+
+        return $Kernel::OM->Get('Kernel::System::GeneralCatalog')->ItemList(
+            Class => 'ITSM::ConfigItem::DeploymentState',
+            Valid => 1,
+        );
+    }
+
+    if ( !IsArrayRefWithData( $Param{ITSMConfigItemIDs} ) ) {
+        $Kernel::OM->Get('Kernel::System::Log')->Log(
+            Priority => 'error',
+            Message  => 'ITSMConfigItemIDs must be an array ref!',
+        );
+        return;
+    }
+
+    my $ConfigItemVersionIDString = $Self->_ConfigItemIDStringGet(
+        ITSMConfigItemIDs => $Param{ITSMConfigItemIDs},
+        ReturnVersionIDs  => 1,
     );
+
+    # get database object
+    my $DBObject = $Kernel::OM->Get('Kernel::System::DB');
+
+    return if !$DBObject->Prepare(
+        SQL => "SELECT DISTINCT(civ.depl_state_id), gc.name"
+            . " FROM configitem_version civ, general_catalog gc"
+            . " WHERE civ.depl_state_id = gc.id"
+            . $ConfigItemVersionIDString
+            . " ORDER BY civ.depl_state_id DESC",
+    );
+
+    my %Data;
+    while ( my @Row = $DBObject->FetchrowArray() ) {
+        if ( $Row[0] ) {
+            $Data{ $Row[0] } = $Row[1];
+        }
+    }
+
+    return \%Data;
 }
 
 =head2 CurDeplStateFilterValuesGet()
@@ -142,7 +215,47 @@ get a list of all current deployment states - wraps for DeplStateFilterValuesGet
 sub CurDeplStateFilterValuesGet {
     my ( $Self, %Param ) = @_;
 
-    return $Self->DeplStateFilterValuesGet(%Param);
+    # check needed stuff
+    if ( !$Param{ITSMConfigItemIDs} ) {
+
+        return $Kernel::OM->Get('Kernel::System::GeneralCatalog')->ItemList(
+            Class => 'ITSM::ConfigItem::DeploymentState',
+            Valid => 1,
+        );
+    }
+
+    if ( !IsArrayRefWithData( $Param{ITSMConfigItemIDs} ) ) {
+        $Kernel::OM->Get('Kernel::System::Log')->Log(
+            Priority => 'error',
+            Message  => 'ITSMConfigItemIDs must be an array ref!',
+        );
+        return;
+    }
+
+    my $ConfigItemIDString = $Self->_ConfigItemIDStringGet(
+        ITSMConfigItemIDs => $Param{ITSMConfigItemIDs},
+        ColumnName        => 'ci.id',
+    );
+
+    # get database object
+    my $DBObject = $Kernel::OM->Get('Kernel::System::DB');
+
+    return if !$DBObject->Prepare(
+        SQL => "SELECT DISTINCT(ci.cur_depl_state_id), gc.name"
+            . " FROM configitem ci, general_catalog gc"
+            . " WHERE ci.cur_depl_state_id = gc.id"
+            . $ConfigItemIDString
+            . " ORDER BY ci.cur_depl_state_id DESC",
+    );
+
+    my %Data;
+    while ( my @Row = $DBObject->FetchrowArray() ) {
+        if ( $Row[0] ) {
+            $Data{ $Row[0] } = $Row[1];
+        }
+    }
+
+    return \%Data;
 }
 
 =head2 InciStateFilterValuesGet()
@@ -164,10 +277,48 @@ get a list of all incident states
 sub InciStateFilterValuesGet {
     my ( $Self, %Param ) = @_;
 
-    return $Kernel::OM->Get('Kernel::System::GeneralCatalog')->ItemList(
-        Class => 'ITSM::Core::IncidentState',
-        Valid => 1,
+    # check needed stuff
+    if ( !$Param{ITSMConfigItemIDs} ) {
+
+        # get state list
+        return $Kernel::OM->Get('Kernel::System::GeneralCatalog')->ItemList(
+            Class => 'ITSM::Core::IncidentState',
+            Valid => 1,
+        );
+    }
+
+    if ( !IsArrayRefWithData( $Param{ITSMConfigItemIDs} ) ) {
+        $Kernel::OM->Get('Kernel::System::Log')->Log(
+            Priority => 'error',
+            Message  => 'ITSMConfigItemIDs must be an array ref!',
+        );
+        return;
+    }
+
+    my $ConfigItemVersionIDString = $Self->_ConfigItemIDStringGet(
+        ITSMConfigItemIDs => $Param{ITSMConfigItemIDs},
+        ReturnVersionIDs  => 1,
     );
+
+    # get database object
+    my $DBObject = $Kernel::OM->Get('Kernel::System::DB');
+
+    return if !$DBObject->Prepare(
+        SQL => "SELECT DISTINCT(civ.inci_state_id), gc.name"
+            . " FROM configitem_version civ, general_catalog gc"
+            . " WHERE civ.inci_state_id = gc.id"
+            . $ConfigItemVersionIDString
+            . " ORDER BY civ.inci_state_id DESC",
+    );
+
+    my %Data;
+    while ( my @Row = $DBObject->FetchrowArray() ) {
+        if ( $Row[0] ) {
+            $Data{ $Row[0] } = $Row[1];
+        }
+    }
+
+    return \%Data;
 }
 
 =head2 CurInciStateFilterValuesGet()
@@ -189,7 +340,47 @@ get a list of all current incident states - wraps InciStateFilterValuesGet()
 sub CurInciStateFilterValuesGet {
     my ( $Self, %Param ) = @_;
 
-    return $Self->InciStateFilterValuesGet(%Param);
+    # check needed stuff
+    if ( !$Param{ITSMConfigItemIDs} ) {
+
+        return $Kernel::OM->Get('Kernel::System::GeneralCatalog')->ItemList(
+            Class => 'ITSM::Core::IncidentState',
+            Valid => 1,
+        );
+    }
+
+    if ( !IsArrayRefWithData( $Param{ITSMConfigItemIDs} ) ) {
+        $Kernel::OM->Get('Kernel::System::Log')->Log(
+            Priority => 'error',
+            Message  => 'ITSMConfigItemIDs must be an array ref!',
+        );
+        return;
+    }
+
+    my $ConfigItemIDString = $Self->_ConfigItemIDStringGet(
+        ITSMConfigItemIDs => $Param{ITSMConfigItemIDs},
+        ColumnName        => 'ci.id',
+    );
+
+    # get database object
+    my $DBObject = $Kernel::OM->Get('Kernel::System::DB');
+
+    return if !$DBObject->Prepare(
+        SQL => "SELECT DISTINCT(ci.cur_inci_state_id), gc.name"
+            . " FROM configitem ci, general_catalog gc"
+            . " WHERE ci.cur_inci_state_id = gc.id"
+            . $ConfigItemIDString
+            . " ORDER BY ci.cur_inci_state_id DESC",
+    );
+
+    my %Data;
+    while ( my @Row = $DBObject->FetchrowArray() ) {
+        if ( $Row[0] ) {
+            $Data{ $Row[0] } = $Row[1];
+        }
+    }
+
+    return \%Data;
 }
 
 =head2 DynamicFieldFilterValuesGet()
@@ -198,8 +389,8 @@ get a list of a specific config item dynamic field values within the given confi
 
     my $Values = $ColumnFilterObject->DynamicFieldFilterValuesGet(
         ITSMConfigItemIDs => [23, 1, 56, 74],    # array ref list of config item IDs
-        ValueType => 'Text',             # Text | Integer | Date
-        FieldID   => $FieldID,           # ID of the dynamic field
+        ValueType     => 'Text',             # Text | Integer | Date
+        FieldID       => $FieldID,           # ID of the dynamic field
     );
 
     returns
@@ -227,8 +418,9 @@ sub DynamicFieldFilterValuesGet {
         }
     }
 
-    my $ITSMConfigItemIDString = $Self->_ITSMConfigItemIDStringGet(
+    my $ConfigItemVersionIDString = $Self->_ConfigItemIDStringGet(
         ITSMConfigItemIDs => $Param{ITSMConfigItemIDs},
+        ReturnVersionIDs  => 1,
         ColumnName        => 'object_id',
     );
 
@@ -254,9 +446,9 @@ sub DynamicFieldFilterValuesGet {
     return if !$DBObject->Prepare(
         SQL =>
             "SELECT DISTINCT($ValueType)"
-            . ' FROM dynamic_field_value'
+            . ' FROM dynamic_field_value AS dfv'
             . ' WHERE field_id = ?'
-            . $ITSMConfigItemIDString
+            . $ConfigItemVersionIDString
             . " ORDER BY $ValueType DESC",
         Bind => [ \$Param{FieldID} ],
     );
@@ -289,5 +481,80 @@ sub DynamicFieldFilterValuesGet {
 
     return \%Data;
 }
+
+=begin Internal:
+
+=cut
+
+sub _ConfigItemIDStringGet {
+    my ( $Self, %Param ) = @_;
+
+    $Param{IncludeAdd} = 1 if !defined $Param{IncludeAdd};
+
+    my $ColumnName = $Param{ColumnName} || 'civ.id';
+
+    if ( !$Param{ITSMConfigItemIDs} || ref $Param{ITSMConfigItemIDs} ne 'ARRAY' || !@{ $Param{ITSMConfigItemIDs} } ) {
+        $Kernel::OM->Get('Kernel::System::Log')->Log(
+            Priority => 'error',
+            Message  => "Need ITSMConfigItemIDs.",
+        );
+        return;
+    }
+
+    # convert config item ids to latest version ids
+    my @IDList;
+    if ( $Param{ReturnVersionIDs} ) {
+        my $ConfigItemObject = $Kernel::OM->Get('Kernel::System::ITSMConfigItem');
+        for my $ConfigItemID ( $Param{ITSMConfigItemIDs}->@* ) {
+            my $ConfigItem = $ConfigItemObject->ConfigItemGet(
+                ConfigItemID => $ConfigItemID,
+            );
+
+            push @IDList, $ConfigItem->{LastVersionID};
+        }
+    }
+    else {
+        @IDList = $Param{ITSMConfigItemIDs}->@*;
+    }
+
+    # sort ids to cache the SQL query
+    my @SortedIDs = sort { $a <=> $b } @IDList;
+
+    # Error out if some values were not integers.
+    @SortedIDs = map { $Kernel::OM->Get('Kernel::System::DB')->Quote( $_, 'Integer' ) } @SortedIDs;
+    return if scalar @SortedIDs != scalar @{ $Param{ITSMConfigItemIDs} };
+
+    my $ReturnString = '';
+
+    # split IN statement with more than 900 elements in more statements combined with OR
+    # because Oracle doesn't support more than 1000 elements in one IN statement.
+    my @SQLStrings;
+    while ( scalar @SortedIDs ) {
+
+        # remove section in the array
+        my @SortedIDsPart = splice @SortedIDs, 0, 900;
+
+        # link together IDs
+        my $IDString = join ', ', @SortedIDsPart;
+
+        # add new statement
+        push @SQLStrings, " $ColumnName IN ($IDString) ";
+    }
+
+    my $SQLString = join ' OR ', @SQLStrings;
+
+    if ( $Param{IncludeAdd} ) {
+        $ReturnString .= ' AND ( ' . $SQLString . ' ) ';
+    }
+    else {
+        $ReturnString = $SQLString;
+    }
+
+    return $ReturnString;
+}
+
+=end Internal:
+
+=cut
 
 1;
