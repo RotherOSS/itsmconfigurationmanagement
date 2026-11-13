@@ -528,7 +528,7 @@ sub VersionAdd {
     );
 
     # check needed stuff
-    for my $Attribute (qw(ConfigItemID Name DeplStateID InciStateID)) {
+    for my $Attribute (qw(ConfigItemID DeplStateID InciStateID)) {
         if ( !$Version{$Attribute} ) {
             $Kernel::OM->Get('Kernel::System::Log')->Log(
                 Priority => 'error',
@@ -594,6 +594,18 @@ sub VersionAdd {
 
                 return;
             }
+        }
+    }
+    else {
+
+        # check needed stuff
+        if ( !$Version{Name} ) {
+            $Kernel::OM->Get('Kernel::System::Log')->Log(
+                Priority => 'error',
+                Message  => "Need Name!",
+            );
+
+            return;
         }
     }
 
