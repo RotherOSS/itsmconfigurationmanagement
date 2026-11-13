@@ -523,7 +523,7 @@ sub Run {
             Limit     => 10000,
             StartHit  => $StartHit,
             PageShown => $PageShown,
-            AllHits   => scalar @OriginalViewableConfigItems,
+            AllHits   => scalar @ViewableConfigItems,
             Action    => 'Action=CustomerITSMConfigItemSearch',
             Link      => $LinkPage,
             IDPrefix  => 'CustomerITSMConfigItemSearch',
