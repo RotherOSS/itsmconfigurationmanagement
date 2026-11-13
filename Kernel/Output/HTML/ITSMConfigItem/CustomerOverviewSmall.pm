@@ -501,6 +501,7 @@ sub Run {
     }
 
     # check if columnsenabled is a filled array reference
+    my %ColumnValues;
     if ( IsArrayRefWithData( $Self->{ColumnsEnabled} ) ) {
 
         # check if column is really filterable
@@ -508,12 +509,12 @@ sub Run {
         for my $ColumnName ( @{ $Self->{ColumnsEnabled} } ) {
             next COLUMNNAME if !$Self->{AvailableFiltrableColumns}->{$ColumnName};
             $Self->{ValidFiltrableColumns}->{$ColumnName} = 1;
+            $ColumnValues{$ColumnName} = $Self->_GetColumnValues(
+                OriginalConfigItemIDs => $Param{OriginalConfigItemIDs},
+                HeaderColumn          => $ColumnName,
+            );
         }
     }
-
-    my $ColumnValues = $Self->_GetColumnValues(
-        OriginalConfigItemIDs => $Param{OriginalConfigItemIDs},
-    );
 
     # send data to JS
     $LayoutObject->AddJSData(
@@ -661,7 +662,7 @@ sub Run {
                     my $ColumnFilterHTML = $Self->_InitialColumnFilter(
                         ColumnName    => $Column,
                         Label         => $Column,
-                        ColumnValues  => $ColumnValues->{$Column},
+                        ColumnValues  => $ColumnValues{$Column},
                         SelectedValue => $Param{GetColumnFilter}->{$Column} || '',
                     );
 
@@ -687,7 +688,7 @@ sub Run {
                     my $ColumnFilterHTML = $Self->_InitialColumnFilter(
                         ColumnName    => $Column,
                         Label         => $Column,
-                        ColumnValues  => $ColumnValues->{$Column},
+                        ColumnValues  => $ColumnValues{$Column},
                         SelectedValue => $Param{GetColumnFilter}->{$Column} || '',
                     );
 
@@ -812,7 +813,7 @@ sub Run {
                     my $ColumnFilterHTML = $Self->_InitialColumnFilter(
                         ColumnName    => $Column,
                         Label         => $Column,
-                        ColumnValues  => $ColumnValues->{$Column},
+                        ColumnValues  => $ColumnValues{$Column},
                         SelectedValue => $Param{GetColumnFilter}->{$Column} || '',
                     );
 
@@ -838,7 +839,7 @@ sub Run {
                     my $ColumnFilterHTML = $Self->_InitialColumnFilter(
                         ColumnName    => $Column,
                         Label         => $Column,
-                        ColumnValues  => $ColumnValues->{$Column},
+                        ColumnValues  => $ColumnValues{$Column},
                         SelectedValue => $Param{GetColumnFilter}->{$Column} || '',
                     );
                     $LayoutObject->Block(
@@ -959,7 +960,7 @@ sub Run {
                         my $ColumnFilterHTML = $Self->_InitialColumnFilter(
                             ColumnName    => $DynamicFieldName,
                             Label         => $Label,
-                            ColumnValues  => $ColumnValues->{$DynamicFieldName},
+                            ColumnValues  => $ColumnValues{$DynamicFieldName},
                             SelectedValue => $Param{GetColumnFilter}->{$DynamicFieldName} || '',
                         );
 
@@ -1005,7 +1006,7 @@ sub Run {
                         my $ColumnFilterHTML = $Self->_InitialColumnFilter(
                             ColumnName    => $DynamicFieldName,
                             Label         => $Label,
-                            ColumnValues  => $ColumnValues->{$DynamicFieldName},
+                            ColumnValues  => $ColumnValues{$DynamicFieldName},
                             SelectedValue => $Param{GetColumnFilter}->{$DynamicFieldName} || '',
                         );
 
@@ -1057,7 +1058,7 @@ sub Run {
                         my $ColumnFilterHTML = $Self->_InitialColumnFilter(
                             ColumnName    => $DynamicFieldName,
                             Label         => $Label,
-                            ColumnValues  => $ColumnValues->{$DynamicFieldName},
+                            ColumnValues  => $ColumnValues{$DynamicFieldName},
                             SelectedValue => $Param{GetColumnFilter}->{$DynamicFieldName} || '',
                         );
 
@@ -1098,7 +1099,7 @@ sub Run {
                         my $ColumnFilterHTML = $Self->_InitialColumnFilter(
                             ColumnName    => $DynamicFieldName,
                             Label         => $Label,
-                            ColumnValues  => $ColumnValues->{$DynamicFieldName},
+                            ColumnValues  => $ColumnValues{$DynamicFieldName},
                             SelectedValue => $Param{GetColumnFilter}->{$DynamicFieldName} || '',
                         );
 
