@@ -274,6 +274,23 @@ sub Run {
                         $DFSearchParams{"DynamicField_$FieldName"} = {
                             Equals => $PermissionConditionConfig->{DynamicFieldValues}{$FieldName},
                         };
+
+                        # restrict column filter as well
+                        next DYNAMICFIELD unless $ColumnFilter{"DynamicField_$FieldName"};
+
+                        if ( ref $ColumnFilter{"DynamicField_$FieldName"} eq 'ARRAY' ) {
+                            if ( any { $_ eq $PermissionConditionConfig->{DynamicFieldValues}{$FieldName} } $ColumnFilter{"DynamicField_$FieldName"}->@* ) {
+                                $ColumnFilter{"DynamicField_$FieldName"} = [ $PermissionConditionConfig->{DynamicFieldValues}{$FieldName} ];
+                            }
+                            else {
+                                $ColumnFilter{"DynamicField_$FieldName"} = '';
+                            }
+                        }
+                        else {
+                            if ( $ColumnFilter{"DynamicField_$FieldName"} ne $PermissionConditionConfig->{DynamicFieldValues}{$FieldName} ) {
+                                $ColumnFilter{"DynamicField_$FieldName"} = '';
+                            }
+                        }
                     }
                     elsif ( $PermissionConditionConfig->{DynamicFieldValues}{$FieldName} eq '' ) {
                         $DFSearchParams{"DynamicField_$FieldName"} = {
@@ -283,21 +300,65 @@ sub Run {
                 }
             }
 
+            # unify names and ids for deployment state, incident state and class
+            my @RestrictedClassNames;
+            if ( IsArrayRefWithData( $PermissionConditionConfig->{Classes} ) ) {
+                if ( IsArrayRefWithData( $ColumnFilter{ClassIDs} ) ) {
+                    my @RestrictedClassIDs;
+                    for my $CurrentClassID ( $ColumnFilter{ClassIDs}->@* ) {
+                        if ( any { $ClassList->{$CurrentClassID} eq $_ } $PermissionConditionConfig->{Classes}->@* ) {
+                            push @RestrictedClassNames, $ClassList->{$CurrentClassID};
+                            push @RestrictedClassIDs,   $CurrentClassID;
+                        }
+                    }
+
+                    if (@RestrictedClassIDs) {
+                        $ColumnFilter{ClassIDs} = \@RestrictedClassIDs;
+                    }
+                }
+                else {
+                    @RestrictedClassNames = $PermissionConditionConfig->{Classes}->@*;
+                }
+            }
+            my @RestrictedDeplStateNames;
+            if ( IsArrayRefWithData( $PermissionConditionConfig->{DeploymentStates} ) ) {
+                if ( IsArrayRefWithData( $ColumnFilter{DeplStateIDs} ) ) {
+                    my @RestrictedDeplStateIDs;
+                    for my $CurrentDeplStateID ( $ColumnFilter{DeplStateIDs}->@* ) {
+                        if ( any { $DeplStateList->{$CurrentDeplStateID} eq $_ } $PermissionConditionConfig->{DeploymentStates}->@* ) {
+                            push @RestrictedDeplStateNames, $DeplStateList->{$CurrentDeplStateID};
+                            push @RestrictedDeplStateIDs,   $CurrentDeplStateID;
+                        }
+                    }
+
+                    if (@RestrictedDeplStateIDs) {
+                        $ColumnFilter{DeplStateIDs} = \@RestrictedDeplStateIDs;
+                    }
+                }
+                else {
+                    @RestrictedDeplStateNames = $PermissionConditionConfig->{DeploymentStates}->@*;
+                }
+            }
+
             my %PermissionConditionSearchParams;
             if ( $PermissionConditionConfig->{CustomerCompanyDynamicField} ) {
                 $PermissionConditionSearchParams{"DynamicField_$PermissionConditionConfig->{CustomerCompanyDynamicField}"} = {
                     Equals => $Self->{CustomerID},
                 };
+
+                delete $ColumnFilter{"DynamicField_$PermissionConditionConfig->{CustomerCompanyDynamicField}"};
             }
             if ( $PermissionConditionConfig->{CustomerUserDynamicField} ) {
                 $PermissionConditionSearchParams{"DynamicField_$PermissionConditionConfig->{CustomerUserDynamicField}"} = {
                     Equals => $Self->{UserID},
                 };
+
+                delete $ColumnFilter{"DynamicField_$PermissionConditionConfig->{CustomerUserDynamicField}"};
             }
 
             my %FilterSearch = (
-                Classes    => $PermissionConditionConfig->{Classes},
-                DeplStates => $PermissionConditionConfig->{DeploymentStates},
+                Classes    => \@RestrictedClassNames,
+                DeplStates => \@RestrictedDeplStateNames,
                 %DFSearchParams,
                 %PermissionConditionSearchParams,
                 %Sort,
@@ -488,28 +549,27 @@ sub Run {
         {
             @OriginalViewableConfigItems = $ConfigItemObject->ConfigItemSearch(
                 %{ $Filters{$Filter}->{Search} },
-                %ColumnFilter,
                 Limit  => $Limit,
                 Result => 'ARRAY',
             );
 
             my $StartHit = $ParamObject->GetParam( Param => 'StartHit' ) || 1;
 
-            %PageNav = $LayoutObject->PageNavBar(
-                Limit     => 10000,
-                StartHit  => $StartHit,
-                PageShown => $PageShown,
-                AllHits   => scalar @OriginalViewableConfigItems,
-                Action    => 'Action=CustomerITSMConfigItem',
-                Link      => $LinkPage,
-                IDPrefix  => 'CustomerITSMConfigItem',
-            );
-
             @ViewableConfigItems = $ConfigItemObject->ConfigItemSearch(
                 %{ $Filters{$Filter}->{Search} },
                 %ColumnFilter,
                 Limit  => $StartHit + $PageShown - 1,
                 Result => 'ARRAY',
+            );
+
+            %PageNav = $LayoutObject->PageNavBar(
+                Limit     => 10000,
+                StartHit  => $StartHit,
+                PageShown => $PageShown,
+                AllHits   => scalar @ViewableConfigItems,
+                Action    => 'Action=CustomerITSMConfigItem',
+                Link      => $LinkPage,
+                IDPrefix  => 'CustomerITSMConfigItem',
             );
         }
 
