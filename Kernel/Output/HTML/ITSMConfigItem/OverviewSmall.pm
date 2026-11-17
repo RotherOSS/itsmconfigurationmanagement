@@ -1788,7 +1788,7 @@ sub _ColumnFilterJSON {
     my $Data = [
         {
             Key   => 'DeleteFilter',
-            Value => 'DELETE FILTER',
+            Value => Translatable('DELETE FILTER'),
         }
     ];
 
