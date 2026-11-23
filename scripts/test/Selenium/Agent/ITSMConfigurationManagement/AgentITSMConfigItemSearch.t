@@ -360,12 +360,7 @@ $Selenium->RunTest(
         $Selenium->find_element("//input[\@name='Name']")->clear();
         $Selenium->find_element("//input[\@name='Name']")->send_keys( '*' . $RandomID );
 
-        $Selenium->find_element( "#SearchFormSubmit", 'css' )->click();
-
-        $Selenium->WaitFor(
-            JavaScript =>
-                "return typeof(\$) === 'function' && !\$('Dialog.Modal').length && \$('#OverviewBody .TableSmall').length"
-        );
+        $Selenium->find_element( "#SearchFormSubmit", 'css' )->VerifiedClick();
 
         $Self->True(
             $Selenium->execute_script("return \$('.Pagination').text().trim().indexOf('1-25 of 30') > -1;"),
