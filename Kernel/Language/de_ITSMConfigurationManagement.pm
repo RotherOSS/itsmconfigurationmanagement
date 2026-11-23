@@ -325,7 +325,7 @@ sub Data {
     $Self->{Translation}->{'Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit.'} =
         'Definiert ein Template::Toolkit-Schema für Versionsstrings. Wird nur verwendet, wenn Version String Module auf TemplateToolkit eingestellt ist.';
     $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
-        '';
+        'Legen Sie eine Liste von Objekttypen der dynamischen Felder fest, die über die Schnittstelle den Aktionen dieses Pakets zugewiesen werden dürfen.';
     $Self->{Translation}->{'Define a set of conditions under which a config item can be publicly seen. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
         'Definiere eine Reihe von Bedingungen, unter denen ein Config Item öffentlich sichtbar ist. Der Name ist das einzige Pflichtattribut. Wenn keine weiteren Optionen angegeben sind, sind alle Config Items in dieser Kategorie sichtbar.';
     $Self->{Translation}->{'Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.'} =
@@ -380,7 +380,7 @@ sub Data {
     $Self->{Translation}->{'Defines the order of incident states from high (e.g. cricital) to low (e.g. functional).'} =
         'Definiert die Reihenfolge der Vorfallstatus von hoch (bspw. kritisch) nach niedrig (bspw. funktional).';
     $Self->{Translation}->{'Defines the parameters for the elasticsearch widget backend.'} =
-        '';
+        'Definiert die Parameter für das Elasticsearch-Widget-Backend.';
     $Self->{Translation}->{'Defines the relevant deployment states where linked tickets can affect the status of a CI.'} =
         'Definiert relevante Verwendungsstatus, in denen verknüpfte Tickets den Status eines Configuration Items beeinflussen.';
     $Self->{Translation}->{'Defines the search limit for the AgentITSMConfigItem screen.'} =
