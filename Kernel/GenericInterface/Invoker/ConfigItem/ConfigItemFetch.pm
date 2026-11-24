@@ -278,7 +278,7 @@ sub HandleResponse {
                 # check if field is in class definition
                 if ( !$Definition->{DynamicFieldRef}{$PlainFieldName} ) {
                     return $Self->Error(
-                        ErrorMessage => "DynamicField->Name parameter is invalid.",
+                        ErrorMessage => "DynamicField '$PlainFieldName' is not part of the definition of class '$RemoteCIData->{Class}'.",
                     );
                 }
 
@@ -301,7 +301,7 @@ sub HandleResponse {
 
                     if ( !$ValidateValue ) {
                         return $Self->Error(
-                            ErrorMessage => "DynamicField->Value parameter is invalid.",
+                            ErrorMessage => "DynamicField value for '$PlainFieldName' did not validate.",
                         );
                     }
                 }
