@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -1747,7 +1747,6 @@ sub FilterContent {
     # variable to save the filter's HTML code
     my $ColumnFilterJSON = $Self->_ColumnFilterJSON(
         ColumnName    => $HeaderColumn,
-        Label         => $LabelColumn,
         ColumnValues  => $ColumnValues->{$HeaderColumn},
         SelectedValue => $SelectedValue,
     );
@@ -1785,21 +1784,12 @@ sub _ColumnFilterJSON {
     # get layout object
     my $LayoutObject = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
 
-    my $Label = $Param{Label};
-    $Label =~ s{ \A DynamicField_ }{}gxms;
-    $Label = $LayoutObject->{LanguageObject}->Translate($Label);
-
     # set fixed values
     my $Data = [
         {
             Key   => 'DeleteFilter',
-            Value => uc $Label,
-        },
-        {
-            Key      => '-',
-            Value    => '-',
-            Disabled => 1,
-        },
+            Value => $LayoutObject->{LanguageObject}->Translate('DELETE FILTER'),
+        }
     ];
 
     if ( $Param{ColumnValues} && ref $Param{ColumnValues} eq 'HASH' ) {
