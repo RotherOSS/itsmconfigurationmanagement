@@ -676,6 +676,16 @@ sub ConfigItemAdd {
     }
     else {
 
+        # check needed stuff II
+        if ( !$Param{Name} ) {
+            $Kernel::OM->Get('Kernel::System::Log')->Log(
+                Priority => 'error',
+                Message  => "Need Name!",
+            );
+
+            return;
+        }
+
         # check, whether the feature to check for a unique name is enabled
         if ( $ConfigObject->Get('UniqueCIName::EnableUniquenessCheck') ) {
 
@@ -700,16 +710,6 @@ sub ConfigItemAdd {
                 return;
             }
         }
-    }
-
-    # check needed stuff II
-    if ( !$Param{Name} ) {
-        $Kernel::OM->Get('Kernel::System::Log')->Log(
-            Priority => 'error',
-            Message  => "Need Name!",
-        );
-
-        return;
     }
 
     # insert new config item

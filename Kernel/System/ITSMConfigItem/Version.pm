@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -528,7 +528,7 @@ sub VersionAdd {
     );
 
     # check needed stuff
-    for my $Attribute (qw(ConfigItemID Name DeplStateID InciStateID)) {
+    for my $Attribute (qw(ConfigItemID DeplStateID InciStateID)) {
         if ( !$Version{$Attribute} ) {
             $Kernel::OM->Get('Kernel::System::Log')->Log(
                 Priority => 'error',
@@ -595,6 +595,16 @@ sub VersionAdd {
                 return;
             }
         }
+    }
+
+    # at this point, a name should exist in any case
+    if ( !$Version{Name} ) {
+        $Kernel::OM->Get('Kernel::System::Log')->Log(
+            Priority => 'error',
+            Message  => "Need Name!",
+        );
+
+        return;
     }
 
     my $VersionStringModuleObject;
@@ -869,7 +879,7 @@ sub VersionUpdate {
         # create a backend object
         $NameModuleObject = $Kernel::OM->Get("Kernel::System::ITSMConfigItem::Name::$NameModule");
 
-        # TODO: Improve behaviour of modules which allow name reusage and do not always delete and recreate names
+        # TODO: Improve behavior of modules which allow name reusing and do not always delete and recreate names
         # In case we have a name module which creates names incrementally, we currently have to delete first and recreate then
         if ( $NameModuleObject->can('ConfigItemNameDelete') ) {
             $NameModuleObject->ConfigItemNameDelete( $Version->{Name} );
