@@ -812,7 +812,7 @@ sub ExportDataGet {
                 next MAPPINGOBJECT unless IsHashRefWithData($InnerFieldConfig);
 
                 # set value
-                my $InnerValue = $ActualValue->{$InnerDF};
+                my $InnerValue = IsHashRefWithData($ActualValue) ? $ActualValue->{$InnerDF} : undef;
 
                 if ( !defined $InnerValue ) {
                     push @RowItems, '';
