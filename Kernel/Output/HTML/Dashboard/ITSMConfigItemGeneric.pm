@@ -1518,7 +1518,7 @@ sub Run {
             %{$Summary},
             FilterValue      => $Self->{Filter},
             AdditionalFilter => $Self->{AdditionalFilter},
-            CustomerID       => $Self->{CustomerID},
+            CustomerID       => $Self->{UserCustomerID},
             CustomerUserID   => $Self->{CustomerUserID},
         },
         AJAX => $Param{AJAX},

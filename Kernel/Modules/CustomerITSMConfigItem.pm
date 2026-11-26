@@ -286,7 +286,7 @@ sub Run {
             my %PermissionConditionSearchParams;
             if ( $PermissionConditionConfig->{CustomerCompanyDynamicField} ) {
                 $PermissionConditionSearchParams{"DynamicField_$PermissionConditionConfig->{CustomerCompanyDynamicField}"} = {
-                    Equals => $Self->{CustomerID},
+                    Equals => $Self->{UserCustomerID},
                 };
             }
             if ( $PermissionConditionConfig->{CustomerUserDynamicField} ) {
