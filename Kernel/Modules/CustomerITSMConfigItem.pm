@@ -20,13 +20,12 @@ use strict;
 use warnings;
 
 # core modules
-use List::Util qw(any none);
+use List::Util qw(any);
 
 # CPAN modules
 
 # OTOBO modules
-use Kernel::System::VariableCheck qw(:all);
-use Kernel::Language              qw(Translatable);
+use Kernel::System::VariableCheck qw(IsArrayRefWithData IsHashRefWithData IsStringWithData);
 
 our $ObjectManagerDisabled = 1;
 
@@ -286,7 +285,7 @@ sub Run {
             my %PermissionConditionSearchParams;
             if ( $PermissionConditionConfig->{CustomerCompanyDynamicField} ) {
                 $PermissionConditionSearchParams{"DynamicField_$PermissionConditionConfig->{CustomerCompanyDynamicField}"} = {
-                    Equals => $Self->{CustomerID},
+                    Equals => $Self->{UserCustomerID},
                 };
             }
             if ( $PermissionConditionConfig->{CustomerUserDynamicField} ) {

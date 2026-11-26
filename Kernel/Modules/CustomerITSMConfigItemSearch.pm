@@ -454,7 +454,7 @@ sub Run {
         # NOTE this overwrites previously set search params for the configured dynamic fields
         if ( $PermissionConditionConfig->{CustomerCompanyDynamicField} ) {
             $SearchConfig{"DynamicField_$PermissionConditionConfig->{CustomerCompanyDynamicField}"} = {
-                Equals => $Self->{CustomerID},
+                Equals => $Self->{UserCustomerID},
             };
         }
         if ( $PermissionConditionConfig->{CustomerUserDynamicField} ) {
